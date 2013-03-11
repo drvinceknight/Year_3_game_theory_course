@@ -84,7 +84,7 @@ Week 5:
 
 Lecture 1:
 
-6.  Prisoner’s Dilemma tournament
+6.  Prisoner's Dilemma tournament
 
 Lecture 2:
 
