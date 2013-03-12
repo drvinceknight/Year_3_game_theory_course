@@ -1,18 +1,19 @@
-# OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+# OR 3: Lesson Plan Lecture 3
+## Dominance
 
 ### Aims of lecture
 
 At the end of this lecture students will be to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Solve certain games using dominance;
+- Be familiar with the concept of common knowledge of rationality;
+- Identify games that cannot be solved usnig dominance.
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- Invite students to play a round of online games.
 
 #### During the lecture
 

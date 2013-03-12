@@ -1,4 +1,4 @@
-# OR 3: Lesson Plan Lecture 1
+# OR 3: Lesson Plan Lecture 2
 ## Normal Form Games
 
 ### Aims of lecture
