@@ -19,7 +19,7 @@ At the end of this lecture students will be to:
 
 - 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap.
     - Students: Listen.
 
 - 5:10 mins
