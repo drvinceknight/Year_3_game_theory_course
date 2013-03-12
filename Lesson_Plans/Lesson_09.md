@@ -45,6 +45,9 @@ At the end of this lecture students will be to:
 
     - VK: Conclusions
 
+#### After the lecture
+
+Students will be given reading and some practice exercises.
 ### Assessment
 
 Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
