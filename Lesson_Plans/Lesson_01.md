@@ -5,8 +5,8 @@
 
 At the end of this lecture students will be to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Represent a game in extensive form;
+- Represent lack of information withing an extensive form game;
 
 ### Timeline
 
