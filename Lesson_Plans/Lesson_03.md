@@ -17,38 +17,44 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
     - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - Students: Listen.
+
+- 5:10 mins
+
+    - VK: Invite discussion about why those students behaved as they did.
+    - Students: Participate.
+
+- 10:20 mins
+
+    - VK: Formal lecture on dominance and solving games with dominance.
+    - Students: Listen.
+
+- 20:25 mins
+
+    - VK: Look at games with no immediate dominance.
+    - Students: Participate.
+
+- 25:35 mins
+
+    - VK: Lecture on common knowledge of rationality and how it can be used to solve games
     - Students: Listen
 
-- 20:30 mins
+- 35:45 mins
 
-    - VK: Lecture on Normal Form representations
-    - Students: Listen
-
-- 30:35 mins
-
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
-
-- 35:40 mins
-
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
-    - Students: Listen
+    - VK: Some examples and role play introducing certain games that cannot be solved with dominance.
+    - Students: partipation
 
 - 45:50 mins
 
-    - VK: Conclusions
+    - VK: Conclusion
 
 #### After the lecture
 
 Students will be given reading and some practice exercises.
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking students to solve games using dominance.
