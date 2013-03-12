@@ -1,53 +1,50 @@
-# OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+# OR 3: Lesson Plan Lecture 5
+## Nash equilibria in pure equilibria
 
 ### Aims of lecture
 
 At the end of this lecture students will be to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Define Nash equilibria in terms of best responses;
+- Solve Game having a pure strategy Nash Equilibria.
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- Invite students to participate in online (1 shot) games.
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap previous lecture.
     - Students: Listen
 
-- 20:30 mins
+- 5:20 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Lecture on Nash equilibria
     - Students: Listen
 
-- 30:35 mins
+- 20:35 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Some examples of duopoly games
+    - Students: Listen
 
 - 35:40 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
+    - VK: Conclusion
     - Students: Listen
 
-- 45:50 mins
+- 40:50 mins
 
-    - VK: Conclusions
+    - VK: Rock Paper Scissors tournament
+    - Students: Participate
 
 #### After the lecture
 
 Students will be given reading and some practice exercises.
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to define Nash equilibria and also solve games.
