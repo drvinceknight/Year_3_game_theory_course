@@ -5,20 +5,20 @@
 
 At the end of this lecture students will be to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Describe infinetely repeated games
+- Obtain equilibria of repeated games
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- Students will have read the results from the prisoners dilemma tournament
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap
     - Students: Listen
 
 - 20:30 mins
