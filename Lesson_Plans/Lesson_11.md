@@ -1,5 +1,5 @@
-# OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+# OR 3: Lesson Plan Lecture 11
+## Finitely repeated games
 
 ### Aims of lecture
 
