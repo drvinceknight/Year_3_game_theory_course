@@ -1,44 +1,27 @@
-# OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+# OR 3: Lesson Plan Lecture 9
+## Prisoner's Dilemma Tournament
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
-
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+The aims of this lecture will be to have fun. Students will be introduced to concepts of repeated games through role play.
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- Invite the students to read about Axelrod's tournament.
+- Divide class in to 4 teams. (8 teams? 4 in each room?)
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Discuss that we're doing something different today
     - Students: Listen
 
-- 20:30 mins
+- 5:45 mins
 
-    - VK: Lecture on Normal Form representations
-    - Students: Listen
-
-- 30:35 mins
-
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
-
-- 35:40 mins
-
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
+    - VK: Run tournament (perhaps semi and finals?)
     - Students: Listen
 
 - 45:50 mins
@@ -47,7 +30,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Blog post will be written and students shall be pointed towards it.
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+NA
