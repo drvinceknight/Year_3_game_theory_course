@@ -3,16 +3,16 @@
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be able to:
 
-- Describe infinetely repeated games
-- Obtain equilibria of repeated games
+- Define a cooperative game;
+- Calculate the shapley value for a game.
 
 ### Timeline
 
 #### Before the lecture
 
-- Students will have read the results from the prisoners dilemma tournament
+- Invite students to look at video on Shapley value.
 
 #### During the lecture
 
@@ -21,34 +21,29 @@ At the end of this lecture students will be to:
     - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:20 mins
 
-    - VK: Lecture on Repeated games
+    - VK: Lecture on Cooperative games
     - Students: Listen
 
-- 30:35 mins
+- 20:25 mins
 
-    - VK: Discussion about types of tournaments and Axelrod's tournament
+    - VK: Discussion about shapley value (fair way of sharing stuff)
     - Students: Listen
 
-- 35:40 mins
+- 25:40 mins
 
-    - VK: Lectures showing examples of finitely repeated games
+    - VK: Lecture on Shapley value
     - Students: Listen
 
-- 40:45 mins
-
-    - VK: Discuss effect of infinite repetition
-    - Students: Participate
-
-- 45:50 mins
+- 40:50 mins
 
     - VK: Conclusions
 
 #### After the lecture
 
-Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
+Students will be given reading and exercises.
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.
+Assessment of the content covered in this lecture will be through examination questions asking student to define cooperative games and calculate the shapley value for a game.
