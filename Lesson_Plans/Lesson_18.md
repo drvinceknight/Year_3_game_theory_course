@@ -5,14 +5,16 @@
 
 At the end of this lecture students will be to:
 
-- Describe infinetely repeated games
-- Obtain equilibria of repeated games
+- Define a routing game;
+- Define optimal flow for a game;
+- Define Nash flow for a game.
 
 ### Timeline
 
 #### Before the lecture
 
-- Students will have read the results from the prisoners dilemma tournament
+- Invite students to view video on Pigou's example.
+- Ask students to play a very simple routing game online.
 
 #### During the lecture
 
@@ -21,25 +23,25 @@ At the end of this lecture students will be to:
     - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:20 mins
 
-    - VK: Lecture on Repeated games
+    - VK: Lecture on routing game defining them.
     - Students: Listen
 
-- 30:35 mins
+- 20:25 mins
 
-    - VK: Discussion about types of tournaments and Axelrod's tournament
-    - Students: Listen
+    - VK: Discuss results from online game
+    - Students: Participate
 
-- 35:40 mins
+- 25:40 mins
 
-    - VK: Lectures showing examples of finitely repeated games
+    - VK: Lecture defining Optimal flow and Nash flow
     - Students: Listen
 
 - 40:45 mins
 
-    - VK: Discuss effect of infinite repetition
-    - Students: Participate
+    - VK: revisit online game: what is optimal flow?
+    - Students: participate
 
 - 45:50 mins
 
@@ -47,8 +49,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
+Students given reading and exercises.
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.
+Assessment of the content covered in this lecture will be through examination questions asking students to define non-atomic routing games and solve from basic principles the Nash flow and optimal flow.
