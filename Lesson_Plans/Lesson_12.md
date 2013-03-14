@@ -1,4 +1,4 @@
-# OR 3: Lesson Plan Lecture 11
+# OR 3: Lesson Plan Lecture 12
 ## Finitely repeated games
 
 ### Aims of lecture
@@ -47,7 +47,7 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Students given homework sheet 3 ().
 
 ### Assessment
 

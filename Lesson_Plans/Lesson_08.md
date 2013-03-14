@@ -1,18 +1,20 @@
 # OR 3: Lesson Plan Lecture 8
-## Subgame Perfection
+## Extensive form games and backwards induction
 
 ### Aims of lecture
 
 At the end of this lecture students will be to:
 
-- Define a subgame;
-- Define subgame perfect Nash equilibrium;
+- Describe properties of a game tree;
+- Make connections between normal form games and extensive form games;
+- Describe sequential rationality and backward induction;
+- Use the above to identify equilibrium.
 
 ### Timeline
 
 #### Before the lecture
 
-- Invite students to watch video on subgame perfection.
+- Invite students to play some online games (with variable amounts)
 
 #### During the lecture
 
@@ -23,17 +25,22 @@ At the end of this lecture students will be to:
 
 - 5:20 mins
 
-    - VK: Define subgames
+    - VK: Lecture on extensive form games
     - Students: Listen
 
-- 20:35 mins
+- 20:25 mins
 
-    - VK: Obtaining subgame perfect equilibria
+    - VK: Discussion about solving these games.
     - Students: Listen
 
-- 35:45 mins
+- 25:40 mins
 
-    - VK: Recap on static games
+    - VK: Lecture on backward induction
+    - Students: Listen
+
+- 40:45 mins
+
+    - VK: Solving some examples
     - Students: Listen
 
 - 45:50 mins
@@ -42,8 +49,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students given homework sheet 2 (obtaining normal form game equilibria)
+Students given homework sheet 2 (obtaining normal form game equilibria).
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to obtain subgam equilibria for games.
+Assessment of the content covered in this lecture will be through examination questions asking student to solve and represent a series of games.
