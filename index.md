@@ -17,7 +17,7 @@
 14. Lecture 14: [ Homework 3 solution](./Lesson_Plans/Lesson_14.md)
 15. Lecture 15: [ Evolutionary game theory 1](./Lesson_Plans/Lesson_15.md)
 16. Lecture 16: [ Evolutionary game theory 2](./Lesson_Plans/Lesson_16.md)
-17. Lecture 17: [ Extensive Form Games](./Lesson_Plans/Lesson_17.md)
+17. Lecture 17: [ Random events and incomplete information](./Lesson_Plans/Lesson_17.md)
 18. Lecture 18: [ Homework 4 solution](./Lesson_Plans/Lesson_18.md)
 19. Lecture 19: [ Extensive Form Games](./Lesson_Plans/Lesson_19.md)
 20. Lecture 20: [ Extensive Form Games](./Lesson_Plans/Lesson_20.md)
