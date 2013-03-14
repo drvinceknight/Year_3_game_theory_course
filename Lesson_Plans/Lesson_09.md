@@ -42,7 +42,7 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students given homework sheet 2 (obtaining normal form game equilibria)
+Students will be given reading and exercises.
 
 ### Assessment
 
