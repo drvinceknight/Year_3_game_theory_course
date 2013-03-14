@@ -1,12 +1,12 @@
-# OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+# OR 3: Lesson Plan Lecture 15
+## Evolutionary game theory 1
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be able to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Familiar with concepts of Evolutionary game theory.
+- Define and find evolutionary stable strategies
 
 ### Timeline
 
