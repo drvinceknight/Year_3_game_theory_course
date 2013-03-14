@@ -1,4 +1,4 @@
-# OR 3: Lesson Plan Lecture 8
+# OR 3: Lesson Plan Lecture 9
 ## Subgame Perfection
 
 ### Aims of lecture
