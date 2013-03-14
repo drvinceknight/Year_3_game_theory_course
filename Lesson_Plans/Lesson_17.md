@@ -1,44 +1,44 @@
 # OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+## Random events and incomplete information
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be able to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Represent games of incomplete information in extensive form;
+- Represent games of incomplete information in Bayesian normal form;
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- Invite students to play some one shot games online (with incomplete information).
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:10 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Discuss results
     - Students: Listen
 
-- 30:35 mins
+- 10:25 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Lecture on extensive form game representation of games with incomplete information
+    - Students: Listen 
 
-- 35:40 mins
+- 25:30 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
+    - VK: Discussion about representing this in Bayesian normal form game.
+    - Students: Listen
 
-- 40:45 mins
+- 30:45 mins
 
-    - VK: Lecture on lack of information.
+    - VK: Lecture on Bayesian normal form games
     - Students: Listen
 
 - 45:50 mins
@@ -48,6 +48,7 @@ At the end of this lecture students will be to:
 #### After the lecture
 
 Students will be given reading and some practice exercises.
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to represent games in both forms and to go from one to the other.
