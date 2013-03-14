@@ -12,33 +12,28 @@ At the end of this lecture students will be able to:
 
 #### Before the lecture
 
-- NA
+- Invite students to watch video on Evolutionary game theory
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:15 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Demonstrate concepts of evolutionary game theory using cards (get as many cards as C and Ds, distribute in class, see what happens).
+    - Students: Participate
+
+- 15:35 mins
+
+    - VK: Lecture on EGT.
     - Students: Listen
 
-- 30:35 mins
+- 35:45 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
-
-- 35:40 mins
-
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
+    - VK: Example of proving ESS
     - Students: Listen
 
 - 45:50 mins
@@ -50,4 +45,4 @@ At the end of this lecture students will be able to:
 Students will be given reading and some practice exercises.
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to prove whether or not we have ESS.
