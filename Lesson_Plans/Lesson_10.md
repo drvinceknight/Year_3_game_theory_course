@@ -3,4 +3,4 @@
 
 ### Aims of lecture
 
-Go through solutions of homework sheet 1.
+Go through solutions of homework sheet 2.
