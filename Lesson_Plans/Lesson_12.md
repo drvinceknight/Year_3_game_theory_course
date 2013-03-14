@@ -47,7 +47,7 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students given homework sheet 3 ().
+Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
 
 ### Assessment
 
