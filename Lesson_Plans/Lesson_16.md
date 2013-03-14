@@ -12,33 +12,33 @@ At the end of this lecture students will be able to:
 
 #### Before the lecture
 
-- NA
+- Online set of games? Quiz??
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
-    - Students: Listen
+    - VK: Recap.
+    - Students: Listen.
 
-- 20:30 mins
+- 5:15 mins
 
-    - VK: Lecture on Normal Form representations
-    - Students: Listen
+    - VK: Discuss results from quiz about connection between ESS and NE.
+    - Students: Participate.
+
+- 15:30 mins
+
+    - VK: Lecture on connection between ESS and NE.
+    - Students: Listen (recieve chocolat)
 
 - 30:35 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Group activity about playing against the field.
+    - Students: Participate
 
-- 35:40 mins
+- 35:45 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
+    - VK: Lecture on playing against the field.
     - Students: Listen
 
 - 45:50 mins
@@ -47,7 +47,7 @@ At the end of this lecture students will be able to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Students given homework sheet 4 (Finite and infinitely repeated games)
 ### Assessment
 
 Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
