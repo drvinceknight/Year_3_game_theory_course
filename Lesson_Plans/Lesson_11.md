@@ -1,45 +1,28 @@
-# OR 3: Lesson Plan Lecture 11
-## Finitely repeated games
+# OR 3: Lesson Plan Lecture 9
+## Prisoner's Dilemma Tournament
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
-
-- Describe infinetely repeated games
-- Obtain equilibria of repeated games
+The aims of this lecture will be to have fun. Students will be introduced to concepts of repeated games through role play.
 
 ### Timeline
 
 #### Before the lecture
 
-- Students will have read the results from the prisoners dilemma tournament
+- Invite the students to read about Axelrod's tournament.
+- Divide class in to 4 teams. (8 teams? 4 in each room?)
 
 #### During the lecture
 
 - 0:5 mins
 
-    - VK: Recap
+    - VK: Discuss that we're doing something different today
     - Students: Listen
 
-- 20:30 mins
+- 5:45 mins
 
-    - VK: Lecture on Repeated games
+    - VK: Run tournament (perhaps semi and finals?)
     - Students: Listen
-
-- 30:35 mins
-
-    - VK: Discussion about types of tournaments and Axelrod's tournament
-    - Students: Listen
-
-- 35:40 mins
-
-    - VK: Lectures showing examples of finitely repeated games
-    - Students: Listen
-
-- 40:45 mins
-
-    - VK: Discuss effect of infinite repetition
-    - Students: Participate
 
 - 45:50 mins
 
@@ -47,8 +30,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Blog post will be written and students shall be pointed towards it.
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.
+NA
