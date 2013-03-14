@@ -23,23 +23,23 @@ At the end of this lecture students will be to:
 
 - 20:30 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Lecture on Repeated games
     - Students: Listen
 
 - 30:35 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Discussion about types of tournaments and Axelrod's tournament
+    - Students: Listen
 
 - 35:40 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
+    - VK: Lectures showing examples of finitely repeated games
+    - Students: Listen
 
 - 40:45 mins
 
-    - VK: Lecture on lack of information.
-    - Students: Listen
+    - VK: Discuss effect of infinite repetition
+    - Students: Participate
 
 - 45:50 mins
 
@@ -48,6 +48,7 @@ At the end of this lecture students will be to:
 #### After the lecture
 
 Students will be given reading and some practice exercises.
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.
