@@ -1,44 +1,46 @@
-# OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+# OR 3: Lesson Plan Lecture 13
+## Infinitely repeated games
 
 ### Aims of lecture
 
 At the end of this lecture students will be to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Calculate payoffs in infinetly repeated games;
+- Analyse equilibrium behaviour in infinitely repeated games;
+- Identify subgame equilibria in infinitely repeared games;
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- NA?
+- Video about infinetely repeated games?
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:10 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Discussion about effects of inifintely repeating games.
+    - Students: Participate.
+
+- 10:20 mins
+
+    - VK: Lecture on calculating payoffs in infinitely repeated games.
     - Students: Listen
 
-- 30:35 mins
+- 20:35 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Lecture on equilibrium behaviour and subgame equilibrium in infinitely repeated games
+    - Students: Listen 
 
-- 35:40 mins
+- 35:45 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
+    - VK: Lecture on applications of infinitely repeated games.
     - Students: Listen
 
 - 45:50 mins
@@ -50,4 +52,4 @@ At the end of this lecture students will be to:
 Students will be given reading and some practice exercises.
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to write analyse behaviour in infinitely repeated games. 
