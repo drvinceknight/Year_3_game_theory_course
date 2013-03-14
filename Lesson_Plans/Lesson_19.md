@@ -6,6 +6,7 @@
 At the end of this lecture students will be able to:
 
 - Define a Bayesian game;
+- Be familiar with concept of Bernoulli payoff function;
 - Obtain Nash equilibria in Bayesian games;
 
 ### Timeline
