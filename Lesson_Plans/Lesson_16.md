@@ -5,14 +5,14 @@
 
 At the end of this lecture students will be to:
 
-- Describe infinetely repeated games
-- Obtain equilibria of repeated games
+- Define a matching games
+- Solve a matching game using the Gayle Shapley algorithm
 
 ### Timeline
 
 #### Before the lecture
 
-- Students will have read the results from the prisoners dilemma tournament
+- Invite students to watch video on matching game.
 
 #### During the lecture
 
@@ -21,25 +21,20 @@ At the end of this lecture students will be to:
     - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:20 mins
 
-    - VK: Lecture on Repeated games
-    - Students: Listen
-
-- 30:35 mins
-
-    - VK: Discussion about types of tournaments and Axelrod's tournament
-    - Students: Listen
-
-- 35:40 mins
-
-    - VK: Lectures showing examples of finitely repeated games
-    - Students: Listen
-
-- 40:45 mins
-
-    - VK: Discuss effect of infinite repetition
+    - VK: Choose volunteers for matching game (red and blue shirts)
     - Students: Participate
+
+- 20:35 mins
+
+    - VK: Lecture on Gale Shapley algorithm
+    - Students: Listen
+
+- 35:45 mins
+
+    - VK: Lecture proving some results about Gale Shapley algorithm
+    - Students: Listen
 
 - 45:50 mins
 
@@ -47,8 +42,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
+Students given homework sheet 4 (Repeated games and Evolutionary game theory).
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.
+Assessment of the content covered in this lecture will be through examination questions asking student to solve matching games as well as comment on some applications.
