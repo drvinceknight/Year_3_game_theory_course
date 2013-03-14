@@ -1,39 +1,45 @@
 # OR 3: Lesson Plan Lecture 15
-## Evolutionary game theory 1
+## Bayesian Games
 
 ### Aims of lecture
 
 At the end of this lecture students will be able to:
 
-- Familiar with concepts of Evolutionary game theory.
-- Define and find evolutionary stable strategies
+- Define a Bayesian game;
+- Be familiar with concept of Bernoulli payoff function;
+- Obtain Nash equilibria in Bayesian games;
 
 ### Timeline
 
 #### Before the lecture
 
-- Invite students to watch video on Evolutionary game theory
+- NA
 
 #### During the lecture
 
-- 0:5 mins
+- 0:20 mins
 
-    - VK: Recap
+    - VK: Introduction (what is game theory and 2/3rds of average game.)
     - Students: Listen
 
-- 5:15 mins
+- 20:30 mins
 
-    - VK: Demonstrate concepts of evolutionary game theory using cards (get as many cards as C and Ds, distribute in class, see what happens).
-    - Students: Participate
-
-- 15:35 mins
-
-    - VK: Lecture on EGT.
+    - VK: Lecture on Normal Form representations
     - Students: Listen
 
-- 35:45 mins
+- 30:35 mins
 
-    - VK: Example of proving ESS
+    - VK: Solution to 2/3rds of average game
+    - Students: Listen (recieve chocolat)
+
+- 35:40 mins
+
+    - VK: Whole class activity (what about lack of information?)
+    - Students to try and figure out how to deal with lack of information.
+
+- 40:45 mins
+
+    - VK: Lecture on lack of information.
     - Students: Listen
 
 - 45:50 mins
@@ -45,4 +51,4 @@ At the end of this lecture students will be able to:
 Students will be given reading and some practice exercises.
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to prove whether or not we have ESS.
+Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.

@@ -1,27 +1,46 @@
 # OR 3: Lesson Plan Lecture 11
-## Prisoner's Dilemma Tournament
+## Infinitely repeated games
 
 ### Aims of lecture
 
-The aims of this lecture will be to have fun. Students will be introduced to concepts of repeated games through role play.
+At the end of this lecture students will be to:
+
+- Calculate payoffs in infinetly repeated games;
+- Analyse equilibrium behaviour in infinitely repeated games;
+- Identify subgame equilibria in infinitely repeared games;
 
 ### Timeline
 
 #### Before the lecture
 
-- Invite the students to read about Axelrod's tournament.
-- Divide class in to 4 teams. (8 teams? 4 in each room?)
+- NA?
+- Video about infinetely repeated games?
 
 #### During the lecture
 
 - 0:5 mins
 
-    - VK: Discuss that we're doing something different today
+    - VK: Recap
     - Students: Listen
 
-- 5:45 mins
+- 5:10 mins
 
-    - VK: Run tournament (perhaps semi and finals?)
+    - VK: Discussion about effects of inifintely repeating games.
+    - Students: Participate.
+
+- 10:20 mins
+
+    - VK: Lecture on calculating payoffs in infinitely repeated games.
+    - Students: Listen
+
+- 20:35 mins
+
+    - VK: Lecture on equilibrium behaviour and subgame equilibrium in infinitely repeated games
+    - Students: Listen
+
+- 35:45 mins
+
+    - VK: Lecture on applications of infinitely repeated games.
     - Students: Listen
 
 - 45:50 mins
@@ -30,8 +49,7 @@ The aims of this lecture will be to have fun. Students will be introduced to con
 
 #### After the lecture
 
-Blog post will be written and students shall be pointed towards it.
-
+Students will be given reading and some practice exercises.
 ### Assessment
 
-NA
+Assessment of the content covered in this lecture will be through examination questions asking student to write analyse behaviour in infinitely repeated games.

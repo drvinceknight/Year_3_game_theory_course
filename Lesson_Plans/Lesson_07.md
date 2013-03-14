@@ -1,19 +1,20 @@
-# OR 3: Lesson Plan Lecture 7
-## Mixed strategy Nash Equilibria
+# OR 3: Lesson Plan Lecture 8
+## Extensive form games and backwards induction
 
 ### Aims of lecture
 
 At the end of this lecture students will be to:
 
-- Define mixed strategy Nash equilibria;
-- Obtain Nash equilibria in pure strategy.
+- Describe properties of a game tree;
+- Make connections between normal form games and extensive form games;
+- Describe sequential rationality and backward induction;
+- Use the above to identify equilibrium.
 
 ### Timeline
 
 #### Before the lecture
 
-- Invite students to watch [this video](http://youtu.be/poYucyX7-gE).
-- Invite students to play random 1 shot games online.
+- Invite students to play some online games (with variable amounts)
 
 #### During the lecture
 
@@ -22,25 +23,25 @@ At the end of this lecture students will be to:
     - VK: Recap
     - Students: Listen
 
-- 5:10 mins
+- 5:20 mins
 
-    - VK: Recap of expected utility calculation
+    - VK: Lecture on extensive form games
     - Students: Listen
 
-- 10:20 mins
+- 20:25 mins
 
-    - VK: Recap results from online game and discussion with students about indifference
+    - VK: Discussion about solving these games.
     - Students: Listen
 
-- 20:30 mins
+- 25:40 mins
 
-    - VK: Obtaining NE using best responses.
+    - VK: Lecture on backward induction
     - Students: Listen
 
-- 30:45 mins
+- 40:45 mins
 
-    - VK: Proof of equality of utilities theorem
-    - Students: listen.
+    - VK: Solving some examples
+    - Students: Listen
 
 - 45:50 mins
 
@@ -48,8 +49,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises as well as a document about connection between linear programming and zero sum games (possibly create video?).
+Students given homework sheet 2 (obtaining normal form game equilibria).
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to define NE, prove the equality of payoffs theorem and compute NE using theorem and best responses.
+Assessment of the content covered in this lecture will be through examination questions asking student to solve and represent a series of games.

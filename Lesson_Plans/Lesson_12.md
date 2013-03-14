@@ -1,18 +1,18 @@
 # OR 3: Lesson Plan Lecture 12
-## Finitely repeated games
+## Evolutionary game theory 1
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be able to:
 
-- Describe infinetely repeated games
-- Obtain equilibria of repeated games
+- Familiar with concepts of Evolutionary game theory.
+- Define and find evolutionary stable strategies
 
 ### Timeline
 
 #### Before the lecture
 
-- Students will have read the results from the prisoners dilemma tournament
+- Invite students to watch video on Evolutionary game theory
 
 #### During the lecture
 
@@ -21,25 +21,20 @@ At the end of this lecture students will be to:
     - VK: Recap
     - Students: Listen
 
-- 20:30 mins
+- 5:15 mins
 
-    - VK: Lecture on Repeated games
-    - Students: Listen
-
-- 30:35 mins
-
-    - VK: Discussion about types of tournaments and Axelrod's tournament
-    - Students: Listen
-
-- 35:40 mins
-
-    - VK: Lectures showing examples of finitely repeated games
-    - Students: Listen
-
-- 40:45 mins
-
-    - VK: Discuss effect of infinite repetition
+    - VK: Demonstrate concepts of evolutionary game theory using cards (get as many cards as C and Ds, distribute in class, see what happens).
     - Students: Participate
+
+- 15:35 mins
+
+    - VK: Lecture on EGT.
+    - Students: Listen
+
+- 35:45 mins
+
+    - VK: Example of proving ESS
+    - Students: Listen
 
 - 45:50 mins
 
@@ -47,8 +42,7 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
-
+Students will be given reading and some practice exercises.
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.
+Assessment of the content covered in this lecture will be through examination questions asking student to prove whether or not we have ESS.

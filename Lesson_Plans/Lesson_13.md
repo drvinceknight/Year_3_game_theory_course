@@ -1,46 +1,44 @@
 # OR 3: Lesson Plan Lecture 13
-## Infinitely repeated games
+## Evolutionary game theory 2
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be able to:
 
-- Calculate payoffs in infinetly repeated games;
-- Analyse equilibrium behaviour in infinitely repeated games;
-- Identify subgame equilibria in infinitely repeared games;
+- Describe the connection between Nash Equilibria and ESS;
+- Obtain ESS and solve games against the field.
 
 ### Timeline
 
 #### Before the lecture
 
-- NA?
-- Video about infinetely repeated games?
+- Online set of games? Quiz??
 
 #### During the lecture
 
 - 0:5 mins
 
-    - VK: Recap
-    - Students: Listen
+    - VK: Recap.
+    - Students: Listen.
 
-- 5:10 mins
+- 5:15 mins
 
-    - VK: Discussion about effects of inifintely repeating games.
+    - VK: Discuss results from quiz about connection between ESS and NE.
     - Students: Participate.
 
-- 10:20 mins
+- 15:30 mins
 
-    - VK: Lecture on calculating payoffs in infinitely repeated games.
-    - Students: Listen
+    - VK: Lecture on connection between ESS and NE.
+    - Students: Listen (recieve chocolat)
 
-- 20:35 mins
+- 30:35 mins
 
-    - VK: Lecture on equilibrium behaviour and subgame equilibrium in infinitely repeated games
-    - Students: Listen 
+    - VK: Group activity about playing against the field.
+    - Students: Participate
 
 - 35:45 mins
 
-    - VK: Lecture on applications of infinitely repeated games.
+    - VK: Lecture on playing against the field.
     - Students: Listen
 
 - 45:50 mins
@@ -49,7 +47,7 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Students given homework sheet 4 (Finite and infinitely repeated games)
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write analyse behaviour in infinitely repeated games. 
+Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.

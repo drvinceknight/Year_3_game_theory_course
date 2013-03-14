@@ -1,45 +1,45 @@
-# OR 3: Lesson Plan Lecture 16
-## Evolutionary game theory 2
+# OR 3: Lesson Plan Lecture 10
+## Finitely repeated games
 
 ### Aims of lecture
 
-At the end of this lecture students will be able to:
+At the end of this lecture students will be to:
 
-- Describe the connection between Nash Equilibria and ESS;
-- Obtain ESS and solve games against the field.
+- Describe infinetely repeated games
+- Obtain equilibria of repeated games
 
 ### Timeline
 
 #### Before the lecture
 
-- Online set of games? Quiz??
+- Students will have read the results from the prisoners dilemma tournament
 
 #### During the lecture
 
 - 0:5 mins
 
-    - VK: Recap.
-    - Students: Listen.
+    - VK: Recap
+    - Students: Listen
 
-- 5:15 mins
+- 20:30 mins
 
-    - VK: Discuss results from quiz about connection between ESS and NE.
-    - Students: Participate.
-
-- 15:30 mins
-
-    - VK: Lecture on connection between ESS and NE.
-    - Students: Listen (recieve chocolat)
+    - VK: Lecture on Repeated games
+    - Students: Listen
 
 - 30:35 mins
 
-    - VK: Group activity about playing against the field.
-    - Students: Participate
-
-- 35:45 mins
-
-    - VK: Lecture on playing against the field.
+    - VK: Discussion about types of tournaments and Axelrod's tournament
     - Students: Listen
+
+- 35:40 mins
+
+    - VK: Lectures showing examples of finitely repeated games
+    - Students: Listen
+
+- 40:45 mins
+
+    - VK: Discuss effect of infinite repetition
+    - Students: Participate
 
 - 45:50 mins
 
@@ -47,7 +47,8 @@ At the end of this lecture students will be able to:
 
 #### After the lecture
 
-Students given homework sheet 4 (Finite and infinitely repeated games)
+Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.

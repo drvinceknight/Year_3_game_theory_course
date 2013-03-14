@@ -1,46 +1,45 @@
-# OR 3: Lesson Plan Lecture 1
-## Bayesian Games
+# OR 3: Lesson Plan Lecture 10
+## Finitely repeated games
 
 ### Aims of lecture
 
-At the end of this lecture students will be able to:
+At the end of this lecture students will be to:
 
-- Define a Bayesian game;
-- Be familiar with concept of Bernoulli payoff function;
-- Obtain Nash equilibria in Bayesian games;
+- Describe infinetely repeated games
+- Obtain equilibria of repeated games
 
 ### Timeline
 
 #### Before the lecture
 
-- NA
+- Students will have read the results from the prisoners dilemma tournament
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
+    - VK: Recap
     - Students: Listen
 
 - 20:30 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Lecture on Repeated games
     - Students: Listen
 
 - 30:35 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Discussion about types of tournaments and Axelrod's tournament
+    - Students: Listen
 
 - 35:40 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
+    - VK: Lectures showing examples of finitely repeated games
+    - Students: Listen
 
 - 40:45 mins
 
-    - VK: Lecture on lack of information.
-    - Students: Listen
+    - VK: Discuss effect of infinite repetition
+    - Students: Participate
 
 - 45:50 mins
 
@@ -48,7 +47,8 @@ At the end of this lecture students will be able to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.

@@ -1,18 +1,18 @@
-# OR 3: Lesson Plan Lecture 1
-## Random events and incomplete information
+# OR 3: Lesson Plan Lecture 10
+## Finitely repeated games
 
 ### Aims of lecture
 
-At the end of this lecture students will be able to:
+At the end of this lecture students will be to:
 
-- Represent games of incomplete information in extensive form;
-- Represent games of incomplete information in Bayesian normal form;
+- Describe infinetely repeated games
+- Obtain equilibria of repeated games
 
 ### Timeline
 
 #### Before the lecture
 
-- Invite students to play some one shot games online (with incomplete information).
+- Students will have read the results from the prisoners dilemma tournament
 
 #### During the lecture
 
@@ -21,25 +21,25 @@ At the end of this lecture students will be able to:
     - VK: Recap
     - Students: Listen
 
-- 5:10 mins
+- 20:30 mins
 
-    - VK: Discuss results
+    - VK: Lecture on Repeated games
     - Students: Listen
 
-- 10:25 mins
+- 30:35 mins
 
-    - VK: Lecture on extensive form game representation of games with incomplete information
-    - Students: Listen 
-
-- 25:30 mins
-
-    - VK: Discussion about representing this in Bayesian normal form game.
+    - VK: Discussion about types of tournaments and Axelrod's tournament
     - Students: Listen
 
-- 30:45 mins
+- 35:40 mins
 
-    - VK: Lecture on Bayesian normal form games
+    - VK: Lectures showing examples of finitely repeated games
     - Students: Listen
+
+- 40:45 mins
+
+    - VK: Discuss effect of infinite repetition
+    - Students: Participate
 
 - 45:50 mins
 
@@ -47,8 +47,8 @@ At the end of this lecture students will be able to:
 
 #### After the lecture
 
-Students will be given reading and some practice exercises.
+Students given homework sheet 3 (More normal form equilibria, backward induction, subgame equilibria).
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to represent games in both forms and to go from one to the other.
+Assessment of the content covered in this lecture will be through examination questions asking student to analyse repeated games as well as discuss Axelrod's work.

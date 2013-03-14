@@ -1,39 +1,27 @@
 # OR 3: Lesson Plan Lecture 9
-## Subgame Perfection
+## Prisoner's Dilemma Tournament
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
-
-- Define a subgame;
-- Define subgame perfect Nash equilibrium;
+The aims of this lecture will be to have fun. Students will be introduced to concepts of repeated games through role play.
 
 ### Timeline
 
 #### Before the lecture
 
-- Invite students to watch video on subgame perfection.
+- Invite the students to read about Axelrod's tournament.
+- Divide class in to 4 teams. (8 teams? 4 in each room?)
 
 #### During the lecture
 
 - 0:5 mins
 
-    - VK: Recap
+    - VK: Discuss that we're doing something different today
     - Students: Listen
 
-- 5:20 mins
+- 5:45 mins
 
-    - VK: Define subgames
-    - Students: Listen
-
-- 20:35 mins
-
-    - VK: Obtaining subgame perfect equilibria
-    - Students: Listen
-
-- 35:45 mins
-
-    - VK: Recap on static games
+    - VK: Run tournament (perhaps semi and finals?)
     - Students: Listen
 
 - 45:50 mins
@@ -42,8 +30,8 @@ At the end of this lecture students will be to:
 
 #### After the lecture
 
-Students will be given reading and exercises.
+Blog post will be written and students shall be pointed towards it.
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to obtain subgam equilibria for games.
+NA
