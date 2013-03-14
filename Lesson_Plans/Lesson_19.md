@@ -1,12 +1,12 @@
 # OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+## Bayesian Games
 
 ### Aims of lecture
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be able to:
 
-- Represent a game in normal form;
-- Represent lack of information withing a normal form game;
+- Define a Bayesian game;
+- Obtain Nash equilibria in Bayesian games;
 
 ### Timeline
 
