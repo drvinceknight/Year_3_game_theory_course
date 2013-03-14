@@ -1,4 +1,4 @@
-# OR 3: Lesson Plan Lecture 9
+# OR 3: Lesson Plan Lecture 11
 ## Prisoner's Dilemma Tournament
 
 ### Aims of lecture
