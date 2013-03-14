@@ -17,29 +17,29 @@ At the end of this lecture students will be able to:
 
 #### During the lecture
 
-- 0:20 mins
+- 0:5 mins
 
     - VK: Introduction (what is game theory and 2/3rds of average game.)
     - Students: Listen
 
-- 20:30 mins
+- 5:15 mins
 
-    - VK: Lecture on Normal Form representations
+    - VK: Lecture on Bayesian games.
     - Students: Listen
 
-- 30:35 mins
+- 15:20 mins
 
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
+    - VK: Discussion about Bernouilli payoff function
+    - Students: Listen
 
-- 35:40 mins
+- 25:35 mins
 
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
+    - VK: Lecture on Bernouilli payoff function
+    - Students: Listen
 
-- 40:45 mins
+- 35:45 mins
 
-    - VK: Lecture on lack of information.
+    - VK: Lecture on finding equilibria in Bayesian games
     - Students: Listen
 
 - 45:50 mins
@@ -49,6 +49,7 @@ At the end of this lecture students will be able to:
 #### After the lecture
 
 Students will be given reading and some practice exercises.
+
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+Assessment of the content covered in this lecture will be through examination questions asking students to define Bayesian games, Bernouilli payoff functions and obtain equilibria in Bayesian games.

@@ -1,5 +1,5 @@
-# OR 3: Lesson Plan Lecture 10
-## Finitely repeated games
+# OR 3: Lesson Plan Lecture 18
+## Routing games 1
 
 ### Aims of lecture
 

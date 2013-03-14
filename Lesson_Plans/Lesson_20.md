@@ -1,5 +1,5 @@
-# OR 3: Lesson Plan Lecture 10
-## Finitely repeated games
+# OR 3: Lesson Plan Lecture 20
+## Prisoner's Dilemma Tournament (revisited)
 
 ### Aims of lecture
 
