@@ -11,7 +11,7 @@ else:
 list_of_plans = os.listdir(target_dir)
 list_of_plans = [p for p in list_of_plans if p != "makefile"]
 number_of_plans = len(list_of_plans)
-print number_of_plans
+print "%s lesson plans read."%number_of_plans
 
 
 index_file = open("../index.md", "w")
