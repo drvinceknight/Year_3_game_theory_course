@@ -1,5 +1,5 @@
 # OR 3: Lesson Plan Lecture 1
-## Extensive Form Games
+## Introduction
 
 ### Aims of lecture
 

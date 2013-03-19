@@ -1,7 +1,7 @@
 # OR3 - Game Theory
 ## Lesson plans
 
-1. Lecture 1: [ Extensive Form Games](./Lesson_Plans/Lesson_01.md)
+1. Lecture 1: [ Introduction](./Lesson_Plans/Lesson_01.md)
 2. Lecture 2: [ Normal Form Games](./Lesson_Plans/Lesson_02.md)
 3. Lecture 3: [ Dominance](./Lesson_Plans/Lesson_03.md)
 4. Lecture 4: [ Best response](./Lesson_Plans/Lesson_04.md)
