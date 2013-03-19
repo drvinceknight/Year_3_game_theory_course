@@ -58,4 +58,33 @@ Represents the game as well as the utilities of Bob and Celine.
 
 ![Bob and Celine](images/L01-img03.png)
 
-#### Lack of Information
+If we assume that this is the order with which decisions take place it should be relatively straightforward to predict what will happen:
+
+1. Bob sees that no matter what he picks Celine will pick the same type of movie;
+2. Bob can thus pick a comedy to ensure that he gets a slightly higher utility.
+
+(This is actually using a process called **backward induction** but we'll see that properly a bit later.)
+
+Of course we can simply represent this game in a different way (remember that in the above description we did not mention who would be making the initial decision.
+
+![Celine and Bob](images/L01-img04.png)
+
+In this case is should again be relatively straightforward to predict what will happen:
+
+1. Celine sees that no matter what he picks Bob will pick the same type of movie;
+2. Celine can thus pick a comedy to ensure that he gets a slightly higher utility.
+
+The main assumption we are making here is concerned with the amount of information available to both players at different points of the game. In both cases we have here assumed that the information available at nodes **b** and **c** is different. This is not always the case.
+
+#### Information sets
+
+
+**Definition**
+
+Two nodes of a game tree are said to be part of the same information set if the player at that node cannot differentiate between them.
+
+We represent nodes being part of the same information set using dashed line. In our example with Celine and Bob if both players must decide on a movie without knowing what the other will do we see that node **b** and **c** now have the same information set.
+
+![Celine and Bob with Information Set](images/L01-img05.png)
+
+It is now a lot more difficult to try and predict the outcome of this situation.
