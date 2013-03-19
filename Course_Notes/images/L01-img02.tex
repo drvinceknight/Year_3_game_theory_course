@@ -1,8 +1,18 @@
-\documentclass[tikz,png]{standalone}
-\usepackage{tikz,amsmath,siunitx}
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
 \begin{document}
-\begin{tikzpicture}
-    \draw (-2.5,0) -- (1.5,5);
-    \draw (0,-1.5) -- (0,1.5);
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{player} = [text width=4em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{You}
+        child {node[player] {Friends} 
+                child {node[end] {} edge from parent node[below] {A}}
+                child {node[end] {} edge from parent node[below] {B}} edge from parent node[below] {A}}
+        child {node[player] {Friends} 
+                child {node[end] {} edge from parent node[below] {A}}
+                child {node[end] {} edge from parent node[below] {B}} edge from parent node[below] {B}};
 \end{tikzpicture}
 \end{document}
