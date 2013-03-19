@@ -1,11 +1,12 @@
 tex  = $(wildcard *.tex)
-pdfs = $(tex:%.tex=%.pdf)
+pngs = $(tex:%.tex=%.png)
 
-all: $(pdfs)
+all: $(pngs) 
 
-%.pdf: %.tex
-	pdflatex $<
+%.png: %.tex
+	./convert_tex_to_png.py $<
 
 clean:
 	rm *.aux
 	rm *.log
+	rm *.pdf
