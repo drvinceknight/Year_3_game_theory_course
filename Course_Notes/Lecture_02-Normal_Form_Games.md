@@ -10,7 +10,7 @@ In the [previous lecture](Lecture_1-Introduction.html) we discussed:
 
 We did this looking at a game called "the battle of the sexes":
 
-![Celine and Bob with Information Set](images/L01-img05.png)
+![Celine and Bob with Information Set.](images/L01-img05.png)
 
 Can we think of a better way of representing this game?
 
@@ -35,7 +35,7 @@ The convention used in this course (unless otherwise stated) is that all players
 
 A natural way of representing a two player normal form game is using a **bi-matrix**. If we assume that $S_1=\{r_i\;|\;1\leq i\leq m \}$ and $S_2=\{s_j\;|\;1\leq j\leq n \}$ then the following is a **bi-matrix** representation of the game considered:
 
-![A bi matrix](images/L02-img01.png)
+![A bi matrix.](images/L02-img01.png)
 
 ### Some examples
 
@@ -61,9 +61,9 @@ $$
 \end{pmatrix}
 $$
 
-#### Hawk-Dove/Chicken
+#### Hawk-Dove
 
-> Suppose...
+> Suppose two birds of prey must share a limited resource. The birds can act like a hawk or a dove. Hawks always fight over the resource to the point of exterminating a fellow hawk and/or take a majority of the resource from a dove. Two doves can share the resource quite well.
 
 $$
 \begin{pmatrix}
@@ -72,31 +72,10 @@ $$
 \end{pmatrix}
 $$
 
-#### Coordination
-
-> Suppose...
-
-$$
-\begin{pmatrix}
-(1,1)&(0,0)\\
-(0,0)&(1,1)
-\end{pmatrix}
-$$
-
-#### Pareto Coordination
-
-> Suppose...
-
-$$
-\begin{pmatrix}
-(2,2)&(0,0)\\
-(0,0)&(1,1)
-\end{pmatrix}
-$$
 
 #### Pigs
 
-> Suppose...
+> Consider two pigs. One dominant pig and one subservient pig. These pigs share a pen. There is a lever in the pen that delivers food but if either pig pushes the lever it will take them a little while to get to the food. If the dominant pig pushes the lever, the subservient pig has some time to eat most of the food before being pushed out of the way. If the subservient pig push the lever, the dominant pig will eat all the food. Finally if both pigs go to push the lever the subservient pig will be able to eat a third of the food.
 
 $$
 \begin{pmatrix}
@@ -149,6 +128,6 @@ $$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r
 
 A plot of this is shown here:
 
-![](./plots/L02-plot01.png)
+![Plot of utility if both players play tails.](./plots/L02-plot01.png)
 
 Add to this plot by assuming that the players independently both play heads.
