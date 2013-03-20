@@ -24,7 +24,7 @@ At the end of this lecture students will be to:
 
 - 5:10 mins
 
-    - VK: Discuss flipping pennies game (why does it not work with extensive form game?)
+    - VK: Discuss outcomes in battle of the sexes game.
     - Students: Participate
 
 - 10:15 mins
