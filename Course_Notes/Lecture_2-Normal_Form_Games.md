@@ -18,6 +18,7 @@ Can we think of a better way of representing this game?
 
 One other representation for a game is called the **normal form**.
 
+
 ### Definition
 
 ---
@@ -51,7 +52,7 @@ $$
 
 #### Prisoners' Dilemma
 
->Suppose ...
+> Assume two thieves have been caught by the police and separated for questioning. If both thieves cooperate and don't divulge any information they will each get a short sentence. If one defects he/she is offered a deal while the other thief will get a long sentence. If they both defect they both get a medium sentence.
 
 $$
 \begin{pmatrix}
@@ -104,7 +105,50 @@ $$
 \end{pmatrix}
 $$
 
-## Strategies
+## Mixed Strategies
 
-Discuss pure strategies
-Discuss mixed strategies
+So far we have only considered so called **pure strategies**. We will now allow players to play **mixed strategies**.
+
+### Definition
+
+---
+
+In an $n$ player normal form game a **mixed strategy** for player $i$ denoted by $\sigma_i\in[0,1]^{|S_i|}_{\mathbb{R}}$ is a probability distribution over the pure strategies of player $i$.
+
+---
+
+For example in the matching pennies game discussed previously. A strategy profile of $\sigma_1=(.2,.8)$ and $\sigma_2=(.6,.4)$ implies that player 1 plays heads with probability .2 and player 2 plays heads with probability .6.
+
+We can extend the utility function which maps from the set of pure strategies to $\mathbb{R}$ using _expected payoffs_. For a two player game we have:
+
+$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,s)$$
+
+(where we relax our notation to allow $\sigma_i:S_i\to[0,1]_{\mathbb{R}}$)
+
+## Matching pennies revisited.
+
+In the previously discussed strategy profile of $\sigma_1=(.2,.8)$ and $\sigma_2=(.6,.4)$ the expected utilities can be calculated as follows:
+
+$$u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)=.2\times.6\times 1+.2\times.4\times (-1)+.8\times .6\times (-1) + .8\times .4\times 1=-.12$$
+$$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=.2\times.6\times (-1)+.2\times.4\times 1+.8\times .6\times 1 + .8\times .4\times (-1)=.12$$
+
+### Example
+
+---
+
+If we assume that player 2 always plays tails, what is the expected utility to player 1?
+
+Let $\sigma_1=(x,1-x)$ and we have $\sigma_2=(0,1)$ which gives:
+
+$$u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)=-x+(1-x)=1-2x$$
+
+Similarly if player 1 always plays tails the expected utility to player 2 is:
+
+$$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=x+(x-1)=2x-1$$
+
+
+A plot of this is shown here:
+
+![](./plots/L02-plot01.png)
+
+Add to this plot by assuming that the players independently both play heads.

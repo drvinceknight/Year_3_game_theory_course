@@ -32,6 +32,7 @@
 <li>Payoff functions for the players: \(u_i:S_{1}\times S_2\dots\times S_n\to \mathbb{R}\)</li>
 </ol>
 <hr />
+<p>The convention used in this course (unless otherwise stated) is that all players aim to choose from their strategies in such a way as to maximise their utilities.</p>
 <p>A natural way of representing a two player normal form game is using a <strong>bi-matrix</strong>. If we assume that \(S_1=\{r_i\;|\;1\leq i\leq m \}\) and \(S_2=\{s_j\;|\;1\leq j\leq n \}\) then the following is a <strong>bi-matrix</strong> representation of the game considered:</p>
 <div class="figure">
 <img src="images/L02-img01.png" alt="A bi matrix" /><p class="caption">A bi matrix</p>
@@ -49,7 +50,7 @@
 \]</p>
 <h4 id="prisoners-dilemma">Prisoners' Dilemma</h4>
 <blockquote>
-<p>Suppose ...</p>
+<p>Assume two thieves have been caught by the police and separated for questioning. If both thieves cooperate and don't divulge any information they will each get a short sentence. If one defects he/she is offered a deal while the other thief will get a long sentence. If they both defect they both get a medium sentence.</p>
 </blockquote>
 <p>\[
 \begin{pmatrix}
@@ -97,5 +98,30 @@
 (6,-1)&amp;(0,0)
 \end{pmatrix}
 \]</p>
+<h2 id="mixed-strategies">Mixed Strategies</h2>
+<p>So far we have only considered so called <strong>pure strategies</strong>. We will now allow players to play <strong>mixed strategies</strong>.</p>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>In an \(n\) player normal form game a <strong>mixed strategy</strong> for player \(i\) denoted by \(\sigma_i\in[0,1]^{|S_i|}_{\mathbb{R}}\) is a probability distribution over the pure strategies of player \(i\).</p>
+<hr />
+<p>For example in the matching pennies game discussed previously. A strategy profile of \(\sigma_1=(.2,.8)\) and \(\sigma_2=(.6,.4)\) implies that player 1 plays heads with probability .2 and player 2 plays heads with probability .6.</p>
+<p>We can extend the utility function which maps from the set of pure strategies to \(\mathbb{R}\) using <em>expected payoffs</em>. For a two player game we have:</p>
+<p>\[u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,s)\]</p>
+<p>(where we relax our notation to allow \(\sigma_i:S_i\to[0,1]_{\mathbb{R}}\))</p>
+<h2 id="matching-pennies-revisited.">Matching pennies revisited.</h2>
+<p>In the previously discussed strategy profile of \(\sigma_1=(.2,.8)\) and \(\sigma_2=(.6,.4)\) the expected utilities can be calculated as follows:</p>
+<p>\[u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)=.2\times.6\times 1+.2\times.4\times (-1)+.8\times .6\times (-1) + .8\times .4\times 1=-.12\] \[u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=.2\times.6\times (-1)+.2\times.4\times 1+.8\times .6\times 1 + .8\times .4\times (-1)=.12\]</p>
+<h3 id="example">Example</h3>
+<hr />
+<p>If we assume that player 2 always plays tails, what is the expected utility to player 1?</p>
+<p>Let \(\sigma_1=(x,1-x)\) and we have \(\sigma_2=(0,1)\) which gives:</p>
+<p>\[u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)=-x+(1-x)=1-2x\]</p>
+<p>Similarly if player 1 always plays tails the expected utility to player 2 is:</p>
+<p>\[u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=x+(x-1)=2x-1\]</p>
+<p>A plot of this is shown here:</p>
+<div class="figure">
+<img src="./plots/L02-plot01.png" /><p class="caption"></p>
+</div>
+<p>Add to this plot by assuming that the players independently both play heads.</p>
 </body>
 </html>
