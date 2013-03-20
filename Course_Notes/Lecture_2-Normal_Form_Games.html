@@ -1,0 +1,73 @@
+<h1 id="or-3-lecture-2">OR 3: Lecture 2</h1>
+<h2 id="normal-form-games">Normal Form Games</h2>
+<h3 id="what-is-game-theory">What is game theory?</h3>
+<ul>
+<li>Paragraph about general ideas.</li>
+<li>2/3rds of average game.</li>
+</ul>
+<p>Game theory can be described briefly as the study of interactive decision making.</p>
+<h4 id="coffee-house-example">Coffee house example</h4>
+<p>Let us consider the very simple situation where <strong>you</strong> decide where to meet your <strong>friends</strong>. You have some information about their behaviour:</p>
+<ul>
+<li>20% of the time they go to coffee house A;</li>
+<li>80% of the time they go to coffee house B.</li>
+</ul>
+<p>If you wanted to maximise your chance of meeting your friends: what should you do?</p>
+<div class="figure">
+<img src="images/L01-img01.png" alt="A simple decision tree" /><p class="caption">A simple decision tree</p>
+</div>
+<p>The above tree shows that if <strong>you</strong> were to choose your location first it would be in your interest of choosing coffee house B. This gives you an 80% chance of being in the same location as your <strong>friends</strong>.</p>
+<p>In general these sorts of decisions are not at the mercy of chance. <strong>You</strong> would probably choose to go to coffee house A or B and simply let your friends know where you are so that they could make an informed decision. This consecutive making of decisions is a type of game.</p>
+<div class="figure">
+<img src="images/L01-img02.png" alt="A simple decision tree" /><p class="caption">A simple decision tree</p>
+</div>
+<p>In this game the outcome (whether or not your friends and you have a coffee together) depends on the actions of all the players.</p>
+<h4 id="rds-of-the-average-game">2/3rds of the average game</h4>
+<p>Let us consider another type of game:</p>
+<ol style="list-style-type: decimal">
+<li><p>Every player must write a whole number between 0 and 100 on the provided sheet.</p></li>
+<li><p>The winner of the game will be the player whose number is closest to 2/3rd of the average of all the numbers written by all the players.</p></li>
+</ol>
+<h3 id="extensive-form-games">Extensive Form Games</h3>
+<h4 id="description">Description</h4>
+<p>We will now return to the tree diagrams drawn previously. In game theory trees are used to represent a type of game called: <strong>extensive form games</strong>.</p>
+<p><strong>Definition</strong></p>
+<p>An <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=n" alt="n" title="n" /> player extensive form game <strong>of complete information</strong> consists of:</p>
+<ol style="list-style-type: decimal">
+<li>A finite set of <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=n" alt="n" title="n" /> players;</li>
+<li>A rooted tree (which we refer to as the <em>game tree</em>);</li>
+<li>Each leaf of the tree has an <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=n" alt="n" title="n" />-tuple of payoffs;</li>
+</ol>
+<p><strong>Example</strong></p>
+<p>Let's consider the following game.</p>
+<blockquote>
+<p>Two friends must decide what movie to watch at the cinema. Bob would like to watch a comedy and Celine would like to watch a sports movie. Importantly they would both rather spend their evening together then apart.</p>
+</blockquote>
+<p>Represents the game as well as the utilities of Bob and Celine.</p>
+<div class="figure">
+<img src="images/L01-img03.png" alt="Bob and Celine" /><p class="caption">Bob and Celine</p>
+</div>
+<p>If we assume that this is the order with which decisions take place it should be relatively straightforward to predict what will happen:</p>
+<ol style="list-style-type: decimal">
+<li>Bob sees that no matter what he picks Celine will pick the same type of movie;</li>
+<li>Bob can thus pick a comedy to ensure that he gets a slightly higher utility.</li>
+</ol>
+<p>(This is actually using a process called <strong>backward induction</strong> but we'll see that properly a bit later.)</p>
+<p>Of course we can simply represent this game in a different way (remember that in the above description we did not mention who would be making the initial decision.</p>
+<div class="figure">
+<img src="images/L01-img04.png" alt="Celine and Bob" /><p class="caption">Celine and Bob</p>
+</div>
+<p>In this case is should again be relatively straightforward to predict what will happen:</p>
+<ol style="list-style-type: decimal">
+<li>Celine sees that no matter what he picks Bob will pick the same type of movie;</li>
+<li>Celine can thus pick a comedy to ensure that he gets a slightly higher utility.</li>
+</ol>
+<p>The main assumption we are making here is concerned with the amount of information available to both players at different points of the game. In both cases we have here assumed that the information available at nodes <strong>b</strong> and <strong>c</strong> is different. This is not always the case.</p>
+<h4 id="information-sets">Information sets</h4>
+<p><strong>Definition</strong></p>
+<p>Two nodes of a game tree are said to be part of the same information set if the player at that node cannot differentiate between them.</p>
+<p>We represent nodes being part of the same information set using dashed line. In our example with Celine and Bob if both players must decide on a movie without knowing what the other will do we see that node <strong>b</strong> and <strong>c</strong> now have the same information set.</p>
+<div class="figure">
+<img src="images/L01-img05.png" alt="Celine and Bob with Information Set" /><p class="caption">Celine and Bob with Information Set</p>
+</div>
+<p>It is now a lot more difficult to try and predict the outcome of this situation.</p>

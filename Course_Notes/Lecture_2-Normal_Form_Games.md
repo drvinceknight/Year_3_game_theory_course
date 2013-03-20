@@ -1,7 +1,12 @@
-# OR 3: Lecture 1
-## Introduction
+# OR 3: Lecture 2
+## Normal Form Games
 
 ### What is game theory?
+
+- Paragraph about general ideas.
+- 2/3rds of average game.
+
+Game theory can be described briefly as the study of interactive decision making.
 
 #### Coffee house example
 Let us consider the very simple situation where **you** decide where to meet your **friends**. You have some information about their behaviour:
