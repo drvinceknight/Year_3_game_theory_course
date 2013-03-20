@@ -30,12 +30,81 @@ A $n$ player **normal form game** consists of:
 
 ---
 
-A natrual way of representing a two player normal form game is using a **bi-matrix**:
+The convention used in this course (unless otherwise stated) is that all players aim to choose from their strategies in such a way as to maximise their utilities.
 
-$$\begin{pmatrix}
-(u_1(s_1,r_1),u_2(s_1,r_1))&(u_1(s_1,r_2),u_2(s_1,r_2))&\dots&(u_1(s_1,r_2),u_2(s_1,r_n))\\
-(u_1(s_2,r_1),u_2(s_2,r_1))&(u_1(s_2,r_2),u_2(s_2,r_2))&\dots&(u_1(s_2,r_2),u_2(s_2,r_n))\\
-\vdots&\dots&\dots&\vdots\\
-(u_1(s_m,r_1),u_2(s_m,r_1))&(u_1(s_m,r_2),u_2(s_m,r_2))&\dots&(u_1(s_m,r_2),u_2(s_m,r_n))\\
-\end{pmatrix}$$
+A natural way of representing a two player normal form game is using a **bi-matrix**. If we assume that $S_1=\{r_i\;|\;1\leq i\leq m \}$ and $S_2=\{s_j\;|\;1\leq j\leq n \}$ then the following is a **bi-matrix** representation of the game considered:
 
+![A bi matrix](images/L02-img01.png)
+
+### Some examples
+
+#### The battle of the sexes
+
+>This is the game we've been looking at between Bob and Celine:
+
+$$
+\begin{pmatrix}
+(3,2)&(0,0)\\
+(1,1)&(2,3)
+\end{pmatrix}
+$$
+
+#### Prisoners' Dilemma
+
+>Suppose ...
+
+$$
+\begin{pmatrix}
+(2,2)&(0,3)\\
+(3,0)&(1,1)
+\end{pmatrix}
+$$
+
+#### Hawk-Dove/Chicken
+
+> Suppose...
+
+$$
+\begin{pmatrix}
+(0,0)&(3,1)\\
+(1,3)&(2,2)
+\end{pmatrix}
+$$
+
+#### Coordination
+
+> Suppose...
+
+$$
+\begin{pmatrix}
+(1,1)&(0,0)\\
+(0,0)&(1,1)
+\end{pmatrix}
+$$
+
+#### Pareto Coordination
+
+> Suppose...
+
+$$
+\begin{pmatrix}
+(2,2)&(0,0)\\
+(0,0)&(1,1)
+\end{pmatrix}
+$$
+
+#### Pigs
+
+> Suppose...
+
+$$
+\begin{pmatrix}
+(4,2)&(2,3)\\
+(6,-1)&(0,0)
+\end{pmatrix}
+$$
+
+## Strategies
+
+Discuss pure strategies
+Discuss mixed strategies
