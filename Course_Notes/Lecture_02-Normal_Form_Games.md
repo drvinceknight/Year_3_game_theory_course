@@ -94,6 +94,8 @@ So far we have only considered so called **pure strategies**. We will now allow 
 
 In an $n$ player normal form game a **mixed strategy** for player $i$ denoted by $\sigma_i\in[0,1]^{|S_i|}_{\mathbb{R}}$ is a probability distribution over the pure strategies of player $i$.
 
+For a given player $i$ we denote the set of mixed strategies as $\Delta S_i$.
+
 ---
 
 For example in the matching pennies game discussed previously. A strategy profile of $\sigma_1=(.2,.8)$ and $\sigma_2=(.6,.4)$ implies that player 1 plays heads with probability .2 and player 2 plays heads with probability .6.

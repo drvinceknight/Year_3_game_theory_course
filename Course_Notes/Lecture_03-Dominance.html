@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="or-3-lecture-2---normal-form-games">OR 3: Lecture 2 - Normal Form Games</h1>
+<h2 id="recap">Recap</h2>
+<p>In the <a href="Lecture_2-Normal_Form_Games.html">previous lecture</a> we discussed:</p>
+<ul>
+<li>Normal form games;</li>
+<li>Mixed strategies and expected utilities.</li>
+</ul>
+<p>We spent some time talking about predicting rational behaviour in the above games but we will now look a particular tool in a formal way.</p>
+<h2 id="dominant-strategies">Dominant strategies</h2>
+<p>In certain games it is evident that certain strategies should never be used by a rational player. To formalise this we need a couple of definitions.</p>
+<h3 id="definition">Definition</h3>
+<hr />
+<p>In an \(n\) player normal form game when considering player \(i\) we denotes by \(s_{-i}\) a fixed strategy profile for all other players in the game.</p>
+<hr />
+<p>For example in a 3 player game where \(S_i=\{A,B\}\) for all \(i\) a valid strategy profile is \(s=(A,A,B)\) while \(s_{-2}=(A,B)\) denotes the incomplete strategy profile where player 1 and 3 are playing A and B (respectively).</p>
+<p>This notation now allows us to define an important notion in game theory.</p>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>In an \(n\) player normal form game. A pure strategy \(s_i\in S_i\) is said to be <strong>strictly dominated</strong> if there is a strategy (pure or mixed) \(\sigma_i\in \Delta S_i\) such that \(u_i(\sigma_i,s_{-i})&gt;u_{i}(s_i,s_{-i})\) for all \(s_{-i}\in S_{-i}\) of the other players.</p>
+<hr />
+<p>When attempting to predict rational behaviour we can elimate dominated strategies.</p>
+<p>\[\begin{pmatrix}
+(0,1)&amp;(3,5)\\
+(5,10)&amp;(-1,34)
+\end{pmatrix}\]</p>
+<p>If we let \(S_1=\{r_1, r_2\}\) and \(S_2=\{s_1, s_2\}\) we see that:</p>
+<p>\[u_2(s_2,r_1)&gt;u_2(s_1,r_1)\] and \[u_2(s_2,r_2)&gt;u_2(s_1,r_2)\]</p>
+<p>so \(s_1\) is a strictly dominated strategy for player 2. As such we can elimante it from the game when attempting to predict rational behaviour. This gives the following game:</p>
+<p>\[\begin{pmatrix}
+(3,5)\\
+(-1,34)
+\end{pmatrix}\]</p>
+<p>At this point it is straightforward to see that \(r_2\) is a strictly dominated strategy for player 1 giving the following predicted strategy profile: \(s=(r_1,s_2)\).</p>
+<h3 id="definition-2">Definition</h3>
+<hr />
+<p>In an \(n\) player normal form game. A pure strategy \(s_i\in S_i\) is said to be <strong>weakly dominated</strong> if there is a strategy (pure or mixed) \(\sigma_i\in \Delta S_i\) such that \(u_i(\sigma_i,s_{-i})\leq u_{i}(s_i,s_{-i})\) for all \(s_{-i}\in S_{-i}\) of the other players and there exists a strategy profile \(\bar s\in S_{-i}\) such that \(u_i(\sigma_i,\bar s)&lt; u_{i}(s_i,s_{-i})\) .</p>
+<hr />
+<p>We can once again predict rational behaviour by eliminating weakly dominated strategies.</p>
+<p>As an example consider the following two player game:</p>
+<p>\[\begin{pmatrix}
+(3,3)&amp;(2,2)\\
+(2,1)&amp;(2,1)
+\end{pmatrix}\]</p>
+<p>Using the same convention as before for player 2, \(s_1\) weakly dominates \(s_2\) and for player 1, \(r_1\) weakly dominates \(r_2\) giving the following predicted strategy profile \((r_1,s_1)\).</p>
+<h2 id="common-knowledge-of-rationality">Common knowledge of rationality</h2>
+<p>An important aspect of game theory and the tool that we have in fact been using so far is to assume that players are rational. However we can (and need) to go further:</p>
+<ul>
+<li>The players are rational;</li>
+<li>The players all know that the other players are rational;</li>
+<li>The players all know that the other players know that they are rationals;</li>
+<li>...</li>
+</ul>
+<p>This chain of assumptions is called <strong>Common knowledge of rationality</strong> (CKR). By applying the CKR assumption we can attempt to predict rational behaviour through the iterated elimination of dominated strategies (as we have been doing above).</p>
+<h3 id="example">Example</h3>
+<p>Les us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:</p>
+<p>\[\begin{pmatrix}
+(1,0)&amp;(1,2)&amp;(0,1)\\
+(0,3)&amp;(0,1)&amp;(2,0)
+\end{pmatrix}\]</p>
+<p><strong>Initially</strong> player 1 has no dominated strategies. For player 2, \(s_3\) is dominated by \(s_2\). Now \(r_2\) is dominated by \(r_1\) for player 1. Finally, \(s_1\) is dominated by \(s_2\). Thus \((r_1,s_2)\) is a predicted rational outcome.</p>
+<h3 id="example-1">Example</h3>
+<p>Les us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:</p>
+<p>\[\begin{pmatrix}
+(10,1)&amp;(5,1)&amp;(4,-2)\\
+(10,1)&amp;(5,0)&amp;(1,1)
+\end{pmatrix}\]</p>
+<ul>
+<li>\(r_1\) weakly dominated by \(r_2\)</li>
+<li>\(s_1\) strictly dominated by \(s_3\)</li>
+<li>\(s_1\) weakly dominated by \(s_2\)</li>
+</ul>
+<p>Thus \((r_1,s_1)\) is a predicted rational outcome.</p>
+<h2 id="not-all-games-can-be-solved-using-dominance">Not all games can be solved using dominance</h2>
+<p>Consider the following two games:</p>
+<p>\[\begin{pmatrix}
+(3,2)&amp;(0,0)\\
+(1,1)&amp;(2,3)
+\end{pmatrix}\]</p>
+<p>\[\begin{pmatrix}
+(1,3)&amp;(4,2)&amp;(2,2)\\
+(4,0)&amp;(0,3)&amp;(4,1)\\
+(2,5)&amp;(3,4)&amp;(5,6)
+\end{pmatrix}
+\]</p>
+<p>Why can't we predict rational behaviour using dominance?</p>
+</body>
+</html>
