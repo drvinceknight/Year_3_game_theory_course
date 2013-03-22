@@ -45,6 +45,52 @@
 \end{pmatrix}
 \]</p>
 <p>We see that we have 2 equilibria in pure strategies: \((r_1,s_3)\) and \((r_4,s_1)\)</p>
-<h2 id="duopoly-games">Duopoly games</h2>
+<h2 id="duopoly-game">Duopoly game</h2>
+<p>We will now consider a particular normal form game attributed to Augustin Cournot.</p>
+<hr />
+<blockquote>
+<p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: \(q_1,q_2\geq 0\). All of the good is sold but the price depends on the number of goods:</p>
+</blockquote>
+<blockquote>
+<p>\[p=K-q_1-q_2\]</p>
+</blockquote>
+<blockquote>
+<p>We also assume that the firms both pay a production cost of \(k\) per bricks.</p>
+</blockquote>
+<p>What is the Nash equilibria for this game?</p>
+<hr />
+<p>Firstly let us clarify that this is indeed a normal form game:</p>
+<ol style="list-style-type: decimal">
+<li>2 players;</li>
+<li>The strategy space is \(S_1=S_2=\mathbb{R}_{\geq 0}\)</li>
+<li>The utilities are given by:</li>
+</ol>
+<p>\[u_1(q_1,q_2)=(K-q_1-q_2)q_1-kq_1\] \[u_2(q_1,q_2)=(K-q_1-q_2)q_2-kq_2\]</p>
+<p>Let us now compute the best responses for each firm (we'll in fact only need to do this for one firm given the symmetry of the problem.</p>
+<p>\[\frac{du_1}{dq_1}=K-2q_1-q_2-k\]</p>
+<p>Setting this to 0 gives the best response \(q_1^*=q_1^*(q_2)\) for firm 1:</p>
+<p>\[q_1^*(q_2)=\frac{K-k-q_2}{2}\]</p>
+<p>By symmetry we have:</p>
+<p>\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</p>
+<p>Recalling the definition of a Nash equilibria we are attempting to find \((\tilde q_1, \tilde q_2)\) a pair of best responses. Thus \(\tilde q_1\) satisfies:</p>
+<p>\[
+\begin{cases}
+\tilde q_1=q_1^*(\tilde q_2)\\
+\tilde q_2=q_1^*(\tilde q_1)
+\end{cases}
+\]</p>
+<p>\[\Leftrightarrow\]</p>
+<p>\[
+\begin{cases}
+\tilde q_1=\frac{K-k-q_2}{2}\\
+\tilde q_2=\frac{K-k-q_1}{2}
+\end{cases}
+\]</p>
+<p>\[\Rightarrow\]</p>
+<p>\[\begin{cases}
+\tilde q_1=\frac{K-k}{3}\\
+\tilde q_2=\frac{K-k}{3}\\
+\end{cases}
+\]</p>
 </body>
 </html>
