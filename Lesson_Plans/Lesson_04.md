@@ -28,12 +28,12 @@ At the end of this lecture students will be to:
 
 - 20:30 mins
 
-    - VK: Connection between best responses and dominance.
+    - VK: Discuss dynamics of pairs of best responses.
     - Students: Listen
 
 - 30:45 mins
 
-    - VK: Discuss dynamics of pairs of best responses.
+    - VK: Connection between best responses and dominance.
     - Students: Listen
 
 - 45:50 mins
