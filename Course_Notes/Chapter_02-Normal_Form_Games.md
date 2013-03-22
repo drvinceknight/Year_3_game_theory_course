@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous lecture](Lecture_1-Introduction.html) we discussed:
+In the [previous lecture](Chapter_01-Introduction.html) we discussed:
 
 - Interactive decision making;
 - Normal form games;

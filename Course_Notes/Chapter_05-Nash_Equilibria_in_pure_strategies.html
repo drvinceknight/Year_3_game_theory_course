@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="or-3-lecture-5---nash-equilibria-in-pure-strategies">OR 3: Lecture 5 - Nash equilibria in pure strategies</h1>
+<h2 id="recap">Recap</h2>
+<p>In the <a href="Lecture_04-Best_RLecture_04-Best_RLecture_04-Best_RLecture_04-Best_Responses.html">previous lecture</a> we discussed:</p>
+<ul>
+<li>The definition of best responses;</li>
+<li>The connection between dominance and best responses;</li>
+<li>Best responses against mixed strategies.</li>
+</ul>
+<p>So far we have been using various tools to loosely discuss 'predicting rational behaviour'. We will now formalise what we mean.</p>
+<h2 id="nash-equilibria">Nash equilibria</h2>
+<hr />
+<p>In an \(n\) player normal form game. A Nash equilibrium in <strong>pure strategies</strong> is a strategy profile \(\tilde s\) such that:</p>
+<p>\[u_i(\tilde s)\geq u_i(\bar s_i,\tilde s_{-i})\text{ for all }i\]</p>
+<hr />
+<p>This implies that all strategies in the strategy profile \(s\) are best responses to all the other strategies.</p>
+<p>An important interpretation of this definition is that at the Nash equilibria no player has an incentive to deviate from their current strategy.</p>
+<p>To find Nash equilibria in 2 player normal form games we can simply check every strategy pair and see whether or not a player has an incentive to deviate.</p>
+<h2 id="example">Example</h2>
+<p>Identify Nash equilibria in pure strategies for the following game:</p>
+<p>\[
+\begin{pmatrix}
+(0,3)&amp;(1,2)&amp;(7,8)&amp;(1,4)\\
+(2,6)&amp;(1,2)&amp;(3,0)&amp;(1,3)\\
+(3,1)&amp;(1,2)&amp;(3,-1)&amp;(5,1)\\
+(6,3)&amp;(4,2)&amp;(2,1)&amp;(7,1)
+\end{pmatrix}
+\]</p>
+<p>If we identify all best responses:</p>
+<p>\[
+\begin{pmatrix}
+(0,3)&amp;(1,2)&amp;(\underline{7},\underline{8})&amp;(1,4)\\
+(2,\underline{6})&amp;(1,2)&amp;(3,0)&amp;(1,3)\\
+(3,1)&amp;(1,\underline{2})&amp;(3,-1)&amp;(5,1)\\
+(\underline{6},\underline{3})&amp;(\underline{4},2)&amp;(2,1)&amp;(\underline{7},1)
+\end{pmatrix}
+\]</p>
+<p>We see that we have 2 equilibria in pure strategies: \((r_1,s_3)\) and \((r_4,s_1)\)</p>
+<h2 id="duopoly-games">Duopoly games</h2>
+</body>
+</html>

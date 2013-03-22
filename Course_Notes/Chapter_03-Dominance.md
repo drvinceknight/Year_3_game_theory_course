@@ -1,8 +1,8 @@
-# OR 3: Lecture 2 - Normal Form Games
+# OR 3: Chapter 2 - Normal Form Games
 
 ## Recap
 
-In the [previous lecture](Lecture_2-Normal_Form_Games.html) we discussed:
+In the [previous lecture](Chapter_03-Normal_Form_Games.html) we discussed:
 
 - Normal form games;
 - Mixed strategies and expected utilities.

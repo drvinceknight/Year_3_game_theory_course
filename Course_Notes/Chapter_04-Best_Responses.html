@@ -8,9 +8,9 @@
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<h1 id="or-3-lecture-2---normal-form-games">OR 3: Lecture 2 - Normal Form Games</h1>
+<h1 id="or-3-chapter-4---normal-form-games">OR 3: Chapter 4 - Normal Form Games</h1>
 <h2 id="recap">Recap</h2>
-<p>In the <a href="Lecture_3-Dominance.html">previous lecture</a> we discussed:</p>
+<p>In the <a href="Chapter_04-Dominance.html">previous lecture</a> we discussed:</p>
 <ul>
 <li>Predicting rational behaviour using dominated strategies;</li>
 <li>The CKR;</li>
@@ -36,7 +36,6 @@
 \end{pmatrix}
 \]</p>
 <p>We see that \((r_1,s_1)\) represented a pair of best responses. What can we say about the long term behaviour of this game?</p>
-<h2 id="connection-between-best-responses-and-dominance">Connection between best responses and dominance</h2>
 <h2 id="best-responses-against-mixed-strategies">Best responses against mixed strategies</h2>
 <p>We can identify best responses against mixed strategies. Let us take a look at the matching pennies game:</p>
 <p>\[\begin{pmatrix}
@@ -72,5 +71,50 @@
 <li>If \(x&gt;1/2\) then \(r_1\) is a best response for player 1.</li>
 <li>If \(x=1/2\) then player 1 is indifferent.</li>
 </ol>
+<h2 id="connection-between-best-responses-and-dominance">Connection between best responses and dominance</h2>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>In an \(n\) player normal form game, let us define the set \(UD_i\):</p>
+<p>\[UD_i=\{s\in S_i\;|\; \text{s is not strictly dominated}\}\]</p>
+<hr />
+<p>If we consider the following game:</p>
+<p>\[\begin{pmatrix}
+(3,2)&amp;(7,2)&amp;(5,1)\\
+(5,1)&amp;(6,3)&amp;(7,-1)
+\end{pmatrix}\]</p>
+<p>We have:</p>
+<p>\[UD_1=\{r_1,r_2\}\] \[UD_2=\{s_1,s_2\}\]</p>
+<h3 id="definition-2">Definition</h3>
+<hr />
+<p>In an \(n\) player normal form game, let us define the set \(B_i\):</p>
+<p>\[B_i=\{s\in S_i\;|\; \exists\;\sigma\in\Delta S_{-i}\text{ such that }s \text{ is a best response to }\sigma\}\]</p>
+<hr />
+<p>In other words \(B_i\) is the set of functions that are best responses to some strategy profile in \(S_{-i}\).</p>
+<p>Let us try to identify \(B_2\) for the above game. Let us assume that player 1 plays \(\sigma_1=(x,1-x)\). This gives:</p>
+<p>\[u_2(\sigma,s_1)=1+3x\] \[u_2(\sigma,s_2)=3-x\] \[u_2(\sigma,s_3)=2x-1\]</p>
+<div class="figure">
+<img src="plots/L04-plot03.png" /><p class="caption"></p>
+</div>
+<p>We see that \(s_3\) is never a best response for player 2:</p>
+<p>\[B_2=\{s_1,s_2\}\]</p>
+<p>We will now attempt to identify \(B_1\) for the above game. Let us assume that player two plays \(\sigma_2=(x,y,1-x-y)\). This gives:</p>
+<p>\[u_1(r_1,\sigma_2)=xu_1(r_1,s_1)+yu_2(r_1,s_2)+(1-x-y)u_3(r_1,s_3)\] \[u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_2(r_2,s_2)+(1-x-y)u_3(r_2,s_3)\]</p>
+<p>However as noted earlier \(s_3\) is dominated by \(s_2\) so:</p>
+<p>\[u_1(r_1,\sigma_2)&lt; xu_1(r_1,s_1)+u_2(r_1,s_2)(1-x)=7-4x\] \[u_1(r_2,\sigma_2)&lt; xu_1(r_2,s_1)+u_2(r_2,s_2)(1-x)=6-x\]</p>
+<div class="figure">
+<img src="plots/L04-plot04.png" /><p class="caption"></p>
+</div>
+<p>We see that \(r_1\) and \(r_2\) are best responses for player 1:</p>
+<p>\[B_1=\{r_1,r_2\}\]</p>
+<p>We have seen in our little example that \(B_i=UD_i\). This leads us to two Theorems (the proofs are omitted).</p>
+<h3 id="theorem">Theorem</h3>
+<hr />
+<p>In a 2 player normal form game \(B_i=UD_i\) for all \(i\in\{1,2\}\).</p>
+<hr />
+<p>This is however not always the case:</p>
+<h3 id="section"></h3>
+<hr />
+<p>In an \(n\) player normal form game \(B_i\subseteq ID_i\) for all \(1 \leq i\leq n\).</p>
+<hr />
 </body>
 </html>

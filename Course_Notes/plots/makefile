@@ -5,3 +5,7 @@ all: $(pngs)
 
 %.png: %.sage
 	sage $<
+
+
+clean:
+	rm *.py

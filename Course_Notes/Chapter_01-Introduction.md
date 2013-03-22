@@ -1,4 +1,4 @@
-# OR 3: Lecture 1
+# OR 3: Chapter 1
 ## Introduction
 
 ### What is game theory?
