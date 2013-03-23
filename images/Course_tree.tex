@@ -1,0 +1,33 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\begin{document}
+\tikzstyle{root} = [text width=3cm, draw, text centered, rectangle, inner sep=1pt]
+\tikzstyle{nfg} = [text width=3cm, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{efg} = [text width=3cm, draw, text centered, rectangle, fill=red!20, inner sep=1pt]
+\tikzstyle{rg} = [text width=3cm, draw, text centered, rectangle, fill=green!20, inner sep=1pt]
+\tikzstyle{eg} = [text width=3cm, draw, text centered, rectangle, fill=yellow!20, inner sep=1pt]
+\tikzstyle{rg} = [text width=3cm, draw, text centered, rectangle, fill=orange!20, inner sep=1pt]
+\begin{tikzpicture}[grow=down, sloped,every node/.style={circle,draw},level 1/.style={sibling distance=14cm},level 2/.style={sibling distance=6cm}, level 3/.style={sibling distance = 4cm}]
+    \node[root]{Chapter 1 - Introduction}
+        child {node[nfg]{Chapter 2 - Normal Form Games}
+            child{node[nfg]{Chapter 3 - Dominance}}
+                child{node[nfg]{Chapter 4 - Best Responses}
+                    child{node[nfg]{Chapter 5 - Nash equilibria in pure strategies}}
+                    child{node[nfg]{Chapter 6 - Nash equilibria in mixed strategies}}
+                }
+                child {node[rg]{chapter 9 - finitely repeated games}
+                child{node[rg]{chapter 10 - infinitely repeated games}}
+        }
+                child {node[eg]{chapter 11 - Evolutionary games 1}
+                child{node[eg]{chapter 12 - Evolutionary games 2}}
+    }
+                child {node[rg]{chapter 13 - Random games and incomplete information}
+                child{node[rg]{chapter 14 - Bayesian games}}
+    }
+}
+        child {node[efg]{Chapter 7 - Extensive form games and backward induction}
+            child{node[efg]{Chapter 8 - Subgame perfection}}
+            }
+    ;
+\end{tikzpicture}
+\end{document}
