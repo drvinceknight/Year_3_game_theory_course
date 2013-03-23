@@ -112,3 +112,31 @@ $$u_{i}(\sigma_i,s_{-i})< u_{i}(\bar s,s_{-i})$$
 which implies that $(\sigma_i,s_{-i})$ is not a Nash equilibrium.
 
 ---
+
+### Example
+
+Let's consider the matching pennies game yet again. To use the equality of payoffs theorem we identify the various supports we need to try out. As this is a $2\times 2$ game we can take $\sigma_1=(x,1-x)$ and $\sigma_2=(y,1-y)$ and assume that $(\sigma_1,\sigma_2)$ is a Nash equilibrium.
+
+from the theorem we have that $u_1(\sigma_1,\sigma_2)=u_1(r_1,\sigma_2)=u_1(r_2,\sigma_2)$
+
+$$
+\begin{aligned}
+u_1(r_1,\sigma_2)&=u_2(r_2,\sigma_2)\\
+y-(1-y)&=-y+(1-y)\\
+y&=1/2
+\end{aligned}
+$$
+
+Thus we have found player 2's Nash equilibrium strategy by finding the strategy that makes player 1 indifferent. Similarly for player 1:
+
+$$
+\begin{aligned}
+u_2(\sigma_1,s_1)&=u_2(\sigma_1,s_2)\\
+-x+(1-x)&=x-(1-x)\\
+x&=1/2
+\end{aligned}
+$$
+
+Thus the Nash equilibria is:
+
+$$((1/2,1/2),(1/2,1/2))$$
