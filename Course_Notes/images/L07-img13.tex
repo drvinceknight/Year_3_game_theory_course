@@ -1,0 +1,23 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\tikzstyle{corner} = [inner sep=0pt, outer sep=0pt, draw,circle]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{Leader}
+                child {node [corner] (A1) {}  }
+                child {node [corner] (A2) {} edge from parent node[above] {$q_1$}} ;
+        \draw [bend right] (A1) to (A2);
+        \node (B3) [player,right=3pt] at ($(A1)!0.5!(A2)$) {Follower}
+            child {node [corner] (A3) {}  }
+            child {node [corner] (A4) {} edge from parent node[above] {$q_2$}} ;
+        \draw [bend right] (A3) to (A4);
+        \node (e) [end,right=13pt] at ($(A3)!0.5!(A4)$) {} ;
+        \node [right] at (e) {$((K-q_1-q_2)q_1-kq_1,(K-q_1-q_2)q_2-kq_2)$};
+\end{tikzpicture}
+\end{document}

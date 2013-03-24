@@ -1,0 +1,26 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\tikzstyle{corner} = [inner sep=0pt, outer sep=0pt, draw,circle]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{a: Bob}
+        child  {node (C2)  [player] {b: Celine}
+                child {node [corner] (A1) {}  }
+                child {node [corner] (A2) {} edge from parent node[above] {$p$}} edge from parent node[below] {Comedy}}
+        child {node (1stC) (C1) [player] {c: Celine}
+                child {node [corner] (A3) {} }
+                child {node [corner] (A4) {} edge from parent node[above] {$p$}} edge from parent node[below] {Sports}};
+        \draw [bend right] (A1) to (A2);
+        \draw [bend right] (A3) to (A4);
+        \node (B3) [end,right=6.5pt] at ($(A1)!0.5!(A2)$) {};
+        \node (B2) [end,right=6.5pt] at ($(A3)!0.5!(A4)$) {};
+        \node [right] at (B3) {$p,2-p$};
+        \node [right] at (B2) {$p-1,3-p$};
+\end{tikzpicture}
+\end{document}

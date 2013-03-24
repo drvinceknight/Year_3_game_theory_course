@@ -1,4 +1,4 @@
-# OR 3: Lesson Plan Lecture 8
+# OR 3: Lesson Plan Lecture 7
 ## Extensive form games and backwards induction
 
 ### Aims of lecture

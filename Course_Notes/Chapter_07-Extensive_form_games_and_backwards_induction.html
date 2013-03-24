@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="or-3-lecture-7---extensive-form-games-and-backwards-induction">OR 3: Lecture 7 - Extensive form games and backwards induction</h1>
+<h2 id="recap">Recap</h2>
+<p>In the <a href="Chapter_06-Nash_Equilibria_in_mixed_strategies.html">previous chapter</a></p>
+<ul>
+<li>We completed our look at normal form games;</li>
+<li>Investigated using best responses to identify Nash equilibria in mixed strategies;</li>
+<li>Proved the Equality of Payoffs theorem which allows us to compute the Nash equilibria for a game.</li>
+</ul>
+<p>In this Chapter we start to look at extensive form games in more detail.</p>
+<h2 id="extensive-form-games">Extensive form games</h2>
+<p>If we recall Chapter 1 we have seen how to represent extensive form games as a tree:</p>
+<div class="figure">
+<img src="images/L01-img03.png" /><p class="caption"></p>
+</div>
+<p>We will not consider the rules that define an extensive form game game tree:</p>
+<ol style="list-style-type: decimal">
+<li>Every node is a successor of the (unique) initial node.</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img01.png" /><p class="caption"></p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Every node apart from the initial node has exactly one predecessor. The initial node has no predecessor.</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img02.png" /><p class="caption"></p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>All edges extending from the same node have different action labels.</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img03.png" /><p class="caption"></p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Each information set contains decision nodes for one player.</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img04.png" /><p class="caption"></p>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>All nodes in a given information set must have the same number of successors (with the same action labels on the corresponding edges).</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img05.png" /><p class="caption"></p>
+</div>
+<ol start="6" style="list-style-type: decimal">
+<li>We will only consider games with &quot;perfect recall&quot;, ie we assume that players remember their own past actions as well as other past events.</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img06.png" /><p class="caption"></p>
+</div>
+<ol start="7" style="list-style-type: decimal">
+<li>If a player's action is not a discrete set we can represent this as follows:</li>
+</ol>
+<div class="figure">
+<img src="images/L07-img07.png" /><p class="caption"></p>
+</div>
+<p>As an example consider the following game (sometimes referred to as &quot;ultimatum bargaining&quot;):</p>
+<blockquote>
+<p>Consider two individuals: a seller and a buyer. A seller can set a price \(p\) for a particular object that has value \(K\) to the buyer and no value to the seller. Once the sellers sets the price the buyer can choose whether or not to pay the price. If the buyer chooses to not pay the price then both players get a payoff of 0.</p>
+</blockquote>
+<p>We can represent this as follows:</p>
+<div class="figure">
+<img src="images/L07-img08.png" /><p class="caption"></p>
+</div>
+<p>How we can we analyse normal form games?</p>
+<h2 id="backwards-induction">Backwards induction</h2>
+<p>To analyse such games we assume that players not only attempt to optimize their overall utility but optimize their utility conditional on any information set.</p>
+<h3 id="definition">Definition</h3>
+<hr />
+<p><strong>Sequential rationality:</strong> An optimal strategy for a player should maximise that player's expected payoff, conditional on every information set at which that player has a decision.</p>
+<hr />
+<p>With this notion in mind we can now define an analysis technique for extensive form games:</p>
+<hr />
+<p><strong>Backward induction:</strong> This is the process of analysing a game from back to front. At each information set we remove strategies that are dominated.</p>
+<hr />
+<h3 id="example">Example</h3>
+<p>Let us consider the following game:</p>
+<div class="figure">
+<img src="images/L07-img09.png" /><p class="caption"></p>
+</div>
+<p>We see that at node \((d)\) that Z is a dominated strategy. So that the game reduces to:</p>
+<div class="figure">
+<img src="images/L07-img10.png" /><p class="caption"></p>
+</div>
+<p>Player 1s strategy profile is (Y). At node \((c)\) A is a dominated strategy so that the game reduces to:</p>
+<div class="figure">
+<img src="images/L07-img11.png" /><p class="caption"></p>
+</div>
+<p>Player 2s strategy profile is (B). At node \((b)\) C is a dominated strategy so that the game reduces to:</p>
+<div class="figure">
+<img src="images/L07-img12.png" /><p class="caption"></p>
+</div>
+<p>Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (W,Z).</p>
+<p><strong>This outcome is in fact a Nash equilibria!</strong> Recalling the original tree neither player has an incentive to move.</p>
+<h3 id="theorem">Theorem</h3>
+<hr />
+<p>Every finite game with perfect information has a Nash equilibrium in pure strategies. Backward induction identifies an equilibrium.</p>
+<hr />
+<h3 id="proof">Proof</h3>
+<hr />
+<p>Recalling the properties of <strong>sequential rationality</strong> we see that no player will have an incentive to deviate from the strategy profile found through backward induction. Secondly ever finite game with perfect information can be solved using backward inductions which gives the result.</p>
+<hr />
+<h2 id="stackelberg-game">Stackelberg game</h2>
+<p>Let us consider the Cournot duopoly game of Chapter 5. Recall:</p>
+<blockquote>
+<p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: \(q_1,q_2\geq 0\). All of the good is sold but the price depends on the number of goods:</p>
+</blockquote>
+<blockquote>
+<p>\[p=K-q_1-q_2\]</p>
+</blockquote>
+<blockquote>
+<p>We also assume that the firms both pay a production cost of \(k\) per bricks.</p>
+</blockquote>
+<p>However we will modify this to assume that there is a leader and a follower, ie <strong>the firms do not decide at the same time</strong>. This game is called a Stackelberg leader follower game.</p>
+<p>Let us represent this as a normal form game:</p>
+<div class="figure">
+<img src="images/L07-img13.png" /><p class="caption"></p>
+</div>
+<p>We use backward induction to identify the Nash equilibria. The dominant strategy for the follower is:</p>
+<p>\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</p>
+<p>The game thus reduces to:</p>
+<div class="figure">
+<img src="images/L07-img14.png" /><p class="caption"></p>
+</div>
+<p>The leader thus needs to maximise:</p>
+<p>\[u_1(q_1)=(K-q_1-\frac{K-k-q_1}{2})q_1-kq_1=(\frac{K-q_1+k}{2})q_1-kq_1\]</p>
+<p>Differentiating and equating to 0 gives:</p>
+<p>\[q_1^*=\frac{K-k}{2}\] which in turn gives: \[q_2^*=\frac{K-k}{4}\]</p>
+<p>The total amount of goods produced is \(\frac{3(K-k)}{4}\) whereas in the Cournot game the total amount of good produced was \(\frac{2(K-k)}{3}\). Thus more goods are produced in the Stackelberg game, as an exercise what is the difference in profits made by each firm?</p>
+</body>
+</html>

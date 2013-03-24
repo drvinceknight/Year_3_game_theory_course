@@ -1,0 +1,19 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\tikzstyle{corner} = [inner sep=0pt, outer sep=0pt, draw,circle]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{Leader}
+                child {node [corner] (A1) {}  }
+                child {node [corner] (A2) {} edge from parent node[above] {$q_1$}} ;
+        \draw [bend right] (A1) to (A2);
+        \node (e) [end,right=13pt] at ($(A1)!0.5!(A2)$) {} ;
+        \node [right] at (e) {$((K-q_1-\frac{K-k-q_1}{2})q_1-kq_1,(K-q_1-\frac{K-k-q_1}{2})\frac{K-k-q_1}{2}-kq_2)$};
+\end{tikzpicture}
+\end{document}
