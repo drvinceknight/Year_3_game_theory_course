@@ -33,7 +33,7 @@ At the end of this lecture students will be to:
 
 - 35:45 mins
 
-    - VK: Recap on static games
+    - VK: Recap on dynamic games
     - Students: Listen
 
 - 45:50 mins
