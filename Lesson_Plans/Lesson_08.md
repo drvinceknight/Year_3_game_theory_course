@@ -5,6 +5,7 @@
 
 At the end of this lecture students will be to:
 
+- Make connections between normal form games and extensive form games;
 - Define a subgame;
 - Define subgame perfect Nash equilibrium;
 
@@ -23,17 +24,17 @@ At the end of this lecture students will be to:
 
 - 5:20 mins
 
-    - VK: Define subgames
+    - VK: Lecture on connection between normal form games and extensive form games.
     - Students: Listen
 
 - 20:35 mins
 
-    - VK: Obtaining subgame perfect equilibria
+    - VK: Lecture on subgames
     - Students: Listen
 
 - 35:45 mins
 
-    - VK: Recap on dynamic games
+    - VK: Obtaining subgame perfect equilibria
     - Students: Listen
 
 - 45:50 mins

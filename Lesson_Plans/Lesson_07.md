@@ -6,7 +6,6 @@
 At the end of this lecture students will be to:
 
 - Describe properties of a game tree;
-- Make connections between normal form games and extensive form games;
 - Describe sequential rationality and backward induction;
 - Use the above to identify equilibrium.
 
