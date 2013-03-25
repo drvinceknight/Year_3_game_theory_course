@@ -64,5 +64,32 @@
 <hr />
 <p><strong>Note that this includes subgames that might not be reached during play!</strong></p>
 <p>Let's consider the following example:</p>
+<div class="figure">
+<img src="images/L08-img05.png" /><p class="caption"></p>
+</div>
+<p>Let us build the corresponding normal form game:</p>
+<p>\[S_1=\{AC,AD,BC,BD\}\] and \[S_2=\{X,Y\}\]</p>
+<p>using the above ordering we have:</p>
+<p>\[\begin{pmatrix}
+(-1,2)&amp;(0,-1)\\
+(2,3)&amp;(-1,1)\\
+(1,7)&amp;(1,7)\\
+(1,7)&amp;(1,7)
+\end{pmatrix}\]</p>
+<p>The Nash equilibria for the above game (easily found by inspecting best responses) are:</p>
+<p>\[\{(AD,X),(BC,Y),(BD,Y)\}\]</p>
+<p>If we take a look at the normal form game representation of the subgame initiated at node b with strategy sets:</p>
+<p>\[S_1=\{C,D\}\text{ and }S_2=\{X,Y\}\]</p>
+<p>we have:</p>
+<p>\[\begin{pmatrix}
+(-1,2)&amp;(0,-1)\\
+(2,3)&amp;(-1,1)
+\end{pmatrix}\]</p>
+<p>We see that the (unique) Nash equilibria for the above game is \[(D,X)\]. Thus the only subgame perfect equilibria of the <em>entire</em> game is \[\{AD,X\}\].</p>
+<p>Some comments:</p>
+<ul>
+<li>Hopefully it is clear that <em>subgame perfect Nash equilibrium</em> is a <em>refinement</em> of Nash equilibrium.</li>
+<li>In games with perfect information, the Nash equilibrium obtained through backwards induction is subgame perfect.</li>
+</ul>
 </body>
 </html>

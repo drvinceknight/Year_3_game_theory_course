@@ -80,3 +80,40 @@ A subgame perfect Nash equilibrium is a Nash equilibrium in which the strategy p
 Let's consider the following example:
 
 ![](images/L08-img05.png)
+
+Let us build the corresponding normal form game:
+
+$$S_1=\{AC,AD,BC,BD\}$$
+and
+$$S_2=\{X,Y\}$$
+
+using the above ordering we have:
+
+$$\begin{pmatrix}
+(-1,2)&(0,-1)\\
+(2,3)&(-1,1)\\
+(1,7)&(1,7)\\
+(1,7)&(1,7)
+\end{pmatrix}$$
+
+The Nash equilibria for the above game (easily found by inspecting best responses) are:
+
+$$\{(AD,X),(BC,Y),(BD,Y)\}$$
+
+If we take a look at the normal form game representation of the subgame initiated at node b with strategy sets:
+
+$$S_1=\{C,D\}\text{ and }S_2=\{X,Y\}$$
+
+we have:
+
+$$\begin{pmatrix}
+(-1,2)&(0,-1)\\
+(2,3)&(-1,1)
+\end{pmatrix}$$
+
+We see that the (unique) Nash equilibria for the above game is $$(D,X)$$. Thus the only subgame perfect equilibria of the *entire* game is $$\{AD,X\}$$.
+
+Some comments:
+
+- Hopefully it is clear that *subgame perfect Nash equilibrium* is a _refinement_ of Nash equilibrium. 
+- In games with perfect information, the Nash equilibrium obtained through backwards induction is subgame perfect.
