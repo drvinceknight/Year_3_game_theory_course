@@ -16,8 +16,30 @@
 <li>Investigated an analysis technique for extensive form games called backwards induction.</li>
 </ul>
 <p>In this Chapter we will take a look at another important aspect of extensive form games.</p>
+<h2 id="normal-form-games">Normal form games</h2>
+<p>It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player:</p>
+<div class="figure">
+<img src="images/L07-img09.png" /><p class="caption"></p>
+</div>
+<p>We have:</p>
+<p>\[S_1=\{\text{XY},\text{XZ},\text{WY},\text{WZ}\}\] and \[S_2=\{\text{DA},\text{DB},\text{CA},\text{CB}\}\]</p>
+<p>the corresponding normal form game is given as:</p>
+<p>\[\begin{pmatrix}
+(2,0)&amp;(2,0)&amp;(4,2)&amp;(4,2)\\
+(2,0)&amp;(2,0)&amp;(3,1)&amp;(3,1)\\
+(4,1)&amp;(3,5)&amp;(4,1)&amp;(3,5)\\
+(4,1)&amp;(3,5)&amp;(4,1)&amp;(3,5)
+\end{pmatrix}\]</p>
+<p><strong>Note!</strong> There is always a unique normal form representation of an extensive form game (ignoring ordering of strategies) however the opposite is not true. The following game:</p>
+<p>\[\begin{pmatrix}
+(3,8)&amp;(2,1)\\
+(5,2)&amp;(5,2)
+\end{pmatrix}\]</p>
+<p>has the following two extensive form game representations:</p>
+<div class="figure">
+<img src="images/L08-img04.png" /><p class="caption"></p>
+</div>
 <h2 id="subgames">Subgames</h2>
-<p>We need the following definition:</p>
 <h3 id="definition">Definition</h3>
 <hr />
 <p>In an extensive form game, a node \(x\) is said to <strong>initiate a subgame</strong> if and only if \(x\) and all successors of \(x\) are in information sets containing only successors of \(x\).</p>
@@ -34,6 +56,13 @@
 <div class="figure">
 <img src="images/L08-img03.png" /><p class="caption"></p>
 </div>
-<h2 id="subgame-pergect-equilibria">Subgame pergect equilibria</h2>
+<h2 id="subgame-perfect-equilibria">Subgame perfect equilibria</h2>
+<p>We have identified how to obtain Nash equilibria in extensive form games. We now give a refinement of this:</p>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>A subgame perfect Nash equilibrium is a Nash equilibrium in which the strategy profiles specify Nash equilibria for every subgame of the game.</p>
+<hr />
+<p><strong>Note that this includes subgames that might not be reached during play!</strong></p>
+<p>Let's consider the following example:</p>
 </body>
 </html>

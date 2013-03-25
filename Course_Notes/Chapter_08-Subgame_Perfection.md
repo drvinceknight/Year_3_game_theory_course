@@ -43,8 +43,6 @@ has the following two extensive form game representations:
 
 ## Subgames
 
-We need the following definition:
-
 ### Definition
 
 ---
@@ -81,5 +79,4 @@ A subgame perfect Nash equilibrium is a Nash equilibrium in which the strategy p
 
 Let's consider the following example:
 
-
-
+![](images/L08-img05.png)
