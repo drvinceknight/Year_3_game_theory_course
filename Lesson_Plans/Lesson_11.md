@@ -7,7 +7,7 @@ At the end of this lecture students will be to:
 
 - Calculate payoffs in infinetly repeated games;
 - Analyse equilibrium behaviour in infinitely repeated games;
-- Identify subgame equilibria in infinitely repeared games;
+- Be able to state and prove the Folk theorem
 
 ### Timeline
 
@@ -33,14 +33,14 @@ At the end of this lecture students will be to:
     - VK: Lecture on calculating payoffs in infinitely repeated games.
     - Students: Listen
 
-- 20:35 mins
+- 20:30 mins
 
     - VK: Lecture on equilibrium behaviour and subgame equilibrium in infinitely repeated games
     - Students: Listen
 
-- 35:45 mins
+- 30:45 mins
 
-    - VK: Lecture on applications of infinitely repeated games.
+    - VK: Lecture on Folk theorem
     - Students: Listen
 
 - 45:50 mins
