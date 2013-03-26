@@ -18,10 +18,37 @@
 </ul>
 <p>In this chapter we'll start looking at instances where games are repeated.</p>
 <h2 id="definition-of-a-repeated-game">Definition of a repeated game</h2>
-<ul>
-<li><p>Definitions</p></li>
-<li><p>Description of strategy</p></li>
-</ul>
+<p>In game theory the term <strong>repeated game</strong> is well defined.</p>
+<h3 id="definition">Definition</h3>
+<hr />
+<p>A repeated game is played over discrete time periods. Each time period is index by \(0&lt;t\leq T\) where \(T\) is the total number of periods.</p>
+<p>In each period \(n\) players play a static game referred to as the <strong>stage game</strong> independently and simultaneously selecting actions. Each stage game can be denoted by \(\{A,u\}\) where:</p>
+<p>\[A=A_1 \times A_2 \times \dots \times A_n\]</p>
+<p>and \(u\) denotes the set of utility functions.</p>
+<p>Players make decisions in full knowledge of the <strong>history</strong> of the game played so far (ie the actions chosen by each player in each previous time period).</p>
+<p>The payoff is defined as the sum of the utilities in each stage game for every time period.</p>
+<hr />
+<p>As an example let us use the Prisoner's dilemma as the stage game (so we are assuming that we have 2 players playing repeatedly):</p>
+<p>\[
+\begin{pmatrix}
+(2,2)&amp;(0,3)\\
+(3,0)&amp;(1,1)
+\end{pmatrix}
+\]</p>
+<p>The following shows all possible outcomes to the repeated game given \(T=2\):</p>
+<div class="figure">
+<img src="plots/L09-plot01.png" /><p class="caption"></p>
+</div>
+<p>When we discuss strategies in repeated games we need to be careful.</p>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>A repeated game strategy must specify the action of a player in a given stage game given the entire history of the repeated game.</p>
+<hr />
+<p>For example in the repeated prisoner's dilemma the following is a valid strategy:</p>
+<blockquote>
+<p>&quot;Start to cooperate and in every stage game simply repeat the action used by your opponent in the previous stage game.&quot;</p>
+</blockquote>
+<p>Thus if both players play this strategy both players will cooperate throughout getting (in the case of \(T=2\)) a utility of 4.</p>
 <h2 id="subgame-perfect-nash-equilibrium-in-repeated-games">Subgame perfect Nash equilibrium in repeated games</h2>
 <h3 id="theorem">Theorem</h3>
 <hr />
@@ -36,19 +63,40 @@
 <h3 id="example">Example</h3>
 <p>Consider the following stage game:</p>
 <p>\[\begin{pmatrix}
-(1,3)&amp;(2,10)\\
-(2,2)&amp;(4,1)\\
+(2,3)&amp;(0,2)&amp;(1,4)\\
+(0,1)&amp;(1,2)&amp;(0,0)\\
 \end{pmatrix}\]</p>
 <p>The following plot shows the various possible outcomes of the repeated game for \(T=2\):</p>
 <div class="figure">
-<img src="plots/L09-plot01.png" /><p class="caption"></p>
+<img src="plots/L09-plot02.png" /><p class="caption"></p>
 </div>
-<p>If we consider the two pure equilibria \((r_1,s_2)\) and \((r_2,s_1)\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:</p>
-<p>\[(r_1r_1,s_2s_2)\text{ giving utility vector: }(4,20)\] \[(r_1r_2,s_2s_1)\text{ giving utility vector: }(4,12)\] \[(r_2r_1,s_1s_2)\text{ giving utility vector: }(4,12)\] \[(r_2r_2,s_1s_1)\text{ giving utility vector: }(4,4)\]</p>
+<p>If we consider the two pure equilibria \((r_1,s_3)\) and \((r_2,s_2)\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:</p>
+<p>\[(r_1r_1,s_3s_3)\text{ giving utility vector: }(2,8)\] \[(r_1r_2,s_3s_2)\text{ giving utility vector: }(2,6)\] \[(r_2r_1,s_2s_3)\text{ giving utility vector: }(2,6)\] \[(r_2r_2,s_2s_2)\text{ giving utility vector: }(2,4)\]</p>
 <p>Importantly, not all subgame Nash equilibria outcomes are of the above form.</p>
 <h2 id="reputation-in-repeated-games">Reputation in repeated games</h2>
+<p>By definition all subgame Nash equilibria <strong>must</strong> play a stage Nash profilein the last stage game. However can a strategy be found that does not play a Nash profile in earlier games?</p>
+<p>Considering the above game, let us look at this strategy:</p>
+<blockquote>
+<p>&quot;Play \((r_1,s_1)\) in the first period and then, as long as P2 cooperates play \((r_2,s_3)\) in the second period. If P2 deviates from \(s_1\) in the first period then play \((r_2,s_2)\) in the second period.</p>
+</blockquote>
+<p>Firstly this strategy gives the utility vector: \((3,8)\).</p>
+<ol style="list-style-type: decimal">
+<li>Is this strategy profile a Nash equilibrium (for the entire game)?</li>
+</ol>
 <ul>
-<li>Give example (Try above game but be ready to use a different one) of a reputation based strategy that is not a stage equilibria but is subgame perfect.</li>
+<li>Does player 1 have an incentive to deviate?</li>
+</ul>
+<p>No any other strategy played in any period would give a lower payoff.</p>
+<ul>
+<li>Does player 2 have an incentive to deviate?</li>
+</ul>
+<p>If player 2 deviates in the first period, he/she can obtain 4 in the first period but will obtain 2 in the second. Thus a first period deviation increases the score by 1 but decreases the score in the second period by 2. Thus player 2 does not have an incentive to deviate.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Finally to check that this is a subgame perfect Nash equilibrium we need to check that it is an equilibrium for the whole game as well as all subgames.</li>
+</ol>
+<ul>
+<li>We have checked previously that it is an equilibrium for the entire game.</li>
+<li>It is also subgame perfect as the profile dictates a stage Nash profile in the last stage.</li>
 </ul>
 </body>
 </html>

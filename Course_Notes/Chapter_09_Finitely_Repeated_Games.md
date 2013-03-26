@@ -12,9 +12,54 @@ In this chapter we'll start looking at instances where games are repeated.
 
 ## Definition of a repeated game
 
-- Definitions
+In game theory the term **repeated game** is well defined.
 
-- Description of strategy
+### Definition ###
+
+---
+
+A repeated game is played over discrete time periods. Each time period is index by $0<t\leq T$ where $T$ is the total number of periods.
+
+In each period $n$ players play a static game referred to as the **stage game** independently and simultaneously selecting actions. Each stage game can be denoted by $\{A,u\}$ where:
+
+$$A=A_1 \times A_2 \times \dots \times A_n$$
+
+and $u$ denotes the set of utility functions.
+
+Players make decisions in full knowledge of the **history** of the game played so far (ie the actions chosen by each player in each previous time period).
+
+The payoff is defined as the sum of the utilities in each stage game for every time period.
+
+---
+
+As an example let us use the Prisoner's dilemma as the stage game (so we are assuming that we have 2 players playing repeatedly):
+
+$$
+\begin{pmatrix}
+(2,2)&(0,3)\\
+(3,0)&(1,1)
+\end{pmatrix}
+$$
+
+The following shows all possible outcomes to the repeated game given $T=2$:
+
+![](plots/L09-plot01.png)
+
+When we discuss strategies in repeated games we need to be careful.
+
+### Definition
+
+---
+
+A repeated game strategy must specify the action of a player in a given stage game given the entire history of the repeated game.
+
+---
+
+For example in the repeated prisoner's dilemma the following is a valid strategy:
+
+> "Start to cooperate and in every stage game simply repeat the action used by your opponent in the previous stage game."
+
+Thus if both players play this strategy both players will cooperate throughout getting (in the case of $T=2$) a utility of 4.
 
 ## Subgame perfect Nash equilibrium in repeated games
 
@@ -39,24 +84,44 @@ Using backwards induction we see that this strategy is a Nash equilibrium. Furth
 Consider the following stage game:
 
 $$\begin{pmatrix}
-(1,3)&(2,10)\\
-(2,2)&(4,1)\\
+(2,3)&(0,2)&(1,4)\\
+(0,1)&(1,2)&(0,0)\\
 \end{pmatrix}$$
 
 The following plot shows the various possible outcomes of the repeated game for $T=2$:
 
-![](plots/L09-plot01.png)
+![](plots/L09-plot02.png)
 
-If we consider the two pure equilibria $(r_1,s_2)$ and $(r_2,s_1)$, we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
+If we consider the two pure equilibria $(r_1,s_3)$ and $(r_2,s_2)$, we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
 
-$$(r_1r_1,s_2s_2)\text{ giving utility vector: }(4,20)$$
-$$(r_1r_2,s_2s_1)\text{ giving utility vector: }(4,12)$$
-$$(r_2r_1,s_1s_2)\text{ giving utility vector: }(4,12)$$
-$$(r_2r_2,s_1s_1)\text{ giving utility vector: }(4,4)$$
+$$(r_1r_1,s_3s_3)\text{ giving utility vector: }(2,8)$$
+$$(r_1r_2,s_3s_2)\text{ giving utility vector: }(2,6)$$
+$$(r_2r_1,s_2s_3)\text{ giving utility vector: }(2,6)$$
+$$(r_2r_2,s_2s_2)\text{ giving utility vector: }(2,4)$$
 
 Importantly, not all subgame Nash equilibria outcomes are of the above form.
 
 ## Reputation in repeated games
 
-- Give example (Try above game but be ready to use a different one)  of a reputation based strategy that is not a stage equilibria but is subgame perfect.
+By definition all subgame Nash equilibria **must** play a stage Nash profilein the last stage game. However can a strategy be found that does not play a Nash profile in earlier games?
 
+Considering the above game, let us look at this strategy:
+
+> "Play $(r_1,s_1)$ in the first period and then, as long as P2 cooperates play $(r_2,s_3)$ in the second period. If P2 deviates from $s_1$ in the first period then play $(r_2,s_2)$ in the second period.
+
+Firstly this strategy gives the utility vector: $(3,8)$.
+
+1. Is this strategy profile a Nash equilibrium (for the entire game)?
+
+- Does player 1 have an incentive to deviate?
+
+No any other strategy played in any period would give a lower payoff.
+
+- Does player 2 have an incentive to deviate?
+
+If player 2 deviates in the first period, he/she can obtain 4 in the first period but will obtain 2 in the second. Thus a first period deviation increases the score by 1 but decreases the score in the second period by 2. Thus player 2 does not have an incentive to deviate.
+
+2. Finally to check that this is a subgame perfect Nash equilibrium we need to check that it is an equilibrium for the whole game as well as all subgames.
+
+- We have checked previously that it is an equilibrium for the entire game.
+- It is also subgame perfect as the profile dictates a stage Nash profile in the last stage.
