@@ -2,12 +2,12 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_09_Finitely_Repeated_Games.html):
+In the [previous chapter](Chapter_10_Infinitely_Repeated_Games.html):
 
-- We defined a repeated game;
-- We considered subgame perfect equilibrium in finitely repeated games;
+- We considered infinitely repeated games using a discount factor;
+- We proved a theorem stating that for a high enough discount factor players could end up cooperating.
 
-In this chapter we'll start looking at instances where games are repeated infinitely.
+In this chapter we'll move on to a fascinating area of game theory.
 
 ## Discounting
 

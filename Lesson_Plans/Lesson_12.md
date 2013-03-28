@@ -1,12 +1,12 @@
 # OR 3: Lesson Plan Lecture 12
-## Evolutionary game theory 1
+## Population Games and Evolutionary stable strategies
 
 ### Aims of lecture
 
 At the end of this lecture students will be able to:
 
 - Familiar with concepts of Evolutionary game theory.
-- Define and find evolutionary stable strategies
+- Test for ESS in games against the field.
 
 ### Timeline
 

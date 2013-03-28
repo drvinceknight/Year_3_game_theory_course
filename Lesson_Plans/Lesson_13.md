@@ -1,12 +1,12 @@
 # OR 3: Lesson Plan Lecture 13
-## Evolutionary game theory 2
+## Nash equilibrium and Evolutionary stable strategies
 
 ### Aims of lecture
 
 At the end of this lecture students will be able to:
 
+- Calculate ESS in certain Pairwaise contest games;
 - Describe the connection between Nash Equilibria and ESS;
-- Obtain ESS and solve games against the field.
 
 ### Timeline
 
@@ -28,18 +28,18 @@ At the end of this lecture students will be able to:
 
 - 15:30 mins
 
-    - VK: Lecture on connection between ESS and NE.
-    - Students: Listen (recieve chocolat)
+    - VK: Group activity about pairwise contest games.
+    - Students: Participate
 
 - 30:35 mins
 
-    - VK: Group activity about playing against the field.
-    - Students: Participate
+    - VK: Lecture on pairwise contest games.
+    - Students: Listen
 
 - 35:45 mins
 
-    - VK: Lecture on playing against the field.
-    - Students: Listen
+    - VK: Lecture on connection between ESS and NE.
+    - Students: Listen (recieve chocolat)
 
 - 45:50 mins
 
