@@ -1,4 +1,4 @@
-# OR 3: Chapter 11 - Infinitely Repeated Games
+# OR 3: Chapter 12 - Population Games and Evolutionary stable strategies
 
 ## Recap
 

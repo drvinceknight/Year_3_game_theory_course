@@ -1,180 +1,171 @@
-# OR 3: Chapter 11 - Infinitely Repeated Games
+# OR 3: Chapter 13 - Nash equilibrium and Evolutionary stable strategies
 
 ## Recap
 
-In the [previous chapter](Chapter_11_Infinitely_Repeated_Games.html):
+In the [previous chapter]():
 
-- We considered infinitely repeated games using a discount rate;
-- We proved a powerful result stating that for a high enough discount rate player would cooperate.
+- We considered population games;
+- We proved a result concerning a necessary condition for a population to evolutionary stable;
+- We defined Evolutionary stable strategies and looked at an example in a game against the field.
 
-In this chapter we'll start looking at a fascinating new area of game theory.
+In this chapter we'll take a look at pairwise contest games and look at the connection between Nash equilibrium and ESS.
 
-## Population Games
+## Pairwise contest games
 
-In this chapter (and the next) we will be looking at an area of game theory that looks at the evolution of strategic behaviour in a population.
+In a population game when considering a pairwise contest game we assume that individuals are randomly matched. The utilities then depend just on what the individuals do:
+
+$$u(\sigma,x)=\sum_{s\in S}\sum_{s'\in S}\sigma(s)x(s')u(s,s')$$
+
+As an example we're going to consider the "Hawk-Dove" game: a model of predator interaction. We have $S=\{H,D\}$ were:
+
+- $H$: Hawk represents being "aggressive";
+- $D$: Dove represents not being "aggressive".
+
+At various times individuals come in to contact and must choose to act like a Hawk or like Dove over the sharing of some resource of value $v$. We assume that:
+
+- If a Dove and Hawk meet the Hawk takes the resources;
+- If two Doves meet they share the resources;
+- If two Hawks meet there is a fight over the resources (with an equal chance of winning) and the winner takes the resources while the loser pays a cost $c>v$.
+
+If we assume that $\sigma=(\omega,1-\omega)$ and $x=(h,1-h)$ the above gives:
+
+$$u(\sigma,x)=\omega(1-h)v+(1-\omega)(1- h) \frac{v}{2}+\omega h \frac{v-c}{2} $$
+
+It is immediate to note that no pure strategy ESS exists. In a population of Doves ($h=0$):
+
+$$u(\sigma,(0,1))=\omega v+(1-\omega) \frac{v}{2}=(1+\omega)\frac{v}{2}$$
+
+thus the best response is setting $\omega=1$ i.e. to play Hawk.
+
+In a population of Hawks ($h=1$):
+
+$$u(\sigma,(1,0))=\omega h \frac{v-c}{2} $$
+
+thus the best response is setting $\omega=0$ i.e. to play Dove.
+
+So we will now try and find out if there is a mixed-strategy ESS: $\sigma^*=(\omega^*,1-\omega^*)$. For $\sigma^*$ to be an ESS it must be a best response to the population it generates $x^*=(\omega^*,1-\omega^*)$. In this population the $x^*$ the payoff to an arbitrary strategy $\sigma$ is:
+
+$$u(\sigma,x^*)=(1-\omega^*)\frac{v}{2}+\left(\frac{v}{2}-\omega^*\right)\frac{\omega c}{2}$$
+
+- If $\omega^*<v/c$ then a best response is $\omega=1$;
+- If $\omega^*>v/c$ then a best response is $\omega=0$;
+- If $\omega^*=v/c$ then there is indifference.
+
+So the only candidate for an ESS is $\sigma^*=\left(v/c,1-v/c\right)$. We now need to show that $u(\sigma^*,x_{\epsilon})>u(\sigma,x_{\epsilon})$.
+
+We have:
+
+$$x_\epsilon=(v/c+\epsilon(\omega-v/c),1-v/c+\epsilon(\omega-v/c)$$
+
+and:
+
+$$\begin{aligned}
+u(\sigma^*,x_{\epsilon})=\frac{v}{c}\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\right)\right)\frac{v-c}{2}+&\frac{v}{c}\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)v\\
++&\left(1-\frac{v}{c}\right)\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)\frac{v}{2}
+\end{aligned}$$
+
+$$\begin{aligned}
+u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\right)\right)\frac{v-c}{2}+&\omega\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)v\\
++&\left(1-\omega\right)\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)\frac{v}{2}
+\end{aligned}$$
+
+This gives:
+
+$$u(\sigma^*,x_{\epsilon})-u(\sigma,x_{\epsilon})=\frac{\epsilon c}{2}\left(\frac{v}{c}-\omega\right)^2>0$$
+
+which proves that $\sigma^*$ is an ESS.
+
+We will now take a closer look the connection between ESS and Nash equilibria.
+
+## ESS and Nash equilibria
+
+When considering pairwise contest population games there is a natural way to associate a normal form game.
 
 ### Definition
 
 ---
 
-Considering an infinite population of individuals each of which represents a strategy from $\Delta S$, we define the population profile as a vector $x\in[0,1]^{|S|}_\mathbb{R}$. Note that:
-
-$$\sum_{s\in S}x(s)=1$$
+The **associated two player game** for a pairwise contest population game is the normal form game with payoffs given by: $u_1(s,s')=u(s,s')=u_2(s',s)$.
 
 ---
 
-It is important to note that $x$ does not correspond to any strategy adopted by any individual.
+Note that the resulting game is symmetric (other contexts would give non symmetric games but we won't consider them here).
 
-### Example
-
-Consider a population with $S=\{s_1,s_2\}$. If we assume that every individual plays $\sigma=(.25,.75)$ then $x=\sigma$. However if we assume that .25 of the population play $\sigma_1=(1,0)$ and .75 play $\sigma_2=(0,1)$ then $x=\sigma$.
-
-In evolutionary game theory we must consider the _utility_ of a particular strategy when played in a particular population profile denoted by $u(s,x)$ for $s\in S$.
-
-Thus the utility to a player playing $\sigma\in\Delta S$ in a population $x$:
-
-$$u(s,x)=\sum_{s\in S}\sigma(s)u(s,x)$$
-
-The interpretation of the above is:
-
-> **These payoffs represent the number of descendants that each type of individual has.**
-
-### Example
-
-If we consider a population of N individuals in which $S=\{s_1,s_2\}$. Assume that .5 of the population use each strategy so that $x=(.5,.5)$ and assume that for the current population profile we have:
-
-$$u(s_1,x)=3\text{ and }u(s_2,x)=7$$
-
-In the next generation we will have $3N/2$ individuals using $s_1$ and $5N/2$ using $s_2$ so that the strategy profile of the next generation will be $(.3,.7)$.
-
-We are going to work towards understanding the evolutionary dynamics of given populations. If we consider $x^*$ to be the startegy profile where all members of the population play $\sigma^*$ then a population will be evolutionary stable only if:
-
-$$\sigma^*\in\text{argmax}_{\sigma\in\Delta S}u(\sigma,x)$$
-
-Ie at equilibrium $\sigma^*$ must be a best response to the population profile it generates.
+Using this we have the powerful result:
 
 ### Theorem
 
 ---
 
-In a population game, consider $\sigma^*\in\Delta S$ and the population profile $x$ generated by $\sigma^*$. If the population is stable then:
+If $\sigma^*$ is an ESS in a pairwise contest population game then for all $\sigma\ne\sigma^*$:
 
-$$u(s,x)=u(\sigma,x)\text{ for all }s\in\mathcal{S}(\sigma^*)$$
+1. $u(\sigma^*,\sigma^*)>u(\sigma,\sigma^*)$
+OR
+2. $u(\sigma^*,\sigma^*)=u(\sigma,\sigma^*)$ and $u(\sigma^*,\sigma)>u(\sigma,\sigma)$
+
+Conversely, if either (1) or (2) holds for all $\sigma\ne\sigma^*$ in a two player normal form game then $\sigma$ is an ESS.
 
 ---
-
-(Recall that $\mathcal{S}(s)$ denotes the support of $s$.
 
 ### Proof
 
----
+If $\sigma^*$ is an ESS, then by definition:
 
-If $|\mathcal{S}(\sigma^*)|=1$ then the proof is trivial.
+$$u(\sigma^*,x_{\epsilon})>u(\sigma,x_{\epsilon})$$
 
-We assume that $|\mathcal{S}(\sigma^*)|>1$. Let us assume that the theorem is not true so that there exists $\bar s\in\mathcal{S}(\sigma^*)$ such that:
+which corresponds to:
 
-$$u(\sigma^*,x)\ne u(\bar s,x)$$
+$$(1-\epsilon)u(\sigma^*,\sigma^*)+\epsilon u(\sigma^*,\sigma)>(1-\epsilon)u(\sigma,\sigma^*)+\epsilon u(\sigma,\sigma)$$
 
-We have $u(\sigma^*,x)=\sum_{s\in \mathcal{S}(\sigma^*)}\sigma^*(s)u(s,x)$ so we can assume without loss of generality that:
+- If the condition 1 of the theorem holds then the above inequality can be satisfied for $\epsilon$ sufficiently small. If condition 2 holds then the inequality is satisfied.
+- Let us assume that $u(\sigma^*,\sigma^*)<u(\sigma,\sigma^*)$:
 
-$$u(\sigma^*,x)< u(\bar s,x)$$
+    - If $u(\sigma^*,\sigma^*)<u(\sigma,\sigma^*)$ then we can find $\epsilon$ sufficiently small such that the inequality is violated. Thus the inequality implies $u(\sigma^*,\sigma^*)\geq u(\sigma,\sigma^*)$.
 
-which implies that the population is not stable.
+    - If $u(\sigma^*,\sigma^*)= u(\sigma,\sigma^*)$ then :$u(\sigma^*,\sigma^*)> u(\sigma,\sigma^*)$ as required.
 
----
+This result gives us a more a efficient way of computing ESS. The first condition is in fact almost a condition for Nash Equilibrium (with a strict inequality), the second is thus a stronger condition that removes certain Nash equilibria from consideration. This becomes particularly relevant when considering Nash equilibrium in mixed strategies.
 
-## Evolutionary Stable Strategies
+To find ESS in a pairwise context population game we:
 
-### Definition
+1. Write down the associated two-player game;
+2. Identify all symmetric Nash equilibria of the game;
+3. Test the Nash equilibrium against the two conditions of the above Theorem.
 
----
-
-Consider a population where all individuals initially play $\sigma^*$. If we assume that a small proportion $\epsilon$ start playing $\sigma$. The new population is called the **post entry population** and will be denoted by $x_{\epsilon}$.
-
----
 
 ### Example
 
-Consider a population with $S=\{s_1,s_2\}$ and initial population profile $x=(1/2,1/2)$. If we assume that $\sigma=(1/3,2/3)$ is introduced in to the population then:
+Let us consider the Hawk-Dove game. The associated two-player game is:
+
+$$
+\begin{pmatrix}
+\left(\frac{v-c}{2},\frac{v-c}{2}\right),(v,0)\\
+(0,v),\left(\frac{v}{2},\frac{v}{2}\right)\\
+\end{pmatrix}
+$$
+
+Recalling that we have $v<c$ so we can use the Equality of payoffs theorem to obtain the Nash equilibrium:
 
 $$
 \begin{aligned}
-x_{\epsilon}&=(1-\epsilon)(1/2,1/2)+\epsilon\sigma\\
-            &=(1/2-\epsilon/3,1/2+2\epsilon/3)
+u_2(\sigma^*,H)&= u_2(\sigma^*,D)\\
+q^*&=\frac{v}{c}
 \end{aligned}
 $$
 
-### Definition
+Thus we will test $\sigma^*=(\frac{v}{c},1-\frac{v}{c})$ using the above theorem.
 
----
+**Importatny** from the equality of payoffs theorem we immediately see that condition 1 does not hold as $u(\sigma^*,H)=u(\sigma^*,D)$. Thus we need to prove that:
 
-A strategy $\sigma^*\in\Delta S$ is called an **Evolutionary Stable Strategy** if there exists an $0<\bar\epsilon<1$ such that for every $0<\epsilon<\bar \epsilon$ and every $\sigma\ne \sigma^*$:
-
-$$u(\sigma^*,x)>u(\sigma,x)$$
-
----
-
-Before we go any further we must consider two types of population games:
-
-1. Games against the field. In this setting we assume that no individual has a specific adversary but has a utility that depends on what the rest of the individuals are doing.
-2. Pairwise contest games. In this setting we assume that every individual is continiously assigned to _play_ against another individual.
-
-The differences between these two types of population games will hopefully become clear soon.
-
-## Games against the field
-
-We will now consider an example of a game against the field. The main difficulty with these games is that the utility $u(s,x)$ is not generally linear in $x$.
-
-Let us consider the Male to Female ratio in a population, let us make the following assumptions:
-
-1. The proportion of Males in the population is $\alpha$ and the proportion of females is $1-\alpha$;
-2. Each female has a single mate and has $n$ offspring;
-3. Males have on average $(1-\alpha)/\alpha$ mates;
-4. Females are solely responsible for the sex of the offspring.
-
-We assume that $S=\{M,F\}$ so that females can either only produce Males or only produce Females. Thus, a general mixed strategy $\sigma=(\omega,1-\omega)$ produces a population with a proportion of  $\omega$ males. Furthermore we can write $x=(\mu,1-\mu)$.
-
-The females are the decision makers so that we consider them as the individuals in our population. The immediate offspring of the females $n$ is constant and so cannot be used as a utility. We use the second generation offspring:
-
-$$
-\begin{aligned}
-u(M,x)&=n^2\frac{1-\mu}{\mu}\\
-u(F,x)&=n^2
-\end{aligned}
-$$
-
-Thus:
-
-$$u(\sigma,x)=n^2\left(\omega\frac{(1-\mu)}{\mu}+(1-\omega)\right)$$
-
-Let us try and find an ESS for this game:
-
-1. If $\mu\ne 1/2$ then $u(M,x)\ne u(F,x)$ so that any mixed strategy $\sigma$ with support $\{M,F\}$ would not give a stable population.
-2. Thus we need to check if $\sigma^*=(1/2,1/2)$ is an ESS (this is the only candidate).
-
-We consider some mutation $\sigma=(p,1-p)$:
-
-$$x_{\epsilon}=(1-\epsilon)\sigma^*+\epsilon\sigma$$
-
-which implies:
-
-$$\mu_{\epsilon}=(1-\epsilon)1/2+p\epsilon=1/2+\epsilon(p-1/2)$$
+$$u(\sigma^*,\sigma)>u(\sigma,\sigma)$$
 
 We have:
 
-$$u(\sigma^*,x_{\epsilon})=1/2+\frac{1-\mu_{\epsilon}}{2\mu_{\epsilon}}$$
+$$u(\sigma^*,\sigma)=\frac{v}{c}\omega\frac{v-c}{2}+\frac{v}{c}(1-\omega)v+(1-\frac{v}{c})(1-\omega)\frac{v}{c}$$
+$$u(\sigma,\sigma)=\omega^2\frac{v-c}{2}+\omega(1-\omega)v+(1-\omega)^2\frac{v}{c}$$
 
-and:
+After some Algebra:
 
-$$u(\sigma,x_{\epsilon})=(1-p)+p\frac{1-\mu_{\epsilon}}{\mu_{\epsilon}}$$
+$$u(\sigma^*,\sigma)-u(\sigma,\sigma)=\frac{c}{2}(\frac{v}{c}-\omega)^2>0$$
 
-The difference:
-
-$$
-\begin{aligned}
-u(\sigma^*,x_{\epsilon})-u(\sigma,x_{\epsilon})&=p-1/2+(1/2-p)\frac{1-\mu_{\epsilon}}{\mu_{\epsilon}}\\
-&=(1/2-p)\frac{1-2\mu_{\epsilon}}{\mu_{\epsilon}}
-\end{aligned}
-$$
-
-We note that if $p<1/2$ then $\mu_{\epsilon}<2$ which implies that $u(\sigma^*,x_{\epsilon})-u(\sigma,x_{\epsilon})>0$. Similarly if $p>1/2$ then $\mu_{\epsilon}<2$ which implies that $u(\sigma^*,x_{\epsilon})-u(\sigma,x_{\epsilon})>0$. Thus $\sigma^*$ is a ESS.
+Giving the required result.
