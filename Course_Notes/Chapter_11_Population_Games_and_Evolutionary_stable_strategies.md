@@ -1,4 +1,4 @@
-# OR 3: Chapter 12 - Population Games and Evolutionary stable strategies
+# OR 3: Chapter 11 - Population Games and Evolutionary stable strategies
 
 ## Recap
 

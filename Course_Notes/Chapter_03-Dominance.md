@@ -1,4 +1,4 @@
-# OR 3: Chapter 2 - Normal Form Games
+# OR 3: Chapter 3 - Dominance
 
 ## Recap
 

@@ -15,7 +15,7 @@
 12. Lecture 12: [ Population Games and Evolutionary stable strategies](./Lesson_Plans/Lesson_12.md)
 13. Lecture 13: [ Nash equilibrium and Evolutionary stable strategies](./Lesson_Plans/Lesson_13.md)
 14. Lecture 14: [ Random events and incomplete information](./Lesson_Plans/Lesson_14.md)
-15. Lecture 15: [ Bayesian Games](./Lesson_Plans/Lesson_15.md)
+15. Lecture 15: [ Stochastic Games](./Lesson_Plans/Lesson_15.md)
 16. Lecture 16: [ Matching games](./Lesson_Plans/Lesson_16.md)
 17. Lecture 17: [ Cooperative games](./Lesson_Plans/Lesson_17.md)
 18. Lecture 18: [ Routing games 1](./Lesson_Plans/Lesson_18.md)

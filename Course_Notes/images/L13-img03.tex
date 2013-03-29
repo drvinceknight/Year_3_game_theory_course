@@ -1,0 +1,26 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\tikzstyle{corner} = [inner sep=0pt, outer sep=0pt, draw,circle]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{Employer}
+                child {node [corner] (A1) {}  }
+                child {node [corner] (A2) {} edge from parent node[above] {$w,b$}} ;
+        \draw [bend right] (A1) to (A2);
+        \node (B3) [player,right=3pt] at ($(A1)!0.5!(A2)$) {Employee}
+            child {node [end] {} node[right] {$(0,1)$} edge from parent node [below] {Decline}  }
+            child {node [player] {Employee} 
+                child {node[nature] {Success?} 
+                    child {node[end]{} node[right]{$(\kappa-w,(w-1)^\alpha)$} edge from parent node[below] {Unsuccessful}}
+                    child {node[end]{} node[right]{$(\tau-w-B,(w+B-1)^\alpha)$} edge from parent node[below] {Successful}}
+                edge from parent node[below] {High Effort}}
+                child {node[end]{} node[right] {$(\kappa-w, w^\alpha)$} edge from parent node[below] {Low Effort}}
+            edge from parent node [below] {Accept} };
+\end{tikzpicture}
+\end{document}

@@ -1,4 +1,4 @@
-# OR 3: Chapter 13 - Nash equilibrium and Evolutionary stable strategies
+# OR 3: Chapter 12 - Nash equilibrium and Evolutionary stable strategies
 
 ## Recap
 

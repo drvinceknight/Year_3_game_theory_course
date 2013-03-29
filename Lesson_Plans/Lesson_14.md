@@ -6,7 +6,8 @@
 At the end of this lecture students will be able to:
 
 - Represent games of incomplete information in extensive form;
-- Represent games of incomplete information in Bayesian normal form;
+- Be familiar with utility functions;
+- Be familiar with the principal agent game
 
 ### Timeline
 
@@ -33,12 +34,17 @@ At the end of this lecture students will be able to:
 
 - 25:30 mins
 
-    - VK: Discussion about representing this in Bayesian normal form game.
+    - VK: Discussion about utilities
     - Students: Listen
 
-- 30:45 mins
+- 30:35 mins
 
-    - VK: Lecture on Bayesian normal form games
+    - VK: Lecture on utilities
+    - Students: Listen
+
+- 35:45 mins
+
+    - VK: Lecture on Principal agent game
     - Students: Listen
 
 - 45:50 mins
@@ -51,4 +57,4 @@ Students will be given reading and some practice exercises.
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to represent games in both forms and to go from one to the other.
+Assessment of the content covered in this lecture will be through examination questions asking student to represent games and solve games similar to the principal agent game.
