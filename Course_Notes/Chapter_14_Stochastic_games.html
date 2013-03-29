@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="or-3-chapter-14---stochastic-games">OR 3: Chapter 14 - Stochastic games</h1>
+<h2 id="recap">Recap</h2>
+<p>In the <a href="Chapter_13_Random_events_and_incomplete_information.html">previous chapter</a>:</p>
+<ul>
+<li>We considered games of incomplete information;</li>
+<li>Discussed some basic utility theory;</li>
+<li>Considered the principal agent game.</li>
+</ul>
+<p>In this chapter we will take a look at a more general type of random game.</p>
+<h2 id="stochastic-games">Stochastic games</h2>
+<h3 id="definition">Definition</h3>
+<hr />
+<p>A stochastic game is defined by:</p>
+<ul>
+<li>X a set of states with a stage game defined for each state;</li>
+<li>A set of strategies \(S_i(x)\) for each player for each state \(x\in X\);</li>
+<li>A set of rewards dependant on the state and the actions of the other players: \(u_i(x,s_1,s_2)\);</li>
+<li>A set of probabilities of transitioning to a future state: \(\pi(x&#39;|x,s_1,s_2)\);</li>
+<li>Each stage game is played at a set of discrete times \(t\).</li>
+</ul>
+<hr />
+<p>We will make some simplifying assumptions in this course:</p>
+<ol style="list-style-type: decimal">
+<li>The length of the game is not known (infinite horizon);</li>
+<li>The rewards and transition probabilities are not dependent;</li>
+<li>We will only consider strategies called <strong>Markov strategies</strong>.</li>
+</ol>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>A strategy is call a <strong>Markov strategy</strong> if the behaviour dictated is not time dependent.</p>
+<hr />
+<h3 id="example">Example</h3>
+<p>Consider the following game with \(X=\{x,y\}\):</p>
+<ul>
+<li>\(S_1(x)=\{a,b\}\) and \(S_2(x)=\{c,d\}\);</li>
+<li>\(S_1(y)=\{m\}\) and \(S_2(x)=\{n\}\);</li>
+</ul>
+<p>We have the stage game corresponding to state \(x\):</p>
+<p>\[
+\begin{pmatrix}
+(8,4)&amp;(5,3)\\
+(1,5)&amp;(2,6)
+\end{pmatrix}
+\]</p>
+<p>The stage game corresponding to state \(y\):</p>
+<p>\[
+\begin{pmatrix}
+(0,0)\\
+\end{pmatrix}
+\]</p>
+<p>The transition probabilities corresponding to state \(x\):</p>
+<p>\[
+\begin{pmatrix}
+(.8,2)&amp;(1,0)\\
+(1,0)&amp;(1,0)
+\end{pmatrix}
+\]</p>
+<p>The transition probabilities corresponding to state \(y\):</p>
+<p>\[
+\begin{pmatrix}
+(0,0)\\
+\end{pmatrix}
+\]</p>
+<p>Here is a concise way of representing all this:</p>
+<div class="figure">
+<img src="images/L14-img01.png" /><p class="caption"></p>
+</div>
+<p>We see that the Nash equilibrium for stage game corresponding to \(x\) is \((a,c)\) however as soon as the players play that strategy profile they will go to state \(y\) which is an absorbing state at which players gain no further utility.</p>
+<p>To calculate utilities for players in infinite horizon stochastic games we use a discount rate. Thus without loss of generality if the game is in state \(x\) and we assume that both players are playing \(\sigma^*_i\) then player 1 would be attempting to maximise future payoffs:</p>
+<p>\[U_1(r,s)=\left(u_1(x,r,s)+\delta\sum_{x&#39;\in X}\pi(x&#39;|x,r,s)U_1^*(x&#39;)\right)\]</p>
+<p>where \(U_1^*\) denotes the expected utility to player 1 when both players are playing the Nash strategy profile.</p>
+<p>Thus a Nash equilibrium satisfies:</p>
+<p>\[U_1^*(x)=\max_{r\in S_1(x)}(u_i(x,r,s^*)+\delta\sum_{x&#39;\in X}\pi(x&#39;|x,r,s^*)U_1^*(x&#39;)\] \[U_2^*(x)=\max_{s\in S_2(x)}(u_i(x,r^*,s)+\delta\sum_{x&#39;\in X}\pi(x&#39;|x,r^*,s)U_1^*(x&#39;)\]</p>
+<p>Solving these equations is not straightforward. We will take a look at one approach by solving the example we have above.</p>
+<h2 id="finding-equilibria-in-stochastic-games">Finding equilibria in stochastic games</h2>
+<p>Let us find a Nash equilibrium for the game considered above with \(\delta=2/3\).</p>
+<p>State \(x\) gives no value to either player so we only need to consider state \(x\). Let the future gains to player 1 in state \(x\) be \(u\), and the future gains to player 2 in state \(x\) be \(v\). Thus the players are facing the following game:</p>
+<p>\[\begin{pmatrix}
+(8+\frac{1}{3}v,4+\frac{1}{3}u)&amp;(5+\frac{2}{3}v,3+\frac{2}{3}u)\\
+(1+\frac{2}{3}v,5+\frac{2}{3}u)&amp;(2+\frac{2}{3}v,6+\frac{2}{3}u)
+\end{pmatrix}\]</p>
+<p>We consider each strategy pair and state the condition for Nash equilibrium:</p>
+<ol style="list-style-type: decimal">
+<li>\((a,c)\): \(v\leq 21\) and \(u\leq 3\).</li>
+<li>\((a,d)\): \(u\geq3\).</li>
+<li>\((b,c)\): \(v\geq 21\) and \(u\leq 3\).</li>
+<li>\((b,d)\): \(5\geq2\).</li>
+</ol>
+<p>Now consider the implications of each of those profiles being an equilibrium:</p>
+<ol style="list-style-type: decimal">
+<li>\(8+v/3=v\) \(\Rightarrow\) \(v=12\) and \(4+u/3=u\) \(\Rightarrow\) \(u=6\) which contradicts the corresponding inequality.</li>
+<li>\(3+2u/3=u\) \(\Rightarrow\) \(u=9\).</li>
+<li>\(1+2v/3=v\) \(\Rightarrow\) \(v=3\) and \(5+2u/3=u\) \(\Rightarrow\) \(u=15\) which contradicts the corresponding inequality.</li>
+<li>The inequality cannot hold.</li>
+</ol>
+<p>Thus the unique Markov strategy Nash equilibria is \((a,d)\) <strong>which is not the stage Nash equilibria!</strong></p>
+</body>
+</html>
