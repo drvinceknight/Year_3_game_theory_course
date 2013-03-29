@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="or-3-chapter-13---random-events-and-incomplete-information">OR 3: Chapter 13 - Random events and incomplete information</h1>
+<h2 id="recap">Recap</h2>
+<p>In the <a href="Chapter_12_Nash_equilibrium_and_Evolutionary_stable_strategies.html">previous chapter</a>:</p>
+<ul>
+<li>We considered pairwise contest population games;</li>
+<li>We proved a result showing the connection between ESS and NE.</li>
+</ul>
+<p>In this chapter we will take a look at how to model games with incomplete information and random events.</p>
+<h2 id="representing-incomplete-information-in-extensive-form-games">Representing incomplete information in extensive form games</h2>
+<p>Game with incomplete information represent situation where the players do not possess aexact knowledge of the environment. This is represented by associating probabilities to various states. We show this on game trees using red circles to represent decisions made by &quot;nature&quot; where we can consider &quot;nature&quot; as a player although not a strategic one.</p>
+<p>If we recall the first game tree we considered in <a href="Chapter_01-Introduction.html">Chapter 1</a> we had already done this to some extent:</p>
+<div class="figure">
+<img src="images/L01-img01.png" /><p class="caption"></p>
+</div>
+<p>Let us consider a slightly more complicated game.</p>
+<blockquote>
+<p>&quot;Two players play a card game. They each put a dollar in a pot. Player 1 is dealt a card that is either <em>high</em> or <em>low</em> with equal probability. Player1 observes the card but player 2 does not. Player 1 may <em>see</em> or <em>raise</em>. If player 1 <em>sees</em> then the card is shown and player 1 takes the dollar if the card if <strong>high</strong> or player 2 takes the dollar. If player 1 <em>raises</em>, player 1 adds a dollar to the pot. Player 2 can then <em>pass</em> or <em>meet</em>. If player 2 <em>passes</em> then player 1 takes the pot. Otherwise, player 2 adds a dollar to the pot. If player 1's card is <strong>high</strong> then player 1 takes the pot else player 2 takes the pot.&quot;</p>
+</blockquote>
+<p>This game is represented below:</p>
+<div class="figure">
+<img src="images/L13-img01.png" /><p class="caption"></p>
+</div>
+<p>To solve this game we can (as in <a href="Chapter_08-Subgame_Perfection.html">Chapter 8</a>) obtain the corresponding normal form game by taking expected utilities over the moves of nature.</p>
+<p>For the above game we have \(S_1=\{\text{SeeRaise},\text{SeeSee},\text{RaiseRaise},\text{RaiseSee}\}\) and \(S_2=\{\text{Meet},\text{Pass}\}\) and the normal form representation is:</p>
+<p>\[\begin{pmatrix}
+(-1/2,1/2)&amp;(1,-1)\\
+(0,0)&amp;(0,0)\\
+(0,0)&amp;(1,-1)\\
+(1/2,-1/2)&amp;(0,0)
+\end{pmatrix}\]</p>
+<p>In this game we see that \(\text{SeeSee}\) is dominated by any mixed strategy with support: \(\{\text{RaiseRaise},\text{RaiseSee}\}\). Similarly \(\text{SeeRaise}\) is not a best response to any strategy of player 2 that plays \(\text{Meet}\) with non zero probability. Thus we have \(\sigma_1=(0,0,x,1-x)\). Using the equality of payoffs theorem we have:</p>
+<p>\[
+\begin{aligned}
+u_2(\sigma_1,\text{Meet})&amp;=u_2{\sigma_1,\text{Pass}}
+(x-1)/2&amp;=-x\\
+x&amp;=1/3
+\end{aligned}
+\]</p>
+<p>Using the Equality of Payoffs theorem we get that the Nash equilibrium is \(\sigma_1=(0,0,2/3,1/3)\) and \(\sigma_2=(2/3,1/3)\). I.e. player 1 should always raise if the card is high and bluff with probability \(1/3\) if the card is low.</p>
+<h2 id="utilities">Utilities</h2>
+<p>When considering games with uncertainty it is particularly relevant to consider some basic utility theory. Consider the following game:</p>
+<div class="figure">
+<img src="images/L13-img02.png" /><p class="caption"></p>
+</div>
+<p>This is a 1 player game where a player must choose whether or not to flip a coin. If the coin is flipped and lands on &quot;Heads&quot; then the player wins £10, if the coin lands on &quot;Tails&quot; then the player wins nothing. If the player chooses to not flip a coin then the player wins £4.</p>
+<p>With such small sums of money involved it is quite likely that the player would choose to flip the coin (afterall the expected value of flipping the coin is £5. If we changed the game slightly so that it was now in terms of <strong>millions</strong> of pounds surely the player should just take the £4 million on offer?</p>
+<p>This perception is due to the fact that the percieved gain from 0 to £4 million is much larger than the percieved gain from £4 million to £10 million. This can be modelled mathematically using convex and concave increasing functions:</p>
+<ul>
+<li>&quot;Risk averse&quot;: a concave utility function.</li>
+<li>&quot;Risk neutral&quot;: a linear function.</li>
+<li>&quot;Risk seeking&quot;: a convex function.</li>
+</ul>
+<p>This is shown:</p>
+<div class="figure">
+<img src="plots/L13-plot01.png" /><p class="caption"></p>
+</div>
+<p>If we use \(u=\sqrt(x)\) as the utility function in the coin flip game we see that the analytical solution would indeed be to not flip. We will now take a look at this in a bit more detail with a well known game.</p>
+<h2 id="principal-agent-game">Principal agent game</h2>
+<p>Consider a game with two players. The first player is an employer and the second a potential employee. The employer must decide on two parameters:</p>
+<ul>
+<li>A wage value: \(w\);</li>
+<li>A bonus value: \(B\).</li>
+</ul>
+<p>The potential employee must then make two decisions:</p>
+<ul>
+<li>Whether or not to accept the job;</li>
+<li>If the job is accepted to either put in a high level of effort or a low level of effort.</li>
+</ul>
+<p>The success of the project that requires the employee is as follows:</p>
+<ul>
+<li>If the employee puts in a high level of effort the project will be succesful with probability \(1/2\);</li>
+<li>If the employee puts in a low level of effort the project will be unsussesful.</li>
+</ul>
+<p>The monetary gain to the employer is as follows:</p>
+<ul>
+<li>If the employee does not take the job the utility is 0.</li>
+<li>If the project is succesful: \(A\);</li>
+<li>If the project is unsuccesful: \(B\).</li>
+</ul>
+<p>The monetary gain to the employee is as follows:</p>
+<ul>
+<li>If the job offer is not accepted: 0;</li>
+<li>If the project is succesful: \(w+B-1\);</li>
+<li>If the project is unsuccesful despite a high level of effort: \(w-1\);</li>
+<li>If the project is unsuccesful because of a low level of effort: \(w\).</li>
+</ul>
+<p>We furthermore assume that the utility function of the employer is simply \(u(x)=x\) while the utility function to the potential employee is of the form \(u(x)=x^{\alpha}\) for \(0&lt;\alpha&lt;1\) (i.e. the potential employee is risk averse).</p>
+</body>
+</html>
