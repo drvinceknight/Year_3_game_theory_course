@@ -40,7 +40,7 @@ In this game we see that $\text{SeeSee}$ is dominated by any mixed strategy with
 
 $$
 \begin{aligned}
-u_2(\sigma_1,\text{Meet})&=u_2{\sigma_1,\text{Pass}}
+u_2(\sigma_1,\text{Meet})&=u_2(\sigma_1,\text{Pass})\\
 (x-1)/2&=-x\\
 x&=1/3
 \end{aligned}
@@ -90,14 +90,14 @@ The success of the project that requires the employee is as follows:
 The monetary gain to the employer is as follows:
 
 - If the employee does not take the job the utility is 0.
-- If the project is succesful: $\kappa$;
-- If the project is unsuccesful: $\tau$.
+- If the project is succesful: $\tau$;
+- If the project is unsuccesful: $\kappa$.
 
 The monetary gain to the employee is as follows:
 
 - If the job offer is not accepted: 0;
-- If the project is succesful: $w+B-1$;
-- If the project is unsuccesful despite a high level of effort: $w-1$;
+- If the project is succesful: $w+B-1$ (the lost gain corresponds to the effort);
+- If the project is unsuccesful despite a high level of effort: $w-1$ (the lost gain corresponds to the effort);
 - If the project is unsuccesful because of a low level of effort: $w$.
 
 We furthermore assume that the utility function of the employer is simply $u(x)=x$ while the utility function to the potential employee is of the form $u(x)=x^{\alpha}$ for $0<\alpha<1$ (i.e. the potential employee is risk averse). 
@@ -105,3 +105,32 @@ We furthermore assume that the utility function of the employer is simply $u(x)=
 The extensive form of the game is given:
 
 ![](images/L13-img03.png)
+
+Immediately we see that this game is trivial if $\kappa<\omega$ and $\tau<\omega+B$. Furthermore it seems sensible to only consider $\tau>\kappa$.
+
+We will solve this game using backward induction. The first step:
+
+![](images/L13-img04.png)
+
+If the employer would like a high level of effort he should set $w,B$ such that:
+
+$$\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq w^\alpha$$
+
+This ensures that the employee will put in a high level of effort. Furthermore it is in the employers interest to ensure that the employee accepts the job (we assume here that $\frac{\kappa+\tau+B}{2}\geq w$):
+
+$$\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq 1$$
+
+This second inequality ensures that the employee accepts the position. Given that the position is accepted the employer would like to in fact minimise $w,B$ thus we have:
+
+$$\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}=1$$
+
+Thus we have:
+
+$$w^\alpha\leq 1$$
+
+however we assume that $w\geq 1$ (so that the "wage is worth the effort") so we in fact have $w=1$. This then gives: $B=2^{1/\alpha}$. The expected utilities are then:
+
+- Employer: $\frac{\kappa+\tau-2^{1/\alpha}}{2}-1$;
+- Employee: 1.
+
+Note that the employer's utility is an increasing function in $\alpha$. As the potential employee becomes more and more risk neutral the employer does not need to offer a high bonus to incite a high level of effort.

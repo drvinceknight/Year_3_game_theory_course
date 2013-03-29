@@ -41,7 +41,7 @@
 <p>In this game we see that \(\text{SeeSee}\) is dominated by any mixed strategy with support: \(\{\text{RaiseRaise},\text{RaiseSee}\}\). Similarly \(\text{SeeRaise}\) is not a best response to any strategy of player 2 that plays \(\text{Meet}\) with non zero probability. Thus we have \(\sigma_1=(0,0,x,1-x)\). Using the equality of payoffs theorem we have:</p>
 <p>\[
 \begin{aligned}
-u_2(\sigma_1,\text{Meet})&amp;=u_2{\sigma_1,\text{Pass}}
+u_2(\sigma_1,\text{Meet})&amp;=u_2(\sigma_1,\text{Pass})\\
 (x-1)/2&amp;=-x\\
 x&amp;=1/3
 \end{aligned}
@@ -84,16 +84,32 @@ x&amp;=1/3
 <p>The monetary gain to the employer is as follows:</p>
 <ul>
 <li>If the employee does not take the job the utility is 0.</li>
-<li>If the project is succesful: \(A\);</li>
-<li>If the project is unsuccesful: \(B\).</li>
+<li>If the project is succesful: \(\tau\);</li>
+<li>If the project is unsuccesful: \(\kappa\).</li>
 </ul>
 <p>The monetary gain to the employee is as follows:</p>
 <ul>
 <li>If the job offer is not accepted: 0;</li>
-<li>If the project is succesful: \(w+B-1\);</li>
-<li>If the project is unsuccesful despite a high level of effort: \(w-1\);</li>
+<li>If the project is succesful: \(w+B-1\) (the lost gain corresponds to the effort);</li>
+<li>If the project is unsuccesful despite a high level of effort: \(w-1\) (the lost gain corresponds to the effort);</li>
 <li>If the project is unsuccesful because of a low level of effort: \(w\).</li>
 </ul>
 <p>We furthermore assume that the utility function of the employer is simply \(u(x)=x\) while the utility function to the potential employee is of the form \(u(x)=x^{\alpha}\) for \(0&lt;\alpha&lt;1\) (i.e. the potential employee is risk averse).</p>
+<p>The extensive form of the game is given:</p>
+<div class="figure">
+<img src="images/L13-img03.png" /><p class="caption"></p>
+</div>
+<p>Immediately we see that this game is trivial if \(\kappa&lt;\omega\) and \(\tau&lt;\omega+B\). Furthermore it seems sensible to only consider \(\tau&gt;\kappa\).</p>
+<p>We will solve this game using backward induction. The first step:</p>
+<div class="figure">
+<img src="images/L13-img04.png" /><p class="caption"></p>
+</div>
+<p>If the employer would like a high level of effort he should set \(w,B\) such that:</p>
+<p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq w^\alpha\]</p>
+<p>This ensures that the employee will put in a high level of effort. Furthermore it is in the employers interest to ensure that the employee accepts the job (we assume here that \(\frac{\kappa+\tau+B}{2}\geq w\)):</p>
+<p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq 1\]</p>
+<p>This second inequality ensures that the employee accepts the position. Given that the position is accepted the employer would like to in fact minimise \(w,B\) thus we have:</p>
+<p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}=1\]</p>
+<p>Similary</p>
 </body>
 </html>
