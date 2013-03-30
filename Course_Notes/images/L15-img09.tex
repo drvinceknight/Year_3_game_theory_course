@@ -1,0 +1,28 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=1cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{tikzpicture}
+    \node (a) [end] at (0,0) {};
+    \node (b) [end] at (0,1) {};
+    \node (c) [end] at (0,2) {};
+    \node (A) [end] at (2,0) {};
+    \node (B) [end] at (2,1) {};
+    \node (C) [end] at (2,2) {};
+    \node [left] at (a) {$a$: $(A,B,C)$};
+    \node [left] at (b) {$b$: $(B,C,A)$};
+    \node [left] at (c) {$c$: $(B,A,C)$};
+    \node [right] at (A) {$A$: $(b,c,a)$};
+    \node [right] at (B) {$B$: $(a,c,b)$};
+    \node [right] at (C) {$C$: $(a,b,c)$};
+%    \draw (a) -- (A);
+%    \draw (c) -- (B);
+    \draw (b) -- (B);
+\end{tikzpicture}
+\end{document}
