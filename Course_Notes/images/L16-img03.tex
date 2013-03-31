@@ -1,0 +1,21 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}
+    \draw [fill=green!20] (0,0) -- (0,2) -- (2,2) -- (2,0) --cycle;
+    \draw [fill=blue!20] (0,0) -- (0,1) -- (2,1) -- (2,0) --cycle;
+    \draw (1,1) -- (1,2);
+    \node at (1,.5) {$S_1$};
+    \node at (.5,1.5) {$S_2$};
+    \node at (1.5,1.5) {$S_3$};
+    \node at (3,1) {$\geq$};
+    \draw [fill=blue!20,xshift=4cm] (0,0) -- (0,1) -- (2,1) -- (2,0) --cycle;
+    \node [xshift=4cm] at (1,.5) {$S_1$};
+    \node at (7,1) {$+$};
+    \draw [fill=green!20,xshift=8cm] (0,1) -- (0,2) -- (2,2) -- (2,1) --cycle;
+    \draw [xshift=8cm] (1,1) -- (1,2);
+    \node [xshift=8cm] at (.5,1.5) {$S_2$};
+    \node [xshift=8cm] at (1.5,1.5) {$S_3$};
+\end{tikzpicture}
+\end{document}
