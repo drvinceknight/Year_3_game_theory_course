@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="or-3-chapter-18---connection-between-optimal-and-nash-flows">OR 3: Chapter 18 - Connection between optimal and Nash flows</h1>
+<h2 id="recap">Recap</h2>
+<p>In the <a href="Chapter_17_Routing_games.html">previous chapter</a>:</p>
+<ul>
+<li>We defined routing games;</li>
+<li>We defined and calculated optimal flows;</li>
+<li>We defined and calculated Nash flows.</li>
+</ul>
+<p>In this Chapter we'll look at the connection between Optimal and Nash flows.</p>
+<h2 id="potential-function">Potential function</h2>
+<h3 id="definition">Definition</h3>
+<hr />
+<p>Given a routing game \((G,r,c)\) we define the <strong>potential function</strong> of a flow as:</p>
+<p>\[\Phi(f)=\sum_{e\in E}\int_0^{f_e}c_e(x)dx\]</p>
+<hr />
+<p>Thus for the following routing game:</p>
+<div class="figure">
+<img src="images/L17-img04.png" /><p class="caption"></p>
+</div>
+<p>we have:</p>
+<p>\[\Phi((\alpha,\beta))=\frac{\alpha^3}{3}+\frac{3\beta^2}{4}+\frac{(1-\alpha-\beta)^2}{2}\]</p>
+<p>Here's a plot of \(\Phi\):</p>
+<div class="figure">
+<img src="plots/L18-plot01.png" /><p class="caption"></p>
+</div>
+<p>We can verify analytically (as before) that the minimum of this function is given by \((\alpha,\beta)=(0,1/5)\). This leads to the following powerful result.</p>
+<h3 id="theorem">Theorem</h3>
+<hr />
+<p>A feasible flow \(\tilde f\) is a Nash flow for the routing game \((G,r,c)\) if and only if it is a minima for \(\Phi(f)\).</p>
+<hr />
+<p>This is a very powerful result that allows us to obtain Nash flows using minimisation techniques.</p>
+<p>It also points towards a connection between Nash flows and optimal flows.</p>
+<h2 id="marginal-costs">Marginal costs</h2>
+<h3 id="definition-1">Definition</h3>
+<hr />
+<p>If \(c\) is a differentiable cost function the we define the <strong>marginal cost</strong> function \(c^*\) as:</p>
+<p>\[c^*=\frac{d}{dx}(xc(x)\]</p>
+<hr />
+<p>For our running example we have the marginal cost functions given:</p>
+<div class="figure">
+<img src="images/L18-img01.png" /><p class="caption"></p>
+</div>
+<p>We now state our last theorem of the course:</p>
+<h3 id="theorem-1">Theorem</h3>
+<hr />
+<p>A feasible flow \(f^*\) is an optimal flow for \((G,r,c)\) if and only if \(f^*\) is a Nash flow for \((G,r,c^*)\).</p>
+<hr />
+<p>Using this we can compute the optimal flow for our original game by computing the Nash flow for our modified game.</p>
+<p>If we assume that both players use both paths then we have:</p>
+<p>\[\begin{aligned}
+3\alpha^2&amp;=2(1-\alpha-\beta)\\
+3\beta&amp;=2(1-\alpha-\beta)
+\end{aligned}\]</p>
+<p>This gives \(\beta=\frac{2}{5}(1-\alpha)\) implying \(3\alpha^2=\frac{6}{5}(1-\alpha)\) which gives (as before) \(f^* \approx(.4633,0.2147)\).</p>
+<p>We will finish the course by looking at an interesting example that occurs in routing game theory.</p>
+<h2 id="braesss-paradox">Braess's Paradox</h2>
+<p>Consider the following routing game:</p>
+<div class="figure">
+<img src="images/L18-img02.png" /><p class="caption"></p>
+</div>
+<p>If we write down the potential function \(\Phi(\alpha)=\alpha^2/2+(1-\alpha)^2/2+(1-\alpha)+\alpha=\alpha^2 -\alpha + 1/2\). The flow \(\tilde f=1/2\) minimises the potential function and so is a Nash flow. In fact for this example we have \(\tilde f=f^*\) and \(C(\tilde f)=C(f^*)=3/2\).</p>
+<p>If we modify the network by adding capacity to our network with another edge of zero cost:</p>
+<div class="figure">
+<img src="images/L18-img03.png" /><p class="caption"></p>
+</div>
+<p>We can compute the potential function and optimise but we can quickly verify that \(\tilde f=(\alpha,\beta)=(1,1)\) is a Nash flow by comparing with other potential paths. Thus we have \(C(\tilde f)=2\). By adding an edge to our network with a very &quot;cheap&quot; latency cost the situation has been made worse!</p>
+</body>
+</html>

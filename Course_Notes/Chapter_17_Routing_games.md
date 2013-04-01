@@ -204,7 +204,7 @@ $$c_{P_1}(f)\leq c_{P_2}(f)$$
 
 ---
 
-In other words a Nash flow ensures that all used paths have equal costs.
+In other words a Nash flow ensures that all used paths have minimal costs.
 
 If we consider our example and assume that both commodities use all paths available to them:
 
@@ -214,6 +214,14 @@ $$\begin{aligned}
 \beta&=\frac{2}{5}(1-\alpha)
 \end{aligned}$$
 
-Solving this gives: $\beta=\frac{2}{5}(1-\alpha)$ which implies that $\frac{5}{3}\alpha^2+\alpha+1=0$. This gives $\tilde f\approx(0.5307,0.1877)$.
+Solving this gives: $\beta=\frac{2}{5}(1-\alpha)$ this gives $\alpha\approx .5307$ which is not in our region. Let us assume that $\alpha=1/2$ (i.e. commodity 1 does not use $P_2$). Assuming that the second commodity uses both available paths we have:
 
-We can check that this does indeed give a higher overall cost: $C(\tilde f)=.2816$.
+$$\frac{3}{2}\beta=\frac{1}{2}-\beta\Rightarrow\beta=\frac{1}{5}$$
+
+We can check that all paths have minimal cost.
+
+Thus we have $\tilde f=(0,1/5)$ which gives a cost of $C(\tilde f)=7/10$ (much higher than the optimal cost!).
+
+What if we had assumed that $\beta=1/2$?
+
+This would have given $\alpha^2=1/2-\alpha$ which has solution $\alpha\approx .3660$. The cost of the path $s_2at$ is then $.134$ however the cost of the path $s_2t$ is $.75$ thus the second commodity should deviate. We can carry out the some check with all other possibilities to verify that $\tilde f=(0,1/5)$.
