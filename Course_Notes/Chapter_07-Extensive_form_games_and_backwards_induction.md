@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_06-Nash_Equilibria_in_mixed_strategies.html)
+In the [previous chapter](Chapter_06-Nash_Equilibria_in_mixed_strategies.pdf)
 
 - We completed our look at normal form games;
 - Investigated using best responses to identify Nash equilibria in mixed strategies;

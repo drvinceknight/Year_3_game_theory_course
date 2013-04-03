@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous lecture](Chapter_05-Nash_Equilibria_in_pure_strategies.html)
+In the [previous lecture](Chapter_05-Nash_Equilibria_in_pure_strategies.pdf)
 
 - The definition of Nash equilibria;
 - Identifying Nash equilibria in pure strategies;

@@ -8,8 +8,8 @@
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<h1 id="or-3-lecture-7---extensive-form-games-and-backwards-induction">OR 3: Lecture 7 - Extensive form games and backwards induction</h1>
-<h2 id="recap">Recap</h2>
+<h1 id="or-3-lecture-7---extensive-form-games-and-backwards-induction"><span class="header-section-number">1</span> OR 3: Lecture 7 - Extensive form games and backwards induction</h1>
+<h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
 <p>In the <a href="Chapter_06-Nash_Equilibria_in_mixed_strategies.html">previous chapter</a></p>
 <ul>
 <li>We completed our look at normal form games;</li>
@@ -17,7 +17,7 @@
 <li>Proved the Equality of Payoffs theorem which allows us to compute the Nash equilibria for a game.</li>
 </ul>
 <p>In this Chapter we start to look at extensive form games in more detail.</p>
-<h2 id="extensive-form-games">Extensive form games</h2>
+<h2 id="extensive-form-games"><span class="header-section-number">1.2</span> Extensive form games</h2>
 <p>If we recall Chapter 1 we have seen how to represent extensive form games as a tree:</p>
 <div class="figure">
 <img src="images/L01-img03.png" /><p class="caption"></p>
@@ -74,9 +74,9 @@
 <img src="images/L07-img08.png" /><p class="caption"></p>
 </div>
 <p>How we can we analyse normal form games?</p>
-<h2 id="backwards-induction">Backwards induction</h2>
+<h2 id="backwards-induction"><span class="header-section-number">1.3</span> Backwards induction</h2>
 <p>To analyse such games we assume that players not only attempt to optimize their overall utility but optimize their utility conditional on any information set.</p>
-<h3 id="definition">Definition</h3>
+<h3 id="definition"><span class="header-section-number">1.3.1</span> Definition</h3>
 <hr />
 <p><strong>Sequential rationality:</strong> An optimal strategy for a player should maximise that player's expected payoff, conditional on every information set at which that player has a decision.</p>
 <hr />
@@ -84,7 +84,7 @@
 <hr />
 <p><strong>Backward induction:</strong> This is the process of analysing a game from back to front. At each information set we remove strategies that are dominated.</p>
 <hr />
-<h3 id="example">Example</h3>
+<h3 id="example"><span class="header-section-number">1.3.2</span> Example</h3>
 <p>Let us consider the following game:</p>
 <div class="figure">
 <img src="images/L07-img09.png" /><p class="caption"></p>
@@ -103,15 +103,15 @@
 </div>
 <p>Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (W,Z).</p>
 <p><strong>This outcome is in fact a Nash equilibria!</strong> Recalling the original tree neither player has an incentive to move.</p>
-<h3 id="theorem">Theorem</h3>
+<h3 id="theorem"><span class="header-section-number">1.3.3</span> Theorem</h3>
 <hr />
 <p>Every finite game with perfect information has a Nash equilibrium in pure strategies. Backward induction identifies an equilibrium.</p>
 <hr />
-<h3 id="proof">Proof</h3>
+<h3 id="proof"><span class="header-section-number">1.3.4</span> Proof</h3>
 <hr />
 <p>Recalling the properties of <strong>sequential rationality</strong> we see that no player will have an incentive to deviate from the strategy profile found through backward induction. Secondly ever finite game with perfect information can be solved using backward inductions which gives the result.</p>
 <hr />
-<h2 id="stackelberg-game">Stackelberg game</h2>
+<h2 id="stackelberg-game"><span class="header-section-number">1.4</span> Stackelberg game</h2>
 <p>Let us consider the Cournot duopoly game of Chapter 5. Recall:</p>
 <blockquote>
 <p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: \(q_1,q_2\geq 0\). All of the good is sold but the price depends on the number of goods:</p>

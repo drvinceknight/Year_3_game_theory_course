@@ -8,15 +8,15 @@
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<h1 id="or-3-chapter-17---routing-games">OR 3: Chapter 17 - Routing Games</h1>
-<h2 id="recap">Recap</h2>
+<h1 id="or-3-chapter-17---routing-games"><span class="header-section-number">1</span> OR 3: Chapter 17 - Routing Games</h1>
+<h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
 <p>In the <a href="Chapter_16_Cooperative_games.html">previous chapter</a>:</p>
 <ul>
 <li>We defined characteristic function games;</li>
 <li>We defined the Shapley value.</li>
 </ul>
 <p>In this Chapter we'll take a look at another type of game that allows us to model congestion.</p>
-<h2 id="routing-games">Routing games</h2>
+<h2 id="routing-games"><span class="header-section-number">1.2</span> Routing games</h2>
 <p>Game theory can be used to model congestion in a variety of settings:</p>
 <ul>
 <li>Road traffic;</li>
@@ -25,7 +25,7 @@
 <li>Strategies in basketball.</li>
 </ul>
 <p>The type of game used is referred to as a <strong>routing game</strong>.</p>
-<h3 id="definition">Definition</h3>
+<h3 id="definition"><span class="header-section-number">1.2.1</span> Definition</h3>
 <hr />
 <p>A <strong>routing game</strong> \((G,r,c)\) is defined on a graph \(G=(V,E)\) with defined set of sources \(s_i\) and sinks \(t_i\). Each source-sink pair corresponds to a set of traffic \(r_i\) that must travel along the edges of \(G\) from \(s_i\) to \(t_i\). Every edge \(e\) of \(G\) has associated to it a nonnegative, continuous and nondecreasing cost function (also called latency function) \(c_e\).</p>
 <hr />
@@ -45,7 +45,7 @@ c_{at}&amp;=x\\
 <div class="figure">
 <img src="images/L17-img02.png" /><p class="caption"></p>
 </div>
-<h3 id="definition-1">Definition</h3>
+<h3 id="definition-1"><span class="header-section-number">1.2.2</span> Definition</h3>
 <hr />
 <p>For any given \((G,r,c)\) we denote by \(\mathcal{P}_i\) the set of paths available to commodity \(i\).</p>
 <hr />
@@ -54,7 +54,7 @@ c_{at}&amp;=x\\
 <p>and</p>
 <p>\[\mathcal{P}_2=\{s_2a-at,s_2t\}\]</p>
 <p>We denote the set of all possible paths by \(\mathcal{P}=\bigcup_{i}\mathcal{P}_i\).</p>
-<h3 id="definition-2">Definition</h3>
+<h3 id="definition-2"><span class="header-section-number">1.2.3</span> Definition</h3>
 <hr />
 <p>On a routing game we define a flow \(f\) as a vector representing the flows along the various paths, \(f\) is a vector index by \(\mathcal{P}\). Furthermore we call \(f\) <strong>feasible</strong> if:</p>
 <p>\[\sum_{P\in\mathcal{P}_i}f_P=r_i\]</p>
@@ -64,8 +64,8 @@ c_{at}&amp;=x\\
 <img src="images/L17-img03.png" /><p class="caption"></p>
 </div>
 <p>To characterise a flow we need to try and measure how good a flow is.</p>
-<h2 id="optimal-flow">Optimal flow</h2>
-<h3 id="definition-3">Definition</h3>
+<h2 id="optimal-flow"><span class="header-section-number">1.3</span> Optimal flow</h2>
+<h3 id="definition-3"><span class="header-section-number">1.3.1</span> Definition</h3>
 <hr />
 <p>For any routing game \((G,r,c)\) we define a cost function \(C(f)\):</p>
 <p>\[C(f)=\sum_{P\in\mathcal{P}}c_P(f_P)f_P\]</p>
@@ -83,7 +83,7 @@ c_{at}&amp;=x\\
 C(f)&amp;=\alpha^2\times\alpha+\beta^2\times\beta+(1-\alpha-\beta)\times(1-\alpha-\beta)\\
     &amp;=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1
 \end{aligned}\]</p>
-<h3 id="definition-4">Definition</h3>
+<h3 id="definition-4"><span class="header-section-number">1.3.2</span> Definition</h3>
 <hr />
 <p>For a routing game \((G,r,c)\) we define the optimal flow \(f^*\) as the solution to the following optimisation problem:</p>
 <p>Minimise \(\sum_{e\in E}c_e(f_e)\): Subject to:</p>
@@ -129,13 +129,13 @@ f_P&amp;\geq 0
 <li>Similarly when considering \(C(1/2,\beta)\) we know that the local optima is at \(\beta=\frac{2-1/2}{5}\). We have \(C(1/2,3/10)=.3\).</li>
 </ol>
 <p>Thus \(f^*\approx(.4633,0.2147)\).</p>
-<h2 id="nash-flows">Nash flows</h2>
+<h2 id="nash-flows"><span class="header-section-number">1.4</span> Nash flows</h2>
 <p>If we take a closer look at \(f^*\) in our example, we see that traffic from the first commodity travels across two paths: \(P_1=s_1t\) and \(P_2=s_1at\). The cost along the first path is given by:</p>
 <p>\[C_{P_1}(f^*)=.4633^2\approx.2146\]</p>
 <p>The cost along the second path is given by:</p>
 <p>\[C_{P_2}(f^*)=(1-.4633-.2147)\approx .3220\]</p>
 <p>Thus traffic going along the second path is experiencing a higher cost. If this flow represented commuters on their way to work in the morning users of the second path would deviate to use the first. This leads to the definition of a Nash flow.</p>
-<h3 id="definition-5">Definition</h3>
+<h3 id="definition-5"><span class="header-section-number">1.4.1</span> Definition</h3>
 <hr />
 <p>For a routing game \((G,r,c)\) a flow \(\tilde f\) is called a <strong>Nash flow</strong> if and only if for every commodity \(i\) and any two paths \(P_1,P_2\in\mathcal{P}_i\) such that \(f_{P_1}&gt;0\) then:</p>
 <p>\[c_{P_1}(f)\leq c_{P_2}(f)\]</p>

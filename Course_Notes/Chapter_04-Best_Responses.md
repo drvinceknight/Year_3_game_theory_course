@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous lecture](Chapter_04-Dominance.html) we discussed:
+In the [previous lecture](Chapter_04-Dominance.pdf) we discussed:
 
 - Predicting rational behaviour using dominated strategies;
 - The CKR;

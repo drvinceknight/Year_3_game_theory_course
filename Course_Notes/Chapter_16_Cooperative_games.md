@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_15_Matching_games.html):
+In the [previous chapter](Chapter_15_Matching_games.pdf):
 
 - We defined matching games;
 - We described the Gale-Shapley algorithm;

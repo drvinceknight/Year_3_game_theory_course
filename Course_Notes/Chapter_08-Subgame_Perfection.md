@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_07-Extensive_form_games_and_backwards_induction.html)
+In the [previous chapter](Chapter_07-Extensive_form_games_and_backwards_induction.pdf)
 
 - We took a formal look at extensive form games;
 - Investigated an analysis technique for extensive form games called backwards induction.

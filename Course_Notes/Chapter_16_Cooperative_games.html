@@ -8,8 +8,8 @@
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<h1 id="or-3-chapter-15---matching-games">OR 3: Chapter 15 - Matching games</h1>
-<h2 id="recap">Recap</h2>
+<h1 id="or-3-chapter-15---matching-games"><span class="header-section-number">1</span> OR 3: Chapter 15 - Matching games</h1>
+<h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
 <p>In the <a href="Chapter_15_Matching_games.html">previous chapter</a>:</p>
 <ul>
 <li>We defined matching games;</li>
@@ -17,9 +17,9 @@
 <li>We proved certain results regarding the Gale-Shapley algorithm.</li>
 </ul>
 <p>In this Chapter we'll take a look at another type of game.</p>
-<h2 id="cooperative-games">Cooperative Games</h2>
+<h2 id="cooperative-games"><span class="header-section-number">1.2</span> Cooperative Games</h2>
 <p>In cooperative game theory the interest lies with understanding how coalitions form in competitive situations.</p>
-<h3 id="definition">Definition</h3>
+<h3 id="definition"><span class="header-section-number">1.2.1</span> Definition</h3>
 <hr />
 <p>A <strong>characteristic function game</strong> G is given by a pair \((n,v)\) where \(n\) is the number of players and \(v:2^{[n]}\to\mathbb{R}\) is a <strong>characteristic function</strong> which maps every coalition of players to a payoff.</p>
 <hr />
@@ -44,7 +44,7 @@ v(S)=\begin{cases}
 42,&amp;\text{if }S=\{1,2,3\}\\
 \end{cases}
 \]</p>
-<h3 id="definition-1">Definition</h3>
+<h3 id="definition-1"><span class="header-section-number">1.2.2</span> Definition</h3>
 <hr />
 <p>A characteristic function game \(G=(n,v)\) is called <strong>monotone</strong> is it satisfies \(v(S_2)\geq v(S_1)\) for all \(S_1\subseteq S_2\).</p>
 <hr />
@@ -64,7 +64,7 @@ v_1(S)=\begin{cases}
 \end{cases}
 \]</p>
 <p>is not.</p>
-<h3 id="definition-2">Definition</h3>
+<h3 id="definition-2"><span class="header-section-number">1.2.3</span> Definition</h3>
 <hr />
 <p>A characteristic function game \(G=(n,v)\) is called <strong>superadditive</strong> if it satisfies \(v(S_1\cup S_2)\geq v(S_1)+v(S_2).\)</p>
 <hr />
@@ -84,7 +84,7 @@ v_2(S)=\begin{cases}
 \end{cases}
 \]</p>
 <p>is.</p>
-<h2 id="shapley-value">Shapley Value</h2>
+<h2 id="shapley-value"><span class="header-section-number">1.3</span> Shapley Value</h2>
 <p>When talking about a solution to a characteristic function game we imply a payoff vector \(x\in\mathbb{R}_{\geq 0}^{n}\) that divides the value of the grand coalition between the various players. Thus \(x\) must satisfy:</p>
 <p>\[\sum_{i=1}^nx_i=v([n])\]</p>
 <p>Thus one potential solution to our taxi example would be \(x=(14,14,14)\). Obviously this is not ideal for player 1 and/or 2: they actually pay more than they would have paid without sharing the taxi!</p>
@@ -96,40 +96,40 @@ v_2(S)=\begin{cases}
 <li>Symmetry;</li>
 <li>Additivity.</li>
 </ul>
-<h3 id="definition-3">Definition</h3>
+<h3 id="definition-3"><span class="header-section-number">1.3.1</span> Definition</h3>
 <hr />
 <p>For \(G=(n,v)\) a payoff vector \(x\) is <strong>efficient</strong> if:</p>
 <p>\[\sum_{i=1}^nx_i=v([n])\]</p>
 <hr />
-<h3 id="definition-4">Definition</h3>
+<h3 id="definition-4"><span class="header-section-number">1.3.2</span> Definition</h3>
 <hr />
 <p>For \(G(n,v)\) a payoff vector possesses the <strong>null player property</strong> if \(v(S\cup i)=v(S)\) for all \(S\in 2^{[n]}\) then:</p>
 <p>\[x_i=0\]</p>
 <hr />
-<h3 id="definition-5">Definition</h3>
+<h3 id="definition-5"><span class="header-section-number">1.3.3</span> Definition</h3>
 <hr />
 <p>For \(G(n,v)\) a payoff vector possesses the *<em>symmetry property</em> if \(v(S\cup i)=v(S\cup j)\) for all \(S\in 2^{[n]}\setminus\{i,j\}\) then:</p>
 <p>\[x_i=x_j\]</p>
 <hr />
-<h3 id="definition-6">Definition</h3>
+<h3 id="definition-6"><span class="header-section-number">1.3.4</span> Definition</h3>
 <hr />
 <p>For \(G_1=(n,v_1)\) and \(G_2=(n,v_2)\) and \(G^+=(n,v^+)\) where \(v^+(S)=v_1(S)+v_2(S)\) for any \(S\in 2^{[n]}\). A payoff vector possesses the <strong>additivity property</strong> if:</p>
 <p>\[x_i^{(G^+)}=x_i^{(G_1)}+x_i^{(G_2)}\]</p>
 <hr />
 <p>We will not prove the following in this course but in fact there is a single payoff vector that satisfies these four properties. To define it we need two last definitions.</p>
-<h3 id="definition-7">Definition</h3>
+<h3 id="definition-7"><span class="header-section-number">1.3.5</span> Definition</h3>
 <hr />
 <p>If we consider any permutation \(\pi\) of \([n]\) then we denote by \(S_\pi(i)\) the set of predecessors of \(i\) in \(\pi\):</p>
 <p>\[S_\pi(i)=\{j\in[n]\;|\;\pi(j)&lt;\pi(i)\}\]</p>
 <hr />
 <p>For example for \(\pi=(1,3,4,2)\) we have \(S_\pi(4)=\{1,3\}\).</p>
-<h3 id="definition-8">Definition</h3>
+<h3 id="definition-8"><span class="header-section-number">1.3.6</span> Definition</h3>
 <hr />
 <p>If we consider any permutation \(\pi\) of \([n]\) then the marginal contribution of player \(i\) with respect to \(\pi\) is given by:</p>
 <p>\[\Delta_\pi^G(i)=v(S_{\pi}(i)\cup i)-v(S_{\pi}(i))\]</p>
 <hr />
 <p>We can now define the <strong>Shapley value</strong> of any game \(G=(n,v)\).</p>
-<h3 id="definition-9">Definition</h3>
+<h3 id="definition-9"><span class="header-section-number">1.3.7</span> Definition</h3>
 <hr />
 <p>Given \(G=(n,v)\) the <strong>Shapley value</strong> of player \(i\) is denoted by \(\phi_i(G)\) and given by:</p>
 <p>\[\phi_i(G)=\frac{1}{n!}\sum_{\pi\in\Pi_n}\Delta_\pi^G(i)\]</p>

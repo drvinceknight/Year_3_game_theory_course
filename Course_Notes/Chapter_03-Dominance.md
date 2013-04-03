@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous lecture](Chapter_03-Normal_Form_Games.html) we discussed:
+In the [previous lecture](Chapter_03-Normal_Form_Games.pdf) we discussed:
 
 - Normal form games;
 - Mixed strategies and expected utilities.

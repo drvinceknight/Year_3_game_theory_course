@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_10_Infinitely_Repeated_Games.html):
+In the [previous chapter](Chapter_10_Infinitely_Repeated_Games.pdf):
 
 - We considered infinitely repeated games using a discount factor;
 - We proved a theorem stating that for a high enough discount factor players could end up cooperating.

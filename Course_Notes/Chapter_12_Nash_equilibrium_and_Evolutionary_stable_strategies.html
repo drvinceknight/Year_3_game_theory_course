@@ -8,8 +8,8 @@
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<h1 id="or-3-chapter-12---nash-equilibrium-and-evolutionary-stable-strategies">OR 3: Chapter 12 - Nash equilibrium and Evolutionary stable strategies</h1>
-<h2 id="recap">Recap</h2>
+<h1 id="or-3-chapter-12---nash-equilibrium-and-evolutionary-stable-strategies"><span class="header-section-number">1</span> OR 3: Chapter 12 - Nash equilibrium and Evolutionary stable strategies</h1>
+<h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
 <p>In the <a href="">previous chapter</a>:</p>
 <ul>
 <li>We considered population games;</li>
@@ -17,7 +17,7 @@
 <li>We defined Evolutionary stable strategies and looked at an example in a game against the field.</li>
 </ul>
 <p>In this chapter we'll take a look at pairwise contest games and look at the connection between Nash equilibrium and ESS.</p>
-<h2 id="pairwise-contest-games">Pairwise contest games</h2>
+<h2 id="pairwise-contest-games"><span class="header-section-number">1.2</span> Pairwise contest games</h2>
 <p>In a population game when considering a pairwise contest game we assume that individuals are randomly matched. The utilities then depend just on what the individuals do:</p>
 <p>\[u(\sigma,x)=\sum_{s\in S}\sum_{s&#39;\in S}\sigma(s)x(s&#39;)u(s,s&#39;)\]</p>
 <p>As an example we're going to consider the &quot;Hawk-Dove&quot; game: a model of predator interaction. We have \(S=\{H,D\}\) were:</p>
@@ -62,15 +62,15 @@ u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\
 <p>\[u(\sigma^*,x_{\epsilon})-u(\sigma,x_{\epsilon})=\frac{\epsilon c}{2}\left(\frac{v}{c}-\omega\right)^2&gt;0\]</p>
 <p>which proves that \(\sigma^*\) is an ESS.</p>
 <p>We will now take a closer look the connection between ESS and Nash equilibria.</p>
-<h2 id="ess-and-nash-equilibria">ESS and Nash equilibria</h2>
+<h2 id="ess-and-nash-equilibria"><span class="header-section-number">1.3</span> ESS and Nash equilibria</h2>
 <p>When considering pairwise contest population games there is a natural way to associate a normal form game.</p>
-<h3 id="definition">Definition</h3>
+<h3 id="definition"><span class="header-section-number">1.3.1</span> Definition</h3>
 <hr />
 <p>The <strong>associated two player game</strong> for a pairwise contest population game is the normal form game with payoffs given by: \(u_1(s,s&#39;)=u(s,s&#39;)=u_2(s&#39;,s)\).</p>
 <hr />
 <p>Note that the resulting game is symmetric (other contexts would give non symmetric games but we won't consider them here).</p>
 <p>Using this we have the powerful result:</p>
-<h3 id="theorem">Theorem</h3>
+<h3 id="theorem"><span class="header-section-number">1.3.2</span> Theorem</h3>
 <hr />
 <p>If \(\sigma^*\) is an ESS in a pairwise contest population game then for all \(\sigma\ne\sigma^*\):</p>
 <ol style="list-style-type: decimal">
@@ -79,7 +79,7 @@ u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\
 </ol>
 <p>Conversely, if either (1) or (2) holds for all \(\sigma\ne\sigma^*\) in a two player normal form game then \(\sigma\) is an ESS.</p>
 <hr />
-<h3 id="proof">Proof</h3>
+<h3 id="proof"><span class="header-section-number">1.3.3</span> Proof</h3>
 <p>If \(\sigma^*\) is an ESS, then by definition:</p>
 <p>\[u(\sigma^*,x_{\epsilon})&gt;u(\sigma,x_{\epsilon})\]</p>
 <p>which corresponds to:</p>
@@ -99,7 +99,7 @@ u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\
 <li>Identify all symmetric Nash equilibria of the game;</li>
 <li>Test the Nash equilibrium against the two conditions of the above Theorem.</li>
 </ol>
-<h3 id="example">Example</h3>
+<h3 id="example"><span class="header-section-number">1.3.4</span> Example</h3>
 <p>Let us consider the Hawk-Dove game. The associated two-player game is:</p>
 <p>\[
 \begin{pmatrix}
