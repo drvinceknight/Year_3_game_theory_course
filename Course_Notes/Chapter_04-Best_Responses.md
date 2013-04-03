@@ -98,7 +98,7 @@ $$UD_i=\{s\in S_i\;|\; \text{s is not strictly dominated}\}$$
 If we consider the following game:
 
 $$\begin{pmatrix}
-(3,2)&(7,2)&(5,1)\\
+(3,3)&(7,2)&(5,1)\\
 (5,1)&(6,3)&(7,-1)
 \end{pmatrix}$$
 
@@ -121,9 +121,9 @@ In other words $B_i$ is the set of functions that are best responses to some str
 
 Let us try to identify $B_2$ for the above game. Let us assume that player 1 plays $\sigma_1=(x,1-x)$. This gives:
 
-$$u_2(\sigma,s_1)=1+3x$$
-$$u_2(\sigma,s_2)=3-x$$
-$$u_2(\sigma,s_3)=2x-1$$
+$$u_2(\sigma_1,s_1)=1+2x$$
+$$u_2(\sigma_1,s_2)=3-x$$
+$$u_2(\sigma_1,s_3)=2x-1$$
 
 ![](plots/L04-plot03.png)
 
@@ -141,9 +141,9 @@ However as noted earlier $s_3$ is dominated by $s_2$ so:
 $$u_1(r_1,\sigma_2)< xu_1(r_1,s_1)+u_2(r_1,s_2)(1-x)=7-4x$$
 $$u_1(r_2,\sigma_2)< xu_1(r_2,s_1)+u_2(r_2,s_2)(1-x)=6-x$$
 
-![](plots/L04-plot04.png)
+![Upper bounds on $u_1$\label{L04-plot04}](plots/L04-plot04.png)
 
-We see that $r_1$ and $r_2$ are best responses for player 1:
+We see that $r_1$ and $r_2$ are best responses for player 1 (however $r_3$ cannot be as for any value of $y$ the corresponding curves would be below the curves shown\text{ in Figure \ref{L04-plot04}}):
 
 $$B_1=\{r_1,r_2\}$$
 
