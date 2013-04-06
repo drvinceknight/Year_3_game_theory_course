@@ -1,4 +1,4 @@
-# OR 3: Lecture 2 - Normal Form Games
+# OR 3: Chapter 2 - Normal Form Games
 
 ## Recap
 
@@ -16,16 +16,16 @@ Can we think of a better way of representing this game?
 
 ## Normal form games
 
-One other representation for a game is called the **normal form**.
+Another representation for a game is called the **normal form**.
 
 
-### Definition
+### Definition of a normal form game
 
 ---
 
-A $n$ player **normal form game** consists of:
+A $N$ player **normal form game** consists of:
 
-1. A finite set of $n$ players;
+1. A finite set of $N$ players;
 2. Strategy spaces for the players: $S_1, S_2, S_3, \dots S_n$;
 3. Payoff functions for the players: $u_i:S_{1}\times S_2\dots\times S_n\to \mathbb{R}$
 
@@ -33,9 +33,9 @@ A $n$ player **normal form game** consists of:
 
 The convention used in this course (unless otherwise stated) is that all players aim to choose from their strategies in such a way as to maximise their utilities.
 
-A natural way of representing a two player normal form game is using a **bi-matrix**. If we assume that $S_1=\{r_i\;|\;1\leq i\leq m \}$ and $S_2=\{s_j\;|\;1\leq j\leq n \}$ then the following is a **bi-matrix** representation of the game considered:
+A natural way of representing a two player normal form game is using a **bi-matrix**. If we assume that $N=2$ and $S_1=\{r_i\;|\;1\leq i\leq m \}$ and $S_2=\{s_j\;|\;1\leq j\leq n \}$ then a **bi-matrix** representation of the game considered is shown \text{in Figure \ref{L02-img01}}.
 
-![A bi matrix.](images/L02-img01.png)
+![A bi matrix for $N=2$. \label{L02-img01}](images/L02-img01.png)
 
 ### Some examples
 
@@ -52,7 +52,7 @@ $$
 
 #### Prisoners' Dilemma
 
-> Assume two thieves have been caught by the police and separated for questioning. If both thieves cooperate and don't divulge any information they will each get a short sentence. If one defects he/she is offered a deal while the other thief will get a long sentence. If they both defect they both get a medium sentence.
+> Assume two thieves have been caught by the police and separated for questioning. If both thieves cooperate and don't divulge any information they will each get a short sentence. If one defects he/she is offered a deal while the other thief will get a long sentence. If they both defect they both get a medium length sentence.
 
 $$
 \begin{pmatrix}
@@ -63,7 +63,7 @@ $$
 
 #### Hawk-Dove
 
-> Suppose two birds of prey must share a limited resource. The birds can act like a hawk or a dove. Hawks always fight over the resource to the point of exterminating a fellow hawk and/or take a majority of the resource from a dove. Two doves can share the resource quite well.
+> Suppose two birds of prey must share a limited resource. The birds can act like a hawk or a dove. Hawks always fight over the resource to the point of exterminating a fellow hawk and/or take a majority of the resource from a dove. Two doves can share the resource.
 
 $$
 \begin{pmatrix}
@@ -84,15 +84,28 @@ $$
 \end{pmatrix}
 $$
 
+#### Matching pennies
+
+> Consider two players who can choose to display a coin either Heads facing up or Tails facing up. If both players show the same face then player 1 wins, if not then player 2 wins.
+
+$$
+\begin{pmatrix}
+(1,-1)&(-1,1)\\
+(-1,1)&(1,-1)
+\end{pmatrix}
+$$
+
 ## Mixed Strategies
 
 So far we have only considered so called **pure strategies**. We will now allow players to play **mixed strategies**.
 
-### Definition
+### Definition of a mixed strategy
 
 ---
 
-In an $n$ player normal form game a **mixed strategy** for player $i$ denoted by $\sigma_i\in[0,1]^{|S_i|}_{\mathbb{R}}$ is a probability distribution over the pure strategies of player $i$.
+In an $N$ player normal form game a **mixed strategy** for player $i$ denoted by $\sigma_i\in[0,1]^{|S_i|}_{\mathbb{R}}$ is a probability distribution over the pure strategies of player $i$. So:
+
+$$\sum_{i=1}^{|\S_i|}\sigma_i=1$$
 
 For a given player $i$ we denote the set of mixed strategies as $\Delta S_i$.
 
@@ -104,7 +117,7 @@ We can extend the utility function which maps from the set of pure strategies to
 
 $$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,s)$$
 
-(where we relax our notation to allow $\sigma_i:S_i\to[0,1]_{\mathbb{R}}$)
+(where we relax our notation to allow $\sigma_i:S_i\to[0,1]_{\mathbb{R}}$ so that $\sigma_i(s_i)$ denotes the probability of playing $s_i\in S_i$.)
 
 ## Matching pennies revisited.
 
@@ -128,8 +141,8 @@ Similarly if player 1 always plays tails the expected utility to player 2 is:
 $$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=x+(x-1)=2x-1$$
 
 
-A plot of this is shown here:
+A plot of this is shown \text{in Figure \ref{L02-plot01}}.
 
-![Plot of utility if both players play tails.](./plots/L02-plot01.png)
+![Plot of utility if both players play tails. \label{L02-plot01}](./plots/L02-plot01.png)
 
 Add to this plot by assuming that the players independently both play heads.

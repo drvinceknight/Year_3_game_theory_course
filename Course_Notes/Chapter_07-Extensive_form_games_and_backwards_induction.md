@@ -12,47 +12,47 @@ In this Chapter we start to look at extensive form games in more detail.
 
 ## Extensive form games
 
-If we recall Chapter 1 we have seen how to represent extensive form games as a tree:
+If we recall Chapter 1 we have seen how to represent extensive form games as a tree\text{ as shown in Figure \ref[L01-img03}}.
 
-![](images/L01-img03.png)
+![Bob and Celine. \label{L01-img03}](images/L01-img03.png)
 
-We will not consider the rules that define an extensive form game game tree:
+We will now consider the properties that define an extensive form game game tree:
 
-1. Every node is a successor of the (unique) initial node.
+1. Every node is a successor of the (unique) initial node\text{ as shown in Figure \ref{L07-img-01}.
 
-![](images/L07-img01.png)
+![A tree with two initial nodes.\label{L07-img01}](images/L07-img01.png)
 
-2. Every node apart from the initial node has exactly one predecessor. The initial node has no predecessor.
+2. Every node apart from the initial node has exactly one predecessor. The initial node has no predecessor\text{ as shown in Figure \ref{L07-img02}}.
 
-![](images/L07-img02.png)
+![A tree with node c having multiple predecessors. \label{L07-img02}](images/L07-img02.png)
 
-3. All edges extending from the same node have different action labels.
+3. All edges extending from the same node have different action labels\text{ as shown in Figure \ref{L07-img03}}.
 
-![](images/L07-img03.png)
+![Nodes with same action labels.\label{L07-img03}](images/L07-img03.png)
 
-4. Each information set contains decision nodes for one player.
+4. Each information set contains decision nodes for one player\text{ as shown in Figure \ref{L07-img04}}.
 
-![](images/L07-img04.png)
+![Information sets with different action labels.\label{L07-img04}](images/L07-img04.png)
 
-5. All nodes in a given information set must have the same number of successors (with the same action labels on the corresponding edges).
+5. All nodes in a given information set must have the same number of successors (with the same action labels on the corresponding edges)\text{ as shown in Figure \ref{L07-img05}}.
 
-![](images/L07-img05.png)
+![Information set with different number of action edges. \label{L07-img05}](images/L07-img05.png)
 
-6. We will only consider games with "perfect recall", ie we assume that players remember their own past actions as well as other past events.
+6. We will only consider games with "perfect recall", ie we assume that players remember their own past actions as well as other past events\text{ as shown in Figure \ref{L07-img06}}.
 
-![](images/L07-img06.png)
+![A game without perfect recall.\label{L07-img06}](images/L07-img06.png)
 
-7. If a player's action is not a discrete set we can represent this as follows:
+7. If a player's action is not a discrete set we can represent this as shown\text{ in Figure \ref{L07-img07}}.
 
-![](images/L07-img07.png)
+![A game tree with continuous strategy set.\label{L07-img07}](images/L07-img07.png)
 
 As an example consider the following game (sometimes referred to as "ultimatum bargaining"):
 
 > Consider two individuals: a seller and a buyer. A seller can set a price $p$ for a particular object that has value $K$ to the buyer and no value to the seller. Once the sellers sets the price the buyer can choose whether or not to pay the price. If the buyer chooses to not pay the price then both players get a payoff of 0.
 
-We can represent this as follows:
+We can represent this\text{ as shown in Figure \ref{L07-img08}}.
 
-![](images/L07-img08.png)
+![The seller buyer game.\label{L07-img08}](images/L07-img08.png)
 
 How we can we analyse normal form games?
 
@@ -60,7 +60,7 @@ How we can we analyse normal form games?
 
 To analyse such games we assume that players not only attempt to optimize their overall utility but optimize their utility conditional on any information set.
 
-### Definition
+### Definition of sequential rationality
 
 ---
 
@@ -70,6 +70,8 @@ To analyse such games we assume that players not only attempt to optimize their 
 
 With this notion in mind we can now define an analysis technique for extensive form games:
 
+### Definition of backward induction
+
 ---
 
 **Backward induction:** This is the process of analysing a game from back to front. At each information set we remove strategies that are dominated.
@@ -78,27 +80,27 @@ With this notion in mind we can now define an analysis technique for extensive f
 
 ### Example
 
-Let us consider the following game:
+Let us consider the game shown\text{ in Figure \ref{L07-img09}}.
 
-![](images/L07-img09.png)
+![Running example for backward induction.\label{L07-img09}](images/L07-img09.png)
 
-We see that at node $(d)$ that Z is a dominated strategy. So that the game reduces to:
+We see that at node $(d)$ that Z is a dominated strategy. So that the game reduces to as shown\text{ in Figure \ref{L07-img10}}.
 
-![](images/L07-img10.png)
+![Running example step 1.\label{L07-img10}](images/L07-img10.png)
 
-Player 1s strategy profile is (Y). At node $(c)$ A is a dominated strategy so that the game reduces to:
+Player 1s strategy profile is (Y) (we will discuss strategy profiles for extensive form games more formally in the next chapter). At node $(c)$ A is a dominated strategy so that the game reduces as shown\text{ in Figure \ref{L07-img10}}.
 
-![](images/L07-img11.png)
+![Running example step 2.\label{L07-img11}](images/L07-img11.png)
 
-Player 2s strategy profile is (B). At node $(b)$ C is a dominated strategy so that the game reduces to:
+Player 2s strategy profile is (B). At node $(b)$ C is a dominated strategy so that the game reduces as shown\text{ in Figure \ref{L07-img12}}.
 
-![](images/L07-img12.png)
+![Running example step 3.\label{L07-img12}](images/L07-img12.png)
 
 Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (W,Z).
 
 **This outcome is in fact a Nash equilibria!** Recalling the original tree neither player has an incentive to move.
 
-### Theorem
+### Theorem of existence of Nash equilibrium in games of perfect information.
 
 ---
 
@@ -126,9 +128,9 @@ Let us consider the Cournot duopoly game of Chapter 5. Recall:
 
 However we will modify this to assume that there is a leader and a follower, ie **the firms do not decide at the same time**. This game is called a Stackelberg leader follower game.
 
-Let us represent this as a normal form game:
+Let us represent this as a normal form game\text{ as shown in Figure \ref{L07-img13}}.
 
-![](images/L07-img13.png)
+![A Stackelberg leader follower game.\label{L07-img13}](images/L07-img13.png)
 
 We use backward induction to identify the Nash equilibria. The dominant strategy for the follower is:
 
@@ -148,4 +150,4 @@ $$q_1^*=\frac{K-k}{2}$$
 which in turn gives:
 $$q_2^*=\frac{K-k}{4}$$
 
-The total amount of goods produced is $\frac{3(K-k)}{4}$ whereas in the Cournot game the total amount of good produced was $\frac{2(K-k)}{3}$. Thus more goods are produced in the Stackelberg game, as an exercise what is the difference in profits made by each firm?
+The total amount of goods produced is $\frac{3(K-k)}{4}$ whereas in the Cournot game the total amount of good produced was $\frac{2(K-k)}{3}$. Thus more goods are produced in the Stackelberg game.

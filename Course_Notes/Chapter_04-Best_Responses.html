@@ -8,18 +8,18 @@
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<h1 id="or-3-chapter-4---normal-form-games"><span class="header-section-number">1</span> OR 3: Chapter 4 - Normal Form Games</h1>
+<h1 id="or-3-chapter-4---best-responses"><span class="header-section-number">1</span> OR 3: Chapter 4 - Best responses</h1>
 <h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
-<p>In the <a href="Chapter_04-Dominance.pdf">previous lecture</a> we discussed:</p>
+<p>In the <a href="Chapter_03-Dominance.pdf">previous lecture</a> we discussed:</p>
 <ul>
 <li>Predicting rational behaviour using dominated strategies;</li>
 <li>The CKR;</li>
 </ul>
 <p>We did discover certain games that did not have any dominated strategies.</p>
 <h2 id="best-response-functions"><span class="header-section-number">1.2</span> Best response functions</h2>
-<h3 id="definition"><span class="header-section-number">1.2.1</span> Definition</h3>
+<h3 id="definition-of-a-best-response"><span class="header-section-number">1.2.1</span> Definition of a best response</h3>
 <hr />
-<p>In an \(n\) player normal form game. A strategy \(s^*\) for player \(i\) is a best response to some strategy profile \(s_{-i}\) if and only if \(u_i(s^*,s_{-i})\geq u_{i}(s,s_{-i})\) for all \(s\in S_i\).</p>
+<p>In an \(N\) player normal form game. A strategy \(s^*\) for player \(i\) is a best response to some strategy profile \(s_{-i}\) if and only if \(u_i(s^*,s_{-i})\geq u_{i}(s,s_{-i})\) for all \(s\in S_i\).</p>
 <hr />
 <p>We can now start to predict rational outcomes in pure strategies by identifying all best responses to a strategy.</p>
 <p>\[\begin{pmatrix}
@@ -28,7 +28,7 @@
 (2,5)&amp;(3,4)&amp;(5,6)
 \end{pmatrix}
 \]</p>
-<p>We will underline the best responses for each strategy giving:</p>
+<p>We will underline the best responses for each strategy giving (\(r_i\) is underlined if it is a best response to \(s_j\) and vice versa):</p>
 <p>\[\begin{pmatrix}
 (1,\underline{3})&amp;(\underline{4},2)&amp;(2,2)\\
 (\underline{4},0)&amp;(0,\underline{3})&amp;(4,1)\\
@@ -43,14 +43,15 @@
 (-1,1)&amp;(1,-1)
 \end{pmatrix}\]</p>
 <p>If we assume that player 2 plays a mixed strategy \(\sigma_2=(x,1-x)\) we have:</p>
-<p>\[u_1(r_1,\sigma_2)=1-2x\]</p>
+<p>\[u_1(r_1,\sigma_2)=2x-1\]</p>
 <p>and</p>
-<p>\[u_1(r_2,\sigma_2)=2x-1\]</p>
+<p>\[u_1(r_2,\sigma_2)=1-2x\]</p>
 <div class="figure">
-<img src="plots/L04-plot01.png" /><p class="caption"></p>
+<img src="plots/L04-plot01.png" alt="Mixed strategies fox the matching pennies game. " /><p class="caption">Mixed strategies fox the matching pennies game. </p>
 </div>
+<p></p>
 <ol style="list-style-type: decimal">
-<li>If \(x&lt;1/2\) then \(r_1\) is a best response for player 1.</li>
+<li>If \(x&lt;1/2\) then \(r_2\) is a best response for player 1.</li>
 <li>If \(x&gt;1/2\) then \(r_1\) is a best response for player 1.</li>
 <li>If \(x=1/2\) then player 1 is indifferent.</li>
 </ol>
@@ -64,17 +65,18 @@
 <p>and</p>
 <p>\[u_1(r_2,\sigma_2)=2-x\]</p>
 <div class="figure">
-<img src="plots/L04-plot02.png" /><p class="caption"></p>
+<img src="plots/L04-plot02.png" alt="Mixed strategies for the battle of the sexes game. " /><p class="caption">Mixed strategies for the battle of the sexes game. </p>
 </div>
+<p></p>
 <ol style="list-style-type: decimal">
 <li>If \(x&lt;1/2\) then \(r_2\) is a best response for player 1.</li>
 <li>If \(x&gt;1/2\) then \(r_1\) is a best response for player 1.</li>
 <li>If \(x=1/2\) then player 1 is indifferent.</li>
 </ol>
 <h2 id="connection-between-best-responses-and-dominance"><span class="header-section-number">1.4</span> Connection between best responses and dominance</h2>
-<h3 id="definition-1"><span class="header-section-number">1.4.1</span> Definition</h3>
+<h3 id="definition-of-the-undominated-strategy-set"><span class="header-section-number">1.4.1</span> Definition of the undominated strategy set</h3>
 <hr />
-<p>In an \(n\) player normal form game, let us define the set \(UD_i\):</p>
+<p>In an \(N\) player normal form game, let us define the undominated strategy set \(UD_i\):</p>
 <p>\[UD_i=\{s\in S_i\;|\; \text{s is not strictly dominated}\}\]</p>
 <hr />
 <p>If we consider the following game:</p>
@@ -84,16 +86,17 @@
 \end{pmatrix}\]</p>
 <p>We have:</p>
 <p>\[UD_1=\{r_1,r_2\}\] \[UD_2=\{s_1,s_2\}\]</p>
-<h3 id="definition-2"><span class="header-section-number">1.4.2</span> Definition</h3>
+<h3 id="definition-of-the-best-responses-strategy-set"><span class="header-section-number">1.4.2</span> Definition of the best responses strategy set</h3>
 <hr />
-<p>In an \(n\) player normal form game, let us define the set \(B_i\):</p>
+<p>In an \(N\) player normal form game, let us define the best responses strategy set \(B_i\):</p>
 <p>\[B_i=\{s\in S_i\;|\; \exists\;\sigma\in\Delta S_{-i}\text{ such that }s \text{ is a best response to }\sigma\}\]</p>
 <hr />
 <p>In other words \(B_i\) is the set of functions that are best responses to some strategy profile in \(S_{-i}\).</p>
 <p>Let us try to identify \(B_2\) for the above game. Let us assume that player 1 plays \(\sigma_1=(x,1-x)\). This gives:</p>
 <p>\[u_2(\sigma_1,s_1)=1+2x\] \[u_2(\sigma_1,s_2)=3-x\] \[u_2(\sigma_1,s_3)=2x-1\]</p>
+<p></p>
 <div class="figure">
-<img src="plots/L04-plot03.png" /><p class="caption"></p>
+<img src="plots/L04-plot03.png" alt="Utilities of player 2 in our example. " /><p class="caption">Utilities of player 2 in our example. </p>
 </div>
 <p>We see that \(s_3\) is never a best response for player 2:</p>
 <p>\[B_2=\{s_1,s_2\}\]</p>
@@ -101,20 +104,21 @@
 <p>\[u_1(r_1,\sigma_2)=xu_1(r_1,s_1)+yu_2(r_1,s_2)+(1-x-y)u_3(r_1,s_3)\] \[u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_2(r_2,s_2)+(1-x-y)u_3(r_2,s_3)\]</p>
 <p>However as noted earlier \(s_3\) is dominated by \(s_2\) so:</p>
 <p>\[u_1(r_1,\sigma_2)&lt; xu_1(r_1,s_1)+u_2(r_1,s_2)(1-x)=7-4x\] \[u_1(r_2,\sigma_2)&lt; xu_1(r_2,s_1)+u_2(r_2,s_2)(1-x)=6-x\]</p>
+<p></p>
 <div class="figure">
 <img src="plots/L04-plot04.png" alt="Upper bounds on u_1" /><p class="caption">Upper bounds on \(u_1\)</p>
 </div>
 <p>We see that \(r_1\) and \(r_2\) are best responses for player 1 (however \(r_3\) cannot be as for any value of \(y\) the corresponding curves would be below the curves shown):</p>
 <p>\[B_1=\{r_1,r_2\}\]</p>
-<p>We have seen in our little example that \(B_i=UD_i\). This leads us to two Theorems (the proofs are omitted).</p>
-<h3 id="theorem"><span class="header-section-number">1.4.3</span> Theorem</h3>
+<p>We have seen in our example that \(B_i=UD_i\). This leads us to two Theorems (the proofs are omitted).</p>
+<h3 id="theorem-of-equality-in-2-player-games"><span class="header-section-number">1.4.3</span> Theorem of equality in 2 player games</h3>
 <hr />
 <p>In a 2 player normal form game \(B_i=UD_i\) for all \(i\in\{1,2\}\).</p>
 <hr />
 <p>This is however not always the case:</p>
-<h3 id="section"><span class="header-section-number">1.4.4</span> </h3>
+<h3 id="theorem-of-inclusion-in-n-player-games"><span class="header-section-number">1.4.4</span> Theorem of inclusion in \(N\) player games</h3>
 <hr />
-<p>In an \(n\) player normal form game \(B_i\subseteq ID_i\) for all \(1 \leq i\leq n\).</p>
+<p>In an \(N\) player normal form game \(B_i\subseteq UD_i\) for all \(1 \leq i\leq n\).</p>
 <hr />
 </body>
 </html>

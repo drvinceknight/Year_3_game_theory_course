@@ -13,11 +13,11 @@ We spent some time talking about predicting rational behaviour in the above game
 
 In certain games it is evident that certain strategies should never be used by a rational player. To formalise this we need a couple of definitions.
 
-### Definition
+### Definition of an incomplete strategy profile
 
 ---
 
-In an $n$ player normal form game when considering player $i$ we denotes by $s_{-i}$ a fixed strategy profile for all other players in the game.
+In an $N$ player normal form game when considering player $i$ we denotes by $s_{-i}$ an **incomplete strategy** profile for all other players in the game.
 
 ---
 
@@ -25,12 +25,12 @@ For example in a 3 player game where $S_i=\{A,B\}$ for all $i$ a valid strategy 
 
 This notation now allows us to define an important notion in game theory.
 
-### Definition
+### Definition of a strictly dominated strategy
 
 
 ---
 
-In an $n$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **strictly dominated** if there is a strategy (pure or mixed) $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})>u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players.
+In an $N$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **strictly dominated** if there is a strategy $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})>u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players.
 
 ---
 
@@ -56,11 +56,11 @@ $$\begin{pmatrix}
 
 At this point it is straightforward to see that $r_2$ is a strictly dominated strategy for player 1 giving the following predicted strategy profile: $s=(r_1,s_2)$.
 
-### Definition
+### Definition of a weakly dominated strategy
 
 ---
 
-In an $n$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **weakly dominated** if there is a strategy (pure or mixed) $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})\leq u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players and there exists a strategy profile $\bar s\in S_{-i}$ such that $u_i(\sigma_i,\bar s)< u_{i}(s_i,s_{-i})$ .
+In an $N$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **weakly dominated** if there is a strategy $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})\leq u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players and there exists a strategy profile $\bar s\in S_{-i}$ such that $u_i(\sigma_i,\bar s)< u_{i}(s_i,s_{-i})$ .
 
 ---
 

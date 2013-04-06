@@ -12,21 +12,23 @@ So far we have been using various tools to loosely discuss 'predicting rational 
 
 ## Nash equilibria
 
+### Definition of Nash equilibria
+
 ---
 
-In an $n$ player normal form game. A Nash equilibrium in **pure strategies** is a strategy profile $\tilde s$ such that:
+In an $N$ player normal form game. A Nash equilibrium is a strategy profile $\tau = (\tilde s_1,\tilde s_2,\dots,\tilde s_N)$ such that:
 
 $$u_i(\tilde s)\geq u_i(\bar s_i,\tilde s_{-i})\text{ for all }i$$
 
 ---
 
-This implies that all strategies in the strategy profile $s$ are best responses to all the other strategies.
+This implies that all strategies in the strategy profile $\tau$ are best responses to all the other strategies.
 
 An important interpretation of this definition is that at the Nash equilibria no player has an incentive to deviate from their current strategy.
 
 To find Nash equilibria in 2 player normal form games we can simply check every strategy pair and see whether or not a player has an incentive to deviate.
 
-## Example
+### Example
 
 Identify Nash equilibria in pure strategies for the following game:
 
@@ -62,7 +64,7 @@ We will now consider a particular normal form game attributed to Augustin Courno
 
 >$$p=K-q_1-q_2$$
 
-> We also assume that the firms both pay a production cost of $k$ per bricks.
+> We also assume that the firms both pay a production cost of $k$ per goods.
 
 What is the Nash equilibria for this game?
 
@@ -77,7 +79,7 @@ Firstly let us clarify that this is indeed a normal form game:
 $$u_1(q_1,q_2)=(K-q_1-q_2)q_1-kq_1$$
 $$u_2(q_1,q_2)=(K-q_1-q_2)q_2-kq_2$$
 
-Let us now compute the best responses for each firm (we'll in fact only need to do this for one firm given the symmetry of the problem.
+Let us now compute the best responses for each firm (we'll in fact only need to do this for one firm given the symmetry of the problem).
 
 $$\frac{du_1}{dq_1}=K-2q_1-q_2-k$$
 
@@ -107,7 +109,7 @@ $$
 \end{cases}
 $$
 
-$$\Rightarrow$$
+$$\Leftrightarrow$$
 
 $$\begin{cases}
 \tilde q_1=\frac{K-k}{3}\\

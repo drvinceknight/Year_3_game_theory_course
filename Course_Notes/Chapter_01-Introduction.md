@@ -1,4 +1,4 @@
-# OR 3: Chapter 1
+# OR 3: Chapter 1 - Introduction to game theory
 ## Introduction
 
 Let us consider the very simple situation where **you** decide where to meet your **friends**. You have some information about their behaviour:
@@ -34,11 +34,11 @@ We will now return to the tree diagrams drawn previously. In game theory trees a
 
 ---
 
-An $n$ player extensive form game **of complete information** consists of:
+An $N$ player extensive form game **of complete information** consists of:
 
-1. A finite set of $n$ players;
+1. A finite set of $N$ players;
 2. A rooted tree (which we refer to as the _game tree_);
-3. Each leaf of the tree has an $n$-tuple of payoffs;
+3. Each leaf of the tree has an $N$-tuple of payoffs;
 
 ---
 
@@ -81,7 +81,7 @@ Two nodes of a game tree are said to be part of the same information set if the 
 
 ---
 
-We represent nodes being part of the same information set using a dashed line\text{ (as shown in Figure \ref{L01-img05})}. In our example with Celine and Bob if both players must decide on a movie without knowing what the other will do we see that node **b** and **c** now have the same information set.
+We represent nodes being part of the same information set using a dashed line\text{ (as shown in Figure \ref{L01-img05})}. In our example with Celine and Bob if both players must decide on a movie without knowing what the other will do we see that nodes **b** and **c** now have the same information set.
 
 ![Celine and Bob with Information Set\label{L01-img05}](images/L01-img05.png)
 

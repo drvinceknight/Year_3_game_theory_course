@@ -10,7 +10,7 @@
 <body>
 <h1 id="or-3-chapter-3---dominance"><span class="header-section-number">1</span> OR 3: Chapter 3 - Dominance</h1>
 <h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
-<p>In the <a href="Chapter_03-Normal_Form_Games.html">previous lecture</a> we discussed:</p>
+<p>In the <a href="Chapter_03-Normal_Form_Games.pdf">previous lecture</a> we discussed:</p>
 <ul>
 <li>Normal form games;</li>
 <li>Mixed strategies and expected utilities.</li>
@@ -18,15 +18,15 @@
 <p>We spent some time talking about predicting rational behaviour in the above games but we will now look a particular tool in a formal way.</p>
 <h2 id="dominant-strategies"><span class="header-section-number">1.2</span> Dominant strategies</h2>
 <p>In certain games it is evident that certain strategies should never be used by a rational player. To formalise this we need a couple of definitions.</p>
-<h3 id="definition"><span class="header-section-number">1.2.1</span> Definition</h3>
+<h3 id="definition-of-an-incomplete-strategy-profile"><span class="header-section-number">1.2.1</span> Definition of an incomplete strategy profile</h3>
 <hr />
-<p>In an \(n\) player normal form game when considering player \(i\) we denotes by \(s_{-i}\) a fixed strategy profile for all other players in the game.</p>
+<p>In an \(N\) player normal form game when considering player \(i\) we denotes by \(s_{-i}\) an <strong>incomplete strategy</strong> profile for all other players in the game.</p>
 <hr />
 <p>For example in a 3 player game where \(S_i=\{A,B\}\) for all \(i\) a valid strategy profile is \(s=(A,A,B)\) while \(s_{-2}=(A,B)\) denotes the incomplete strategy profile where player 1 and 3 are playing A and B (respectively).</p>
 <p>This notation now allows us to define an important notion in game theory.</p>
-<h3 id="definition-1"><span class="header-section-number">1.2.2</span> Definition</h3>
+<h3 id="definition-of-a-strictly-dominated-strategy"><span class="header-section-number">1.2.2</span> Definition of a strictly dominated strategy</h3>
 <hr />
-<p>In an \(n\) player normal form game. A pure strategy \(s_i\in S_i\) is said to be <strong>strictly dominated</strong> if there is a strategy (pure or mixed) \(\sigma_i\in \Delta S_i\) such that \(u_i(\sigma_i,s_{-i})&gt;u_{i}(s_i,s_{-i})\) for all \(s_{-i}\in S_{-i}\) of the other players.</p>
+<p>In an \(N\) player normal form game. A pure strategy \(s_i\in S_i\) is said to be <strong>strictly dominated</strong> if there is a strategy \(\sigma_i\in \Delta S_i\) such that \(u_i(\sigma_i,s_{-i})&gt;u_{i}(s_i,s_{-i})\) for all \(s_{-i}\in S_{-i}\) of the other players.</p>
 <hr />
 <p>When attempting to predict rational behaviour we can elimate dominated strategies.</p>
 <p>\[\begin{pmatrix}
@@ -41,9 +41,9 @@
 (-1,34)
 \end{pmatrix}\]</p>
 <p>At this point it is straightforward to see that \(r_2\) is a strictly dominated strategy for player 1 giving the following predicted strategy profile: \(s=(r_1,s_2)\).</p>
-<h3 id="definition-2"><span class="header-section-number">1.2.3</span> Definition</h3>
+<h3 id="definition-of-a-weakly-dominated-strategy"><span class="header-section-number">1.2.3</span> Definition of a weakly dominated strategy</h3>
 <hr />
-<p>In an \(n\) player normal form game. A pure strategy \(s_i\in S_i\) is said to be <strong>weakly dominated</strong> if there is a strategy (pure or mixed) \(\sigma_i\in \Delta S_i\) such that \(u_i(\sigma_i,s_{-i})\leq u_{i}(s_i,s_{-i})\) for all \(s_{-i}\in S_{-i}\) of the other players and there exists a strategy profile \(\bar s\in S_{-i}\) such that \(u_i(\sigma_i,\bar s)&lt; u_{i}(s_i,s_{-i})\) .</p>
+<p>In an \(N\) player normal form game. A pure strategy \(s_i\in S_i\) is said to be <strong>weakly dominated</strong> if there is a strategy \(\sigma_i\in \Delta S_i\) such that \(u_i(\sigma_i,s_{-i})\leq u_{i}(s_i,s_{-i})\) for all \(s_{-i}\in S_{-i}\) of the other players and there exists a strategy profile \(\bar s\in S_{-i}\) such that \(u_i(\sigma_i,\bar s)&lt; u_{i}(s_i,s_{-i})\) .</p>
 <hr />
 <p>We can once again predict rational behaviour by eliminating weakly dominated strategies.</p>
 <p>As an example consider the following two player game:</p>
