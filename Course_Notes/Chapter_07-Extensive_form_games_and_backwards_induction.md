@@ -136,9 +136,9 @@ We use backward induction to identify the Nash equilibria. The dominant strategy
 
 $$q_2^*(q_1)=\frac{K-k-q_1}{2}$$
 
-The game thus reduces to:
+The game thus reduces as shown\text{ in Figure \ref{L07-img14}}.
 
-![](images/L07-img14.png)
+![A step of backward induction in the Stackelberg game.\label{L07-img14}](images/L07-img14.png)
 
 The leader thus needs to maximise:
 
