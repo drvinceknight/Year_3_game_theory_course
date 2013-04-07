@@ -7,7 +7,7 @@ In the [previous chapter](Chapter_16_Cooperative_games.pdf):
 - We defined characteristic function games;
 - We defined the Shapley value.
 
-In this Chapter we'll take a look at another type of game that allows us to model congestion.
+In this chapter we'll take a look at another type of game that allows us to model congestion.
 
 ## Routing games
 
@@ -20,17 +20,17 @@ Game theory can be used to model congestion in a variety of settings:
 
 The type of game used is referred to as a **routing game**.
 
-### Definition
+### Definition of a routing game
 
 ---
 
-A **routing game** $(G,r,c)$ is defined on a graph $G=(V,E)$ with defined set of sources $s_i$ and sinks $t_i$. Each source-sink pair corresponds to a set of traffic $r_i$ that must travel along the edges of $G$ from $s_i$ to $t_i$. Every edge $e$ of $G$ has associated to it a nonnegative, continuous and nondecreasing cost function (also called latency function) $c_e$.
+A **routing game** $(G,r,c)$ is defined on a graph $G=(V,E)$ with a defined set of sources $s_i$ and sinks $t_i$. Each source-sink pair corresponds to a set of traffic (also called a commodity) $r_i$ that must travel along the edges of $G$ from $s_i$ to $t_i$. Every edge $e$ of $G$ has associated to it a nonnegative, continuous and nondecreasing cost function (also called latency function) $c_e$.
 
 ---
 
-An example of such a game is given below:
+An example of such a game is given\text{ in Figure \ref{L17-img01}}.
 
-![](images/L17-img01.png)
+![A simple di-graph.\label{L17-img01}](images/L17-img01.png)
 
 In this game we have two **commodoties** with two sources: $s_1$ and $s_2$ and a single sink $t$. To complete our definition of a routing game we require a quantity of traffic, let $r=(1/2,1/2)$. We also require a set of cost functions $c$. Let:
 
@@ -42,11 +42,11 @@ c_{s_2t}&=\frac{x}{2}x\\
 c_{at}&=x\\
 \end{aligned}$$
 
-We represent all this diagrammatically:
+We represent all this diagrammatically\text{ in Figure \ref{L17-img02}}.
 
-![](images/L17-img02.png)
+![A routing game. \label{L17-img02}](images/L17-img02.png)
 
-### Definition
+### Definition of the set of paths
 
 ---
 
@@ -56,37 +56,37 @@ For any given $(G,r,c)$ we denote by $\mathcal{P}_i$ the set of paths available 
 
 For our example we have:
 
-$$\mathcal{P}_1=\{s_1a-at,s_1t\}$$
+$$\mathcal{P}_1=\{s_1at,s_1t\}$$
 
 and
 
-$$\mathcal{P}_2=\{s_2a-at,s_2t\}$$
+$$\mathcal{P}_2=\{s_2at,s_2t\}$$
 
 We denote the set of all possible paths by $\mathcal{P}=\bigcup_{i}\mathcal{P}_i$.
 
-### Definition
+### Definition of a feasible path
 
 ---
 
-On a routing game we define a flow $f$ as a vector representing the flows along the various paths, $f$ is a vector index by $\mathcal{P}$. Furthermore we call $f$ **feasible** if:
+On a routing game we define a flow $f$ as a vector representing the quantity of traffic along the various paths, $f$ is a vector index by $\mathcal{P}$. Furthermore we call $f$ **feasible** if:
 
 $$\sum_{P\in\mathcal{P}_i}f_P=r_i$$
 
 ---
 
-In our running example $f=(1/4,1/4,0,1/2)$ is a feasible flow:
+In our running example $f=(1/4,1/4,0,1/2)$ is a feasible flow\text{ as shown in Figure \ref{L17-img03}}.
 
-![](images/L17-img03.png)
+![A feasible flow.\label{L17-img03}](images/L17-img03.png)
 
-To characterise a flow we need to try and measure how good a flow is.
+To go further we need to try and measure how good a flow is.
 
 ## Optimal flow
 
-### Definition
+### Definition of the cost function
 
 ---
 
-For any routing game $(G,r,c)$ we define a cost function $C(f)$:
+For any routing game $(G,r,c)$ we define a **cost function** $C(f)$:
 
 $$C(f)=\sum_{P\in\mathcal{P}}c_P(f_P)f_P$$
 
@@ -100,9 +100,9 @@ So we can re-write the cost function as:
 
 $$C(f)=\sum_{e\in E}c_e(f_e)f_e$$
 
-Thus for our running example if we take a general $f=(\alpha,1/2-\alpha,1/2-\beta,\beta)$:
+Thus for our running example if we take a general $f=(\alpha,1/2-\alpha,1/2-\beta,\beta)$ as shown\text{ in Figure \ref{L17-img04}}.
 
-![](images/L17-img04.png)
+![A generic flow.\label{L17-img04}](images/L17-img04.png)
 
 The cost of $f(\alpha,1/2-\alpha,1/2-\beta,\beta)$ is given by:
 
@@ -111,13 +111,14 @@ C(f)&=\alpha^2\times\alpha+\beta^2\times\beta+(1-\alpha-\beta)\times(1-\alpha-\b
     &=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1
 \end{aligned}$$
 
-### Definition
+### Definition of an optimal flow
 
 ---
 
 For a routing game $(G,r,c)$ we define the optimal flow $f^*$ as the solution to the following optimisation problem:
 
 Minimise $\sum_{e\in E}c_e(f_e)$:
+
 Subject to:
 
 $$\begin{aligned}
@@ -130,13 +131,13 @@ f_P&\geq 0
 
 In our example this corresponds to minimising $C(\alpha,\beta)=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1$ such that $0\leq\alpha\leq 1$ and $0\leq\beta\leq1$.
 
-Here's a plot of this:
+A plot of $C(\alpha,\beta)$ is shown\text{ in Figure \ref{L17-plot01}}.
 
-![](plots/L17-plot01.png)
+![$C(\alpha,\beta)$.\label{L17-plot01}](plots/L17-plot01.png)
 
 It looks like the minimal point is somewhere near higher values of $\alpha$ and $\beta$. Let us carry out our optimisation properly:
 
-We define the Lagrangian:
+If define the Lagrangian:
 
 $$L(\alpha,\beta,\lambda_1,\lambda_2,\lambda_3,\lambda_4)=C(\alpha,\beta)-\lambda_1\alpha-\lambda_2(\alpha-1/2)-\lambda_3\beta-\lambda_4\beta$$
 
@@ -194,7 +195,7 @@ $$C_{P_2}(f^*)=(1-.4633-.2147)\approx .3220$$
 
 Thus traffic going along the second path is experiencing a higher cost. If this flow represented commuters on their way to work in the morning users of the second path would deviate to use the first. This leads to the definition of a Nash flow.
 
-### Definition
+### Definition of a Nash flow
 
 ---
 
@@ -224,4 +225,4 @@ Thus we have $\tilde f=(0,1/5)$ which gives a cost of $C(\tilde f)=7/10$ (much h
 
 What if we had assumed that $\beta=1/2$?
 
-This would have given $\alpha^2=1/2-\alpha$ which has solution $\alpha\approx .3660$. The cost of the path $s_2at$ is then $.134$ however the cost of the path $s_2t$ is $.75$ thus the second commodity should deviate. We can carry out the some check with all other possibilities to verify that $\tilde f=(0,1/5)$.
+This would have given $\alpha^2=1/2-\alpha$ which has solution $\alpha\approx .3660$. The cost of the path $s_2at$ is then $.134$ however the cost of the path $s_2t$ is $.75$ thus the second commodity should deviate. We can carry out these same checks with all other possibilities to verify that $\tilde f=(0,1/5)$.

@@ -4,14 +4,15 @@
 
 In the [previous chapter](Chapter_10_Infinitely_Repeated_Games.pdf):
 
-- We considered infinitely repeated games using a discount factor;
-- We proved a theorem stating that for a high enough discount factor players could end up cooperating.
+- We defined repeated games;
+- We showed that a sequence of stage Nash games would give a subgame perfect equilibria;
+- We considered a game, illustrating how to identify equilibria that are not a sequence of stage Nash profiles.
 
-In this chapter we'll move on to a fascinating area of game theory.
+In this chapter we'll take a look at what happens when games are repeatedly infinitely.
 
 ## Discounting
 
-When considering infinitely repeated games ($T\to\infty$) it is easiest to consider a Prisoners dilemma throughout:
+To illustrate infinitely repeated games ($T\to\infty$) we will consider a Prisoners dilemma as our stage game.
 
 $$
 \begin{pmatrix}
@@ -20,15 +21,15 @@ $$
 \end{pmatrix}
 $$
 
-Let us denote $s_{1}$ as the strategy "cooperate at every stage". Let us denote $s_{2}$ as the strategy "defect at every stage".
+Let us denote $s_{C}$ as the strategy "cooperate at every stage". Let us denote $s_{D}$ as the strategy "defect at every stage".
 
-If we assume that both players play $s_{1}$ their utility would be:
+If we assume that both players play $s_{C}$ their utility would be:
 
-$$U_1(s_{1},s_{1})=U_2(s_{1},s_{1})=\sum_{i=1}^\infty2>\infty$$
+$$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty2>\infty$$
 
 Similarly:
 
-$$U_1(s_{2},s_{2})=U_2(s_{1},s_{1})=\sum_{i=1}^\infty1>\infty$$
+$$U_1(s_{D},s_{D})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty1>\infty$$
 
 It is impossible to compare these two strategies. To be able to carry out analysis of strategies in infinitely repeated games we make use of a **discounting factor** $0<\delta<1$.
 
@@ -36,35 +37,35 @@ The interpretation of $\delta$ is that there is less importance given to future 
 
 In this case we write the utility in an infinitely repeated game as:
 
-$$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i{t}$$
+$$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i{r(t),s(t)}$$
 
 Thus:
 
-$$U_1(s_{1},s_{1})=U_1(s_{1},s_{1})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)$$
+$$U_1(s_{C},s_{C})=U_1(s_{C},s_{C})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)$$
 
 and:
 
-$$U_1(s_{2},s_{2})=U_1(s_{1},s_{1})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)$$
+$$U_1(s_{D},s_{D})=U_1(s_{C},s_{C})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)$$
 
 ## Conditions for cooperation in Prisoner's Dilemmas
 
 Let us consider the "Grimm trigger" strategy (which we denote $s_G$):
 
-> Start by cooperating until your opponent defects at which point defect in all future stages.
+> "Start by cooperating until your opponent defects at which point defect in all future stages."
 
-If both players play $s_G$ we have $s_G=s_1$:
+If both players play $s_G$ we have $s_G=s_C$:
 
 $$U_1(s_{G},s_{G})=U_1(s_{G},s_{G})=2/(1-\delta)$$
 
-If we assume that $S_1=S_2=\{s_1,s_2,s_G\}$ and player 2 deviates from $S_G$ to $s_2$ we get:
+If we assume that $S_1=S_2=\{s_C,s_D,s_G\}$ and player 2 deviates from $S_G$ at the first stage to $s_D$ we get:
 
-$$U_2(s_{1},s_{G})=3+\sum_{t=2}^{\infty}\delta^{t-1}=3+\delta/(1-\delta)$$
+$$U_2(s_{C},s_{G})=3+\sum_{t=2}^{\infty}\delta^{t-1}=3+\delta/(1-\delta)$$
 
-Deviation from $s_1$ to $s_G$ is rational if and only if:
+Deviation from $s_G$ to $s_D$ is rational if and only if:
 
-$$2/(1-\delta)\geq 3+\delta(1-\delta)$$
+$$2/(1-\delta)<3+\delta/(1-\delta)$$
 $$\Leftrightarrow$$
-$$\delta\geq 1/2$$
+$$\delta< 1/2$$
 
 thus if $\delta$ is large enough $(s_G,s_G)$ is a Nash equilibrium.
 
@@ -89,17 +90,17 @@ Two questions arise:
 
 The answer is yes! To prove this we need to define a couple of things.
 
-### Definition
+### Definition of an average payoff
 
 ---
 
 If we interpret $\delta$ as the probability of the repeated game ending then the _average_ length of the game is:
 
-$$\bar T=\frac{1}{1-\delta}$$
+$$\bar T=\frac{C}{1-\delta}$$
 
 We can use this to define the **average payoffs** per stage:
 
-$$\frac{1}{T}U_i(r,s)=(1-\delta)U_i(r,s)$$
+$$\frac{C}{T}U_i(r,s)=(1-\delta)U_i(r,s)$$
 
 ---
 
@@ -107,31 +108,33 @@ This average payoff is a tool that allows us to compare the payoffs in an infite
 
 ---
 
-### Definition
+### Definition of individually rational payoffs
 
 ---
 
-**Individually rational payoffs** are average payoffs that exceed the stage game Nash equilibrium payoff for both players.
+**Individually rational payoffs** are average payoffs that exceed the stage game Nash equilibrium payoffs for both players.
 
 ---
 
-As an example consider the following plot corresponding to a repeated Prisoner's Dilemma.
+As an example consider the plot corresponding to a repeated Prisoner's Dilemma\text{ shown in Figure ref{L10-img01}}.
 
-![](images/L10-img01.png)
+![Convex hull of payoffs to a prisoners dilemma.\label{L10-img01}](images/L10-img01.png)
 
 The feasible average payoffs correspond to the feasible payoffs in the stage game. The individually rational payoffs show the payoffs that are **better for both players** than the stag Nash equilibrium.
 
 The following theorem states that we can choose a particular discount rate that for which there exists a subgame perfect Nash equilibrium that would give any individually rational payoff pair!
 
-### Theorem
+### Folk Theorem for infinetely repeated games
 
 ---
 
-Let $(u_1^*,u_2^*)$ be a pair of Nash equilibrium payoffs for a stage game. For every individually rational pair $(v_1,v_2)$ there exists $\bar \delta$ such that for all $\delta>\bar \delta$ there is a subgame perfect Nash equilibrium with payoffs $(v_1,v_2)$.
+Let $(u_1^*,u_2^*)$ be a pair of Nash equilibrium payoffs for a stage game. For every individually rational pair $(v_1,v_2)$ there exists $\bar \delta$ such that for all $1>\delta>\bar \delta>0$ there is a subgame perfect Nash equilibrium with payoffs $(v_1,v_2)$.
 
 ---
 
 ### Proof
+
+---
 
 Let $(\sigma_1^*,\sigma_2^*)$ be the stage Nash profile that yields $(u_1^*,u_2^*)$. Now assume that playing $\bar\sigma_1\in\Delta S_1$ and $\bar\sigma_2\in\Delta S_2$ in every stage gives $(v_1,v_2)$ (an individual rational payoff pair).
 
@@ -143,7 +146,7 @@ We begin by proving that the above is a Nash equilibrium.
 
 Without loss of generality if player 1 deviates to $\sigma_1'\in\Delta S_1$ such that $u_1(\sigma_1',\bar \sigma_2)>v_1$ in stage $k$ then:
 
-$$U_1^{(k)}=(k-1)v_1+u_1(\sigma_1',\bar \sigma_2)+u_1^*\left(\frac{1}{1-\delta}-\sum_{t=1}^{k}\delta^{t-1}\right)$$
+$$U_1^{(k)}=(k-1)v_1+u_1(\sigma_1',\bar \sigma_2)+u_1^*\left(\frac{C}{1-\delta}-\sum_{t=1}^{k}\delta^{t-1}\right)$$
 
 Recalling that player 1 would receive $v_1$ in every stage with no devitation, the biggest gain to be made from deviating is if player 1 deviates in the first stage (all future gains are more heavily discounted). Thus if we can find $\bar\delta$ such that $\delta>\bar\delta$ implies that $U_1^{(1)}\leq \frac{v_1}{1-q}$ then player 1 has no incentive to deviate.
 
@@ -161,3 +164,5 @@ By construction this strategy is also a subgame perfect Nash equilibrium. Given 
 
 - If we consider a subgame just after any player has deviated from $\bar\sigma_i$ then both players use $\sigma_i^*$.
 - If we consider a subgame just after no player has deviated from $\sigma_i$ then both players continue to use $\bar\sigma_i$.
+
+---

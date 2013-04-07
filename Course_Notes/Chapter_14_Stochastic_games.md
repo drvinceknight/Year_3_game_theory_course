@@ -12,7 +12,7 @@ In this chapter we will take a look at a more general type of random game.
 
 ## Stochastic games
 
-### Definition
+### Definition of a stochastic game
 
 ---
 
@@ -32,7 +32,7 @@ We will make some simplifying assumptions in this course:
 2. The rewards and transition probabilities are not dependent;
 3. We will only consider strategies called **Markov strategies**.
 
-### Definition
+### Definition of a Markov strategy
 
 ---
 
@@ -45,7 +45,7 @@ A strategy is call a **Markov strategy** if the behaviour dictated is not time d
 Consider the following game with $X=\{x,y\}$:
 
 - $S_1(x)=\{a,b\}$ and $S_2(x)=\{c,d\}$;
-- $S_1(y)=\{m\}$ and $S_2(x)=\{n\}$;
+- $S_1(y)=\{e\}$ and $S_2(x)=\{f\}$;
 
 We have the stage game corresponding to state $x$:
 
@@ -81,11 +81,11 @@ $$
 \end{pmatrix}
 $$
 
-Here is a concise way of representing all this:
+A concise way of representing all this is shown\text{ in Figure \ref{L14-img01}}.
 
-![](images/L14-img01.png)
+![A simple stochastic game.\label{L14-img01}](images/L14-img01.png)
 
-We see that the Nash equilibrium for stage game corresponding to $x$ is $(a,c)$ however as soon as the players play that strategy profile they will go to state $y$ which is an absorbing state at which players gain no further utility.
+We see that the Nash equilibrium for the stage game corresponding to $x$ is $(a,c)$ however as soon as the players play that strategy profile they will go to state $y$ which is an absorbing state at which players gain no further utility.
 
 To calculate utilities for players in infinite horizon stochastic games we use a discount rate. Thus without loss of generality if the game is in state $x$ and we assume that both players are playing $\sigma^*_i$ then player 1 would be attempting to maximise future payoffs:
 
@@ -104,7 +104,7 @@ Solving these equations is not straightforward. We will take a look at one appro
 
 Let us find a Nash equilibrium for the game considered above with $\delta=2/3$.
 
-State $x$ gives no value to either player so we only need to consider state $x$. Let the future gains to player 1 in state $x$ be $u$, and the future gains to player 2 in state $x$ be $v$. Thus the players are facing the following game:
+State $y$ gives no value to either player so we only need to consider state $x$. Let the future gains to player 1 in state $x$ be $u$, and the future gains to player 2 in state $x$ be $v$. Thus the players are facing the following game:
 
 $$\begin{pmatrix}
 (8+\frac{1}{3}v,4+\frac{1}{3}u)&(5+\frac{2}{3}v,3+\frac{2}{3}u)\\

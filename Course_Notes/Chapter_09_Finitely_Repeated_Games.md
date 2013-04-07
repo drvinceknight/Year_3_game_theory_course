@@ -6,25 +6,21 @@ In the [previous chapter](Chapter_08-Subgame_Perfection.pdf):
 
 - We looked at the connection between games in normal form and extensive form;
 - We defined a subgame;
-- We define a refinement of Nash equilibrium: subgame perfect equilibrium.
+- We defined a refinement of Nash equilibrium: subgame perfect equilibrium.
 
 In this chapter we'll start looking at instances where games are repeated.
 
-## Definition of a repeated game
+## Repeated games
 
 In game theory the term **repeated game** is well defined.
 
-### Definition ###
+### Definition of a repeated game
 
 ---
 
 A repeated game is played over discrete time periods. Each time period is index by $0<t\leq T$ where $T$ is the total number of periods.
 
-In each period $n$ players play a static game referred to as the **stage game** independently and simultaneously selecting actions. Each stage game can be denoted by $\{A,u\}$ where:
-
-$$A=A_1 \times A_2 \times \dots \times A_n$$
-
-and $u$ denotes the set of utility functions.
+In each period $N$ players play a static game referred to as the **stage game** independently and simultaneously selecting actions.
 
 Players make decisions in full knowledge of the **history** of the game played so far (ie the actions chosen by each player in each previous time period).
 
@@ -41,13 +37,13 @@ $$
 \end{pmatrix}
 $$
 
-The following shows all possible outcomes to the repeated game given $T=2$:
+All possible outcomes to the repeated game given $T=2$ are shown\text{ in Figure \ref{L09-plot01}}.
 
-![](plots/L09-plot01.png)
+![All possible outcomes of a repeated prisoners dilemma.\label{L09-plot01}](plots/L09-plot01.png)
 
 When we discuss strategies in repeated games we need to be careful.
 
-### Definition
+### Definition of a strategy in a repeated game
 
 ---
 
@@ -63,11 +59,18 @@ Thus if both players play this strategy both players will cooperate throughout g
 
 ## Subgame perfect Nash equilibrium in repeated games
 
-### Theorem
+### Theorem of a sequence of stage Nash profiles
 
 ---
 
 For any repeated game, any sequence of stage Nash profiles gives the outcome of a subgame perfect Nash equilibrium.
+
+---
+
+Where by stage Nash profile we refer to a stationary profile that is a Nash Equilibrium in the stage game.
+
+
+### Proof
 
 ---
 
@@ -79,6 +82,9 @@ where $\tilde s^{(k)}_i$ is the strategy played by player $i$ in any stage Nash 
 
 Using backwards induction we see that this strategy is a Nash equilibrium. Furthermore it is a stage Nash profile so it is a Nash equilibria for the last stage game which is the last subgame. If we consider (in an inductive way) each subsequent subgame the result holds.
 
+---
+
+
 ### Example
 
 Consider the following stage game:
@@ -88,9 +94,9 @@ $$\begin{pmatrix}
 (0,1)&(1,2)&(0,0)\\
 \end{pmatrix}$$
 
-The following plot shows the various possible outcomes of the repeated game for $T=2$:
+The plot\text{ shown in Figure \ref{L09-plot02}} shows the various possible outcomes of the repeated game for $T=2$.
 
-![](plots/L09-plot02.png)
+![All possible outcomes of the repeated $3\times2$ game.\label{L09-plot02}](plots/L09-plot02.png)
 
 If we consider the two pure equilibria $(r_1,s_3)$ and $(r_2,s_2)$, we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
 
@@ -103,11 +109,11 @@ Importantly, not all subgame Nash equilibria outcomes are of the above form.
 
 ## Reputation in repeated games
 
-By definition all subgame Nash equilibria **must** play a stage Nash profilein the last stage game. However can a strategy be found that does not play a Nash profile in earlier games?
+By definition all subgame Nash equilibria **must** play a stage Nash profile in the last stage game. However can a strategy be found that does not play a Nash profile in earlier games?
 
 Considering the above game, let us look at this strategy:
 
-> "Play $(r_1,s_1)$ in the first period and then, as long as P2 cooperates play $(r_2,s_3)$ in the second period. If P2 deviates from $s_1$ in the first period then play $(r_2,s_2)$ in the second period.
+> "Play $(r_1,s_1)$ in the first period and then, as long as P2 cooperates play $(r_2,s_3)$ in the second period. If P2 deviates from $s_1$ in the first period then play $(r_2,s_2)$ in the second period."
 
 Firstly this strategy gives the utility vector: $(3,8)$.
 

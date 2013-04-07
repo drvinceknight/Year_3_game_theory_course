@@ -10,21 +10,19 @@
 <body>
 <h1 id="or-3-chapter-9---finitely-repeated-games"><span class="header-section-number">1</span> OR 3: Chapter 9 - Finitely Repeated Games</h1>
 <h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
-<p>In the <a href="Chapter_08-Subgame_Perfection.html">previous chapter</a>:</p>
+<p>In the <a href="Chapter_08-Subgame_Perfection.pdf">previous chapter</a>:</p>
 <ul>
 <li>We looked at the connection between games in normal form and extensive form;</li>
 <li>We defined a subgame;</li>
-<li>We define a refinement of Nash equilibrium: subgame perfect equilibrium.</li>
+<li>We defined a refinement of Nash equilibrium: subgame perfect equilibrium.</li>
 </ul>
 <p>In this chapter we'll start looking at instances where games are repeated.</p>
-<h2 id="definition-of-a-repeated-game"><span class="header-section-number">1.2</span> Definition of a repeated game</h2>
+<h2 id="repeated-games"><span class="header-section-number">1.2</span> Repeated games</h2>
 <p>In game theory the term <strong>repeated game</strong> is well defined.</p>
-<h3 id="definition"><span class="header-section-number">1.2.1</span> Definition</h3>
+<h3 id="definition-of-a-repeated-game"><span class="header-section-number">1.2.1</span> Definition of a repeated game</h3>
 <hr />
 <p>A repeated game is played over discrete time periods. Each time period is index by \(0&lt;t\leq T\) where \(T\) is the total number of periods.</p>
-<p>In each period \(n\) players play a static game referred to as the <strong>stage game</strong> independently and simultaneously selecting actions. Each stage game can be denoted by \(\{A,u\}\) where:</p>
-<p>\[A=A_1 \times A_2 \times \dots \times A_n\]</p>
-<p>and \(u\) denotes the set of utility functions.</p>
+<p>In each period \(N\) players play a static game referred to as the <strong>stage game</strong> independently and simultaneously selecting actions.</p>
 <p>Players make decisions in full knowledge of the <strong>history</strong> of the game played so far (ie the actions chosen by each player in each previous time period).</p>
 <p>The payoff is defined as the sum of the utilities in each stage game for every time period.</p>
 <hr />
@@ -35,12 +33,12 @@
 (3,0)&amp;(1,1)
 \end{pmatrix}
 \]</p>
-<p>The following shows all possible outcomes to the repeated game given \(T=2\):</p>
+<p>All possible outcomes to the repeated game given \(T=2\) are shown.</p>
 <div class="figure">
-<img src="plots/L09-plot01.png" /><p class="caption"></p>
+<img src="plots/L09-plot01.png" alt="All possible outcomes of a repeated prisoners dilemma." /><p class="caption">All possible outcomes of a repeated prisoners dilemma.</p>
 </div>
 <p>When we discuss strategies in repeated games we need to be careful.</p>
-<h3 id="definition-1"><span class="header-section-number">1.2.2</span> Definition</h3>
+<h3 id="definition-of-a-strategy-in-a-repeated-game"><span class="header-section-number">1.2.2</span> Definition of a strategy in a repeated game</h3>
 <hr />
 <p>A repeated game strategy must specify the action of a player in a given stage game given the entire history of the repeated game.</p>
 <hr />
@@ -50,9 +48,12 @@
 </blockquote>
 <p>Thus if both players play this strategy both players will cooperate throughout getting (in the case of \(T=2\)) a utility of 4.</p>
 <h2 id="subgame-perfect-nash-equilibrium-in-repeated-games"><span class="header-section-number">1.3</span> Subgame perfect Nash equilibrium in repeated games</h2>
-<h3 id="theorem"><span class="header-section-number">1.3.1</span> Theorem</h3>
+<h3 id="theorem-of-a-sequence-of-stage-nash-profiles"><span class="header-section-number">1.3.1</span> Theorem of a sequence of stage Nash profiles</h3>
 <hr />
 <p>For any repeated game, any sequence of stage Nash profiles gives the outcome of a subgame perfect Nash equilibrium.</p>
+<hr />
+<p>Where by stage Nash profile we refer to a stationary profile that is a Nash Equilibrium in the stage game.</p>
+<h3 id="proof"><span class="header-section-number">1.3.2</span> Proof</h3>
 <hr />
 <p>If we consider the strategy given by:</p>
 <blockquote>
@@ -60,24 +61,25 @@
 </blockquote>
 <p>where \(\tilde s^{(k)}_i\) is the strategy played by player \(i\) in any stage Nash profile. The \(k\) is used to indicate that all players play strategies from the same stage Nash profile.</p>
 <p>Using backwards induction we see that this strategy is a Nash equilibrium. Furthermore it is a stage Nash profile so it is a Nash equilibria for the last stage game which is the last subgame. If we consider (in an inductive way) each subsequent subgame the result holds.</p>
-<h3 id="example"><span class="header-section-number">1.3.2</span> Example</h3>
+<hr />
+<h3 id="example"><span class="header-section-number">1.3.3</span> Example</h3>
 <p>Consider the following stage game:</p>
 <p>\[\begin{pmatrix}
 (2,3)&amp;(0,2)&amp;(1,4)\\
 (0,1)&amp;(1,2)&amp;(0,0)\\
 \end{pmatrix}\]</p>
-<p>The following plot shows the various possible outcomes of the repeated game for \(T=2\):</p>
+<p>The plot shows the various possible outcomes of the repeated game for \(T=2\).</p>
 <div class="figure">
-<img src="plots/L09-plot02.png" /><p class="caption"></p>
+<img src="plots/L09-plot02.png" alt="All possible outcomes of the repeated 3\times2 game." /><p class="caption">All possible outcomes of the repeated \(3\times2\) game.</p>
 </div>
 <p>If we consider the two pure equilibria \((r_1,s_3)\) and \((r_2,s_2)\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:</p>
 <p>\[(r_1r_1,s_3s_3)\text{ giving utility vector: }(2,8)\] \[(r_1r_2,s_3s_2)\text{ giving utility vector: }(2,6)\] \[(r_2r_1,s_2s_3)\text{ giving utility vector: }(2,6)\] \[(r_2r_2,s_2s_2)\text{ giving utility vector: }(2,4)\]</p>
 <p>Importantly, not all subgame Nash equilibria outcomes are of the above form.</p>
 <h2 id="reputation-in-repeated-games"><span class="header-section-number">1.4</span> Reputation in repeated games</h2>
-<p>By definition all subgame Nash equilibria <strong>must</strong> play a stage Nash profilein the last stage game. However can a strategy be found that does not play a Nash profile in earlier games?</p>
+<p>By definition all subgame Nash equilibria <strong>must</strong> play a stage Nash profile in the last stage game. However can a strategy be found that does not play a Nash profile in earlier games?</p>
 <p>Considering the above game, let us look at this strategy:</p>
 <blockquote>
-<p>&quot;Play \((r_1,s_1)\) in the first period and then, as long as P2 cooperates play \((r_2,s_3)\) in the second period. If P2 deviates from \(s_1\) in the first period then play \((r_2,s_2)\) in the second period.</p>
+<p>&quot;Play \((r_1,s_1)\) in the first period and then, as long as P2 cooperates play \((r_2,s_3)\) in the second period. If P2 deviates from \(s_1\) in the first period then play \((r_2,s_2)\) in the second period.&quot;</p>
 </blockquote>
 <p>Firstly this strategy gives the utility vector: \((3,8)\).</p>
 <ol style="list-style-type: decimal">

@@ -55,7 +55,7 @@ $$u_2(\sigma_1,s_2)=2x-1$$
 
 \text{These utilities are shown in Figure \ref{L06-plot02}.}
 
-![Utilities of player 2 in the matching pennies game.](plots/L06-plot02.png)
+![Utilities of player 2 in the matching pennies game.\label{L06-plot02}](plots/L06-plot02.png)
 
 Thus we have:
 

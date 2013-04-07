@@ -12,7 +12,7 @@ In this Chapter we'll look at the connection between Optimal and Nash flows.
 
 ## Potential function
 
-### Definition
+### Definition of a potential flow
 
 ---
 
@@ -22,21 +22,20 @@ $$\Phi(f)=\sum_{e\in E}\int_0^{f_e}c_e(x)dx$$
 
 ---
 
-Thus for the following routing game:
 
-![](images/L17-img04.png)
+![A routing game.\label{L17-img04}](images/L17-img04.png)
 
-we have:
+Thus for the routing game shown\text{ in Figure \ref{L17-img04}} we have:
 
 $$\Phi((\alpha,\beta))=\frac{\alpha^3}{3}+\frac{3\beta^2}{4}+\frac{(1-\alpha-\beta)^2}{2}$$
 
-Here's a plot of $\Phi$:
+A plot of $\Phi(\alpha,\beta)$ is shown\text{ in Figure \ref{L18-plot01}}.
 
-![](plots/L18-plot01.png)
+![$\Phi(\alpha,\beta)$.\label{L18-plot01}](plots/L18-plot01.png)
 
 We can verify analytically (as before) that the minimum of this function is given by $(\alpha,\beta)=(0,1/5)$. This leads to the following powerful result.
 
-### Theorem
+### Theorem connecting the Nash flow to the optimal flow
 
 ---
 
@@ -50,23 +49,23 @@ It also points towards a connection between Nash flows and optimal flows.
 
 ## Marginal costs
 
-### Definition
+### Definition of marginal cost
 
 ---
 
-If $c$ is a differentiable cost function the we define the **marginal cost** function $c^*$ as:
+If $c$ is a differentiable cost function then we define the **marginal cost** function $c^*$ as:
 
 $$c^*=\frac{d}{dx}(xc(x)$$
 
 ---
 
-For our running example we have the marginal cost functions given:
+For our running example we have the marginal cost functions given\{ in Figure \ref{L18-img01}}.
 
-![](images/L18-img01.png)
+![$(G,r,c)$.\label{L18-img01}](images/L18-img01.png)
 
 We now state our last theorem of the course:
 
-### Theorem
+### Theorem connecting optimal flows to Nash flows
 
 ---
 
@@ -90,14 +89,14 @@ We will finish the course by looking at an interesting example that occurs in ro
 
 ## Braess's Paradox
 
-Consider the following routing game:
+Consider the routing game shown\text{ in Figure \ref{L18-img02}}.
 
-![](images/L18-img02.png)
+![A simple routing game.\ref{L18-img02}](images/L18-img02.png)
 
 If we write down the potential function $\Phi(\alpha)=\alpha^2/2+(1-\alpha)^2/2+(1-\alpha)+\alpha=\alpha^2 -\alpha + 1/2$. The flow $\tilde f=1/2$ minimises the potential function and so is a Nash flow. In fact for this example we have $\tilde f=f^*$ and $C(\tilde f)=C(f^*)=3/2$.
 
-If we modify the network by adding capacity to our network with another edge of zero cost:
+If we modify the network by adding capacity to our network with another edge of zero cost\text{ as shown in Figure \ref{L18-img03}}.
 
-![](images/L18-img03.png)
+![Brass's Paradox. \label{L18-img03}](images/L18-img03.png)
 
 We can compute the potential function and optimise but we can quickly verify that $\tilde f=(\alpha,\beta)=(1,1)$ is a Nash flow by comparing with other potential paths. Thus we have $C(\tilde f)=2$. By adding an edge to our network with a very "cheap" latency cost the situation has been made worse!

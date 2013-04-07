@@ -13,13 +13,13 @@
 <p>In the <a href="">previous chapter</a>:</p>
 <ul>
 <li>We considered population games;</li>
-<li>We proved a result concerning a necessary condition for a population to evolutionary stable;</li>
+<li>We proved a result concerning a necessary condition for a population to be evolutionary stable;</li>
 <li>We defined Evolutionary stable strategies and looked at an example in a game against the field.</li>
 </ul>
 <p>In this chapter we'll take a look at pairwise contest games and look at the connection between Nash equilibrium and ESS.</p>
 <h2 id="pairwise-contest-games"><span class="header-section-number">1.2</span> Pairwise contest games</h2>
 <p>In a population game when considering a pairwise contest game we assume that individuals are randomly matched. The utilities then depend just on what the individuals do:</p>
-<p>\[u(\sigma,x)=\sum_{s\in S}\sum_{s&#39;\in S}\sigma(s)x(s&#39;)u(s,s&#39;)\]</p>
+<p>\[u(\sigma,\chi)=\sum_{s\in S}\sum_{s&#39;\in S}\sigma(s)\chi(s&#39;)u(s,s&#39;)\]</p>
 <p>As an example we're going to consider the &quot;Hawk-Dove&quot; game: a model of predator interaction. We have \(S=\{H,D\}\) were:</p>
 <ul>
 <li>\(H\): Hawk represents being &quot;aggressive&quot;;</li>
@@ -31,27 +31,27 @@
 <li>If two Doves meet they share the resources;</li>
 <li>If two Hawks meet there is a fight over the resources (with an equal chance of winning) and the winner takes the resources while the loser pays a cost \(c&gt;v\).</li>
 </ul>
-<p>If we assume that \(\sigma=(\omega,1-\omega)\) and \(x=(h,1-h)\) the above gives:</p>
-<p>\[u(\sigma,x)=\omega(1-h)v+(1-\omega)(1- h) \frac{v}{2}+\omega h \frac{v-c}{2} \]</p>
+<p>If we assume that \(\sigma=(\omega,1-\omega)\) and \(\chi=(h,1-h)\) the above gives:</p>
+<p>\[u(\sigma,\chi)=\omega(1-h)v+(1-\omega)(1- h) \frac{v}{2}+\omega h \frac{v-c}{2} \]</p>
 <p>It is immediate to note that no pure strategy ESS exists. In a population of Doves (\(h=0\)):</p>
 <p>\[u(\sigma,(0,1))=\omega v+(1-\omega) \frac{v}{2}=(1+\omega)\frac{v}{2}\]</p>
 <p>thus the best response is setting \(\omega=1\) i.e. to play Hawk.</p>
 <p>In a population of Hawks (\(h=1\)):</p>
 <p>\[u(\sigma,(1,0))=\omega h \frac{v-c}{2} \]</p>
 <p>thus the best response is setting \(\omega=0\) i.e. to play Dove.</p>
-<p>So we will now try and find out if there is a mixed-strategy ESS: \(\sigma^*=(\omega^*,1-\omega^*)\). For \(\sigma^*\) to be an ESS it must be a best response to the population it generates \(x^*=(\omega^*,1-\omega^*)\). In this population the \(x^*\) the payoff to an arbitrary strategy \(\sigma\) is:</p>
-<p>\[u(\sigma,x^*)=(1-\omega^*)\frac{v}{2}+\left(\frac{v}{2}-\omega^*\right)\frac{\omega c}{2}\]</p>
+<p>So we will now try and find out if there is a mixed-strategy ESS: \(\sigma^*=(\omega^*,1-\omega^*)\). For \(\sigma^*\) to be an ESS it must be a best response to the population it generates \(\chi^*=(\omega^*,1-\omega^*)\). In this population the payoff to an arbitrary strategy \(\sigma\) is:</p>
+<p>\[u(\sigma,\chi^*)=(1-\omega^*)\frac{v}{2}+\left(\frac{v}{2}-\omega^*\right)\frac{\omega c}{2}\]</p>
 <ul>
 <li>If \(\omega^*&lt;v/c\) then a best response is \(\omega=1\);</li>
 <li>If \(\omega^*&gt;v/c\) then a best response is \(\omega=0\);</li>
 <li>If \(\omega^*=v/c\) then there is indifference.</li>
 </ul>
-<p>So the only candidate for an ESS is \(\sigma^*=\left(v/c,1-v/c\right)\). We now need to show that \(u(\sigma^*,x_{\epsilon})&gt;u(\sigma,x_{\epsilon})\).</p>
+<p>So the only candidate for an ESS is \(\sigma^*=\left(v/c,1-v/c\right)\). We now need to show that \(u(\sigma^*,\chi_{\epsilon})&gt;u(\sigma,\chi_{\epsilon})\).</p>
 <p>We have:</p>
 <p>\[x_\epsilon=(v/c+\epsilon(\omega-v/c),1-v/c+\epsilon(\omega-v/c)\]</p>
 <p>and:</p>
 <p>\[\begin{aligned}
-u(\sigma^*,x_{\epsilon})=\frac{v}{c}\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\right)\right)\frac{v-c}{2}+&amp;\frac{v}{c}\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)v\\
+u(\sigma^*,\chi_{\epsilon})=\frac{v}{c}\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\right)\right)\frac{v-c}{2}+&amp;\frac{v}{c}\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)v\\
 +&amp;\left(1-\frac{v}{c}\right)\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)\frac{v}{2}
 \end{aligned}\]</p>
 <p>\[\begin{aligned}
@@ -59,7 +59,7 @@ u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\
 +&amp;\left(1-\omega\right)\left(1-\frac{v}{c}+\epsilon\left(\frac{v}{c}-\omega\right)\right)\frac{v}{2}
 \end{aligned}\]</p>
 <p>This gives:</p>
-<p>\[u(\sigma^*,x_{\epsilon})-u(\sigma,x_{\epsilon})=\frac{\epsilon c}{2}\left(\frac{v}{c}-\omega\right)^2&gt;0\]</p>
+<p>\[u(\sigma^*,\chi_{\epsilon})-u(\sigma,x_{\epsilon})=\frac{\epsilon c}{2}\left(\frac{v}{c}-\omega\right)^2&gt;0\]</p>
 <p>which proves that \(\sigma^*\) is an ESS.</p>
 <p>We will now take a closer look the connection between ESS and Nash equilibria.</p>
 <h2 id="ess-and-nash-equilibria"><span class="header-section-number">1.3</span> ESS and Nash equilibria</h2>
@@ -70,7 +70,7 @@ u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\
 <hr />
 <p>Note that the resulting game is symmetric (other contexts would give non symmetric games but we won't consider them here).</p>
 <p>Using this we have the powerful result:</p>
-<h3 id="theorem"><span class="header-section-number">1.3.2</span> Theorem</h3>
+<h3 id="theorem-relating-an-evolutionary-stable-strategy-to-the-nash-equilibrium-of-the-associated-game"><span class="header-section-number">1.3.2</span> Theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game</h3>
 <hr />
 <p>If \(\sigma^*\) is an ESS in a pairwise contest population game then for all \(\sigma\ne\sigma^*\):</p>
 <ol style="list-style-type: decimal">
@@ -80,19 +80,20 @@ u(\sigma,x_{\epsilon})=\omega\left(\frac{v}{c}+\epsilon\left(\omega-\frac{v}{c}\
 <p>Conversely, if either (1) or (2) holds for all \(\sigma\ne\sigma^*\) in a two player normal form game then \(\sigma\) is an ESS.</p>
 <hr />
 <h3 id="proof"><span class="header-section-number">1.3.3</span> Proof</h3>
+<hr />
 <p>If \(\sigma^*\) is an ESS, then by definition:</p>
-<p>\[u(\sigma^*,x_{\epsilon})&gt;u(\sigma,x_{\epsilon})\]</p>
+<p>\[u(\sigma^*,\chi_{\epsilon})&gt;u(\sigma,\chi_{\epsilon})\]</p>
 <p>which corresponds to:</p>
 <p>\[(1-\epsilon)u(\sigma^*,\sigma^*)+\epsilon u(\sigma^*,\sigma)&gt;(1-\epsilon)u(\sigma,\sigma^*)+\epsilon u(\sigma,\sigma)\]</p>
 <ul>
-<li>If the condition 1 of the theorem holds then the above inequality can be satisfied for \(\epsilon\) sufficiently small. If condition 2 holds then the inequality is satisfied.</li>
+<li>If condition 1 of the theorem holds then the above inequality can be satisfied for \(\epsilon\) sufficiently small. If condition 2 holds then the inequality is satisfied.</li>
 <li><p>Let us assume that \(u(\sigma^*,\sigma^*)&lt;u(\sigma,\sigma^*)\):</p>
 <ul>
 <li><p>If \(u(\sigma^*,\sigma^*)&lt;u(\sigma,\sigma^*)\) then we can find \(\epsilon\) sufficiently small such that the inequality is violated. Thus the inequality implies \(u(\sigma^*,\sigma^*)\geq u(\sigma,\sigma^*)\).</p></li>
 <li><p>If \(u(\sigma^*,\sigma^*)= u(\sigma,\sigma^*)\) then :\(u(\sigma^*,\sigma^*)&gt; u(\sigma,\sigma^*)\) as required.</p></li>
 </ul></li>
 </ul>
-<p>This result gives us a more a efficient way of computing ESS. The first condition is in fact almost a condition for Nash Equilibrium (with a strict inequality), the second is thus a stronger condition that removes certain Nash equilibria from consideration. This becomes particularly relevant when considering Nash equilibrium in mixed strategies.</p>
+<p>This result gives us an efficient way of computing ESS. The first condition is in fact almost a condition for Nash Equilibrium (with a strict inequality), the second is thus a stronger condition that removes certain Nash equilibria from consideration. This becomes particularly relevant when considering Nash equilibrium in mixed strategies.</p>
 <p>To find ESS in a pairwise context population game we:</p>
 <ol style="list-style-type: decimal">
 <li>Write down the associated two-player game;</li>
@@ -115,11 +116,11 @@ q^*&amp;=\frac{v}{c}
 \end{aligned}
 \]</p>
 <p>Thus we will test \(\sigma^*=(\frac{v}{c},1-\frac{v}{c})\) using the above theorem.</p>
-<p><strong>Importatny</strong> from the equality of payoffs theorem we immediately see that condition 1 does not hold as \(u(\sigma^*,H)=u(\sigma^*,D)\). Thus we need to prove that:</p>
+<p><strong>Importantly</strong> from the equality of payoffs theorem we immediately see that condition 1 does not hold as \(u(\sigma^*,\sigma^*)=u(\sigma^*,H)=u(\sigma^*,D)\). Thus we need to prove that:</p>
 <p>\[u(\sigma^*,\sigma)&gt;u(\sigma,\sigma)\]</p>
 <p>We have:</p>
 <p>\[u(\sigma^*,\sigma)=\frac{v}{c}\omega\frac{v-c}{2}+\frac{v}{c}(1-\omega)v+(1-\frac{v}{c})(1-\omega)\frac{v}{c}\] \[u(\sigma,\sigma)=\omega^2\frac{v-c}{2}+\omega(1-\omega)v+(1-\omega)^2\frac{v}{c}\]</p>
-<p>After some Algebra:</p>
+<p>After some algebra:</p>
 <p>\[u(\sigma^*,\sigma)-u(\sigma,\sigma)=\frac{c}{2}(\frac{v}{c}-\omega)^2&gt;0\]</p>
 <p>Giving the required result.</p>
 </body>

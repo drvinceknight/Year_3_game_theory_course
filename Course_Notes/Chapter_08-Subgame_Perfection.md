@@ -9,11 +9,11 @@ In the [previous chapter](Chapter_07-Extensive_form_games_and_backwards_inductio
 
 In this Chapter we will take a look at another important aspect of extensive form games.
 
-## Normal form games
+## Connection between extensive and normal form games
 
-It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player:
+It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player. \text{Consider the game shown in Figure \ref{L07-img09}.}
 
-![](images/L07-img09.png)
+![An extensive form game.\label{L07-img09}](images/L07-img09.png)
 
 We have:
 
@@ -37,13 +37,13 @@ $$\begin{pmatrix}
 (5,2)&(5,2)
 \end{pmatrix}$$
 
-has the following two extensive form game representations:
+has the two extensive form game representations shown\text{ in Figure \ref{L08-img04}}.
 
-![](images/L08-img04.png)
+![Two extensive form games corresponding to the same extensive form game.\label{L08-img04}](images/L08-img04.png)
 
 ## Subgames
 
-### Definition
+### Definition of a subgame
 
 ---
 
@@ -51,23 +51,23 @@ In an extensive form game, a node $x$ is said to **initiate a subgame** if and o
 
 ---
 
-In the following game all nodes initiate a subgame:
+A game where all nodes initiate a subgame is shown\text{ in Figure \ref{L08-img01}}.
 
-![](images/L08-img01.png)
+![All nodes initiate a subgame.\label{L08-img01}](images/L08-img01.png)
 
-In the following game **that does not have perfect information** nodes $c$, $f$ and $b$ initiate subgames but all of $b$'s successors do not.
+A game **that does not have perfect information** nodes $c$, $f$ and $b$ initiate subgames but all of $b$'s successors do not is shown\text{ in Figure \ref{L08-img02}}.
 
-![](images/L08-img02.png)
+![Nodes c,f and b initiate a subgame.\label{L08-img02}](images/L08-img02.png)
 
-Similarly, in the following game the only node that initiates a subgame is $d$.
+Similarly, in the game shown\text{ in Figure \ref{L08-img03}} the only node that initiates a subgame is $d$.
 
-![](images/L08-img03.png)
+![Node d initiates a subgame.\label{L08-img03}](images/L08-img03.png)
 
 ## Subgame perfect equilibria
 
 We have identified how to obtain Nash equilibria in extensive form games. We now give a refinement of this:
 
-### Definition
+### Definition of subgame perfect equilibrium
 
 ---
 
@@ -77,9 +77,9 @@ A subgame perfect Nash equilibrium is a Nash equilibrium in which the strategy p
 
 **Note that this includes subgames that might not be reached during play!**
 
-Let's consider the following example:
+Let us consider the example shown\text{ in Figure \ref{L08-img05}}.
 
-![](images/L08-img05.png)
+![A running example of a game with subgame perfect equilibrium.\label{L08-img05}](images/L08-img05.png)
 
 Let us build the corresponding normal form game:
 
@@ -111,9 +111,9 @@ $$\begin{pmatrix}
 (2,3)&(-1,1)
 \end{pmatrix}$$
 
-We see that the (unique) Nash equilibria for the above game is $$(D,X)$$. Thus the only subgame perfect equilibria of the *entire* game is $$\{AD,X\}$$.
+We see that the (unique) Nash equilibria for the above game is $(D,X)$. Thus the only subgame perfect equilibria of the *entire* game is $\{AD,X\}$.
 
 Some comments:
 
-- Hopefully it is clear that *subgame perfect Nash equilibrium* is a _refinement_ of Nash equilibrium. 
+- Hopefully it is clear that *subgame perfect Nash equilibrium* is a _refinement_ of Nash equilibrium.
 - In games with perfect information, the Nash equilibrium obtained through backwards induction is subgame perfect.

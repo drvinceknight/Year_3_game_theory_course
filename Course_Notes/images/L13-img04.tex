@@ -16,7 +16,7 @@
         \node (B3) [player,right=3pt] at ($(A1)!0.5!(A2)$) {Employee}
             child {node [end] {} node[right] {$(0,1)$} edge from parent node [below] {Decline}  }
             child {node [player] {Employee}
-                child {node[end] {} node[right] {$(\frac{\kappa+\tau-B}{2}-w, \frac{(w+B-1)^\alpha+(w-1)^\alpha}{2})$}
+                child {node[end] {} node[right] {$(\frac{\kappa+K-B}{2}-w, \frac{(w+B-1)^\alpha+(w-1)^\alpha}{2})$}
                 edge from parent node[below] {High Effort}}
                 child {node[end]{} node[right] {$(\kappa-w, w^\alpha)$} edge from parent node[below] {Low Effort}}
             edge from parent node [below] {Accept} };

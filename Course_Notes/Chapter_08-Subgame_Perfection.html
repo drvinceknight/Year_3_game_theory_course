@@ -10,16 +10,16 @@
 <body>
 <h1 id="or-3-lecture-8---subgame-perfection"><span class="header-section-number">1</span> OR 3: Lecture 8 - Subgame Perfection</h1>
 <h2 id="recap"><span class="header-section-number">1.1</span> Recap</h2>
-<p>In the <a href="Chapter_07-Extensive_form_games_and_backwards_induction.html">previous chapter</a></p>
+<p>In the <a href="Chapter_07-Extensive_form_games_and_backwards_induction.pdf">previous chapter</a></p>
 <ul>
 <li>We took a formal look at extensive form games;</li>
 <li>Investigated an analysis technique for extensive form games called backwards induction.</li>
 </ul>
 <p>In this Chapter we will take a look at another important aspect of extensive form games.</p>
-<h2 id="normal-form-games"><span class="header-section-number">1.2</span> Normal form games</h2>
-<p>It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player:</p>
+<h2 id="connection-between-extensive-and-normal-form-games"><span class="header-section-number">1.2</span> Connection between extensive and normal form games</h2>
+<p>It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player. </p>
 <div class="figure">
-<img src="images/L07-img09.png" /><p class="caption"></p>
+<img src="images/L07-img09.png" alt="An extensive form game." /><p class="caption">An extensive form game.</p>
 </div>
 <p>We have:</p>
 <p>\[S_1=\{\text{XY},\text{XZ},\text{WY},\text{WZ}\}\] and \[S_2=\{\text{DA},\text{DB},\text{CA},\text{CB}\}\]</p>
@@ -35,37 +35,37 @@
 (3,8)&amp;(2,1)\\
 (5,2)&amp;(5,2)
 \end{pmatrix}\]</p>
-<p>has the following two extensive form game representations:</p>
+<p>has the two extensive form game representations shown.</p>
 <div class="figure">
-<img src="images/L08-img04.png" /><p class="caption"></p>
+<img src="images/L08-img04.png" alt="Two extensive form games corresponding to the same extensive form game." /><p class="caption">Two extensive form games corresponding to the same extensive form game.</p>
 </div>
 <h2 id="subgames"><span class="header-section-number">1.3</span> Subgames</h2>
-<h3 id="definition"><span class="header-section-number">1.3.1</span> Definition</h3>
+<h3 id="definition-of-a-subgame"><span class="header-section-number">1.3.1</span> Definition of a subgame</h3>
 <hr />
 <p>In an extensive form game, a node \(x\) is said to <strong>initiate a subgame</strong> if and only if \(x\) and all successors of \(x\) are in information sets containing only successors of \(x\).</p>
 <hr />
-<p>In the following game all nodes initiate a subgame:</p>
+<p>A game where all nodes initiate a subgame is shown.</p>
 <div class="figure">
-<img src="images/L08-img01.png" /><p class="caption"></p>
+<img src="images/L08-img01.png" alt="All nodes initiate a subgame." /><p class="caption">All nodes initiate a subgame.</p>
 </div>
-<p>In the following game <strong>that does not have perfect information</strong> nodes \(c\), \(f\) and \(b\) initiate subgames but all of \(b\)'s successors do not.</p>
+<p>A game <strong>that does not have perfect information</strong> nodes \(c\), \(f\) and \(b\) initiate subgames but all of \(b\)'s successors do not is shown.</p>
 <div class="figure">
-<img src="images/L08-img02.png" /><p class="caption"></p>
+<img src="images/L08-img02.png" alt="Nodes c,f and b initiate a subgame." /><p class="caption">Nodes c,f and b initiate a subgame.</p>
 </div>
-<p>Similarly, in the following game the only node that initiates a subgame is \(d\).</p>
+<p>Similarly, in the game shown the only node that initiates a subgame is \(d\).</p>
 <div class="figure">
-<img src="images/L08-img03.png" /><p class="caption"></p>
+<img src="images/L08-img03.png" alt="Node d initiates a subgame." /><p class="caption">Node d initiates a subgame.</p>
 </div>
 <h2 id="subgame-perfect-equilibria"><span class="header-section-number">1.4</span> Subgame perfect equilibria</h2>
 <p>We have identified how to obtain Nash equilibria in extensive form games. We now give a refinement of this:</p>
-<h3 id="definition-1"><span class="header-section-number">1.4.1</span> Definition</h3>
+<h3 id="definition-of-subgame-perfect-equilibrium"><span class="header-section-number">1.4.1</span> Definition of subgame perfect equilibrium</h3>
 <hr />
 <p>A subgame perfect Nash equilibrium is a Nash equilibrium in which the strategy profiles specify Nash equilibria for every subgame of the game.</p>
 <hr />
 <p><strong>Note that this includes subgames that might not be reached during play!</strong></p>
-<p>Let's consider the following example:</p>
+<p>Let us consider the example shown.</p>
 <div class="figure">
-<img src="images/L08-img05.png" /><p class="caption"></p>
+<img src="images/L08-img05.png" alt="A running example of a game with subgame perfect equilibrium." /><p class="caption">A running example of a game with subgame perfect equilibrium.</p>
 </div>
 <p>Let us build the corresponding normal form game:</p>
 <p>\[S_1=\{AC,AD,BC,BD\}\] and \[S_2=\{X,Y\}\]</p>
@@ -85,7 +85,7 @@
 (-1,2)&amp;(0,-1)\\
 (2,3)&amp;(-1,1)
 \end{pmatrix}\]</p>
-<p>We see that the (unique) Nash equilibria for the above game is \[(D,X)\]. Thus the only subgame perfect equilibria of the <em>entire</em> game is \[\{AD,X\}\].</p>
+<p>We see that the (unique) Nash equilibria for the above game is \((D,X)\). Thus the only subgame perfect equilibria of the <em>entire</em> game is \(\{AD,X\}\).</p>
 <p>Some comments:</p>
 <ul>
 <li>Hopefully it is clear that <em>subgame perfect Nash equilibrium</em> is a <em>refinement</em> of Nash equilibrium.</li>

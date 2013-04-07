@@ -12,13 +12,13 @@ In this Chapter we start to look at extensive form games in more detail.
 
 ## Extensive form games
 
-If we recall Chapter 1 we have seen how to represent extensive form games as a tree\text{ as shown in Figure \ref[L01-img03}}.
+If we recall Chapter 1 we have seen how to represent extensive form games as a tree\text{ as shown in Figure \ref{L01-img03}}.
 
 ![Bob and Celine. \label{L01-img03}](images/L01-img03.png)
 
 We will now consider the properties that define an extensive form game game tree:
 
-1. Every node is a successor of the (unique) initial node\text{ as shown in Figure \ref{L07-img-01}.
+1. Every node is a successor of the (unique) initial node\text{ as shown in Figure \ref{L07-img01}.
 
 ![A tree with two initial nodes.\label{L07-img01}](images/L07-img01.png)
 
