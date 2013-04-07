@@ -26,8 +26,8 @@ Another representation for a game is called the **normal form**.
 A $N$ player **normal form game** consists of:
 
 1. A finite set of $N$ players;
-2. Strategy spaces for the players: $S_1, S_2, S_3, \dots S_n$;
-3. Payoff functions for the players: $u_i:S_{1}\times S_2\dots\times S_n\to \mathbb{R}$
+2. Strategy spaces for the players: $S_1, S_2, S_3, \dots S_N$;
+3. Payoff functions for the players: $u_i:S_{1}\times S_2\dots\times S_N\to \mathbb{R}$
 
 ---
 
@@ -105,7 +105,7 @@ So far we have only considered so called **pure strategies**. We will now allow 
 
 In an $N$ player normal form game a **mixed strategy** for player $i$ denoted by $\sigma_i\in[0,1]^{|S_i|}_{\mathbb{R}}$ is a probability distribution over the pure strategies of player $i$. So:
 
-$$\sum_{i=1}^{|\S_i|}\sigma_i=1$$
+$$\sum_{i=1}^{|S_i|}\sigma_i=1$$
 
 For a given player $i$ we denote the set of mixed strategies as $\Delta S_i$.
 
