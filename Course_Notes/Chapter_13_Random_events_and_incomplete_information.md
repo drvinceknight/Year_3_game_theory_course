@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_12_Nash_equilibrium_and_Evolutionary_stable_strategies.pdf):
+In the [previous chapter](Chapter_12_Nash_equilibrium_and_Evolutionary_stable_strategies.md):
 
 - We considered pairwise contest population games;
 - We proved a result showing the connection between ESS and NE.
@@ -13,7 +13,7 @@ In this chapter we will take a look at how to model games with incomplete inform
 
 Game with incomplete information represent situations where the players do not possess exact knowledge of the environment. This is represented by associating probabilities to various states. We show this on game trees using red circles to represent decisions made by "nature" where we can consider "nature" as a player although not a strategic one.
 
-If we recall\text{ (see Figure \ref{L01-img01})} the first game tree we considered in [Chapter 1](Chapter_01-Introduction.pdf) we had already done this to some extent.
+If we recall\text{ (see Figure \ref{L01-img01})} the first game tree we considered in [Chapter 1](Chapter_01-Introduction.md) we had already done this to some extent.
 
 ![A 1 player game with incomplete information.\label{L01-img01}](images/L01-img01.png)
 
@@ -25,7 +25,7 @@ This game is represented shown\text{ in Figure \ref{L13-img01}}.
 
 ![A simplified game of poker.\label{L13-img01}](images/L13-img01.png)
 
-To solve this game we can (as in [Chapter 8](Chapter_08-Subgame_Perfection.pdf)) obtain the corresponding normal form game by taking expected utilities over the moves of nature.
+To solve this game we can (as in [Chapter 8](Chapter_08-Subgame_Perfection.md)) obtain the corresponding normal form game by taking expected utilities over the moves of nature.
 
 We have $S_1=\{\text{SeeRaise},\text{SeeSee},\text{RaiseRaise},\text{RaiseSee}\}$ and $S_2=\{\text{Meet},\text{Pass}\}$ and the normal form representation is:
 

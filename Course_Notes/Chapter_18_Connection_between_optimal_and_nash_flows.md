@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_17_Routing_games.pdf):
+In the [previous chapter](Chapter_17_Routing_games.md):
 
 - We defined routing games;
 - We defined and calculated optimal flows;

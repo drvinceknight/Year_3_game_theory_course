@@ -1,13 +1,11 @@
 #!/usr/bin/env python
+from sys import argv
+from os import system, listdir
 
-import os
-
-md_files = [e for e in os.listdir(".") if e[-3:] == ".md"]
+md_files = [f for f in listdir("./") if f[-3:] == ".md"]
 
 for e in md_files:
-    os.system("sed -i '' 's/.html/.pdf/g' %s" % e)
+    e = e[:-3]
+    print e
 
-html_files = [e for e in os.listdir(".") if e[-5:] == ".html"]
-
-for e in html_files:
-    os.system("sed -i '' 's/.pdf/.html/g' %s" % e)
+    system("sed -i '' 's/.pdf/.md/g' %s" % (e + ".md"))

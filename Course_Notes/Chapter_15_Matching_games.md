@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_14_Stochastic_games.pdf):
+In the [previous chapter](Chapter_14_Stochastic_games.md):
 
 - We defined stochastic games;
 - We investigated approached to obtaining Markov strategy Nash equilibria.

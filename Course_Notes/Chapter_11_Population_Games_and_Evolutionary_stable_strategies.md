@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_11_Infinitely_Repeated_Games.pdf):
+In the [previous chapter](Chapter_10_Infinetely_Repeated_Games.md)
 
 - We considered infinitely repeated games using a discount rate;
 - We proved a powerful result stating that for a high enough discount rate player would cooperate.

@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_10_Infinitely_Repeated_Games.pdf):
+In the [previous chapter](Chapter_09_Finitely_Repeated_Games.md):
 
 - We defined repeated games;
 - We showed that a sequence of stage Nash games would give a subgame perfect equilibria;

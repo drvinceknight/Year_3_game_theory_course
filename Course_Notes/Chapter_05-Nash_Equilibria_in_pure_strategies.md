@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous lecture](Lecture_04-Best_RLecture_04-Best_RLecture_04-Best_RLecture_04-Best_Responses.pdf) we discussed:
+In the [previous lecture](Chapter_04-Best_Responses.md) we discussed:
 
 - The definition of best responses;
 - The connection between dominance and best responses;

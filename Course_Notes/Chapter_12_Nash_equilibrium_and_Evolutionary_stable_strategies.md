@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter]():
+In the [previous chapter](Chapter_11_Population_Games_and_Evolutionary_stable_strategies.md):
 
 - We considered population games;
 - We proved a result concerning a necessary condition for a population to be evolutionary stable;

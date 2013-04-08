@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_08-Subgame_Perfection.pdf):
+In the [previous chapter](Chapter_08-Subgame_Perfection.md):
 
 - We looked at the connection between games in normal form and extensive form;
 - We defined a subgame;

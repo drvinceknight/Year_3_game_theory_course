@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_13_Random_events_and_incomplete_information.pdf):
+In the [previous chapter](Chapter_13_Random_events_and_incomplete_information.md):
 
 - We considered games of incomplete information;
 - Discussed some basic utility theory;

@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous chapter](Chapter_16_Cooperative_games.pdf):
+In the [previous chapter](Chapter_16_Cooperative_games.md):
 
 - We defined characteristic function games;
 - We defined the Shapley value.

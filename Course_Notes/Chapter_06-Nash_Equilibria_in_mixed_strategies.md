@@ -2,7 +2,7 @@
 
 ## Recap
 
-In the [previous lecture](Chapter_05-Nash_Equilibria_in_pure_strategies.pdf)
+In the [previous lecture](Chapter_05-Nash_Equilibria_in_pure_strategies.md)
 
 - The definition of Nash equilibria;
 - Identifying Nash equilibria in pure strategies;
@@ -22,7 +22,7 @@ $$
 \end{pmatrix}
 $$
 
-Recalling [Chapter 2](Chapter_02-Normal_Form_Games.pdf) a strategy profile of $\sigma_1=(.2,.8)$ and $\sigma_2=(.6,.4)$ implies that player 1 plays heads with probability .2 and player 2 plays heads with probability .6.
+Recalling [Chapter 2](Chapter_02-Normal_Form_Games.md) a strategy profile of $\sigma_1=(.2,.8)$ and $\sigma_2=(.6,.4)$ implies that player 1 plays heads with probability .2 and player 2 plays heads with probability .6.
 
 We can extend the utility function which maps from the set of pure strategies to $\mathbb{R}$ using _expected payoffs_. For a two player game we have:
 
