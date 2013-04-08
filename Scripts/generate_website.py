@@ -39,7 +39,7 @@ for i in range(len(list_of_md_chapters)):
     file_name = list_of_md_chapters[i][:-3]
     index_file.write("\n%s. Chapter %s: %s" % (i + 1, i + 1, data[0][data[0].index("-") + 2:]))
     index_file.write("\n")
-    index_file.write("\n\t[pdf(recommended)](./Course_Notes/%s.pdf), [html](./Course_Notes/%s.html), [docx](./Course_Notes/%s.docx)" % (file_name, file_name, file_name))
+    index_file.write("\n\t[pdf (recommended)](./Course_Notes/%s.pdf), [html](./Course_Notes/%s.html), [docx](./Course_Notes/%s.docx)" % (file_name, file_name, file_name))
     index_file.write("\n")
 
 # Write Lesson plans
