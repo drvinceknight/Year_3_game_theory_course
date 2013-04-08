@@ -10,7 +10,11 @@ index_file.write("\n")
 
 # Notes
 
-index_file.write("This website is very much work in progress with content for the 3rd game theory course I'm teaching at Cardiff University.")
+index_file.write("""
+This website is very much work in progress with content for the 3rd game theory course I'm teaching at Cardiff University.
+
+([My personal website](www.vincent-knight.com))
+                 """)
 index_file.write("\n")
 
 # Write course notes
