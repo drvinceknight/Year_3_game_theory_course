@@ -60,7 +60,8 @@ for i in range(len(list_of_md_homework)):
     data = outfile.read().split("\n")
     outfile.close()
     file_name = list_of_md_homework[i][:-3]
-    index_file.write("\n%s. Homework sheet %s:" % (i + 1, i + 1))
+    index_file.write("\n%s. Homework sheet %s: %s" % (i + 1, i + 1, data[0][data[0].index("-") + 2:]))
+    #index_file.write("\n%s. Chapter %s: %s" % (i + 1, i + 1, data[0][data[0].index("-") + 2:]))
     index_file.write("\n")
     index_file.write("\n\t[pdf (recommended)](./Homework/%s.pdf), [html](./Homework/%s.html), [docx](./Homework/%s.docx)" % (file_name, file_name, file_name))
     index_file.write("\n")

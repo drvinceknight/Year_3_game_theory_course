@@ -85,23 +85,23 @@ The github repo for this course is [here](https://github.com/drvinceknight/Year_
 
 ## Homework Sheets
 
-1. Homework sheet 1:
+1. Homework sheet 1: Normal form games
 
 	[pdf (recommended)](./Homework/Homework_1.pdf), [html](./Homework/Homework_1.html), [docx](./Homework/Homework_1.docx)
 
-2. Homework sheet 2:
+2. Homework sheet 2: Nash equilibrium in normal form games
 
 	[pdf (recommended)](./Homework/Homework_2.pdf), [html](./Homework/Homework_2.html), [docx](./Homework/Homework_2.docx)
 
-3. Homework sheet 3:
+3. Homework sheet 3: Extensive form games, subgame perfect equilibrium and repeated games
 
 	[pdf (recommended)](./Homework/Homework_3.pdf), [html](./Homework/Homework_3.html), [docx](./Homework/Homework_3.docx)
 
-4. Homework sheet 4:
+4. Homework sheet 4: Evolutionary games, games with incomplete information and stochastic games
 
 	[pdf (recommended)](./Homework/Homework_4.pdf), [html](./Homework/Homework_4.html), [docx](./Homework/Homework_4.docx)
 
-5. Homework sheet 5:
+5. Homework sheet 5: Matching games, cooperative games and routing games
 
 	[pdf (recommended)](./Homework/Homework_5.pdf), [html](./Homework/Homework_5.html), [docx](./Homework/Homework_5.docx)
 
