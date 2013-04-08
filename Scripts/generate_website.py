@@ -48,7 +48,7 @@ target_dir = "../Lesson_Plans"
 index_file.write("\n## Lesson plans")
 
 list_of_plans = os.listdir(target_dir)
-list_of_plans = [p for p in list_of_plans if p != "makefile"]
+list_of_plans = [p for p in list_of_plans if p[-3:] == ".md"]
 number_of_plans = len(list_of_plans)
 print "%s lesson plans read." % number_of_plans
 
@@ -57,7 +57,7 @@ for i in range(len(list_of_plans)):
     data = outfile.read().split("\n")
     outfile.close()
 
-    index_file.write("\n%s. Lecture %s: [%s](./Lesson_Plans/Lesson_%.02d.md)" % (i + 1, i + 1, data[1][2:], i + 1))
+    index_file.write("\n%s. Lecture %s: [%s](./Lesson_Plans/Lesson_%.02d.html)" % (i + 1, i + 1, data[1][2:], i + 1))
 
 index_file.write("\n")
 
