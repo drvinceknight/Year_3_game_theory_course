@@ -71,6 +71,27 @@ index_file.write("""
 - Here is a list of free and open source Game theory software: [here](http://drvinceknight.blogspot.co.uk/2013/03/open-source-andor-free-game-theory.html).
                  """)
 
+# Add analytics tracking script
+
+index_file.write("""
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38016329-2']);
+  _gaq.push(['_setDomainName', 'github.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+                 """)
+
+
 index_file.close()
 
 os.system("pandoc ../index.md -o ../index.html")
