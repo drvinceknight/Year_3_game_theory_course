@@ -5,10 +5,10 @@ from os import system
 e = argv[1][:-3]
 print e
 
-system("sed -i '' 's/.md/.html/g' %s" % (e + ".md"))
-system("pandoc -s " + e + ".md -N -o " + e + ".html --mathjax")
-system("sed -i '' 's/.html/.docx/g' %s" % (e + ".md"))
-system("pandoc " + e + ".md -o " + e + ".docx")
-system("sed -i '' 's/.docx/.pdf/g' %s" % (e + ".md"))
-system("pandoc " + e + ".md -N -o " + e + ".pdf --latex-engine=xelatex")
-system("sed -i '' 's/.pdf/.md/g' %s" % (e + ".md"))
+system("sed 's/.md/.html/g' %s > tmp" % (e + ".md"))
+system("pandoc -s tmp -N -o " + e + ".html --mathjax")
+system("sed 's/.md/.docx/g' %s > tmp" % (e + ".md"))
+system("pandoc tmp -o " + e + ".docx")
+system("sed 's/.md/.pdf/g' %s > tmp" % (e + ".md"))
+system("pandoc tmp -N -o " + e + ".pdf --latex-engine=xelatex")
+system("rm tmp")
