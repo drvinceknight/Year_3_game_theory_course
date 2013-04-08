@@ -2,6 +2,8 @@
 
 This website is very much work in progress with content for the 3rd game theory course I'm teaching at Cardiff University.
 
+The github repo for this course is [here](https://github.com/drvinceknight/Year_3_game_theory_course).
+
 ([My personal website](www.vincent-knight.com))
                  
 
@@ -103,3 +105,10 @@ This website is very much work in progress with content for the 3rd game theory 
 20. Lecture 20: [ Prisoner's Dilemma Tournament (revisited)](./Lesson_Plans/Lesson_20.md)
 21. Lecture 21: [ Slack](./Lesson_Plans/Lesson_21.md)
 22. Lecture 22: [ Slack](./Lesson_Plans/Lesson_22.md)
+
+## Some extra things:
+
+- Here is a file containing a summary of the notations and conventions in this course: [html](./Notations_conventions.html).
+- Here is a list of reading materials on game theory: [html](./Reading_list.html). I wrote a blog post describing some of the literature: [here](http://drvinceknight.blogspot.co.uk/2013/03/game-theory-reading-list.html).
+- Here is a list of free and open source Game theory software: [here](http://drvinceknight.blogspot.co.uk/2013/03/open-source-andor-free-game-theory.html).
+                 
