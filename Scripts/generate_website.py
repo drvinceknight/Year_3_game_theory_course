@@ -8,6 +8,11 @@ index_file = open("../index.md", "w")
 index_file.write("# Year 3 - Game Theory")
 index_file.write("\n")
 
+# Notes
+
+index_file.write("This website is very much work in progress with content for the 3rd game theory course I'm teaching at Cardiff University.")
+index_file.write("\n")
+
 # Write course notes
 
 target_dir = "../Course_Notes"

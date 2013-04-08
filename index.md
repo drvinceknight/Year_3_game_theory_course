@@ -1,4 +1,5 @@
 # Year 3 - Game Theory
+This website is very much work in progress with content for the 3rd game theory course I'm teaching at Cardiff University.
 
 
 ## Course Chapters
