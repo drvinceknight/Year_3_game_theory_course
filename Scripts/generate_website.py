@@ -42,6 +42,29 @@ for i in range(len(list_of_md_chapters)):
     index_file.write("\n\t[pdf (recommended)](./Course_Notes/%s.pdf), [html](./Course_Notes/%s.html), [docx](./Course_Notes/%s.docx)" % (file_name, file_name, file_name))
     index_file.write("\n")
 
+# Write homeworks
+
+target_dir = "../Homework"
+
+list_of_homework = os.listdir(target_dir)
+list_of_md_homework = [p for p in list_of_homework if p[-3:] == ".md"]
+number_of_homework = len(list_of_md_homework)
+print "%s Homework sheets read." % number_of_homework
+
+index_file.write("\n")
+index_file.write("\n## Homework Sheets")
+index_file.write("\n")
+
+for i in range(len(list_of_md_homework)):
+    outfile = open(target_dir + "/" + list_of_md_homework[i])
+    data = outfile.read().split("\n")
+    outfile.close()
+    file_name = list_of_md_homework[i][:-3]
+    index_file.write("\n%s. Homework sheet %s:" % (i + 1, i + 1))
+    index_file.write("\n")
+    index_file.write("\n\t[pdf (recommended)](./Homework/%s.pdf), [html](./Homework/%s.html), [docx](./Homework/%s.docx)" % (file_name, file_name, file_name))
+    index_file.write("\n")
+
 # Write Lesson plans
 
 target_dir = "../Lesson_Plans"

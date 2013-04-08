@@ -82,6 +82,29 @@ The github repo for this course is [here](https://github.com/drvinceknight/Year_
 
 	[pdf (recommended)](./Course_Notes/Chapter_18_Connection_between_optimal_and_nash_flows.pdf), [html](./Course_Notes/Chapter_18_Connection_between_optimal_and_nash_flows.html), [docx](./Course_Notes/Chapter_18_Connection_between_optimal_and_nash_flows.docx)
 
+
+## Homework Sheets
+
+1. Homework sheet 1:
+
+	[pdf (recommended)](./Homework/Homework_1.pdf), [html](./Homework/Homework_1.html), [docx](./Homework/Homework_1.docx)
+
+2. Homework sheet 2:
+
+	[pdf (recommended)](./Homework/Homework_2.pdf), [html](./Homework/Homework_2.html), [docx](./Homework/Homework_2.docx)
+
+3. Homework sheet 3:
+
+	[pdf (recommended)](./Homework/Homework_3.pdf), [html](./Homework/Homework_3.html), [docx](./Homework/Homework_3.docx)
+
+4. Homework sheet 4:
+
+	[pdf (recommended)](./Homework/Homework_4.pdf), [html](./Homework/Homework_4.html), [docx](./Homework/Homework_4.docx)
+
+5. Homework sheet 5:
+
+	[pdf (recommended)](./Homework/Homework_5.pdf), [html](./Homework/Homework_5.html), [docx](./Homework/Homework_5.docx)
+
 ## Lesson plans
 1. Lecture 1: [ Introduction](./Lesson_Plans/Lesson_01.html)
 2. Lecture 2: [ Normal Form Games](./Lesson_Plans/Lesson_02.html)
