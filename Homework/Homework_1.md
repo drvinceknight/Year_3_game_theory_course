@@ -38,7 +38,7 @@ Attempt to predict rational behaviour **using iterated elimination of dominated 
 - $$\begin{pmatrix}
 (3,-3)&(-1,1)\\
 (2,1)&(7,-6)\\
-$$
+\end{pmatrix}$$
 
 Explain when games occur that cannot be handled this way.
 
@@ -64,4 +64,4 @@ In a 2 player normal form game $B_i = UD_i$ for all $i \in\{1,2\}$.
 
 ---
 
-Prove the theorem for 2 player games with $|S_1|=|S_2|$. I.e. prove the above result in the special case of $2\times 2$ games.
+Prove the theorem for 2 player games with $|S_1|=|S_2|=2$. I.e. prove the above result in the special case of $2\times 2$ games.
