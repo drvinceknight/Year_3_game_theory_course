@@ -14,13 +14,13 @@
     \draw (0,0) -- (4,4);
     \draw (0,2) -- (2,4);
     \draw (2,0) -- (4,2);
-    \node (A) [right=10pt,below] at (0,4) {\tiny $(8,4)$};
-    \node (B) [right=10pt,below] at (2,4) {\tiny $(5,3)$};
-    \node [right=10pt,below] at (2,2) {\tiny $(2,6)$};
-    \node [right=10pt,below] at (0,2) {\tiny $(1,5)$};
-    \node [left=10pt,above] at (2,2) {\tiny $(.8,2)$};
-    \node [left=10pt,above] at (4,2) {\tiny $(1,0)$};
-    \node (X) [left=10pt,above] at (2,0) {\tiny $(1,0)$};
+    \node (A) [right=10pt,below] at (0,4) {\tiny $(3,2)$};
+    \node (B) [right=10pt,below] at (2,4) {\tiny $(1,7)$};
+    \node [right=10pt,below] at (2,2) {\tiny $(6,3)$};
+    \node [right=10pt,below] at (0,2) {\tiny $(2,1)$};
+    \node [left=10pt,above] at (2,2) {\tiny $(.3,.7)$};
+    \node [left=10pt,above] at (4,2) {\tiny $(.2,.8)$};
+    \node (X) [left=10pt,above] at (2,0) {\tiny $(0,1)$};
     \node (Y) [left=10pt,above] at (4,0) {\tiny $(1,0)$};
 
     \draw [rectangle] (5,0) -- (7,0) -- (7,2) -- (5,2) -- cycle;
@@ -28,17 +28,6 @@
     \node (C) [right=10pt,below] at (5,2) {\tiny $(0,0)$};
     \node (Z) [left=10pt,above] at (7,0) {\tiny $(0,1)$};
 
-    \node (a) at (3,5) {\tiny{Utilities}};
-
-    \draw [->] (a) -- (A);
-    \draw [->] (a) -- (B);
-    \draw [->] (a) -- (C);
-
-    \node (b) at (3,-1) {\tiny{Transition Probabilities}};
-
-    \draw [->] (b) -- (X);
-    \draw [->] (b) -- (Y);
-    \draw [->] (b) -- (Z);
 
     \node at (2,-.5) {$x$};
     \node at (6,-.5) {$y$};
