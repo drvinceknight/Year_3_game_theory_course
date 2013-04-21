@@ -66,7 +66,7 @@ The github repo for this course is [here](https://github.com/drvinceknight/Year_
 
 	[pdf (recommended)](./Course_Notes/Chapter_14_Stochastic_games.pdf), [html](./Course_Notes/Chapter_14_Stochastic_games.html), [docx](./Course_Notes/Chapter_14_Stochastic_games.docx)
 
-15. Chapter 15: Cooperative game theory
+15. Chapter 15: Matching games
 
 	[pdf (recommended)](./Course_Notes/Chapter_15_Matching_games.pdf), [html](./Course_Notes/Chapter_15_Matching_games.html), [docx](./Course_Notes/Chapter_15_Matching_games.docx)
 

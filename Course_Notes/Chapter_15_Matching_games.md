@@ -1,4 +1,4 @@
-# OR 3: Chapter 15 - Cooperative game theory
+# OR 3: Chapter 15 - Matching games
 
 ## Recap
 
