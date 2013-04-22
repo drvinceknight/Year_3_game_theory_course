@@ -41,7 +41,7 @@ $$M(s)=r$$
 
 ---
 
-### Definition of a blocking
+### Definition of a blocking pair
 
 ---
 
