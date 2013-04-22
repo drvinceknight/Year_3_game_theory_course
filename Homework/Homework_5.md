@@ -1,29 +1,19 @@
 # Homework sheet 5 - Matching games, cooperative games and routing games
 
-1. Obtain stable suitor optimal and reviewer optimal matchings for the following matching games:
+1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}. 
 
----
 
-![Matching game 1](images/E05-img01.png)
+![Matching game 1 \label{E05-img01}](images/E05-img01.png)
 
----
 
-![Matching game 2](images/E05-img02.png)
+![Matching game 2 \label{E05-img02}](images/E05-img02.png)
 
----
+![Matching game 3 \label{E05-img03}](images/E05-img03.png)
 
-![Matching game 3](images/E05-img03.png)
+![Matching game 4 \label{E05-img04}](images/E05-img04.png)
 
----
 
-![Matching game 4](images/E05-img04.png)
-
----
-
-2. Given a stable matching with $n$ suitors and reviewers:
-
-i. Is it possible to find three pairs such that if the matching among them is changed, each suitor will be matched to a reviewer that he/she prefers and each reviewer will be matched to a suitor that he/she prefers?
-ii. Generalize this conclusion to a set of $k$ pairs, for every $4\leq k\leq n$.
+2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
 
 3. For the following cooperative games:
 
