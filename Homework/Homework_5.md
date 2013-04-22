@@ -3,16 +3,28 @@
 1. Obtain stable suitor optimal and reviewer optimal matchings for the following matching games:
 
 ---
+
 ![Matching game 1](images/E05-img01.png)
----
-![Matching game 2](images/E05-img02.png)
----
-![Matching game 3](images/E05-img03.png)
----
-![Matching game 4](images/E05-img04.png)
+
 ---
 
-2. Grab exercise from book.
+![Matching game 2](images/E05-img02.png)
+
+---
+
+![Matching game 3](images/E05-img03.png)
+
+---
+
+![Matching game 4](images/E05-img04.png)
+
+---
+
+2. Given a stable matching with $n$ suitors and reviewers:
+
+i. Is it possible to find three pairs such that if the matching among them is changed, each suitor will be matched to a reviewer that he/she prefers and each reviewer will be matched to a suitor that he/she prefers?
+ii. Generalize this conclusion to a set of $k$ pairs, for every $4\leq k\leq n$.
+
 3. For the following cooperative games:
 
 i. Verify if the game is monotonic.
