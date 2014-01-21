@@ -20,50 +20,50 @@
 <h2 id="extensive-form-games"><span class="header-section-number">1.2</span> Extensive form games</h2>
 <p>If we recall Chapter 1 we have seen how to represent extensive form games as a tree.</p>
 <div class="figure">
-<img src="images/L01-img03.png" alt="Bob and Celine. " /><p class="caption">Bob and Celine. </p>
+<img src="images/L01-img03.png" /><p class="caption"></p>
 </div>
 <p>We will now consider the properties that define an extensive form game game tree:</p>
 <ol style="list-style-type: decimal">
 <li>Every node is a successor of the (unique) initial node\text{ as shown in Figure .</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img01.png" alt="A tree with two initial nodes." /><p class="caption">A tree with two initial nodes.</p>
+<img src="images/L07-img01.png" /><p class="caption"></p>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Every node apart from the initial node has exactly one predecessor. The initial node has no predecessor.</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img02.png" alt="A tree with node c having multiple predecessors. " /><p class="caption">A tree with node c having multiple predecessors. </p>
+<img src="images/L07-img02.png" /><p class="caption"></p>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>All edges extending from the same node have different action labels.</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img03.png" alt="Nodes with same action labels." /><p class="caption">Nodes with same action labels.</p>
+<img src="images/L07-img03.png" /><p class="caption"></p>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Each information set contains decision nodes for one player.</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img04.png" alt="Information sets with different action labels." /><p class="caption">Information sets with different action labels.</p>
+<img src="images/L07-img04.png" /><p class="caption"></p>
 </div>
 <ol start="5" style="list-style-type: decimal">
 <li>All nodes in a given information set must have the same number of successors (with the same action labels on the corresponding edges).</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img05.png" alt="Information set with different number of action edges. " /><p class="caption">Information set with different number of action edges. </p>
+<img src="images/L07-img05.png" /><p class="caption"></p>
 </div>
 <ol start="6" style="list-style-type: decimal">
 <li>We will only consider games with &quot;perfect recall&quot;, ie we assume that players remember their own past actions as well as other past events.</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img06.png" alt="A game without perfect recall." /><p class="caption">A game without perfect recall.</p>
+<img src="images/L07-img06.png" /><p class="caption"></p>
 </div>
 <ol start="7" style="list-style-type: decimal">
 <li>If a player's action is not a discrete set we can represent this as shown.</li>
 </ol>
 <div class="figure">
-<img src="images/L07-img07.png" alt="A game tree with continuous strategy set." /><p class="caption">A game tree with continuous strategy set.</p>
+<img src="images/L07-img07.png" /><p class="caption"></p>
 </div>
 <p>As an example consider the following game (sometimes referred to as &quot;ultimatum bargaining&quot;):</p>
 <blockquote>
@@ -71,7 +71,7 @@
 </blockquote>
 <p>We can represent this.</p>
 <div class="figure">
-<img src="images/L07-img08.png" alt="The seller buyer game." /><p class="caption">The seller buyer game.</p>
+<img src="images/L07-img08.png" /><p class="caption"></p>
 </div>
 <p>How we can we analyse normal form games?</p>
 <h2 id="backwards-induction"><span class="header-section-number">1.3</span> Backwards induction</h2>
@@ -88,19 +88,19 @@
 <h3 id="example"><span class="header-section-number">1.3.3</span> Example</h3>
 <p>Let us consider the game shown.</p>
 <div class="figure">
-<img src="images/L07-img09.png" alt="Running example for backward induction." /><p class="caption">Running example for backward induction.</p>
+<img src="images/L07-img09.png" /><p class="caption"></p>
 </div>
 <p>We see that at node \((d)\) that Z is a dominated strategy. So that the game reduces to as shown.</p>
 <div class="figure">
-<img src="images/L07-img10.png" alt="Running example step 1." /><p class="caption">Running example step 1.</p>
+<img src="images/L07-img10.png" /><p class="caption"></p>
 </div>
 <p>Player 1s strategy profile is (Y) (we will discuss strategy profiles for extensive form games more formally in the next chapter). At node \((c)\) A is a dominated strategy so that the game reduces as shown.</p>
 <div class="figure">
-<img src="images/L07-img11.png" alt="Running example step 2." /><p class="caption">Running example step 2.</p>
+<img src="images/L07-img11.png" /><p class="caption"></p>
 </div>
 <p>Player 2s strategy profile is (B). At node \((b)\) C is a dominated strategy so that the game reduces as shown.</p>
 <div class="figure">
-<img src="images/L07-img12.png" alt="Running example step 3." /><p class="caption">Running example step 3.</p>
+<img src="images/L07-img12.png" /><p class="caption"></p>
 </div>
 <p>Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (W,Z).</p>
 <p><strong>This outcome is in fact a Nash equilibria!</strong> Recalling the original tree neither player has an incentive to move.</p>
@@ -126,13 +126,13 @@
 <p>However we will modify this to assume that there is a leader and a follower, ie <strong>the firms do not decide at the same time</strong>. This game is called a Stackelberg leader follower game.</p>
 <p>Let us represent this as a normal form game.</p>
 <div class="figure">
-<img src="images/L07-img13.png" alt="A Stackelberg leader follower game." /><p class="caption">A Stackelberg leader follower game.</p>
+<img src="images/L07-img13.png" /><p class="caption"></p>
 </div>
 <p>We use backward induction to identify the Nash equilibria. The dominant strategy for the follower is:</p>
 <p>\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</p>
 <p>The game thus reduces as shown.</p>
 <div class="figure">
-<img src="images/L07-img14.png" alt="A step of backward induction in the Stackelberg game." /><p class="caption">A step of backward induction in the Stackelberg game.</p>
+<img src="images/L07-img14.png" /><p class="caption"></p>
 </div>
 <p>The leader thus needs to maximise:</p>
 <p>\[u_1(q_1)=(K-q_1-\frac{K-k-q_1}{2})q_1-kq_1=(\frac{K-q_1+k}{2})q_1-kq_1\]</p>

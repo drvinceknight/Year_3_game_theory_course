@@ -20,7 +20,7 @@
 <p>Game with incomplete information represent situations where the players do not possess exact knowledge of the environment. This is represented by associating probabilities to various states. We show this on game trees using red circles to represent decisions made by &quot;nature&quot; where we can consider &quot;nature&quot; as a player although not a strategic one.</p>
 <p>If we recall the first game tree we considered in <a href="Chapter_01-Introduction.html">Chapter 1</a> we had already done this to some extent.</p>
 <div class="figure">
-<img src="images/L01-img01.png" alt="A 1 player game with incomplete information." /><p class="caption">A 1 player game with incomplete information.</p>
+<img src="images/L01-img01.png" /><p class="caption"></p>
 </div>
 <p>Let us consider a slightly more complicated game.</p>
 <blockquote>
@@ -28,7 +28,7 @@
 </blockquote>
 <p>This game is represented shown.</p>
 <div class="figure">
-<img src="images/L13-img01.png" alt="A simplified game of poker." /><p class="caption">A simplified game of poker.</p>
+<img src="images/L13-img01.png" /><p class="caption"></p>
 </div>
 <p>To solve this game we can (as in <a href="Chapter_08-Subgame_Perfection.html">Chapter 8</a>) obtain the corresponding normal form game by taking expected utilities over the moves of nature.</p>
 <p>We have \(S_1=\{\text{SeeRaise},\text{SeeSee},\text{RaiseRaise},\text{RaiseSee}\}\) and \(S_2=\{\text{Meet},\text{Pass}\}\) and the normal form representation is:</p>
@@ -50,7 +50,7 @@ x&amp;=1/3
 <h2 id="utilities"><span class="header-section-number">1.3</span> Utilities</h2>
 <p>When considering games with uncertainty it is particularly relevant to consider some basic utility theory. Consider the following game shown.</p>
 <div class="figure">
-<img src="images/L13-img02.png" alt="A simple 1 player game with incomplete information." /><p class="caption">A simple 1 player game with incomplete information.</p>
+<img src="images/L13-img02.png" /><p class="caption"></p>
 </div>
 <p>This is a 1 player game where a player must choose whether or not to flip a coin. If the coin is flipped and lands on &quot;Heads&quot; then the player wins £10, if the coin lands on &quot;Tails&quot; then the player wins nothing. If the player chooses to not flip a coin then the player wins £4.</p>
 <p>With such small sums of money involved it is quite likely that the player would choose to flip the coin (afterall the expected value of flipping the coin is £5. If we changed the game slightly so that it was now in terms of <strong>millions</strong> of pounds surely the player should just take the £4 million on offer?</p>
@@ -62,7 +62,7 @@ x&amp;=1/3
 </ul>
 <p>This is shown.</p>
 <div class="figure">
-<img src="plots/L13-plot01.png" alt="Utility function. " /><p class="caption">Utility function. </p>
+<img src="plots/L13-plot01.png" /><p class="caption"></p>
 </div>
 <p>If we use \(u=\sqrt{x}\) as the utility function in the coin flip game we see that the analytical solution would indeed be to not flip. We will now take a look at this in a bit more detail with a well known game.</p>
 <h2 id="principal-agent-game"><span class="header-section-number">1.4</span> Principal agent game</h2>
@@ -97,12 +97,12 @@ x&amp;=1/3
 <p>We furthermore assume that the utility function of the employer is simply \(u(x)=x\) while the utility function to the potential employee is of the form \(u(x)=x^{\alpha}\) for \(0&lt;\alpha&lt;1\) (i.e. the potential employee is risk averse).</p>
 <p>The extensive form of the game is shown.</p>
 <div class="figure">
-<img src="images/L13-img03.png" alt="The principal agent game." /><p class="caption">The principal agent game.</p>
+<img src="images/L13-img03.png" /><p class="caption"></p>
 </div>
 <p>Immediately we see that this game is trivial if \(\kappa&lt;\omega\) and \(K&lt;\omega+B\). Furthermore it seems sensible to only consider \(K&gt;\kappa\).</p>
 <p>We will solve this game using backward induction. The first step is shown.</p>
 <div class="figure">
-<img src="images/L13-img04.png" alt="Calculating the expected value of move by nature. " /><p class="caption">Calculating the expected value of move by nature. </p>
+<img src="images/L13-img04.png" /><p class="caption"></p>
 </div>
 <p>If the employer would like a high level of effort he should set \(w,B\) such that:</p>
 <p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq w^\alpha\]</p>
