@@ -11,6 +11,8 @@ print e
 system("sed 's/.md/.html/g' %s > tmp" % (e + ".md"))
 system("sed 's/\!\[.*\]/\!\[\]/g' tmp > tmp1")  # Get rid of captions
 system("sed 's/](/](%s/g' tmp1 > tmp" % mediaserver)  # Change media server to github
+string = "\n\n(Other versions of the above: [pdf](%s%s) [docx (not recommended)](%s%s))" % (mediaserver, e+".pdf", mediaserver, e+".docx")
+system("echo '%s' >> tmp" % string)
 system("pandoc -s tmp -N -o " + e + ".html --mathjax")
 #system("sed 's/.md/.docx/g' %s > tmp" % (e + ".md"))
 #system("pandoc tmp -o " + e + ".docx")
