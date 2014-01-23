@@ -1,16 +1,15 @@
 # Homework sheet 5 - Matching games, cooperative games and routing games
 
-1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}. 
+1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}.
 
 
-![Matching game 1 \label{E05-img01}](images/E05-img01.png)
+![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
 
+![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
 
-![Matching game 2 \label{E05-img02}](images/E05-img02.png)
+![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
 
-![Matching game 3 \label{E05-img03}](images/E05-img03.png)
-
-![Matching game 4 \label{E05-img04}](images/E05-img04.png)
+![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
@@ -84,8 +83,8 @@ Note that this does not prove that the Shapley value is the only vector that has
 
 5. Calculate the Nash flow and the optimal flow for the routing games shown\text{ in Figures \ref{E05-img05} and \ref{E05-img06}}.
 
-![Routing game 1\label{E05-img05}](images/E05-img05.png)
-![Routing game 2\label{E05-img06}](images/E05-img06.png)
+![Routing game 1\label{E05-img05}](images/E05-img05.png)\
+![Routing game 2\label{E05-img06}](images/E05-img06.png)\
 
 6. For a routing game the 'Price of Anarchy' is defined as:
 
@@ -97,4 +96,4 @@ For the game shown\text{ in Figure \ref{E05-img07}} (a generalisation of "Pigou'
 
 Now obtain the PoA for the game shown\text{ in Figure \ref{E05-img08}} as a function of $\Lambda, \alpha$ and $\beta$. For what value of $\Lambda$ is the PoA at it's maximum?
 
-![A further generalization of Pigou's example\label{E05-img08}](images/E05-img08.png)
+![A further generalization of Pigou's example\label{E05-img08}](images/E05-img08.png)\

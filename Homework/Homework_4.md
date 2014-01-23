@@ -39,9 +39,9 @@ ii. Obtain a condition for which the employer should offer a bonus.
 
 5. Obtain the Markov Nash equilibrium for the following games assuming $\delta=1/4$.
 
-![](images/E04-img01.png)
-![](images/E04-img02.png)
-![](images/E04-img03.png)
+![](images/E04-img01.png)\
+![](images/E04-img02.png)\
+![](images/E04-img03.png)\
 
 6. Construct a two state stochastic game corresponding to an infinitely repeated game with the following stage game:
 
