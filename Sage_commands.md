@@ -4,9 +4,7 @@ This sheet includes a list of Sage commands that could be of use to you during t
 
 The School of Mathematics has started teaching programming to all first year students and has also introduced the open source mathematics software [Sage](http://sagemath.org/).
 
-From time to time I will be demonstrating things using Sage, if you would like to use Sage: watch this video about setting up an account on the University server:
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/3E9LvXV_zrA" frameborder="0" allowfullscreen></iframe>
+From time to time I will be demonstrating things using Sage, if you would like to use Sage: watch [this video](http://www.youtube.com/watch?v=3E9LvXV_zrA&feature=youtu.be) about setting up an account on the University server.
 
 \textbf{Note the requirement to use your Cardiff University username as a username for a Sage account}.
 
