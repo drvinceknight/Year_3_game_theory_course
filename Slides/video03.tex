@@ -17,6 +17,7 @@
 \tikzstyle{player} = [text width=4em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
 \tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
 \tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\tikzstyle{dot} = [draw,shape=circle,fill=blue]
 
 \begin{document}
 
@@ -25,74 +26,56 @@
 
 \frame{
 \begin{center}
-\begin{tikzpicture}[grow=right, sloped]
-    \node[player]{Elliot}
-        child {node[player] (b) {Me}
-                child {node[end] {} node[right] {$(.5,.5)$} edge from parent node[below] {Xbox}}
-                child {node[end] {} node[right] {$(0,0)$} edge from parent node[below] {PS4}} edge from parent node[below] {Xbox}}
-        child {node[player] (c) {Me}
-                child {node[end] {} node[right] {$(.1,0)$} edge from parent node[below] {Xbox}}
-                child {node[end] {} node[right] {$(1,1)$} edge from parent node[below] {PS4}} edge from parent node[below] {PS4}};
-    \draw[dashed] (b) -- (c);
+\begin{tikzpicture}
+
+\node at (0,0) [dot] {};
+\only<1>{
+\node at (0,-1.12) [dot, red] {};
+\node at (-.975,-1.33) [dot, red] {};}
+\onslide<2->{
+\node (A) at (-3,-4) [rectangle, draw] {A};
+\node (B) at (3,-4) [rectangle, draw] {B};
+\node (C) at (0,-1.5) [circle, dashed, draw] {C};}
+\pause
+
+
+\pause
+\node (a) at (-2,-3) [blue] {Check A};
+\node (b) at (2,-3) [blue] {Check B};
+\node (c) at (-1.25,-1.5) [blue] {Check C};
+\draw (0,0) edge [out=-90, in=180, ->] (B);
+\draw (0,0) edge [out=-90, in=0, ->] (A);
+\pause
+\node (d) at (3,-1) [red] {Bad place to hide};
+\draw (d) edge [->, red] (C);
+\pause
+\draw [very thick] (-1.5,-1) -- (1.25,-2);
+\draw [very thick] (-1.5,-2) -- (1.25,-1);
+
 \end{tikzpicture}
 \end{center}
-}
-
-\frame{
-\begin{itemize}
-\item A finite set of $N$ players: Elliot and I.
-\item Strategy spaces for the players: $S_1, S_2, S_3, \dots S_N$ - $S_1=S_2=\{\text{Xbox}, \text{PS4}\}$.
-\item Payoff functions for the players: $u_i:S_{1}\times S_2\dots\times S_N\to \mathbb{R}$
-\end{itemize}
 }
 
 \frame{
 \begin{center}
 \begin{tikzpicture}
-\node at (0,0) { $\begin{pmatrix}(.5,.5)&(0,0)\\ (.1,0)&(1,1)\end{pmatrix}$};
-
-\pause
-\node (A) at (2,2) [color=red] {Xbox};
-\draw (A) edge [color=red, out=90, in=90, ->, very thick] (-.6,.5) ;
-\pause
-
-\node (B) at (3,1) [color=blue] {PS4};
-\draw (B) edge [color=blue, out=-90, in=90, ->, very thick] (.8,.5) ;
-\pause
-
-\node (D) at (-3,-2) [color=red] {Xbox};
-\draw (D) edge [color=red, out=90, in=180, ->, very thick] (-1.5,.25) ;
-\pause
-
-\node (C) at (-2,-3) [color=blue] {PS4};
-\draw (C) edge [color=blue, out=90, in=180, ->, very thick] (-1.5,-.25) ;
-
-
+\only<1,2>{\node at (0,0) {$
+\begin{pmatrix}
+(-20,20)&(50,-50)\\
+(30,-30)&(5,-5)\\
+(-10,10)&(-5,5)
+\end{pmatrix}
+$};}
+\only<2>{
+\draw [very thick, blue] (-2,-.4) -- (2,-.6);
+\draw [very thick, blue] (-2,-.6) -- (2,-.4);}
+\only<3>{\node at (0,0) {$
+\begin{pmatrix}
+(-20,20)&(50, -50)\\
+(30,-30)&(5,-5)
+\end{pmatrix}
+$};}
 \end{tikzpicture}
-\end{center}
-}
-
-\frame{
-Mixed strategy: $\sigma_i$
-$$\sum_{i=1}^{|S_i|}\sigma_i=1$$
-$$\sigma_1=(.3, .7)\text{ and }\sigma_2=(.8,.2)$$
-}
-
-\frame{
-$$\begin{pmatrix}
-(.5,.5)&(0,0)\\
-(.1,0)&(1,1)\\
-\end{pmatrix}$$
-
-\begin{align*}u_{1}(\sigma_1,\sigma_2)&=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)\\&=.3\times.8\times .5+.3\times.2\times 0+.7\times .8\times .1 + .7\times .2\times 1=.19\\
-u_{2}(\sigma_1,\sigma_2)&=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)\\
-&=.3\times.8\times .5+.3\times.2\times 0+.7\times .8\times 0 + .7\times .2\times 1=.134
-\end{align*}
-}
-
-\frame{
-\begin{center}
-What happens when I `always' buy an Xbox?
 \end{center}
 }
 
