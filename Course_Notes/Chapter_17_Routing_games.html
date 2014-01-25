@@ -81,8 +81,8 @@ c_{at}&amp;=x\\
 </div>
 <p>The cost of <span class="math">\(f(\alpha,1/2-\alpha,1/2-\beta,\beta)\)</span> is given by:</p>
 <p><span class="math">\[\begin{aligned}
-C(f)&amp;=\alpha^2\times\alpha+\beta^2\times\beta+(1-\alpha-\beta)\times(1-\alpha-\beta)\\
-    &amp;=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1
+C(f)&amp;=\alpha^2\times\alpha+3/2\beta\times\beta+(1-\alpha-\beta)\times(1-\alpha-\beta)\\
+    &amp;=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1
 \end{aligned}\]</span></p>
 <h3 id="definition-of-an-optimal-flow"><span class="header-section-number">1.3.2</span> Definition of an optimal flow</h3>
 <hr />
@@ -95,7 +95,7 @@ f_e&amp;=\sum_{P\in\mathcal{P}\text{ if }e\in P}f_P&amp;&amp;\text{ for all }e\i
 f_P&amp;\geq 0
 \end{aligned}\]</span></p>
 <hr />
-<p>In our example this corresponds to minimising <span class="math">\(C(\alpha,\beta)=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1\)</span> such that <span class="math">\(0\leq\alpha\leq 1\)</span> and <span class="math">\(0\leq\beta\leq1\)</span>.</p>
+<p>In our example this corresponds to minimising <span class="math">\(C(\alpha,\beta)=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1\)</span> such that <span class="math">\(0\leq\alpha\leq 1\)</span> and <span class="math">\(0\leq\beta\leq1\)</span>.</p>
 <p>A plot of <span class="math">\(C(\alpha,\beta)\)</span> is shown.</p>
 <div class="figure">
 <img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/plots/L17-plot01.png" />
@@ -155,6 +155,6 @@ f_P&amp;\geq 0
 <p>Thus we have <span class="math">\(\tilde f=(0,1/5)\)</span> which gives a cost of <span class="math">\(C(\tilde f)=7/10\)</span> (much higher than the optimal cost!).</p>
 <p>What if we had assumed that <span class="math">\(\beta=1/2\)</span>?</p>
 <p>This would have given <span class="math">\(\alpha^2=1/2-\alpha\)</span> which has solution <span class="math">\(\alpha\approx .3660\)</span>. The cost of the path <span class="math">\(s_2at\)</span> is then <span class="math">\(.134\)</span> however the cost of the path <span class="math">\(s_2t\)</span> is <span class="math">\(.75\)</span> thus the second commodity should deviate. We can carry out these same checks with all other possibilities to verify that <span class="math">\(\tilde f=(0,1/5)\)</span>.</p>
-<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_17_Routing_games.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_17_Routing_games.docx">docx (not recommended)</a>)</p>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_17_Routing_games.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_17_Routing_games.docx">docx (not recommended)</a>)</p>
 </body>
 </html>

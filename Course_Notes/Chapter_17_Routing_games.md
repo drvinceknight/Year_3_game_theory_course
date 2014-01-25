@@ -107,8 +107,8 @@ Thus for our running example if we take a general $f=(\alpha,1/2-\alpha,1/2-\bet
 The cost of $f(\alpha,1/2-\alpha,1/2-\beta,\beta)$ is given by:
 
 $$\begin{aligned}
-C(f)&=\alpha^2\times\alpha+\beta^2\times\beta+(1-\alpha-\beta)\times(1-\alpha-\beta)\\
-    &=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1
+C(f)&=\alpha^2\times\alpha+3/2\beta\times\beta+(1-\alpha-\beta)\times(1-\alpha-\beta)\\
+    &=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1
 \end{aligned}$$
 
 ### Definition of an optimal flow
@@ -129,7 +129,7 @@ f_P&\geq 0
 
 ---
 
-In our example this corresponds to minimising $C(\alpha,\beta)=\alpha^3+\beta^3+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1$ such that $0\leq\alpha\leq 1$ and $0\leq\beta\leq1$.
+In our example this corresponds to minimising $C(\alpha,\beta)=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1$ such that $0\leq\alpha\leq 1$ and $0\leq\beta\leq1$.
 
 A plot of $C(\alpha,\beta)$ is shown\text{ in Figure \ref{L17-plot01}}.
 
