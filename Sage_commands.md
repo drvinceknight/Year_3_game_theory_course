@@ -101,10 +101,10 @@ contour_plot(f,(0,1),(0,1),colorbar=True,axes_labels=['$x$','$y$'], cmap='summer
 
 ### Minimizing functions
 
-You might need to minimize the following function $c:\alpha, \beta\to \alpha ^ 3 + \beta ^ 3 + \alpha ^ 2 + 2\alpha\beta+\beta^2-2\alpha-2\beta+1$ with the following constraints: $0\leq \alpha \leq 1$ and $0\leq \beta \leq 1$. Here is how to do that in Sage:
+You might need to minimize the following function $c:\alpha, \beta\to \alpha ^ 3 + 3\beta/2 + \alpha ^ 2 + 2\alpha\beta+\beta^2-2\alpha-2\beta+1$ with the following constraints: $0\leq \alpha \leq 1$ and $0\leq \beta \leq 1$. Here is how to do that in Sage:
 
 ~~~{.python}
-sage: f = lambda p: p[0] ^ 3 + p[1] ^ 3 + p[0] ^ 2 + 2 * p[0] * p[1] + p[1] ^ 2 - 2 * (p[0] + p[1]) + 1
+sage: f = lambda p: p[0] ^ 3 + 3 / 2 * p[1] ^ 2 + p[0] ^ 2 + 2 * p[0] * p[1] + p[1] ^ 2 - 2 * (p[0] + p[1]) + 1
 sage: c_1 = lambda p[0]
 sage: c_2 = lambda 1 - p[0]
 sage: c_3 = lambda p[1]
@@ -112,3 +112,5 @@ sage: c_4 = lambda 1 - p[1]
 sage: a = minimize_constrained(f, [c_1, c_2, c_3, c_4], [0, 0])
 sage: a
 ~~~
+
+For more details on minimization take a look at [this page](http://www.sagemath.org/doc/reference/numerical/sage/numerical/optimize.html).
