@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="homework-sheet-1---normal-form-games"><span class="header-section-number">1</span> Homework sheet 1 - Normal form games</h1>
+<ol style="list-style-type: decimal">
+<li><p>Represent the following game in normal form:</p>
+<blockquote>
+<p>Alice, Bob and Celine are childhood friends that would like to communicate online. Alive likes facebook, Bob likes twitter and Celine like G+.</p>
+</blockquote>
+<p>Clearly state the players, strategy sets and interpretations of the utilities.</p>
+<p><strong>Solution</strong></p>
+<p>The set of players is <span class="math">\(\{A, B, C\}\)</span>. The strategy space is <span class="math">\(S_A=S_B=S_C=\{\text{fb}, t, G\}\)</span>.</p>
+<p>The payoff functions are given below:</p>
+<p><span class="math">\[u_i(s_1,s_2,s_3)=|\{r \in s\setminus s_i\;|\;r=s_i\}|\]</span></p>
+<p>(ie the utility of player <span class="math">\(i\)</span> is equal to the number of players that have picked the same strategy as player <span class="math">\(i\)</span>.)</p>
+<p>Here is the normal form representation:</p>
+<ul>
+<li><span class="math">\(s_A=\text{fb}\)</span>:</li>
+</ul>
+<p><span class="math">\[\begin{pmatrix}
+   (2,2,2)&amp;(1,1,0)&amp;(1,1,0)\\
+   (1,0,1)&amp;(0,1,1)&amp;(0,0,0)\\
+   (1,0,1)&amp;(0,0,0)&amp;(0,1,1)\\
+\end{pmatrix}\]</span></p>
+<ul>
+<li><span class="math">\(s_A=t\)</span>:</li>
+</ul>
+<p><span class="math">\[\begin{pmatrix}
+   (0,1,1)&amp;(1,0,1)&amp;(0,0,0)\\
+   (1,1,0)&amp;(2,2,2)&amp;(1,1,0)\\
+   (0,0,0)&amp;(1,0,1)&amp;(0,1,1)\\
+\end{pmatrix}\]</span></p>
+<ul>
+<li><span class="math">\(s_A=G\)</span>:</li>
+</ul>
+<p><span class="math">\[\begin{pmatrix}
+   (0,1,1)&amp;(0,0,0)&amp;(1,0,1)\\
+   (0,0,0)&amp;(0,1,1)&amp;(1,0,1)\\
+   (1,1,0)&amp;(1,1,0)&amp;(2,2,2)\\
+\end{pmatrix}\]</span></p></li>
+<li><p>Represent the following game in normal form:</p>
+<blockquote>
+<p>Assume two neighbouring countries have at their disposal very destructive armies. If both countries attack each other the countries' civilian population will suffer 10 thousand casualties. If one country attacks whilst the other remains peaceful, the peaceful country will lose 15 thousand casualties but would also retaliate causing the offensive country 13 thousand casualties. If both countries remain peaceful then there are no casualties.</p>
+</blockquote>
+<ul>
+<li>Clearly state the players and strategy sets.</li>
+<li>Plot the utilities to both countries assuming that they play a mixed strategy while the other country remains peaceful.</li>
+<li>Plot the utilities to both countries assuming that they play a mixed strategy while the other country attacks.</li>
+</ul>
+<p><strong>Solution</strong></p>
+<p>Players: <span class="math">\(\{P_1, P_2\}\)</span>. The strategy space is <span class="math">\(\{A,P\}\)</span>. We take the utility to be the number of casualties suffered (players aim to minimize their utility):</p>
+<p><span class="math">\[\begin{pmatrix}
+(10,10)&amp;(13,15)\\
+(15,13)&amp;(0,0)
+\end{pmatrix}\]</span></p>
+<p><span class="math">\[u_1((x,1-x),(0,1))=13x\]</span></p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW1-P01.png" /><br /> (Same plot for <span class="math">\(P_2\)</span>)</p>
+<p><span class="math">\[u_1((x,1-x),(1,0))=10x+15(1-x)=15-5x\]</span></p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW1-P02.png" /><br /> (Same plot for <span class="math">\(P_2\)</span>)</p></li>
+<li><p>Dominance</p>
+<p>Attempt to predict rational behaviour <strong>using iterated elimination of dominated strategies</strong> for the following:</p>
+<ul>
+<li><p><span class="math">\[\begin{pmatrix}
+(2,1)&amp;(1,1)\\
+(1,1)&amp;(1,3)\\
+\end{pmatrix}\]</span></p>
+<p><strong>Solution</strong></p>
+<p>We see that <span class="math">\(r_1\)</span> weakly dominates <span class="math">\(r_2\)</span> so we have:</p>
+<p><span class="math">\[\begin{pmatrix}
+(2,1)&amp;(1,1)\\
+\end{pmatrix}\]</span></p>
+<p>Thus a predicted strategy profile is <span class="math">\((r_1,s_1)\)</span>.</p>
+<p>Importantly, we see however that <span class="math">\(s_2\)</span> weakly dominates <span class="math">\(s_1\)</span> which would give:</p>
+<p><span class="math">\[\begin{pmatrix}
+(1,1)\\
+(1,3)\\
+\end{pmatrix}\]</span></p>
+<p>Thus another predicted strategy profile is <span class="math">\((r_2, s_2)\)</span>.</p></li>
+<li><p><span class="math">\[\begin{pmatrix}
+(2,11)&amp;(1,9)&amp;(3,10)&amp;(17,22)\\
+(27,0)&amp;(3,1)&amp;(1,1)&amp;(1,0)\\
+(4,2)&amp;(6,10)&amp;(7,12)&amp;(18,0)\\
+\end{pmatrix}\]</span></p>
+<p><strong>Solution</strong></p>
+<p>There are no dominated strategies in this game.</p></li>
+<li><p><span class="math">\[\begin{pmatrix}
+(3,2)&amp;(3,1)&amp;(2,3)\\
+(2,2)&amp;(1,3)&amp;(3,2)\\
+\end{pmatrix}\]</span></p>
+<p><strong>Solution</strong></p>
+<p>There are no dominated strategies in this game.</p></li>
+<li><p><span class="math">\[\begin{pmatrix}
+(3,-3)&amp;(-1,1)\\
+(2,1)&amp;(7,-6)\\
+\end{pmatrix}\]</span></p>
+<p><strong>Solution</strong></p>
+<p>There are no dominated strategies in this game.</p></li>
+</ul>
+<p>Explain when games occur that cannot be handled this way.</p></li>
+<li><p>For all of the games of question 3, identify all best responses and attempt to predict rational behaviour.</p>
+<p><strong>Solution</strong></p>
+<ul>
+<li><p><span class="math">\[\begin{pmatrix}
+(\underline{2},\underline{1})&amp;(\underline{1},\underline{1})\\
+(1,1)&amp;(\underline{1},\underline{3})\\
+\end{pmatrix}\]</span></p>
+<p>We have 3 pairs of best responses: <span class="math">\((r_1,s_1),(r_1,s_2),(r_2,s_2)\)</span>.</p></li>
+<li><p><span class="math">\[\begin{pmatrix}
+(2,11)&amp;(1,9)&amp;(3,10)&amp;(17,\underline{22})\\
+(\underline{27},0)&amp;(3,\underline{1})&amp;(1,\underline{1})&amp;(1,0)\\
+(4,2)&amp;(6,10)&amp;(\underline{7},\underline{12})&amp;(\underline{18},0)\\
+\end{pmatrix}\]</span></p>
+<p>We have a single pair of best responses: <span class="math">\((r_3,s_2)\)</span>.</p></li>
+<li><p><span class="math">\[\begin{pmatrix}
+(\underline{3},2)&amp;(\underline{3},1)&amp;(2,\underline{3})\\
+(2,2)&amp;(1,\underline{3})&amp;(\underline{3},2)\\
+\end{pmatrix}\]</span></p>
+<p>There are no pairs of best responses.</p></li>
+<li><p><span class="math">\[\begin{pmatrix}
+(\underline{3},-3)&amp;(-1,\underline{1})\\
+(2,\underline{1})&amp;(\underline{7},-6)\\
+\end{pmatrix}\]</span></p>
+<p>There are no pairs of best responses.</p></li>
+</ul></li>
+</ol>
+<p>Explain when games occur that cannot be handled this way.</p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Consider the following game:</p>
+<p><span class="math">\[\begin{pmatrix}
+(7,3)&amp;(0,2)\\
+(2,1)&amp;(6,1)\\
+(4,0)&amp;(4,2)\\
+\end{pmatrix}\]</span></p>
+<p>Compute directly <span class="math">\(B_1,B_2,UD_1\)</span> and <span class="math">\(UD_2\)</span>.</p>
+<p><strong>Solution</strong></p>
+<p>By definition:</p>
+<p><span class="math">\[UD_1=\{s\in\{r_1,r_2,r_3\}\;|\;\text{$s$ is not strictly dominated}\}\]</span></p>
+<p>Thus <span class="math">\(UD_1=\{r_1, r_2, r_3\}\)</span></p>
+<p>Similarly:</p>
+<p><span class="math">\[UD_2=\{s\in\{s_1,s_2\}\;|\;\text{$s$ is not strictly dominated}\}\]</span></p>
+<p>Thus <span class="math">\(UD_2=\{s_1, s_2\}\)</span></p>
+<p>By definition</p>
+<p><span class="math">\[B_1=\{s\in\{r_1,r_2,r_3\}|\;\exists \sigma\in\Delta S_{2} \text{such that $s$ is a best response to $\sigma$}\}\]</span></p>
+<p>Let us assume that player 2 plays <span class="math">\(\sigma_2=(x,1-x)\)</span>. This gives:</p>
+<p><span class="math">\[u_1(r_1,\sigma_2)=7x\]</span> <span class="math">\[u_1(r_2,\sigma_2)=2x+6(1-x)=6-4x\]</span> <span class="math">\[u_1(r_3,\sigma_2)=4x+4(1-x)=4\]</span></p>
+<p>If we plot these utilities:</p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW1-P03.png" /><br /> we see that all strategies are a best response to a strategy in <span class="math">\(\Delta S_2\)</span>: <span class="math">\(B_1=\{r_1, r_2, r_3\}\)</span>.</p>
+<p>By definition</p>
+<p><span class="math">\[B_2=\{s\in\{s_1,s_2\}|\;\exists \sigma\in\Delta S_{1} \text{such that $s$ is a best response to $\sigma$}\}\]</span></p>
+<p>Let us assume that player 1 plays <span class="math">\(\sigma_1=(x,y,1-x-y)\)</span>. This gives:</p>
+<p><span class="math">\[u_2(\sigma_1, s_1)=3x+y\]</span> <span class="math">\[u_2(\sigma_1, s_2)=2x+y+2-2x-2y=2-y\]</span></p>
+<p>We see that <span class="math">\(u_2(\sigma_1, s_1)&gt;u_2(\sigma_1, s_2)\)</span> <span class="math">\(\Rightarrow\)</span> <span class="math">\(3x+y&gt;2-y\)</span> <span class="math">\(\Rightarrow\)</span> <span class="math">\(x&gt;\frac{2-2y}{3}\)</span>. Thus (finding an obvious example) <span class="math">\(\sigma_1=(2/3,0,1/3)\in\Delta S_1\)</span> has <span class="math">\(s_1\)</span> as a best response and similarly <span class="math">\(\sigma_1=(1/3,0,2/3)\in\Delta S_2\)</span> has <span class="math">\(s_2\)</span> as a best response. This gives <span class="math">\(B_2=\{s_1, s_2\}\)</span>.</p>
+<p>To illustrate this further here is a contour plot of <span class="math">\(u_2(\sigma_1,s_1)-u_2(\sigma_1,s_2)\)</span>:</p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW1-P04.png" /><br /></li>
+<li><p>In the notes the following theorem is given:</p>
+<hr />
+<p>In a 2 player normal form game <span class="math">\(B_i = UD_i\)</span> for all <span class="math">\(i \in\{1,2\}\)</span>.</p>
+<hr />
+<p>Prove the theorem for 2 player games with <span class="math">\(|S_1|=|S_2|=2\)</span>. I.e. prove the above result in the special case of <span class="math">\(2\times 2\)</span> games.</p>
+<p><strong>Solution</strong></p>
+<p>Let us consider the <span class="math">\(2\times 2\)</span> game:</p>
+<p><span class="math">\[\begin{pmatrix}
+(a_{11},b_{11})&amp; (a_{12},b_{12})\\
+(a_{21},b_{21})&amp; (a_{22},b_{22})\\
+\end{pmatrix}\]</span></p>
+<p>We prove the result for <span class="math">\(i=1\)</span> without loss of generality. Let us consider the two following cases:</p>
+<p><span class="math">\[UD_1=\{r_1\}\text{ and }UD_1=\{r_1,r_2\}\]</span></p>
+<ul>
+<li><p>If <span class="math">\(UD_1=\{r_1\}\)</span> <span class="math">\(\Rightarrow\)</span> <span class="math">\(a_{1j}&gt; a_{2j}\)</span> for <span class="math">\(j\in\{1,2\}\)</span>. This gives:</p>
+<p><span class="math">\[u_1(r_1,\sigma_2)=a_{11}x+a_{12}(1-x)&gt; a_{12}x+a_{22}(1-x)=u_1(r_2,\sigma_2)\]</span></p>
+<p>So <span class="math">\(r_2\)</span> is never a best response giving <span class="math">\(B_1=\{r_1\}\)</span> as required.</p></li>
+<li><p>If <span class="math">\(UD_1=\{r_1, r_2\}\)</span> this implies that one of the following must hold:</p>
+<p><span class="math">\[
+a_{11} &gt; a_{21} \text{ and } a_{12}\leq a_{22}\text{ (1)}
+\]</span> <span class="math">\[
+a_{11} \geq a_{21} \text{ and } a_{12}&gt; a_{22}\text{ (2)}
+\]</span> <span class="math">\[
+a_{11} &lt; a_{21} \text{ and } a_{12}\geq a_{22}\text{ (3)}
+\]</span> <span class="math">\[
+a_{11} \leq a_{21} \text{ and } a_{12}&gt; a_{22}\text{ (4)}
+\]</span></p></li>
+</ul>
+<p>Consider wlog case (1). As before we have:</p>
+<p><span class="math">\[u_1(r_1,\sigma_2)=a_{11}x+a_{12}(1-x)\]</span> <span class="math">\[u_1(r_2,\sigma_2)=a_{21}x+a_{22}(1-x)\]</span></p>
+<p>Thus the point at which <span class="math">\(u_1(r_1,\sigma_2)-u_1(r_2,\sigma_2)=0\)</span> is:</p>
+<p><span class="math">\[\frac{a_{22}-a_{12}}{a_{11}-a_{12}+a_{22}-a_{21}}\]</span></p>
+<p>Assuming that equality in (1) does not hold then this point is strictly between 0 and 1 thus a value of <span class="math">\(0&lt;x&lt;1\)</span> can be found for which either <span class="math">\(r_1\)</span> or <span class="math">\(r_2\)</span> is a best response. This gives: <span class="math">\[B_1=\{r_1,r_2\}\]</span></p>
+<p>If equality holds in (1) then both strategies are best responses giving the same conclusion.</p></li>
+</ol>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_1.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_1.docx">docx (not recommended)</a>)</p>
+</body>
+</html>
