@@ -1,0 +1,54 @@
+<h1 id="sage-commands-that-are-useful-on-this-course">Sage commands that are useful on this course</h1>
+<p>This sheet includes a list of Sage commands that could be of use to you during this course.</p>
+<p>The School of Mathematics has started teaching programming to all first year students and has also introduced the open source mathematics software <a href="http://sagemath.org/">Sage</a>.</p>
+<p>From time to time I will be demonstrating things using Sage, if you would like to use Sage: watch this video about setting up an account on the University server:</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/3E9LvXV_zrA" frameborder="0" allowfullscreen></iframe>
+
+<p>.</p>
+<p>You can always type <code>help(function)</code> to get help for any Sage <code>function</code>.</p>
+<h2 id="rearranging-equations">Rearranging equations</h2>
+<p>You will often have simple expressions like <span class="math">7<em>x</em> − 18(1 − <em>x</em>)</span> that need simplifying (sometimes they will be more complex than that obviously). These commands show you how to carry this out:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: exp = <span class="dv">7</span> * x - <span class="dv">18</span> * (<span class="dv">1</span> - x)
+sage: exp</code></pre>
+<p>If your expression was more complicated you could use <code>simplify(exp)</code>, <code>expand(exp)</code> and/or <code>factor(exp)</code>.</p>
+<h2 id="plotting-functions">Plotting functions</h2>
+<p>To plot a function <span class="math"><em>f</em>: <em>x</em> → 35<em>x</em> − 2</span> type:</p>
+<p>_<del>{.python} To plot a function <span class="math"><em>f</em>: <em>x</em> → 35<em>x</em> − 2</span> type: t(f,(0,1),(0,1),colorbar=True,axes_labels=['<span class="math"><em>x</em></span>','<span class="math"><em>y</em></span>'], cmap='rainbow') sage: f(x) = 35 * x - 2 sage: plot(f, x, 0, 1)</del>~</p>
+<p>The 3rd and 4th arguments are telling Sage to plot for <span class="math">0 ≤ <em>x</em> ≤ 1</span>.</p>
+<h2 id="solving-equations">Solving equations</h2>
+<p>Linear equations appear all the time in this course. To solve <span class="math">7<em>x</em> − 2(1 − <em>x</em>) = 3<em>x</em> + 6(1 − <em>x</em>)</span>:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: solve(<span class="dv">7</span> * x - <span class="dv">2</span> * ( <span class="dv">1</span> - x) == <span class="dv">3</span> * x + <span class="dv">6</span> * (<span class="dv">1</span> - x), x)</code></pre>
+<h2 id="differentiation">Differentiation</h2>
+<p>To obtain: <span class="math">$\frac{du_1}{du_1}$</span> where <span class="math"><em>u</em><sub>1</sub> = (<em>K</em> − <em>q</em><sub>1</sub> − <em>q</em><sub>2</sub>)<em>q</em><sub>1</sub> − <em>k</em><em>q</em><sub>1</sub></span>:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: K, q1, q2, k = var(<span class="st">&#39;K, q1, q2, k&#39;</span>) <span class="co"># We need to tell Sage that these are symbolic variables</span>
+sage: u1 = (K - q1 - q2) * q1 - k * q1
+sage: diff(u1, q1)</code></pre>
+<p>If we wanted to find the point at which this equates to zero we would write the following:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: du = diff(u1, q1)
+sage: solve(du = <span class="dv">0</span>, q1)</code></pre>
+<h2 id="infinite-sum">Infinite sum</h2>
+<p>Sage can be used to obtain expressions like <span class="math">$\sum_{i=0}^{\infty}\left(\frac{1}{3}\right)^i$</span>:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: i = var(<span class="st">&#39;i&#39;</span>)
+sage: <span class="dt">sum</span>((<span class="dv">1</span> / <span class="dv">3</span>) ^ i, i, <span class="dv">0</span>, oo)</code></pre>
+<p>Sage can also be used to check symbolic expressions of this nature. For example you can quickly check what the expression for <span class="math">∑ <sub><em>i</em> = 0</sub><sup>∞</sup><em>x</em><sup><em>i</em></sup></span>is:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: i = var(<span class="st">&#39;i&#39;</span>)
+sage: assume(<span class="dt">abs</span>(x) &lt; <span class="dv">1</span>)
+sage: <span class="dt">sum</span>(x ^ i, i, <span class="dv">0</span>, oo)</code></pre>
+<h3 id="permutations">Permutations</h3>
+<p>To quickly obtain all permutations of a set of the set {1,2,3}:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: permutations([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>])</code></pre>
+<h3 id="contour-plots">Contour plots</h3>
+<p>I find 3D surface plots messy and unclear. Here is how to obtain a contour plot of the function: <span class="math"><em>f</em>: <em>x</em>, <em>y</em> → 3<em>x</em> − <em>y</em> + 2</span></p>
+<pre class="sourceCode python"><code class="sourceCode python">y = var(<span class="st">&#39;y&#39;</span>)
+f(x,y) = <span class="dv">3</span> * x + y - ( <span class="dv">2</span> - y)
+contour_plot(f,(<span class="dv">0</span>,<span class="dv">1</span>),(<span class="dv">0</span>,<span class="dv">1</span>),colorbar=<span class="ot">True</span>,axes_labels=[<span class="st">&#39;$x$&#39;</span>,<span class="st">&#39;$y$&#39;</span>], cmap=<span class="st">&#39;summer&#39;</span>)</code></pre>
+<p>(There are various options that can be passed to the cmap argument: try <code>import matplotlib.cm; matplotlib.cm.datad.keys()</code> to list them)</p>
+<h3 id="minimizing-functions">Minimizing functions</h3>
+<p>You might need to minimize the following function <span class="math"><em>c</em>: <em>α</em>, <em>β</em> → <em>α</em><sup>3</sup> + <em>β</em><sup>3</sup> + <em>α</em><sup>2</sup> + 2<em>α</em><em>β</em> + <em>β</em><sup>2</sup> − 2<em>α</em> − 2<em>β</em> + 1</span> with the following constraints: <span class="math">0 ≤ <em>α</em> ≤ 1</span> and <span class="math">0 ≤ <em>β</em> ≤ 1</span>. Here is how to do that in Sage:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sage: f = <span class="kw">lambda</span> p: p[<span class="dv">0</span>] ^ <span class="dv">3</span> + p[<span class="dv">1</span>] ^ <span class="dv">3</span> + p[<span class="dv">0</span>] ^ <span class="dv">2</span> + <span class="dv">2</span> * p[<span class="dv">0</span>] * p[<span class="dv">1</span>] + p[<span class="dv">1</span>] ^ <span class="dv">2</span> - <span class="dv">2</span> * (p[<span class="dv">0</span>] + p[<span class="dv">1</span>]) + <span class="dv">1</span>
+sage: c_1 = <span class="kw">lambda</span> p[<span class="dv">0</span>]
+sage: c_2 = <span class="kw">lambda</span> <span class="dv">1</span> - p[<span class="dv">0</span>]
+sage: c_3 = <span class="kw">lambda</span> p[<span class="dv">1</span>]
+sage: c_4 = <span class="kw">lambda</span> <span class="dv">1</span> - p[<span class="dv">1</span>]
+sage: a = minimize_constrained(f, [c_1, c_2, c_3, c_4], [<span class="dv">0</span>, <span class="dv">0</span>])
+sage: a</code></pre>
