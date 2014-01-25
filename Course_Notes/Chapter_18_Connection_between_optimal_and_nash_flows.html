@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-chapter-18---connection-between-optimal-and-nash-flows"><span class="header-section-number">1</span> OR 3: Chapter 18 - Connection between optimal and Nash flows</h1>
@@ -20,59 +21,59 @@
 <h2 id="potential-function"><span class="header-section-number">1.2</span> Potential function</h2>
 <h3 id="definition-of-a-potential-flow"><span class="header-section-number">1.2.1</span> Definition of a potential flow</h3>
 <hr />
-<p>Given a routing game \((G,r,c)\) we define the <strong>potential function</strong> of a flow as:</p>
-<p>\[\Phi(f)=\sum_{e\in E}\int_0^{f_e}c_e(x)dx\]</p>
+<p>Given a routing game <span class="math">\((G,r,c)\)</span> we define the <strong>potential function</strong> of a flow as:</p>
+<p><span class="math">\[\Phi(f)=\sum_{e\in E}\int_0^{f_e}c_e(x)dx\]</span></p>
 <hr />
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L17-img04.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L17-img04.png" />
 </div>
 <p>Thus for the routing game shown we have:</p>
-<p>\[\Phi((\alpha,\beta))=\frac{\alpha^3}{3}+\frac{3\beta^2}{4}+\frac{(1-\alpha-\beta)^2}{2}\]</p>
-<p>A plot of \(\Phi(\alpha,\beta)\) is shown.</p>
+<p><span class="math">\[\Phi((\alpha,\beta))=\frac{\alpha^3}{3}+\frac{3\beta^2}{4}+\frac{(1-\alpha-\beta)^2}{2}\]</span></p>
+<p>A plot of <span class="math">\(\Phi(\alpha,\beta)\)</span> is shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/plots/L18-plot01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/plots/L18-plot01.png" />
 </div>
-<p>We can verify analytically (as before) that the minimum of this function is given by \((\alpha,\beta)=(0,1/5)\). This leads to the following powerful result.</p>
+<p>We can verify analytically (as before) that the minimum of this function is given by <span class="math">\((\alpha,\beta)=(0,1/5)\)</span>. This leads to the following powerful result.</p>
 <h3 id="theorem-connecting-the-nash-flow-to-the-optimal-flow"><span class="header-section-number">1.2.2</span> Theorem connecting the Nash flow to the optimal flow</h3>
 <hr />
-<p>A feasible flow \(\tilde f\) is a Nash flow for the routing game \((G,r,c)\) if and only if it is a minima for \(\Phi(f)\).</p>
+<p>A feasible flow <span class="math">\(\tilde f\)</span> is a Nash flow for the routing game <span class="math">\((G,r,c)\)</span> if and only if it is a minima for <span class="math">\(\Phi(f)\)</span>.</p>
 <hr />
 <p>This is a very powerful result that allows us to obtain Nash flows using minimisation techniques.</p>
 <p>It also points towards a connection between Nash flows and optimal flows.</p>
 <h2 id="marginal-costs"><span class="header-section-number">1.3</span> Marginal costs</h2>
 <h3 id="definition-of-marginal-cost"><span class="header-section-number">1.3.1</span> Definition of marginal cost</h3>
 <hr />
-<p>If \(c\) is a differentiable cost function then we define the <strong>marginal cost</strong> function \(c^*\) as:</p>
-<p>\[c^*=\frac{d}{dx}(xc(x)\]</p>
+<p>If <span class="math">\(c\)</span> is a differentiable cost function then we define the <strong>marginal cost</strong> function <span class="math">\(c^*\)</span> as:</p>
+<p><span class="math">\[c^*=\frac{d}{dx}(xc(x)\]</span></p>
 <hr />
 <p>For our running example we have the marginal cost functions given{ in Figure }.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L18-img01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L18-img01.png" />
 </div>
 <p>We now state our last theorem of the course:</p>
 <h3 id="theorem-connecting-optimal-flows-to-nash-flows"><span class="header-section-number">1.3.2</span> Theorem connecting optimal flows to Nash flows</h3>
 <hr />
-<p>A feasible flow \(f^*\) is an optimal flow for \((G,r,c)\) if and only if \(f^*\) is a Nash flow for \((G,r,c^*)\).</p>
+<p>A feasible flow <span class="math">\(f^*\)</span> is an optimal flow for <span class="math">\((G,r,c)\)</span> if and only if <span class="math">\(f^*\)</span> is a Nash flow for <span class="math">\((G,r,c^*)\)</span>.</p>
 <hr />
 <p>Using this we can compute the optimal flow for our original game by computing the Nash flow for our modified game.</p>
 <p>If we assume that both players use both paths then we have:</p>
-<p>\[\begin{aligned}
+<p><span class="math">\[\begin{aligned}
 3\alpha^2&amp;=2(1-\alpha-\beta)\\
 3\beta&amp;=2(1-\alpha-\beta)
-\end{aligned}\]</p>
-<p>This gives \(\beta=\frac{2}{5}(1-\alpha)\) implying \(3\alpha^2=\frac{6}{5}(1-\alpha)\) which gives (as before) \(f^* \approx(.4633,0.2147)\).</p>
+\end{aligned}\]</span></p>
+<p>This gives <span class="math">\(\beta=\frac{2}{5}(1-\alpha)\)</span> implying <span class="math">\(3\alpha^2=\frac{6}{5}(1-\alpha)\)</span> which gives (as before) <span class="math">\(f^* \approx(.4633,0.2147)\)</span>.</p>
 <p>We will finish the course by looking at an interesting example that occurs in routing game theory.</p>
 <h2 id="braesss-paradox"><span class="header-section-number">1.4</span> Braess's Paradox</h2>
 <p>Consider the routing game shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L18-img02.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L18-img02.png" />
 </div>
-<p>If we write down the potential function \(\Phi(\alpha)=\alpha^2/2+(1-\alpha)^2/2+(1-\alpha)+\alpha=\alpha^2 -\alpha + 1/2\). The flow \(\tilde f=1/2\) minimises the potential function and so is a Nash flow. In fact for this example we have \(\tilde f=f^*\) and \(C(\tilde f)=C(f^*)=3/2\).</p>
+<p>If we write down the potential function <span class="math">\(\Phi(\alpha)=\alpha^2/2+(1-\alpha)^2/2+(1-\alpha)+\alpha=\alpha^2 -\alpha + 1/2\)</span>. The flow <span class="math">\(\tilde f=1/2\)</span> minimises the potential function and so is a Nash flow. In fact for this example we have <span class="math">\(\tilde f=f^*\)</span> and <span class="math">\(C(\tilde f)=C(f^*)=3/2\)</span>.</p>
 <p>If we modify the network by adding capacity to our network with another edge of zero cost.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L18-img03.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L18-img03.png" />
 </div>
-<p>We can compute the potential function and optimise but we can quickly verify that \(\tilde f=(\alpha,\beta)=(1,1)\) is a Nash flow by comparing with other potential paths. Thus we have \(C(\tilde f)=2\). By adding an edge to our network with a very &quot;cheap&quot; latency cost the situation has been made worse!</p>
+<p>We can compute the potential function and optimise but we can quickly verify that <span class="math">\(\tilde f=(\alpha,\beta)=(1,1)\)</span> is a Nash flow by comparing with other potential paths. Thus we have <span class="math">\(C(\tilde f)=2\)</span>. By adding an edge to our network with a very &quot;cheap&quot; latency cost the situation has been made worse!</p>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_18_Connection_between_optimal_and_nash_flows.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_18_Connection_between_optimal_and_nash_flows.docx">docx (not recommended)</a>)</p>
 </body>
 </html>

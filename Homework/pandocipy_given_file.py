@@ -14,8 +14,8 @@ system("sed 's/](/](%s/g' tmp1 > tmp" % mediaserver)  # Change media server to g
 string = "\n\n(Other versions of the above: [pdf](%s%s) [docx (not recommended)](%s%s))" % (mediaserver, e+".pdf", mediaserver, e+".docx")
 system("echo '%s' >> tmp" % string)
 system("pandoc -s tmp -N -o " + e + ".html --mathjax")
-#system("sed 's/.md/.docx/g' %s > tmp" % (e + ".md"))
-#system("pandoc tmp -o " + e + ".docx")
+system("sed 's/.md/.docx/g' %s > tmp" % (e + ".md"))
+system("pandoc tmp -o " + e + ".docx")
 
 # PDF
 system("sed 's/.md/.pdf/g' %s > tmp" % (e + ".md"))

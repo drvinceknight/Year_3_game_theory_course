@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-lecture-7---extensive-form-games-and-backwards-induction"><span class="header-section-number">1</span> OR 3: Lecture 7 - Extensive form games and backwards induction</h1>
@@ -20,58 +21,58 @@
 <h2 id="extensive-form-games"><span class="header-section-number">1.2</span> Extensive form games</h2>
 <p>If we recall Chapter 1 we have seen how to represent extensive form games as a tree.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L01-img03.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L01-img03.png" />
 </div>
 <p>We will now consider the properties that define an extensive form game game tree:</p>
 <ol style="list-style-type: decimal">
 <li>Every node is a successor of the (unique) initial node\text{ as shown in Figure .</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img01.png" />
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Every node apart from the initial node has exactly one predecessor. The initial node has no predecessor.</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img02.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img02.png" />
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>All edges extending from the same node have different action labels.</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img03.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img03.png" />
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Each information set contains decision nodes for one player.</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img04.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img04.png" />
 </div>
 <ol start="5" style="list-style-type: decimal">
 <li>All nodes in a given information set must have the same number of successors (with the same action labels on the corresponding edges).</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img05.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img05.png" />
 </div>
 <ol start="6" style="list-style-type: decimal">
 <li>We will only consider games with &quot;perfect recall&quot;, ie we assume that players remember their own past actions as well as other past events.</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img06.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img06.png" />
 </div>
 <ol start="7" style="list-style-type: decimal">
 <li>If a player's action is not a discrete set we can represent this as shown.</li>
 </ol>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img07.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img07.png" />
 </div>
 <p>As an example consider the following game (sometimes referred to as &quot;ultimatum bargaining&quot;):</p>
 <blockquote>
-<p>Consider two individuals: a seller and a buyer. A seller can set a price \(p\) for a particular object that has value \(K\) to the buyer and no value to the seller. Once the sellers sets the price the buyer can choose whether or not to pay the price. If the buyer chooses to not pay the price then both players get a payoff of 0.</p>
+<p>Consider two individuals: a seller and a buyer. A seller can set a price <span class="math">\(p\)</span> for a particular object that has value <span class="math">\(K\)</span> to the buyer and no value to the seller. Once the sellers sets the price the buyer can choose whether or not to pay the price. If the buyer chooses to not pay the price then both players get a payoff of 0.</p>
 </blockquote>
 <p>We can represent this.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img08.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img08.png" />
 </div>
 <p>How we can we analyse normal form games?</p>
 <h2 id="backwards-induction"><span class="header-section-number">1.3</span> Backwards induction</h2>
@@ -88,19 +89,19 @@
 <h3 id="example"><span class="header-section-number">1.3.3</span> Example</h3>
 <p>Let us consider the game shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img09.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img09.png" />
 </div>
-<p>We see that at node \((d)\) that Z is a dominated strategy. So that the game reduces to as shown.</p>
+<p>We see that at node <span class="math">\((d)\)</span> that Z is a dominated strategy. So that the game reduces to as shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img10.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img10.png" />
 </div>
-<p>Player 1s strategy profile is (Y) (we will discuss strategy profiles for extensive form games more formally in the next chapter). At node \((c)\) A is a dominated strategy so that the game reduces as shown.</p>
+<p>Player 1s strategy profile is (Y) (we will discuss strategy profiles for extensive form games more formally in the next chapter). At node <span class="math">\((c)\)</span> A is a dominated strategy so that the game reduces as shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img11.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img11.png" />
 </div>
-<p>Player 2s strategy profile is (B). At node \((b)\) C is a dominated strategy so that the game reduces as shown.</p>
+<p>Player 2s strategy profile is (B). At node <span class="math">\((b)\)</span> C is a dominated strategy so that the game reduces as shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img12.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img12.png" />
 </div>
 <p>Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (W,Z).</p>
 <p><strong>This outcome is in fact a Nash equilibria!</strong> Recalling the original tree neither player has an incentive to move.</p>
@@ -115,30 +116,30 @@
 <h2 id="stackelberg-game"><span class="header-section-number">1.4</span> Stackelberg game</h2>
 <p>Let us consider the Cournot duopoly game of Chapter 5. Recall:</p>
 <blockquote>
-<p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: \(q_1,q_2\geq 0\). All of the good is sold but the price depends on the number of goods:</p>
+<p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: <span class="math">\(q_1,q_2\geq 0\)</span>. All of the good is sold but the price depends on the number of goods:</p>
 </blockquote>
 <blockquote>
-<p>\[p=K-q_1-q_2\]</p>
+<p><span class="math">\[p=K-q_1-q_2\]</span></p>
 </blockquote>
 <blockquote>
-<p>We also assume that the firms both pay a production cost of \(k\) per bricks.</p>
+<p>We also assume that the firms both pay a production cost of <span class="math">\(k\)</span> per bricks.</p>
 </blockquote>
 <p>However we will modify this to assume that there is a leader and a follower, ie <strong>the firms do not decide at the same time</strong>. This game is called a Stackelberg leader follower game.</p>
 <p>Let us represent this as a normal form game.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img13.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img13.png" />
 </div>
 <p>We use backward induction to identify the Nash equilibria. The dominant strategy for the follower is:</p>
-<p>\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</p>
+<p><span class="math">\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</span></p>
 <p>The game thus reduces as shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img14.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L07-img14.png" />
 </div>
 <p>The leader thus needs to maximise:</p>
-<p>\[u_1(q_1)=(K-q_1-\frac{K-k-q_1}{2})q_1-kq_1=(\frac{K-q_1+k}{2})q_1-kq_1\]</p>
+<p><span class="math">\[u_1(q_1)=(K-q_1-\frac{K-k-q_1}{2})q_1-kq_1=(\frac{K-q_1+k}{2})q_1-kq_1\]</span></p>
 <p>Differentiating and equating to 0 gives:</p>
-<p>\[q_1^*=\frac{K-k}{2}\] which in turn gives: \[q_2^*=\frac{K-k}{4}\]</p>
-<p>The total amount of goods produced is \(\frac{3(K-k)}{4}\) whereas in the Cournot game the total amount of good produced was \(\frac{2(K-k)}{3}\). Thus more goods are produced in the Stackelberg game.</p>
+<p><span class="math">\[q_1^*=\frac{K-k}{2}\]</span> which in turn gives: <span class="math">\[q_2^*=\frac{K-k}{4}\]</span></p>
+<p>The total amount of goods produced is <span class="math">\(\frac{3(K-k)}{4}\)</span> whereas in the Cournot game the total amount of good produced was <span class="math">\(\frac{2(K-k)}{3}\)</span>. Thus more goods are produced in the Stackelberg game.</p>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_07-Extensive_form_games_and_backwards_induction.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_07-Extensive_form_games_and_backwards_induction.docx">docx (not recommended)</a>)</p>
 </body>
 </html>
