@@ -1,24 +1,35 @@
-<h1 id="sage-commands-that-are-useful-on-this-course">Sage commands that are useful on this course</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="sage-commands-that-are-useful-on-this-course"><span class="header-section-number">1</span> Sage commands that are useful on this course</h1>
 <p>This sheet includes a list of Sage commands that could be of use to you during this course.</p>
 <p>The School of Mathematics has started teaching programming to all first year students and has also introduced the open source mathematics software <a href="http://sagemath.org/">Sage</a>.</p>
 <p>From time to time I will be demonstrating things using Sage, if you would like to use Sage: watch <a href="http://www.youtube.com/watch?v=3E9LvXV_zrA&amp;feature=youtu.be">this video</a> about setting up an account on the University server.</p>
 <p>.</p>
 <p>You can always type <code>help(function)</code> to get help for any Sage <code>function</code>. There is a lot of help online and the official website is a good place to start: <a href="http://sagemath.org/">sagemath.org/</a></p>
-<h2 id="rearranging-equations">Rearranging equations</h2>
+<h2 id="rearranging-equations"><span class="header-section-number">1.1</span> Rearranging equations</h2>
 <p>You will often have simple expressions like <span class="math">\(7x-18(1-x)\)</span> that need simplifying (sometimes they will be more complex than that obviously). These commands show you how to carry this out:</p>
 <pre><code>sage: exp = 7 * x - 18 * (1 - x)
 sage: exp</code></pre>
 <p>If your expression was more complicated you could use <code>simplify(exp)</code>, <code>expand(exp)</code> and/or <code>factor(exp)</code>.</p>
-<h2 id="plotting-functions">Plotting functions</h2>
+<h2 id="plotting-functions"><span class="header-section-number">1.2</span> Plotting functions</h2>
 <p>To plot a function <span class="math">\(f:x\to 35x-2\)</span> type:</p>
 <pre><code>sage: plot(f,(0,1),(0,1),colorbar=True,axes_labels=[&#39;$x$&#39;,&#39;$y$&#39;], cmap=&#39;rainbow&#39;)
 sage: f(x) = 35 * x - 2
 sage: plot(f, x, 0, 1)</code></pre>
 <p>The 3rd and 4th arguments are telling Sage to plot for <span class="math">\(0\leq x \leq 1\)</span>.</p>
-<h2 id="solving-equations">Solving equations</h2>
+<h2 id="solving-equations"><span class="header-section-number">1.3</span> Solving equations</h2>
 <p>Linear equations appear all the time in this course. To solve <span class="math">\(7x-2(1-x)=3x+6(1-x)\)</span>:</p>
 <pre><code>sage: solve(7 * x - 2 * ( 1 - x) == 3 * x + 6 * (1 - x), x)</code></pre>
-<h2 id="differentiation">Differentiation</h2>
+<h2 id="differentiation"><span class="header-section-number">1.4</span> Differentiation</h2>
 <p>To obtain: <span class="math">\(\frac{du_1}{du_1}\)</span> where <span class="math">\(u_1=(K - q_1 - q_2)q_1 - kq_1\)</span>:</p>
 <pre><code>sage: K, q1, q2, k = var(&#39;K, q1, q2, k&#39;) # We need to tell Sage that these are symbolic variables
 sage: u1 = (K - q1 - q2) * q1 - k * q1
@@ -26,7 +37,7 @@ sage: diff(u1, q1)</code></pre>
 <p>If we wanted to find the point at which this equates to zero we would write the following:</p>
 <pre><code>sage: du = diff(u1, q1)
 sage: solve(du = 0, q1)</code></pre>
-<h2 id="infinite-sums">Infinite sums</h2>
+<h2 id="infinite-sums"><span class="header-section-number">1.5</span> Infinite sums</h2>
 <p>Sage can be used to obtain expressions like <span class="math">\(\sum_{i=0}^{\infty}\left(\frac{1}{3}\right)^i\)</span>:</p>
 <pre><code>sage: i = var(&#39;i&#39;)
 sage: sum((1 / 3) ^ i, i, 0, oo)</code></pre>
@@ -34,16 +45,16 @@ sage: sum((1 / 3) ^ i, i, 0, oo)</code></pre>
 <pre><code>sage: i = var(&#39;i&#39;)
 sage: assume(abs(x) &lt; 1)
 sage: sum(x ^ i, i, 0, oo)</code></pre>
-<h3 id="permutations">Permutations</h3>
+<h3 id="permutations"><span class="header-section-number">1.5.1</span> Permutations</h3>
 <p>To quickly obtain all permutations of a set of the set {1,2,3}:</p>
 <pre><code>sage: permutations([1,2,3])</code></pre>
-<h3 id="contour-plots">Contour plots</h3>
+<h3 id="contour-plots"><span class="header-section-number">1.5.2</span> Contour plots</h3>
 <p>I find 3D surface plots messy and unclear. Here is how to obtain a contour plot of the function: <span class="math">\(f: x,y \to 3x-y+2\)</span></p>
 <pre><code>y = var(&#39;y&#39;)
 f(x,y) = 3 * x + y - ( 2 - y)
 contour_plot(f,(0,1),(0,1),colorbar=True,axes_labels=[&#39;$x$&#39;,&#39;$y$&#39;], cmap=&#39;summer&#39;)</code></pre>
 <p>(There are various options that can be passed to the cmap argument: try <code>import matplotlib.cm; matplotlib.cm.datad.keys()</code> to list them)</p>
-<h3 id="minimizing-functions">Minimizing functions</h3>
+<h3 id="minimizing-functions"><span class="header-section-number">1.5.3</span> Minimizing functions</h3>
 <p>You might need to minimize the following function <span class="math">\(c:\alpha, \beta\to \alpha ^ 3 + 3\beta/2 + \alpha ^ 2 + 2\alpha\beta+\beta^2-2\alpha-2\beta+1\)</span> with the following constraints: <span class="math">\(0\leq \alpha \leq 1\)</span> and <span class="math">\(0\leq \beta \leq 1\)</span>. Here is how to do that in Sage:</p>
 <pre><code>sage: f = lambda p: p[0] ^ 3 + 3 / 2 * p[1] ^ 2 + p[0] ^ 2 + 2 * p[0] * p[1] + p[1] ^ 2 - 2 * (p[0] + p[1]) + 1
 sage: c_1 = lambda p: p[0]
@@ -53,3 +64,5 @@ sage: c_4 = lambda p: 1 - p[1]
 sage: a = minimize_constrained(f, [c_1, c_2, c_3, c_4], [0, 0])
 sage: a</code></pre>
 <p>For more details on minimization take a look at <a href="http://www.sagemath.org/doc/reference/numerical/sage/numerical/optimize.html">this page</a>.</p>
+</body>
+</html>
