@@ -104,8 +104,8 @@ $$\Leftrightarrow$$
 
 $$
 \begin{cases}
-\tilde q_1=\frac{K-k-q_2}{2}\\
-\tilde q_2=\frac{K-k-q_1}{2}
+\tilde q_1=\frac{K-k-\tilde q_2}{2}\\
+\tilde q_2=\frac{K-k-\tilde q_1}{2}
 \end{cases}
 $$
 

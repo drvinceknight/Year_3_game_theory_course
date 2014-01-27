@@ -5,8 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-lecture-5---nash-equilibria-in-pure-strategies"><span class="header-section-number">1</span> OR 3: Lecture 5 - Nash equilibria in pure strategies</h1>
@@ -21,79 +20,79 @@
 <h2 id="nash-equilibria"><span class="header-section-number">1.2</span> Nash equilibria</h2>
 <h3 id="definition-of-nash-equilibria"><span class="header-section-number">1.2.1</span> Definition of Nash equilibria</h3>
 <hr />
-<p>In an <span class="math">\(N\)</span> player normal form game. A Nash equilibrium is a strategy profile <span class="math">\(\tau = (\tilde s_1,\tilde s_2,\dots,\tilde s_N)\)</span> such that:</p>
-<p><span class="math">\[u_i(\tilde s)\geq u_i(\bar s_i,\tilde s_{-i})\text{ for all }i\]</span></p>
+<p>In an \(N\) player normal form game. A Nash equilibrium is a strategy profile \(\tau = (\tilde s_1,\tilde s_2,\dots,\tilde s_N)\) such that:</p>
+<p>\[u_i(\tilde s)\geq u_i(\bar s_i,\tilde s_{-i})\text{ for all }i\]</p>
 <hr />
-<p>This implies that all strategies in the strategy profile <span class="math">\(\tau\)</span> are best responses to all the other strategies.</p>
+<p>This implies that all strategies in the strategy profile \(\tau\) are best responses to all the other strategies.</p>
 <p>An important interpretation of this definition is that at the Nash equilibria no player has an incentive to deviate from their current strategy.</p>
 <p>To find Nash equilibria in 2 player normal form games we can simply check every strategy pair and see whether or not a player has an incentive to deviate.</p>
 <h3 id="example"><span class="header-section-number">1.2.2</span> Example</h3>
 <p>Identify Nash equilibria in pure strategies for the following game:</p>
-<p><span class="math">\[
+<p>\[
 \begin{pmatrix}
 (0,3)&amp;(1,2)&amp;(7,8)&amp;(1,4)\\
 (2,6)&amp;(1,2)&amp;(3,0)&amp;(1,3)\\
 (3,1)&amp;(1,2)&amp;(3,-1)&amp;(5,1)\\
 (6,3)&amp;(4,2)&amp;(2,1)&amp;(7,1)
 \end{pmatrix}
-\]</span></p>
+\]</p>
 <p>If we identify all best responses:</p>
-<p><span class="math">\[
+<p>\[
 \begin{pmatrix}
 (0,3)&amp;(1,2)&amp;(\underline{7},\underline{8})&amp;(1,4)\\
 (2,\underline{6})&amp;(1,2)&amp;(3,0)&amp;(1,3)\\
 (3,1)&amp;(1,\underline{2})&amp;(3,-1)&amp;(5,1)\\
 (\underline{6},\underline{3})&amp;(\underline{4},2)&amp;(2,1)&amp;(\underline{7},1)
 \end{pmatrix}
-\]</span></p>
-<p>We see that we have 2 equilibria in pure strategies: <span class="math">\((r_1,s_3)\)</span> and <span class="math">\((r_4,s_1)\)</span></p>
+\]</p>
+<p>We see that we have 2 equilibria in pure strategies: \((r_1,s_3)\) and \((r_4,s_1)\)</p>
 <h2 id="duopoly-game"><span class="header-section-number">1.3</span> Duopoly game</h2>
 <p>We will now consider a particular normal form game attributed to Augustin Cournot.</p>
 <hr />
 <blockquote>
-<p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: <span class="math">\(q_1,q_2\geq 0\)</span>. All of the good is sold but the price depends on the number of goods:</p>
+<p>Suppose that two firms 1 and 2 produce an identical good (ie consumers do not care who makes the good). The firms decide at the same time to produce a certain quantity of goods: \(q_1,q_2\geq 0\). All of the good is sold but the price depends on the number of goods:</p>
 </blockquote>
 <blockquote>
-<p><span class="math">\[p=K-q_1-q_2\]</span></p>
+<p>\[p=K-q_1-q_2\]</p>
 </blockquote>
 <blockquote>
-<p>We also assume that the firms both pay a production cost of <span class="math">\(k\)</span> per goods.</p>
+<p>We also assume that the firms both pay a production cost of \(k\) per goods.</p>
 </blockquote>
 <p>What is the Nash equilibria for this game?</p>
 <hr />
 <p>Firstly let us clarify that this is indeed a normal form game:</p>
 <ol style="list-style-type: decimal">
 <li>2 players;</li>
-<li>The strategy space is <span class="math">\(S_1=S_2=\mathbb{R}_{\geq 0}\)</span></li>
+<li>The strategy space is \(S_1=S_2=\mathbb{R}_{\geq 0}\)</li>
 <li>The utilities are given by:</li>
 </ol>
-<p><span class="math">\[u_1(q_1,q_2)=(K-q_1-q_2)q_1-kq_1\]</span> <span class="math">\[u_2(q_1,q_2)=(K-q_1-q_2)q_2-kq_2\]</span></p>
+<p>\[u_1(q_1,q_2)=(K-q_1-q_2)q_1-kq_1\] \[u_2(q_1,q_2)=(K-q_1-q_2)q_2-kq_2\]</p>
 <p>Let us now compute the best responses for each firm (we'll in fact only need to do this for one firm given the symmetry of the problem).</p>
-<p><span class="math">\[\frac{du_1}{dq_1}=K-2q_1-q_2-k\]</span></p>
-<p>Setting this to 0 gives the best response <span class="math">\(q_1^*=q_1^*(q_2)\)</span> for firm 1:</p>
-<p><span class="math">\[q_1^*(q_2)=\frac{K-k-q_2}{2}\]</span></p>
+<p>\[\frac{du_1}{dq_1}=K-2q_1-q_2-k\]</p>
+<p>Setting this to 0 gives the best response \(q_1^*=q_1^*(q_2)\) for firm 1:</p>
+<p>\[q_1^*(q_2)=\frac{K-k-q_2}{2}\]</p>
 <p>By symmetry we have:</p>
-<p><span class="math">\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</span></p>
-<p>Recalling the definition of a Nash equilibria we are attempting to find <span class="math">\((\tilde q_1, \tilde q_2)\)</span> a pair of best responses. Thus <span class="math">\(\tilde q_1\)</span> satisfies:</p>
-<p><span class="math">\[
+<p>\[q_2^*(q_1)=\frac{K-k-q_1}{2}\]</p>
+<p>Recalling the definition of a Nash equilibria we are attempting to find \((\tilde q_1, \tilde q_2)\) a pair of best responses. Thus \(\tilde q_1\) satisfies:</p>
+<p>\[
 \begin{cases}
 \tilde q_1=q_1^*(\tilde q_2)\\
 \tilde q_2=q_1^*(\tilde q_1)
 \end{cases}
-\]</span></p>
-<p><span class="math">\[\Leftrightarrow\]</span></p>
-<p><span class="math">\[
+\]</p>
+<p>\[\Leftrightarrow\]</p>
+<p>\[
 \begin{cases}
-\tilde q_1=\frac{K-k-q_2}{2}\\
-\tilde q_2=\frac{K-k-q_1}{2}
+\tilde q_1=\frac{K-k-\tilde q_2}{2}\\
+\tilde q_2=\frac{K-k-\tilde q_1}{2}
 \end{cases}
-\]</span></p>
-<p><span class="math">\[\Leftrightarrow\]</span></p>
-<p><span class="math">\[\begin{cases}
+\]</p>
+<p>\[\Leftrightarrow\]</p>
+<p>\[\begin{cases}
 \tilde q_1=\frac{K-k}{3}\\
 \tilde q_2=\frac{K-k}{3}\\
 \end{cases}
-\]</span></p>
-<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_05-Nash_Equilibria_in_pure_strategies.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/./Chapter_05-Nash_Equilibria_in_pure_strategies.docx">docx (not recommended)</a>)</p>
+\]</p>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_05-Nash_Equilibria_in_pure_strategies.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_05-Nash_Equilibria_in_pure_strategies.docx">docx (not recommended)</a>)</p>
 </body>
 </html>
