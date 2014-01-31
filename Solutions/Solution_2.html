@@ -11,50 +11,68 @@
 <body>
 <h1 id="homework-sheet-2---nash-equilibrium-in-normal-form-games"><span class="header-section-number">1</span> Homework sheet 2 - Nash equilibrium in normal form games</h1>
 <ol style="list-style-type: decimal">
-<li>Compute the Nash equilibrium (if they exist) in pure strategies for the following games:</li>
-</ol>
+<li><p>Compute the Nash equilibrium (if they exist) in pure strategies for the following games:</p>
+<p><strong>Solution</strong></p>
 <p><span class="math">\[\begin{pmatrix}
-(5,3)&amp;(70,-1)&amp;(4,2)\\
-(6,7)&amp;(71,2)&amp;(2,1)
+(5,\underline{3})&amp;(70,-1)&amp;(\underline{4},2)\\
+(\underline{6},\underline{7})&amp;(\underline{71},2)&amp;(2,1)
 \end{pmatrix}\]</span></p>
 <p><span class="math">\[\begin{pmatrix}
-(6,7)&amp;(2,1)&amp;(4,6)\\
-(0,4)&amp;(3,8)&amp;(2,3)\\
-(1,2)&amp;(1,5)&amp;(1,1)\\
+(\underline{6},\underline{7})&amp;(2,1)&amp;(4,6)\\
+(0,4)&amp;(\underline{3},\underline{8})&amp;(2,3)\\
+(\underline{1},\underline{2})&amp;(\underline{1},\underline{5})&amp;(\underline{1},\underline{1})\\
 \end{pmatrix}\]</span></p>
 <p><span class="math">\[\begin{pmatrix}
-(\pi,e)&amp;(1-\pi,\sqrt(e))\\
-(\sqrt(2),1/e)&amp;(2,1)
-\end{pmatrix}\]</span></p>
-<ol start="2" style="list-style-type: decimal">
-<li>For what values of <span class="math">\(\alpha\)</span> does a Nash equilibrium exist in pure strategies for the following game:</li>
-</ol>
+(\underline{\pi},\underline{e})&amp;(1-\pi,\sqrt(e))\\
+(\sqrt(2),1/e)&amp;(\underline{2},\underline{1})
+\end{pmatrix}\]</span></p></li>
+<li><p>For what values of <span class="math">\(\alpha\)</span> does a Nash equilibrium exist in pure strategies for the following game:</p>
 <p><span class="math">\[\begin{pmatrix}
 (3,5)&amp;(2-\alpha,\alpha)\\
 (4\alpha,6)&amp;(\alpha,\alpha^2)
 \end{pmatrix}\]</span></p>
-<ol start="3" style="list-style-type: decimal">
+<p><strong>Solution</strong></p>
+<ul>
+<li><p><span class="math">\((r_1,s_1)\)</span> is a pure strategy Nash equilibrium if:</p>
+<p><span class="math">\(3\geq 4\alpha\)</span> and <span class="math">\(5\geq\alpha\)</span></p>
+<p>Thus <span class="math">\((r_1,s_1)\)</span> is a Nash equilibrium iff <span class="math">\(\alpha\geq3/4\)</span>.</p></li>
+<li><p><span class="math">\((r_1,s_2)\)</span> is a pure strategy Nash equilibrium if:</p>
+<p><span class="math">\(2-\alpha \geq \alpha\)</span> and <span class="math">\(\alpha\geq 5\)</span></p>
+<p>This is not possible.</p></li>
+<li><p><span class="math">\((r_2,s_1)\)</span> is a pure strategy Nash equilibrium if:</p>
+<p><span class="math">\(4\alpha \geq 3\)</span> and <span class="math">\(6\geq \alpha^2\)</span></p>
+<p>Thus <span class="math">\((r_2,s_1)\)</span> is a Nash equilibrium iff <span class="math">\(4/3\leq \alpha \leq \sqrt{6}\)</span></p></li>
+<li><p><span class="math">\((r_2,s_2)\)</span> is a pure strategy Nash equilibrium if:</p>
+<p><span class="math">\(\alpha\geq 2-\alpha\)</span> and <span class="math">\(6\leq \alpha^2\)</span></p>
+<p>Thus <span class="math">\((r_2,s_2)\)</span> is a Nash equilibrium iff <span class="math">\(\alpha\geq\sqrt{6}\)</span></p></li>
+</ul></li>
 <li><p>Consider the following game:</p>
 <p>Suppose two vendors (of an identical product) must choose their location along a busy street. It is anticipated that their profit is directly related to their position on the street.</p>
-<p>If we allow their positions to be represented by a points <span class="math">\(x_1, x_2\)</span> on the <span class="math">\([0,1]_{\mathbb{R}}\)</span> line segment then we have:</p></li>
-</ol>
+<p>If we allow their positions to be represented by a points <span class="math">\(x_1, x_2\)</span> on the <span class="math">\([0,1]_{\mathbb{R}}\)</span> line segment then we have:</p>
 <p><span class="math">\[u_1(x_1,x_2)=\begin{cases}x_1+(x_2-x_1)/2,&amp;\text{if }x_1\leq x_2\\
 1-x_1+(x_2-x_1)/2,&amp;\text{otherwise}
 \end{cases}\]</span> and <span class="math">\[u_1(x_1,x_2)=\begin{cases}x_2+(x_2-x_1)/2,&amp;\text{if }x_2\leq x_1\\
 1-x_2+(x_2-x_1)/2,&amp;\text{otherwise}
 \end{cases}\]</span></p>
 <p>By considering best responses of each player, identify the Nash equilibrium for the game.</p>
-<ol start="4" style="list-style-type: decimal">
-<li>Consider the following game:</li>
+<p><strong>Solution</strong></p>
+<p>Consider <span class="math">\(x_j&lt;1/2\)</span>, if <span class="math">\(x_i=x_j\)</span> then <span class="math">\(u_i(x_i,x_j)=1/2\)</span>. However <span class="math">\(u_i(x_j+\epsilon,x_j)=1-x_2-\epsilon/2&gt;1/2-\epsilon/2\)</span> for some (arbitrarily) small <span class="math">\(\epsilon&gt;0\)</span> . Thus for arbitrarily small <span class="math">\(\epsilon\)</span>, <span class="math">\(x_i^*=x_j+\epsilon\)</span>. If <span class="math">\(x_j&gt;1/2\)</span> a similar argument gives <span class="math">\(x_i^*=x_j-\epsilon\)</span>. If <span class="math">\(x_j=1/2\)</span>, considering <span class="math">\(x_i=x_j\)</span> we see that neither player has an incentive to move.</p>
+<p>Thus we conclude:</p>
+<p><span class="math">\[x_i^*=\begin{cases}
+x_j+\epsilon,&amp;\text{ if }x_j&lt;1/2\\
+x_j-\epsilon&amp;\text{ if }x_j&gt;1/2\\
+x_j&amp;\text{ if }x_j=1/2\\
+\end{cases}\]</span></p>
+<p>So the Nash equilibrium for this problem is <span class="math">\((\tilde x_1, \tilde x_2)=(1/2,1/2)\)</span>.</p></li>
+<li><p>Consider the following game:</p></li>
 </ol>
 <p><span class="math">\[\begin{pmatrix}
 (3,2)&amp;(6,5)\\
 (1,4)&amp;(2,3)
 \end{pmatrix}\]</span></p>
-<p>Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.</p>
+<pre><code>Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.</code></pre>
 <ol start="5" style="list-style-type: decimal">
-<li>Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: <span class="math">\(S_1=\{\text{SL},\text{SR}\}\)</span>. A goalie (player 2) can either dive left or right: <span class="math">\(S_2=\{\text{DL}, \text{DR}\}\)</span>. The chances of a goal being scored are given below:</li>
-</ol>
+<li><p>Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: <span class="math">\(S_1=\{\text{SL},\text{SR}\}\)</span>. A goalie (player 2) can either dive left or right: <span class="math">\(S_2=\{\text{DL}, \text{DR}\}\)</span>. The chances of a goal being scored are given below:</p>
 <p><span class="math">\[\begin{pmatrix}
 .8&amp;.15\\
 .2&amp;.95
@@ -68,14 +86,13 @@
 .5&amp;.5\\
 .2&amp;.95
 \end{pmatrix}\]</span></p>
-<p>Obtain the new Nash equilibrium for the game.</p>
-<ol start="6" style="list-style-type: decimal">
-<li>In the notes the following theorem is given:</li>
+<p>Obtain the new Nash equilibrium for the game.</p></li>
+<li><p>In the notes the following theorem is given:</p>
+<hr />
+<p>Every normal form game with a finite number of pure strategies for each player, has at least one Nash equilibrium.</p>
+<hr />
+<p>Prove the theorem for 2 player games with <span class="math">\(|S_1|=|S_2|=2\)</span>. I.e. prove the above result in the special case of <span class="math">\(2\times 2\)</span> games.</p></li>
 </ol>
-<hr />
-<p>Every normal form game with a ﬁnite number of pure strategies for each player, has at least one Nash equilibrium.</p>
-<hr />
-<p>Prove the theorem for 2 player games with <span class="math">\(|S_1|=|S_2|=2\)</span>. I.e. prove the above result in the special case of <span class="math">\(2\times 2\)</span> games.</p>
-<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_2.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_2.docx">docx (not recommended)</a>)</p>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_2.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_2.docx">docx (not recommended)</a>)</p>
 </body>
 </html>
