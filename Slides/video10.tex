@@ -1,0 +1,54 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{graphics}
+\usetikzlibrary{calc}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\title{Infinitely Repeated Games}
+\subtitle{Game Theory}
+\author{Vincent Knight}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+$$
+\Huge{
+\begin{pmatrix}
+(2,2)&(0,3)\\
+(3,0)&(1,1)
+\end{pmatrix}}
+$$
+}
+
+\frame{
+$$
+\begin{pmatrix}
+(2,2)&(0,3)\\
+(3,0)&(1,1)
+\end{pmatrix}
+$$
+\begin{itemize}
+\item $s_C$: cooperate at every stage
+\item $s_D$: defect at every stage
+\end{itemize}
+\onslide<2->{
+$$u_1(s_C,s_C)=\sum_{i=1}^\infty\only<3->{{\color{red}{\delta^i}}}2\only<3->{<}\only<2>{>}\infty\only<3->{{\color{red}{\text{ if }|\delta|<1}}}$$
+}
+\onslide<4->{
+\begin{center}
+\framebox{Possible interpretation of $\delta$: probability of game ending at any stage.}
+\end{center}
+}
+}
+
+
+
+\end{document}
