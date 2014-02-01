@@ -64,35 +64,87 @@ x_j-\epsilon&amp;\text{ if }x_j&gt;1/2\\
 x_j&amp;\text{ if }x_j=1/2\\
 \end{cases}\]</span></p>
 <p>So the Nash equilibrium for this problem is <span class="math">\((\tilde x_1, \tilde x_2)=(1/2,1/2)\)</span>.</p></li>
-<li><p>Consider the following game:</p></li>
-</ol>
+<li><p>Consider the following game:</p>
 <p><span class="math">\[\begin{pmatrix}
 (3,2)&amp;(6,5)\\
 (1,4)&amp;(2,3)
 \end{pmatrix}\]</span></p>
-<pre><code>Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.</code></pre>
-<ol start="5" style="list-style-type: decimal">
+<p>Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.</p>
+<p><strong>Solution</strong></p>
+<p>We have:</p>
+<p><span class="math">\[u_1(r_1,(y,1-y))=3y+6-6y=6-3y\]</span> <span class="math">\[u_2(r_2,(y,1-y))=y+2-2y=2-y\]</span></p>
+<p>Here is a plot of this:</p>
+<div class="figure">
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P01.png" />
+</div>
+<p>We see that <span class="math">\(r_2\)</span> is dominated by <span class="math">\(r_1\)</span>. For player 2, we have:</p>
+<p><span class="math">\[u_1((x,1-x),s_1)=2x+4-4x=4-2x\]</span> <span class="math">\[u_2((x,1-x),s_2)=5x+3-3x=3+2x\]</span></p>
+<p>Here is a plot of this:</p>
+<div class="figure">
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P02.png" />
+</div>
+<p>As <span class="math">\(r_2\)</span> is dominated, we see from the plot that the Nash equilibrium is <span class="math">\((r_1, s_2)\)</span>.</p></li>
 <li><p>Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: <span class="math">\(S_1=\{\text{SL},\text{SR}\}\)</span>. A goalie (player 2) can either dive left or right: <span class="math">\(S_2=\{\text{DL}, \text{DR}\}\)</span>. The chances of a goal being scored are given below:</p>
 <p><span class="math">\[\begin{pmatrix}
 .8&amp;.15\\
 .2&amp;.95
 \end{pmatrix}\]</span></p>
 <ol style="list-style-type: lower-roman">
-<li><p>Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?</p></li>
-<li><p>Assume that player 1 now has a further strategy available: to shoot in the middle: <span class="math">\(S_1=\{\text{SL},\text{SM}, \text{SR}\}\)</span> the probabilities of a goal being scored are now given:</p></li>
+<li>Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?</li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>We see that this is a zero sum game with bi-matrix:</p>
+<p><span class="math">\[\begin{pmatrix}
+(.8,.2)&amp;(.15,.75)\\
+(.2,.8)&amp;(.95,.05)
+\end{pmatrix}\]</span></p>
+<p>There are no pure Nash equilibria. To obtain the NE, we use the Equality of Payoffs theorem:</p>
+<p><span class="math">\[.2x+.8(1-x)=(.75x+.05(1-x))\Rightarrow x=15/26\]</span> <span class="math">\[.8y+.15(1-y)=.2y+.95(1-y)\Rightarrow y=4/7\]</span></p>
+<p>So the Nash Equilibrium is <span class="math">\(\{(15/26,11/26),(4/7,3/7)\}\)</span>.</p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Assume that player 1 now has a further strategy available: to shoot in the middle: <span class="math">\(S_1=\{\text{SL},\text{SM}, \text{SR}\}\)</span> the probabilities of a goal being scored are now given:</li>
 </ol>
 <p><span class="math">\[\begin{pmatrix}
 .8&amp;.15\\
 .5&amp;.5\\
 .2&amp;.95
 \end{pmatrix}\]</span></p>
-<p>Obtain the new Nash equilibrium for the game.</p></li>
+<p>Obtain the new Nash equilibrium for the game.</p>
+<p><strong>Solution</strong></p>
+<p>There are various approaches to this game, one is to apply the equality of payoffs theorem to all possible supports. Another is to plot the utilities:</p>
+<div class="figure">
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P03.png" />
+</div>
+<p>We see that <span class="math">\(B_1=\{r_1,r_3\}\)</span>, by the equality theorem this gives <span class="math">\(UD_1=\{r_1,r_3\}\)</span> and so the Nash equilibria is the same as before.</p></li>
 <li><p>In the notes the following theorem is given:</p>
 <hr />
 <p>Every normal form game with a finite number of pure strategies for each player, has at least one Nash equilibrium.</p>
 <hr />
-<p>Prove the theorem for 2 player games with <span class="math">\(|S_1|=|S_2|=2\)</span>. I.e. prove the above result in the special case of <span class="math">\(2\times 2\)</span> games.</p></li>
+<p>Prove the theorem for 2 player games with <span class="math">\(|S_1|=|S_2|=2\)</span>. I.e. prove the above result in the special case of <span class="math">\(2\times 2\)</span> games.</p>
+<p><strong>Solution</strong></p>
+<p>Let us consider the <span class="math">\(2\times 2\)</span> game:</p>
+<p><span class="math">\[\begin{pmatrix}
+(a_{11},b_{11})&amp; (a_{12},b_{12})\\
+(a_{21},b_{21})&amp; (a_{22},b_{22})\\
+\end{pmatrix}\]</span></p>
+<p>There is no pure strategy Nash equilibrium if either:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math">\(a_{11}&lt;a_{21}\)</span> and <span class="math">\(b_{21}&lt;b_{22}\)</span> and <span class="math">\(a_{22}&lt;a_{21}\)</span> and <span class="math">\(b_{21}&lt;b_{11}\)</span> or</li>
+<li><span class="math">\(a_{11}&gt;a_{21}\)</span> and <span class="math">\(b_{21}&gt;b_{22}\)</span> and <span class="math">\(a_{22}&gt;a_{21}\)</span> and <span class="math">\(b_{21}&gt;b_{11}\)</span></li>
 </ol>
-<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_2.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_2.docx">docx (not recommended)</a>)</p>
+<p>In each of these cases we use the Euqality of payoffs theorem:</p>
+<p><span class="math">\[
+u_1(r_1,\sigma_2) = u_2(r_2,\sigma_2)
+\]</span></p>
+<p><span class="math">\[
+a_{11}y+a_{12}(1-y) = a_{21}y+a_{22}(1-y)
+\]</span></p>
+<p>which gives:</p>
+<p><span class="math">\[y = \frac{a_{12} - a_{22}}{a_{12}-a_{22} + a_{21} - a_{11}}\]</span></p>
+<p>Similarly:</p>
+<p><span class="math">\[x = \frac{b_{12} - b_{22}}{b_{12}-b_{22} + b_{21} - b_{11}}\]</span></p>
+<p>In both cases the <span class="math">\(0&lt;x,y&lt;1\)</span> as required.</p></li>
+</ol>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_2.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_2.docx">docx (not recommended)</a>)</p>
 </body>
 </html>
