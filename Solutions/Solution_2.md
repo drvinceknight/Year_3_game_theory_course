@@ -88,13 +88,35 @@
 
 4. Consider the following game:
 
-$$\begin{pmatrix}
-(3,2)&(6,5)\\
-(1,4)&(2,3)
-\end{pmatrix}$$
+    $$\begin{pmatrix}
+    (3,2)&(6,5)\\
+    (1,4)&(2,3)
+    \end{pmatrix}$$
 
 
     Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.
+
+    **Solution**
+
+    We have:
+
+    $$u_1(r_1,(y,1-y))=3y+6-6y=6-3y$$
+    $$u_2(r_2,(y,1-y))=y+2-2y=2-y$$
+
+    Here is a plot of this:
+
+    ![](./plots/HW2-P01.png)
+
+    We see that $r_2$ is dominated by $r_1$. For player 2, we have:
+
+    $$u_1((x,1-x),s_1)=2x+4-4x=4-2x$$
+    $$u_2((x,1-x),s_2)=5x+3-3x=3+2x$$
+
+    Here is a plot of this:
+
+    ![](./plots/HW2-P02.png)
+
+    As $r_2$ is dominated, we see from the plot that the Nash equilibrium is $(r_1, s_2)$.
 
 5. Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: $S_1=\{\text{SL},\text{SR}\}$. A goalie (player 2) can either dive left or right: $S_2=\{\text{DL}, \text{DR}\}$. The chances of a goal being scored are given below:
 
@@ -103,7 +125,24 @@ $$\begin{pmatrix}
     .2&.95
     \end{pmatrix}$$
 
+
     i. Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?
+
+    **Solution**
+
+    We see that this is a zero sum game with bi-matrix:
+
+    $$\begin{pmatrix}
+    (.8,.2)&(.15,.75)\\
+    (.2,.8)&(.95,.05)
+    \end{pmatrix}$$
+
+    There are no pure Nash equilibria. To obtain the NE, we use the Equality of Payoffs theorem:
+
+    $$.2x+.8(1-x)=(.75x+.05(1-x))\Rightarrow x=15/26$$
+    $$.8y+.15(1-y)=.2y+.95(1-y)\Rightarrow y=4/7$$
+
+    So the Nash Equilibrium is $\{(15/26,11/26),(4/7,3/7)\}$.
 
     ii. Assume that player 1 now has a further strategy available: to shoot in the middle: $S_1=\{\text{SL},\text{SM}, \text{SR}\}$ the probabilities of a goal being scored are now given:
 
@@ -115,6 +154,14 @@ $$\begin{pmatrix}
 
     Obtain the new Nash equilibrium for the game.
 
+    **Solution**
+
+    There are various approaches to this game, one is to apply the equality of payoffs theorem to all possible supports. Another is to plot the utilities:
+
+    ![](./plots/HW2-P03.png)
+
+    We see that $B_1=\{r_1,r_3\}$, by the equality theorem this gives $UD_1=\{r_1,r_3\}$ and so the Nash equilibria is the same as before.
+
 6. In the notes the following theorem is given:
 
     ---
@@ -124,3 +171,38 @@ $$\begin{pmatrix}
     ---
 
     Prove the theorem for 2 player games with $|S_1|=|S_2|=2$. I.e. prove the above result in the special case of $2\times 2$ games.
+
+    **Solution**
+
+
+    Let us consider the $2\times 2$ game:
+
+    $$\begin{pmatrix}
+    (a_{11},b_{11})& (a_{12},b_{12})\\
+    (a_{21},b_{21})& (a_{22},b_{22})\\
+    \end{pmatrix}$$
+
+    There is no pure strategy Nash equilibrium if either:
+
+    1. $a_{11}<a_{21}$ and $b_{21}<b_{22}$ and $a_{22}<a_{21}$ and $b_{21}<b_{11}$ or
+    2. $a_{11}>a_{21}$ and $b_{21}>b_{22}$ and $a_{22}>a_{21}$ and $b_{21}>b_{11}$
+
+    In each of these cases we use the Euqality of payoffs theorem:
+
+    $$
+    u_1(r_1,\sigma_2) = u_2(r_2,\sigma_2)
+    $$
+
+    $$
+    a_{11}y+a_{12}(1-y) = a_{21}y+a_{22}(1-y)
+    $$
+
+    which gives:
+
+    $$y = \frac{a_{12} - a_{22}}{a_{12}-a_{22} + a_{21} - a_{11}}$$
+
+    Similarly:
+
+    $$x = \frac{b_{12} - b_{22}}{b_{12}-b_{22} + b_{21} - b_{11}}$$
+
+    In both cases the $0<x,y<1$ as required.
