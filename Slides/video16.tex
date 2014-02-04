@@ -1,0 +1,86 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{graphics}
+\usetikzlibrary{calc, shapes}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\title{Cooperative Games}
+\subtitle{Game Theory}
+\author{Vincent Knight}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+A \textbf{characteristic function game} $G$ is given by a pair $(N,v)$ where $N$ is the number of players and $v:2^{[N]}\to\mathbb{R}$ is a \textbf{characteristic function} which maps every coalition of players to a payoff.
+}
+
+\frame{
+$A$lice, $B$ob, $C$eline share a meal:
+\pause
+$$
+v(c)=\begin{cases}
+80,&\text{if }c=\{A\}\\
+56,&\text{if }c=\{B\}\\
+70,&\text{if }c=\{C\}\\
+80,&\text{if }c=\{A,B\}\\
+85,&\text{if }c=\{A,C\}\\
+72,&\text{if }c=\{B,C\}\\
+90,&\text{if }c=\{A,B,C\}\\
+\end{cases}
+$$
+}
+
+\frame{
+$$\phi_i(G)=\frac{1}{n!}\sum_{\pi\in\Pi_n}\Delta_\pi^G(i)$$
+}
+
+\frame{
+\begin{columns}
+\column{.5\textwidth}
+$$
+v(c)=\begin{cases}
+80,&\text{if }c=\{A\}\\
+56,&\text{if }c=\{B\}\\
+70,&\text{if }c=\{C\}\\
+80,&\text{if }c=\{A,B\}\\
+85,&\text{if }c=\{A,C\}\\
+72,&\text{if }c=\{B,C\}\\
+90,&\text{if }c=\{A,B,C\}\\
+\end{cases}
+$$
+\column{.5\textwidth}
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$\pi$&$\delta_\pi^{G}$\\
+\midrule
+\pause
+$(A,B,C)$&$(80,0,10)$\\
+\pause
+$(A,C,B)$&$(80,5,5)$\\
+\pause
+$(B,A,C)$&$(24,56,10)$\\
+\pause
+$(B,C,A)$&$(18,56,16)$\\
+\pause
+$(C,A,B)$&$(15,5,70)$\\
+\pause
+$(C,B,A)$&$(18,2,70)$\\
+\midrule
+\pause
+$\phi$&$(39.2, 20.7, 30.2)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{columns}
+}
+
+\end{document}
