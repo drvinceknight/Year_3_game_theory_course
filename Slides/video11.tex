@@ -40,6 +40,70 @@ $\chi$ is called a \textbf{population vector}
 }
 
 \frame{
+Utility of strategy $\sigma\in\Delta S$ in population $\chi$:
+
+$$
+u(\sigma, \chi) = \sum_{s\in S}\sigma(s)u(s,\chi)
+$$
+
+\pause
+\begin{center}
+\framebox{\textbf{Interpretation:} number of descendants of $\sigma$.}
+\end{center}
 }
 
+\frame{
+Assume initial population $\chi=(.1,.9)$ and:
+$$u(\text{\color{red}{red}},\chi)=3|\text{red}|+1\text{ and }u(\text{\color{green}{green}},\chi)=2/3|\text{green}|$$
+\begin{center}
+\begin{tikzpicture}
+\only<1>{\node at (0, 0) [fill, color=black] {};}
+\only<2-3>{\node at (0, 0) [fill, color=green] {};}
+\only<4->{\node at (0, 0) [fill, color=red] {};}
+\only<1>{\node at (1, 0) [fill, color=black] {};}
+\only<2->{\node at (1, 0) [fill, color=red] {};}
+\only<1>{\node at (2, 0) [fill, color=black] {};}
+\only<2-3>{\node at (2, 0) [fill, color=green] {};}
+\only<4->{\node at (2, 0) [fill, color=red] {};}
+\only<1>{\node at (3, 0) [fill, color=black] {};}
+\only<2-3>{\node at (3, 0) [fill, color=green] {};}
+\only<4->{\node at (3, 0) [fill, color=red] {};}
+\only<1>{\node at (4, 0) [fill, color=black] {};}
+\only<2-3>{\node at (4, 0) [fill, color=green] {};}
+\only<4->{\node at (4, 0) [fill, color=red] {};}
+\only<1>{\node at (5, 0) [fill, color=black] {};}
+\only<2-2>{\node at (5, 0) [fill, color=green] {};}
+\only<3->{\node at (5, 0) [fill, color=red] {};}
+\only<1>{\node at (6, 0) [fill, color=black] {};}
+\only<2-3>{\node at (6, 0) [fill, color=green] {};}
+\only<4->{\node at (6, 0) [fill, color=red] {};}
+\only<1>{\node at (7, 0) [fill, color=black] {};}
+\only<2-2>{\node at (7, 0) [fill, color=green] {};}
+\only<3->{\node at (7, 0) [fill, color=red] {};}
+\only<1>{\node at (8, 0) [fill, color=black] {};}
+\only<2-3>{\node at (8, 0) [fill, color=green] {};}
+\only<4->{\node at (8, 0) [fill, color=red] {};}
+\only<1>{\node at (9, 0) [fill, color=black] {};}
+\only<2-2>{\node at (9, 0) [fill, color=green] {};}
+\only<3->{\node at (9, 0) [fill, color=red] {};}
+\end{tikzpicture}
+\end{center}
+}
+
+\frame{
+Consider a population where all individuals initially play $\sigma^*$. If we assume that a small proportion $\epsilon$ start playing $\sigma$. The new population is called the post entry population and will be denoted by $\chi_\epsilon$.
+\begin{center}
+\textbf{Evolutionary Stable Strategy:}
+\end{center}
+A strategy $\sigma^*\in\Delta S$ is called an \textbf{Evolutionary Stable Strategy} if $\exists$ $0<\bar\epsilon<1$ such that for every $0<\epsilon<\bar \epsilon$ and every $\sigma\ne\sigma^*$:
+$$u(\sigma^*,\chi)>u(\sigma,\chi)$$
+}
+
+\frame{
+\begin{center}
+\begin{tikzpicture}[scale=.5]
+\input{evolutionstablepic.tex}
+\end{tikzpicture}
+\end{center}
+}
 \end{document}

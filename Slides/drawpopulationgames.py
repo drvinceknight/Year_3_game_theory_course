@@ -5,9 +5,9 @@ from __future__ import division
 from random import random, choice
 
 chi = .25
-rows = 10
-columns = 20
-numbertillcomplete = 10
+rows = 1
+columns = 10
+numbertillcomplete = 4
 
 tikzcode = ""
 
