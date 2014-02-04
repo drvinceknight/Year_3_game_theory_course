@@ -1,5 +1,6 @@
 \documentclass[xcolor=table]{beamer}
 
+\usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage[table]{xcolor}
@@ -18,5 +19,89 @@
 
 \frame{\titlepage}
 
+\frame{
+$$(G,r,c)$$
+\begin{itemize}
+    \item $G=(V,E)$, with a defined set of sources $s_i$ and sinks $t_i$;
+    \item A commodity $r_i$;
+    \item A set of latencies: $c_e$.
+\end{itemize}
+}
 
+\frame{
+
+\tikzstyle{vertex} = [draw, shape=circle, minimum width=.3cm, inner sep=.5pt]
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+\pause
+
+$$C(f)=\sum_{P\in\mathcal{P}}c_P(f_P)f_P=\sum_{e\in E}c_e(f_e)f_e$$
+
+\pause
+
+$${\color{red}{\alpha}}=.75\Rightarrow f=(.75,.25)$$
+
+\pause
+
+$$C(f)=1\times.75+c(.25)\times.25=1\times .75+.25\times.25=1.125$$
+}
+
+\frame{
+
+\tikzstyle{vertex} = [draw, shape=circle, minimum width=.3cm, inner sep=.5pt]
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+\pause
+
+An optimal flow $f^*$ minimizes $C(f)$.
+
+\pause
+
+$$C(\alpha)=\alpha+(1-\alpha)^2=1-\alpha+\alpha^2$$
+\pause
+
+$$f^*=(.5,.5)$$
+
+}
+
+\frame{
+
+\tikzstyle{vertex} = [draw, shape=circle, minimum width=.3cm, inner sep=.5pt]
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+\pause
+
+A Nash flow: $\tilde f$ iff for every commodity $i$ and any two paths $P_1, P_2\in \mathcal{P}_i$ such that $f_{P_1}>0$ then:
+
+$$c_{P_1}(f)\leq c_{P_2}(f)$$
+
+\pause
+
+$$\tilde f = (0,1)$$
+
+}
 \end{document}
