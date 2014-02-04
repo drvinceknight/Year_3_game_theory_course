@@ -1,0 +1,45 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{graphics}
+\usetikzlibrary{calc}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\title{Population Games}
+\subtitle{Game Theory}
+\author{Vincent Knight}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+\begin{center}
+\begin{tikzpicture}[scale=.5]
+\input{evolutionpic.tex}
+\end{tikzpicture}
+\end{center}
+}
+
+\frame{
+$$S=\{\text{red}, \text{green}\}$$
+
+If every player plays: $\sigma=.25,.75$ then: $\chi=(.25,.75)$.\pause
+
+\textbf{Alternatively:} 25\% of players play red $\Rightarrow$ $\chi=(.25,.75)$.
+
+\pause
+\begin{center}
+$\chi$ is called a \textbf{population vector}
+\end{center}
+}
+
+\frame{
+}
+
+\end{document}
