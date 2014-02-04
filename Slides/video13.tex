@@ -1,0 +1,51 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{graphics}
+\usetikzlibrary{calc}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\title{Incomplete information}
+\subtitle{Game Theory}
+\author{Vincent Knight}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+\tikzstyle{level 1}=[level distance=2.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=2.5cm, sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=2.5cm, sibling distance=1cm]
+\tikzstyle{player} = [text width=4em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{center}
+\begin{tikzpicture}[grow=right, sloped]
+    \node[nature]{Card}
+        child { node[player] {P1}
+            child{ node[end] {} node[right] {$(-1,1)$}  edge from parent node[below] {Red}}
+            child{ node[player] (A) {P2}
+                child{ node[end] {} node[right] {$(1,-1)$} edge from parent node[below] {Blue}}
+                child{ node[end] {} node[right] {$(-2,2)$} edge from parent node[below] {Red}}
+            edge from parent node[below] {Blue}}
+        edge from parent node[above] {.25} node[below] {Tails}}
+        child { node[player] {P1}
+            child{ node[player] (B) {P2}
+                child{ node[end] {} node[right] {$(1,-1)$} edge from parent node[below] {Blue}}
+                child{ node[end] {} node[right] {$(2,-2)$} edge from parent node[below] {Red}}
+            edge from parent node[below] {Blue}}
+            child{ node[end] {} node[right] {$(1,-1)$}  edge from parent node[below] {Red}}
+        edge from parent node[above] {.75} node[below] {Heads}}
+        ;
+        \draw [dashed] (A) -- (B);
+\end{tikzpicture}
+\end{center}
+}
+
+\end{document}
