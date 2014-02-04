@@ -1,0 +1,145 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{graphics}
+\usetikzlibrary{calc, shapes}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\title{Matching Games}
+\subtitle{Game Theory}
+\author{Vincent Knight}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=1cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{center}
+\begin{tikzpicture}
+    \node (a) [end] at (0,0) {};
+    \node (b) [end] at (0,1) {};
+    \node (c) [end] at (0,2) {};
+    \node (A) [end] at (2,0) {};
+    \node (B) [end] at (2,1) {};
+    \node (C) [end] at (2,2) {};
+    \node [left] at (a) {$a$: $(A,B,C)$};
+    \node [left] at (b) {$b$: $(C,B,A)$};
+    \node [left] at (c) {$c$: $(B,A,C)$};
+    \node [right] at (A) {$A$: $(c,b,a)$};
+    \node [right] at (B) {$B$: $(a,c,b)$};
+    \node [right] at (C) {$C$: $(c,a,b)$};
+
+    \onslide<1>{
+    \node (?) [circle,draw] at ($(B)!0.5!(b)$) {?};
+    \draw (A) -- (?);
+    \draw (B) -- (?);
+    \draw (C) -- (?);
+    \draw (a) -- (?);
+    \draw (b) -- (?);
+    \draw (c) -- (?);
+    }
+
+    \onslide<2>{
+    \draw (A) -- (a);
+    \draw (B) -- (b);
+    \draw (C) -- (c);
+    }
+\end{tikzpicture}
+\end{center}
+}
+
+\frame{
+\textbf{Gale-Shapley Algorithm:}
+
+\begin{enumerate}
+\item  Assign every $s\in S$ and $r\in R$ to be unmatched
+\item  Pick some unmatched $s\in S$, let $r$ be the top of $s$'s preference list:
+    \begin{enumerate}
+    \item If $r$ is unmatched set $M(s)=r$
+    \item If $r$ is matched:
+        \begin{enumerate}
+        \item If $r$ prefers $s$ to $M^{-1}(r)$ then set $M(r)=s$
+        \item Otherwise $s$ remains unmatched and remove $r$ from $r$'s preference list.
+       \end{enumerate}
+    \end{enumerate}
+\item  Repeat step 2 until all $s\in S$ are matched.
+\end{enumerate}
+
+}
+
+\frame{
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=1cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{center}
+\begin{tikzpicture}
+    \node (a) [end] at (0,0) {};
+    \node (b) [end] at (0,1) {};
+    \node (c) [end] at (0,2) {};
+    \node (A) [end] at (2,0) {};
+    \node (B) [end] at (2,1) {};
+    \node (C) [end] at (2,2) {};
+    \node [left] at (a) {$a$: $(A,B,C)$};
+    \onslide<1-4>{\node [left] at (b) {$b$: $(C,B,A)$};}
+    \onslide<5-8>{\node [left] at (b) {$b$: $(B,C,A)$};}
+    \onslide<9->{\node [left] at (b) {$b$: $(C,A)$};}
+    \node [left] at (c) {$c$: $(B,A,C)$};
+    \node [right] at (A) {$A$: $(c,b,a)$};
+    \node [right] at (B) {$B$: $(a,c,b)$};
+    \node [right] at (C) {$C$: $(c,a,b)$};
+
+    \onslide<2,5>{
+    \draw (A) -- (a);
+    }
+
+    \onslide<3>{
+    \draw (A) -- (a);
+    \draw (B) -- (c);
+    }
+
+    \onslide<4>{
+    \draw (A) -- (a);
+    \draw (B) -- (c);
+    \draw (C) -- (b);
+    }
+
+    \onslide<6>{
+    \draw (A) -- (a);
+    \draw (B) -- (b);
+    }
+
+    \onslide<7>{
+    \draw (A) -- (a);
+    \draw (B) -- (b);
+    \draw (B) -- (c);
+    }
+
+    \onslide<8-9>{
+    \draw (A) -- (a);
+    \draw (B) -- (c);
+    }
+
+    \onslide<10>{
+    \draw (A) -- (a);
+    \draw (B) -- (c);
+    \draw (C) -- (b);
+    }
+\end{tikzpicture}
+\end{center}
+}
+
+\end{document}
