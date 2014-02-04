@@ -33,7 +33,7 @@ In evolutionary game theory we must consider the _utility_ of a particular strat
 
 Thus the utility to a player playing $\sigma\in\Delta S$ in a population $\chi$:
 
-$$u(s,\chi)=\sum_{s\in S}\sigma(s)u(s,\chi)$$
+$$u(\sigma,\chi)=\sum_{s\in S}\sigma(s)u(s,\chi)$$
 
 The interpretation of the above is that **these payoffs represent the number of descendants that each type of individual has.**
 
