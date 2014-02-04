@@ -1,0 +1,117 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{graphics}
+\usetikzlibrary{calc, shapes}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\title{Connection between Nash flows an optimal flows}
+\subtitle{Game Theory}
+\author{Vincent Knight}
+\date{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+$$(G,r,c)$$
+\begin{itemize}
+    \item $G=(V,E)$, with a defined set of sources $s_i$ and sinks $t_i$;
+    \item A commodity $r_i$;
+    \item A set of latencies: $c_e$.
+\end{itemize}
+}
+
+\frame{
+
+\tikzstyle{vertex} = [draw, shape=circle, minimum width=.3cm, inner sep=.5pt]
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+\pause
+
+Define the potential function:
+
+$$\Phi(f)=\sum_{e\in E}\int_{0}^{f_e}c_e(x)dx$$
+
+\pause
+
+$$\Phi(f)=\alpha+\frac{(1-\alpha)^2}{2}=\frac{1}{2}-\frac{\alpha^2}{2}$$
+
+$$f^*=(0,1)\text{ minimises }\Phi(f)$$
+
+}
+
+\frame{
+
+\tikzstyle{vertex} = [draw, shape=circle, minimum width=.3cm, inner sep=.5pt]
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+\pause
+
+Define marginal costs:
+
+$$c^*=\frac{d}{dx}(xc(x))$$
+
+\pause
+
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=2x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+}
+
+\frame{
+\tikzstyle{vertex} = [draw, shape=circle, minimum width=.3cm, inner sep=.5pt]
+\begin{center}
+\begin{tikzpicture}[sloped]
+    \draw (0,.5) node[vertex] (s1) {\tiny{$s_1$}};
+    \draw (5,.5) node[vertex] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] node [below] {\tiny{$c(x)=2x$}} node [above,red] {\tiny$1-\alpha$} (t);
+    \draw (s1) edge[out=45,in=135,->] node [above] {\tiny{$c(x)=1$}} node [below,red] {\tiny$\alpha$} (t);
+    \node at (s1) [left=.2cm] {$\tiny{1}$};
+\end{tikzpicture}
+\end{center}
+
+\pause
+
+$$\tilde f=(.5,.5)\text{ is a Nash flow}$$
+
+}
+
+\frame{
+\textbf{Theorem:} A feasible flow $\tilde f$ is a Nash flow for $(G,r,c)$ if and only if $\tilde f$ minimises $\Phi(f)$.
+
+\vspace{1cm}
+
+\textbf{Theorem:} A feasible flow $f^*$ is an optimal flow for $(G,r,c)$ if and only if $f^*$ is a Nash flow for $(G,r,c^*)$.
+}
+
+\end{document}
