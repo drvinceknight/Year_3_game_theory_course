@@ -96,11 +96,11 @@ The answer is yes! To prove this we need to define a couple of things.
 
 If we interpret $\delta$ as the probability of the repeated game ending then the _average_ length of the game is:
 
-$$\bar T=\frac{C}{1-\delta}$$
+$$\bar T=\frac{1}{1-\delta}$$
 
 We can use this to define the **average payoffs** per stage:
 
-$$\frac{C}{T}U_i(r,s)=(1-\delta)U_i(r,s)$$
+$$\frac{1}{\bar T}U_i(r,s)=(1-\delta)U_i(r,s)$$
 
 ---
 
