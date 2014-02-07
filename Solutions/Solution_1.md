@@ -109,7 +109,7 @@
 
         **Solution**
 
-        We see that $s_2$ is dominated by $s_3$ so we have:
+        We see that $s_2$ is weakly dominated by $s_3$ so we have:
 
         $$\begin{pmatrix}
         (2,11)&(3,10)&(17,22)\\
@@ -117,7 +117,21 @@
         (4,2)&(7,12)&(18,0)\\
         \end{pmatrix}$$
 
-        However there are no more dominated strategies at this point.
+        Now $r_3$ strictly dominates $r_1$ so we have:
+
+        $$\begin{pmatrix}
+        (27,0)&(1,1)&(1,0)\\
+        (4,2)&(7,12)&(18,0)\\
+        \end{pmatrix}$$
+
+        Now $s_3$ stricly dominates $s_1$ and $s_4$ so we have:
+
+        $$\begin{pmatrix}
+        (1,1)\\
+        (7,12)\\
+        \end{pmatrix}$$
+
+        Thus the predicted rational behaviour is $(r_3, s_3)$.
 
     - $$\begin{pmatrix}
     (3,2)&(3,1)&(2,3)\\
