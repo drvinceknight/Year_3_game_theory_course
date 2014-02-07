@@ -109,7 +109,15 @@
 
         **Solution**
 
-        There are no dominated strategies in this game.
+        We see that $s_2$ is dominated by $s_3$ so we have:
+
+        $$\begin{pmatrix}
+        (2,11)&(3,10)&(17,22)\\
+        (27,0)&(1,1)&(1,0)\\
+        (4,2)&(7,12)&(18,0)\\
+        \end{pmatrix}$$
+
+        However there are no more dominated strategies at this point.
 
     - $$\begin{pmatrix}
     (3,2)&(3,1)&(2,3)\\
@@ -145,7 +153,7 @@
     - $$\begin{pmatrix}
     (2,11)&(1,9)&(3,10)&(17,\underline{22})\\
     (\underline{27},0)&(3,\underline{1})&(1,\underline{1})&(1,0)\\
-    (4,2)&(6,10)&(\underline{7},\underline{12})&(\underline{18},0)\\
+    (4,2)&(\underline{6},10)&(\underline{7},\underline{12})&(\underline{18},0)\\
     \end{pmatrix}$$
 
         We have a single pair of best responses: $(r_3,s_2)$.
