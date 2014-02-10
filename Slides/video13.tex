@@ -27,7 +27,7 @@
 \tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
 \begin{center}
 \begin{tikzpicture}[grow=right, sloped]
-    \node[nature]{Card}
+    \node[nature]{Coin}
         child { node[player] {P1}
             child{ node[end] {} node[right] {$(-3,1)$}  edge from parent node[below] {Red}}
             child{ node[player] (A) {P2}
@@ -58,7 +58,7 @@
 
 \begin{center}
 \begin{tikzpicture}[grow=right, sloped, scale=.6, every node/.style={scale=0.6}]
-    \node[nature]{Card}
+    \node[nature]{Coin}
         child { node[player] {P1}
             child{ node[end] {} node[right] {$(-3,1)$}  edge from parent node[below] {Red}}
             child{ node[player] (A) {P2}
@@ -85,12 +85,6 @@ $$\begin{pmatrix}
 (.75,-2)&(0,-2)\\
 (.5,-2)&(1.75,-2.75)\\
 \end{pmatrix}$$
-}
-
-\frame{
-\begin{center}
-\includegraphics[width=.8\textwidth]{../Course_Notes/plots/L13-plot01.png}
-\end{center}
 }
 
 \end{document}
