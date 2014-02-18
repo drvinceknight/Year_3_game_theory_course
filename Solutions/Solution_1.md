@@ -278,7 +278,7 @@ Explain when games occur that cannot be handled this way.
         a_{11} > a_{21} \text{ and } a_{12}\leq a_{22}\text{ (1)}
         $$
         $$
-        a_{11} \geq a_{21} \text{ and } a_{12}> a_{22}\text{ (2)}
+        a_{11} \geq a_{21} \text{ and } a_{12}< a_{22}\text{ (2)}
         $$
         $$
         a_{11} < a_{21} \text{ and } a_{12}\geq a_{22}\text{ (3)}
