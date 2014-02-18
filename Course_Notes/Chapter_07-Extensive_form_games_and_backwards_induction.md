@@ -18,7 +18,7 @@ If we recall Chapter 1 we have seen how to represent extensive form games as a t
 
 We will now consider the properties that define an extensive form game game tree:
 
-1. Every node is a successor of the (unique) initial node\text{ as shown in Figure \ref{L07-img01}.
+1. Every node is a successor of the (unique) initial node\text{ as shown in Figure \ref{L07-img01}}.
 
 ![A tree with two initial nodes.\label{L07-img01}](images/L07-img01.png)
 
