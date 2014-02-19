@@ -26,7 +26,7 @@
 5. For the following stage games:
 
     i. Plot all possible utility pairs for $T=2$;
-    ii. Recalling that subgame perfect equilibrium for the repeated game must play a stage Nash equilibrium in the final stage attempt to identify a Nash equilibrium for the repeated game that is not a sequence of stage Nash profiles.
+    ii. Recalling that subgame perfect equilibrium for the repeated game must play a stage Nash equilibrium in the final stage attempt to identify a subgame perfect Nash equilibrium for the repeated game that is not a sequence of stage Nash profiles.
 
     $$\begin{pmatrix}
     (4,3)&(7,6)\\
@@ -34,13 +34,14 @@
     \end{pmatrix}$$
 
     $$\begin{pmatrix}
-    (-1,1)&(3,-7)\\
-    (-2,6)&(2,2)
+    (5,8)&(0,3)\\
+    (0,3)&(1,4)\\
+    (1,6)&(0,3)\\
     \end{pmatrix}$$
 
     $$\begin{pmatrix}
-    (5,2)&(2,0)&(6,3)\\
-    (5,2)&(1,3)&(7,1)
+    (1,2)&(0,3)&(-1,1)\\
+    (-1,0)&(-1,-1)&(0,1)
     \end{pmatrix}$$
 
 6. Consider the following stage game:
