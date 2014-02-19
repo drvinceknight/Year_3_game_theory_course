@@ -102,15 +102,15 @@ $$\begin{pmatrix}
 Les us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:
 
 $$\begin{pmatrix}
-(10,1)&(5,1)&(4,-2)\\
-(10,1)&(5,0)&(1,1)
+(10,1)&(5,1)&(1,-2)\\
+(10,1)&(5,0)&(4,2)
 \end{pmatrix}$$
 
 - $r_1$ weakly dominated by $r_2$
 - $s_1$ strictly dominated by $s_3$
-- $s_1$ weakly dominated by $s_2$
+- $s_2$ strictly dominated by $s_1$
 
-Thus $(r_1,s_1)$ is a predicted rational outcome.
+Thus $(r_2,s_3)$ is a predicted rational outcome.
 
 
 ## Not all games can be solved using dominance
