@@ -113,9 +113,9 @@ By definition all subgame Nash equilibria **must** play a stage Nash profile in 
 
 Considering the above game, let us look at this strategy:
 
-> "Play $(r_1,s_1)$ in the first period and then, as long as P2 cooperates play $(r_2,s_3)$ in the second period. If P2 deviates from $s_1$ in the first period then play $(r_2,s_2)$ in the second period."
+> "Play $(r_1,s_1)$ in the first period and then, as long as P2 cooperates play $(r_1,s_3)$ in the second period. If P2 deviates from $s_1$ in the first period then play $(r_2,s_2)$ in the second period."
 
-Firstly this strategy gives the utility vector: $(3,8)$.
+Firstly this strategy gives the utility vector: $(3,7)$.
 
 1. Is this strategy profile a Nash equilibrium (for the entire game)?
 
