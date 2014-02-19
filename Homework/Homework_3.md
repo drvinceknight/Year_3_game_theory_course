@@ -21,9 +21,7 @@
     ![](images/E03-img06.png)\
     ![](images/E03-img07.png)\
 
-4. Consider the game in exercise 3 of homework sheet 2. Assume that the vendors now position themselves sequentially. Model the game in extensive form and find the subgame perfect Nash equilibrium.
-
-5. For the following stage games:
+4. For the following stage games:
 
     i. Plot all possible utility pairs for $T=2$;
     ii. Recalling that subgame perfect equilibrium for the repeated game must play a stage Nash equilibrium in the final stage attempt to identify a subgame perfect Nash equilibrium for the repeated game that is not a sequence of stage Nash profiles.
@@ -44,7 +42,7 @@
     (-1,0)&(-1,-1)&(0,1)
     \end{pmatrix}$$
 
-6. Consider the following stage game:
+5. Consider the following stage game:
 
     $$\begin{pmatrix}
     (-1,1)&(3,-7)\\
