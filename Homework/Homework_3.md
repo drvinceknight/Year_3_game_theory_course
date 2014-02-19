@@ -51,4 +51,4 @@
 
     i. For $\delta=1/3$ obtain the utilities for the infinitely repeated game for the strategies $S_D$: "play the first strategy throughout" and $S_C$: "play the second strategy throughout".
     ii. Plot the space of feasible average payoffs and the space of individually rational payoffs.
-    iii. Obtain $\delta$ that ensures that a strategy profile exists that would give a subgame perfect Nash equilibrium with average payoffs: $(3/2,3/2)$, $(0,3)$, $(2,6)$ and $(2,0)$.
+    iii. State whether or not it is possible to obtain $\delta$ that ensures that a strategy profile exists that would give a subgame perfect Nash equilibrium with average payoffs: $(3/2,3/2)$, $(0,3)$, $(2,6)$ and $(2,0)$ (you are not asked to find these values).
