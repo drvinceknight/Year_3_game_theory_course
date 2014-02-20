@@ -2,19 +2,19 @@
 
 1. Obtain the Nash equilibrium for the following games using backward induction:
 
-![](images/E03-img01.png)\
+![](./images/E03-img01.png)\
 
 **Solution**
 
 $$(AZY,CX)$$
 
-![](images/E03-img02.png)\
+![](./images/E03-img02.png)\
 
 **Solution**
 
 $$(WNYLL,AC)$$
 
-![](images/E03-img03.png)\
+![](./images/E03-img03.png)\
 
 For $P_3$, $B$ dominates $A$, for $P_2$, $B$ dominates $A$, finally $A$ dominates $B$ for $P_1$:
 
@@ -34,7 +34,7 @@ _Player 1 chooses a number $x\geq 0$, which player 2 observes. After this simula
 
 **Solution**
 
-For given $x$: $y_1$ maximises $2y_2y_1+xy_1-y_1^2-x^3/3$, thus $y_^*$ is a solution to:
+For given $x$: $y_1$ maximises $2y_2y_1+xy_1-y_1^2-x^3/3$, thus $y_1^*$ is a solution to:
 
 $$2y_2+x-2y_1-x^2=0\text( as the function has a local maxima which is also global)$$
 
@@ -142,7 +142,7 @@ $$\begin{pmatrix}
 
 **Solution**
 
-![](plots/E03-P01.png)\
+![](plots/HW3-P01.png)\
 
 No other strategy is subgame perfect.
 
@@ -154,7 +154,7 @@ $$\begin{pmatrix}
 
 **Solution**
 
-![](plots/E03-P02.png)\
+![](plots/HW3-P02.png)\
 
 "Play $(r_3,s_1)$ in first round and $(r_2,s_1)$ in second round unless P1 deviates in which case play $(r_2,s_2)$."
 
@@ -172,7 +172,7 @@ $$\begin{pmatrix}
 
 **Solution**
 
-![](plots/E03-P03.png)\
+![](plots/HW3-P03.png)\
 
 "Play $(r_1,s_1)$ in first round and $(r_1,s_2)$ in second round unless P2 deviates in which case play $(r_2,s_3)$."
 
@@ -192,7 +192,7 @@ $$\begin{pmatrix}
 
 i. For $\delta=1/3$ obtain the utilities for the infinitely repeated game for the strategies $S_D$: "play the first strategy throughout" and $S_C$: "play the second strategy throughout".
 ii. Plot the space of feasible average payoffs and the space of individually rational payoffs.
-iii. Obtain $\delta$ that ensures that a strategy profile exists that would give a subgame perfect Nash equilibrium with average payoffs: $(3/2,3/2)$, $(0,3)$, $(2,6)$ and $(2,0)$.
+iii. State whether or not it is possible according to the Folk theorem to obtain $\delta$ that ensures that a strategy profile exists that would give a subgame perfect Nash equilibrium with average payoffs: $(3/2,3/2)$, $(0,3)$, $(2,6)$ and $(2,0)$.
 
 **Solution**
 
@@ -216,4 +216,6 @@ u_1(S_C,S_C)&=3\\
 u_2(S_C,S_C)&=3\\
 \end{cases}$$
 
-![](plots/E03-P04.png)\
+![](./images/E03-img08.png)\
+
+We see that it is possible to find a $\delta$ for $(3/2,3/2)$ and $(0,3)$.
