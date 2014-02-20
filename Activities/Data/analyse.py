@@ -14,8 +14,39 @@ class BestResponsesToMixedStrategies():
     Name,R1,R2,R3
     Vince,HHHHHH,TTTTTT,THTHTH
     """
+    class Player():
+        def __init__(self,row):
+            self.name = row[0]
+            if self.name == '':
+                self.name = 'Anonymous'
+            self.R1 = list(row[1])
+            self.R2 = list(row[2])
+            self.R3 = list(row[3])
+         def score(self,bestresponsetomixedstrategies):
+
+         def game(self, s1, s2):
+            if s1 == 'H' and s2 == 'H':
+                return
+
+
     def __init__(self, f):
-        self.data = [row for row in reader(open(f, 'r'))]
+        self.data = [self.Player(row) for row in reader(open(f, 'r'))]
+        self.computer1 = list(raw_input('Write PC round 1 strategies (eg HHTTHT): '))
+        self.computer2 = list(raw_input('Write PC round 2 strategies (eg HHTTHT): '))
+        self.computer3 = list(raw_input('Write PC round 3 strategies (eg HHTTHT): '))
+
+    def analyse(self):
+        for p in self.data:
+            p.score(self)
+
+
+    def show(self):
+        for p in self.data:
+            print p.name
+            print '\t',p.R1
+            print '\t',p.R2
+            print '\t',p.R3
+
 
 
 class MatchingPennies():
@@ -111,7 +142,8 @@ if __name__ == '__main__':
     from docopt import docopt
     arguments = docopt(__doc__, version='1.0')
 
-    classes = {'matchingpennies': MatchingPennies}
+    classes = {'matchingpennies': MatchingPennies,
+               'bestresponsemixedstrategies': BestResponsesToMixedStrategies}
 
     def returnclass(filename):
         for key in classes:
