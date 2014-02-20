@@ -8,6 +8,15 @@ from __future__ import division
 from csv import reader
 import matplotlib.pyplot as plt
 
+class BestResponsesToMixedStrategies():
+    """
+    A class for an instance of best responses to mixed strategies data which must be of the form:
+    Name,R1,R2,R3
+    Vince,HHHHHH,TTTTTT,THTHTH
+    """
+    def __init__(self, f):
+        self.data = [row for row in reader(open(f, 'r'))]
+
 
 class MatchingPennies():
     """
@@ -17,6 +26,9 @@ class MatchingPennies():
     """
     def __init__(self, f):
         self.data = [row for row in reader(open(f, 'r'))]
+    def show(self):
+        print self.dictionaries
+        print self.mixedstrategiesgame2[-1]
     def analyse(self):
         self.dictionaries = [{'H':0, 'T':0}, {'H':0, 'T':0}, {'H':0, 'T':0}, {'H':0, 'T':0}]
         self.mixedstrategiesgame1 = [[0,0]]
@@ -108,5 +120,4 @@ if __name__ == '__main__':
 
     a = returnclass(arguments['<file>'])
     a.analyse()
-    print a.dictionaries
-    print a.mixedstrategiesgame2[-1]
+    a.show()
