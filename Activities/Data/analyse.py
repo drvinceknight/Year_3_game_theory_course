@@ -19,15 +19,11 @@ class BestResponsesToMixedStrategies():
             self.name = row[0]
             if self.name == '':
                 self.name = 'Anonymous'
-            self.R1 = list(row[1])
-            self.R2 = list(row[2])
-            self.R3 = list(row[3])
-         def score(self,bestresponsetomixedstrategies):
+            self.strategies = {'R1': list(row[1]),
+                               'R2': list(row[2]),
+                               'R3': list(row[2])}
 
-         def game(self, s1, s2):
-            if s1 == 'H' and s2 == 'H':
-                return
-
+            self.score = {'R1':0, 'R2':0, 'R3':0}
 
     def __init__(self, f):
         self.data = [self.Player(row) for row in reader(open(f, 'r'))]
@@ -36,16 +32,79 @@ class BestResponsesToMixedStrategies():
         self.computer3 = list(raw_input('Write PC round 3 strategies (eg HHTTHT): '))
 
     def analyse(self):
+        # Analysing mixed strategies
+        self.strategies = {'R1':0, 'R2':0, 'R3':0}
+        k = 0
         for p in self.data:
-            p.score(self)
+            for pair in zip(self.computer1,p.strategies['R1']):
+                k += 1
+                if pair[1] == 'H':
+                    self.strategies['R1'] += 1
+                    if pair[0] == 'H':
+                        p.score['R1'] += -2
+                    else:
+                        p.score['R1'] += 1
+                else:
+                    if pair[0] == 'H':
+                        p.score['R1'] += 2
+                    else:
+                        p.score['R1'] += -1
+            for pair in zip(self.computer2,p.strategies['R2']):
+                k += 1
+                if pair[1] == 'H':
+                    self.strategies['R2'] += 1
+                    if pair[0] == 'H':
+                        p.score['R2'] += -2
+                    else:
+                        p.score['R2'] += 1
+                else:
+                    if pair[0] == 'H':
+                        p.score['R2'] += 2
+                    else:
+                        p.score['R2'] += -1
+            for pair in zip(self.computer3,p.strategies['R3']):
+                k += 1
+                if pair[1] == 'H':
+                    self.strategies['R3'] += 1
+                    if pair[0] == 'H':
+                        p.score['R3'] += -2
+                    else:
+                        p.score['R3'] += 1
+                else:
+                    if pair[0] == 'H':
+                        p.score['R3'] += 2
+                    else:
+                        p.score['R3'] += -1
+        for rnd in self.strategies:
+            self.strategies[rnd] /= k
+
+            x = self.strategies[rnd]
+            ind = [1,2]
+            width = .5
+            fig, ax = plt.subplots()
+            cax = ax.bar(ind,[x, 1-x], width)
+            ax.set_xticks([i + width / 2 for i in ind])
+            ax.set_xticklabels(['$x$','$1-x$'])
+
+            x1,x2,y1,y2 = plt.axis()
+            plt.axis((x1,x2,0,1))
+
+            plt.title('Mixed strategy for %s' % rnd)
+
+            plt.savefig('%sstrategiesvbestresponse.png' % rnd)
+        self.winner = {'R1':0, 'R2':0, 'R3':0}
+        for rnd in self.winner:
+            self.winner[rnd] = [p for p in self.data if p.score[rnd] == max(p.score[rnd] for p in self.data)]
 
 
     def show(self):
-        for p in self.data:
-            print p.name
-            print '\t',p.R1
-            print '\t',p.R2
-            print '\t',p.R3
+        print self.strategies
+        for rnd in self.winner:
+            print "%s: %s winners" % (rnd, len(self.winner[rnd]))
+            for p in self.winner[rnd]:
+                print '\t',p.name
+                print '\t',p.score[rnd]
+                print '\t',p.strategies[rnd]
 
 
 
