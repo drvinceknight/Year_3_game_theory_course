@@ -9,7 +9,7 @@
 
 2. Obtain the Nash equilibrium for the following game:
 
-    _Player 1 chooses a number $x\geq 0$, which player 2 observes. After this simulataneously and independatly player 1 and player 2 choose $y_2, y_1\in\mathbb{R}$ respectively. The utility to player 1 is given by $2y_2y_1+xy_1-y_1^2-x^3/3$ and the utility to player 2 is given by $-(y_1-2y_2)^2$._
+    _Player 1 chooses a number $x\geq 0$, which player 2 observes. After this simulataneously and independatly player 1 and player 2 choose $y_1, y_2\in\mathbb{R}$ respectively. The utility to player 1 is given by $2y_2y_1+xy_1-y_1^2-x^3/3$ and the utility to player 2 is given by $-(y_1-2y_2)^2$._
 
 3. For each of the following games:
 
