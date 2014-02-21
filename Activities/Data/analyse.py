@@ -21,7 +21,7 @@ class BestResponsesToMixedStrategies():
                 self.name = 'Anonymous'
             self.strategies = {'R1': list(row[1]),
                                'R2': list(row[2]),
-                               'R3': list(row[2])}
+                               'R3': list(row[3])}
 
             self.score = {'R1':0, 'R2':0, 'R3':0}
 
@@ -50,7 +50,6 @@ class BestResponsesToMixedStrategies():
                     else:
                         p.score['R1'] += -1
             for pair in zip(self.computer2,p.strategies['R2']):
-                k += 1
                 if pair[1] == 'H':
                     self.strategies['R2'] += 1
                     if pair[0] == 'H':
@@ -63,7 +62,6 @@ class BestResponsesToMixedStrategies():
                     else:
                         p.score['R2'] += -1
             for pair in zip(self.computer3,p.strategies['R3']):
-                k += 1
                 if pair[1] == 'H':
                     self.strategies['R3'] += 1
                     if pair[0] == 'H':
@@ -105,6 +103,35 @@ class BestResponsesToMixedStrategies():
                 print '\t',p.name
                 print '\t',p.score[rnd]
                 print '\t',p.strategies[rnd]
+            print "Mean score: %s" % (sum([p.score[rnd] for p in self.data]) / len(self.data))
+            plt.figure()
+            plt.hist([p.score[rnd] for p in self.data])
+            plt.title('Mean score for %s' % rnd)
+            plt.savefig('%smeanscore.png' % rnd)
+            positiveplayers = [p for p in self.data if p.score[rnd] > 0]
+            x = [s for p in positiveplayers for s in p.strategies[rnd]].count('H') / len([s for p in positiveplayers for s in p.strategies[rnd]])
+            print "%s had a positive score playing sigma_2 = (%s, %s)" % (len(positiveplayers), x, 1-x)
+            zeroplayers = [p for p in self.data if p.score[rnd] == 0]
+            if len(zeroplayers) > 0:
+                x = [s for p in zeroplayers for s in p.strategies[rnd]].count('H') / len([s for p in zeroplayers for s in p.strategies[rnd]])
+                print "%s had a zero score playing sigma_2 = (%s, %s)" % (len(zeroplayers), x, 1-x)
+            else:
+                print "%s had a zero score" % (len(zeroplayers))
+            negativeplayers = [p for p in self.data if p.score[rnd] < 0]
+            x = [s for p in negativeplayers for s in p.strategies[rnd]].count('H') / len([s for p in negativeplayers for s in p.strategies[rnd]])
+            print "%s had a negative score playing sigma_2 = (%s, %s)" % (len(negativeplayers), x, 1-x)
+        overallwinners = [p for p in self.data if sum([p.score[rnd] for rnd in p.score]) == max([sum([p.score[rnd] for rnd in p.score]) for p in self.data])]
+        print "Overall winners: %s with score: %s" % ([p.name for p in overallwinners],max([sum([p.score[rnd] for rnd in p.score]) for p in self.data]) )
+        for p in overallwinners:
+            print p.name
+            for rnd in p.strategies:
+                print '\tR1: %s' % p.strategies[rnd]
+
+        plt.figure()
+        plt.hist([sum([p.score[rnd] for rnd in p.score]) for p in self.data])
+        plt.title('Cumulative mean score')
+        plt.savefig('cumulativemeanscore.png')
+
 
 
 
