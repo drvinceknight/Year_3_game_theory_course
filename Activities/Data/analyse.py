@@ -106,8 +106,8 @@ class BestResponsesToMixedStrategies():
             print "Mean score: %s" % (sum([p.score[rnd] for p in self.data]) / len(self.data))
             plt.figure()
             plt.hist([p.score[rnd] for p in self.data])
-            plt.title('Mean score for %s' % rnd)
-            plt.savefig('%smeanscore.png' % rnd)
+            plt.title('Score for %s' % rnd)
+            plt.savefig('%sscore.png' % rnd)
             positiveplayers = [p for p in self.data if p.score[rnd] > 0]
             x = [s for p in positiveplayers for s in p.strategies[rnd]].count('H') / len([s for p in positiveplayers for s in p.strategies[rnd]])
             print "%s had a positive score playing sigma_2 = (%s, %s)" % (len(positiveplayers), x, 1-x)
@@ -129,8 +129,8 @@ class BestResponsesToMixedStrategies():
 
         plt.figure()
         plt.hist([sum([p.score[rnd] for rnd in p.score]) for p in self.data])
-        plt.title('Cumulative mean score')
-        plt.savefig('cumulativemeanscore.png')
+        plt.title('Cumulative score')
+        plt.savefig('cumulativescore.png')
 
 
 

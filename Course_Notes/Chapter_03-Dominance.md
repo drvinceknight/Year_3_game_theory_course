@@ -60,7 +60,7 @@ At this point it is straightforward to see that $r_2$ is a strictly dominated st
 
 ---
 
-In an $N$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **weakly dominated** if there is a strategy $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})\leq u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players and there exists a strategy profile $\bar s\in S_{-i}$ such that $u_i(\sigma_i,\bar s)< u_{i}(s_i,s_{-i})$ .
+In an $N$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **weakly dominated** if there is a strategy $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})\geq u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players and there exists a strategy profile $\bar s\in S_{-i}$ such that $u_i(\sigma_i,\bar s)> u_{i}(s_i,s_{-i})$ .
 
 ---
 
