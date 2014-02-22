@@ -54,7 +54,7 @@ Identify all evolutionary stable strategies.
 
     1. $\mu^*=1$: $\delta=(1-\mu)(1+\alpha+4\epsilon(\mu-1))>(1-\mu)(1+\alpha-4\epsilon)>0$ for all $\mu\ne1$ and $\epsilon<\bar\epsilon=\frac{1+\alpha}{4}$. Thus $\sigma_L$ is an ESS.
     2. $\mu^*=0$: $\delta=-\mu(\alpha - 3+4\epsilon\mu)$. If $\alpha\geq 3$ then $\delta \leq 0$ for all values of $\mu, \epsilon$, thus if $L$ is 3 times better than $W$ $\sigma_W$ is not an ESS. If $\alpha<3$ $\delta>0$ $\Leftrightarrow$ $\alpha-3+4\epsilon\mu<0$ $\Rightarrow$ $\alpha-3+4\epsilon\mu<\alpha-3+4\epsilon<0$ for all $\mu\ne 0$ $\epsilon<\bar\epsilon=\frac{3-\alpha}{4}$. Thus $\sigma_W$ is an ESS for $\alpha<3$.
-    3. $\mu^*=\frac{3-\alpha}{4}$: $\delta=-4\epsilon\left(\frac{3-\alpha}{4}-\mu\right)^2<0$ for all $\mu\ne\frac{3-\alpga}{4}$ and for all $\epsilon>0$ so $\sigma_m$ is not an ESS.
+    3. $\mu^*=\frac{3-\alpha}{4}$: $\delta=-4\epsilon\left(\frac{3-\alpha}{4}-\mu\right)^2<0$ for all $\mu\ne\frac{3-\alpha}{4}$ and for all $\epsilon>0$ so $\sigma_m$ is not an ESS.
 
 3. Consider the simple game with two players: an insurer and a driver. The insurer sets a premium price $K\geq 0$, once that is done the driver can choose to buy insurance or not. It is assumed that the driver will have an accident with probability $p$, if the driver has an accident the financial cost is $A$. Represent this game in normal form and obtain the Nash equilibrium for the game as a function of the parameters. Modify your analysis assuming that the utility function to the driver is given by $u(x)=x^{1/\alpha}$ and the utility to the insurer is given by $u(x)=x^{1/\beta}$.
 
