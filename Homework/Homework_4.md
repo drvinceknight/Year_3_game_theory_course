@@ -4,19 +4,21 @@
 1. Consider the pairwise contest games with the following associated two player games:
 
     $$\begin{pmatrix}
-    (2,3)&(4,5)\\
-    (4,5)&(1,2)\\
+    (2,2)&(4,5)\\
+    (5,4)&(1,1)\\
     \end{pmatrix}$$
 
     $$\begin{pmatrix}
-    (1,-1)&(-1,1)\\
-    (-1,1)&(1,-1)
+    (1,1)&(0,0)\\
+    (0,0)&(1,1)
     \end{pmatrix}$$
 
     $$\begin{pmatrix}
-    (\alpha,3)&(1,\beta)\\
-    (1,\beta)&(0,0)\\
+    (\alpha,\alpha)&(1,\beta)\\
+    (\beta,1)&(0,0)\\
     \end{pmatrix}$$
+
+    (Assume $\alpha,\beta >0$ and $\alpha \ne \beta$)
 
     Identify all evolutionary stable strategies.
 

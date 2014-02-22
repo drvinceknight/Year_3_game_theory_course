@@ -3,22 +3,79 @@
 
 1. Consider the pairwise contest games with the following associated two player games:
 
-$$\begin{pmatrix}
-(2,3)&(4,5)\\
-(4,5)&(1,2)\\
-\end{pmatrix}$$
+    $$\begin{pmatrix}
+    (2,2)&(4,5)\\
+    (5,4)&(1,1)\\
+    \end{pmatrix}$$
 
-$$\begin{pmatrix}
-(1,-1)&(-1,1)\\
-(-1,1)&(1,-1)
-\end{pmatrix}$$
+    **Solution**
 
-$$\begin{pmatrix}
-(\alpha,3)&(1,\beta)\\
-(1,\beta)&(0,0)\\
-\end{pmatrix}$$
+    Using the Equality of payoffs theorem we obtain the Nash equilibria:
 
-Identify all evolutionary stable strategies.
+    $$\left\{((1,0),(0,1)),((0,1),(1,0)),((1/2,1/2),(1/2,1/2))\right\}$$
+
+    The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).
+
+    $$u((1/2,1/2),\sigma)=3$$
+
+    and for $\sigma=(\omega,1-\omega)$:
+
+    $$u(\sigma,\sigma)=(2\omega^2+9(1-\omega)\omega+(1-\omega)^2)$$
+
+    thus (after some algebraic manipulation):
+
+    $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) = (2\omega-1)(3\omega-2)$$
+
+    which is negative for $1/2 < \omega < 2/3$ so this mixed strategy is not an ESS.
+
+    $$\begin{pmatrix}
+    (1,1)&(0,0)\\
+    (0,0)&(1,1)
+    \end{pmatrix}$$
+
+    **Solution**
+
+    Using the Equality of payoffs theorem we obtain the Nash equilibria:
+
+    $$\left\{((1,0),(1,0)),((0,1),(0,1)),((1/2,1/2),(1/2,1/2))\right\}$$
+
+    The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).
+
+    $$u((1/2,1/2),\sigma)=1/2$$
+
+    As before:
+
+    $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) = -1/2(2\omega-1)^2$$
+
+    so not an ESS.
+
+    $$\begin{pmatrix}
+    (\alpha,\alpha)&(1,\beta)\\
+    (\beta,1)&(0,0)\\
+    \end{pmatrix}$$
+
+    (Assume $\alpha,\beta >0$ and $\alpha \ne \beta$)
+
+    **Solution**
+
+    If $\beta < \alpha$ then we have a single pure Nash Equilibria $((1,0),(1,0))$ which is also an ESS.
+
+    If $\beta > \alpha$ the Nash Equilbria are $\left\{((1,0),(1,0)),((0,1),(0,1)),((1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)),(1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)))\right\}$. The pure are ESS.
+
+    $$u(\sigma^*,\sigma)=\frac{beta}{\beta-\alpha+1}$$
+
+    and
+
+    $$u(\sigma,\sigma)=-\alpha\omega^2-\omega(1-\omega)(1+\beta)$$
+
+    thus (after some algebra):
+
+    $$u(\sigma^*, \sigma) - u(\sigma,\sigma) > 0 \Leftrightarrow \beta - (\beta-\alpha+1)(\omega^2(\alpha-\beta-1)+\omega(1+\beta)) > 0$$
+
+    However the quadratic in $\omega$ has roots: $\left\{\frac{\beta}{\beta-\alpha+1}, \frac{1}{\beta-\alpha+1}\right\}$ so $\exists$ $\omega$ for which the difference is negative and thus this mixed strategy is not an ESS.
+
+
+    Identify all evolutionary stable strategies.
 
 
 2. Consider the following game:

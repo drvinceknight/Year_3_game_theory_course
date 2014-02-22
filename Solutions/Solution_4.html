@@ -11,22 +11,48 @@
 <body>
 <h1 id="homework-sheet-4---evolutionary-games-games-with-incomplete-information-and-stochastic-games"><span class="header-section-number">1</span> Homework sheet 4 - Evolutionary games, games with incomplete information and stochastic games</h1>
 <ol style="list-style-type: decimal">
-<li>Consider the pairwise contest games with the following associated two player games:</li>
-</ol>
+<li><p>Consider the pairwise contest games with the following associated two player games:</p>
 <p><span class="math">\[\begin{pmatrix}
-(2,3)&amp;(4,5)\\
-(4,5)&amp;(1,2)\\
+(2,2)&amp;(4,5)\\
+(5,4)&amp;(1,1)\\
 \end{pmatrix}\]</span></p>
+<p><strong>Solution</strong></p>
+<p>Using the Equality of payoffs theorem we obtain the Nash equilibria:</p>
+<p><span class="math">\[\left\{((1,0),(0,1)),((0,1),(1,0)),((1/2,1/2),(1/2,1/2))\right\}\]</span></p>
+<p>The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).</p>
+<p><span class="math">\[u((1/2,1/2),\sigma)=3\]</span></p>
+<p>and for <span class="math">\(\sigma=(\omega,1-\omega)\)</span>:</p>
+<p><span class="math">\[u(\sigma,\sigma)=(2\omega^2+9(1-\omega)\omega+(1-\omega)^2)\]</span></p>
+<p>thus (after some algebraic manipulation):</p>
+<p><span class="math">\[u((1/2,1/2), \sigma) - u(\sigma,\sigma) = (2\omega-1)(3\omega-2)\]</span></p>
+<p>which is negative for <span class="math">\(1/2 &lt; \omega &lt; 2/3\)</span> so this mixed strategy is not an ESS.</p>
 <p><span class="math">\[\begin{pmatrix}
-(1,-1)&amp;(-1,1)\\
-(-1,1)&amp;(1,-1)
+(1,1)&amp;(0,0)\\
+(0,0)&amp;(1,1)
 \end{pmatrix}\]</span></p>
+<p><strong>Solution</strong></p>
+<p>Using the Equality of payoffs theorem we obtain the Nash equilibria:</p>
+<p><span class="math">\[\left\{((1,0),(1,0)),((0,1),(0,1)),((1/2,1/2),(1/2,1/2))\right\}\]</span></p>
+<p>The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).</p>
+<p><span class="math">\[u((1/2,1/2),\sigma)=1/2\]</span></p>
+<p>As before:</p>
+<p><span class="math">\[u((1/2,1/2), \sigma) - u(\sigma,\sigma) = -1/2(2\omega-1)^2\]</span></p>
+<p>so not an ESS.</p>
 <p><span class="math">\[\begin{pmatrix}
-(\alpha,3)&amp;(1,\beta)\\
-(1,\beta)&amp;(0,0)\\
+(\alpha,\alpha)&amp;(1,\beta)\\
+(\beta,1)&amp;(0,0)\\
 \end{pmatrix}\]</span></p>
-<p>Identify all evolutionary stable strategies.</p>
-<ol start="2" style="list-style-type: decimal">
+<p>(Assume <span class="math">\(\alpha,\beta &gt;0\)</span> and <span class="math">\(\alpha \ne \beta\)</span>)</p>
+<p><strong>Solution</strong></p>
+<p>If <span class="math">\(\beta &lt; \alpha\)</span> then we have a single pure Nash Equilibria <span class="math">\(((1,0),(1,0))\)</span> which is also an ESS.</p>
+<p>If <span class="math">\(\beta &gt; \alpha\)</span> the Nash Equilbria are <span class="math">\(\left\{((1,0),(1,0)),((0,1),(0,1)),((1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)),(1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)))\right\}\)</span>. The pure are ESS.</p>
+<p><span class="math">\[u(\sigma^*,\sigma)=\frac{beta}{\beta-\alpha+1}\]</span></p>
+<p>and</p>
+<p><span class="math">\[u(\sigma,\sigma)=-\alpha\omega^2-\omega(1-\omega)(1+\beta)\]</span></p>
+<p>thus (after some algebra):</p>
+<p><span class="math">\[u(\sigma^*, \sigma) - u(\sigma,\sigma) &gt; 0 \Leftrightarrow \beta - (\beta-\alpha+1)(\omega^2(\alpha-\beta-1)+\omega(1+\beta)) &gt; 0\]</span></p>
+<p>However the quadratic in <span class="math">\(\omega\)</span> has roots: <span class="math">\(\left\{\frac{\beta}{\beta-\alpha+1}, \frac{1}{\beta-\alpha+1}\right\}\)</span> so <span class="math">\(\exists\)</span> <span class="math">\(\omega\)</span> for which the difference is negative and thus this mixed strategy is not an ESS.</p>
+<p>Identify all evolutionary stable strategies.</p></li>
 <li><p>Consider the following game:</p>
 <blockquote>
 <p>In a mathematics department, researchers can choose to use one of two systems for typesetting their research papers: LaTeX or Word. We will refer to these two strategies as <span class="math">\(L\)</span> and <span class="math">\(W\)</span> respectively. A user of <span class="math">\(W\)</span> receives a basic utility of 1 and as <span class="math">\(L\)</span> is more widely used by mathematicians out of the department and is in general considered to be a better system a user of <span class="math">\(L\)</span> gets a basic utility of <span class="math">\(\alpha &gt; 1\)</span>. Members of the mathematics department often collaborate and as such it is beneficial for the researchers to use the same typesetting system. If we let <span class="math">\(\mu\)</span> represent the proportion of users of <span class="math">\(L\)</span> we let:</p>
