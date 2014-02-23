@@ -127,10 +127,49 @@
 
     Assume both players play either game $A$ or game $B$ with probability $1/2$, neither player knows which game is played. Obtain the Nash equilibrium for this game.
 
+    **Solution**
+
+    The described game is akin to the following game:
+
+    $$
+    \begin{pmatrix}
+    (5/2,1) & (0,0) & (1,5/2)\\
+    (1,3/2) & (-3/2,-1) & (3/2,1)\\
+    \end{pmatrix}
+    $$
+
+    We see that $s_2$ is dominated and sole the game using the equality of payoffs theorem to give the following Nash equilibrium: $$((1/4,3/4), (1/4,3/4))$$
+
 4. Repeat the analysis of the principal agent game assuming that $p$ is the probability of the project being successful in case of a high level of effort by the employee.
 
-i. What are the expected utilities to the employer and the employee?
-ii. Obtain a condition for which the employer should offer a bonus.
+    i. What are the expected utilities to the employer and the employee?
+
+    **Solution**
+
+    Repeating the analysis, we see that the employee will carry out a high effort iff:
+
+    $$p(\omega+B-1)^\alpha+(1-p)(\omega-1)^\alpha\geq \omega^\alpha$$
+
+    Following the same argument as in the notes we arrive at:
+
+    $$p(\omega+B-1)^\alpha+(1-p)(\omega-1)^\alpha=1= \omega$$
+
+    thus:
+
+    $$\beta=(1/p)^(1/\alpha)$$
+
+    The utilities are then:
+
+    Employer: $$p(K-1-(1/p)^(1/\alpha))+(1-p)(\kappa-1)$$
+    Employee: $$1$$
+
+    ii. Obtain a condition for which the employer should offer a bonus.
+
+    **Solution**
+
+    If no bonus is offered the employee has no incentive for a high effort thus $\kappa=\omega=1$, thus the employer should offer a bonus iff:
+
+    $$p(K-1-(1/p)^(1/\alpha))+(1-p)(\kappa-1)\geq 0$$
 
 5. Obtain the Markov Nash equilibrium for the following games assuming $\delta=1/4$.
 
