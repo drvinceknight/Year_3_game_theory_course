@@ -32,7 +32,19 @@
 
     What are the evolutionary stable strategies?
 
-3. Consider the simple game with two players: an insurer and a driver. The insurer sets a premium price $K\geq 0$, once that is done the driver can choose to buy insurance or not. It is assumed that the driver will have an accident with probability $p$, if the driver has an accident the financial cost is $A$. Represent this game in extensive form and obtain the Nash equilibrium for the game as a function of the parameters. Modify your analysis assuming that the utility function to the driver is given by $u(x)=x^{1/\alpha}$ and the utility to the insurer is given by $u(x)=x^{1/\beta}$.
+3. Consider the following two normal form games:
+
+    $$A=\begin{pmatrix}
+    (3,0)&(-1,-1)&(1,2)\\
+    (1,0)&(-1,1)&(2,0)\\
+    \end{pmatrix}$$
+
+    $$B=\begin{pmatrix}
+    (2,2)&(1,1)&(1,3)\\
+    (1,3)&(-2,-3)&(4,2)\\
+    \end{pmatrix}$$
+
+    Assume both players play either game $A$ or game $B$ with probability $1/2$, neither player knows which game is played. Obtain the Nash equilibrium for this game.
 
 4. Repeat the analysis of the principal agent game assuming that $p$ is the probability of the project being successful in case of a high level of effort by the employee.
 
@@ -44,12 +56,3 @@
     ![](images/E04-img01.png)\
     ![](images/E04-img02.png)\
     ![](images/E04-img03.png)\
-
-6. Construct a two state stochastic game corresponding to an infinitely repeated game with the following stage game:
-
-    $$\begin{pmatrix}
-    (2,2)&(0,3)\\
-    (3,0)&(1,1)
-    \end{pmatrix}$$
-
-    Show that the strategy $s_g$ ("player the first strategy until either player plays the second strategy") can be represented as a Markov strategy. For what values of $\delta$ is both players playing this strategy a Markov Nash equilibrium?
