@@ -94,7 +94,7 @@ The answer is yes! To prove this we need to define a couple of things.
 
 ---
 
-If we interpret $\delta$ as the probability of the repeated game ending then the _average_ length of the game is:
+If we interpret $\delta$ as the probability of the repeated game not ending then the _average_ length of the game is:
 
 $$\bar T=\frac{1}{1-\delta}$$
 
