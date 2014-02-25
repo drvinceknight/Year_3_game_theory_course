@@ -171,7 +171,7 @@
 
     $$p(K-1-(1/p)^(1/\alpha))+(1-p)(\kappa-1)\geq 0$$
 
-5. Obtain the Markov Nash equilibrium for the following games assuming $\delta=1/4$.
+5. Obtain the Markov Nash equilibrium (in pure strategies if it exists) for the following games assuming $\delta=1/4$.
 
     ![](images/E04-img01.png)\
 
@@ -197,4 +197,49 @@
 
 
     ![](images/E04-img02.png)\
+
+    **Solution**
+
+    State $y$ gives no value to either player so we only need to consider state $x$. Let the future gains to player 1 in state $x$ be $u$ and the future gains to player 2 in state $x$ be $v$. Thus the players are facing the following game:
+
+    $$\begin{pmatrix}
+    (1+u/8, 3+v/8) & (2+u/4, 1+v/4)\\
+    (7, 0) & (1+u/40, 2+9v/40)
+    \end{pmatrix}$$
+
+
+    There are four possible equilibria:
+
+    1. $(a,b)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+v/4$ $\Rightarrow$ $u\geq 48$ and $v\leq 16$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
+
+    2. $(a,b)$ which requires: $2+u/4\geq 1+u/40$ and $3+v/8\leq 1+v/4$ $\Rightarrow$ $u\geq -40/9$ and $v\geq 16$. However if this is the equilibria then $u=8/3$ and $v=4/3$ which contradicts the constraints.
+
+    3. $(b,c)$ which requires: $7\geq 1+u/8$ and $0\geq 2+9v/40$ $\Rightarrow$ $u\leq 48$ and $v\leq -80/9$. However if this is the equilibria then $u=7$ and $v=0$ which contradicts the constraints.
+
+    4. $(a,b)$ which requires: $2+u/4\leq 1+u/40$ and $2+9v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80/9$. However if this is the equilibria then $u=40/39$ and $v=80/31$ which contradicts the constraints.
+
+    Thus no Nash equilibrium exists in pure strategies.
+
     ![](images/E04-img03.png)\
+
+    **Solution**
+
+    State $y$ gives no value to either player so we only need to consider state $x$. Let the future gains to player 1 in state $x$ be $u$ and the future gains to player 2 in state $x$ be $v$. Thus the players are facing the following game:
+
+    $$\begin{pmatrix}
+    (1+u/8, 3+v/8) & (2+7u/40, 1+7v/40)\\
+    (7, 0) & (1+u/40, 2+9v/40)
+    \end{pmatrix}$$
+
+
+    There are four possible equilibria:
+
+    1. $(a,b)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+7v/40$ $\Rightarrow$ $u\geq 48$ and $v\leq 40$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
+
+    2. $(a,b)$ which requires: $2+u/4\geq 1+u/40$ and $3+v/8\leq 1+v/4$ $\Rightarrow$ $u\geq -40/9$ and $v\geq 16$. However if this is the equilibria then $u=8/3$ and $v=4/3$ which contradicts the constraints.
+
+    3. $(b,c)$ which requires: $7\geq 1+u/8$ and $0\geq 2+9v/40$ $\Rightarrow$ $u\leq 48$ and $v\leq -80/9$. However if this is the equilibria then $u=7$ and $v=0$ which contradicts the constraints.
+
+    4. $(a,b)$ which requires: $2+u/4\leq 1+u/40$ and $2+9v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80/9$. However if this is the equilibria then $u=40/39$ and $v=80/31$ which contradicts the constraints.
+
+    Thus no Nash equilibrium exists in pure strategies.

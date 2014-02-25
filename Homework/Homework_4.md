@@ -51,7 +51,7 @@
     i. What are the expected utilities to the employer and the employee?
     ii. Obtain a condition for which the employer should offer a bonus.
 
-5. Obtain the Markov Nash equilibrium for the following games assuming $\delta=1/4$.
+5. Obtain the Markov Nash equilibrium (in pure strategies if it exists) for the following games assuming $\delta=1/4$.
 
     ![](images/E04-img01.png)\
     ![](images/E04-img02.png)\
