@@ -10,9 +10,9 @@
     \node[player]{a: Celine}
         child {node[player] (b) {b: Bob}
                 child {node[end] {} node[right] {$(2,3)$} edge from parent node[below] {Comedy}}
-                child {node[end] {} node[right] {$(1,1)$} edge from parent node[below] {Sports}} edge from parent node[below] {Comedy}}
+                child {node[end] {} node[right] {$(0,0)$} edge from parent node[below] {Sports}} edge from parent node[below] {Comedy}}
         child {node[player] (c) {c: Bob}
-                child {node[end] {} node[right] {$(0,0)$} edge from parent node[below] {Comedy}}
+                child {node[end] {} node[right] {$(1,1)$} edge from parent node[below] {Comedy}}
                 child {node[end] {} node[right] {$(3,2)$} edge from parent node[below] {Sports}} edge from parent node[below] {Sports}};
             \draw[dashed] (b) -- (c);
 \end{tikzpicture}
