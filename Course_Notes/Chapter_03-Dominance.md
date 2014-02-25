@@ -88,7 +88,7 @@ This chain of assumptions is called **Common knowledge of rationality** (CKR). B
 
 ### Example
 
-Les us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:
+Let us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:
 
 $$\begin{pmatrix}
 (1,0)&(1,2)&(0,1)\\
@@ -99,7 +99,7 @@ $$\begin{pmatrix}
 
 ### Example
 
-Les us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:
+Let us try to predict rational behaviour in the following game using iterated elimination of dominated strategies:
 
 $$\begin{pmatrix}
 (10,1)&(5,1)&(1,-2)\\

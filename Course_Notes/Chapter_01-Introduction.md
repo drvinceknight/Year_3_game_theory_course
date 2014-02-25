@@ -59,14 +59,14 @@ If we assume that this is the order with which decisions take place it should be
 
 (This is actually using a process called **backward induction** but we'll see that formally a bit later.)
 
-Of course \text{as shown in Figure \ref{L01-img04}} we can simply represent this game in a different way (remember that in the above description we did not mention who would be making the initial decision.
+Of course \text{as shown in Figure \ref{L01-img04}} we can simply represent this game in a different way (remember that in the above description we did not mention who would be making the initial decision).
 
 ![Celine and Bob\label{L01-img04}](images/L01-img04.png)
 
 In this case it should again be relatively straightforward to predict what will happen:
 
-1. Celine sees that no matter what he picks Bob will pick the same type of movie;
-2. Celine can thus pick a comedy to ensure that he gets a slightly higher utility.
+1. Celine sees that no matter what she picks Bob will pick the same type of movie;
+2. Celine can thus pick sports to ensure that she gets a slightly higher utility.
 
 The main assumption we are making here is concerned with the amount of information available to both players at different points of the game. In both cases we have here assumed that the information available at nodes **b** and **c** is different. This is not always the case.
 
