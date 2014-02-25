@@ -173,6 +173,28 @@
 
 5. Obtain the Markov Nash equilibrium for the following games assuming $\delta=1/4$.
 
-![](images/E04-img01.png)\
-![](images/E04-img02.png)\
-![](images/E04-img03.png)\
+    ![](images/E04-img01.png)\
+
+    **Solution**
+
+    State $y$ gives no value to either player so we only need to consider state $x$. Let the future gains to player 1 in state $x$ be $u$ and the future gains to player 2 in state $x$ be $v$. Thus the players are facing the following game:
+
+    $$\begin{pmatrix}
+    (3+3u/40, 2+3v/40) & (1+u/20, 7+v/20)\\
+    (2, 1) & (6+u/4, 3+v/4)
+    \end{pmatrix}$$
+
+
+    There are four possible equilibria:
+
+    1. $(a,b)$ which requires: $3+3u/40\geq 2$ and $2+3v/40\geq 7+v/20$ $\Rightarrow$ $u\geq -40/3$ and $v\geq 200$. However if this is the equilibria then $u=120/37$ and $v=80/37$ which contradicts the constraints.
+
+    2. $(a,d)$ which requires: $1+u/20\geq 6+u/4$ and $2+3v/40\leq 7+v/20$ $\Rightarrow$ $u\leq -25$ and $v\leq 200$. However if this is the equilibria then $u=20/19$ and $v=140/19$ which contradicts the constraints.
+
+    3. $(b,c)$ which requires: $2\geq 3+3u/40$ and $1\geq 3+v/4$ $\Rightarrow$ $u\leq -40/3$ and $v\leq -8$. However if this is the equilibria then $u=2$ and $v=1$ which contradicts the constraints.
+
+    4. $(b,d)$ which requires: $2\leq 3+3u/40$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -40/3$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which \textbf{does not} contradict the constraints.
+
+
+    ![](images/E04-img02.png)\
+    ![](images/E04-img03.png)\
