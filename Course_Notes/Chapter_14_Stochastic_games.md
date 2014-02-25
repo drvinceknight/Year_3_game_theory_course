@@ -68,7 +68,7 @@ The transition probabilities corresponding to state $x$:
 
 $$
 \begin{pmatrix}
-(.8,2)&(1,0)\\
+(.5,.5)&(1,0)\\
 (1,0)&(1,0)
 \end{pmatrix}
 $$
