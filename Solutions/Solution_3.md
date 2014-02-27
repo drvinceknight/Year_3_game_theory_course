@@ -66,9 +66,9 @@ $$
 \end{cases}
 $$
 
-This gives $u_1=x^2+x^2-x^2/4-x^3/3=x^2(7/4-x/3)$ which has a maxima at $x=0$ for $x\geq 0$. This gives:
+This gives $u_1=x^2+x^2-x^2/4-x^3/3=x^2(7/4-x/3)$ which has a maxima at $x=7/2$ for $x\geq 0$. This gives:
 
-$$(\tilde x, \tilde y_1, \tilde y_2) = (0,0,0)$$
+$$(\tilde x, \tilde y_1, \tilde y_2) = (7/2,7/2,7/4)$$
 
 3. For each of the following games:
 
