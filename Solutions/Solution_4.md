@@ -187,7 +187,7 @@
 
     There are four possible equilibria:
 
-    1. $(a,b)$ which requires: $3+3u/40\geq 2$ and $2+3v/40\geq 7+v/20$ $\Rightarrow$ $u\geq -40/3$ and $v\geq 200$. However if this is the equilibria then $u=120/37$ and $v=80/37$ which contradicts the constraints.
+    1. $(a,c)$ which requires: $3+3u/40\geq 2$ and $2+3v/40\geq 7+v/20$ $\Rightarrow$ $u\geq -40/3$ and $v\geq 200$. However if this is the equilibria then $u=120/37$ and $v=80/37$ which contradicts the constraints.
 
     2. $(a,d)$ which requires: $1+u/20\geq 6+u/4$ and $2+3v/40\leq 7+v/20$ $\Rightarrow$ $u\leq -25$ and $v\leq 200$. However if this is the equilibria then $u=20/19$ and $v=140/19$ which contradicts the constraints.
 
@@ -211,7 +211,7 @@
 
     There are four possible equilibria:
 
-    1. $(a,b)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+v/4$ $\Rightarrow$ $u\geq 48$ and $v\leq 16$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
+    1. $(a,c)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+v/4$ $\Rightarrow$ $u\geq 48$ and $v\leq 16$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
 
     2. $(a,b)$ which requires: $2+u/4\geq 1+u/40$ and $3+v/8\leq 1+v/4$ $\Rightarrow$ $u\geq -40/9$ and $v\geq 16$. However if this is the equilibria then $u=8/3$ and $v=4/3$ which contradicts the constraints.
 
@@ -235,7 +235,7 @@
 
     There are four possible equilibria:
 
-    1. $(a,b)$ which requires: $1+u/20\geq 7$ and $3+v/20\geq 1+7v/40$ $\Rightarrow$ $u\geq 120$ and $v\leq 16$. However if this is the equilibria then $u=20/19$ and $v=60/19$ which contradicts the constraints.
+    1. $(a,c)$ which requires: $1+u/20\geq 7$ and $3+v/20\geq 1+7v/40$ $\Rightarrow$ $u\geq 120$ and $v\leq 16$. However if this is the equilibria then $u=20/19$ and $v=60/19$ which contradicts the constraints.
 
     2. $(a,b)$ which requires: $2+7u/40\geq 1+u/40$ and $1+7v/40\geq 3+v/20$ $\Rightarrow$ $u\geq -20/3$ and $v\leq 16$. However if this is the equilibria then $u=80/33$ and $v=40/33$ which does not contradict any constraints.
 
