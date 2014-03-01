@@ -193,7 +193,7 @@
 
     3. $(b,c)$ which requires: $2\geq 3+3u/40$ and $1\geq 3+v/4$ $\Rightarrow$ $u\leq -40/3$ and $v\leq -8$. However if this is the equilibria then $u=2$ and $v=1$ which contradicts the constraints.
 
-    4. $(b,d)$ which requires: $2\leq 3+3u/40$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -40/3$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which \textbf{does not} contradict the constraints.
+    4. $(b,d)$ which requires: $2\leq 3+3u/40$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -40/3$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which **does not** contradict the constraints.
 
     Thus $(b,d)$ is the unique pure strategy equilibrium.
 
