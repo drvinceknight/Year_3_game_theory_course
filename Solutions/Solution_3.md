@@ -36,11 +36,13 @@ _Player 1 chooses a number $x\geq 0$, which player 2 observes. After this simula
 
 For given $x$: $y_1$ maximises $2y_2y_1+xy_1-y_1^2-x^3/3$, thus $y_1^*$ is a solution to:
 
-$$2y_2+x-2y_1-x^2=0\text( as the function has a local maxima which is also global)$$
+$$2y_2+x-2y_1=0$$
+
+(As the function has a local maxima which is global)
 
 so:
 
-$$y_1^*=\frac{x^2-x-2y_2}{2}$$
+$$y_1^*=\frac{2y_2+x}{2}$$
 
 Similarly:
 
@@ -50,7 +52,7 @@ Thus $(\tilde y_1, \tilde y_2)$ solve the following system of equations:
 
 $$
 \begin{cases}
-\tilde y_1 = \frac{x^2 - x - \tilde y_1}{2}\\
+\tilde y_1 = \frac{\tilde y_1+x}{2}\\
 \tilde y_2 = \frac{\tilde y_1}{2}
 \end{cases}
 $$
@@ -59,14 +61,14 @@ Thus:
 
 $$
 \begin{cases}
-\tilde y_1 =\frac{x^2-x}{3}\\
-\tilde y_2 = \frac{x^2-x}{6}
+\tilde y_1 =x\\
+\tilde y_2 = \frac{x}{2}
 \end{cases}
 $$
 
-This gives $u_1=-x^2/3$ thus using backwards induction we have:
+This gives $u_1=x^2+x^2-x^2-x^3/3=x^2(1-x/3)$ which has a maxima at $x=2$ for $x\geq 0$. This gives:
 
-$$(\tilde x, \tilde y_1, \tilde y_2) = (0,0,0)$$
+$$(\tilde x, \tilde y_1, \tilde y_2) = (2,2,1)$$
 
 3. For each of the following games:
 

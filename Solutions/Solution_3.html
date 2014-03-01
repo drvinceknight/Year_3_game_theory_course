@@ -27,27 +27,28 @@
 <p><em>Player 1 chooses a number \(x\geq 0\), which player 2 observes. After this simulataneously and independatly player 1 and player 2 choose \(y_1, y_2\in\mathbb{R}\) respectively. The utility to player 1 is given by \(2y_2y_1+xy_1-y_1^2-x^3/3\) and the utility to player 2 is given by \(-(y_1-2y_2)^2\).</em></p>
 <p><strong>Solution</strong></p>
 <p>For given \(x\): \(y_1\) maximises \(2y_2y_1+xy_1-y_1^2-x^3/3\), thus \(y_1^*\) is a solution to:</p>
-<p>\[2y_2+x-2y_1-x^2=0\text( as the function has a local maxima which is also global)\]</p>
+<p>\[2y_2+x-2y_1=0\]</p>
+<p>(As the function has a local maxima which is global)</p>
 <p>so:</p>
-<p>\[y_1^*=\frac{x^2-x-2y_2}{2}\]</p>
+<p>\[y_1^*=\frac{2y_2+x}{2}\]</p>
 <p>Similarly:</p>
 <p>\[y_2^*=\frac{y_1}{2}\]</p>
 <p>Thus \((\tilde y_1, \tilde y_2)\) solve the following system of equations:</p>
 <p>\[
 \begin{cases}
-\tilde y_1 = \frac{x^2 - x - \tilde y_1}{2}\\
+\tilde y_1 = \frac{\tilde y_1+x}{2}\\
 \tilde y_2 = \frac{\tilde y_1}{2}
 \end{cases}
 \]</p>
 <p>Thus:</p>
 <p>\[
 \begin{cases}
-\tilde y_1 =\frac{x^2-x}{3}\\
-\tilde y_2 = \frac{x^2-x}{6}
+\tilde y_1 =x\\
+\tilde y_2 = \frac{x}{2}
 \end{cases}
 \]</p>
-<p>This gives \(u_1=-x^2/3\) thus using backwards induction we have:</p>
-<p>\[(\tilde x, \tilde y_1, \tilde y_2) = (0,0,0)\]</p>
+<p>This gives \(u_1=x^2+x^2-x^2-x^3/3=x^2(1-x/3)\) which has a maxima at \(x=2\) for \(x\geq 0\). This gives:</p>
+<p>\[(\tilde x, \tilde y_1, \tilde y_2) = (2,2,1)\]</p>
 <ol start="3" style="list-style-type: decimal">
 <li>For each of the following games:</li>
 </ol>
