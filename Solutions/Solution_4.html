@@ -20,12 +20,13 @@
 <p>Using the Equality of payoffs theorem we obtain the Nash equilibria:</p>
 <p><span class="math">\[\left\{((1,0),(0,1)),((0,1),(1,0)),((1/2,1/2),(1/2,1/2))\right\}\]</span></p>
 <p>The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).</p>
-<p><span class="math">\[u((1/2,1/2),\sigma)=3\]</span></p>
-<p>and for <span class="math">\(\sigma=(\omega,1-\omega)\)</span>:</p>
+<p>for <span class="math">\(\sigma=(\omega,1-\omega)\)</span>:</p>
+<p><span class="math">\[u((1/2,1/2),\sigma)=\omega+2-2\omega=2-\omega\]</span></p>
+<p>and:</p>
 <p><span class="math">\[u(\sigma,\sigma)=(2\omega^2+9(1-\omega)\omega+(1-\omega)^2)\]</span></p>
 <p>thus (after some algebraic manipulation):</p>
-<p><span class="math">\[u((1/2,1/2), \sigma) - u(\sigma,\sigma) = (2\omega-1)(3\omega-2)\]</span></p>
-<p>which is negative for <span class="math">\(1/2 &lt; \omega &lt; 2/3\)</span> so this mixed strategy is not an ESS.</p>
+<p><span class="math">\[u((1/2,1/2), \sigma) - u(\sigma,\sigma) = 6\omega^2-8\omega+1\]</span></p>
+<p>which is negative for <span class="math">\(\omega &gt; 2/3-\sqrt{10}/6\)</span> so this mixed strategy is not an ESS.</p>
 <p><span class="math">\[\begin{pmatrix}
 (1,1)&amp;(0,0)\\
 (0,0)&amp;(1,1)
@@ -34,24 +35,11 @@
 <p>Using the Equality of payoffs theorem we obtain the Nash equilibria:</p>
 <p><span class="math">\[\left\{((1,0),(1,0)),((0,1),(0,1)),((1/2,1/2),(1/2,1/2))\right\}\]</span></p>
 <p>The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).</p>
-<p><span class="math">\[u((1/2,1/2),\sigma)=1/2\]</span></p>
 <p>As before:</p>
+<p><span class="math">\[u((1/2,1/2),\sigma)=1/2\]</span></p>
+<p>and:</p>
 <p><span class="math">\[u((1/2,1/2), \sigma) - u(\sigma,\sigma) = -1/2(2\omega-1)^2\]</span></p>
 <p>so not an ESS.</p>
-<p><span class="math">\[\begin{pmatrix}
-(\alpha,\alpha)&amp;(1,\beta)\\
-(\beta,1)&amp;(0,0)\\
-\end{pmatrix}\]</span></p>
-<p>(Assume <span class="math">\(\alpha,\beta &gt;0\)</span> and <span class="math">\(\alpha \ne \beta\)</span>)</p>
-<p><strong>Solution</strong></p>
-<p>If <span class="math">\(\beta &lt; \alpha\)</span> then we have a single pure Nash Equilibria <span class="math">\(((1,0),(1,0))\)</span> which is also an ESS.</p>
-<p>If <span class="math">\(\beta &gt; \alpha\)</span> the Nash Equilbria are <span class="math">\(\left\{((1,0),(1,0)),((0,1),(0,1)),((1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)),(1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)))\right\}\)</span>. The pure are ESS.</p>
-<p><span class="math">\[u(\sigma^*,\sigma)=\frac{beta}{\beta-\alpha+1}\]</span></p>
-<p>and</p>
-<p><span class="math">\[u(\sigma,\sigma)=-\alpha\omega^2-\omega(1-\omega)(1+\beta)\]</span></p>
-<p>thus (after some algebra):</p>
-<p><span class="math">\[u(\sigma^*, \sigma) - u(\sigma,\sigma) &gt; 0 \Leftrightarrow \beta - (\beta-\alpha+1)(\omega^2(\alpha-\beta-1)+\omega(1+\beta)) &gt; 0\]</span></p>
-<p>However the quadratic in <span class="math">\(\omega\)</span> has roots: <span class="math">\(\left\{\frac{\beta}{\beta-\alpha+1}, \frac{1}{\beta-\alpha+1}\right\}\)</span> so <span class="math">\(\exists\)</span> <span class="math">\(\omega\)</span> for which the difference is negative and thus this mixed strategy is not an ESS.</p>
 <p>Identify all evolutionary stable strategies.</p></li>
 <li><p>Consider the following game:</p>
 <blockquote>
