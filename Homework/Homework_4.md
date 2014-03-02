@@ -13,13 +13,6 @@
     (0,0)&(1,1)
     \end{pmatrix}$$
 
-    $$\begin{pmatrix}
-    (\alpha,\alpha)&(1,\beta)\\
-    (\beta,1)&(0,0)\\
-    \end{pmatrix}$$
-
-    (Assume $\alpha,\beta >0$ and $\alpha \ne \beta$)
-
     Identify all evolutionary stable strategies.
 
 
