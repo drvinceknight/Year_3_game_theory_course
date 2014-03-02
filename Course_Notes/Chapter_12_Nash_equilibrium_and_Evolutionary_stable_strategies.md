@@ -120,7 +120,7 @@ which corresponds to:
 $$(1-\epsilon)u(\sigma^*,\sigma^*)+\epsilon u(\sigma^*,\sigma)>(1-\epsilon)u(\sigma,\sigma^*)+\epsilon u(\sigma,\sigma)$$
 
 - If condition 1 of the theorem holds then the above inequality can be satisfied for $\epsilon$ sufficiently small. If condition 2 holds then the inequality is satisfied.
-- Let us assume that $u(\sigma^*,\sigma^*)<u(\sigma,\sigma^*)$:
+- Conversely:
 
     - If $u(\sigma^*,\sigma^*)<u(\sigma,\sigma^*)$ then we can find $\epsilon$ sufficiently small such that the inequality is violated. Thus the inequality implies $u(\sigma^*,\sigma^*)\geq u(\sigma,\sigma^*)$.
 
