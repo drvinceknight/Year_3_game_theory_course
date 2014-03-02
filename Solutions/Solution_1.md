@@ -170,7 +170,7 @@
     (4,2)&(\underline{6},10)&(\underline{7},\underline{12})&(\underline{18},0)\\
     \end{pmatrix}$$
 
-        We have a single pair of best responses: $(r_3,s_2)$.
+        We have a single pair of best responses: $(r_3,s_3)$.
 
     - $$\begin{pmatrix}
     (\underline{3},2)&(\underline{3},1)&(2,\underline{3})\\
