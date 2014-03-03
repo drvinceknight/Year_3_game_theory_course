@@ -121,7 +121,7 @@ $$
 
 A strategy $\sigma^*\in\Delta S$ is called an **Evolutionary Stable Strategy** if there exists an $0<\bar\epsilon<1$ such that for every $0<\epsilon<\bar \epsilon$ and every $\sigma\ne \sigma^*$:
 
-$$u(\sigma^*,\chi)>u(\sigma,\chi)$$
+$$u(\sigma^*,\chi_\epsilon)>u(\sigma,\chi_\epsilon)$$
 
 ---
 
