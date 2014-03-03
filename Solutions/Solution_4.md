@@ -16,17 +16,19 @@
 
     The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).
 
-    $$u((1/2,1/2),\sigma)=3$$
+    for $\sigma=(\omega,1-\omega)$:
 
-    and for $\sigma=(\omega,1-\omega)$:
+    $$u((1/2,1/2),\sigma)=\omega+2-2\omega=2-\omega$$
+
+    and:
 
     $$u(\sigma,\sigma)=(2\omega^2+9(1-\omega)\omega+(1-\omega)^2)$$
 
     thus (after some algebraic manipulation):
 
-    $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) = (2\omega-1)(3\omega-2)$$
+    $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) = 6\omega^2-8\omega+1$$
 
-    which is negative for $1/2 < \omega < 2/3$ so this mixed strategy is not an ESS.
+    which is negative for $\omega > 2/3-\sqrt{10}/6$ so this mixed strategy is not an ESS.
 
     $$\begin{pmatrix}
     (1,1)&(0,0)\\
@@ -41,39 +43,15 @@
 
     The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).
 
+    As before:
+
     $$u((1/2,1/2),\sigma)=1/2$$
 
-    As before:
+    and:
 
     $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) = -1/2(2\omega-1)^2$$
 
     so not an ESS.
-
-    $$\begin{pmatrix}
-    (\alpha,\alpha)&(1,\beta)\\
-    (\beta,1)&(0,0)\\
-    \end{pmatrix}$$
-
-    (Assume $\alpha,\beta >0$ and $\alpha \ne \beta$)
-
-    **Solution**
-
-    If $\beta < \alpha$ then we have a single pure Nash Equilibria $((1,0),(1,0))$ which is also an ESS.
-
-    If $\beta > \alpha$ the Nash Equilbria are $\left\{((1,0),(1,0)),((0,1),(0,1)),((1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)),(1/(\beta-\alpha+1),(\beta-\alpha)/(\beta-\alpha+1)))\right\}$. The pure are ESS.
-
-    $$u(\sigma^*,\sigma)=\frac{beta}{\beta-\alpha+1}$$
-
-    and
-
-    $$u(\sigma,\sigma)=-\alpha\omega^2-\omega(1-\omega)(1+\beta)$$
-
-    thus (after some algebra):
-
-    $$u(\sigma^*, \sigma) - u(\sigma,\sigma) > 0 \Leftrightarrow \beta - (\beta-\alpha+1)(\omega^2(\alpha-\beta-1)+\omega(1+\beta)) > 0$$
-
-    However the quadratic in $\omega$ has roots: $\left\{\frac{\beta}{\beta-\alpha+1}, \frac{1}{\beta-\alpha+1}\right\}$ so $\exists$ $\omega$ for which the difference is negative and thus this mixed strategy is not an ESS.
-
 
     Identify all evolutionary stable strategies.
 
@@ -187,13 +165,13 @@
 
     There are four possible equilibria:
 
-    1. $(a,b)$ which requires: $3+3u/40\geq 2$ and $2+3v/40\geq 7+v/20$ $\Rightarrow$ $u\geq -40/3$ and $v\geq 200$. However if this is the equilibria then $u=120/37$ and $v=80/37$ which contradicts the constraints.
+    1. $(a,c)$ which requires: $3+3u/40\geq 2$ and $2+3v/40\geq 7+v/20$ $\Rightarrow$ $u\geq -40/3$ and $v\geq 200$. However if this is the equilibria then $u=120/37$ and $v=80/37$ which contradicts the constraints.
 
     2. $(a,d)$ which requires: $1+u/20\geq 6+u/4$ and $2+3v/40\leq 7+v/20$ $\Rightarrow$ $u\leq -25$ and $v\leq 200$. However if this is the equilibria then $u=20/19$ and $v=140/19$ which contradicts the constraints.
 
     3. $(b,c)$ which requires: $2\geq 3+3u/40$ and $1\geq 3+v/4$ $\Rightarrow$ $u\leq -40/3$ and $v\leq -8$. However if this is the equilibria then $u=2$ and $v=1$ which contradicts the constraints.
 
-    4. $(b,d)$ which requires: $2\leq 3+3u/40$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -40/3$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which \textbf{does not} contradict the constraints.
+    4. $(b,d)$ which requires: $2\leq 3+3u/40$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -40/3$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which **does not** contradict the constraints.
 
     Thus $(b,d)$ is the unique pure strategy equilibrium.
 
@@ -211,7 +189,7 @@
 
     There are four possible equilibria:
 
-    1. $(a,b)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+v/4$ $\Rightarrow$ $u\geq 48$ and $v\leq 16$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
+    1. $(a,c)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+v/4$ $\Rightarrow$ $u\geq 48$ and $v\leq 16$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
 
     2. $(a,b)$ which requires: $2+u/4\geq 1+u/40$ and $3+v/8\leq 1+v/4$ $\Rightarrow$ $u\geq -40/9$ and $v\geq 16$. However if this is the equilibria then $u=8/3$ and $v=4/3$ which contradicts the constraints.
 
@@ -235,7 +213,7 @@
 
     There are four possible equilibria:
 
-    1. $(a,b)$ which requires: $1+u/20\geq 7$ and $3+v/20\geq 1+7v/40$ $\Rightarrow$ $u\geq 120$ and $v\leq 16$. However if this is the equilibria then $u=20/19$ and $v=60/19$ which contradicts the constraints.
+    1. $(a,c)$ which requires: $1+u/20\geq 7$ and $3+v/20\geq 1+7v/40$ $\Rightarrow$ $u\geq 120$ and $v\leq 16$. However if this is the equilibria then $u=20/19$ and $v=60/19$ which contradicts the constraints.
 
     2. $(a,b)$ which requires: $2+7u/40\geq 1+u/40$ and $1+7v/40\geq 3+v/20$ $\Rightarrow$ $u\geq -20/3$ and $v\leq 16$. However if this is the equilibria then $u=80/33$ and $v=40/33$ which does not contradict any constraints.
 

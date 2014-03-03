@@ -3,13 +3,29 @@
 1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}.
 
 
-![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
+    - Game 1:
 
-![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+        ![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
 
-![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+        **Solution**
 
-![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
+        Following the algorithm:
+
+        Suitor optimal:
+
+
+
+    - Game 2:
+
+        ![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+
+    - Game 3:
+
+        ![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+
+    - Game 4:
+
+        ![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
