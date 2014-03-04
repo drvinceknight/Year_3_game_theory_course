@@ -24,8 +24,8 @@
 
         Following the algorithm:
 
-        Suitor optimal: \(\{a: C, c: A, b: B\}\)
-        Reviewer optimal: \(\{'A': 'c', 'B': 'b', 'C': 'a'\}\)
+        Suitor optimal: \(\{a: C, b: B, c: A\}\)
+        Reviewer optimal: \(\{A: c, B: b, C: a\}\)
 
     - Game 3:
 
@@ -35,12 +35,19 @@
 
         Following the algorithm:
 
-        Suitor optimal: \(\{a: C, c: A, b: B\}\)
-        Reviewer optimal: \(\{'A': 'c', 'B': 'b', 'C': 'a'\}\)
+        Suitor optimal: \(\{a: D, b: A, c: C, d: B\}\)
+        Reviewer optimal: \(\{A: b, B: d, C: c, D: a\}\)
 
     - Game 4:
 
         ![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
+
+        **Solution**
+
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: D, b: A, c: C, d: B\}\)
+        Reviewer optimal: \(\{A: b, B: d, C: c, D: a\}\)
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
