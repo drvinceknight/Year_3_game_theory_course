@@ -47,10 +47,23 @@
         Following the algorithm:
 
         Suitor optimal: \(\{a: D, b: A, c: C, d: B\}\)
-        Reviewer optimal: \(\{A: b, B: d, C: c, D: a\}\)
+        Reviewer optimal: \(\{A: c, B: d, C: b, D: a\}\)
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
+
+    **Solution**
+
+    Let \(M\) be the suitor optimal matching (given by the Gale-Shapley algorithm).
+
+    Assume $\exists$ $M'\ne M$. As $M$ is reviewer sub-optimal $\exists$ a subset $\bar R\subseteq R$ such that:
+    For all $r\in \bar R$: $M^{-1}(r)$ is worse than $M'^{-1}(r)$. For $r\in R\setminus \bar R$ $M^{-1}(r)=M'^{-1}(r)$.
+
+    Consider $\bar r\in\bar R$, as all reviewers have same reference list, let $r$ be the reviewer with ''best'' suitor under matching $M$ (the matching given by the Gale Shapley algorithm).
+
+    When considering $M'$, reviewers outside of $\bar R$ have same matching as in $M$. All reviewers in $\bar R$ must have a ''better'' matching.
+
+    As all reviewers have the same preference list, $\bar r$ cannot be matched thus $M'$ is not a matching.
 
 3. For the following cooperative games:
 
