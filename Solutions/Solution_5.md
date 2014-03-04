@@ -11,7 +11,8 @@
 
         Following the algorithm:
 
-        Suitor optimal:
+        Suitor optimal: \(\{a: C, b: A, c: B\}\)
+        Reviewer optimal: \(\{'A': 'b', 'B': 'c', 'C': 'a'\}\)
 
 
 
@@ -19,9 +20,23 @@
 
         ![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
 
+        **Solution**
+
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: C, c: A, b: B\}\)
+        Reviewer optimal: \(\{'A': 'c', 'B': 'b', 'C': 'a'\}\)
+
     - Game 3:
 
         ![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+
+        **Solution**
+
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: C, c: A, b: B\}\)
+        Reviewer optimal: \(\{'A': 'c', 'B': 'b', 'C': 'a'\}\)
 
     - Game 4:
 
