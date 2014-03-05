@@ -54,7 +54,7 @@ $$
 
 ---
 
-A characteristic function game $G=(n,v)$ is called **monotone** if it satisfies $v(S_2)\geq v(C_1)$ for all $S_1\subseteq C_2$.
+A characteristic function game $G=(n,v)$ is called **monotone** if it satisfies $v(C_2)\geq v(C_1)$ for all $C_1\subseteq C_2$.
 
 ---
 

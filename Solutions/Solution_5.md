@@ -83,6 +83,10 @@ v_1(C)=\begin{cases}
 \end{cases}
 $$
 
+    **Solution**
+
+    Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
+
 $$
 v_2(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
@@ -90,6 +94,11 @@ v_2(C)=\begin{cases}
 5,&\text{if }C=\{1,2\}\\
 \end{cases}
 $$
+
+    **Solution**
+
+    Game is not monotone: $v_2(\{1\})=6\geq v_2(\{1,2\})=5$.
+    Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.
 
 $$
 v_4(C)=\begin{cases}
@@ -125,10 +134,10 @@ $$
 
 4. Prove that the Shapley value has the following properties:
 
-- Efficiency
-- Null player
-- Symmetry
-- Additivity
+    - Efficiency
+    - Null player
+    - Symmetry
+    - Additivity
 
 Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).
 

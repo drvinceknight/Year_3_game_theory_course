@@ -24,9 +24,9 @@
 
 3. For the following cooperative games:
 
-i. Verify if the game is monotonic.
-ii. Verify if the game is super additive.
-iii. Obtain the Shapley value.
+    i. Verify if the game is monotonic.
+    ii. Verify if the game is super additive.
+    iii. Obtain the Shapley value.
 
 $$
 v_1(C)=\begin{cases}
@@ -82,10 +82,10 @@ $$
 
 4. Prove that the Shapley value has the following properties:
 
-- Efficiency
-- Null player
-- Symmetry
-- Additivity
+    - Efficiency
+    - Null player
+    - Symmetry
+    - Additivity
 
 Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).
 
