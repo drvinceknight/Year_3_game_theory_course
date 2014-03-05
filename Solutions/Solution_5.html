@@ -15,15 +15,27 @@
 <li><p>Game 1:</p>
 <p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img01.png" /><br /> <strong>Solution</strong></p>
 <p>Following the algorithm:</p>
-<p>Suitor optimal:</p></li>
+<p>Suitor optimal: ({a: C, b: A, c: B}) Reviewer optimal: ({'A': 'b', 'B': 'c', 'C': 'a'})</p></li>
 <li><p>Game 2:</p>
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img02.png" /><br /></li>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img02.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: C, b: B, c: A}) Reviewer optimal: ({A: c, B: b, C: a})</p></li>
 <li><p>Game 3:</p>
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img03.png" /><br /></li>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img03.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: D, b: A, c: C, d: B}) Reviewer optimal: ({A: b, B: d, C: c, D: a})</p></li>
 <li><p>Game 4:</p>
-<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img04.png" /><br /></p></li>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img04.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: D, b: A, c: C, d: B}) Reviewer optimal: ({A: c, B: d, C: b, D: a})</p></li>
 </ul></li>
-<li><p>Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.</p></li>
+<li><p>Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.</p>
+<p><strong>Solution</strong></p>
+<p>Let (M) be the suitor optimal matching (given by the Gale-Shapley algorithm).</p>
+<p>Assume \(\exists\) \(M&#39;\ne M\). As \(M\) is reviewer sub-optimal \(\exists\) a subset \(\bar R\subseteq R\) such that: For all \(r\in \bar R\): \(M^{-1}(r)\) is worse than \(M&#39;^{-1}(r)\). For \(r\in R\setminus \bar R\) \(M^{-1}(r)=M&#39;^{-1}(r)\).</p>
+<p>Consider \(\bar r\in\bar R\), as all reviewers have same reference list, let \(r\) be the reviewer with ''best'' suitor under matching \(M\) (the matching given by the Gale Shapley algorithm).</p>
+<p>When considering \(M&#39;\), reviewers outside of \(\bar R\) have same matching as in \(M\). All reviewers in \(\bar R\) must have a ''better'' matching.</p>
+<p>As all reviewers have the same preference list, \(\bar r\) cannot be matched thus \(M&#39;\) is not a matching.</p></li>
 <li><p>For the following cooperative games:</p></li>
 </ol>
 <ol style="list-style-type: lower-roman">
