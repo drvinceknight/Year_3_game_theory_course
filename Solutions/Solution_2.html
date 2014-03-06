@@ -5,146 +5,145 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="homework-sheet-2---nash-equilibrium-in-normal-form-games"><span class="header-section-number">1</span> Homework sheet 2 - Nash equilibrium in normal form games</h1>
 <ol style="list-style-type: decimal">
 <li><p>Compute the Nash equilibrium (if they exist) in pure strategies for the following games:</p>
 <p><strong>Solution</strong></p>
-<p><span class="math">\[\begin{pmatrix}
+<p>\[\begin{pmatrix}
 (5,\underline{3})&amp;(70,-1)&amp;(\underline{4},2)\\
 (\underline{6},\underline{7})&amp;(\underline{71},2)&amp;(2,1)
-\end{pmatrix}\]</span></p>
-<p><span class="math">\[\begin{pmatrix}
+\end{pmatrix}\]</p>
+<p>\[\begin{pmatrix}
 (\underline{6},\underline{7})&amp;(2,1)&amp;(4,6)\\
 (0,4)&amp;(\underline{3},\underline{8})&amp;(2,3)\\
 (\underline{1},\underline{2})&amp;(\underline{1},\underline{5})&amp;(\underline{1},\underline{1})\\
-\end{pmatrix}\]</span></p>
-<p><span class="math">\[\begin{pmatrix}
+\end{pmatrix}\]</p>
+<p>\[\begin{pmatrix}
 (\underline{\pi},\underline{e})&amp;(1-\pi,\sqrt(e))\\
 (\sqrt(2),1/e)&amp;(\underline{2},\underline{1})
-\end{pmatrix}\]</span></p></li>
-<li><p>For what values of <span class="math">\(\alpha\)</span> does a Nash equilibrium exist in pure strategies for the following game:</p>
-<p><span class="math">\[\begin{pmatrix}
+\end{pmatrix}\]</p></li>
+<li><p>For what values of \(\alpha\) does a Nash equilibrium exist in pure strategies for the following game:</p>
+<p>\[\begin{pmatrix}
 (3,5)&amp;(2-\alpha,\alpha)\\
 (4\alpha,6)&amp;(\alpha,\alpha^2)
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <p><strong>Solution</strong></p>
 <ul>
-<li><p><span class="math">\((r_1,s_1)\)</span> is a pure strategy Nash equilibrium if:</p>
-<p><span class="math">\(3\geq 4\alpha\)</span> and <span class="math">\(5\geq\alpha\)</span></p>
-<p>Thus <span class="math">\((r_1,s_1)\)</span> is a Nash equilibrium iff <span class="math">\(\alpha\geq3/4\)</span>.</p></li>
-<li><p><span class="math">\((r_1,s_2)\)</span> is a pure strategy Nash equilibrium if:</p>
-<p><span class="math">\(2-\alpha \geq \alpha\)</span> and <span class="math">\(\alpha\geq 5\)</span></p>
+<li><p>\((r_1,s_1)\) is a pure strategy Nash equilibrium if:</p>
+<p>\(3\geq 4\alpha\) and \(5\geq\alpha\)</p>
+<p>Thus \((r_1,s_1)\) is a Nash equilibrium iff \(\alpha\geq3/4\).</p></li>
+<li><p>\((r_1,s_2)\) is a pure strategy Nash equilibrium if:</p>
+<p>\(2-\alpha \geq \alpha\) and \(\alpha\geq 5\)</p>
 <p>This is not possible.</p></li>
-<li><p><span class="math">\((r_2,s_1)\)</span> is a pure strategy Nash equilibrium if:</p>
-<p><span class="math">\(4\alpha \geq 3\)</span> and <span class="math">\(6\geq \alpha^2\)</span></p>
-<p>Thus <span class="math">\((r_2,s_1)\)</span> is a Nash equilibrium iff <span class="math">\(4/3\leq \alpha \leq \sqrt{6}\)</span></p></li>
-<li><p><span class="math">\((r_2,s_2)\)</span> is a pure strategy Nash equilibrium if:</p>
-<p><span class="math">\(\alpha\geq 2-\alpha\)</span> and <span class="math">\(6\leq \alpha^2\)</span></p>
-<p>Thus <span class="math">\((r_2,s_2)\)</span> is a Nash equilibrium iff <span class="math">\(\alpha\geq\sqrt{6}\)</span></p></li>
+<li><p>\((r_2,s_1)\) is a pure strategy Nash equilibrium if:</p>
+<p>\(4\alpha \geq 3\) and \(6\geq \alpha^2\)</p>
+<p>Thus \((r_2,s_1)\) is a Nash equilibrium iff \(4/3\leq \alpha \leq \sqrt{6}\)</p></li>
+<li><p>\((r_2,s_2)\) is a pure strategy Nash equilibrium if:</p>
+<p>\(\alpha\geq 2-\alpha\) and \(6\leq \alpha^2\)</p>
+<p>Thus \((r_2,s_2)\) is a Nash equilibrium iff \(\alpha\geq\sqrt{6}\)</p></li>
 </ul></li>
 <li><p>Consider the following game:</p>
 <p>Suppose two vendors (of an identical product) must choose their location along a busy street. It is anticipated that their profit is directly related to their position on the street.</p>
-<p>If we allow their positions to be represented by a points <span class="math">\(x_1, x_2\)</span> on the <span class="math">\([0,1]_{\mathbb{R}}\)</span> line segment then we have:</p>
-<p><span class="math">\[u_1(x_1,x_2)=\begin{cases}x_1+(x_2-x_1)/2,&amp;\text{if }x_1\leq x_2\\
+<p>If we allow their positions to be represented by a points \(x_1, x_2\) on the \([0,1]_{\mathbb{R}}\) line segment then we have:</p>
+<p>\[u_1(x_1,x_2)=\begin{cases}x_1+(x_2-x_1)/2,&amp;\text{if }x_1\leq x_2\\
 1-x_1+(x_2-x_1)/2,&amp;\text{otherwise}
-\end{cases}\]</span> and <span class="math">\[u_1(x_1,x_2)=\begin{cases}x_2+(x_2-x_1)/2,&amp;\text{if }x_2\leq x_1\\
+\end{cases}\] and \[u_1(x_1,x_2)=\begin{cases}x_2+(x_2-x_1)/2,&amp;\text{if }x_2\leq x_1\\
 1-x_2+(x_2-x_1)/2,&amp;\text{otherwise}
-\end{cases}\]</span></p>
+\end{cases}\]</p>
 <p>By considering best responses of each player, identify the Nash equilibrium for the game.</p>
 <p><strong>Solution</strong></p>
-<p>Consider <span class="math">\(x_j&lt;1/2\)</span>, if <span class="math">\(x_i=x_j\)</span> then <span class="math">\(u_i(x_i,x_j)=1/2\)</span>. However <span class="math">\(u_i(x_j+\epsilon,x_j)=1-x_2-\epsilon/2&gt;1/2-\epsilon/2\)</span> for some (arbitrarily) small <span class="math">\(\epsilon&gt;0\)</span> . Thus for arbitrarily small <span class="math">\(\epsilon\)</span>, <span class="math">\(x_i^*=x_j+\epsilon\)</span>. If <span class="math">\(x_j&gt;1/2\)</span> a similar argument gives <span class="math">\(x_i^*=x_j-\epsilon\)</span>. If <span class="math">\(x_j=1/2\)</span>, considering <span class="math">\(x_i=x_j\)</span> we see that neither player has an incentive to move.</p>
+<p>Consider \(x_j&lt;1/2\), if \(x_i=x_j\) then \(u_i(x_i,x_j)=1/2\). However \(u_i(x_j+\epsilon,x_j)=1-x_2-\epsilon/2&gt;1/2-\epsilon/2\) for some (arbitrarily) small \(\epsilon&gt;0\) . Thus for arbitrarily small \(\epsilon\), \(x_i^*=x_j+\epsilon\). If \(x_j&gt;1/2\) a similar argument gives \(x_i^*=x_j-\epsilon\). If \(x_j=1/2\), considering \(x_i=x_j\) we see that neither player has an incentive to move.</p>
 <p>Thus we conclude:</p>
-<p><span class="math">\[x_i^*=\begin{cases}
+<p>\[x_i^*=\begin{cases}
 x_j+\epsilon,&amp;\text{ if }x_j&lt;1/2\\
 x_j-\epsilon&amp;\text{ if }x_j&gt;1/2\\
 x_j&amp;\text{ if }x_j=1/2\\
-\end{cases}\]</span></p>
-<p>So the Nash equilibrium for this problem is <span class="math">\((\tilde x_1, \tilde x_2)=(1/2,1/2)\)</span>.</p></li>
+\end{cases}\]</p>
+<p>So the Nash equilibrium for this problem is \((\tilde x_1, \tilde x_2)=(1/2,1/2)\).</p></li>
 <li><p>Consider the following game:</p>
-<p><span class="math">\[\begin{pmatrix}
+<p>\[\begin{pmatrix}
 (3,2)&amp;(6,5)\\
 (1,4)&amp;(2,3)
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <p>Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.</p>
 <p><strong>Solution</strong></p>
 <p>We have:</p>
-<p><span class="math">\[u_1(r_1,(y,1-y))=3y+6-6y=6-3y\]</span> <span class="math">\[u_2(r_2,(y,1-y))=y+2-2y=2-y\]</span></p>
+<p>\[u_1(r_1,(y,1-y))=3y+6-6y=6-3y\] \[u_2(r_2,(y,1-y))=y+2-2y=2-y\]</p>
 <p>Here is a plot of this:</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P01.png" />
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P01.png" /><p class="caption"></p>
 </div>
-<p>We see that <span class="math">\(r_2\)</span> is dominated by <span class="math">\(r_1\)</span>. For player 2, we have:</p>
-<p><span class="math">\[u_1((x,1-x),s_1)=2x+4-4x=4-2x\]</span> <span class="math">\[u_2((x,1-x),s_2)=5x+3-3x=3+2x\]</span></p>
+<p>We see that \(r_2\) is dominated by \(r_1\). For player 2, we have:</p>
+<p>\[u_1((x,1-x),s_1)=2x+4-4x=4-2x\] \[u_2((x,1-x),s_2)=5x+3-3x=3+2x\]</p>
 <p>Here is a plot of this:</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P02.png" />
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P02.png" /><p class="caption"></p>
 </div>
-<p>As <span class="math">\(r_2\)</span> is dominated, we see from the plot that the Nash equilibrium is <span class="math">\((r_1, s_2)\)</span>.</p></li>
-<li><p>Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: <span class="math">\(S_1=\{\text{SL},\text{SR}\}\)</span>. A goalie (player 2) can either dive left or right: <span class="math">\(S_2=\{\text{DL}, \text{DR}\}\)</span>. The chances of a goal being scored are given below:</p>
-<p><span class="math">\[\begin{pmatrix}
+<p>As \(r_2\) is dominated, we see from the plot that the Nash equilibrium is \((r_1, s_2)\).</p></li>
+<li><p>Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: \(S_1=\{\text{SL},\text{SR}\}\). A goalie (player 2) can either dive left or right: \(S_2=\{\text{DL}, \text{DR}\}\). The chances of a goal being scored are given below:</p>
+<p>\[\begin{pmatrix}
 .8&amp;.15\\
 .2&amp;.95
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <ol style="list-style-type: lower-roman">
 <li>Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?</li>
 </ol>
 <p><strong>Solution</strong></p>
 <p>We see that this is a zero sum game with bi-matrix:</p>
-<p><span class="math">\[\begin{pmatrix}
+<p>\[\begin{pmatrix}
 (.8,.2)&amp;(.15,.75)\\
 (.2,.8)&amp;(.95,.05)
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <p>There are no pure Nash equilibria. To obtain the NE, we use the Equality of Payoffs theorem:</p>
-<p><span class="math">\[.2x+.8(1-x)=(.75x+.05(1-x))\Rightarrow x=15/26\]</span> <span class="math">\[.8y+.15(1-y)=.2y+.95(1-y)\Rightarrow y=4/7\]</span></p>
-<p>So the Nash Equilibrium is <span class="math">\(\{(15/26,11/26),(4/7,3/7)\}\)</span>.</p>
+<p>\[.2x+.8(1-x)=(.85x+.05(1-x))\Rightarrow x=15/28\] \[.8y+.15(1-y)=.2y+.95(1-y)\Rightarrow y=4/7\]</p>
+<p>So the Nash Equilibrium is \(\{(15/28,13/28),(4/7,3/7)\}\).</p>
 <ol start="2" style="list-style-type: lower-roman">
-<li>Assume that player 1 now has a further strategy available: to shoot in the middle: <span class="math">\(S_1=\{\text{SL},\text{SM}, \text{SR}\}\)</span> the probabilities of a goal being scored are now given:</li>
+<li>Assume that player 1 now has a further strategy available: to shoot in the middle: \(S_1=\{\text{SL},\text{SM}, \text{SR}\}\) the probabilities of a goal being scored are now given:</li>
 </ol>
-<p><span class="math">\[\begin{pmatrix}
+<p>\[\begin{pmatrix}
 .8&amp;.15\\
 .5&amp;.5\\
 .2&amp;.95
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <p>Obtain the new Nash equilibrium for the game.</p>
 <p><strong>Solution</strong></p>
 <p>There are various approaches to this game, one is to apply the equality of payoffs theorem to all possible supports. Another is to plot the utilities:</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P03.png" />
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./plots/HW2-P03.png" /><p class="caption"></p>
 </div>
-<p>We see that <span class="math">\(B_1=\{r_1,r_3\}\)</span>, by the equality theorem this gives <span class="math">\(UD_1=\{r_1,r_3\}\)</span> and so the Nash equilibria is the same as before.</p></li>
+<p>We see that \(B_1=\{r_1,r_3\}\), by the equality theorem this gives \(UD_1=\{r_1,r_3\}\) and so the Nash equilibria is the same as before.</p></li>
 <li><p>In the notes the following theorem is given:</p>
 <hr />
 <p>Every normal form game with a finite number of pure strategies for each player, has at least one Nash equilibrium.</p>
 <hr />
-<p>Prove the theorem for 2 player games with <span class="math">\(|S_1|=|S_2|=2\)</span>. I.e. prove the above result in the special case of <span class="math">\(2\times 2\)</span> games.</p>
+<p>Prove the theorem for 2 player games with \(|S_1|=|S_2|=2\). I.e. prove the above result in the special case of \(2\times 2\) games.</p>
 <p><strong>Solution</strong></p>
-<p>Let us consider the <span class="math">\(2\times 2\)</span> game:</p>
-<p><span class="math">\[\begin{pmatrix}
+<p>Let us consider the \(2\times 2\) game:</p>
+<p>\[\begin{pmatrix}
 (a_{11},b_{11})&amp; (a_{12},b_{12})\\
 (a_{21},b_{21})&amp; (a_{22},b_{22})\\
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <p>There is no pure strategy Nash equilibrium if either:</p>
 <ol style="list-style-type: decimal">
-<li><span class="math">\(a_{11}&lt;a_{21}\)</span> and <span class="math">\(b_{21}&lt;b_{22}\)</span> and <span class="math">\(a_{22}&lt;a_{21}\)</span> and <span class="math">\(b_{21}&lt;b_{11}\)</span> or</li>
-<li><span class="math">\(a_{11}&gt;a_{21}\)</span> and <span class="math">\(b_{21}&gt;b_{22}\)</span> and <span class="math">\(a_{22}&gt;a_{21}\)</span> and <span class="math">\(b_{21}&gt;b_{11}\)</span></li>
+<li>\(a_{11}&lt;a_{21}\) and \(b_{21}&lt;b_{22}\) and \(a_{22}&lt;a_{21}\) and \(b_{21}&lt;b_{11}\) or</li>
+<li>\(a_{11}&gt;a_{21}\) and \(b_{21}&gt;b_{22}\) and \(a_{22}&gt;a_{21}\) and \(b_{21}&gt;b_{11}\)</li>
 </ol>
 <p>In each of these cases we use the Euqality of payoffs theorem:</p>
-<p><span class="math">\[
+<p>\[
 u_1(r_1,\sigma_2) = u_2(r_2,\sigma_2)
-\]</span></p>
-<p><span class="math">\[
+\]</p>
+<p>\[
 a_{11}y+a_{12}(1-y) = a_{21}y+a_{22}(1-y)
-\]</span></p>
+\]</p>
 <p>which gives:</p>
-<p><span class="math">\[y = \frac{a_{12} - a_{22}}{a_{12}-a_{22} + a_{21} - a_{11}}\]</span></p>
+<p>\[y = \frac{a_{12} - a_{22}}{a_{12}-a_{22} + a_{21} - a_{11}}\]</p>
 <p>Similarly:</p>
-<p><span class="math">\[x = \frac{b_{12} - b_{22}}{b_{12}-b_{22} + b_{21} - b_{11}}\]</span></p>
-<p>In both cases the <span class="math">\(0&lt;x,y&lt;1\)</span> as required.</p></li>
+<p>\[x = \frac{b_{12} - b_{22}}{b_{12}-b_{22} + b_{21} - b_{11}}\]</p>
+<p>In both cases the \(0&lt;x,y&lt;1\) as required.</p></li>
 </ol>
-<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_2.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_2.docx">docx (not recommended)</a>)</p>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_2.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_2.docx">docx (not recommended)</a>)</p>
 </body>
 </html>
