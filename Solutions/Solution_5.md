@@ -87,6 +87,8 @@ $$
 
     Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
 
+    The Shapley value is
+
 $$
 v_2(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
