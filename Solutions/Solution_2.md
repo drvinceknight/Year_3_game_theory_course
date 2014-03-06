@@ -133,7 +133,7 @@
     We see that this is a zero sum game with bi-matrix:
 
     $$\begin{pmatrix}
-    (.8,.2)&(.15,.75)\\
+    (.8,.2)&(.15,.85)\\
     (.2,.8)&(.95,.05)
     \end{pmatrix}$$
 

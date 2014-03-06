@@ -54,6 +54,11 @@ v_1(C)=\begin{cases}
 13,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
 \]</p>
+<pre><code>**Solution**
+
+Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
+
+The Shapley value is</code></pre>
 <p>\[
 v_2(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
@@ -61,6 +66,10 @@ v_2(C)=\begin{cases}
 5,&amp;\text{if }C=\{1,2\}\\
 \end{cases}
 \]</p>
+<pre><code>**Solution**
+
+Game is not monotone: $v_2(\{1\})=6\geq v_2(\{1,2\})=5$.
+Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.</code></pre>
 <p>\[
 v_4(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
@@ -92,14 +101,14 @@ v_4(C)=\begin{cases}
 \end{cases}
 \]</p>
 <ol start="4" style="list-style-type: decimal">
-<li>Prove that the Shapley value has the following properties:</li>
-</ol>
+<li><p>Prove that the Shapley value has the following properties:</p>
 <ul>
 <li>Efficiency</li>
 <li>Null player</li>
 <li>Symmetry</li>
 <li>Additivity</li>
-</ul>
+</ul></li>
+</ol>
 <p>Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).</p>
 <ol start="5" style="list-style-type: decimal">
 <li>Calculate the Nash flow and the optimal flow for the routing games shown.</li>
