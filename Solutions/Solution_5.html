@@ -136,16 +136,49 @@ v_4(C)=\begin{cases}
 </ol>
 <p>Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).</p>
 <ol start="5" style="list-style-type: decimal">
-<li><p>Calculate the Nash flow and the optimal flow for the routing games shown.</p>
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img05.png" /><br /><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img06.png" /><br /></li>
+<li><p>Calculate the Nash flow and the optimal flow for the following routing game:</p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img05.png" /><br /> <strong>Solution</strong></p>
+<p>For the <strong>Nash flow</strong>:</p>
+<p>Let <span class="math">\(\alpha\)</span> be the traffic along the top arc and <span class="math">\(\beta\)</span> the traffic along the bottom arc.</p>
+<p>By definition for commodity 1 we have:</p>
+<p><span class="math">\[\alpha^2+\alpha=2(2/3-\alpha+1/2-\beta)\]</span></p>
+<p>By definition for commodity 2 we have:</p>
+<p><span class="math">\[3/2\beta=2(2/3-\alpha+1/2-\beta)\]</span></p>
+<p>Solving this later equation gives:</p>
+<p><span class="math">\[\beta=(8-4\alpha)/7\]</span></p>
+<p>Substituting this in to the first equation gives:</p>
+<p><span class="math">\[\alpha^2+13/7\alpha-12/7=0\]</span></p>
+<p>which has solution <span class="math">\(\alpha=\frac{1}{14} \, \sqrt{505} - \frac{13}{14}, -\frac{2}{49} \)</span>, substituting this in to our expression for <span class="math">\(\beta\)</span> gives: <span class="math">\(\beta = \sqrt{505} + \frac{82}{49}\)</span>.</p>
+<p>For the <strong>Optimal flow</strong> we use the marginal costs:</p>
+<p><span class="math">\[c^*(x) = (2x+1)x+x^2+x\]</span> <span class="math">\[c^*(x) = 4x\]</span> <span class="math">\[c^*(x) = 3x\]</span></p>
+<p>We now repeat the above:</p>
+<p>By definition for commodity 1 we have:</p>
+<p><span class="math">\[{\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(2/3-\alpha+1/2-\beta)\]</span></p>
+<p>By definition for commodity 2 we have:</p>
+<p><span class="math">\[3\beta=4(2/3-\alpha+1/2-\beta)\]</span></p>
+<p>Solving this later equation gives:</p>
+<p><span class="math">\[\beta=(8-4\alpha)/7\]</span></p>
+<p>Substituting this in to the first equation gives:</p>
+<p><span class="math">\[(2*\alpha + 1)*\alpha + \alpha^2 + 19/7*\alpha - 24/7 =0\]</span></p>
+<p>which has solution <span class="math">\(\alpha=\frac{1}{21} \, \sqrt{673} - \frac{13}{21}\)</span>, substituting this in to our expression for <span class="math">\(\beta\)</span> gives: <span class="math">\(\beta = \sqrt{673} + \frac{220}{147}\)</span>.</p></li>
 <li><p>For a routing game the 'Price of Anarchy' is defined as:</p>
 <p><span class="math">\[\text{PoA}=\frac{C(\tilde f)}{C(f^*)}\]</span></p>
 <p>For the game shown (a generalisation of &quot;Pigou's example&quot;) obtain the PoA as a function of <span class="math">\(\alpha\)</span>.</p>
 <div class="figure">
 <img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img07.png" />
 </div>
-<p>Now obtain the PoA for the game shown as a function of <span class="math">\(\Lambda, \alpha\)</span> and <span class="math">\(\beta\)</span>. For what value of <span class="math">\(\Lambda\)</span> is the PoA at it's maximum?</p>
-<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img08.png" /><br /></p></li>
+<p><strong>Solution</strong></p>
+<p>Let <span class="math">\(x\)</span> be the flow along the bottom arc. The Nash flow <span class="math">\(\tilde x\)</span> is immediate:</p>
+<p><span class="math">\[\tilde x=1\]</span></p>
+<p>giving <span class="math">\(C(\tilde f)=1\)</span></p>
+<p>The optimal flow is <span class="math">\(x^*\)</span> solves:</p>
+<p><span class="math">\[(\alpha+1)x^{\alpha}=1\]</span></p>
+<p>thus</p>
+<p><span class="math">\[x^*=\left(\frac{1}{\alpha+1}\right)^{1/\alpha}\]</span></p>
+<p>giving <span class="math">\(C(f^*)=(1-x^*)+{x^*}^{\alpha}x^*=\left(\left(\frac{1}{\alpha+1}\right)^{1/\alpha}\right)^{\alpha}\left(\frac{1}{\alpha+1}\right)^{1/\alpha}+1-\left(\frac{1}{\alpha+1}\right)^{1/\alpha}\)</span></p>
+<p>Thus:</p>
+<p><span class="math">\[\text{PoA}=\frac{(\alpha+1)^{1/\alpha+1}}{\alpha+2}\]</span></p>
+<p>It can be shown that the above is a decreasing function in <span class="math">\(\alpha\)</span>, this implies that as the 'shortcut' gets 'better' (recall that <span class="math">\(x\leq 1\)</span>) the negative effect of selfish behaviour increases.</p></li>
 </ol>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_5.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_5.docx">docx (not recommended)</a>)</p>
 </body>

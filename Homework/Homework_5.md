@@ -89,10 +89,9 @@
 
     Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).
 
-5. Calculate the Nash flow and the optimal flow for the routing games shown\text{ in Figures \ref{E05-img05} and \ref{E05-img06}}.
+5. Calculate the Nash flow and the optimal flow for the following routing game:
 
     ![Routing game 1\label{E05-img05}](images/E05-img05.png)\
-    ![Routing game 2\label{E05-img06}](images/E05-img06.png)\
 
 6. For a routing game the 'Price of Anarchy' is defined as:
 

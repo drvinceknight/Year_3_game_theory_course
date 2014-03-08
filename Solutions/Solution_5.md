@@ -202,19 +202,88 @@
 
 Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).
 
-5. Calculate the Nash flow and the optimal flow for the routing games shown\text{ in Figures \ref{E05-img05} and \ref{E05-img06}}.
+5. Calculate the Nash flow and the optimal flow for the following routing game:
 
     ![Routing game 1\label{E05-img05}](images/E05-img05.png)\
-    ![Routing game 2\label{E05-img06}](images/E05-img06.png)\
+
+    **Solution**
+
+    For the **Nash flow**:
+
+    Let $\alpha$ be the traffic along the top arc and $\beta$ the traffic along the bottom arc.
+
+    By definition for commodity 1 we have:
+
+    $$\alpha^2+\alpha=2(2/3-\alpha+1/2-\beta)$$
+
+    By definition for commodity 2 we have:
+
+    $$3/2\beta=2(2/3-\alpha+1/2-\beta)$$
+
+    Solving this later equation gives:
+
+    $$\beta=(8-4\alpha)/7$$
+
+    Substituting this in to the first equation gives:
+
+    $$\alpha^2+13/7\alpha-12/7=0$$
+
+    which has solution $\alpha=\frac{1}{14} \, \sqrt{505} - \frac{13}{14}, -\frac{2}{49} $, substituting this in to our expression for $\beta$ gives: $\beta = \sqrt{505} + \frac{82}{49}$.
+
+    For the **Optimal flow** we use the marginal costs:
+
+    $$c^*(x) = (2x+1)x+x^2+x$$
+    $$c^*(x) = 4x$$
+    $$c^*(x) = 3x$$
+
+    We now repeat the above:
+
+    By definition for commodity 1 we have:
+
+    $${\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(2/3-\alpha+1/2-\beta)$$
+
+    By definition for commodity 2 we have:
+
+    $$3\beta=4(2/3-\alpha+1/2-\beta)$$
+
+    Solving this later equation gives:
+
+    $$\beta=(8-4\alpha)/7$$
+
+    Substituting this in to the first equation gives:
+
+    $$(2*\alpha + 1)*\alpha + \alpha^2 + 19/7*\alpha - 24/7 =0$$
+
+    which has solution $\alpha=\frac{1}{21} \, \sqrt{673} - \frac{13}{21}$, substituting this in to our expression for $\beta$ gives: $\beta = \sqrt{673} + \frac{220}{147}$.
 
 6. For a routing game the 'Price of Anarchy' is defined as:
 
     $$\text{PoA}=\frac{C(\tilde f)}{C(f^*)}$$
 
-    For the game shown\text{ in Figure \ref{E05-img07}} (a generalisation of "Pigou's example") obtain the PoA as a function of $\alpha$.
+    For the game shown (a generalisation of "Pigou's example") obtain the PoA as a function of $\alpha$.
 
     ![A generalization of Pigou's example\label{E05-img07}](images/E05-img07.png)
 
-    Now obtain the PoA for the game shown\text{ in Figure \ref{E05-img08}} as a function of $\Lambda, \alpha$ and $\beta$. For what value of $\Lambda$ is the PoA at it's maximum?
+    **Solution**
 
-    ![A further generalization of Pigou's example\label{E05-img08}](images/E05-img08.png)\
+       Let $x$ be the flow along the bottom arc. The Nash flow $\tilde x$ is immediate:
+
+       $$\tilde x=1$$
+
+       giving $C(\tilde f)=1$
+
+       The optimal flow is $x^*$ solves:
+
+       $$(\alpha+1)x^{\alpha}=1$$
+
+       thus
+
+       $$x^*=\left(\frac{1}{\alpha+1}\right)^{1/\alpha}$$
+
+       giving $C(f^*)=(1-x^*)+{x^*}^{\alpha}x^*=\left(\left(\frac{1}{\alpha+1}\right)^{1/\alpha}\right)^{\alpha}\left(\frac{1}{\alpha+1}\right)^{1/\alpha}+1-\left(\frac{1}{\alpha+1}\right)^{1/\alpha}$
+
+       Thus:
+
+       $$\text{PoA}=\frac{(\alpha+1)^{1/\alpha+1}}{\alpha+2}$$
+
+       It can be shown that the above is a decreasing function in $\alpha$, this implies that as the 'shortcut' gets 'better' (recall that $x\leq 1$) the negative effect of selfish behaviour increases.
