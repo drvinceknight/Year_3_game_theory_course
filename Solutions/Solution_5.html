@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="homework-sheet-5---matching-games-cooperative-games-and-routing-games"><span class="header-section-number">1</span> Homework sheet 5 - Matching games, cooperative games and routing games</h1>
@@ -32,18 +33,18 @@
 <li><p>Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.</p>
 <p><strong>Solution</strong></p>
 <p>Let (M) be the suitor optimal matching (given by the Gale-Shapley algorithm).</p>
-<p>Assume \(\exists\) \(M&#39;\ne M\). As \(M\) is reviewer sub-optimal \(\exists\) a subset \(\bar R\subseteq R\) such that: For all \(r\in \bar R\): \(M^{-1}(r)\) is worse than \(M&#39;^{-1}(r)\). For \(r\in R\setminus \bar R\) \(M^{-1}(r)=M&#39;^{-1}(r)\).</p>
-<p>Consider \(\bar r\in\bar R\), as all reviewers have same reference list, let \(r\) be the reviewer with ''best'' suitor under matching \(M\) (the matching given by the Gale Shapley algorithm).</p>
-<p>When considering \(M&#39;\), reviewers outside of \(\bar R\) have same matching as in \(M\). All reviewers in \(\bar R\) must have a ''better'' matching.</p>
-<p>As all reviewers have the same preference list, \(\bar r\) cannot be matched thus \(M&#39;\) is not a matching.</p></li>
-<li><p>For the following cooperative games:</p></li>
-</ol>
+<p>Assume <span class="math">\(\exists\)</span> <span class="math">\(M&#39;\ne M\)</span>. As <span class="math">\(M\)</span> is reviewer sub-optimal <span class="math">\(\exists\)</span> a subset <span class="math">\(\bar R\subseteq R\)</span> such that: For all <span class="math">\(r\in \bar R\)</span>: <span class="math">\(M^{-1}(r)\)</span> is worse than <span class="math">\(M&#39;^{-1}(r)\)</span>. For <span class="math">\(r\in R\setminus \bar R\)</span> <span class="math">\(M^{-1}(r)=M&#39;^{-1}(r)\)</span>.</p>
+<p>Consider <span class="math">\(\bar r\in\bar R\)</span>, as all reviewers have same reference list, let <span class="math">\(r\)</span> be the reviewer with ''best'' suitor under matching <span class="math">\(M\)</span> (the matching given by the Gale Shapley algorithm).</p>
+<p>When considering <span class="math">\(M&#39;\)</span>, reviewers outside of <span class="math">\(\bar R\)</span> have same matching as in <span class="math">\(M\)</span>. All reviewers in <span class="math">\(\bar R\)</span> must have a ''better'' matching.</p>
+<p>As all reviewers have the same preference list, <span class="math">\(\bar r\)</span> cannot be matched thus <span class="math">\(M&#39;\)</span> is not a matching.</p></li>
+<li><p>For the following cooperative games:</p>
 <ol style="list-style-type: lower-roman">
 <li>Verify if the game is monotonic.</li>
 <li>Verify if the game is super additive.</li>
 <li>Obtain the Shapley value.</li>
+</ol></li>
 </ol>
-<p>\[
+<p><span class="math">\[
 v_1(C)=\begin{cases}
 5,&amp;\text{if }C=\{1\}\\
 3,&amp;\text{if }C=\{2\}\\
@@ -53,25 +54,27 @@ v_1(C)=\begin{cases}
 4,&amp;\text{if }C=\{2,3\}\\
 13,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
-\]</p>
+\]</span></p>
 <pre><code>**Solution**
 
 Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
 
-The Shapley value is</code></pre>
-<p>\[
+The Shapley value is \(\phi=(20/3, 31/6, 7/6)\).</code></pre>
+<p><span class="math">\[
 v_2(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 0,&amp;\text{if }C=\{2\}\\
 5,&amp;\text{if }C=\{1,2\}\\
 \end{cases}
-\]</p>
+\]</span></p>
 <pre><code>**Solution**
 
 Game is not monotone: $v_2(\{1\})=6\geq v_2(\{1,2\})=5$.
-Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.</code></pre>
-<p>\[
-v_4(C)=\begin{cases}
+Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.
+
+The Shapley value is \(\phi=(11/2,-1/2)\).</code></pre>
+<p><span class="math">\[
+v_3(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 6,&amp;\text{if }C=\{2\}\\
 13,&amp;\text{if }C=\{3\}\\
@@ -80,8 +83,11 @@ v_4(C)=\begin{cases}
 13,&amp;\text{if }C=\{2,3\}\\
 26,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
-\]</p>
-<p>\[
+\]</span></p>
+<pre><code>Game is monotone but not super additive: $v_3(\{1,2\})=6\leq v_3(\{1\})+v_3(\{2\})=12$
+
+The Shapley value is \(\phi=(19/3, 19/3, 40/3)\).</code></pre>
+<p><span class="math">\[
 v_4(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 7,&amp;\text{if }C=\{2\}\\
@@ -99,7 +105,10 @@ v_4(C)=\begin{cases}
 12,&amp;\text{if }C=\{2,3,4\}\\
 25,&amp;\text{if }C=\{1,2,3,4\}\\
 \end{cases}
-\]</p>
+\]</span></p>
+<pre><code>Game is monotone but not super additive: $v_4(\{1,2\})=7\leq v_4(\{1\})+v_4(\{2\})=13$
+
+The Shapley value is \(\phi=(83/12, 89/12, 1/4, 125/12)\).</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li><p>Prove that the Shapley value has the following properties:</p>
 <ul>
@@ -114,12 +123,12 @@ v_4(C)=\begin{cases}
 <li>Calculate the Nash flow and the optimal flow for the routing games shown.</li>
 </ol>
 <p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img05.png" /><br /><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img06.png" /><br /> 6. For a routing game the 'Price of Anarchy' is defined as:</p>
-<p>\[\text{PoA}=\frac{C(\tilde f)}{C(f^*)}\]</p>
-<p>For the game shown (a generalisation of &quot;Pigou's example&quot;) obtain the PoA as a function of \(\alpha\).</p>
+<p><span class="math">\[\text{PoA}=\frac{C(\tilde f)}{C(f^*)}\]</span></p>
+<p>For the game shown (a generalisation of &quot;Pigou's example&quot;) obtain the PoA as a function of <span class="math">\(\alpha\)</span>.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img07.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img07.png" />
 </div>
-<p>Now obtain the PoA for the game shown as a function of \(\Lambda, \alpha\) and \(\beta\). For what value of \(\Lambda\) is the PoA at it's maximum?</p>
+<p>Now obtain the PoA for the game shown as a function of <span class="math">\(\Lambda, \alpha\)</span> and <span class="math">\(\beta\)</span>. For what value of <span class="math">\(\Lambda\)</span> is the PoA at it's maximum?</p>
 <p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img08.png" /><br /></p>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_5.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_5.docx">docx (not recommended)</a>)</p>
 </body>

@@ -67,9 +67,9 @@
 
 3. For the following cooperative games:
 
-i. Verify if the game is monotonic.
-ii. Verify if the game is super additive.
-iii. Obtain the Shapley value.
+    i. Verify if the game is monotonic.
+    ii. Verify if the game is super additive.
+    iii. Obtain the Shapley value.
 
 $$
 v_1(C)=\begin{cases}
@@ -87,7 +87,7 @@ $$
 
     Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
 
-    The Shapley value is
+    The Shapley value is \(\phi=(20/3, 31/6, 7/6)\).
 
 $$
 v_2(C)=\begin{cases}
@@ -102,8 +102,10 @@ $$
     Game is not monotone: $v_2(\{1\})=6\geq v_2(\{1,2\})=5$.
     Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.
 
+    The Shapley value is \(\phi=(11/2,-1/2)\).
+
 $$
-v_4(C)=\begin{cases}
+v_3(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
 6,&\text{if }C=\{2\}\\
 13,&\text{if }C=\{3\}\\
@@ -113,6 +115,10 @@ v_4(C)=\begin{cases}
 26,&\text{if }C=\{1,2,3\}\\
 \end{cases}
 $$
+
+    Game is monotone but not super additive: $v_3(\{1,2\})=6\leq v_3(\{1\})+v_3(\{2\})=12$
+
+    The Shapley value is \(\phi=(19/3, 19/3, 40/3)\).
 
 $$
 v_4(C)=\begin{cases}
@@ -133,6 +139,10 @@ v_4(C)=\begin{cases}
 25,&\text{if }C=\{1,2,3,4\}\\
 \end{cases}
 $$
+
+    Game is monotone but not super additive: $v_4(\{1,2\})=7\leq v_4(\{1\})+v_4(\{2\})=13$
+
+    The Shapley value is \(\phi=(83/12, 89/12, 1/4, 125/12)\).
 
 4. Prove that the Shapley value has the following properties:
 
