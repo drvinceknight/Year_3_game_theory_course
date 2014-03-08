@@ -97,10 +97,6 @@
 
     $$\text{PoA}=\frac{C(\tilde f)}{C(f^*)}$$
 
-    For the game shown\text{ in Figure \ref{E05-img07}} (a generalisation of "Pigou's example") obtain the PoA as a function of $\alpha$.
+    For the game shown (a generalisation of "Pigou's example") obtain the PoA as a function of $\alpha$.
 
     ![A generalization of Pigou's example\label{E05-img07}](images/E05-img07.png)
-
-    Now obtain the PoA for the game shown\text{ in Figure \ref{E05-img08}} as a function of $\Lambda, \alpha$ and $\beta$. For what value of $\Lambda$ is the PoA at it's maximum?
-
-    ![A further generalization of Pigou's example\label{E05-img08}](images/E05-img08.png)\
