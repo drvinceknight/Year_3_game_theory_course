@@ -11,17 +11,38 @@
 <body>
 <h1 id="homework-sheet-5---matching-games-cooperative-games-and-routing-games"><span class="header-section-number">1</span> Homework sheet 5 - Matching games, cooperative games and routing games</h1>
 <ol style="list-style-type: decimal">
-<li>Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown.</li>
-</ol>
-<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img01.png" /><br /> <img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img02.png" /><br /> <img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img03.png" /><br /> <img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img04.png" /><br /></p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.</p></li>
-<li><p>For the following cooperative games:</p></li>
-</ol>
+<li><p>Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown.</p>
+<ul>
+<li><p>Game 1:</p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img01.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: C, b: A, c: B}) Reviewer optimal: ({'A': 'b', 'B': 'c', 'C': 'a'})</p></li>
+<li><p>Game 2:</p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img02.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: C, b: B, c: A}) Reviewer optimal: ({A: c, B: b, C: a})</p></li>
+<li><p>Game 3:</p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img03.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: D, b: A, c: C, d: B}) Reviewer optimal: ({A: b, B: d, C: c, D: a})</p></li>
+<li><p>Game 4:</p>
+<p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img04.png" /><br /> <strong>Solution</strong></p>
+<p>Following the algorithm:</p>
+<p>Suitor optimal: ({a: D, b: A, c: C, d: B}) Reviewer optimal: ({A: c, B: d, C: b, D: a})</p></li>
+</ul></li>
+<li><p>Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.</p>
+<p><strong>Solution</strong></p>
+<p>Let (M) be the suitor optimal matching (given by the Gale-Shapley algorithm).</p>
+<p>Assume <span class="math">\(\exists\)</span> <span class="math">\(M&#39;\ne M\)</span>. As <span class="math">\(M\)</span> is reviewer sub-optimal <span class="math">\(\exists\)</span> a subset <span class="math">\(\bar R\subseteq R\)</span> such that: For all <span class="math">\(r\in \bar R\)</span>: <span class="math">\(M^{-1}(r)\)</span> is worse than <span class="math">\(M&#39;^{-1}(r)\)</span>. For <span class="math">\(r\in R\setminus \bar R\)</span> <span class="math">\(M^{-1}(r)=M&#39;^{-1}(r)\)</span>.</p>
+<p>Consider <span class="math">\(\bar r\in\bar R\)</span>, as all reviewers have same reference list, let <span class="math">\(r\)</span> be the reviewer with ''best'' suitor under matching <span class="math">\(M\)</span> (the matching given by the Gale Shapley algorithm).</p>
+<p>When considering <span class="math">\(M&#39;\)</span>, reviewers outside of <span class="math">\(\bar R\)</span> have same matching as in <span class="math">\(M\)</span>. All reviewers in <span class="math">\(\bar R\)</span> must have a ''better'' matching.</p>
+<p>As all reviewers have the same preference list, <span class="math">\(\bar r\)</span> cannot be matched thus <span class="math">\(M&#39;\)</span> is not a matching.</p></li>
+<li><p>For the following cooperative games:</p>
 <ol style="list-style-type: lower-roman">
 <li>Verify if the game is monotonic.</li>
 <li>Verify if the game is super additive.</li>
 <li>Obtain the Shapley value.</li>
+</ol></li>
 </ol>
 <p><span class="math">\[
 v_1(C)=\begin{cases}
@@ -34,6 +55,11 @@ v_1(C)=\begin{cases}
 13,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
 \]</span></p>
+<pre><code>**Solution**
+
+Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
+
+The Shapley value is \(\phi=(20/3, 31/6, 7/6)\).</code></pre>
 <p><span class="math">\[
 v_2(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
@@ -41,8 +67,14 @@ v_2(C)=\begin{cases}
 5,&amp;\text{if }C=\{1,2\}\\
 \end{cases}
 \]</span></p>
+<pre><code>**Solution**
+
+Game is not monotone: $v_2(\{1\})=6\geq v_2(\{1,2\})=5$.
+Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.
+
+The Shapley value is \(\phi=(11/2,-1/2)\).</code></pre>
 <p><span class="math">\[
-v_4(C)=\begin{cases}
+v_3(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 6,&amp;\text{if }C=\{2\}\\
 13,&amp;\text{if }C=\{3\}\\
@@ -52,6 +84,9 @@ v_4(C)=\begin{cases}
 26,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
 \]</span></p>
+<pre><code>Game is monotone but not super additive: $v_3(\{1,2\})=6\leq v_3(\{1\})+v_3(\{2\})=12$
+
+The Shapley value is \(\phi=(19/3, 19/3, 40/3)\).</code></pre>
 <p><span class="math">\[
 v_4(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
@@ -71,15 +106,18 @@ v_4(C)=\begin{cases}
 25,&amp;\text{if }C=\{1,2,3,4\}\\
 \end{cases}
 \]</span></p>
+<pre><code>Game is monotone but not super additive: $v_4(\{1,2\})=7\leq v_4(\{1\})+v_4(\{2\})=13$
+
+The Shapley value is \(\phi=(83/12, 89/12, 1/4, 125/12)\).</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>Prove that the Shapley value has the following properties:</li>
-</ol>
+<li><p>Prove that the Shapley value has the following properties:</p>
 <ul>
 <li>Efficiency</li>
 <li>Null player</li>
 <li>Symmetry</li>
 <li>Additivity</li>
-</ul>
+</ul></li>
+</ol>
 <p>Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).</p>
 <ol start="5" style="list-style-type: decimal">
 <li>Calculate the Nash flow and the optimal flow for the routing games shown.</li>
@@ -92,6 +130,6 @@ v_4(C)=\begin{cases}
 </div>
 <p>Now obtain the PoA for the game shown as a function of <span class="math">\(\Lambda, \alpha\)</span> and <span class="math">\(\beta\)</span>. For what value of <span class="math">\(\Lambda\)</span> is the PoA at it's maximum?</p>
 <p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img08.png" /><br /></p>
-<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_5.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/./Solution_5.docx">docx (not recommended)</a>)</p>
+<p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_5.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/Solution_5.docx">docx (not recommended)</a>)</p>
 </body>
 </html>

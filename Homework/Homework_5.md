@@ -3,22 +3,30 @@
 1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}.
 
 
-![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
+    - Game 1:
 
-![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+        ![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
 
-![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+    - Game 2:
 
-![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
+        ![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+
+    - Game 3:
+
+        ![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+
+    - Game 4:
+
+        ![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
 
 3. For the following cooperative games:
 
-i. Verify if the game is monotonic.
-ii. Verify if the game is super additive.
-iii. Obtain the Shapley value.
+    i. Verify if the game is monotonic.
+    ii. Verify if the game is super additive.
+    iii. Obtain the Shapley value.
 
 $$
 v_1(C)=\begin{cases}
@@ -41,7 +49,7 @@ v_2(C)=\begin{cases}
 $$
 
 $$
-v_4(C)=\begin{cases}
+v_3(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
 6,&\text{if }C=\{2\}\\
 13,&\text{if }C=\{3\}\\
@@ -74,10 +82,10 @@ $$
 
 4. Prove that the Shapley value has the following properties:
 
-- Efficiency
-- Null player
-- Symmetry
-- Additivity
+    - Efficiency
+    - Null player
+    - Symmetry
+    - Additivity
 
 Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).
 

@@ -5,8 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-chapter-11---population-games-and-evolutionary-stable-strategies"><span class="header-section-number">1</span> OR 3: Chapter 11 - Population Games and Evolutionary stable strategies</h1>
@@ -21,64 +20,64 @@
 <p>In this chapter (and the next) we will be looking at an area of game theory that looks at the evolution of strategic behaviour in a population.</p>
 <h3 id="definition-of-a-population-vector"><span class="header-section-number">1.2.1</span> Definition of a population vector</h3>
 <hr />
-<p>Considering an infinite population of individuals each of which represents a strategy from <span class="math">\(\Delta S\)</span>, we define the population profile as a vector <span class="math">\(\chi\in[0,1]^{|S|}_\mathbb{R}\)</span>. Note that:</p>
-<p><span class="math">\[\sum_{s\in S}\chi(s)=1\]</span></p>
+<p>Considering an infinite population of individuals each of which represents a strategy from \(\Delta S\), we define the population profile as a vector \(\chi\in[0,1]^{|S|}_\mathbb{R}\). Note that:</p>
+<p>\[\sum_{s\in S}\chi(s)=1\]</p>
 <hr />
-<p>It is important to note that <span class="math">\(\chi\)</span> does not necessarily correspond to any strategy adopted by particular any individual.</p>
+<p>It is important to note that \(\chi\) does not necessarily correspond to any strategy adopted by particular any individual.</p>
 <h3 id="example"><span class="header-section-number">1.2.2</span> Example</h3>
-<p>Consider a population with <span class="math">\(S=\{s_1,s_2\}\)</span>. If we assume that every individual plays <span class="math">\(\sigma=(.25,.75)\)</span> then <span class="math">\(\chi=\sigma\)</span>. However if we assume that .25 of the population play <span class="math">\(\sigma_1=(1,0)\)</span> and .75 play <span class="math">\(\sigma_2=(0,1)\)</span> then <span class="math">\(\chi=\sigma\)</span>.</p>
-<p>In evolutionary game theory we must consider the <em>utility</em> of a particular strategy when played in a particular population profile denoted by <span class="math">\(u(s,\chi)\)</span> for <span class="math">\(s\in S\)</span>.</p>
-<p>Thus the utility to a player playing <span class="math">\(\sigma\in\Delta S\)</span> in a population <span class="math">\(\chi\)</span>:</p>
-<p><span class="math">\[u(\sigma,\chi)=\sum_{s\in S}\sigma(s)u(s,\chi)\]</span></p>
+<p>Consider a population with \(S=\{s_1,s_2\}\). If we assume that every individual plays \(\sigma=(.25,.75)\) then \(\chi=\sigma\). However if we assume that .25 of the population play \(\sigma_1=(1,0)\) and .75 play \(\sigma_2=(0,1)\) then \(\chi=\sigma\).</p>
+<p>In evolutionary game theory we must consider the <em>utility</em> of a particular strategy when played in a particular population profile denoted by \(u(s,\chi)\) for \(s\in S\).</p>
+<p>Thus the utility to a player playing \(\sigma\in\Delta S\) in a population \(\chi\):</p>
+<p>\[u(\sigma,\chi)=\sum_{s\in S}\sigma(s)u(s,\chi)\]</p>
 <p>The interpretation of the above is that <strong>these payoffs represent the number of descendants that each type of individual has.</strong></p>
 <h3 id="example-1"><span class="header-section-number">1.2.3</span> Example</h3>
-<p>If we consider a population of N individuals in which <span class="math">\(S=\{s_1,s_2\}\)</span>. Assume that .5 of the population use each strategy so that <span class="math">\(\chi=(.5,.5)\)</span> and assume that for the current population profile we have:</p>
-<p><span class="math">\[u(s_1,\chi)=3\text{ and }u(s_2,\chi)=7\]</span></p>
-<p>In the next generation we will have <span class="math">\(3N/2\)</span> individuals using <span class="math">\(s_1\)</span> and <span class="math">\(7N/2\)</span> using <span class="math">\(s_2\)</span> so that the strategy profile of the next generation will be <span class="math">\((.3,.7)\)</span>.</p>
-<p>We are going to work towards understanding the evolutionary dynamics of given populations. If we consider <span class="math">\(\chi^*\)</span> to be the startegy profile where all members of the population play <span class="math">\(\sigma^*\)</span> then a population will be evolutionary stable only if:</p>
-<p><span class="math">\[\sigma^*\in\text{argmax}_{\sigma\in\Delta S}u(\sigma,\chi)\]</span></p>
-<p>Ie at equilibrium <span class="math">\(\sigma^*\)</span> must be a best response to the population profile it generates.</p>
+<p>If we consider a population of N individuals in which \(S=\{s_1,s_2\}\). Assume that .5 of the population use each strategy so that \(\chi=(.5,.5)\) and assume that for the current population profile we have:</p>
+<p>\[u(s_1,\chi)=3\text{ and }u(s_2,\chi)=7\]</p>
+<p>In the next generation we will have \(3N/2\) individuals using \(s_1\) and \(7N/2\) using \(s_2\) so that the strategy profile of the next generation will be \((.3,.7)\).</p>
+<p>We are going to work towards understanding the evolutionary dynamics of given populations. If we consider \(\chi^*\) to be the startegy profile where all members of the population play \(\sigma^*\) then a population will be evolutionary stable only if:</p>
+<p>\[\sigma^*\in\text{argmax}_{\sigma\in\Delta S}u(\sigma,\chi)\]</p>
+<p>Ie at equilibrium \(\sigma^*\) must be a best response to the population profile it generates.</p>
 <h3 id="theorem-for-necessity-of-stability"><span class="header-section-number">1.2.4</span> Theorem for necessity of stability</h3>
 <hr />
-<p>In a population game, consider <span class="math">\(\sigma^*\in\Delta S\)</span> and the population profile <span class="math">\(\chi\)</span> generated by <span class="math">\(\sigma^*\)</span>. If the population is stable then:</p>
-<p><span class="math">\[u(s,\chi)=u(\sigma^*,\chi)\text{ for all }s\in\mathcal{S}(\sigma^*)\]</span></p>
+<p>In a population game, consider \(\sigma^*\in\Delta S\) and the population profile \(\chi\) generated by \(\sigma^*\). If the population is stable then:</p>
+<p>\[u(s,\chi)=u(\sigma^*,\chi)\text{ for all }s\in\mathcal{S}(\sigma^*)\]</p>
 <hr />
-<p>(Recall that <span class="math">\(\mathcal{S}(s)\)</span> denotes the support of <span class="math">\(s\)</span>.)</p>
+<p>(Recall that \(\mathcal{S}(s)\) denotes the support of \(s\).)</p>
 <h3 id="proof"><span class="header-section-number">1.2.5</span> Proof</h3>
 <hr />
-<p>If <span class="math">\(|\mathcal{S}(\sigma^*)|=1\)</span> then the proof is trivial.</p>
-<p>We assume that <span class="math">\(|\mathcal{S}(\sigma^*)|&gt;1\)</span>. Let us assume that the theorem is not true so that there exists <span class="math">\(\bar s\in\mathcal{S}(\sigma^*)\)</span> such that:</p>
-<p><span class="math">\[u(\sigma^*,\chi)\ne u(\bar s,\chi)\]</span></p>
+<p>If \(|\mathcal{S}(\sigma^*)|=1\) then the proof is trivial.</p>
+<p>We assume that \(|\mathcal{S}(\sigma^*)|&gt;1\). Let us assume that the theorem is not true so that there exists \(\bar s\in\mathcal{S}(\sigma^*)\) such that:</p>
+<p>\[u(\sigma^*,\chi)\ne u(\bar s,\chi)\]</p>
 <p>Without loss of generality let us assume that:</p>
-<p><span class="math">\[\bar s=\text{argmax}_{s\in\mathcal{S}(\sigma^*)}u(s,\chi)\]</span></p>
+<p>\[\bar s=\text{argmax}_{s\in\mathcal{S}(\sigma^*)}u(s,\chi)\]</p>
 <p>Thus we have:</p>
-<p><span class="math">\[\begin{aligned}
+<p>\[\begin{aligned}
 u_{i}(\sigma^*,\chi)&amp;=\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s)u(s,\chi)\\
 &amp;\leq\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s)u(\bar s,\chi) \\
 &amp;\leq u(\bar s,\chi)\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s) \\
 &amp;\leq u(\bar s,\chi)
-\end{aligned}\]</span></p>
+\end{aligned}\]</p>
 <p>Which gives:</p>
-<p><span class="math">\[u(\sigma^*,\chi)&lt; u(\bar s,\chi)\]</span></p>
+<p>\[u(\sigma^*,\chi)&lt; u(\bar s,\chi)\]</p>
 <p>which implies that the population is not stable.</p>
 <hr />
 <h2 id="evolutionary-stable-strategies"><span class="header-section-number">1.3</span> Evolutionary Stable Strategies</h2>
 <h3 id="definition-of-an-evolutionary-stable-strategy"><span class="header-section-number">1.3.1</span> Definition of an evolutionary stable strategy</h3>
 <hr />
-<p>Consider a population where all individuals initially play <span class="math">\(\sigma^*\)</span>. If we assume that a small proportion <span class="math">\(\epsilon\)</span> start playing <span class="math">\(\sigma\)</span>. The new population is called the <strong>post entry population</strong> and will be denoted by <span class="math">\(\chi_{\epsilon}\)</span>.</p>
+<p>Consider a population where all individuals initially play \(\sigma^*\). If we assume that a small proportion \(\epsilon\) start playing \(\sigma\). The new population is called the <strong>post entry population</strong> and will be denoted by \(\chi_{\epsilon}\).</p>
 <hr />
 <h3 id="example-2"><span class="header-section-number">1.3.2</span> Example</h3>
-<p>Consider a population with <span class="math">\(S=\{s_1,s_2\}\)</span> and initial population profile <span class="math">\(\chi=(1/2,1/2)\)</span>. If we assume that <span class="math">\(\sigma=(1/3,2/3)\)</span> is introduced in to the population then:</p>
-<p><span class="math">\[
+<p>Consider a population with \(S=\{s_1,s_2\}\) and initial population profile \(\chi=(1/2,1/2)\). If we assume that \(\sigma=(1/3,2/3)\) is introduced in to the population then:</p>
+<p>\[
 \begin{aligned}
 \chi_{\epsilon}&amp;=(1-\epsilon)(1/2,1/2)+\epsilon\sigma\\
             &amp;=(1/2-\epsilon/3,1/2+2\epsilon/3)
 \end{aligned}
-\]</span></p>
+\]</p>
 <h3 id="definition"><span class="header-section-number">1.3.3</span> Definition</h3>
 <hr />
-<p>A strategy <span class="math">\(\sigma^*\in\Delta S\)</span> is called an <strong>Evolutionary Stable Strategy</strong> if there exists an <span class="math">\(0&lt;\bar\epsilon&lt;1\)</span> such that for every <span class="math">\(0&lt;\epsilon&lt;\bar \epsilon\)</span> and every <span class="math">\(\sigma\ne \sigma^*\)</span>:</p>
-<p><span class="math">\[u(\sigma^*,\chi)&gt;u(\sigma,\chi)\]</span></p>
+<p>A strategy \(\sigma^*\in\Delta S\) is called an <strong>Evolutionary Stable Strategy</strong> if there exists an \(0&lt;\bar\epsilon&lt;1\) such that for every \(0&lt;\epsilon&lt;\bar \epsilon\) and every \(\sigma\ne \sigma^*\):</p>
+<p>\[u(\sigma^*,\chi_\epsilon)&gt;u(\sigma,\chi_\epsilon)\]</p>
 <hr />
 <p>Before we go any further we must consider two types of population games:</p>
 <ol style="list-style-type: decimal">
@@ -87,45 +86,45 @@ u_{i}(\sigma^*,\chi)&amp;=\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s)u(s,\chi)\\
 </ol>
 <p>The differences between these two types of population games will hopefully become clear.</p>
 <h2 id="games-against-the-field"><span class="header-section-number">1.4</span> Games against the field</h2>
-<p>We will now consider an example of a game against the field. The main difficulty with these games is that the utility <span class="math">\(u(s,\chi)\)</span> is not generally linear in <span class="math">\(\chi\)</span>.</p>
+<p>We will now consider an example of a game against the field. The main difficulty with these games is that the utility \(u(s,\chi)\) is not generally linear in \(\chi\).</p>
 <p>Let us consider the Male to Female ratio in a population, and make the following assumptions:</p>
 <ol style="list-style-type: decimal">
-<li>The proportion of Males in the population is <span class="math">\(\alpha\)</span> and the proportion of females is <span class="math">\(1-\alpha\)</span>;</li>
-<li>Each female has a single mate and has <span class="math">\(K\)</span> offspring;</li>
-<li>Males have on average <span class="math">\((1-\alpha)/\alpha\)</span> mates;</li>
+<li>The proportion of Males in the population is \(\alpha\) and the proportion of females is \(1-\alpha\);</li>
+<li>Each female has a single mate and has \(K\) offspring;</li>
+<li>Males have on average \((1-\alpha)/\alpha\) mates;</li>
 <li>Females are solely responsible for the sex of the offspring.</li>
 </ol>
-<p>We assume that <span class="math">\(S=\{M,F\}\)</span> so that females can either only produce Males or only produce Females. Thus, a general mixed strategy <span class="math">\(\sigma=(\omega,1-\omega)\)</span> produces a population with a proportion of <span class="math">\(\omega\)</span> males. Furthermore we can write <span class="math">\(\chi=(\alpha,1-\alpha)\)</span>.</p>
-<p>The females are the decision makers so that we consider them as the individuals in our population. The immediate offspring of the females <span class="math">\(n\)</span> is constant and so cannot be used as a utility. We use the second generation offspring:</p>
-<p><span class="math">\[
+<p>We assume that \(S=\{M,F\}\) so that females can either only produce Males or only produce Females. Thus, a general mixed strategy \(\sigma=(\omega,1-\omega)\) produces a population with a proportion of \(\omega\) males. Furthermore we can write \(\chi=(\alpha,1-\alpha)\).</p>
+<p>The females are the decision makers so that we consider them as the individuals in our population. The immediate offspring of the females \(n\) is constant and so cannot be used as a utility. We use the second generation offspring:</p>
+<p>\[
 \begin{aligned}
 u(M,\chi)&amp;=K^2\frac{1-\alpha}{\alpha}\\
 u(F,\chi)&amp;=K^2
 \end{aligned}
-\]</span></p>
+\]</p>
 <p>Thus:</p>
-<p><span class="math">\[u(\sigma,\chi)=K^2\left(\omega\frac{(1-\alpha)}{\alpha}+(1-\omega)\right)\]</span></p>
+<p>\[u(\sigma,\chi)=K^2\left(\omega\frac{(1-\alpha)}{\alpha}+(1-\omega)\right)\]</p>
 <p>Let us try and find an ESS for this game:</p>
 <ol style="list-style-type: decimal">
-<li>If <span class="math">\(\alpha\ne 1/2\)</span> then <span class="math">\(u(M,\chi)\ne u(F,\chi)\)</span> so that any mixed strategy <span class="math">\(\sigma\)</span> with support <span class="math">\(\{M,F\}\)</span> would not give a stable population.</li>
-<li>Thus we need to check if <span class="math">\(\sigma^*=(1/2,1/2)\)</span> is an ESS (this is the only candidate).</li>
+<li>If \(\alpha\ne 1/2\) then \(u(M,\chi)\ne u(F,\chi)\) so that any mixed strategy \(\sigma\) with support \(\{M,F\}\) would not give a stable population.</li>
+<li>Thus we need to check if \(\sigma^*=(1/2,1/2)\) is an ESS (this is the only candidate).</li>
 </ol>
-<p>We consider some mutation <span class="math">\(\sigma=(p,1-p)\)</span>:</p>
-<p><span class="math">\[\chi_{\epsilon}=(1-\epsilon)\sigma^*+\epsilon\sigma\]</span></p>
+<p>We consider some mutation \(\sigma=(p,1-p)\):</p>
+<p>\[\chi_{\epsilon}=(1-\epsilon)\sigma^*+\epsilon\sigma\]</p>
 <p>which implies:</p>
-<p><span class="math">\[\alpha{\epsilon}=(1-\epsilon)1/2+p\epsilon=1/2+\epsilon(p-1/2)\]</span></p>
+<p>\[\alpha{\epsilon}=(1-\epsilon)1/2+p\epsilon=1/2+\epsilon(p-1/2)\]</p>
 <p>We have:</p>
-<p><span class="math">\[u(\sigma^*,\chi_{\epsilon})=1/2+\frac{1-\alpha_{\epsilon}}{2\alpha_{\epsilon}}\]</span></p>
+<p>\[u(\sigma^*,\chi_{\epsilon})=1/2+\frac{1-\alpha_{\epsilon}}{2\alpha_{\epsilon}}\]</p>
 <p>and:</p>
-<p><span class="math">\[u(\sigma,\chi_{\epsilon})=(1-p)+p\frac{1-\alpha_{\epsilon}}{\alpha_{\epsilon}}\]</span></p>
+<p>\[u(\sigma,\chi_{\epsilon})=(1-p)+p\frac{1-\alpha_{\epsilon}}{\alpha_{\epsilon}}\]</p>
 <p>The difference:</p>
-<p><span class="math">\[
+<p>\[
 \begin{aligned}
 u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&amp;=p-1/2+(1/2-p)\frac{1-\alpha_{\epsilon}}{\alpha_{\epsilon}}\\
 &amp;=(1/2-p)\frac{1-2\alpha_{\epsilon}}{\alpha_{\epsilon}}
 \end{aligned}
-\]</span></p>
-<p>We note that if <span class="math">\(p&lt;1/2\)</span> then <span class="math">\(\alpha_{\epsilon}&lt;2\)</span> which implies that <span class="math">\(u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&gt;0\)</span>. Similarly if <span class="math">\(p&gt;1/2\)</span> then <span class="math">\(\alpha_{\epsilon}&lt;2\)</span> which implies that <span class="math">\(u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&gt;0\)</span>. Thus <span class="math">\(\sigma^*=(1/2,1/2)\)</span> is a ESS.</p>
+\]</p>
+<p>We note that if \(p&lt;1/2\) then \(\alpha_{\epsilon}&lt;2\) which implies that \(u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&gt;0\). Similarly if \(p&gt;1/2\) then \(\alpha_{\epsilon}&lt;2\) which implies that \(u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&gt;0\). Thus \(\sigma^*=(1/2,1/2)\) is a ESS.</p>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_11_Population_Games_and_Evolutionary_stable_strategies.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_11_Population_Games_and_Evolutionary_stable_strategies.docx">docx (not recommended)</a>)</p>
 </body>
 </html>

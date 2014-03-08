@@ -133,16 +133,16 @@
     We see that this is a zero sum game with bi-matrix:
 
     $$\begin{pmatrix}
-    (.8,.2)&(.15,.75)\\
+    (.8,.2)&(.15,.85)\\
     (.2,.8)&(.95,.05)
     \end{pmatrix}$$
 
     There are no pure Nash equilibria. To obtain the NE, we use the Equality of Payoffs theorem:
 
-    $$.2x+.8(1-x)=(.75x+.05(1-x))\Rightarrow x=15/26$$
+    $$.2x+.8(1-x)=(.85x+.05(1-x))\Rightarrow x=15/28$$
     $$.8y+.15(1-y)=.2y+.95(1-y)\Rightarrow y=4/7$$
 
-    So the Nash Equilibrium is $\{(15/26,11/26),(4/7,3/7)\}$.
+    So the Nash Equilibrium is $\{(15/28,13/28),(4/7,3/7)\}$.
 
     ii. Assume that player 1 now has a further strategy available: to shoot in the middle: $S_1=\{\text{SL},\text{SM}, \text{SR}\}$ the probabilities of a goal being scored are now given:
 

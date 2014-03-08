@@ -3,22 +3,73 @@
 1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}.
 
 
-![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
+    - Game 1:
 
-![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+        ![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
 
-![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+        **Solution**
 
-![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: C, b: A, c: B\}\)
+        Reviewer optimal: \(\{'A': 'b', 'B': 'c', 'C': 'a'\}\)
+
+
+
+    - Game 2:
+
+        ![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+
+        **Solution**
+
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: C, b: B, c: A\}\)
+        Reviewer optimal: \(\{A: c, B: b, C: a\}\)
+
+    - Game 3:
+
+        ![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+
+        **Solution**
+
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: D, b: A, c: C, d: B\}\)
+        Reviewer optimal: \(\{A: b, B: d, C: c, D: a\}\)
+
+    - Game 4:
+
+        ![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
+
+        **Solution**
+
+        Following the algorithm:
+
+        Suitor optimal: \(\{a: D, b: A, c: C, d: B\}\)
+        Reviewer optimal: \(\{A: c, B: d, C: b, D: a\}\)
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
 
+    **Solution**
+
+    Let \(M\) be the suitor optimal matching (given by the Gale-Shapley algorithm).
+
+    Assume $\exists$ $M'\ne M$. As $M$ is reviewer sub-optimal $\exists$ a subset $\bar R\subseteq R$ such that:
+    For all $r\in \bar R$: $M^{-1}(r)$ is worse than $M'^{-1}(r)$. For $r\in R\setminus \bar R$ $M^{-1}(r)=M'^{-1}(r)$.
+
+    Consider $\bar r\in\bar R$, as all reviewers have same reference list, let $r$ be the reviewer with ''best'' suitor under matching $M$ (the matching given by the Gale Shapley algorithm).
+
+    When considering $M'$, reviewers outside of $\bar R$ have same matching as in $M$. All reviewers in $\bar R$ must have a ''better'' matching.
+
+    As all reviewers have the same preference list, $\bar r$ cannot be matched thus $M'$ is not a matching.
+
 3. For the following cooperative games:
 
-i. Verify if the game is monotonic.
-ii. Verify if the game is super additive.
-iii. Obtain the Shapley value.
+    i. Verify if the game is monotonic.
+    ii. Verify if the game is super additive.
+    iii. Obtain the Shapley value.
 
 $$
 v_1(C)=\begin{cases}
@@ -32,6 +83,12 @@ v_1(C)=\begin{cases}
 \end{cases}
 $$
 
+    **Solution**
+
+    Game is monotone but is not super additive: $v_1(\{1,3\})=5$ and $v_1(\{1\})+v_1(\{3\})=5+2=7$.
+
+    The Shapley value is \(\phi=(20/3, 31/6, 7/6)\).
+
 $$
 v_2(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
@@ -40,8 +97,15 @@ v_2(C)=\begin{cases}
 \end{cases}
 $$
 
+    **Solution**
+
+    Game is not monotone: $v_2(\{1\})=6\geq v_2(\{1,2\})=5$.
+    Game is not super additive: $v_2(\{1,2\})=5\leq v_2(\{1\})+v_2(\{2\})=6$.
+
+    The Shapley value is \(\phi=(11/2,-1/2)\).
+
 $$
-v_4(C)=\begin{cases}
+v_3(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
 6,&\text{if }C=\{2\}\\
 13,&\text{if }C=\{3\}\\
@@ -51,6 +115,10 @@ v_4(C)=\begin{cases}
 26,&\text{if }C=\{1,2,3\}\\
 \end{cases}
 $$
+
+    Game is monotone but not super additive: $v_3(\{1,2\})=6\leq v_3(\{1\})+v_3(\{2\})=12$
+
+    The Shapley value is \(\phi=(19/3, 19/3, 40/3)\).
 
 $$
 v_4(C)=\begin{cases}
@@ -72,12 +140,16 @@ v_4(C)=\begin{cases}
 \end{cases}
 $$
 
+    Game is monotone but not super additive: $v_4(\{1,2\})=7\leq v_4(\{1\})+v_4(\{2\})=13$
+
+    The Shapley value is \(\phi=(83/12, 89/12, 1/4, 125/12)\).
+
 4. Prove that the Shapley value has the following properties:
 
-- Efficiency
-- Null player
-- Symmetry
-- Additivity
+    - Efficiency
+    - Null player
+    - Symmetry
+    - Additivity
 
 Note that this does not prove that the Shapley value is the only vector that has those properties (it in fact is though).
 
