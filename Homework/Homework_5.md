@@ -49,7 +49,7 @@ v_2(C)=\begin{cases}
 $$
 
 $$
-v_4(C)=\begin{cases}
+v_3(C)=\begin{cases}
 6,&\text{if }C=\{1\}\\
 6,&\text{if }C=\{2\}\\
 13,&\text{if }C=\{3\}\\
