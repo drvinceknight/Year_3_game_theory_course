@@ -1,0 +1,28 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=1cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{a: 1}
+        child {node[player] {c: 2}
+                child {node[end] {} node[right] {$(-3,-2)$} edge from parent node[below] {C}}
+                child {node[end] {} node[right] {$(5,4)$} edge from parent node[below] {D}} edge from parent node[below] {B}}
+        child {node[player] {b: 2}
+                child {node (E) [player] {e: 1}
+                    child {node[end] {} node [right] {$(1,-1)$} edge from parent node[below] {H}}
+                    child {node[end] {} node [right] {$(-2,2)$} edge from parent node[below] {T}}
+                        edge from parent node[below] {H}}
+                child {node (D) [player] {d: 1}
+                    child{node[end] {} node [right] {$(-3,3)$} edge from parent node[below] {H}}
+                    child{node[end] {} node [right] {$(1,-1)$} edge from parent node[below] {T}}
+                edge from parent node[below] {T}}
+        edge from parent node[below] {A}
+};
+            \draw [dashed] (D) -- (E);
+\end{tikzpicture}
+\end{document}
