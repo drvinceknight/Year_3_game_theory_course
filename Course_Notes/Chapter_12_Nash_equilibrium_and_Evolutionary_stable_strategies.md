@@ -124,7 +124,7 @@ $$(1-\epsilon)u(\sigma^*,\sigma^*)+\epsilon u(\sigma^*,\sigma)>(1-\epsilon)u(\si
 
     - If $u(\sigma^*,\sigma^*)<u(\sigma,\sigma^*)$ then we can find $\epsilon$ sufficiently small such that the inequality is violated. Thus the inequality implies $u(\sigma^*,\sigma^*)\geq u(\sigma,\sigma^*)$.
 
-    - If $u(\sigma^*,\sigma^*)= u(\sigma,\sigma^*)$ then $u(\sigma^*,\sigma^*)> u(\sigma,\sigma^*)$ as required.
+    - If $u(\sigma^*,\sigma^*)= u(\sigma,\sigma^*)$ then $u(\sigma^*,\sigma)> u(\sigma,\sigma)$ as required.
 
 This result gives us an efficient way of computing ESS. The first condition is in fact almost a condition for Nash Equilibrium (with a strict inequality), the second is thus a stronger condition that removes certain Nash equilibria from consideration. This becomes particularly relevant when considering Nash equilibrium in mixed strategies.
 
