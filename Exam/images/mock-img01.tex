@@ -1,0 +1,26 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\begin{document}
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=1cm]
+\tikzstyle{player} = [text width=5em, draw, text centered, rectangle, fill=blue!20, inner sep=1pt]
+\tikzstyle{nature} = [minimum width=3pt,circle,  draw, fill=red!20, inner sep=1pt]
+\tikzstyle{end} = [circle, minimum width=3pt, fill, inner sep=0pt, right]
+\begin{tikzpicture}[grow=right, sloped]
+    \node[player]{a: 1}
+        child {node[end] {} node[right] {(2,0)}
+                 edge from parent node[below] {T}}
+        child {node[player] {b: 2}
+                child {node (E) [end] {} node [right] {(1,3)}
+                        edge from parent node[below] {T}}
+                child {node (D) [player] {c: 1}
+                    child{node[end] {} node [right] {$(4,2)$} edge from parent node[below] {T}}
+                    child{node[player] {d: 2}
+                        child{node[end] {} node [right] {$(3,5)$} edge from parent node[below] {T}}
+                        child{node[end] {} node [right] {$(4,4)$} edge from parent node[above] {P}}
+                            edge from parent node[below] {P}}
+                edge from parent node[below] {P}}
+edge from parent node[below]{P} };
+\end{tikzpicture}
+\end{document}
