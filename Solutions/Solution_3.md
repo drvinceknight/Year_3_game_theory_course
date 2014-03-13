@@ -12,7 +12,7 @@ $$(AZY,CX)$$
 
 **Solution**
 
-$$(WNYLL,AC)$$
+$$(WMYLL,AC)$$
 
 ![](./images/E03-img03.png)\
 
@@ -20,7 +20,7 @@ For $P_3$, $B$ dominates $A$, for $P_2$, $B$ dominates $A$, finally $A$ dominate
 
 **Solution**
 
-$$(A,BB,BB)$$
+$$(A,B,B)$$
 
 ![](images/E03-img04.png)\
 
@@ -104,7 +104,7 @@ Here is the corresponding normal form representation:
 $$
 \begin{pmatrix}
 (-1,1)&(-1,1)&(1,-1)&(1,-1)\\
-(2,-2)&(2,-2)&(2,-2)&(2,-2)\\
+(-2,2)&(-2,2)&(2,-2)&(2,-2)\\
 (20,20)&(10,10)&(20,20)&(10,10)\\
 (20,20)&(10,10)&(20,20)&(10,10)\\
 \end{pmatrix}
@@ -112,7 +112,7 @@ $$
 
 By examining best responses we identify the following 4 pure Nash equilibria:
 
-$$\{(BT,TD), (BT,TD), (BH,TD), (BH,HD)\}$$
+$$\{(BT,TD), (BT,HD), (BH,TD), (BH,HD)\}$$
 
 Looking at the subgame initiated at $b$ (with $S_1=\{H,T\}$ and $S_2=\{H,T\}$):
 
@@ -149,9 +149,9 @@ $$\begin{pmatrix}
 No other strategy is subgame perfect.
 
 $$\begin{pmatrix}
-(5,8)&(0,3)\\
+(5,4)&(0,3)\\
 (0,3)&(1,4)\\
-(1,6)&(0,3)\\
+(3,6)&(0,3)\\
 \end{pmatrix}$$
 
 **Solution**
@@ -168,8 +168,8 @@ Deviate?
 - P1: Gain 2 in 1st round but lose 4 in second round.
 
 $$\begin{pmatrix}
-(5,2)&(2,0)&(6,3)\\
-(5,2)&(1,3)&(7,1)
+(1,2)&(0,3)&(-1,1)\\
+(-1,0)&(-1,-1)&(0,1)
 \end{pmatrix}$$
 
 **Solution**
@@ -205,7 +205,7 @@ u_2(S_D,S_D)&=3/2\\
 
 $$\begin{cases}
 u_1(S_D,S_C)&=9/2\\
-u_2(S_D,S_C)&=-21/3\\
+u_2(S_D,S_C)&=-21/2\\
 \end{cases}$$
 
 $$\begin{cases}
