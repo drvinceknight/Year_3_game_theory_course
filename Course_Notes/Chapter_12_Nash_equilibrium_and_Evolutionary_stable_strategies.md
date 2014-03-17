@@ -45,7 +45,7 @@ thus the best response is setting $\omega=0$ i.e. to play Dove.
 
 So we will now try and find out if there is a mixed-strategy ESS: $\sigma^*=(\omega^*,1-\omega^*)$. For $\sigma^*$ to be an ESS it must be a best response to the population it generates $\chi^*=(\omega^*,1-\omega^*)$. In this population the payoff to an arbitrary strategy $\sigma$ is:
 
-$$u(\sigma,\chi^*)=(1-\omega^*)\frac{v}{2}+\left(\frac{v}{2}-\omega^*\right)\frac{\omega c}{2}$$
+$$u(\sigma,\chi^*)=(1-\omega^*)\frac{v}{2}+\left(\frac{v}{c}-\omega^*\right)\frac{\omega c}{2}$$
 
 - If $\omega^*<v/c$ then a best response is $\omega=1$;
 - If $\omega^*>v/c$ then a best response is $\omega=0$;

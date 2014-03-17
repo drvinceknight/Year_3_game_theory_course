@@ -146,7 +146,7 @@ We begin by proving that the above is a Nash equilibrium.
 
 Without loss of generality if player 1 deviates to $\sigma_1'\in\Delta S_1$ such that $u_1(\sigma_1',\bar \sigma_2)>v_1$ in stage $k$ then:
 
-$$U_1^{(k)}=(k-1)v_1+u_1(\sigma_1',\bar \sigma_2)+u_1^*\left(\frac{1}{1-\delta}-\sum_{t=1}^{k}\delta^{t-1}\right)$$
+$$U_1^{(k)}=\sum_{t=1}^{k-1}\delta^{t-1}v_1+\delta^{k-1}u_1(\sigma_1',\bar \sigma_2)+u_1^*\left(\frac{1}{1-\delta}-\sum_{t=1}^{k}\delta^{t-1}\right)$$
 
 Recalling that player 1 would receive $v_1$ in every stage with no devitation, the biggest gain to be made from deviating is if player 1 deviates in the first stage (all future gains are more heavily discounted). Thus if we can find $\bar\delta$ such that $\delta>\bar\delta$ implies that $U_1^{(1)}\leq \frac{v_1}{1-q}$ then player 1 has no incentive to deviate.
 

@@ -139,7 +139,7 @@ All possible executions of the Gale-Shapley algorithm yield the same stable matc
 
 Suppose that an arbitrary execution $\alpha$ of the algorithm gives $M$ and that another execution $\beta$ gives $M'$ such that $\exists$ $s\in S$ such that $s$ prefers $r'=M'(s)$ to $r=M(s)$.
 
-Without loss of generality this implies that during $\alpha$ $r'$ must have rejected $s$. Suppose, again without loss of generality that this was the first occasion that a rejection occured during $\alpha$ and assume that this rejection occurred because $r'=M'(s')$. This implies that $s'$ has no stable match that is higher in $s'$'s preference list than $r'$ (as we have assumed that this is the first rejection).
+Without loss of generality this implies that during $\alpha$ $r'$ must have rejected $s$. Suppose, again without loss of generality that this was the first occasion that a rejection occured during $\alpha$ and assume that this rejection occurred because $r'=M(s')$. This implies that $s'$ has no stable match that is higher in $s'$'s preference list than $r'$ (as we have assumed that this is the first rejection).
 
 Thus $s'$ prefers $r'$ to $M'(s')$ so that $(s',r')$ blocks $M'$. Each suitor is therefore matched in $M$ with his favorite stable reviewer and since $\alpha$ was arbitrary it follows that all possible executions give the same matching.
 
