@@ -115,14 +115,14 @@ We consider each strategy pair and state the condition for Nash equilibrium:
 
 1. $(a,c)$: $v\leq 21$ and $u\leq 3$.
 2. $(a,d)$: $u\geq3$.
-3. $(b,c)$: $v\geq 21$ and $u\leq 3$.
+3. $(b,c)$: $v\geq 21$ and $5\geq 6$.
 4. $(b,d)$: $5\geq2$.
 
 Now consider the implications of each of those profiles being an equilibrium:
 
 1. $8+v/3=v$ $\Rightarrow$ $v=12$ and $4+u/3=u$ $\Rightarrow$ $u=6$ which contradicts the corresponding inequality.
 2. $3+2u/3=u$ $\Rightarrow$ $u=9$.
-3. $1+2v/3=v$ $\Rightarrow$ $v=3$ and $5+2u/3=u$ $\Rightarrow$ $u=15$ which contradicts the corresponding inequality.
+3. The inequality for $u$ cannot hold.
 4. The inequality cannot hold.
 
 Thus the unique Markov strategy Nash equilibria is $(a,d)$ **which is not the stage Nash equilibria!**
