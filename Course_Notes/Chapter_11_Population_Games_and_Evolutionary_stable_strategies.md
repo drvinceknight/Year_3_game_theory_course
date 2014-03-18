@@ -111,7 +111,7 @@ Consider a population with $S=\{s_1,s_2\}$ and initial population profile $\chi=
 $$
 \begin{aligned}
 \chi_{\epsilon}&=(1-\epsilon)(1/2,1/2)+\epsilon\sigma\\
-            &=(1/2-\epsilon/3,1/2+2\epsilon/3)
+            &=(1/2-\epsilon/6,1/2+\epsilon/6)
 \end{aligned}
 $$
 
@@ -188,4 +188,4 @@ u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&=p-1/2+(1/2-p)\frac{1-\alp
 \end{aligned}
 $$
 
-We note that if $p<1/2$ then $\alpha_{\epsilon}<2$ which implies that $u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})>0$. Similarly if $p>1/2$ then $\alpha_{\epsilon}<2$ which implies that $u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})>0$. Thus $\sigma^*=(1/2,1/2)$ is a ESS.
+We note that if $p<1/2$ then $\alpha_{\epsilon}<1/2$ which implies that $u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})>0$. Similarly if $p>1/2$ then $\alpha_{\epsilon}<1/2$ which implies that $u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})>0$. Thus $\sigma^*=(1/2,1/2)$ is a ESS.
