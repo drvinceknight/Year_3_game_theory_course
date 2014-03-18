@@ -122,7 +122,7 @@ Now consider the implications of each of those profiles being an equilibrium:
 
 1. $8+v/3=v$ $\Rightarrow$ $v=12$ and $4+u/3=u$ $\Rightarrow$ $u=6$ which contradicts the corresponding inequality.
 2. $3+2u/3=u$ $\Rightarrow$ $u=9$.
-3. The inequality for $u$ cannot hold.
+3. The second inequality cannot hold.
 4. The inequality cannot hold.
 
 Thus the unique Markov strategy Nash equilibria is $(a,d)$ **which is not the stage Nash equilibria!**
