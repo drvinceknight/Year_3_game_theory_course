@@ -76,7 +76,7 @@ Here is the Gale-Shapley algorithm, which gives a stable matching for a matching
     - If $r$ is unmatched set $M(s)=r$
     - If $r$ is matched:
         - If $r$ prefers $s$ to $M^{-1}(r)$ then set $M(r)=s$
-        - Otherwise $s$ remains unmatched and remove $r$ from $r$'s preference list.
+        - Otherwise $s$ remains unmatched and remove $r$ from $s$'s preference list.
 3. Repeat step 2 until all $s\in S$ are matched.
 
 Let us illustrate this algorithm with the above example\text{ (shown again in Figure \ref{L15-img05})}.
