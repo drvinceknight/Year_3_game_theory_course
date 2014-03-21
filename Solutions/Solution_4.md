@@ -29,7 +29,7 @@
     $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) =\frac{3}{2} \, {\left(2 \, w - 1\right)}^{2}
     $$
 
-    which is positive for $\omega != 1/2$ so this mixed strategy is an ESS.
+    which is positive for $\omega \ne 1/2$ so this mixed strategy is an ESS.
 
     $$\begin{pmatrix}
     (1,1)&(0,0)\\
