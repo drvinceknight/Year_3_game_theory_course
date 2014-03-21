@@ -10,9 +10,9 @@
     \end{pmatrix}$$
 
     $$\begin{pmatrix}
-    (\underline{6},\underline{7})&(2,1)&(4,6)\\
+    (\underline{6},\underline{7})&(2,1)&(\underline{4},6)\\
     (0,4)&(\underline{3},\underline{8})&(2,3)\\
-    (\underline{1},\underline{2})&(\underline{1},\underline{5})&(\underline{1},\underline{1})\\
+    (1,2)&(1,\underline{5})&(1,1)\\
     \end{pmatrix}$$
 
     $$\begin{pmatrix}

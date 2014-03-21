@@ -18,7 +18,7 @@
 
     for $\sigma=(\omega,1-\omega)$:
 
-    $$u((1/2,1/2),\sigma)=\omega+2-2\omega=2-\omega$$
+    $$u((1/2,1/2),\sigma)=\omega+2-2\omega+5\omega/2+(1-\omega)/2=\omega+5/2$$
 
     and:
 
@@ -26,9 +26,10 @@
 
     thus (after some algebraic manipulation):
 
-    $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) = 6\omega^2-8\omega+1$$
+    $$u((1/2,1/2), \sigma) - u(\sigma,\sigma) =\frac{3}{2} \, {\left(2 \, w - 1\right)}^{2}
+    $$
 
-    which is negative for $\omega > 2/3-\sqrt{10}/6$ so this mixed strategy is not an ESS.
+    which is positive for $\omega != 1/2$ so this mixed strategy is an ESS.
 
     $$\begin{pmatrix}
     (1,1)&(0,0)\\
