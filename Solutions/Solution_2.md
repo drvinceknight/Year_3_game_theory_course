@@ -184,10 +184,10 @@
 
     There is no pure strategy Nash equilibrium if either:
 
-    1. $a_{11}<a_{21}$ and $b_{21}<b_{22}$ and $a_{22}<a_{21}$ and $b_{21}<b_{11}$ or
-    2. $a_{11}>a_{21}$ and $b_{21}>b_{22}$ and $a_{22}>a_{21}$ and $b_{21}>b_{11}$
+    1. $a_{11}<a_{21}$ and $b_{21}<b_{22}$ and $a_{22}<a_{12}$ and $b_{12}<b_{11}$ or
+    2. $a_{11}>a_{21}$ and $b_{21}>b_{22}$ and $a_{22}>a_{12}$ and $b_{12}>b_{11}$ or
 
-    In each of these cases we use the Euqality of payoffs theorem:
+    In each of these cases we use the Equality of payoffs theorem:
 
     $$
     u_1(r_1,\sigma_2) = u_2(r_2,\sigma_2)
@@ -203,6 +203,6 @@
 
     Similarly:
 
-    $$x = \frac{b_{12} - b_{22}}{b_{12}-b_{22} + b_{21} - b_{11}}$$
+    $$x = \frac{b_{22} - b_{21}}{b_{22}-b_{21} + b_{11} - b_{12}}$$
 
     In both cases the $0<x,y<1$ as required.
