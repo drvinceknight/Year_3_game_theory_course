@@ -92,7 +92,7 @@ Player 1s strategy profile is (Y) (we will discuss strategy profiles for extensi
 
 ![Running example step 2.\label{L07-img11}](images/L07-img11.png)
 
-Player 2s strategy profile is (B). At node $(b)$ C is a dominated strategy so that the game reduces as shown\text{ in Figure \ref{L07-img12}}.
+Player 2s strategy profile is (B). At node $(b)$ D is a dominated strategy so that the game reduces as shown\text{ in Figure \ref{L07-img12}}.
 
 ![Running example step 3.\label{L07-img12}](images/L07-img12.png)
 
