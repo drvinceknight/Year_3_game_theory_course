@@ -129,7 +129,7 @@ f_P&\geq 0
 
 ---
 
-In our example this corresponds to minimising $C(\alpha,\beta)=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1$ such that $0\leq\alpha\leq 1$ and $0\leq\beta\leq1$.
+In our example this corresponds to minimising $C(\alpha,\beta)=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1$ such that $0\leq\alpha\leq 1/2$ and $0\leq\beta\leq1/2$.
 
 A plot of $C(\alpha,\beta)$ is shown\text{ in Figure \ref{L17-plot01}}.
 
