@@ -33,7 +33,7 @@ A plot of $\Phi(\alpha,\beta)$ is shown\text{ in Figure \ref{L18-plot01}}.
 
 ![$\Phi(\alpha,\beta)$.\label{L18-plot01}](plots/L18-plot01.png)
 
-We can verify analytically (as before) that the minimum of this function is given by $(\alpha,\beta)=(0,1/5)$. This leads to the following powerful result.
+We can verify analytically (as before) that the minimum of this function is given by $(\alpha,\beta)=(1/2,1/5)$. This leads to the following powerful result.
 
 ### Theorem connecting the Nash flow to the optimal flow
 
@@ -59,7 +59,7 @@ $$c^*=\frac{d}{dx}(xc(x)$$
 
 ---
 
-For our running example we have the marginal cost functions given\{ in Figure \ref{L18-img01}}.
+For our running example we have the marginal cost functions given\text{ in Figure \ref{L18-img01}}.
 
 ![$(G,r,c)$.\label{L18-img01}](images/L18-img01.png)
 
