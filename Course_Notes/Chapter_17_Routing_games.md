@@ -224,4 +224,4 @@ Thus we have $\tilde f=(1/2,1/5)$ which gives a cost of $C(\tilde f)=11/40$ (hig
 
 What if we had assumed that $\beta=1/2$?
 
-This would have given $\alpha^2=1/2-\alpha$ which has solution $\alpha\approx .3660$. The cost of the path $s_2at$ is then $.134$ however the cost of the path $s_2t$ is $.75$ thus the second commodity should deviate. We can carry out these same checks with all other possibilities to verify that $\tilde f=(0,1/5)$.
+This would have given $\alpha^2=1/2-\alpha$ which has solution $\alpha\approx .3660$. The cost of the path $s_2at$ is then $.134$ however the cost of the path $s_2t$ is $.75$ thus the second commodity should deviate. We can carry out these same checks with all other possibilities to verify that $\tilde f=(1/2,1/5)$.
