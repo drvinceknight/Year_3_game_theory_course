@@ -46,7 +46,7 @@ x&=1/3
 \end{aligned}
 $$
 
-Using the Equality of Payoffs theorem we get that the Nash equilibrium is $\sigma_1=(0,0,2/3,1/3)$ and $\sigma_2=(2/3,1/3)$. I.e. player 1 should always raise if the card is high and bluff with probability $1/3$ if the card is low.
+Using the Equality of Payoffs theorem we get that the Nash equilibrium is $\sigma_1=(0,0,1/3,2/3)$ and $\sigma_2=(2/3,1/3)$. I.e. player 1 should always raise if the card is high and bluff with probability $1/3$ if the card is low.
 
 ## Utilities
 
