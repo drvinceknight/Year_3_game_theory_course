@@ -55,7 +55,7 @@ So the only candidate for an ESS is $\sigma^*=\left(v/c,1-v/c\right)$. We now ne
 
 We have:
 
-$$x_\epsilon=(v/c+\epsilon(\omega-v/c),1-v/c+\epsilon(\omega-v/c)$$
+$$x_\epsilon=(v/c+\epsilon(\omega-v/c),1-v/c+\epsilon(v/c-\omega)$$
 
 and:
 
