@@ -144,14 +144,14 @@ $$u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_1(r_2,s_2)+(1-x-y)u_1(r_2,s_3)$$
 
 However as noted earlier $s_3$ is dominated by $s_2$ so:
 
-$$u_1(r_1,\sigma_2)< xu_1(r_1,s_1)+u_1(r_1,s_2)(1-x)=7-4x$$
-$$u_1(r_2,\sigma_2)< xu_1(r_2,s_1)+u_1(r_2,s_2)(1-x)=6-x$$
+$$u_1(r_1,\sigma_2)< xu_1(r_1,s_1)+u_1(r_1,s_3)(1-x)=5-2x$$
+$$u_1(r_2,\sigma_2)< xu_1(r_2,s_1)+u_1(r_2,s_3)(1-x)=12x-7$$
 
 \text{Figure \ref{L04-plot04} shows these upper bounds.}
 
 ![Upper bounds on $u_1$\label{L04-plot04}](plots/L04-plot04.png)
 
-We see that $r_1$ and $r_2$ are best responses for player 1 (however $r_3$ cannot be as for any value of $y$ the corresponding curves would be below the curves shown\text{ in Figure \ref{L04-plot04}}):
+We see that $r_1$ and $r_2$ are best responses for player 1:
 
 $$B_1=\{r_1,r_2\}$$
 
