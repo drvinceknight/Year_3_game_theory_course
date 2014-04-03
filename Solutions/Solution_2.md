@@ -34,7 +34,7 @@
 
         $3\geq 4\alpha$ and $5\geq\alpha$
 
-        Thus $(r_1,s_1)$ is a Nash equilibrium iff $\alpha\geq3/4$.
+        Thus $(r_1,s_1)$ is a Nash equilibrium iff $\alpha\leq3/4$.
 
     - $(r_1,s_2)$ is a pure strategy Nash equilibrium if:
 
@@ -46,7 +46,7 @@
 
         $4\alpha \geq 3$ and $6\geq \alpha^2$
 
-        Thus $(r_2,s_1)$ is a Nash equilibrium iff $4/3\leq \alpha \leq \sqrt{6}$
+        Thus $(r_2,s_1)$ is a Nash equilibrium iff $3/4\leq \alpha \leq \sqrt{6}$
 
     - $(r_2,s_2)$ is a pure strategy Nash equilibrium if:
 
@@ -190,7 +190,7 @@
     In each of these cases we use the Equality of payoffs theorem:
 
     $$
-    u_1(r_1,\sigma_2) = u_2(r_2,\sigma_2)
+    u_1(r_1,\sigma_2) = u_1(r_2,\sigma_2)
     $$
 
     $$
