@@ -222,4 +222,4 @@
 
     4. $(b,d)$ which requires: $2+u/4\leq 1+u/40$ and $2+v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80$. However if this is the equilibria then $u=40/39$ and $v=80/39$ which contradicts the constraints.
 
-    Thus $(a,b)$ is the unique pure strategy equilibrium.
+    Thus $(a,d)$ is the unique pure strategy equilibrium.
