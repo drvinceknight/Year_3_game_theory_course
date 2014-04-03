@@ -184,7 +184,7 @@
 
     $$\begin{pmatrix}
     (1+u/8, 3+v/8) & (2+u/4, 1+v/4)\\
-    (7, 0) & (1+u/40, 2+9v/40)
+    (7, 0) & (1+u/40, 2+v/40)
     \end{pmatrix}$$
 
 
@@ -192,11 +192,11 @@
 
     1. $(a,c)$ which requires: $1+u/8\geq 7$ and $3+v/8\geq 1+v/4$ $\Rightarrow$ $u\geq 48$ and $v\leq 16$. However if this is the equilibria then $u=8/7$ and $v=24/7$ which contradicts the constraints.
 
-    2. $(a,b)$ which requires: $2+u/4\geq 1+u/40$ and $3+v/8\leq 1+v/4$ $\Rightarrow$ $u\geq -40/9$ and $v\geq 16$. However if this is the equilibria then $u=8/3$ and $v=4/3$ which contradicts the constraints.
+    2. $(a,d)$ which requires: $2+u/4\geq 1+u/40$ and $3+v/8\leq 1+v/4$ $\Rightarrow$ $u\geq -40/9$ and $v\geq 16$. However if this is the equilibria then $u=8/3$ and $v=4/3$ which contradicts the constraints.
 
-    3. $(b,c)$ which requires: $7\geq 1+u/8$ and $0\geq 2+9v/40$ $\Rightarrow$ $u\leq 48$ and $v\leq -80/9$. However if this is the equilibria then $u=7$ and $v=0$ which contradicts the constraints.
+    3. $(b,c)$ which requires: $7\geq 1+u/8$ and $0\geq 2+v/40$ $\Rightarrow$ $u\leq 48$ and $v\leq -80$. However if this is the equilibria then $u=7$ and $v=0$ which contradicts the constraints.
 
-    4. $(a,b)$ which requires: $2+u/4\leq 1+u/40$ and $2+9v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80/9$. However if this is the equilibria then $u=40/39$ and $v=80/31$ which contradicts the constraints.
+    4. $(a,d)$ which requires: $2+u/4\leq 1+u/40$ and $2+v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80$. However if this is the equilibria then $u=40/39$ and $v=80/39$ which contradicts the constraints.
 
     Thus no Nash equilibrium exists in pure strategies.
 
@@ -208,7 +208,7 @@
 
     $$\begin{pmatrix}
     (1+u/20, 3+v/20) & (2+7u/40, 1+7v/40)\\
-    (7, 0) & (1+u/40, 2+9v/40)
+    (7, 0) & (1+u/40, 2+v/40)
     \end{pmatrix}$$
 
 
@@ -216,10 +216,10 @@
 
     1. $(a,c)$ which requires: $1+u/20\geq 7$ and $3+v/20\geq 1+7v/40$ $\Rightarrow$ $u\geq 120$ and $v\leq 16$. However if this is the equilibria then $u=20/19$ and $v=60/19$ which contradicts the constraints.
 
-    2. $(a,b)$ which requires: $2+7u/40\geq 1+u/40$ and $1+7v/40\geq 3+v/20$ $\Rightarrow$ $u\geq -20/3$ and $v\leq 16$. However if this is the equilibria then $u=80/33$ and $v=40/33$ which does not contradict any constraints.
+    2. $(a,d)$ which requires: $2+7u/40\geq 1+u/40$ and $1+7v/40\geq 3+v/20$ $\Rightarrow$ $u\geq -20/3$ and $v\leq 16$. However if this is the equilibria then $u=80/33$ and $v=40/33$ which does not contradict any constraints.
 
-    3. $(b,c)$ which requires: $7\geq 1+u/20$ and $0\geq 2+9v/40$ $\Rightarrow$ $u\leq 120$ and $v\leq -80/9$. However if this is the equilibria then $u=7$ and $v=0$ which contradicts the constraints.
+    3. $(b,c)$ which requires: $7\geq 1+u/20$ and $0\geq 2+1v/40$ $\Rightarrow$ $u\leq 120$ and $v\leq -80$. However if this is the equilibria then $u=7$ and $v=0$ which contradicts the constraints.
 
-    4. $(a,b)$ which requires: $2+u/4\leq 1+u/40$ and $2+9v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80/9$. However if this is the equilibria then $u=40/39$ and $v=80/31$ which contradicts the constraints.
+    4. $(b,d)$ which requires: $2+u/4\leq 1+u/40$ and $2+v/40\geq 0$ $\Rightarrow$ $u\leq -40/9$ and $v\geq -80$. However if this is the equilibria then $u=40/39$ and $v=80/39$ which contradicts the constraints.
 
-    Thus $(a,b)$ is the unique pure strategy equilibrium.
+    Thus $(a,d)$ is the unique pure strategy equilibrium.
