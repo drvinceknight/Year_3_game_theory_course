@@ -154,7 +154,7 @@ $$
 \begin{aligned}
 U_1^{(1)}=u_1(\sigma_1',\bar\sigma_2)+u_1^*\frac{\delta}{1-\delta}&\leq\frac{v_1}{1-\delta}\\
 (1-\delta)u_1(\sigma_1',\bar\sigma_2)+u_1^*\delta&\leq v_1\\
-u_1(\sigma_1',\bar\sigma_2)-v_1&\leq \delta(u_1^*(\sigma_1',\bar\sigma_2)-u_1^*)\\
+u_1(\sigma_1',\bar\sigma_2)-v_1&\leq \delta(u_1(\sigma_1',\bar\sigma_2)-u_1^*)\\
 \end{aligned}
 $$
 
