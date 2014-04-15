@@ -113,11 +113,11 @@
     $$
     \begin{pmatrix}
     (5/2,1) & (0,0) & (1,5/2)\\
-    (1,3/2) & (-3/2,-1) & (3/2,1)\\
+    (1,3/2) & (-3/2,-1) & (3,1)\\
     \end{pmatrix}
     $$
 
-    We see that $s_2$ is dominated and sole the game using the equality of payoffs theorem to give the following Nash equilibrium: $$((1/4,3/4), (1/4,3/4))$$
+    We see that $s_2$ is dominated and solve the game using the equality of payoffs theorem to give the following Nash equilibrium: $$((1/4,3/4), (4/7,3/7))$$
 
 4. Repeat the analysis of the principal agent game assuming that $p$ is the probability of the project being successful in case of a high level of effort by the employee.
 
