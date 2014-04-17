@@ -139,21 +139,17 @@ $$B_2=\{s_1,s_2\}$$
 
 We will now attempt to identify $B_1$ for the above game. Let us assume that player two plays $\sigma_2=(x,y,1-x-y)$. This gives:
 
-$$u_1(r_1,\sigma_2)=xu_1(r_1,s_1)+yu_1(r_1,s_2)+(1-x-y)u_1(r_1,s_3)$$
-$$u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_1(r_2,s_2)+(1-x-y)u_1(r_2,s_3)$$
+$$u_1(r_1,\sigma_2)=xu_1(r_1,s_1)+yu_1(r_1,s_2)+(1-x-y)u_1(r_1,s_3)=3x+7y+5-5y-5x$$
+$$u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_1(r_2,s_2)+(1-x-y)u_1(r_2,s_3)=5x+6y+7-7y-7x$$
 
-However as noted earlier $s_3$ is dominated by $s_2$ so:
+$$u_1(r_1,\sigma_2)-u_2(r_2,\sigma_2)=3y - 2$$
 
-$$u_1(r_1,\sigma_2)< xu_1(r_1,s_1)+u_1(r_1,s_2)(1-x)=7-4x$$
-$$u_1(r_2,\sigma_2)< xu_1(r_2,s_1)+u_1(r_2,s_2)(1-x)=6-x$$
-
-\text{Figure \ref{L04-plot04} shows these upper bounds.}
-
-![Upper bounds on $u_1$\label{L04-plot04}](plots/L04-plot04.png)
-
-We see that $r_1$ and $r_2$ are best responses for player 1:
+If we can find values of $y$ that give valid $\sigma_2=(x,y,1-x-y)$ and that make the above difference both positive and negative then:
 
 $$B_1=\{r_1,r_2\}$$
+
+$y=1$ gives $u_1(r_1,\sigma_2)-u_2(r_2,\sigma_2)=1>0$ (thus $r_1$ is best response to $\sigma_2=(0,1,0)$).
+Similarly, $y=0$ gives $u_1(r_1,\sigma_2)-u_2(r_2,\sigma_2)=-2<0$ (thus $r_2$ is best response to $\sigma_2=(x,0,1-x)$ for any $0\leq x \leq 1$) as required.
 
 We have seen in our example that $B_i=UD_i$. This leads us to two Theorems (the proofs are omitted).
 
