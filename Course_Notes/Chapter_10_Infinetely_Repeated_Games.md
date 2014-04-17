@@ -29,7 +29,7 @@ $$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty2>\infty$$
 
 Similarly:
 
-$$U_1(s_{D},s_{D})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty1>\infty$$
+$$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty1>\infty$$
 
 It is impossible to compare these two strategies. To be able to carry out analysis of strategies in infinitely repeated games we make use of a **discounting factor** $0<\delta<1$.
 
@@ -41,11 +41,11 @@ $$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i{r(t),s(t)}$$
 
 Thus:
 
-$$U_1(s_{C},s_{C})=U_1(s_{C},s_{C})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)$$
+$$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)$$
 
 and:
 
-$$U_1(s_{D},s_{D})=U_1(s_{C},s_{C})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)$$
+$$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)$$
 
 ## Conditions for cooperation in Prisoner's Dilemmas
 

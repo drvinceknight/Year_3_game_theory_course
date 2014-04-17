@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-chapter-10---infinitely-repeated-games"><span class="header-section-number">1</span> OR 3: Chapter 10 - Infinitely Repeated Games</h1>
@@ -18,61 +19,61 @@
 </ul>
 <p>In this chapter we'll take a look at what happens when games are repeatedly infinitely.</p>
 <h2 id="discounting"><span class="header-section-number">1.2</span> Discounting</h2>
-<p>To illustrate infinitely repeated games (\(T\to\infty\)) we will consider a Prisoners dilemma as our stage game.</p>
-<p>\[
+<p>To illustrate infinitely repeated games (<span class="math">\(T\to\infty\)</span>) we will consider a Prisoners dilemma as our stage game.</p>
+<p><span class="math">\[
 \begin{pmatrix}
 (2,2)&amp;(0,3)\\
 (3,0)&amp;(1,1)
 \end{pmatrix}
-\]</p>
-<p>Let us denote \(s_{C}\) as the strategy &quot;cooperate at every stage&quot;. Let us denote \(s_{D}\) as the strategy &quot;defect at every stage&quot;.</p>
-<p>If we assume that both players play \(s_{C}\) their utility would be:</p>
-<p>\[U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty2&gt;\infty\]</p>
+\]</span></p>
+<p>Let us denote <span class="math">\(s_{C}\)</span> as the strategy &quot;cooperate at every stage&quot;. Let us denote <span class="math">\(s_{D}\)</span> as the strategy &quot;defect at every stage&quot;.</p>
+<p>If we assume that both players play <span class="math">\(s_{C}\)</span> their utility would be:</p>
+<p><span class="math">\[U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty2&gt;\infty\]</span></p>
 <p>Similarly:</p>
-<p>\[U_1(s_{D},s_{D})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty1&gt;\infty\]</p>
-<p>It is impossible to compare these two strategies. To be able to carry out analysis of strategies in infinitely repeated games we make use of a <strong>discounting factor</strong> \(0&lt;\delta&lt;1\).</p>
-<p>The interpretation of \(\delta\) is that there is less importance given to future payoffs. One way of thinking about this is that &quot;the probability of recieveing the future payoffs decreases with time&quot;.</p>
+<p><span class="math">\[U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty1&gt;\infty\]</span></p>
+<p>It is impossible to compare these two strategies. To be able to carry out analysis of strategies in infinitely repeated games we make use of a <strong>discounting factor</strong> <span class="math">\(0&lt;\delta&lt;1\)</span>.</p>
+<p>The interpretation of <span class="math">\(\delta\)</span> is that there is less importance given to future payoffs. One way of thinking about this is that &quot;the probability of recieveing the future payoffs decreases with time&quot;.</p>
 <p>In this case we write the utility in an infinitely repeated game as:</p>
-<p>\[U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i{r(t),s(t)}\]</p>
+<p><span class="math">\[U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i{r(t),s(t)}\]</span></p>
 <p>Thus:</p>
-<p>\[U_1(s_{C},s_{C})=U_1(s_{C},s_{C})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)\]</p>
+<p><span class="math">\[U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)\]</span></p>
 <p>and:</p>
-<p>\[U_1(s_{D},s_{D})=U_1(s_{C},s_{C})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)\]</p>
+<p><span class="math">\[U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)\]</span></p>
 <h2 id="conditions-for-cooperation-in-prisoners-dilemmas"><span class="header-section-number">1.3</span> Conditions for cooperation in Prisoner's Dilemmas</h2>
-<p>Let us consider the &quot;Grimm trigger&quot; strategy (which we denote \(s_G\)):</p>
+<p>Let us consider the &quot;Grimm trigger&quot; strategy (which we denote <span class="math">\(s_G\)</span>):</p>
 <blockquote>
 <p>&quot;Start by cooperating until your opponent defects at which point defect in all future stages.&quot;</p>
 </blockquote>
-<p>If both players play \(s_G\) we have \(s_G=s_C\):</p>
-<p>\[U_1(s_{G},s_{G})=U_1(s_{G},s_{G})=2/(1-\delta)\]</p>
-<p>If we assume that \(S_1=S_2=\{s_C,s_D,s_G\}\) and player 2 deviates from \(S_G\) at the first stage to \(s_D\) we get:</p>
-<p>\[U_2(s_{C},s_{G})=3+\sum_{t=2}^{\infty}\delta^{t-1}=3+\delta/(1-\delta)\]</p>
-<p>Deviation from \(s_G\) to \(s_D\) is rational if and only if:</p>
-<p>\[2/(1-\delta)&lt;3+\delta/(1-\delta)\] \[\Leftrightarrow\] \[\delta&lt; 1/2\]</p>
-<p>thus if \(\delta\) is large enough \((s_G,s_G)\) is a Nash equilibrium.</p>
-<p>Importantly \((s_G,s_G)\) is not a subgame perfect Nash equilibrium. Consider the subgame following \((r_1,s_2)\) having been played in the first stage of the game. Assume that player 1 adhers to \(s_G\):</p>
+<p>If both players play <span class="math">\(s_G\)</span> we have <span class="math">\(s_G=s_C\)</span>:</p>
+<p><span class="math">\[U_1(s_{G},s_{G})=U_1(s_{G},s_{G})=2/(1-\delta)\]</span></p>
+<p>If we assume that <span class="math">\(S_1=S_2=\{s_C,s_D,s_G\}\)</span> and player 2 deviates from <span class="math">\(S_G\)</span> at the first stage to <span class="math">\(s_D\)</span> we get:</p>
+<p><span class="math">\[U_2(s_{C},s_{G})=3+\sum_{t=2}^{\infty}\delta^{t-1}=3+\delta/(1-\delta)\]</span></p>
+<p>Deviation from <span class="math">\(s_G\)</span> to <span class="math">\(s_D\)</span> is rational if and only if:</p>
+<p><span class="math">\[2/(1-\delta)&lt;3+\delta/(1-\delta)\]</span> <span class="math">\[\Leftrightarrow\]</span> <span class="math">\[\delta&lt; 1/2\]</span></p>
+<p>thus if <span class="math">\(\delta\)</span> is large enough <span class="math">\((s_G,s_G)\)</span> is a Nash equilibrium.</p>
+<p>Importantly <span class="math">\((s_G,s_G)\)</span> is not a subgame perfect Nash equilibrium. Consider the subgame following <span class="math">\((r_1,s_2)\)</span> having been played in the first stage of the game. Assume that player 1 adhers to <span class="math">\(s_G\)</span>:</p>
 <ol style="list-style-type: decimal">
-<li>If player 2 also plays \(s_G\) then the first stage of the subgame will be \((r_2,s_1)\) (player 1 punishes while player 2 sticks with \(s_1\) as player 1 played \(r_1\) in previous stage). All subsequent plays will be \((r_2,s_2)\) so player 2's utility will be:</li>
+<li>If player 2 also plays <span class="math">\(s_G\)</span> then the first stage of the subgame will be <span class="math">\((r_2,s_1)\)</span> (player 1 punishes while player 2 sticks with <span class="math">\(s_1\)</span> as player 1 played <span class="math">\(r_1\)</span> in previous stage). All subsequent plays will be <span class="math">\((r_2,s_2)\)</span> so player 2's utility will be:</li>
 </ol>
-<p>\[0+\sum_{t=2}^{\infty}\delta^{t-1}=\delta/(1-\delta)\]</p>
+<p><span class="math">\[0+\sum_{t=2}^{\infty}\delta^{t-1}=\delta/(1-\delta)\]</span></p>
 <ol start="2" style="list-style-type: decimal">
-<li>If player 2 deviates from \(s_G\) and chooses to play \(D\) in every period of the subgame then player 2's utility will be:</li>
+<li>If player 2 deviates from <span class="math">\(s_G\)</span> and chooses to play <span class="math">\(D\)</span> in every period of the subgame then player 2's utility will be:</li>
 </ol>
-<p>\[\sum_{t=1}^{\infty}\delta^{t-1}=(1-\delta)\]</p>
-<p>which is a rational deviation (as \(0&lt;\delta&lt;1\)).</p>
+<p><span class="math">\[\sum_{t=1}^{\infty}\delta^{t-1}=(1-\delta)\]</span></p>
+<p>which is a rational deviation (as <span class="math">\(0&lt;\delta&lt;1\)</span>).</p>
 <p>Two questions arise:</p>
 <ol style="list-style-type: decimal">
-<li>Can we always find a strategy in a repeated game that gives us a better outcome than simply repeating the stage Nash equilibria? (Like \(s_G\))</li>
-<li>Can we also find a strategy with the above property that in fact is subgame perfect? (Unlike \(s_G\))</li>
+<li>Can we always find a strategy in a repeated game that gives us a better outcome than simply repeating the stage Nash equilibria? (Like <span class="math">\(s_G\)</span>)</li>
+<li>Can we also find a strategy with the above property that in fact is subgame perfect? (Unlike <span class="math">\(s_G\)</span>)</li>
 </ol>
 <h2 id="folk-theorm"><span class="header-section-number">1.4</span> Folk theorm</h2>
 <p>The answer is yes! To prove this we need to define a couple of things.</p>
 <h3 id="definition-of-an-average-payoff"><span class="header-section-number">1.4.1</span> Definition of an average payoff</h3>
 <hr />
-<p>If we interpret \(\delta\) as the probability of the repeated game not ending then the <em>average</em> length of the game is:</p>
-<p>\[\bar T=\frac{1}{1-\delta}\]</p>
+<p>If we interpret <span class="math">\(\delta\)</span> as the probability of the repeated game not ending then the <em>average</em> length of the game is:</p>
+<p><span class="math">\[\bar T=\frac{1}{1-\delta}\]</span></p>
 <p>We can use this to define the <strong>average payoffs</strong> per stage:</p>
-<p>\[\frac{1}{\bar T}U_i(r,s)=(1-\delta)U_i(r,s)\]</p>
+<p><span class="math">\[\frac{1}{\bar T}U_i(r,s)=(1-\delta)U_i(r,s)\]</span></p>
 <hr />
 <p>This average payoff is a tool that allows us to compare the payoffs in an infitely repeated game to the payoff in a single stage game.</p>
 <hr />
@@ -82,37 +83,37 @@
 <hr />
 <p>As an example consider the plot corresponding to a repeated Prisoner's Dilemma.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L10-img01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L10-img01.png" />
 </div>
 <p>The feasible average payoffs correspond to the feasible payoffs in the stage game. The individually rational payoffs show the payoffs that are <strong>better for both players</strong> than the stag Nash equilibrium.</p>
 <p>The following theorem states that we can choose a particular discount rate that for which there exists a subgame perfect Nash equilibrium that would give any individually rational payoff pair!</p>
 <h3 id="folk-theorem-for-infinetely-repeated-games"><span class="header-section-number">1.4.3</span> Folk Theorem for infinetely repeated games</h3>
 <hr />
-<p>Let \((u_1^*,u_2^*)\) be a pair of Nash equilibrium payoffs for a stage game. For every individually rational pair \((v_1,v_2)\) there exists \(\bar \delta\) such that for all \(1&gt;\delta&gt;\bar \delta&gt;0\) there is a subgame perfect Nash equilibrium with payoffs \((v_1,v_2)\).</p>
+<p>Let <span class="math">\((u_1^*,u_2^*)\)</span> be a pair of Nash equilibrium payoffs for a stage game. For every individually rational pair <span class="math">\((v_1,v_2)\)</span> there exists <span class="math">\(\bar \delta\)</span> such that for all <span class="math">\(1&gt;\delta&gt;\bar \delta&gt;0\)</span> there is a subgame perfect Nash equilibrium with payoffs <span class="math">\((v_1,v_2)\)</span>.</p>
 <hr />
 <h3 id="proof"><span class="header-section-number">1.4.4</span> Proof</h3>
 <hr />
-<p>Let \((\sigma_1^*,\sigma_2^*)\) be the stage Nash profile that yields \((u_1^*,u_2^*)\). Now assume that playing \(\bar\sigma_1\in\Delta S_1\) and \(\bar\sigma_2\in\Delta S_2\) in every stage gives \((v_1,v_2)\) (an individual rational payoff pair).</p>
+<p>Let <span class="math">\((\sigma_1^*,\sigma_2^*)\)</span> be the stage Nash profile that yields <span class="math">\((u_1^*,u_2^*)\)</span>. Now assume that playing <span class="math">\(\bar\sigma_1\in\Delta S_1\)</span> and <span class="math">\(\bar\sigma_2\in\Delta S_2\)</span> in every stage gives <span class="math">\((v_1,v_2)\)</span> (an individual rational payoff pair).</p>
 <p>Consider the following strategy:</p>
 <blockquote>
-<p>&quot;Begin by using \(\bar \sigma_i\) and continue to use \(\bar \sigma_i\) as long as both players use the agreed strategies. If any player deviates: use \(\sigma_i^*\) for all future stages.&quot;</p>
+<p>&quot;Begin by using <span class="math">\(\bar \sigma_i\)</span> and continue to use <span class="math">\(\bar \sigma_i\)</span> as long as both players use the agreed strategies. If any player deviates: use <span class="math">\(\sigma_i^*\)</span> for all future stages.&quot;</p>
 </blockquote>
 <p>We begin by proving that the above is a Nash equilibrium.</p>
-<p>Without loss of generality if player 1 deviates to \(\sigma_1&#39;\in\Delta S_1\) such that \(u_1(\sigma_1&#39;,\bar \sigma_2)&gt;v_1\) in stage \(k\) then:</p>
-<p>\[U_1^{(k)}=\sum_{t=1}^{k-1}\delta^{t-1}v_1+\delta^{k-1}u_1(\sigma_1&#39;,\bar \sigma_2)+u_1^*\left(\frac{1}{1-\delta}-\sum_{t=1}^{k}\delta^{t-1}\right)\]</p>
-<p>Recalling that player 1 would receive \(v_1\) in every stage with no devitation, the biggest gain to be made from deviating is if player 1 deviates in the first stage (all future gains are more heavily discounted). Thus if we can find \(\bar\delta\) such that \(\delta&gt;\bar\delta\) implies that \(U_1^{(1)}\leq \frac{v_1}{1-q}\) then player 1 has no incentive to deviate.</p>
-<p>\[
+<p>Without loss of generality if player 1 deviates to <span class="math">\(\sigma_1&#39;\in\Delta S_1\)</span> such that <span class="math">\(u_1(\sigma_1&#39;,\bar \sigma_2)&gt;v_1\)</span> in stage <span class="math">\(k\)</span> then:</p>
+<p><span class="math">\[U_1^{(k)}=\sum_{t=1}^{k-1}\delta^{t-1}v_1+\delta^{k-1}u_1(\sigma_1&#39;,\bar \sigma_2)+u_1^*\left(\frac{1}{1-\delta}-\sum_{t=1}^{k}\delta^{t-1}\right)\]</span></p>
+<p>Recalling that player 1 would receive <span class="math">\(v_1\)</span> in every stage with no devitation, the biggest gain to be made from deviating is if player 1 deviates in the first stage (all future gains are more heavily discounted). Thus if we can find <span class="math">\(\bar\delta\)</span> such that <span class="math">\(\delta&gt;\bar\delta\)</span> implies that <span class="math">\(U_1^{(1)}\leq \frac{v_1}{1-q}\)</span> then player 1 has no incentive to deviate.</p>
+<p><span class="math">\[
 \begin{aligned}
 U_1^{(1)}=u_1(\sigma_1&#39;,\bar\sigma_2)+u_1^*\frac{\delta}{1-\delta}&amp;\leq\frac{v_1}{1-\delta}\\
 (1-\delta)u_1(\sigma_1&#39;,\bar\sigma_2)+u_1^*\delta&amp;\leq v_1\\
 u_1(\sigma_1&#39;,\bar\sigma_2)-v_1&amp;\leq \delta(u_1(\sigma_1&#39;,\bar\sigma_2)-u_1^*)\\
 \end{aligned}
-\]</p>
-<p>as \(u_1(\sigma_1&#39;,\bar \sigma_2)&gt;v_1&gt;u_1^*\), taking \(\bar\delta=\frac{u_1(\sigma_1&#39;,\bar\sigma_2)-v_1}{u_1(\sigma_1&#39;,\bar\sigma_2)-u_1^*}\) gives the required required result for player 1 and repeating the argument for player 2 completes the proof of the fact that the prescribed strategy is a Nash equilibrium.</p>
+\]</span></p>
+<p>as <span class="math">\(u_1(\sigma_1&#39;,\bar \sigma_2)&gt;v_1&gt;u_1^*\)</span>, taking <span class="math">\(\bar\delta=\frac{u_1(\sigma_1&#39;,\bar\sigma_2)-v_1}{u_1(\sigma_1&#39;,\bar\sigma_2)-u_1^*}\)</span> gives the required required result for player 1 and repeating the argument for player 2 completes the proof of the fact that the prescribed strategy is a Nash equilibrium.</p>
 <p>By construction this strategy is also a subgame perfect Nash equilibrium. Given any history <strong>both</strong> players will act in the same way and no player will have an incentive to deviate:</p>
 <ul>
-<li>If we consider a subgame just after any player has deviated from \(\bar\sigma_i\) then both players use \(\sigma_i^*\).</li>
-<li>If we consider a subgame just after no player has deviated from \(\sigma_i\) then both players continue to use \(\bar\sigma_i\).</li>
+<li>If we consider a subgame just after any player has deviated from <span class="math">\(\bar\sigma_i\)</span> then both players use <span class="math">\(\sigma_i^*\)</span>.</li>
+<li>If we consider a subgame just after no player has deviated from <span class="math">\(\sigma_i\)</span> then both players continue to use <span class="math">\(\bar\sigma_i\)</span>.</li>
 </ul>
 <hr />
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_10_Infinetely_Repeated_Games.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_10_Infinetely_Repeated_Games.docx">docx (not recommended)</a>)</p>
