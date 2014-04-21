@@ -67,7 +67,7 @@ For any repeated game, any sequence of stage Nash profiles gives the outcome of 
 
 ---
 
-Where by stage Nash profile we refer to a stationary profile that is a Nash Equilibrium in the stage game.
+Where by stage Nash profile we refer to a strategy profile that is a Nash Equilibrium in the stage game.
 
 
 ### Proof
