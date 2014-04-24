@@ -39,7 +39,7 @@ thus the best response is setting $\omega=1$ i.e. to play Hawk.
 
 In a population of Hawks ($h=1$):
 
-$$u(\sigma,(1,0))=\omega h \frac{v-c}{2} $$
+$$u(\sigma,(1,0))=\omega \frac{v-c}{2} $$
 
 thus the best response is setting $\omega=0$ i.e. to play Dove.
 
