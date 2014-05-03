@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-chapter-16---cooperative-games"><span class="header-section-number">1</span> OR 3: Chapter 16 - Cooperative games</h1>
@@ -21,7 +22,7 @@
 <p>In cooperative game theory the interest lies with understanding how coalitions form in competitive situations.</p>
 <h3 id="definition-of-a-characteristic-function-game"><span class="header-section-number">1.2.1</span> Definition of a characteristic function game</h3>
 <hr />
-<p>A <strong>characteristic function game</strong> G is given by a pair \((N,v)\) where \(N\) is the number of players and \(v:2^{[N]}\to\mathbb{R}\) is a <strong>characteristic function</strong> which maps every coalition of players to a payoff.</p>
+<p>A <strong>characteristic function game</strong> G is given by a pair <span class="math">\((N,v)\)</span> where <span class="math">\(N\)</span> is the number of players and <span class="math">\(v:2^{[N]}\to\mathbb{R}\)</span> is a <strong>characteristic function</strong> which maps every coalition of players to a payoff.</p>
 <hr />
 <p>Let us consider the following game:</p>
 <blockquote>
@@ -29,11 +30,11 @@
 </blockquote>
 <p>This is illustrated.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L16-img01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L16-img01.png" />
 </div>
-<p>To construct the characteristic function we first obtain the power set (ie all possible coalitions) \(2^{\{1,2,3\}}=\{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\Omega\}\) where \(\Omega\) denotes the set of all players (\(\{1,2,3\}\)).</p>
+<p>To construct the characteristic function we first obtain the power set (ie all possible coalitions) <span class="math">\(2^{\{1,2,3\}}=\{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\Omega\}\)</span> where <span class="math">\(\Omega\)</span> denotes the set of all players (<span class="math">\(\{1,2,3\}\)</span>).</p>
 <p>The characteristic function is given below:</p>
-<p>\[
+<p><span class="math">\[
 v(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 12,&amp;\text{if }C=\{2\}\\
@@ -43,17 +44,17 @@ v(C)=\begin{cases}
 42,&amp;\text{if }C=\{2,3\}\\
 42,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
-\]</p>
+\]</span></p>
 <h3 id="definition-of-a-monotone-characteristic-function-game"><span class="header-section-number">1.2.2</span> Definition of a monotone characteristic function game</h3>
 <hr />
-<p>A characteristic function game \(G=(n,v)\) is called <strong>monotone</strong> if it satisfies \(v(C_2)\geq v(C_1)\) for all \(C_1\subseteq C_2\).</p>
+<p>A characteristic function game <span class="math">\(G=(N,v)\)</span> is called <strong>monotone</strong> if it satisfies <span class="math">\(v(C_2)\geq v(C_1)\)</span> for all <span class="math">\(C_1\subseteq C_2\)</span>.</p>
 <hr />
 <p></p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L16-img02.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L16-img02.png" />
 </div>
-<p>Our taxi example is monotone, however the \(G=(3,v_1)\) with \(v_1\) defined as:</p>
-<p>\[
+<p>Our taxi example is monotone, however the <span class="math">\(G=(3,v_1)\)</span> with <span class="math">\(v_1\)</span> defined as:</p>
+<p><span class="math">\[
 v_1(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 12,&amp;\text{if }C=\{2\}\\
@@ -63,18 +64,18 @@ v_1(C)=\begin{cases}
 42,&amp;\text{if }C=\{2,3\}\\
 42,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
-\]</p>
+\]</span></p>
 <p>is not.</p>
 <h3 id="definition-of-a-superadditive-game"><span class="header-section-number">1.2.3</span> Definition of a superadditive game</h3>
 <hr />
-<p>A characteristic function game \(G=(n,v)\) is called <strong>superadditive</strong> if it satisfies \(v(C_1\cup C_2)\geq v(C_1)+v(C_2).\)</p>
+<p>A characteristic function game <span class="math">\(G=(N,v)\)</span> is called <strong>superadditive</strong> if it satisfies <span class="math">\(v(C_1\cup C_2)\geq v(C_1)+v(C_2).\)</span></p>
 <hr />
 <p></p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L16-img03.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L16-img03.png" />
 </div>
-<p>Our taxi example is not superadditive, however the \(G=(3,v_2)\) with \(v_2\) defined as:</p>
-<p>\[
+<p>Our taxi example is not superadditive, however the <span class="math">\(G=(3,v_2)\)</span> with <span class="math">\(v_2\)</span> defined as:</p>
+<p><span class="math">\[
 v_2(C)=\begin{cases}
 6,&amp;\text{if }C=\{1\}\\
 12,&amp;\text{if }C=\{2\}\\
@@ -84,13 +85,13 @@ v_2(C)=\begin{cases}
 55,&amp;\text{if }C=\{2,3\}\\
 80,&amp;\text{if }C=\{1,2,3\}\\
 \end{cases}
-\]</p>
+\]</span></p>
 <p>is.</p>
 <h2 id="shapley-value"><span class="header-section-number">1.3</span> Shapley Value</h2>
-<p>When talking about a solution to a characteristic function game we imply a payoff vector \(\lambda\in\mathbb{R}_{\geq 0}^{N}\) that divides the value of the grand coalition between the various players. Thus \(\lambda\) must satisfy:</p>
-<p>\[\sum_{i=1}^n\lambda_i=v(\Omega)\]</p>
-<p>Thus one potential solution to our taxi example would be \(\lambda=(14,14,14)\). Obviously this is not ideal for player 1 and/or 2: they actually pay more than they would have paid without sharing the taxi!</p>
-<p>Another potential solution would be \(\lambda=(6,6,30)\), however at this point sharing the taxi is of no benefit to player 1. Similarly \((0,12,30)\) would have no incentive for player 2.</p>
+<p>When talking about a solution to a characteristic function game we imply a payoff vector <span class="math">\(\lambda\in\mathbb{R}_{\geq 0}^{N}\)</span> that divides the value of the grand coalition between the various players. Thus <span class="math">\(\lambda\)</span> must satisfy:</p>
+<p><span class="math">\[\sum_{i=1}^N\lambda_i=v(\Omega)\]</span></p>
+<p>Thus one potential solution to our taxi example would be <span class="math">\(\lambda=(14,14,14)\)</span>. Obviously this is not ideal for player 1 and/or 2: they actually pay more than they would have paid without sharing the taxi!</p>
+<p>Another potential solution would be <span class="math">\(\lambda=(6,6,30)\)</span>, however at this point sharing the taxi is of no benefit to player 1. Similarly <span class="math">\((0,12,30)\)</span> would have no incentive for player 2.</p>
 <p>To find a &quot;fair&quot; distribution of the grand coalition we must define what is meant by &quot;fair&quot;. We require four desirable properties:</p>
 <ul>
 <li>Efficiency;</li>
@@ -100,81 +101,81 @@ v_2(C)=\begin{cases}
 </ul>
 <h3 id="definition-of-efficiency"><span class="header-section-number">1.3.1</span> Definition of efficiency</h3>
 <hr />
-<p>For \(G=(N,v)\) a payoff vector \(\lambda\) is <strong>efficient</strong> if:</p>
-<p>\[\sum_{i=1}^N\lambda_i=v(\Omega)\]</p>
+<p>For <span class="math">\(G=(N,v)\)</span> a payoff vector <span class="math">\(\lambda\)</span> is <strong>efficient</strong> if:</p>
+<p><span class="math">\[\sum_{i=1}^N\lambda_i=v(\Omega)\]</span></p>
 <hr />
 <h3 id="definition-of-null-players"><span class="header-section-number">1.3.2</span> Definition of null players</h3>
 <hr />
-<p>For \(G(N,v)\) a payoff vector possesses the <strong>null player property</strong> if \(v(C\cup i)=v(C)\) for all \(C\in 2^{\Omega}\) then:</p>
-<p>\[x_i=0\]</p>
+<p>For <span class="math">\(G(N,v)\)</span> a payoff vector possesses the <strong>null player property</strong> if <span class="math">\(v(C\cup i)=v(C)\)</span> for all <span class="math">\(C\in 2^{\Omega}\)</span> then:</p>
+<p><span class="math">\[x_i=0\]</span></p>
 <hr />
 <h3 id="definition-of-symmetry"><span class="header-section-number">1.3.3</span> Definition of symmetry</h3>
 <hr />
-<p>For \(G(N,v)\) a payoff vector possesses the <strong>symmetry property</strong> if \(v(C\cup i)=v(C\cup j)\) for all \(C\in 2^{\Omega}\setminus\{i,j\}\) then:</p>
-<p>\[x_i=x_j\]</p>
+<p>For <span class="math">\(G(N,v)\)</span> a payoff vector possesses the <strong>symmetry property</strong> if <span class="math">\(v(C\cup i)=v(C\cup j)\)</span> for all <span class="math">\(C\in 2^{\Omega}\setminus\{i,j\}\)</span> then:</p>
+<p><span class="math">\[x_i=x_j\]</span></p>
 <hr />
 <h3 id="definition-of-additivity"><span class="header-section-number">1.3.4</span> Definition of additivity</h3>
 <hr />
-<p>For \(G_1=(N,v_1)\) and \(G_2=(N,v_2)\) and \(G^+=(N,v^+)\) where \(v^+(C)=v_1(C)+v_2(C)\) for any \(C\in 2^{\Omega}\). A payoff vector possesses the <strong>additivity property</strong> if:</p>
-<p>\[x_i^{(G^+)}=x_i^{(G_1)}+x_i^{(G_2)}\]</p>
+<p>For <span class="math">\(G_1=(N,v_1)\)</span> and <span class="math">\(G_2=(N,v_2)\)</span> and <span class="math">\(G^+=(N,v^+)\)</span> where <span class="math">\(v^+(C)=v_1(C)+v_2(C)\)</span> for any <span class="math">\(C\in 2^{\Omega}\)</span>. A payoff vector possesses the <strong>additivity property</strong> if:</p>
+<p><span class="math">\[x_i^{(G^+)}=x_i^{(G_1)}+x_i^{(G_2)}\]</span></p>
 <hr />
 <p>We will not prove in this course but in fact there is a single payoff vector that satisfies these four properties. To define it we need two last definitions.</p>
 <h3 id="definition-of-predecessors"><span class="header-section-number">1.3.5</span> Definition of predecessors</h3>
 <hr />
-<p>If we consider any permutation \(\pi\) of \([N]\) then we denote by \(S_\pi(i)\) the set of <strong>predecessors</strong> of \(i\) in \(\pi\):</p>
-<p>\[S_\pi(i)=\{j\in[n]\;|\;\pi(j)&lt;\pi(i)\}\]</p>
+<p>If we consider any permutation <span class="math">\(\pi\)</span> of <span class="math">\([N]\)</span> then we denote by <span class="math">\(S_\pi(i)\)</span> the set of <strong>predecessors</strong> of <span class="math">\(i\)</span> in <span class="math">\(\pi\)</span>:</p>
+<p><span class="math">\[S_\pi(i)=\{j\in[N]\;|\;\pi(j)&lt;\pi(i)\}\]</span></p>
 <hr />
-<p>For example for \(\pi=(1,3,4,2)\) we have \(S_\pi(4)=\{1,3\}\).</p>
+<p>For example for <span class="math">\(\pi=(1,3,4,2)\)</span> we have <span class="math">\(S_\pi(4)=\{1,3\}\)</span>.</p>
 <h3 id="definition-of-marginal-contribution"><span class="header-section-number">1.3.6</span> Definition of marginal contribution</h3>
 <hr />
-<p>If we consider any permutation \(\pi\) of \([N]\) then the <strong>marginal contribution</strong> of player \(i\) with respect to \(\pi\) is given by:</p>
-<p>\[\Delta_\pi^G(i)=v(S_{\pi}(i)\cup i)-v(S_{\pi}(i))\]</p>
+<p>If we consider any permutation <span class="math">\(\pi\)</span> of <span class="math">\([N]\)</span> then the <strong>marginal contribution</strong> of player <span class="math">\(i\)</span> with respect to <span class="math">\(\pi\)</span> is given by:</p>
+<p><span class="math">\[\Delta_\pi^G(i)=v(S_{\pi}(i)\cup i)-v(S_{\pi}(i))\]</span></p>
 <hr />
-<p>We can now define the <strong>Shapley value</strong> of any game \(G=(N,v)\).</p>
+<p>We can now define the <strong>Shapley value</strong> of any game <span class="math">\(G=(N,v)\)</span>.</p>
 <h3 id="definition-of-the-shapley-value"><span class="header-section-number">1.3.7</span> Definition of the Shapley value</h3>
 <hr />
-<p>Given \(G=(N,v)\) the <strong>Shapley value</strong> of player \(i\) is denoted by \(\phi_i(G)\) and given by:</p>
-<p>\[\phi_i(G)=\frac{1}{n!}\sum_{\pi\in\Pi_n}\Delta_\pi^G(i)\]</p>
+<p>Given <span class="math">\(G=(N,v)\)</span> the <strong>Shapley value</strong> of player <span class="math">\(i\)</span> is denoted by <span class="math">\(\phi_i(G)\)</span> and given by:</p>
+<p><span class="math">\[\phi_i(G)=\frac{1}{N!}\sum_{\pi\in\Pi_n}\Delta_\pi^G(i)\]</span></p>
 <hr />
 <p>As an example here is the Shapley value calculation for our taxi sharing game:</p>
-<p>For \(\pi=(1,2,3)\):</p>
-<p>\[\begin{aligned}
+<p>For <span class="math">\(\pi=(1,2,3)\)</span>:</p>
+<p><span class="math">\[\begin{aligned}
 \Delta_{\pi}^G(1)&amp;=6\\
 \Delta_{\pi}^G(2)&amp;=6\\
 \Delta_{\pi}^G(3)&amp;=30\\
-\end{aligned}\]</p>
-<p>For \(\pi=(1,3,2)\):</p>
-<p>\[\begin{aligned}
+\end{aligned}\]</span></p>
+<p>For <span class="math">\(\pi=(1,3,2)\)</span>:</p>
+<p><span class="math">\[\begin{aligned}
 \Delta_{\pi}^G(1)&amp;=6\\
 \Delta_{\pi}^G(2)&amp;=0\\
 \Delta_{\pi}^G(3)&amp;=36\\
-\end{aligned}\]</p>
-<p>For \(\pi=(2,1,3)\):</p>
-<p>\[\begin{aligned}
+\end{aligned}\]</span></p>
+<p>For <span class="math">\(\pi=(2,1,3)\)</span>:</p>
+<p><span class="math">\[\begin{aligned}
 \Delta_{\pi}^G(1)&amp;=0\\
 \Delta_{\pi}^G(2)&amp;=12\\
 \Delta_{\pi}^G(3)&amp;=30\\
-\end{aligned}\]</p>
-<p>For \(\pi=(2,3,1)\):</p>
-<p>\[\begin{aligned}
+\end{aligned}\]</span></p>
+<p>For <span class="math">\(\pi=(2,3,1)\)</span>:</p>
+<p><span class="math">\[\begin{aligned}
 \Delta_{\pi}^G(1)&amp;=0\\
 \Delta_{\pi}^G(2)&amp;=12\\
 \Delta_{\pi}^G(3)&amp;=30\\
-\end{aligned}\]</p>
-<p>For \(\pi=(3,1,2)\):</p>
-<p>\[\begin{aligned}
+\end{aligned}\]</span></p>
+<p>For <span class="math">\(\pi=(3,1,2)\)</span>:</p>
+<p><span class="math">\[\begin{aligned}
 \Delta_{\pi}^G(1)&amp;=0\\
 \Delta_{\pi}^G(2)&amp;=0\\
 \Delta_{\pi}^G(3)&amp;=42\\
-\end{aligned}\]</p>
-<p>For \(\pi=(3,2,1)\):</p>
-<p>\[\begin{aligned}
+\end{aligned}\]</span></p>
+<p>For <span class="math">\(\pi=(3,2,1)\)</span>:</p>
+<p><span class="math">\[\begin{aligned}
 \Delta_{\pi}^G(1)&amp;=0\\
 \Delta_{\pi}^G(2)&amp;=12\\
 \Delta_{\pi}^G(3)&amp;=42\\
-\end{aligned}\]</p>
+\end{aligned}\]</span></p>
 <p>Using this we obtain:</p>
-<p>\[\phi(G)=(2,5,35)\]</p>
+<p><span class="math">\[\phi(G)=(2,5,35)\]</span></p>
 <p>Thus the fair way of sharing the taxi fare is for player 1 to pay 2, player 2 to pay 5 and player 3 to pay 35.</p>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_16_Cooperative_games.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_16_Cooperative_games.docx">docx (not recommended)</a>)</p>
 </body>
