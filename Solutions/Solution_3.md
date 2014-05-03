@@ -28,6 +28,7 @@ $$(A,B,B)$$
 
 $$(AA,C)$$
 
+
 2. Obtain the Nash equilibrium for the following game:
 
 _Player 1 chooses a number $x\geq 0$, which player 2 observes. After this simulataneously and independatly player 1 and player 2 choose $y_1, y_2\in\mathbb{R}$ respectively. The utility to player 1 is given by $2y_2y_1+xy_1-y_1^2-x^3/3$ and the utility to player 2 is given by $-(y_1-2y_2)^2$._
@@ -69,6 +70,7 @@ $$
 This gives $u_1=x^2+x^2-x^2-x^3/3=x^2(1-x/3)$ which has a maxima at $x=2$ for $x\geq 0$. This gives:
 
 $$(\tilde x, \tilde y_1, \tilde y_2) = (2,2,1)$$
+
 
 3. For each of the following games:
 
@@ -132,7 +134,9 @@ and
 $$\sigma_2=(1/2,0,1/2,0)$$
 
 is a NE, and in fact is also a NE for the entire game (again using the Equality of Payoffs theorem).
-5. For the following stage games:
+
+
+4. For the following stage games:
 
 i. Plot all possible utility pairs for $T=2$;
 ii. Recalling that subgame perfect equilibrium for the repeated game must play a stage Nash equilibrium in the final stage attempt to identify a Nash equilibrium for the repeated game that is not a sequence of stage Nash profiles.
@@ -185,7 +189,8 @@ Deviate?
 - P1: No incentive;
 - P2: Gain 1 in 1st round but lose 2 in second round.
 
-6. Consider the following stage game:
+
+5. Consider the following stage game:
 
 $$\begin{pmatrix}
 (-1,1)&(3,-7)\\
