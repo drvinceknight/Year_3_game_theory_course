@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="or-3-chapter-13---random-events-and-incomplete-information"><span class="header-section-number">1</span> OR 3: Chapter 13 - Random events and incomplete information</h1>
@@ -20,7 +21,7 @@
 <p>Game with incomplete information represent situations where the players do not possess exact knowledge of the environment. This is represented by associating probabilities to various states. We show this on game trees using red circles to represent decisions made by &quot;nature&quot; where we can consider &quot;nature&quot; as a player although not a strategic one.</p>
 <p>If we recall the first game tree we considered in <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_01-Introduction.html">Chapter 1</a> we had already done this to some extent.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L01-img01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L01-img01.png" />
 </div>
 <p>Let us consider a slightly more complicated game.</p>
 <blockquote>
@@ -28,29 +29,29 @@
 </blockquote>
 <p>This game is represented shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img01.png" />
 </div>
 <p>To solve this game we can (as in <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_08-Subgame_Perfection.html">Chapter 8</a>) obtain the corresponding normal form game by taking expected utilities over the moves of nature.</p>
-<p>We have \(S_1=\{\text{SeeRaise},\text{SeeSee},\text{RaiseRaise},\text{RaiseSee}\}\) and \(S_2=\{\text{Meet},\text{Pass}\}\) and the normal form representation is:</p>
-<p>\[\begin{pmatrix}
+<p>We have <span class="math">\(S_1=\{\text{SeeRaise},\text{SeeSee},\text{RaiseRaise},\text{RaiseSee}\}\)</span> and <span class="math">\(S_2=\{\text{Meet},\text{Pass}\}\)</span> and the normal form representation is:</p>
+<p><span class="math">\[\begin{pmatrix}
 (-1/2,1/2)&amp;(1,-1)\\
 (0,0)&amp;(0,0)\\
 (0,0)&amp;(1,-1)\\
 (1/2,-1/2)&amp;(0,0)
-\end{pmatrix}\]</p>
-<p>In this game we see that \(\text{SeeSee}\) is dominated by any mixed strategy with support: \(\{\text{RaiseRaise},\text{RaiseSee}\}\). Similarly \(\text{SeeRaise}\) is not a best response to any strategy of player 2 that plays \(\text{Meet}\) with non zero probability. Thus we have \(\sigma_1=(0,0,x,1-x)\). Using the equality of payoffs theorem we have:</p>
-<p>\[
+\end{pmatrix}\]</span></p>
+<p>In this game we see that <span class="math">\(\text{SeeSee}\)</span> is dominated by any mixed strategy with support: <span class="math">\(\{\text{RaiseRaise},\text{RaiseSee}\}\)</span>. Similarly <span class="math">\(\text{SeeRaise}\)</span> is not a best response to any strategy of player 2 that plays <span class="math">\(\text{Meet}\)</span> with non zero probability. Thus we have <span class="math">\(\sigma_1=(0,0,x,1-x)\)</span>. Using the equality of payoffs theorem we have:</p>
+<p><span class="math">\[
 \begin{aligned}
 u_2(\sigma_1,\text{Meet})&amp;=u_2(\sigma_1,\text{Pass})\\
 (x-1)/2&amp;=-x\\
 x&amp;=1/3
 \end{aligned}
-\]</p>
-<p>Using the Equality of Payoffs theorem we get that the Nash equilibrium is \(\sigma_1=(0,0,1/3,2/3)\) and \(\sigma_2=(2/3,1/3)\). I.e. player 1 should always raise if the card is high and bluff with probability \(1/3\) if the card is low.</p>
+\]</span></p>
+<p>Using the Equality of Payoffs theorem we get that the Nash equilibrium is <span class="math">\(\sigma_1=(0,0,1/3,2/3)\)</span> and <span class="math">\(\sigma_2=(2/3,1/3)\)</span>. I.e. player 1 should always raise if the card is high and bluff with probability <span class="math">\(1/3\)</span> if the card is low.</p>
 <h2 id="utilities"><span class="header-section-number">1.3</span> Utilities</h2>
 <p>When considering games with uncertainty it is particularly relevant to consider some basic utility theory. Consider the following game shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img02.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img02.png" />
 </div>
 <p>This is a 1 player game where a player must choose whether or not to flip a coin. If the coin is flipped and lands on &quot;Heads&quot; then the player wins £10, if the coin lands on &quot;Tails&quot; then the player wins nothing. If the player chooses to not flip a coin then the player wins £4.</p>
 <p>With such small sums of money involved it is quite likely that the player would choose to flip the coin (afterall the expected value of flipping the coin is £5. If we changed the game slightly so that it was now in terms of <strong>millions</strong> of pounds surely the player should just take the £4 million on offer?</p>
@@ -62,14 +63,14 @@ x&amp;=1/3
 </ul>
 <p>This is shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/plots/L13-plot01.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/plots/L13-plot01.png" />
 </div>
-<p>If we use \(u=\sqrt{x}\) as the utility function in the coin flip game we see that the analytical solution would indeed be to not flip. We will now take a look at this in a bit more detail with a well known game.</p>
+<p>If we use <span class="math">\(u=\sqrt{x}\)</span> as the utility function in the coin flip game we see that the analytical solution would indeed be to not flip. We will now take a look at this in a bit more detail with a well known game.</p>
 <h2 id="principal-agent-game"><span class="header-section-number">1.4</span> Principal agent game</h2>
 <p>Consider a game with two players. The first player is an employer and the second a potential employee. The employer must decide on two parameters:</p>
 <ul>
-<li>A wage value: \(w\);</li>
-<li>A bonus value: \(B\).</li>
+<li>A wage value: <span class="math">\(w\)</span>;</li>
+<li>A bonus value: <span class="math">\(B\)</span>.</li>
 </ul>
 <p>The potential employee must then make two decisions:</p>
 <ul>
@@ -78,46 +79,46 @@ x&amp;=1/3
 </ul>
 <p>The success of the project that requires the employee is as follows:</p>
 <ul>
-<li>If the employee puts in a high level of effort the project will be succesful with probability \(1/2\);</li>
+<li>If the employee puts in a high level of effort the project will be succesful with probability <span class="math">\(1/2\)</span>;</li>
 <li>If the employee puts in a low level of effort the project will be unsussesful.</li>
 </ul>
 <p>The monetary gain to the employer is as follows:</p>
 <ul>
 <li>If the employee does not take the job the utility is 0.</li>
-<li>If the project is succesful: \(K\);</li>
-<li>If the project is unsuccesful: \(\kappa\).</li>
+<li>If the project is succesful: <span class="math">\(K\)</span>;</li>
+<li>If the project is unsuccesful: <span class="math">\(\kappa\)</span>.</li>
 </ul>
 <p>The monetary gain to the employee is as follows:</p>
 <ul>
-<li>If the job offer is not accepted: 0;</li>
-<li>If the project is succesful: \(w+B-1\) (the lost gain corresponds to the effort);</li>
-<li>If the project is unsuccesful despite a high level of effort: \(w-1\) (the lost gain corresponds to the effort), we assume that \(w\geq 1\);</li>
-<li>If the project is unsuccesful because of a low level of effort: \(w\).</li>
+<li>If the job offer is not accepted: 1;</li>
+<li>If the project is succesful: <span class="math">\(w+B-1\)</span> (the lost gain corresponds to the effort);</li>
+<li>If the project is unsuccesful despite a high level of effort: <span class="math">\(w-1\)</span> (the lost gain corresponds to the effort), we assume that <span class="math">\(w\geq 1\)</span>;</li>
+<li>If the project is unsuccesful because of a low level of effort: <span class="math">\(w\)</span>.</li>
 </ul>
-<p>We furthermore assume that the utility function of the employer is simply \(u(x)=x\) while the utility function to the potential employee is of the form \(u(x)=x^{\alpha}\) for \(0&lt;\alpha&lt;1\) (i.e. the potential employee is risk averse).</p>
+<p>We furthermore assume that the utility function of the employer is simply <span class="math">\(u(x)=x\)</span> while the utility function to the potential employee is of the form <span class="math">\(u(x)=x^{\alpha}\)</span> for <span class="math">\(0&lt;\alpha&lt;1\)</span> (i.e. the potential employee is risk averse).</p>
 <p>The extensive form of the game is shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img03.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img03.png" />
 </div>
-<p>Immediately we see that this game is trivial if \(\kappa&lt;\omega\) and \(K&lt;\omega+B\). Furthermore it seems sensible to only consider \(K&gt;\kappa\).</p>
+<p>Immediately we see that this game is trivial if <span class="math">\(\kappa&lt;\omega\)</span> and <span class="math">\(K&lt;\omega+B\)</span>. Furthermore it seems sensible to only consider <span class="math">\(K&gt;\kappa\)</span>.</p>
 <p>We will solve this game using backward induction. The first step is shown.</p>
 <div class="figure">
-<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img04.png" /><p class="caption"></p>
+<img src="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/images/L13-img04.png" />
 </div>
-<p>If the employer would like a high level of effort he should set \(w,B\) such that:</p>
-<p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq w^\alpha\]</p>
-<p>This ensures that the employee will put in a high level of effort. Furthermore it is in the employers interest to ensure that the employee accepts the job (we assume here that \(\frac{\kappa+K+B}{2}\geq w\)):</p>
-<p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq 1\]</p>
-<p>This second inequality ensures that the employee accepts the position. Given that the position is accepted the employer would like to in fact minimise \(w,B\) thus we have:</p>
-<p>\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}=1\]</p>
+<p>If the employer would like a high level of effort he should set <span class="math">\(w,B\)</span> such that:</p>
+<p><span class="math">\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq w^\alpha\]</span></p>
+<p>This ensures that the employee will put in a high level of effort. Furthermore it is in the employers interest to ensure that the employee accepts the job (we assume here that <span class="math">\(\frac{\kappa+K+B}{2}\geq w\)</span>):</p>
+<p><span class="math">\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}\geq 1\]</span></p>
+<p>This second inequality ensures that the employee accepts the position. Given that the position is accepted the employer would like to in fact minimise <span class="math">\(w,B\)</span> thus we have:</p>
+<p><span class="math">\[\frac{(w+B-1)^\alpha+(w-1)^\alpha}{2}=1\]</span></p>
 <p>Thus we have:</p>
-<p>\[w^\alpha\leq 1\]</p>
-<p>however we assume that \(w\geq 1\) (so that the &quot;wage is worth the effort&quot;) so we in fact have \(w=1\). This then gives: \(B=2^{1/\alpha}\). The expected utilities are then:</p>
+<p><span class="math">\[w^\alpha\leq 1\]</span></p>
+<p>however we assume that <span class="math">\(w\geq 1\)</span> (so that the &quot;wage is worth the effort&quot;) so we in fact have <span class="math">\(w=1\)</span>. This then gives: <span class="math">\(B=2^{1/\alpha}\)</span>. The expected utilities are then:</p>
 <ul>
-<li>Employer: \(\frac{\kappa+K-2^{1/\alpha}}{2}-1\);</li>
+<li>Employer: <span class="math">\(\frac{\kappa+K-2^{1/\alpha}}{2}-1\)</span>;</li>
 <li>Employee: 1.</li>
 </ul>
-<p>Note that the employer's utility is an increasing function in \(\alpha\). As the potential employee becomes more and more risk neutral the employer does not need to offer a high bonus to incite a high level of effort.</p>
+<p>Note that the employer's utility is an increasing function in <span class="math">\(\alpha\)</span>. As the potential employee becomes more and more risk neutral the employer does not need to offer a high bonus to incite a high level of effort.</p>
 <p>(Other versions of the above: <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_13_Random_events_and_incomplete_information.pdf">pdf</a> <a href="http://drvinceknight.github.io/Year_3_game_theory_course/Course_Notes/Chapter_13_Random_events_and_incomplete_information.docx">docx (not recommended)</a>)</p>
 </body>
 </html>
