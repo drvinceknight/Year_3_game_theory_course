@@ -95,7 +95,7 @@ The monetary gain to the employer is as follows:
 
 The monetary gain to the employee is as follows:
 
-- If the job offer is not accepted: 0;
+- If the job offer is not accepted: 1;
 - If the project is succesful: $w+B-1$ (the lost gain corresponds to the effort);
 - If the project is unsuccesful despite a high level of effort: $w-1$ (the lost gain corresponds to the effort), we assume that $w\geq 1$;
 - If the project is unsuccesful because of a low level of effort: $w$.
