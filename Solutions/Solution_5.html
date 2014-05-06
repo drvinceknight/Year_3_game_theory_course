@@ -140,27 +140,39 @@ v_4(C)=\begin{cases}
 <p><img src="http://drvinceknight.github.io/Year_3_game_theory_course/Solutions/images/E05-img05.png" /><br /> <strong>Solution</strong></p>
 <p>For the <strong>Nash flow</strong>:</p>
 <p>Let <span class="math">\(\alpha\)</span> be the traffic along the top arc and <span class="math">\(\beta\)</span> the traffic along the bottom arc.</p>
-<p>By definition for commodity 1 we have:</p>
-<p><span class="math">\[\alpha^2+\alpha=2(2/3-\alpha+1/2-\beta)\]</span></p>
+<p>Assuming both commodities use both arcs available to them. By definition for commodity 1 we have:</p>
+<p><span class="math">\[\alpha^2+\alpha=2(3/2-\alpha+1/2-\beta)\]</span></p>
 <p>By definition for commodity 2 we have:</p>
-<p><span class="math">\[3/2\beta=2(2/3-\alpha+1/2-\beta)\]</span></p>
+<p><span class="math">\[3/2\beta=2(3/2-\alpha+1/2-\beta)\]</span></p>
 <p>Solving this later equation gives:</p>
 <p><span class="math">\[\beta=(8-4\alpha)/7\]</span></p>
 <p>Substituting this in to the first equation gives:</p>
 <p><span class="math">\[\alpha^2+13/7\alpha-12/7=0\]</span></p>
-<p>which has solution <span class="math">\(\alpha=\frac{1}{14} \, \sqrt{505} - \frac{13}{14}, -\frac{2}{49} \)</span>, substituting this in to our expression for <span class="math">\(\beta\)</span> gives: <span class="math">\(\beta = \sqrt{505} + \frac{82}{49}\)</span>.</p>
+<p>which has solution <span class="math">\(\alpha=\frac{1}{14} \, \sqrt{505} - \frac{13}{14}\)</span>, substituting this in to our expression for <span class="math">\(\beta\)</span> gives: <span class="math">\(\beta = -2\frac{\sqrt{505}}{49} + \frac{82}{49}\approx .756\)</span>. This is not a feasible flow <span class="math">\(\beta&gt;1/2\)</span>, thus only 1 commodity will use the middle arc.</p>
+<p>Let us assume commodity 1 uses the middle arc. We have:</p>
+<p><span class="math">\[\alpha^2+\alpha=2(3/2-\alpha)\]</span></p>
+<p>which gives <span class="math">\(\alpha=\frac{\sqrt{21}}{2}-3/2\)</span>. The corresponding cost to commodity 1 is <span class="math">\(\approx 1.417\)</span>. Thus <span class="math">\(\beta=1/2\)</span> (for a cost to commodity 2 of <span class="math">\(3/4\)</span>) is a Nash flow.</p>
+<p>It can be proved (not in this course) that a Nash flow is unique but let us check. Let us assume commodity 2 uses the middle arc. We have:</p>
+<p><span class="math">\[3/2\beta=2(1/2-\beta)\]</span></p>
+<p>which gives <span class="math">\(\beta=2/7\)</span>. The corresponding cost to commodity 2 is <span class="math">\(3/7\)</span>. The cost to commodity 1 (for <span class="math">\(\alpha=3/2\)</span>) is <span class="math">\(3.75\)</span> so commodity 1 has an incentive to deviate to the middle arc.</p>
 <p>For the <strong>Optimal flow</strong> we use the marginal costs:</p>
 <p><span class="math">\[c^*(x) = (2x+1)x+x^2+x\]</span> <span class="math">\[c^*(x) = 4x\]</span> <span class="math">\[c^*(x) = 3x\]</span></p>
 <p>We now repeat the above:</p>
 <p>By definition for commodity 1 we have:</p>
-<p><span class="math">\[{\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(2/3-\alpha+1/2-\beta)\]</span></p>
+<p><span class="math">\[{\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(3/2-\alpha+1/2-\beta)\]</span></p>
 <p>By definition for commodity 2 we have:</p>
-<p><span class="math">\[3\beta=4(2/3-\alpha+1/2-\beta)\]</span></p>
+<p><span class="math">\[3\beta=4(3/2-\alpha+1/2-\beta)\]</span></p>
 <p>Solving this later equation gives:</p>
 <p><span class="math">\[\beta=(8-4\alpha)/7\]</span></p>
 <p>Substituting this in to the first equation gives:</p>
-<p><span class="math">\[(2*\alpha + 1)*\alpha + \alpha^2 + 19/7*\alpha - 24/7 =0\]</span></p>
-<p>which has solution <span class="math">\(\alpha=\frac{1}{21} \, \sqrt{673} - \frac{13}{21}\)</span>, substituting this in to our expression for <span class="math">\(\beta\)</span> gives: <span class="math">\(\beta = \sqrt{673} + \frac{220}{147}\)</span>.</p></li>
+<p><span class="math">\[(2\alpha + 1)\alpha + \alpha^2 + 19/7\alpha - 24/7 =0\]</span></p>
+<p>which has solution <span class="math">\(\alpha=\frac{1}{21} \, \sqrt{673} - \frac{13}{21}\)</span>, substituting this in to our expression for <span class="math">\(\beta\)</span> gives: <span class="math">\(\beta = \frac{-4\sqrt{673}}{147} + \frac{220}{147}\approx .791\)</span>. This is not a feasible flow <span class="math">\(\beta&gt;1/2\)</span>, thus only 1 commodity will use the middle arc.</p>
+<p>Let us assume commodity 1 uses the middle arc. We have:</p>
+<p><span class="math">\[{\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(3/2-\alpha)\]</span></p>
+<p>which gives <span class="math">\(\alpha=\sqrt{3}-1\)</span>. The corresponding cost to commodity 1 is <span class="math">\(\approx 3.071\)</span>. Thus <span class="math">\(\beta=1/2\)</span> (for a cost to commodity 2 of <span class="math">\(3/2\)</span>) is a Nash flow.</p>
+<p>Let us assume commodity 2 uses the middle arc. We have:</p>
+<p><span class="math">\[3\beta=4(1/2-\beta)\]</span></p>
+<p>which gives <span class="math">\(\beta=2/7\)</span>. The corresponding cost to commodity 2 is <span class="math">\(6/7\)</span>.The cost to commodity 1 (for <span class="math">\(\alpha=3/2\)</span>) is <span class="math">\(9.75\)</span> so commodity 1 has an incentive to deviate to the middle arc.</p></li>
 <li><p>For a routing game the 'Price of Anarchy' is defined as:</p>
 <p><span class="math">\[\text{PoA}=\frac{C(\tilde f)}{C(f^*)}\]</span></p>
 <p>For the game shown (a generalisation of &quot;Pigou's example&quot;) obtain the PoA as a function of <span class="math">\(\alpha\)</span>.</p>
