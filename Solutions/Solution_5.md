@@ -212,13 +212,13 @@ Note that this does not prove that the Shapley value is the only vector that has
 
     Let $\alpha$ be the traffic along the top arc and $\beta$ the traffic along the bottom arc.
 
-    By definition for commodity 1 we have:
+    Assuming both commodities use both arcs available to them. By definition for commodity 1 we have:
 
-    $$\alpha^2+\alpha=2(2/3-\alpha+1/2-\beta)$$
+    $$\alpha^2+\alpha=2(3/2-\alpha+1/2-\beta)$$
 
     By definition for commodity 2 we have:
 
-    $$3/2\beta=2(2/3-\alpha+1/2-\beta)$$
+    $$3/2\beta=2(3/2-\alpha+1/2-\beta)$$
 
     Solving this later equation gives:
 
@@ -228,7 +228,19 @@ Note that this does not prove that the Shapley value is the only vector that has
 
     $$\alpha^2+13/7\alpha-12/7=0$$
 
-    which has solution $\alpha=\frac{1}{14} \, \sqrt{505} - \frac{13}{14}, -\frac{2}{49} $, substituting this in to our expression for $\beta$ gives: $\beta = \sqrt{505} + \frac{82}{49}$.
+    which has solution $\alpha=\frac{1}{14} \, \sqrt{505} - \frac{13}{14}$, substituting this in to our expression for $\beta$ gives: $\beta = -2\frac{\sqrt{505}}{49} + \frac{82}{49}\approx .756$. This is not a feasible flow $\beta>1/2$, thus only 1 commodity will use the middle arc.
+
+    Let us assume commodity 1 uses the middle arc. We have:
+
+    $$\alpha^2+\alpha=2(3/2-\alpha)$$
+
+    which gives $\alpha=\frac{\sqrt{21}}{2}-3/2$. The corresponding cost to commodity 1 is $\approx 1.417$. Thus $\beta=1/2$ (for a cost to commodity 2 of $3/4$) is a Nash flow.
+
+    It can be proved (not in this course) that a Nash flow is unique but let us check. Let us assume commodity 2 uses the middle arc. We have:
+
+    $$3/2\beta=2(1/2-\beta)$$
+
+    which gives $\beta=2/7$. The corresponding cost to commodity 2 is $3/7$. The cost to commodity 1 (for $\alpha=3/2$) is $3.75$ so commodity 1 has an incentive to deviate to the middle arc.
 
     For the **Optimal flow** we use the marginal costs:
 
@@ -240,11 +252,11 @@ Note that this does not prove that the Shapley value is the only vector that has
 
     By definition for commodity 1 we have:
 
-    $${\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(2/3-\alpha+1/2-\beta)$$
+    $${\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(3/2-\alpha+1/2-\beta)$$
 
     By definition for commodity 2 we have:
 
-    $$3\beta=4(2/3-\alpha+1/2-\beta)$$
+    $$3\beta=4(3/2-\alpha+1/2-\beta)$$
 
     Solving this later equation gives:
 
@@ -252,9 +264,22 @@ Note that this does not prove that the Shapley value is the only vector that has
 
     Substituting this in to the first equation gives:
 
-    $$(2*\alpha + 1)*\alpha + \alpha^2 + 19/7*\alpha - 24/7 =0$$
+    $$(2\alpha + 1)\alpha + \alpha^2 + 19/7\alpha - 24/7 =0$$
 
-    which has solution $\alpha=\frac{1}{21} \, \sqrt{673} - \frac{13}{21}$, substituting this in to our expression for $\beta$ gives: $\beta = \sqrt{673} + \frac{220}{147}$.
+    which has solution $\alpha=\frac{1}{21} \, \sqrt{673} - \frac{13}{21}$, substituting this in to our expression for $\beta$ gives: $\beta = \frac{-4\sqrt{673}}{147} + \frac{220}{147}\approx .791$. This is not a feasible flow $\beta>1/2$, thus only 1 commodity will use the middle arc.
+
+    Let us assume commodity 1 uses the middle arc. We have:
+
+    $${\left(2 \, \alpha + 1\right)} \alpha + \alpha^{2} + \alpha = 4(3/2-\alpha)$$
+
+    which gives $\alpha=\sqrt{3}-1$. The corresponding cost to commodity 1 is $\approx 3.071$. Thus $\beta=1/2$ (for a cost to commodity 2 of $3/2$) is a Nash flow.
+
+    Let us assume commodity 2 uses the middle arc. We have:
+
+    $$3\beta=4(1/2-\beta)$$
+
+    which gives $\beta=2/7$. The corresponding cost to commodity 2 is $6/7$.The cost to commodity 1 (for $\alpha=3/2$) is $9.75$ so commodity 1 has an incentive to deviate to the middle arc.
+
 
 6. For a routing game the 'Price of Anarchy' is defined as:
 
