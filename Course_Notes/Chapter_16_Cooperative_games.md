@@ -54,7 +54,7 @@ $$
 
 ---
 
-A characteristic function game $G=(n,v)$ is called **monotone** if it satisfies $v(C_2)\geq v(C_1)$ for all $C_1\subseteq C_2$.
+A characteristic function game $G=(N,v)$ is called **monotone** if it satisfies $v(C_2)\geq v(C_1)$ for all $C_1\subseteq C_2$.
 
 ---
 
@@ -82,7 +82,7 @@ is not.
 
 ---
 
-A characteristic function game $G=(n,v)$ is called **superadditive** if it satisfies $v(C_1\cup C_2)\geq v(C_1)+v(C_2).$
+A characteristic function game $G=(N,v)$ is called **superadditive** if it satisfies $v(C_1\cup C_2)\geq v(C_1)+v(C_2).$
 
 ---
 
@@ -110,7 +110,7 @@ is.
 
 When talking about a solution to a characteristic function game we imply a payoff vector $\lambda\in\mathbb{R}_{\geq 0}^{N}$ that divides the value of the grand coalition between the various players. Thus $\lambda$ must satisfy:
 
-$$\sum_{i=1}^n\lambda_i=v(\Omega)$$
+$$\sum_{i=1}^N\lambda_i=v(\Omega)$$
 
 Thus one potential solution to our taxi example would be $\lambda=(14,14,14)$. Obviously this is not ideal for player 1 and/or 2: they actually pay more than they would have paid without sharing the taxi!
 
@@ -171,7 +171,7 @@ We will not prove in this course but in fact there is a single payoff vector tha
 
 If we consider any permutation $\pi$ of $[N]$ then we denote by $S_\pi(i)$ the set of **predecessors** of $i$ in $\pi$:
 
-$$S_\pi(i)=\{j\in[n]\;|\;\pi(j)<\pi(i)\}$$
+$$S_\pi(i)=\{j\in[N]\;|\;\pi(j)<\pi(i)\}$$
 
 ---
 
@@ -195,7 +195,7 @@ We can now define the **Shapley value** of any game $G=(N,v)$.
 
 Given $G=(N,v)$ the **Shapley value** of player $i$ is denoted by $\phi_i(G)$ and given by:
 
-$$\phi_i(G)=\frac{1}{n!}\sum_{\pi\in\Pi_n}\Delta_\pi^G(i)$$
+$$\phi_i(G)=\frac{1}{N!}\sum_{\pi\in\Pi_n}\Delta_\pi^G(i)$$
 
 ---
 

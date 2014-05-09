@@ -96,7 +96,7 @@ Player 2s strategy profile is (B). At node $(b)$ D is a dominated strategy so th
 
 ![Running example step 3.\label{L07-img12}](images/L07-img12.png)
 
-Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (W,Z).
+Player 2s strategy profile is thus (C,B) and finally strategy W is dominated for player 1 whose strategy profile is (X,Y).
 
 **This outcome is in fact a Nash equilibria!** Recalling the original tree neither player has an incentive to move.
 
