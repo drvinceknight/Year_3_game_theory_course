@@ -14,7 +14,7 @@
 
     $$\left\{((1,0),(0,1)),((0,1),(1,0)),((1/2,1/2),(1/2,1/2))\right\}$$
 
-    The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).
+    The two pure Nash equilibria are not ESS (because they are not symmetric).
 
     for $\sigma=(\omega,1-\omega)$:
 
