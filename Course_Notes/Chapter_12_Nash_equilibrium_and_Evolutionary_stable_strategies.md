@@ -103,7 +103,7 @@ If $\sigma^*$ is an ESS in a pairwise contest population game then for all $\sig
 OR
 2. $u(\sigma^*,\sigma^*)=u(\sigma,\sigma^*)$ and $u(\sigma^*,\sigma)>u(\sigma,\sigma)$
 
-Conversely, if either (1) or (2) holds for all $\sigma\ne\sigma^*$ in a two player normal form game then $\sigma$ is an ESS.
+Conversely, if either (1) or (2) holds for all $\sigma\ne\sigma^*$ in a two player normal form game then $\sigma^*$ is an ESS.
 
 ---
 
