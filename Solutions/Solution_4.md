@@ -14,7 +14,7 @@
 
     $$\left\{((1,0),(0,1)),((0,1),(1,0)),((1/2,1/2),(1/2,1/2))\right\}$$
 
-    The two pure Nash equilibria are ESS (because of the first condition of the theorem relating an evolutionary stable strategy to the Nash equilibrium of the associated game).
+    The two pure Nash equilibria are not ESS (because they are not symmetric).
 
     for $\sigma=(\omega,1-\omega)$:
 
@@ -172,7 +172,7 @@
 
     3. $(b,c)$ which requires: $2\geq 3+3u/40$ and $1\geq 3+v/4$ $\Rightarrow$ $u\leq -40/3$ and $v\leq -8$. However if this is the equilibria then $u=2$ and $v=1$ which contradicts the constraints.
 
-    4. $(b,d)$ which requires: $2\leq 3+3u/40$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -40/3$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which **does not** contradict the constraints.
+    4. $(b,d)$ which requires: $6+u/4\geq 1+u/20$ and $1\leq 3+v/4$ $\Rightarrow$ $u\geq -25$ and $v\geq -8$. However if this is the equilibria then $u=8$ and $v=4$ which **does not** contradict the constraints.
 
     Thus $(b,d)$ is the unique pure strategy equilibrium.
 
