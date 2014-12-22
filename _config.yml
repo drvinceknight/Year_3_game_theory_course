@@ -1,8 +1,8 @@
 # Site settings
 title            : Vincent Knight
 email            : vincent.knight@gmail.com
-description      : "Class website for Computing for Mathematics"
-baseurl          : "/Computing_for_mathematics"
+description      : "Class website for Game Theory"
+baseurl          : "/Year_3_game_theory_course"
 url              : "http://drvinceknight.github.io"
 github_username  : "drvinceknight"
 twitter_username : "@drvinceknight"
