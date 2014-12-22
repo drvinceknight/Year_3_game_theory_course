@@ -1,42 +1,12 @@
 ---
 layout : default
-title  : Computing for Mathematics
+title  : Game Theory
 ---
 
 <div class="home">
-    <h1>Lab Sheets</h1>
     <ul>
-    {% for page in site.pages %}
-        {% if page.categories contains 'labsheets' %}
-        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
-        {% endif %}
-    {% endfor %}
+        <li>Notes</li>
+        <li>Reading</li>
+        <li>Exercise Sheets</li>
     </ul>
-
-    <h1>Lab Sheets Solutions</h1>
-    <ul>
-    {% for page in site.pages %}
-        {% if page.categories contains 'solutions' %}
-        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
-
-    <h1><a href='{{site.baseurl}}/Handouts'>Handouts</a></h1>
-    <ul>
-    {% for page in site.pages %}
-        {% if page.categories contains 'handouts' %}
-        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
-
-
-    <h1><a href='{{site.baseurl}}/Assessment'>Assessment</a></h1>
-
-    <h1><a href='{{site.baseurl}}/Other/AlternativeResources'>Alternative Resources</a></h1>
-
-    <h1><a href='https://github.com/drvinceknight/Computing_for_mathematics/wiki'>Class Wiki</a></h1>
-
-    <h1><a href='http://cardiffmathematicscodeclub.github.io/'>Code Club</a></h1>
 </div>
