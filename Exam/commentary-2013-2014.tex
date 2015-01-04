@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning}
+
+
+\usepackage{amsmath,amssymb,mdframed}            % AMS package gives better equation layouts
+\setcounter{page}{2}                    % sets first page number to 2
+\setlength{\oddsidemargin}{-0.25in}     % set left margin
+\setlength{\textwidth}{6.5in}           % set text width
+\setlength{\topmargin}{-0.5in}          % controls layout at
+\setlength{\headsep}{0.5in}             % top of page
+\setlength{\textheight}{9.0in}          % set text length
+
+
+
+\makeatletter
+\makeatother
+
+\renewcommand{\labelenumi}{\arabic{enumi}} % Sets the first level of enumerate to be arabic (normal) numbers
+\renewcommand{\labelenumii}{(\alph{enumii})} %Sets the second level of enumerate to be (a), (b), (c), .....
+\renewcommand{\labelenumiii}{(\roman{enumiii})} % Sets the third level of enumerate to be (i), (ii), (iii), ....
+
+
+
+\begin{document}
+\null \vskip1cm
+\begin{enumerate}
+
+\item This question covers basic aspects of Normal form games which have been covered many times in class. Whilst the solutions might make it appear to be a long question I would consider it to be the easiest of the Game Theoretic questions with routine concepts.
+
+    \begin{enumerate}
+        \item Bookwork;
+        \item This question should be relatively straightforward asking the students to identify best responses to pure strategies;
+        \item This question asks students to plot the utilities, it requires the knowledge of mixed strategies with an ability to plot a line;
+        \item Repetition of previous question;
+        \item This questions requires a bit of work asking the students to consider the plots drawn previously to obtain best responses to the mixed strategies;
+        \item This uses the previous question to obtain all three Nash equilibria;
+        \item Above used best responses, now I am asking the students to state and prove a theorem (the proof is 4 lines of algebra and is bookwork). After stating the theorem the students are expected to apply it to the above problem.
+    \end{enumerate}
+
+\item This question considers infinitely repeated games and culminates in one of the harder proofs of the course. A further aspect that students might find `tricky' is that in this question I am considering players aiming to minimise utility as opposed to the usual course convention which is to maximise utility (the difference has been pointed out to students). In particular I think that this will ensure that students must have a good understanding of the theorem to be able to prove a slightly modified version of it.
+
+    \begin{enumerate}
+        \item This is routine: requires students to know the formula for a geometric sum;
+        \item As above;
+        \item This is slightly tricky but is again akin to examples seen in class;
+        \item Bookwork;
+        \item Routine question but with a twist as players are aiming to minimise their utility (so the definition of individually rational payoffs is slightly different);
+        \item Bookwork but again with a twist. This will ensure that students have a sound understanding of the process.
+    \end{enumerate}
+
+
+\item This question is a mix of bookwork, routine examples and careful consideration of an example not seen before.
+
+    \begin{enumerate}
+        \item Bookwork;
+        \item Bookwork and a worked example, I am expecting students to use the Path definition for a Nash flow;
+        \item Bookwork and a worked example, I am expecting students to use the objective function definition for an optimal flow;
+        \item Bookwork (students are not asked to prove the theorem);
+        \item Students must obtain the previous Nash flow through minimisation of a two variable function;
+        \item Bookwork (again students are not asked to prove the theorem);
+        \item Students must obtain the Nash flow using the theorem (this requires very little work);
+        \item This is a slightly trickier question: students are asked to justify assumptions (in particular steady state assumptions). Furthermore they need to choose an approach to the problem. Using the marginal cost theorem as shown in the solution is the most elegant approach although it uses the solution to a quartic (a numeric solution is given as a hint).
+        \item This is a slightly trickier question: students are asked to justify assumptions (in particular steady state assumptions) relating a game theoretic model to a queueing model.
+        \item Here students need to choose an approach to the problem. Using the marginal cost theorem as shown in the solution is the most elegant approach although it uses the solution to a quartic (a numeric solution is given as a hint).
+    \end{enumerate}
+\end{enumerate}
+
+
+\end{document}

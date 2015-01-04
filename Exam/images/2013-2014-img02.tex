@@ -1,0 +1,14 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz,amsmath}
+\usetikzlibrary{calc}
+\begin{document}
+\begin{tikzpicture}[every node/.style={shape=circle, inner sep=.5pt, minimum size=.3cm}]
+    \draw (0,.5) node [draw] (s1) {\tiny{$s$}};
+    \draw (5,.5) node [draw] (t) {\tiny{$t$}};
+    \draw (s1) edge[out=-45,in=-135,->] (t);
+    \draw (s1) edge[out=45,in=135,->] (t);
+    \node at (2.5,-1) {$\frac{x}{\mu_1(\mu_1-x)}$};
+    \node at (2.5,2) {$\frac{x}{\mu_2(\mu_2-x)}$};
+    \node at (-.5,.5) {$\lambda$};
+\end{tikzpicture}
+\end{document}
