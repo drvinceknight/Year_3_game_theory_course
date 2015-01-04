@@ -1,4 +1,10 @@
-# Sage commands that are useful on this course
+---
+layout     : post
+categories : alternativeresources
+title      : Sage help sheet
+comments   : true
+slug       : sagecommandsforgametheory
+---
 
 This sheet includes a list of Sage commands that could be of use to you during this course.
 
@@ -13,7 +19,7 @@ You can always type `help(function)` to get help for any Sage `function`. There 
 
 ## Rearranging equations
 
-You will often have simple expressions like $7x-18(1-x)$ that need simplifying (sometimes they will be more complex than that obviously).
+You will often have simple expressions like \\(7x-18(1-x)\\) that need simplifying (sometimes they will be more complex than that obviously).
 These commands show you how to carry this out:
 
     sage: exp = 7 * x - 18 * (1 - x)
@@ -24,25 +30,25 @@ If your expression was more complicated you could use `simplify(exp)`, `expand(e
 
 ## Plotting functions
 
-To plot a function $f:x\to 35x-2$ type:
+To plot a function \\(f:x\to 35x-2\\) type:
 
-    sage: plot(f,(0,1),(0,1),colorbar=True,axes_labels=['$x$','$y$'], cmap='rainbow')
+    sage: plot(f,(0,1),(0,1),colorbar=True,axes_labels=['\\(x\\)','\\(y\\)'], cmap='rainbow')
     sage: f(x) = 35 * x - 2
     sage: plot(f, x, 0, 1)
 
-The 3rd and 4th arguments are telling Sage to plot for $0\leq x \leq 1$.
+The 3rd and 4th arguments are telling Sage to plot for \\(0\leq x \leq 1\\).
 
 
 ## Solving equations
 
-Linear equations appear all the time in this course. To solve $7x-2(1-x)=3x+6(1-x)$:
+Linear equations appear all the time in this course. To solve \\(7x-2(1-x)=3x+6(1-x)\\):
 
     sage: solve(7 * x - 2 * ( 1 - x) == 3 * x + 6 * (1 - x), x)
 
 
 ## Differentiation
 
-To obtain: $\frac{du_1}{du_1}$ where $u_1=(K - q_1 - q_2)q_1 - kq_1$:
+To obtain: \\(\frac{du_1}{du_1}\\) where \\(u_1=(K - q_1 - q_2)q_1 - kq_1\\):
 
     sage: K, q1, q2, k = var('K, q1, q2, k') # We need to tell Sage that these are symbolic variables
     sage: u1 = (K - q1 - q2) * q1 - k * q1
@@ -56,12 +62,12 @@ If we wanted to find the point at which this equates to zero we would write the 
 
 ## Infinite sums
 
-Sage can be used to obtain expressions like $\sum_{i=0}^{\infty}\left(\frac{1}{3}\right)^i$:
+Sage can be used to obtain expressions like \\(\sum_{i=0}^{\infty}\left(\frac{1}{3}\right)^i\\):
 
     sage: i = var('i')
     sage: sum((1 / 3) ^ i, i, 0, oo)
 
-Sage can also be used to check symbolic expressions of this nature. For example you can quickly check what  the expression for $\sum_{i=0}^{\infty} x^i$is:
+Sage can also be used to check symbolic expressions of this nature. For example you can quickly check what  the expression for \\(\sum_{i=0}^{\infty} x^i\\)is:
 
     sage: i = var('i')
     sage: assume(abs(x) < 1)
@@ -77,18 +83,18 @@ To quickly obtain all permutations of a set of the set \{1,2,3\}:
 
 ### Contour plots
 
-I find 3D surface plots messy and unclear. Here is how to obtain a contour plot of the function: $f: x,y \to 3x-y+2$
+I find 3D surface plots messy and unclear. Here is how to obtain a contour plot of the function: \\(f: x,y \to 3x-y+2\\)
 
     y = var('y')
     f(x,y) = 3 * x + y - ( 2 - y)
-    contour_plot(f,(0,1),(0,1),colorbar=True,axes_labels=['$x$','$y$'], cmap='summer')
+    contour_plot(f,(0,1),(0,1),colorbar=True,axes_labels=['\\(x\\)','\\(y\\)'], cmap='summer')
 
 (There are various options that can be passed to the cmap argument: try `import matplotlib.cm; matplotlib.cm.datad.keys()` to list them)
 
 
 ### Minimizing functions
 
-You might need to minimize the following function $c:\alpha, \beta\to \alpha ^ 3 + 3\beta/2 + \alpha ^ 2 + 2\alpha\beta+\beta^2-2\alpha-2\beta+1$ with the following constraints: $0\leq \alpha \leq 1$ and $0\leq \beta \leq 1$. Here is how to do that in Sage:
+You might need to minimize the following function \\(c:\alpha, \beta\to \alpha ^ 3 + 3\beta/2 + \alpha ^ 2 + 2\alpha\beta+\beta^2-2\alpha-2\beta+1\\) with the following constraints: \\(0\leq \alpha \leq 1\\) and \\(0\leq \beta \leq 1\\). Here is how to do that in Sage:
 
     sage: f = lambda p: p[0] ^ 3 + 3 / 2 * p[1] ^ 2 + p[0] ^ 2 + 2 * p[0] * p[1] + p[1] ^ 2 - 2 * (p[0] + p[1]) + 1
     sage: c_1 = lambda p: p[0]
