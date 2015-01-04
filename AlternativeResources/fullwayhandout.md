@@ -1,8 +1,14 @@
-# Fullway Handout
+---
+layout     : post
+categories : alternativeresources
+title      : Fullway handout
+comments   : true
+slug       : fullwayhandout
+---
 
 9. Finitely repeated games
 
-    We 'repeat' a normal form game $T$ times. Strategies need to be defined to take in to account the entire history of the game.
+    We 'repeat' a normal form game \\(T\\) times. Strategies need to be defined to take in to account the entire history of the game.
 
     What did we do?
 
@@ -43,7 +49,7 @@
 
     - Define a population game.
     - State and prove the theorem for necessity of stability.
-    - Define a post entry population $\chi_{\epsilon}$ and an ESS.
+    - Define a post entry population \\(\chi_{\epsilon}\\) and an ESS.
     - Obtain ESS in a game against the field.
 
 

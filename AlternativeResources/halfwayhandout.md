@@ -1,4 +1,10 @@
-# Halfway Handout
+---
+layout     : post
+categories : alternativeresources
+title      : Halfway handout
+comments   : true
+slug       : halfwayhandout
+---
 
 1. The whole idea behind game theory:
 
@@ -54,7 +60,7 @@
 
     - Identify best responses in pure strategies (underline stuff);
     - Identify best responses against mixed strategies;
-    - Define the sets $UD_i$ and $B_i$;
+    - Define the sets \\(UD_i\\) and \\(B_i\\);
     - State and prove certain cases of theorems connecting these two sets.
 
 5. Nash equilibria in pure strategies:
