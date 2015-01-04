@@ -8,7 +8,7 @@ slug       : routinggames
 
 ## Recap
 
-In the [previous chapter](Chapter_16_Cooperative_games.md):
+In the [previous chapter]({{site.baseurl}}/Content/Chapter_16_Cooperative_games):
 
 - We defined characteristic function games;
 - We defined the Shapley value.
@@ -30,15 +30,15 @@ The type of game used is referred to as a **routing game**.
 
 ---
 
-A **routing game** $(G,r,c)$ is defined on a graph $G=(V,E)$ with a defined set of sources $s_i$ and sinks $t_i$. Each source-sink pair corresponds to a set of traffic (also called a commodity) $r_i$ that must travel along the edges of $G$ from $s_i$ to $t_i$. Every edge $e$ of $G$ has associated to it a nonnegative, continuous and nondecreasing cost function (also called latency function) $c_e$.
+A **routing game** \\((G,r,c)\\) is defined on a graph \\(G=(V,E)\\) with a defined set of sources \\(s_i\\) and sinks \\(t_i\\). Each source-sink pair corresponds to a set of traffic (also called a commodity) \\(r_i\\) that must travel along the edges of \\(G\\) from \\(s_i\\) to \\(t_i\\). Every edge \\(e\\) of \\(G\\) has associated to it a nonnegative, continuous and nondecreasing cost function (also called latency function) \\(c_e\\).
 
 ---
 
-An example of such a game is given\text{ in Figure \ref{L17-img01}}.
+An example of such a game is given.
 
 ![A simple di-graph.\label{L17-img01}](images/L17-img01.png)
 
-In this game we have two **commodoties** with two sources: $s_1$ and $s_2$ and a single sink $t$. To complete our definition of a routing game we require a quantity of traffic, let $r=(1/2,1/2)$. We also require a set of cost functions $c$. Let:
+In this game we have two **commodoties** with two sources: \\(s_1\\) and \\(s_2\\) and a single sink \\(t\\). To complete our definition of a routing game we require a quantity of traffic, let \\(r=(1/2,1/2)\\). We also require a set of cost functions \\(c\\). Let:
 
 $$\begin{aligned}
 c_{s_1a}&=0\\
@@ -48,7 +48,7 @@ c_{s_2t}&=\frac{x}{2}x\\
 c_{at}&=x\\
 \end{aligned}$$
 
-We represent all this diagrammatically\text{ in Figure \ref{L17-img02}}.
+We represent all this diagrammatically.
 
 ![A routing game. \label{L17-img02}](images/L17-img02.png)
 
@@ -56,7 +56,7 @@ We represent all this diagrammatically\text{ in Figure \ref{L17-img02}}.
 
 ---
 
-For any given $(G,r,c)$ we denote by $\mathcal{P}_i$ the set of paths available to commodity $i$.
+For any given \\((G,r,c)\\) we denote by \\(\mathcal{P}_i\\) the set of paths available to commodity \\(i\\).
 
 ---
 
@@ -68,19 +68,19 @@ and
 
 $$\mathcal{P}_2=\{s_2at,s_2t\}$$
 
-We denote the set of all possible paths by $\mathcal{P}=\bigcup_{i}\mathcal{P}_i$.
+We denote the set of all possible paths by \\(\mathcal{P}=\bigcup_{i}\mathcal{P}_i\\).
 
 ### Definition of a feasible path
 
 ---
 
-On a routing game we define a flow $f$ as a vector representing the quantity of traffic along the various paths, $f$ is a vector index by $\mathcal{P}$. Furthermore we call $f$ **feasible** if:
+On a routing game we define a flow \\(f\\) as a vector representing the quantity of traffic along the various paths, \\(f\\) is a vector index by \\(\mathcal{P}\\). Furthermore we call \\(f\\) **feasible** if:
 
 $$\sum_{P\in\mathcal{P}_i}f_P=r_i$$
 
 ---
 
-In our running example $f=(1/4,1/4,0,1/2)$ is a feasible flow\text{ as shown in Figure \ref{L17-img03}}.
+In our running example \\(f=(1/4,1/4,0,1/2)\\) is a feasible flow.
 
 ![A feasible flow.\label{L17-img03}](images/L17-img03.png)
 
@@ -92,13 +92,13 @@ To go further we need to try and measure how good a flow is.
 
 ---
 
-For any routing game $(G,r,c)$ we define a **cost function** $C(f)$:
+For any routing game \\((G,r,c)\\) we define a **cost function** \\(C(f)\\):
 
 $$C(f)=\sum_{P\in\mathcal{P}}c_P(f_P)f_P$$
 
 ---
 
-Where $c_P$ denotes the cost function of a particular path $P$: $c_P(x)=\sum_{e\in P}c_e(x)$. Note that any flow $f$ induces a flow on edges:
+Where \\(c_P\\) denotes the cost function of a particular path \\(P\\): \\(c_P(x)=\sum_{e\in P}c_e(x)\\). Note that any flow \\(f\\) induces a flow on edges:
 
 $$f_e=\sum_{P\in\mathcal{P}\text{ if }e\in P}f_P$$
 
@@ -106,11 +106,11 @@ So we can re-write the cost function as:
 
 $$C(f)=\sum_{e\in E}c_e(f_e)f_e$$
 
-Thus for our running example if we take a general $f=(\alpha,1/2-\alpha,1/2-\beta,\beta)$ as shown\text{ in Figure \ref{L17-img04}}.
+Thus for our running example if we take a general \\(f=(\alpha,1/2-\alpha,1/2-\beta,\beta)\\) as shown.
 
 ![A generic flow.\label{L17-img04}](images/L17-img04.png)
 
-The cost of $f(\alpha,1/2-\alpha,1/2-\beta,\beta)$ is given by:
+The cost of \\(f(\alpha,1/2-\alpha,1/2-\beta,\beta)\\) is given by:
 
 $$\begin{aligned}
 C(f)&=\alpha^2\times\alpha+3/2\beta\times\beta+(1-\alpha-\beta)\times(1-\alpha-\beta)\\
@@ -121,9 +121,9 @@ C(f)&=\alpha^2\times\alpha+3/2\beta\times\beta+(1-\alpha-\beta)\times(1-\alpha-\
 
 ---
 
-For a routing game $(G,r,c)$ we define the optimal flow $f^*$ as the solution to the following optimisation problem:
+For a routing game \\((G,r,c)\\) we define the optimal flow \\(f^*\\) as the solution to the following optimisation problem:
 
-Minimise $\sum_{e\in E}c_e(f_e)$:
+Minimise \\(\sum_{e\in E}c_e(f_e)\\):
 
 Subject to:
 
@@ -135,13 +135,13 @@ f_P&\geq 0
 
 ---
 
-In our example this corresponds to minimising $C(\alpha,\beta)=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1$ such that $0\leq\alpha\leq 1/2$ and $0\leq\beta\leq1/2$.
+In our example this corresponds to minimising \\(C(\alpha,\beta)=\alpha^3+3/2\beta^2+\alpha^2 + 2\alpha\beta + \beta^2 - 2\alpha - 2\beta + 1\\) such that \\(0\leq\alpha\leq 1/2\\) and \\(0\leq\beta\leq1/2\\).
 
-A plot of $C(\alpha,\beta)$ is shown\text{ in Figure \ref{L17-plot01}}.
+A plot of \\(C(\alpha,\beta)\\) is shown.
 
-![$C(\alpha,\beta)$.\label{L17-plot01}](plots/L17-plot01.png)
+![\\(C(\alpha,\beta)\\).\label{L17-plot01}](plots/L17-plot01.png)
 
-It looks like the minimal point is somewhere near higher values of $\alpha$ and $\beta$. Let us carry out our optimisation properly:
+It looks like the minimal point is somewhere near higher values of \\(\alpha\\) and \\(\beta\\). Let us carry out our optimisation properly:
 
 If define the Lagrangian:
 
@@ -169,29 +169,29 @@ $$\alpha_1=\frac{\sqrt{11}-1}{5}\approx 0.4633$$
 giving:
 $$\beta_1=0.2147$$
 
-Firstly $(\alpha_1,\beta_1)$ is located in the required region. Secondly it is straightforward to verify that this is a local minima (by checking the second derivatives).
+Firstly \\((\alpha_1,\beta_1)\\) is located in the required region. Secondly it is straightforward to verify that this is a local minima (by checking the second derivatives).
 
-We have $C(\alpha_1,\beta_1)=\frac{3}{125} \left(\sqrt{11} - 6\right)^{2} + \frac{1}{125}\left(\sqrt{11} - 1\right)^{3}\approx .2723$.
+We have \\(C(\alpha_1,\beta_1)=\frac{3}{125} \left(\sqrt{11} - 6\right)^{2} + \frac{1}{125}\left(\sqrt{11} - 1\right)^{3}\approx .2723\\).
 
 To verify that this is an optimal flow we need to verify that it is less than all values on the boundaries. We first calculate the values on the extremal points of our boundary:
 
-1. $C(0,0)=1$
-2. $C(0,1/2)=5/8=.625$
-3. $C(1/2,0)=3/8=.375$
-4. $C(1/2,1/2)=1/2=.5$
+1. \\(C(0,0)=1\\)
+2. \\(C(0,1/2)=5/8=.625\\)
+3. \\(C(1/2,0)=3/8=.375\\)
+4. \\(C(1/2,1/2)=1/2=.5\\)
 
 We now check that there are no local optima on the boundary:
 
-1. Consider $C(\alpha,0)=\alpha^3+\alpha^2-2\alpha+1$ equating the derivative to 0 gives: $3\alpha^2+2\alpha-2=0$ which has solution $\alpha=\frac{-1\pm\sqrt{7}}{3}$. We have $C(\frac{-1+\sqrt{7}}{3},0)\approx.3689$.
-2. Consider $C(\alpha,1/2)=\alpha^3+\alpha^2-\alpha+5/8$ equating the derivative to 0 gives: $3\alpha^2+2\alpha-a+5/8=0$ which has solution $\alpha=1/3$ and $\alpha=1$. We have $C(1/3,1/2)\approx.4398$
-3. When considering $C(0,\beta)$ we know that the local optima is at $\beta=\frac{2}{5}$. We have $C(0,2/5)=.6$.
-4. Similarly when considering $C(1/2,\beta)$ we know that the local optima is at $\beta=\frac{2-1/2}{5}$. We have $C(1/2,3/10)=.3$.
+1. Consider \\(C(\alpha,0)=\alpha^3+\alpha^2-2\alpha+1\\) equating the derivative to 0 gives: \\(3\alpha^2+2\alpha-2=0\\) which has solution \\(\alpha=\frac{-1\pm\sqrt{7}}{3}\\). We have \\(C(\frac{-1+\sqrt{7}}{3},0)\approx.3689\\).
+2. Consider \\(C(\alpha,1/2)=\alpha^3+\alpha^2-\alpha+5/8\\) equating the derivative to 0 gives: \\(3\alpha^2+2\alpha-a+5/8=0\\) which has solution \\(\alpha=1/3\\) and \\(\alpha=1\\). We have \\(C(1/3,1/2)\approx.4398\\)
+3. When considering \\(C(0,\beta)\\) we know that the local optima is at \\(\beta=\frac{2}{5}\\). We have \\(C(0,2/5)=.6\\).
+4. Similarly when considering \\(C(1/2,\beta)\\) we know that the local optima is at \\(\beta=\frac{2-1/2}{5}\\). We have \\(C(1/2,3/10)=.3\\).
 
-Thus $f^*\approx(.4633,0.2147)$.
+Thus \\(f^*\approx(.4633,0.2147)\\).
 
 ## Nash flows
 
-If we take a closer look at $f^*$ in our example, we see that traffic from the first commodity travels across two paths: $P_1=s_1t$ and $P_2=s_1at$. The cost along the first path is given by:
+If we take a closer look at \\(f^*\\) in our example, we see that traffic from the first commodity travels across two paths: \\(P_1=s_1t\\) and \\(P_2=s_1at\\). The cost along the first path is given by:
 
 $$C_{P_1}(f^*)=.4633^2\approx.2146$$
 
@@ -205,7 +205,7 @@ Thus traffic going along the second path is experiencing a higher cost. If this 
 
 ---
 
-For a routing game $(G,r,c)$ a flow $\tilde f$ is called a **Nash flow** if and only if for every commodity $i$ and any two paths $P_1,P_2\in\mathcal{P}_i$ such that $f_{P_1}>0$ then:
+For a routing game \\((G,r,c)\\) a flow \\(\tilde f\\) is called a **Nash flow** if and only if for every commodity \\(i\\) and any two paths \\(P_1,P_2\in\mathcal{P}_i\\) such that \\(f_{P_1}>0\\) then:
 
 $$c_{P_1}(f)\leq c_{P_2}(f)$$
 
@@ -220,14 +220,14 @@ $$\begin{aligned}
 \frac{3\beta}{2}&=1-\alpha-\beta
 \end{aligned}$$
 
-Solving this gives: $\beta=\frac{2}{5}(1-\alpha)$ $\Rightarrow$ $x^{2} + \frac{3}{5} \, x - \frac{3}{5}$ this gives $\alpha\approx .5307$ which is not in our region. Let us assume that $\alpha=1/2$ (i.e. commodity 1 does not use $P_2$). Assuming that the second commodity uses both available paths we have:
+Solving this gives: \\(\beta=\frac{2}{5}(1-\alpha)\\) \\(\Rightarrow\\) \\(x^{2} + \frac{3}{5} \, x - \frac{3}{5}\\) this gives \\(\alpha\approx .5307\\) which is not in our region. Let us assume that \\(\alpha=1/2\\) (i.e. commodity 1 does not use \\(P_2\\)). Assuming that the second commodity uses both available paths we have:
 
 $$\frac{3}{2}\beta=\frac{1}{2}-\beta\Rightarrow\beta=\frac{1}{5}$$
 
 We can check that all paths have minimal cost.
 
-Thus we have $\tilde f=(1/2,1/5)$ which gives a cost of $C(\tilde f)=11/40$ (higher than the optimal cost!).
+Thus we have \\(\tilde f=(1/2,1/5)\\) which gives a cost of \\(C(\tilde f)=11/40\\) (higher than the optimal cost!).
 
-What if we had assumed that $\beta=1/2$?
+What if we had assumed that \\(\beta=1/2\\)?
 
-This would have given $\alpha^2=1/2-\alpha$ which has solution $\alpha\approx .3660$. The cost of the path $s_2at$ is then $.134$ however the cost of the path $s_2t$ is $.75$ thus the second commodity should deviate. We can carry out these same checks with all other possibilities to verify that $\tilde f=(1/2,1/5)$.
+This would have given \\(\alpha^2=1/2-\alpha\\) which has solution \\(\alpha\approx .3660\\). The cost of the path \\(s_2at\\) is then \\(.134\\) however the cost of the path \\(s_2t\\) is \\(.75\\) thus the second commodity should deviate. We can carry out these same checks with all other possibilities to verify that \\(\tilde f=(1/2,1/5)\\).

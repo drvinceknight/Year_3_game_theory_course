@@ -8,7 +8,7 @@ slug       : subgameperfection
 
 ## Recap
 
-In the [previous chapter](Chapter_07-Extensive_form_games_and_backwards_induction.md)
+In the [previous chapter]({{site.baseurl}}/Content/Chapter_07-Extensive_form_games_and_backwards_induction)
 
 - We took a formal look at extensive form games;
 - Investigated an analysis technique for extensive form games called backwards induction.
@@ -17,14 +17,17 @@ In this Chapter we will take a look at another important aspect of extensive for
 
 ## Connection between extensive and normal form games
 
-It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player. \text{Consider the game shown in Figure \ref{L07-img09}.}
+It should be relatively straightforward to see that we can represent any extensive form game in normal form. The strategies in the normal form game simply correspond to all possible combinations of strategies at each level corresponding to each player.
+Consider the following game:
 
 ![An extensive form game.\label{L07-img09}](images/L07-img09.png)
 
 We have:
 
 $$S_1=\{\text{XY},\text{XZ},\text{WY},\text{WZ}\}$$
+
 and
+
 $$S_2=\{\text{DA},\text{DB},\text{CA},\text{CB}\}$$
 
 the corresponding normal form game is given as:
@@ -43,7 +46,7 @@ $$\begin{pmatrix}
 (5,2)&(5,2)
 \end{pmatrix}$$
 
-has the two extensive form game representations shown\text{ in Figure \ref{L08-img04}}.
+has the two extensive form game representations shown.
 
 ![Two extensive form games corresponding to the same extensive form game.\label{L08-img04}](images/L08-img04.png)
 
@@ -53,19 +56,19 @@ has the two extensive form game representations shown\text{ in Figure \ref{L08-i
 
 ---
 
-In an extensive form game, a node $x$ is said to **initiate a subgame** if and only if $x$ and all successors of $x$ are in information sets containing only successors of $x$.
+In an extensive form game, a node \\(x\\) is said to **initiate a subgame** if and only if \\(x\\) and all successors of \\(x\\) are in information sets containing only successors of \\(x\\).
 
 ---
 
-A game where all nodes initiate a subgame is shown\text{ in Figure \ref{L08-img01}}.
+A game where all nodes initiate a subgame is shown.
 
 ![All nodes initiate a subgame.\label{L08-img01}](images/L08-img01.png)
 
-A game **that does not have perfect information** nodes $c$, $f$ and $b$ initiate subgames but all of $b$'s successors do not is shown\text{ in Figure \ref{L08-img02}}.
+A game **that does not have perfect information** nodes \\(c\\), \\(f\\) and \\(b\\) initiate subgames but all of \\(b\\)'s successors do not is shown.
 
 ![Nodes c,f and b initiate a subgame.\label{L08-img02}](images/L08-img02.png)
 
-Similarly, in the game shown\text{ in Figure \ref{L08-img03}} the only node that initiates a subgame is $d$.
+Similarly, in the game shown the only node that initiates a subgame is \\(d\\).
 
 ![Node d initiates a subgame.\label{L08-img03}](images/L08-img03.png)
 
@@ -83,7 +86,7 @@ A subgame perfect Nash equilibrium is a Nash equilibrium in which the strategy p
 
 **Note that this includes subgames that might not be reached during play!**
 
-Let us consider the example shown\text{ in Figure \ref{L08-img05}}.
+Let us consider the example shown.
 
 ![A running example of a game with subgame perfect equilibrium.\label{L08-img05}](images/L08-img05.png)
 
@@ -117,7 +120,7 @@ $$\begin{pmatrix}
 (2,3)&(-1,1)
 \end{pmatrix}$$
 
-We see that the (unique) Nash equilibria for the above game is $(D,X)$. Thus the only subgame perfect equilibria of the *entire* game is $\{AD,X\}$.
+We see that the (unique) Nash equilibria for the above game is \\((D,X)\\). Thus the only subgame perfect equilibria of the *entire* game is \\(\{AD,X\}\\).
 
 Some comments:
 

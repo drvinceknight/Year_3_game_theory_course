@@ -5,11 +5,10 @@ title      : Chapter 3 - Dominance
 comments   : true
 slug       : dominance
 ---
-# OR 3: Chapter 3 - Dominance
 
 ## Recap
 
-In the [previous lecture](Chapter_02-Normal_Form_Games.md) we discussed:
+In the [previous chapter]({{site.baseurl}}/Content/Chapter_02-Normal_Form_Games) we discussed:
 
 - Normal form games;
 - Mixed strategies and expected utilities.
@@ -24,11 +23,11 @@ In certain games it is evident that certain strategies should never be used by a
 
 ---
 
-In an $N$ player normal form game when considering player $i$ we denotes by $s_{-i}$ an **incomplete strategy** profile for all other players in the game.
+In an \\(N\\) player normal form game when considering player \\(i\\) we denotes by \\(s_{-i}\\) an **incomplete strategy** profile for all other players in the game.
 
 ---
 
-For example in a 3 player game where $S_i=\{A,B\}$ for all $i$ a valid strategy profile is $s=(A,A,B)$ while $s_{-2}=(A,B)$ denotes the incomplete strategy profile where player 1 and 3 are playing A and B (respectively).
+For example in a 3 player game where \\(S_i=\\{A,B\\}\\) for all \\(i\\) a valid strategy profile is \\(s=(A,A,B)\\) while \\(s_{-2}=(A,B)\\) denotes the incomplete strategy profile where player 1 and 3 are playing A and B (respectively).
 
 This notation now allows us to define an important notion in game theory.
 
@@ -37,7 +36,7 @@ This notation now allows us to define an important notion in game theory.
 
 ---
 
-In an $N$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **strictly dominated** if there is a strategy $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})>u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players.
+In an \\(N\\) player normal form game. A pure strategy \\(s_i\in S_i\\) is said to be **strictly dominated** if there is a strategy \\(\sigma_i\in \Delta S_i\\) such that \\(u_i(\sigma\_i,s\_{-i})>u\_{i}(s\_i, s\_{-i})\\) for all \\(s\_{-i}\in S\_{-i}\\) of the other players.
 
 ---
 
@@ -48,26 +47,26 @@ $$\begin{pmatrix}
 (5,10)&(-1,34)
 \end{pmatrix}$$
 
-If we let $S_1=\{r_1, r_2\}$ and $S_2=\{s_1, s_2\}$ we see that:
+If we let \\(S_1=\{r_1, r_2\}\\) and \\(S_2=\{s_1, s_2\}\\) we see that:
 
 $$u_2(s_2,r_1)>u_2(s_1,r_1)$$
 and
 $$u_2(s_2,r_2)>u_2(s_1,r_2)$$
 
-so $s_1$ is a strictly dominated strategy for player 2. As such we can elimante it from the game when attempting to predict rational behaviour.  This gives the following game:
+so \\(s_1\\) is a strictly dominated strategy for player 2. As such we can elimante it from the game when attempting to predict rational behaviour.  This gives the following game:
 
 $$\begin{pmatrix}
 (3,5)\\
 (-1,34)
 \end{pmatrix}$$
 
-At this point it is straightforward to see that $r_2$ is a strictly dominated strategy for player 1 giving the following predicted strategy profile: $s=(r_1,s_2)$.
+At this point it is straightforward to see that \\(r_2\\) is a strictly dominated strategy for player 1 giving the following predicted strategy profile: \\(s=(r_1,s_2)\\).
 
 ### Definition of a weakly dominated strategy
 
 ---
 
-In an $N$ player normal form game. A pure strategy $s_i\in S_i$ is said to be **weakly dominated** if there is a strategy $\sigma_i\in \Delta S_i$ such that $u_i(\sigma_i,s_{-i})\geq u_{i}(s_i,s_{-i})$ for all $s_{-i}\in S_{-i}$ of the other players and there exists a strategy profile $\bar s\in S_{-i}$ such that $u_i(\sigma_i,\bar s)> u_{i}(s_i,s_{-i})$ .
+In an \\(N\\) player normal form game. A pure strategy \\(s_i\in S_i\\) is said to be **weakly dominated** if there is a strategy \\(\sigma_i\in \Delta S_i\\) such that \\(u_i(\sigma_i,s\_{-i})\geq u\_{i}(s_i,s\_{-i})\\) for all \\(s_{-i}\in S\_{-i}\\) of the other players and there exists a strategy profile \\(\bar s\in S\_{-i}\\) such that \\(u_i(\sigma_i,\bar s)> u\_{i}(s_i,s\_{-i})\\) .
 
 ---
 
@@ -80,7 +79,7 @@ $$\begin{pmatrix}
 (2,1)&(2,1)
 \end{pmatrix}$$
 
-Using the same convention as before for player 2, $s_1$ weakly dominates $s_2$ and for player 1, $r_1$ weakly dominates $r_2$ giving the following predicted strategy profile $(r_1,s_1)$.
+Using the same convention as before for player 2, \\(s_1\\) weakly dominates \\(s_2\\) and for player 1, \\(r_1\\) weakly dominates \\(r_2\\) giving the following predicted strategy profile \\((r_1,s_1)\\).
 
 ## Common knowledge of rationality
 
@@ -102,7 +101,7 @@ $$\begin{pmatrix}
 (0,3)&(0,1)&(2,0)
 \end{pmatrix}$$
 
-**Initially** player 1 has no dominated strategies. For player 2, $s_3$ is dominated by $s_2$. Now $r_2$ is dominated by $r_1$ for player 1. Finally, $s_1$ is dominated by $s_2$. Thus $(r_1,s_2)$ is a predicted rational outcome.
+**Initially** player 1 has no dominated strategies. For player 2, \\(s_3\\) is dominated by \\(s_2\\). Now \\(r_2\\) is dominated by \\(r_1\\) for player 1. Finally, \\(s_1\\) is dominated by \\(s_2\\). Thus \\((r_1,s_2)\\) is a predicted rational outcome.
 
 ### Example
 
@@ -113,11 +112,11 @@ $$\begin{pmatrix}
 (10,1)&(5,0)&(4,2)
 \end{pmatrix}$$
 
-- $r_1$ weakly dominated by $r_2$
-- $s_1$ strictly dominated by $s_3$
-- $s_2$ strictly dominated by $s_1$
+- \\(r_1\\) weakly dominated by \\(r_2\\)
+- \\(s_1\\) strictly dominated by \\(s_3\\)
+- \\(s_2\\) strictly dominated by \\(s_1\\)
 
-Thus $(r_2,s_3)$ is a predicted rational outcome.
+Thus \\((r_2,s_3)\\) is a predicted rational outcome.
 
 
 ## Not all games can be solved using dominance

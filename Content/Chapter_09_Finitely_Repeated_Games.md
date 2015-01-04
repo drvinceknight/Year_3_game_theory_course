@@ -8,7 +8,7 @@ slug       : finitelyrepeatedgames
 
 ## Recap
 
-In the [previous chapter](Chapter_08-Subgame_Perfection.md):
+In the [previous chapter]({{site.baseurl}}/Content/Chapter_08-Subgame_Perfection):
 
 - We looked at the connection between games in normal form and extensive form;
 - We defined a subgame;
@@ -24,9 +24,9 @@ In game theory the term **repeated game** is well defined.
 
 ---
 
-A repeated game is played over discrete time periods. Each time period is index by $0<t\leq T$ where $T$ is the total number of periods.
+A repeated game is played over discrete time periods. Each time period is index by \\(0<t\leq T\\) where \\(T\\) is the total number of periods.
 
-In each period $N$ players play a static game referred to as the **stage game** independently and simultaneously selecting actions.
+In each period \\(N\\) players play a static game referred to as the **stage game** independently and simultaneously selecting actions.
 
 Players make decisions in full knowledge of the **history** of the game played so far (ie the actions chosen by each player in each previous time period).
 
@@ -43,7 +43,7 @@ $$
 \end{pmatrix}
 $$
 
-All possible outcomes to the repeated game given $T=2$ are shown\text{ in Figure \ref{L09-plot01}}.
+All possible outcomes to the repeated game given \\(T=2\\) are shown.
 
 ![All possible outcomes of a repeated prisoners dilemma.\label{L09-plot01}](plots/L09-plot01.png)
 
@@ -61,7 +61,7 @@ For example in the repeated prisoner's dilemma the following is a valid strategy
 
 > "Start to cooperate and in every stage game simply repeat the action used by your opponent in the previous stage game."
 
-Thus if both players play this strategy both players will cooperate throughout getting (in the case of $T=2$) a utility of 4.
+Thus if both players play this strategy both players will cooperate throughout getting (in the case of \\(T=2\\)) a utility of 4.
 
 ## Subgame perfect Nash equilibrium in repeated games
 
@@ -82,9 +82,9 @@ Where by stage Nash profile we refer to a strategy profile that is a Nash Equili
 
 If we consider the strategy given by:
 
-> "Player $i$ should play strategy $\tilde s^{(k)}_i$ regardless of the play of any previous strategy profiles."
+> "Player \\(i\\) should play strategy \\(\tilde s^{(k)}_i\\) regardless of the play of any previous strategy profiles."
 
-where $\tilde s^{(k)}_i$ is the strategy played by player $i$ in any stage Nash profile. The $k$ is used to indicate that all players play strategies from the same stage Nash profile.
+where \\(\tilde s^{(k)}_i\\) is the strategy played by player \\(i\\) in any stage Nash profile. The \\(k\\) is used to indicate that all players play strategies from the same stage Nash profile.
 
 Using backwards induction we see that this strategy is a Nash equilibrium. Furthermore it is a stage Nash profile so it is a Nash equilibria for the last stage game which is the last subgame. If we consider (in an inductive way) each subsequent subgame the result holds.
 
@@ -100,15 +100,18 @@ $$\begin{pmatrix}
 (0,1)&(1,2)&(0,0)\\
 \end{pmatrix}$$
 
-The plot\text{ shown in Figure \ref{L09-plot02}} shows the various possible outcomes of the repeated game for $T=2$.
+The plot shows the various possible outcomes of the repeated game for \\(T=2\\).
 
-![All possible outcomes of the repeated $3\times2$ game.\label{L09-plot02}](plots/L09-plot02.png)
+![All possible outcomes of the repeated \\(3\times2\\) game.\label{L09-plot02}](plots/L09-plot02.png)
 
-If we consider the two pure equilibria $(r_1,s_3)$ and $(r_2,s_2)$, we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
+If we consider the two pure equilibria \\((r_1,s_3)\\) and \\((r_2,s_2)\\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
 
 $$(r_1r_1,s_3s_3)\text{ giving utility vector: }(2,8)$$
+
 $$(r_1r_2,s_3s_2)\text{ giving utility vector: }(2,6)$$
+
 $$(r_2r_1,s_2s_3)\text{ giving utility vector: }(2,6)$$
+
 $$(r_2r_2,s_2s_2)\text{ giving utility vector: }(2,4)$$
 
 Importantly, not all subgame Nash equilibria outcomes are of the above form.
@@ -119,9 +122,9 @@ By definition all subgame Nash equilibria **must** play a stage Nash profile in 
 
 Considering the above game, let us look at this strategy:
 
-> "Play $(r_1,s_1)$ in the first period and then, as long as P2 cooperates play $(r_1,s_3)$ in the second period. If P2 deviates from $s_1$ in the first period then play $(r_2,s_2)$ in the second period."
+> "Play \\((r_1,s_1)\\) in the first period and then, as long as P2 cooperates play \\((r_1,s_3)\\) in the second period. If P2 deviates from \\(s_1\\) in the first period then play \\((r_2,s_2)\\) in the second period."
 
-Firstly this strategy gives the utility vector: $(3,7)$.
+Firstly this strategy gives the utility vector: \\((3,7)\\).
 
 1. Is this strategy profile a Nash equilibrium (for the entire game)?
 
