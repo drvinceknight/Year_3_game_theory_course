@@ -6,8 +6,6 @@ comments   : true
 slug       : representationsandpurestrategies-hw
 ---
 
-# Homework sheet 1 - Normal form games
-
 1. Represent the following game in normal form:
 
     > Alice, Bob and Celine are childhood friends that would like to communicate online. Alive likes facebook, Bob likes twitter and Celine like G+.
@@ -63,14 +61,14 @@ slug       : representationsandpurestrategies-hw
     (4,0)&(4,2)\\
     \end{pmatrix}$$
 
-    Compute directly $B_1,B_2,UD_1$ and $UD_2$.
+    Compute directly \\(B_1,B_2,UD_1\\) and \\(UD_2\\).
 
 6. In the notes the following theorem is given:
 
     ---
 
-    In a 2 player normal form game $B_i = UD_i$ for all $i \in\{1,2\}$.
+    In a 2 player normal form game \\(B_i = UD_i\\) for all \\(i \in\{1,2\}\\).
 
     ---
 
-    Prove the theorem for 2 player games with $|S_1|=|S_2|=2$. I.e. prove the above result in the special case of $2\times 2$ games.
+    Prove the theorem for 2 player games with \\(\|S_1\|=\|S_2\|=2\\). I.e. prove the above result in the special case of \\(2\times 2\\) games.

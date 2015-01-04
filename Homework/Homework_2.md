@@ -27,7 +27,7 @@ slug       : normalformgamesnashequilibria-hw
     \end{pmatrix}$$
 
 
-2. For what values of $\alpha$ does a Nash equilibrium exist in pure strategies for the following game:
+2. For what values of \\(\alpha\\) does a Nash equilibrium exist in pure strategies for the following game:
 
     $$\begin{pmatrix}
     (3,5)&(2-\alpha,\alpha)\\
@@ -38,7 +38,7 @@ slug       : normalformgamesnashequilibria-hw
 
     Suppose two vendors (of an identical product) must choose their location along a busy street. It is anticipated that their profit is directly related to their position on the street.
 
-    If we allow their positions to be represented by a points $x_1, x_2$ on the $[0,1]_{\mathbb{R}}$ line segment then we have:
+    If we allow their positions to be represented by a points \\(x_1, x_2\\) on the \\([0,1]_{\mathbb{R}}\\) line segment then we have:
 
     $$u_1(x_1,x_2)=\begin{cases}x_1+(x_2-x_1)/2,&\text{if }x_1\leq x_2\\
     1-x_1+(x_2-x_1)/2,&\text{otherwise}
@@ -60,7 +60,7 @@ slug       : normalformgamesnashequilibria-hw
 
     Plot the expected utilities for each player against mixed strategies and use this to obtain the Nash Equilibria.
 
-5. Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: $S_1=\{\text{SL},\text{SR}\}$. A goalie (player 2) can either dive left or right: $S_2=\{\text{DL}, \text{DR}\}$. The chances of a goal being scored are given below:
+5. Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: \\(S_1=\\{\text{SL},\text{SR}\\}\\). A goalie (player 2) can either dive left or right: \\(S_2=\\{\text{DL}, \text{DR}\\}\\). The chances of a goal being scored are given below:
 
     $$\begin{pmatrix}
     .8&.15\\
@@ -69,7 +69,7 @@ slug       : normalformgamesnashequilibria-hw
 
     i. Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?
 
-    ii. Assume that player 1 now has a further strategy available: to shoot in the middle: $S_1=\{\text{SL},\text{SM}, \text{SR}\}$ the probabilities of a goal being scored are now given:
+    ii. Assume that player 1 now has a further strategy available: to shoot in the middle: \\(S_1=\\{\text{SL},\text{SM}, \text{SR}\\}\\) the probabilities of a goal being scored are now given:
 
     $$\begin{pmatrix}
     .8&.15\\
@@ -87,4 +87,4 @@ slug       : normalformgamesnashequilibria-hw
 
     ---
 
-    Prove the theorem for 2 player games with $|S_1|=|S_2|=2$. I.e. prove the above result in the special case of $2\times 2$ games.
+    Prove the theorem for 2 player games with \\(\|S_1\|=\|S_2\|=2\\). I.e. prove the above result in the special case of \\(2\times 2\\) games.

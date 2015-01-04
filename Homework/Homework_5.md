@@ -6,24 +6,24 @@ comments   : true
 slug       : incompleteinfomatchinggamesroutinggamescoop-hw
 ---
 
-1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}.
+1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown.
 
 
     - Game 1:
 
-        ![Matching game 1 \label{E05-img01}](images/E05-img01.png)\
+        ![Matching game 1 \label{E05-img01}](images/E05-img01.png)
 
     - Game 2:
 
-        ![Matching game 2 \label{E05-img02}](images/E05-img02.png)\
+        ![Matching game 2 \label{E05-img02}](images/E05-img02.png)
 
     - Game 3:
 
-        ![Matching game 3 \label{E05-img03}](images/E05-img03.png)\
+        ![Matching game 3 \label{E05-img03}](images/E05-img03.png)
 
     - Game 4:
 
-        ![Matching game 4 \label{E05-img04}](images/E05-img04.png)\
+        ![Matching game 4 \label{E05-img04}](images/E05-img04.png)
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
@@ -97,12 +97,12 @@ slug       : incompleteinfomatchinggamesroutinggamescoop-hw
 
 5. Calculate the Nash flow and the optimal flow for the following routing game:
 
-    ![Routing game 1\label{E05-img05}](images/E05-img05.png)\
+    ![Routing game 1\label{E05-img05}](images/E05-img05.png)
 
 6. For a routing game the 'Price of Anarchy' is defined as:
 
     $$\text{PoA}=\frac{C(\tilde f)}{C(f^*)}$$
 
-    For the game shown (a generalisation of "Pigou's example") obtain the PoA as a function of $\alpha$.
+    For the game shown (a generalisation of "Pigou's example") obtain the PoA as a function of \\(\alpha\\).
 
     ![A generalization of Pigou's example\label{E05-img07}](images/E05-img07.png)
