@@ -33,7 +33,7 @@ slug       : notationconvention
 - \\(X\\): used to denote the set of states for a stochastic game.
 - \\(S_i(x)\\): used to denote the set of strategies available to player \\(i\\) in state \\(x\in X\\) in a stochastic game.
 - \\(u(i,x,\tau)\\): used to denote the utility to player \\(i\\) in state \\(x\\) given that the strategy profile is \\(\tau\\).
-- \\(\pi(x'|x,\tau)\\): used to denote the probability of transferring from \\(x\\) to \\(x'\\) given the strategy profile \\(\tau\\).
+- \\(\pi(x'\|x,\tau)\\): used to denote the probability of transferring from \\(x\\) to \\(x'\\) given the strategy profile \\(\tau\\).
 - \\(\lambda\\): used to denote the payoff vector for a cooperative game.
 - \\(\pi\\): used to denote a permutation.
 - \\(S_{\pi}\\): used to denote the set of predecessors of \\(i\\).
