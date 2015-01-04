@@ -1,3 +1,11 @@
+---
+layout     : post
+categories : homework
+title      : Homework 1 - Normal form games
+comments   : true
+slug       : representationsandpurestrategies-hw
+---
+
 # Homework sheet 1 - Normal form games
 
 1. Represent the following game in normal form:

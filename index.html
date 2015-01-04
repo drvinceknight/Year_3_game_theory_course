@@ -13,6 +13,13 @@ title  : Game Theory
         {% endfor %}
         </ul>
     <h1>Homework</h1>
+        <ul>
+        {% for page in site.pages %}
+            {% if page.categories contains 'homework' %}
+            <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
     <h1>Alternative Resources</h1>
     <h1>Reading list</h1>
 </div>

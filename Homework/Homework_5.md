@@ -1,4 +1,10 @@
-# Homework sheet 5 - Matching games, cooperative games and routing games
+---
+layout     : post
+categories : homework
+title      : Homework 5 - Matching games, cooperative games and routing games
+comments   : true
+slug       : incompleteinfomatchinggamesroutinggamescoop-hw
+---
 
 1. Obtain stable suitor optimal and reviewer optimal matchings for the matching games shown\text{ in Figures \ref{E05-img01} to \ref{E05-img04}}.
 

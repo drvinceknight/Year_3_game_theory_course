@@ -1,4 +1,10 @@
-# Homework sheet 3 - Extensive form games, subgame perfect equilibrium and repeated games
+---
+layout     : post
+categories : homework
+title      : Homework 3 - Extensive form games, subgame perfect equilibrium and repeated games
+comments   : true
+slug       : backwardsinductionsubgameperfection-hw
+---
 
 1. Obtain the Nash equilibrium for the following games using backward induction:
 

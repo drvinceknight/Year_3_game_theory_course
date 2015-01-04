@@ -1,3 +1,11 @@
+---
+layout     : post
+categories : homework
+title      : Homework 2 - Nash equilibrium in normal form games
+comments   : true
+slug       : normalformgamesnashequilibria-hw
+---
+
 # Homework sheet 2 - Nash equilibrium in normal form games
 
 1. Compute the Nash equilibrium (if they exist) in pure strategies for the following games:

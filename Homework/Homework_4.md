@@ -1,5 +1,10 @@
-# Homework sheet 4 - Evolutionary games, games with incomplete information and stochastic games
-
+---
+layout     : post
+categories : homework
+title      : Homework 4 - Evolutionary games, games with incomplete information and stochastic games
+comments   : true
+slug       : repeatedgamesandevolutionarygames-hw
+---
 
 1. Consider the pairwise contest games with the following associated two player games:
 
