@@ -4,9 +4,15 @@ title  : Game Theory
 ---
 
 <div class="home">
-    <ul>
-        <li>Notes</li>
-        <li>Reading</li>
-        <li>Exercise Sheets</li>
-    </ul>
+    <h1>Content</h1>
+        <ul>
+        {% for page in site.pages %}
+            {% if page.categories contains 'content' %}
+            <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    <h1>Homework</h1>
+    <h1>Alternative Resources</h1>
+    <h1>Reading list</h1>
 </div>
