@@ -103,7 +103,7 @@ Using this we have the powerful result:
 
 ---
 
-If \\(\sigma^*\\) is an ESS in a pairwise contest population game then for all \\(\sigma\ne\sigma^*\\):
+If \\(\sigma^\*\\) is an ESS in a pairwise contest population game then for all \\(\sigma\ne\sigma^\*\\):
 
 1. \\(u(\sigma^\*,\sigma^\*)>u(\sigma,\sigma^\*)\\)
 OR
