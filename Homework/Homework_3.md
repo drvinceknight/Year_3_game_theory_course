@@ -8,13 +8,13 @@ slug       : backwardsinductionsubgameperfection-hw
 
 1. Obtain the Nash equilibrium for the following games using backward induction:
 
-    ![](images/E03-img01.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img01.png)
 
-    ![](images/E03-img02.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img02.png)
 
-    ![](images/E03-img03.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img03.png)
 
-    ![](images/E03-img04.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img04.png)
 
 2. Obtain the Nash equilibrium for the following game:
 
@@ -26,11 +26,11 @@ slug       : backwardsinductionsubgameperfection-hw
     ii. Identify the corresponding normal form representations and hence obtain all Nash equilibrium.
     iii. Identify which Nash equilibrium are also subgame perfect Nash equilibrium.
 
-    ![](images/E03-img05.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img05.png)
 
-    ![](images/E03-img06.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img06.png)
 
-    ![](images/E03-img07.png)
+    ![]({{site.baseurl}}/Homework/images/E03-img07.png)
 
 4. For the following stage games:
 

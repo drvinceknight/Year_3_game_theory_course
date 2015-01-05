@@ -51,8 +51,8 @@ slug       : repeatedgamesandevolutionarygames-hw
 
 5. Obtain the Markov Nash equilibrium (in pure strategies if it exists) for the following games assuming \\(\delta=1/4\\).
 
-    ![](images/E04-img01.png)
+    ![]({{site.baseurl}}/Homework/images/E04-img01.png)
 
-    ![](images/E04-img02.png)
+    ![]({{site.baseurl}}/Homework/images/E04-img02.png)
 
-    ![](images/E04-img03.png)
+    ![]({{site.baseurl}}/Homework/images/E04-img03.png)

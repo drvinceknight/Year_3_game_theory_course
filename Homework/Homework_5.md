@@ -11,19 +11,19 @@ slug       : incompleteinfomatchinggamesroutinggamescoop-hw
 
     - Game 1:
 
-        ![Matching game 1 \label{E05-img01}](images/E05-img01.png)
+        ![Matching game 1 \label{E05-img01}]({{site.baseurl}}/Homework/images/E05-img01.png)
 
     - Game 2:
 
-        ![Matching game 2 \label{E05-img02}](images/E05-img02.png)
+        ![Matching game 2 \label{E05-img02}]({{site.baseurl}}/Homework/images/E05-img02.png)
 
     - Game 3:
 
-        ![Matching game 3 \label{E05-img03}](images/E05-img03.png)
+        ![Matching game 3 \label{E05-img03}]({{site.baseurl}}/Homework/images/E05-img03.png)
 
     - Game 4:
 
-        ![Matching game 4 \label{E05-img04}](images/E05-img04.png)
+        ![Matching game 4 \label{E05-img04}]({{site.baseurl}}/Homework/images/E05-img04.png)
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
@@ -97,7 +97,7 @@ slug       : incompleteinfomatchinggamesroutinggamescoop-hw
 
 5. Calculate the Nash flow and the optimal flow for the following routing game:
 
-    ![Routing game 1\label{E05-img05}](images/E05-img05.png)
+    ![Routing game 1\label{E05-img05}]({{site.baseurl}}/Homework/images/E05-img05.png)
 
 6. For a routing game the 'Price of Anarchy' is defined as:
 
@@ -105,4 +105,4 @@ slug       : incompleteinfomatchinggamesroutinggamescoop-hw
 
     For the game shown (a generalisation of "Pigou's example") obtain the PoA as a function of \\(\alpha\\).
 
-    ![A generalization of Pigou's example\label{E05-img07}](images/E05-img07.png)
+    ![A generalization of Pigou's example\label{E05-img07}]({{site.baseurl}}/Homework/images/E05-img07.png)
