@@ -33,4 +33,11 @@ title  : Game Theory
         </ul>
 
     <h1>Reading list</h1>
+
+        <ul>
+        {% for reading in site.data.reading_list %}
+        <li><a href={{ reading.url }}>{{ reading.title }} by {{reading.authors}}</a></li>
+        {% endfor %}
+        </ul>
+
 </div>
