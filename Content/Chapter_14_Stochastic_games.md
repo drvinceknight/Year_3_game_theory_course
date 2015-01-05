@@ -89,7 +89,7 @@ $$
 
 A concise way of representing all this is shown.
 
-![A simple stochastic game.\label{L14-img01}](images/L14-img01.png)
+![A simple stochastic game.\label{L14-img01}]({{site.baseurl}}/Content/images/L14-img01.png)
 
 We see that the Nash equilibrium for the stage game corresponding to \\(x\\) is \\((a,c)\\) however as soon as the players play that strategy profile they will go to state \\(y\\) which is an absorbing state at which players gain no further utility.
 

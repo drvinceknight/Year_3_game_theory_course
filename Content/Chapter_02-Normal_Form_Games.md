@@ -16,7 +16,7 @@ In the [previous chapter]({{site.baseurl}}/Content/Chapter_01-Introduction/) we 
 
 We did this looking at a game called "the battle of the sexes":
 
-![Celine and Bob with Information Set.](images/L01-img05.png)
+![Celine and Bob with Information Set.]({{site.baseurl}}/Content/images/L01-img05.png)
 
 Can we think of a better way of representing this game?
 
@@ -40,7 +40,7 @@ The convention used in this course (unless otherwise stated) is that all players
 
 A natural way of representing a two player normal form game is using a **bi-matrix**. If we assume that \\(N=2\\) and \\(S_1=\\{r_i\;\|\;1\leq i\leq m \\}\\) and \\(S_2=\\{s_j\;\|\;1\leq j\leq n \\}\\) then a **bi-matrix** representation of the game considered is shown.
 
-![A bi matrix for \\(N=2\\). \label{L02-img01}](images/L02-img01.png)
+![A bi matrix for \\(N=2\\). \label{L02-img01}]({{site.baseurl}}/Content/images/L02-img01.png)
 
 ### Some examples
 
@@ -147,6 +147,6 @@ $$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r
 
 A plot of this is shown.
 
-![Plot of utility if both players play tails. \label{L02-plot01}](./plots/L02-plot01.png)
+![Plot of utility if both players play tails. \label{L02-plot01}]({{site.baseurl}}/Content/plots/L02-plot01.png)
 
 Add to this plot by assuming that the players independently both play heads.

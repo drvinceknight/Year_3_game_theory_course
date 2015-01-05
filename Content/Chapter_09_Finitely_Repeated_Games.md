@@ -45,7 +45,7 @@ $$
 
 All possible outcomes to the repeated game given \\(T=2\\) are shown.
 
-![All possible outcomes of a repeated prisoners dilemma.\label{L09-plot01}](plots/L09-plot01.png)
+![All possible outcomes of a repeated prisoners dilemma.\label{L09-plot01}]({{site.baseurl}}/Content/plots/L09-plot01.png)
 
 When we discuss strategies in repeated games we need to be careful.
 
@@ -102,7 +102,7 @@ $$\begin{pmatrix}
 
 The plot shows the various possible outcomes of the repeated game for \\(T=2\\).
 
-![All possible outcomes of the repeated \\(3\times2\\) game.\label{L09-plot02}](plots/L09-plot02.png)
+![All possible outcomes of the repeated \\(3\times2\\) game.\label{L09-plot02}]({{site.baseurl}}/Content/plots/L09-plot02.png)
 
 If we consider the two pure equilibria \\((r_1,s_3)\\) and \\((r_2,s_2)\\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
 

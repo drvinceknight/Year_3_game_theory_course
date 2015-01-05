@@ -36,7 +36,7 @@ A **routing game** \\((G,r,c)\\) is defined on a graph \\(G=(V,E)\\) with a defi
 
 An example of such a game is given.
 
-![A simple di-graph.\label{L17-img01}](images/L17-img01.png)
+![A simple di-graph.\label{L17-img01}]({{site.baseurl}}/Content/images/L17-img01.png)
 
 In this game we have two **commodoties** with two sources: \\(s_1\\) and \\(s_2\\) and a single sink \\(t\\). To complete our definition of a routing game we require a quantity of traffic, let \\(r=(1/2,1/2)\\). We also require a set of cost functions \\(c\\). Let:
 
@@ -50,7 +50,7 @@ c_{at}&=x\\
 
 We represent all this diagrammatically.
 
-![A routing game. \label{L17-img02}](images/L17-img02.png)
+![A routing game. \label{L17-img02}]({{site.baseurl}}/Content/images/L17-img02.png)
 
 ### Definition of the set of paths
 
@@ -82,7 +82,7 @@ $$\sum_{P\in\mathcal{P}_i}f_P=r_i$$
 
 In our running example \\(f=(1/4,1/4,0,1/2)\\) is a feasible flow.
 
-![A feasible flow.\label{L17-img03}](images/L17-img03.png)
+![A feasible flow.\label{L17-img03}]({{site.baseurl}}/Content/images/L17-img03.png)
 
 To go further we need to try and measure how good a flow is.
 
@@ -108,7 +108,7 @@ $$C(f)=\sum_{e\in E}c_e(f_e)f_e$$
 
 Thus for our running example if we take a general \\(f=(\alpha,1/2-\alpha,1/2-\beta,\beta)\\) as shown.
 
-![A generic flow.\label{L17-img04}](images/L17-img04.png)
+![A generic flow.\label{L17-img04}]({{site.baseurl}}/Content/images/L17-img04.png)
 
 The cost of \\(f(\alpha,1/2-\alpha,1/2-\beta,\beta)\\) is given by:
 
@@ -139,7 +139,7 @@ In our example this corresponds to minimising \\(C(\alpha,\beta)=\alpha^3+3/2\be
 
 A plot of \\(C(\alpha,\beta)\\) is shown.
 
-![\\(C(\alpha,\beta)\\).\label{L17-plot01}](plots/L17-plot01.png)
+![\\(C(\alpha,\beta)\\).\label{L17-plot01}]({{site.baseurl}}/Content/plots/L17-plot01.png)
 
 It looks like the minimal point is somewhere near higher values of \\(\alpha\\) and \\(\beta\\). Let us carry out our optimisation properly:
 

@@ -23,11 +23,11 @@ Consider the following situation:
 
 If we consider the following example with suitors: \\(S=\\{a,b,c\\}\\) and reviewers: \\(R=\\{A,B,C\\}\\) with preferences shown.
 
-![A matching game.\label{L15-img01}](images/L15-img01.png)
+![A matching game.\label{L15-img01}]({{site.baseurl}}/Content/images/L15-img01.png)
 
 So that \\(c\\) would prefer to be matched with \\(b\\), then \\(c\\) and lastly \\(c\\). One possible matching would be is shown.
 
-![A simple matching.\label{L15-img02}](images/L15-img02.png)
+![A simple matching.\label{L15-img02}]({{site.baseurl}}/Content/images/L15-img02.png)
 
 In this situation, \\(a\\) and \\(b\\) are getting their first choice and \\(c\\) their second choice. However \\(B\\) actually prefers \\(c\\) so that matching is unstable.
 
@@ -67,11 +67,11 @@ A matching \\(M\\) with no blocking pair is said to be stable.
 
 A stable matching is shown.
 
-![A stable matching.\label{L15-img03}](images/L15-img03.png)
+![A stable matching.\label{L15-img03}]({{site.baseurl}}/Content/images/L15-img03.png)
 
 The stable matching is not unique, the matching shown is also stable:
 
-![Another stable matching.\label{L15-img04}](images/L15-img04.png)
+![Another stable matching.\label{L15-img04}]({{site.baseurl}}/Content/images/L15-img04.png)
 
 ## The Gale-Shapley Algorithm
 
@@ -87,47 +87,47 @@ Here is the Gale-Shapley algorithm, which gives a stable matching for a matching
 
 Let us illustrate this algorithm with the above example.
 
-![Base example. \label{L15-img05}](images/L15-img05.png)
+![Base example. \label{L15-img05}]({{site.baseurl}}/Content/images/L15-img05.png)
 
 We pick \\(c\\) and as all the reviewers are unmatched set \\(M(c)=B\\).
 
-![Setting \\(M(c)=B\\). \label{L15-img06}](images/L15-img06.png)
+![Setting \\(M(c)=B\\). \label{L15-img06}]({{site.baseurl}}/Content/images/L15-img06.png)
 
 We pick \\(b\\) and as \\(B\\) is matched but prefers \\(c\\) to \\(b\\) we cross out \\(B\\) from \\(b\\)'s preferences.
 
-![Removing \\(B\\) from \\(b\\)'s preference list. \label{L15-img07}](images/L15-img07.png)
+![Removing \\(B\\) from \\(b\\)'s preference list. \label{L15-img07}]({{site.baseurl}}/Content/images/L15-img07.png)
 
 We pick \\(b\\) again and set \\(M(b)=C\\).
 
-![Setting \\(M(b)=C\\).\label{L15-img08}](images/L15-img08.png)
+![Setting \\(M(b)=C\\).\label{L15-img08}]({{site.baseurl}}/Content/images/L15-img08.png)
 
 We pick \\(a\\) and set \\(M(a)=A\\).
 
-![Setting \\(M(a)=A\\). \label{L15-img04}](images/L15-img04.png)
+![Setting \\(M(a)=A\\). \label{L15-img04}]({{site.baseurl}}/Content/images/L15-img04.png)
 
 **Let us repeat the algorithm but pick \\(b\\) as our first suitor.**
 
-![Base example.\label{L15-img05}](images/L15-img05.png)
+![Base example.\label{L15-img05}]({{site.baseurl}}/Content/images/L15-img05.png)
 
 We pick \\(b\\) and as all the reviewers are unmatched set \\(M(b)=B\\).
 
-![Setting \\(M(b)=B\\). \label{L15-img09}](images/L15-img09.png)
+![Setting \\(M(b)=B\\). \label{L15-img09}]({{site.baseurl}}/Content/images/L15-img09.png)
 
 We pick \\(a\\) and as \\(A\\) is unmatched set \\(M(a)=A\\).
 
-![Setting \\(M(a)=A\\). \label{L15-img10}](images/L15-img10.png)
+![Setting \\(M(a)=A\\). \label{L15-img10}]({{site.baseurl}}/Content/images/L15-img10.png)
 
 We pick \\(c\\) and \\(b\\) is matched but prefers \\(c\\) to \\(M^{-1}(B)=b\\), we set \\(M(c)=B\\).
 
-![Setting \\(M(c)=B\\). \label{L15-img11}](images/L15-img11.png)
+![Setting \\(M(c)=B\\). \label{L15-img11}]({{site.baseurl}}/Content/images/L15-img11.png)
 
 We pick \\(b\\) and as \\(B\\) is matched but prefers \\(c\\) to \\(b\\) we cross out \\(B\\) from \\(b\\)'s preferences:
 
-![Removing \\(B\\) from \\(b\\)'s preference list. \label{L15-img12}](images/L15-img12.png)
+![Removing \\(B\\) from \\(b\\)'s preference list. \label{L15-img12}]({{site.baseurl}}/Content/images/L15-img12.png)
 
 We pick \\(b\\) again and set \\(M(b)=C\\).
 
-![Setting \\(M(b)=C\\). \label{L15-img13}](images/L15-img13.png)
+![Setting \\(M(b)=C\\). \label{L15-img13}]({{site.baseurl}}/Content/images/L15-img13.png)
 
 Both these have given the same matching.
 

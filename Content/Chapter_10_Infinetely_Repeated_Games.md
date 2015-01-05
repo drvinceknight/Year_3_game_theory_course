@@ -124,7 +124,7 @@ This average payoff is a tool that allows us to compare the payoffs in an infite
 
 As an example consider the plot corresponding to a repeated Prisoner's Dilemma.
 
-![Convex hull of payoffs to a prisoners dilemma.\label{L10-img01}](images/L10-img01.png)
+![Convex hull of payoffs to a prisoners dilemma.\label{L10-img01}]({{site.baseurl}}/Content/images/L10-img01.png)
 
 The feasible average payoffs correspond to the feasible payoffs in the stage game. The individually rational payoffs show the payoffs that are **better for both players** than the stag Nash equilibrium.
 

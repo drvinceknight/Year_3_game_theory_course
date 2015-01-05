@@ -15,13 +15,13 @@ Let us consider the very simple situation where **you** decide where to meet you
 
 If you wanted to maximise your chance of meeting your friends: what should you do?
 
-![A simple decision tree\label{L01-img01}](images/L01-img01.png)
+![A simple decision tree\label{L01-img01}]({{site.baseurl}}/Content/images/L01-img01.png)
 
 The tree shows that if **you** were to choose your location first it would be in your interest of choosing coffee house B. This gives you an 80% chance of being in the same location as your **friends**.
 
 In general these sorts of decisions are not at the mercy of chance. **You** would probably choose to go to coffee house A or B and simply let your friends know where you are so that they could make an informed decision. This consecutive making of decisions is a type of game.
 
-![Consecutive decisions\label{L01-img02}](images/L01-img02.png)
+![Consecutive decisions\label{L01-img02}]({{site.baseurl}}/Content/images/L01-img02.png)
 
 In this game the outcome (whether or not your friends and you have a coffee together) depends on the actions of all the players.
 
@@ -57,7 +57,7 @@ Let's consider the following game.
 
 The game as well as the utilities of Bob and Celine:
 
-![Bob and Celine\label{L01-img03}](images/L01-img03.png)
+![Bob and Celine\label{L01-img03}]({{site.baseurl}}/Content/images/L01-img03.png)
 
 If we assume that this is the order with which decisions take place it should be relatively straightforward to predict what will happen:
 
@@ -68,7 +68,7 @@ If we assume that this is the order with which decisions take place it should be
 
 Of course we can simply represent this game in a different way (remember that in the above description we did not mention who would be making the initial decision).
 
-![Celine and Bob\label{L01-img04}](images/L01-img04.png)
+![Celine and Bob\label{L01-img04}]({{site.baseurl}}/Content/images/L01-img04.png)
 
 In this case it should again be relatively straightforward to predict what will happen:
 
@@ -90,6 +90,6 @@ Two nodes of a game tree are said to be part of the same information set if the 
 
 We represent nodes being part of the same information set using a dashed line. In our example with Celine and Bob if both players must decide on a movie without knowing what the other will do we see that nodes **b** and **c** now have the same information set.
 
-![Celine and Bob with Information Set\label{L01-img05}](images/L01-img05.png)
+![Celine and Bob with Information Set\label{L01-img05}]({{site.baseurl}}/Content/images/L01-img05.png)
 
 It is now a lot more difficult to try and predict the outcome of this situation.

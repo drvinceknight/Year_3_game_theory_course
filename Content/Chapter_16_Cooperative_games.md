@@ -38,7 +38,7 @@ Let us consider the following game:
 
 This is illustrated.
 
-![A taxi journey. \label{L16-img01}](images/L16-img01.png)
+![A taxi journey. \label{L16-img01}]({{site.baseurl}}/Content/images/L16-img01.png)
 
 To construct the characteristic function we first obtain the power set (ie all possible coalitions) \\(2^{\{1,2,3\}}=\{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\Omega\}\\) where \\(\Omega\\) denotes the set of all players (\\(\{1,2,3\}\\)).
 
@@ -65,7 +65,7 @@ A characteristic function game \\(G=(N,v)\\) is called **monotone** if it satisf
 ---
 
 
-![A diagrammatic representation of monotonicity.\label{L16-img02}](images/L16-img02.png)
+![A diagrammatic representation of monotonicity.\label{L16-img02}]({{site.baseurl}}/Content/images/L16-img02.png)
 
 Our taxi example is monotone, however the \\(G=(3,v_1)\\) with \\(v_1\\) defined as:
 
@@ -91,7 +91,7 @@ A characteristic function game \\(G=(N,v)\\) is called **superadditive** if it s
 
 ---
 
-![A diagrammatic representation of superadditivity.\label{L16-img03}](images/L16-img03.png)
+![A diagrammatic representation of superadditivity.\label{L16-img03}]({{site.baseurl}}/Content/images/L16-img03.png)
 
 Our taxi example is not superadditive, however the \\(G=(3,v_2)\\) with \\(v_2\\) defined as:
 

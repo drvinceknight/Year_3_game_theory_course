@@ -62,7 +62,7 @@ and
 
 $$u_1(r_2,\sigma_2)=1-2x$$
 
-![Mixed strategies fox the matching pennies game. \label{L04-plot01}](plots/L04-plot01.png)
+![Mixed strategies fox the matching pennies game. \label{L04-plot01}]({{site.baseurl}}/Content/plots/L04-plot01.png)
 
 We see that:
 
@@ -85,7 +85,7 @@ and
 
 $$u_1(r_2,\sigma_2)=2-x$$
 
-![Mixed strategies for the battle of the sexes game. \label{L04-plot02}](plots/L04-plot02.png)
+![Mixed strategies for the battle of the sexes game. \label{L04-plot02}]({{site.baseurl}}/Content/plots/L04-plot02.png)
 
 We see that:
 
@@ -137,7 +137,7 @@ $$u_2(\sigma_1,s_3)=2x-1$$
 
 Plotted:
 
-![Utilities of player 2 in our example. \label{L04-plot03}](plots/L04-plot03.png)
+![Utilities of player 2 in our example. \label{L04-plot03}]({{site.baseurl}}/Content/plots/L04-plot03.png)
 
 We see that \\(s_3\\) is never a best response for player 2:
 

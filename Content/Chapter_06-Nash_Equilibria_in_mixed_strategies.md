@@ -46,7 +46,7 @@ $$u_1(r_2,\sigma_2)=1-2y$$
 
 shown:
 
-![Utilities of player 1 in the matching pennies game.\label{L06-plot01}](plots/L06-plot01.png)
+![Utilities of player 1 in the matching pennies game.\label{L06-plot01}]({{site.baseurl}}/Content/plots/L06-plot01.png)
 
 
 1. If \\(y<1/2\\) then \\(r_2\\) is a best response for player 1.
@@ -61,7 +61,7 @@ $$u_2(\sigma_1,s_2)=2x-1$$
 
 shown:
 
-![Utilities of player 2 in the matching pennies game.\label{L06-plot02}](plots/L06-plot02.png)
+![Utilities of player 2 in the matching pennies game.\label{L06-plot02}]({{site.baseurl}}/Content/plots/L06-plot02.png)
 
 Thus we have:
 
@@ -71,7 +71,7 @@ Thus we have:
 
 Let us draw both best responses on a single diagram, indicating the best responses in each quadrant. The arrows show the deviation indicated by the best responses.
 
-![Best response moves based on current strategy. \label{L06-img01}](images/L06-img01.png)
+![Best response moves based on current strategy. \label{L06-img01}]({{site.baseurl}}/Content/images/L06-img01.png)
 
 If either player plays a mixed strategy other than \\((1/2,1/2)\\) then the other player has an incentive to modify their strategy. Thus the Nash equilibria is:
 

@@ -21,7 +21,7 @@ Game with incomplete information represent situations where the players do not p
 
 If we recall the first game tree we considered in [Chapter 1]({{site.baseurl}}/Content/Chapter_01-Introduction) we had already done this to some extent.
 
-![A 1 player game with incomplete information.\label{L01-img01}](images/L01-img01.png)
+![A 1 player game with incomplete information.\label{L01-img01}]({{site.baseurl}}/Content/images/L01-img01.png)
 
 Let us consider a slightly more complicated game.
 
@@ -29,7 +29,7 @@ Let us consider a slightly more complicated game.
 
 This game is represented shown.
 
-![A simplified game of poker.\label{L13-img01}](images/L13-img01.png)
+![A simplified game of poker.\label{L13-img01}]({{site.baseurl}}/Content/images/L13-img01.png)
 
 To solve this game we can (as in [Chapter 8](Chapter_08-Subgame_Perfection.md)) obtain the corresponding normal form game by taking expected utilities over the moves of nature.
 
@@ -58,7 +58,7 @@ Using the Equality of Payoffs theorem we get that the Nash equilibrium is \\(\si
 
 When considering games with uncertainty it is particularly relevant to consider some basic utility theory. Consider the following game shown.
 
-![A simple 1 player game with incomplete information.\label{L13-img02}](images/L13-img02.png)
+![A simple 1 player game with incomplete information.\label{L13-img02}]({{site.baseurl}}/Content/images/L13-img02.png)
 
 This is a 1 player game where a player must choose whether or not to flip a coin. If the coin is flipped and lands on "Heads" then the player wins £10, if the coin lands on "Tails" then the player wins nothing. If the player chooses to not flip a coin then the player wins £4.
 
@@ -72,7 +72,7 @@ This perception is due to the fact that the percieved gain from 0 to £4 million
 
 This is shown.
 
-![Utility function. \label{L13-plot01}](plots/L13-plot01.png)
+![Utility function. \label{L13-plot01}]({{site.baseurl}}/Content/plots/L13-plot01.png)
 
 If we use \\(u=\sqrt{x}\\) as the utility function in the coin flip game we see that the analytical solution would indeed be to not flip. We will now take a look at this in a bit more detail with a well known game.
 
@@ -110,13 +110,13 @@ We furthermore assume that the utility function of the employer is simply \\(u(x
 
 The extensive form of the game is shown.
 
-![The principal agent game.\label{L13-img03}](images/L13-img03.png)
+![The principal agent game.\label{L13-img03}]({{site.baseurl}}/Content/images/L13-img03.png)
 
 Immediately we see that this game is trivial if \\(\kappa<\omega\\) and \\(K<\omega+B\\). Furthermore it seems sensible to only consider \\(K>\kappa\\).
 
 We will solve this game using backward induction. The first step is shown.
 
-![Calculating the expected value of move by nature. \label{L13-img04}](images/L13-img04.png)
+![Calculating the expected value of move by nature. \label{L13-img04}]({{site.baseurl}}/Content/images/L13-img04.png)
 
 If the employer would like a high level of effort he should set \\(w,B\\) such that:
 
