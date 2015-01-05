@@ -30,9 +30,9 @@ slug       : incompleteinfomatchinggamesroutinggamescoop-hw
 
 3. For the following cooperative games:
 
-    i. Verify if the game is monotonic.
-    ii. Verify if the game is super additive.
-    iii. Obtain the Shapley value.
+    1. Verify if the game is monotonic.
+    2. Verify if the game is super additive.
+    3. Obtain the Shapley value.
 
     $$
     v_1(C)=\begin{cases}
@@ -106,3 +106,5 @@ slug       : incompleteinfomatchinggamesroutinggamescoop-hw
     For the game shown (a generalisation of "Pigou's example") obtain the PoA as a function of \\(\alpha\\).
 
     ![A generalization of Pigou's example\label{E05-img07}]({{site.baseurl}}/Homework/images/E05-img07.png)
+
+[Solution available]({{site.baseurl}}/Homework/Solution_5)

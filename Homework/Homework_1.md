@@ -72,3 +72,5 @@ slug       : representationsandpurestrategies-hw
     ---
 
     Prove the theorem for 2 player games with \\(\|S_1\|=\|S_2\|=2\\). I.e. prove the above result in the special case of \\(2\times 2\\) games.
+
+[Solution available]({{site.baseurl}}/Homework/Solution_1)

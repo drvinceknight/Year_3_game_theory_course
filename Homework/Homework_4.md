@@ -56,3 +56,5 @@ slug       : repeatedgamesandevolutionarygames-hw
     ![]({{site.baseurl}}/Homework/images/E04-img02.png)
 
     ![]({{site.baseurl}}/Homework/images/E04-img03.png)
+
+[Solution available]({{site.baseurl}}/Homework/Solution_4)

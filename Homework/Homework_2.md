@@ -6,8 +6,6 @@ comments   : true
 slug       : normalformgamesnashequilibria-hw
 ---
 
-# Homework sheet 2 - Nash equilibrium in normal form games
-
 1. Compute the Nash equilibrium (if they exist) in pure strategies for the following games:
 
     $$\begin{pmatrix}
@@ -67,9 +65,9 @@ slug       : normalformgamesnashequilibria-hw
     .2&.95
     \end{pmatrix}$$
 
-    i. Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?
+    1. Assume the utility to player 1 if the probability of scoring and the utility to player 2 the probability of a goal not being scored. What is the Nash equilibrium for this game?
 
-    ii. Assume that player 1 now has a further strategy available: to shoot in the middle: \\(S_1=\\{\text{SL},\text{SM}, \text{SR}\\}\\) the probabilities of a goal being scored are now given:
+    2. Assume that player 1 now has a further strategy available: to shoot in the middle: \\(S_1=\\{\text{SL},\text{SM}, \text{SR}\\}\\) the probabilities of a goal being scored are now given:
 
     $$\begin{pmatrix}
     .8&.15\\
@@ -88,3 +86,5 @@ slug       : normalformgamesnashequilibria-hw
     ---
 
     Prove the theorem for 2 player games with \\(\|S_1\|=\|S_2\|=2\\). I.e. prove the above result in the special case of \\(2\times 2\\) games.
+
+[Solution available]({{site.baseurl}}/Homework/Solution_2)
