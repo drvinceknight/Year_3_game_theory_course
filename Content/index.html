@@ -1,0 +1,19 @@
+---
+layout : default
+title  : Game Theory - Content
+---
+
+<div class="home">
+
+    <p> Here are all the Chapters for the content of the course.</p>
+    <p>
+    <ul>
+    {% for page in site.pages %}
+        {% if page.categories contains 'content' %}
+        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+    </p>
+
+</div>

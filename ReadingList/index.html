@@ -1,0 +1,17 @@
+---
+layout : default
+title  : Game Theory
+---
+
+<div class="home">
+
+    <p>Here are various resources (books, websites etc...) ordered by relevance to the course.</p>
+    <p>
+    <ul>
+    {% for reading in site.data.reading_list %}
+    <li><a href={{ reading.url }}>{{ reading.title }} by {{reading.authors}}</a></li>
+    {% endfor %}
+    </ul>
+    </p>
+
+</div>

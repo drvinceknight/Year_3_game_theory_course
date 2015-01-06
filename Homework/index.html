@@ -1,0 +1,19 @@
+---
+layout : default
+title  : Game Theory - Homework
+---
+
+<div class="home">
+
+    <p> Here are various pieces of homework for the course.</p>
+    <p>
+    <ul>
+    {% for page in site.pages %}
+        {% if page.categories contains 'homework' %}
+        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+    </p>
+
+</div>
