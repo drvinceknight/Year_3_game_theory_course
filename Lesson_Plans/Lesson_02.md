@@ -13,44 +13,14 @@ At the end of this lecture students will be to:
 
 #### Before the lecture
 
-- Invite students to try basic Sage.
+- NA
 
 #### During the lecture
 
-- 0:5 mins
-
-    - VK: Recap previous lecture
-    - Students: Listen
-
-- 5:10 mins
-
-    - VK: Discuss outcomes in battle of the sexes game.
-    - Students: Participate
-
-- 10:15 mins
-
-    - VK: Lecture: formal normal form game representation for 2 player games.
-    - Students: Listen 
-
-- 15:25 mins
-
-    - VK: Ask students what they would do in a bunch of normal form games (PD, matching pennies, battle of the sexes etc...)
-    - Students: Participate
-
-- 25:35 mins
-
-    - VK: Lecture on strategies and expected payoffs.
-    - Students: Listen
-
-- 35:45 mins
-
-    - VK: Graphical representations of some mixed stratgies 
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
-    - Students: Listen
+1. Play matching pennies game (5 rounds)
+2. Change game and play again (5 rounds)
+3. Point at blog post from past year.
+3. Discuss how to calculate mixed strategies (calculate mixed strategies for modified game).
 
 #### After the lecture
 

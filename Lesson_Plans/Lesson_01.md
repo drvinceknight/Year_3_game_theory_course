@@ -16,34 +16,16 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:20 mins
-
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
-    - Students: Listen
-
-- 20:30 mins
-
-    - VK: Lecture on Normal Form representations
-    - Students: Listen
-
-- 30:35 mins
-
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
-
-- 35:40 mins
-
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
+1. Introduction to course
+2. Go over feedback from previous year
+3. Sage
+4. Show video of Golden Balls
+5. Show probabilistic tree: ask what is wrong?
+6. Play 2/3rds game
+7. Rationalise 2/3rds game
+8. Play 2/3rds game
+9. Show results of 2/3rds game
+10. Discuss information sets: 'How could we represent 2/3rds game as a tree'?
 
 #### After the lecture
 

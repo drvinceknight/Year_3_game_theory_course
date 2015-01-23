@@ -12,34 +12,27 @@ At the end of this lecture students will be to:
 
 #### Before the lecture
 
-- Invite students to participate in online (1 shot) games.
+- NA
 
 #### During the lecture
 
-- 0:5 mins
+- Clarify when cannot get predicted rational behaviour:
 
-    - VK: Recap previous lecture.
-    - Students: Listen
+    - Not enough dominated strategies
+    - No pair of best responses
 
-- 5:20 mins
+- Give example corresponding two students working on a group project:
 
-    - VK: Lecture on Nash equilibria
-    - Students: Listen
+    S1 = {x in R| 0 \leq x \leq 1}
+    S2 = {y in R| 0 \leq y \leq 1}
 
-- 20:35 mins
+    Their strategies represents their efforts on a group project.
+    Their utility is a combination of their mark and effort:
 
-    - VK: Some examples of duopoly games
-    - Students: Listen
+    u1 = (x+y)y-1/2x^2
+    u2 = (x+y)x-1/2y^2
 
-- 35:40 mins
-
-    - VK: Conclusion
-    - Students: Listen
-
-- 40:50 mins
-
-    - VK: Rock Paper Scissors tournament
-    - Students: Participate
+    ... Equilibria is to have same effort.
 
 #### After the lecture
 

@@ -12,33 +12,29 @@ At the end of this lecture students will be to:
 
 #### Before the lecture
 
-- Invite students to play a round of online games.
+- NA
 
 #### During the lecture
 
-- 0:5 mins
+1. Play tic tac toe (against a volunteer)
+2. Show Rundall tic tac toe solution
+3. Discuss best responses
+4. Best responses to:
 
-    - VK: Recap
-    - Students: Listen
+[[1,3],[4,2],[2,2]]
+[[4,0],[0,3],[4,1]]
+[[2,5],[3,4],[5,6]]
 
-- 5:20 mins
+5. Best responses against mixed strategies, hand out sheets and use random sampler for game below:
 
-    - VK: Formal lecture on best responses.
-    - Students: Listen
+[[2,-2],[-2,2]]
+[[-1,1],[1,-1]]
 
-- 20:30 mins
+6. Discuss UD and B sets: show notes and give example with following game:
 
-    - VK: Discuss dynamics of pairs of best responses.
-    - Students: Listen
-
-- 30:45 mins
-
-    - VK: Connection between best responses and dominance.
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
+[[1,1],[0,1]]
+[[7,5],[1,10]]
+[[6,-3],[2,-5]]
 
 #### After the lecture
 

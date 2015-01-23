@@ -13,43 +13,31 @@ At the end of this lecture students will be to:
 
 #### Before the lecture
 
-- Invite students to play a round of online games.
+- NA
 
 #### During the lecture
 
-- 0:5 mins
+1. Results from matching pennies game
+2. 2 Volunteers to play sequence of 4 games:
 
-    - VK: Recap.
-    - Students: Listen.
+    - [[[1,-1],[-1,1]],[[-1,1],[1,-1]]]
+    - [[[1,-1],[-1,1]],[[1,-1],[1,-1]]]
+    - [[[2,-2],[-1,1]],[[-1,1],[2,-2]]]
+    - [[[2,-2],[1,-1]],[[-1,1],[2,-2]]]
 
-- 5:10 mins
+    Score corresponds to number of chocolates they get as a twosome.
 
-    - VK: Invite discussion about why those students behaved as they did.
-    - Students: Participate.
+3. Then both players play:
 
-- 10:20 mins
+    - [[[1,1],[0,1.5]],[[1.5,0],[.5,.5]]]
 
-    - VK: Formal lecture on dominance and solving games with dominance.
-    - Students: Listen.
+    This score corresponds to sharing of chocolates.
 
-- 20:25 mins
+    Purpose of above is to familiarise dominated strategies
 
-    - VK: Look at games with no immediate dominance.
-    - Students: Participate.
+4. Some examples of iterated elimination of dominated strategies:
 
-- 25:35 mins
-
-    - VK: Lecture on common knowledge of rationality and how it can be used to solve games
-    - Students: Listen
-
-- 35:45 mins
-
-    - VK: Some examples and role play introducing certain games that cannot be solved with dominance.
-    - Students: partipation
-
-- 45:50 mins
-
-    - VK: Conclusion
+    - [[[2,0],[5,3]],[[1,6],[2,1]],[[7,0],[3,1]]]
 
 #### After the lecture
 
