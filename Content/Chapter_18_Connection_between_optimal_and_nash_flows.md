@@ -6,6 +6,12 @@ comments   : true
 slug       : connectionbetweennashandoptimalflows
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/AkCXKBZjNNM" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter](Chapter_17_Routing_games.md):

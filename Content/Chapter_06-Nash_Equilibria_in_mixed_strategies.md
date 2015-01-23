@@ -6,6 +6,12 @@ comments   : true
 slug       : mixedstrategyne
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/Bxt6KRQE2SE" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_05-Nash_Equilibria_in_pure_strategies)

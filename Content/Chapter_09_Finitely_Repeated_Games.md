@@ -6,6 +6,12 @@ comments   : true
 slug       : finitelyrepeatedgames
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/DdaPhY5HKwE" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_08-Subgame_Perfection):

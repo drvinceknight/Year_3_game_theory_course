@@ -6,6 +6,12 @@ comments   : true
 slug       : bestresponses
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/BQhIkE5oQhk" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_03-Dominance) we discussed:

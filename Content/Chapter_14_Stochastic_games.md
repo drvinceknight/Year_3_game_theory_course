@@ -6,6 +6,12 @@ comments   : true
 slug       : stochasticgame
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/_Fq8_Jg25pY" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_13_Random_events_and_incomplete_information):

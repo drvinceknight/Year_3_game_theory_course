@@ -6,6 +6,12 @@ comments   : true
 slug       : purestrategyne
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/yWKlqAo_c-A" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_04-Best_Responses) we discussed:

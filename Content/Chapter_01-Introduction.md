@@ -6,6 +6,12 @@ comments   : true
 slug       : intro
 ---
 
+<div class="video">
+    <figure>
+<iframe width="560" height="315" src="//www.youtube.com/embed/jB08Nf7KjEQ" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Introduction
 
 Let us consider the very simple situation where **you** decide where to meet your **friends**. You have some information about their behaviour:

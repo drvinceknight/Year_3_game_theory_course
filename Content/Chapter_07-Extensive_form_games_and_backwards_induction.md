@@ -6,6 +6,12 @@ comments   : true
 slug       : extensiveformgames
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/ZbH53ZwA3sg" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_06-Nash_Equilibria_in_mixed_strategies)

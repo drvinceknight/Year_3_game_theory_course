@@ -6,6 +6,12 @@ comments   : true
 slug       : essandne
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/3Ds901044nE" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_11_Population_Games_and_Evolutionary_stable_strategies):

@@ -6,6 +6,12 @@ comments   : true
 slug       : subgameperfection
 ---
 
+<div class="video">
+    <figure>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/2D87rSF4lCA" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 ## Recap
 
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_07-Extensive_form_games_and_backwards_induction)
