@@ -9,10 +9,11 @@ title  : Game Theory - Content
     <p>
     <ul>
     {% for page in site.pages %}
-        {% if page.categories contains 'content' %}
+        {% if page.categories contains 'content' and page.title != "All chapters" %}
         <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
         {% endif %}
     {% endfor %}
+    <li><a href={{site.baseurl}}/Content/All>All chapters as one page (will take time to typeset the mathematics).</a></li>
     </ul>
     </p>
 

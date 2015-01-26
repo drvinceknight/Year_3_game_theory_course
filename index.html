@@ -8,8 +8,8 @@ title  : Game Theory
     <h1><a href={{site.baseurl}}/Content>Content</a></h1>
         <ul>
         {% for page in site.pages %}
-            {% if page.categories contains 'content' %}
-            <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+            {% if page.categories contains 'content' and page.title != "All chapters" %}
+                <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
