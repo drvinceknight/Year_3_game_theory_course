@@ -16,6 +16,15 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
+- Find two volunteers to play minimised version of the baggage game:
+
+[2,2],[4,0],[4,0]
+[0,4],[3,3],[5,1]
+[0,4],[1,5],[4,4]
+
+    Give them 4 chocolates each, now say they are lost and ask them to write down on a piece of paper how much chocolate they lost.
+    Play this a couple of times perhaps.
+
 - Clarify when cannot get predicted rational behaviour:
 
     - Not enough dominated strategies
