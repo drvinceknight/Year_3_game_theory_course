@@ -49,7 +49,7 @@ $$\begin{pmatrix}
 \end{pmatrix}
 $$
 
-We see that \\((r_1,s_1)\\) represented a pair of best responses. What can we say about the long term behaviour of this game?
+We see that \\((r_3,s_3)\\) represented a pair of best responses. What can we say about the long term behaviour of this game?
 
 ## Best responses against mixed strategies
 
