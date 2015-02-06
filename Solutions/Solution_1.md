@@ -202,7 +202,7 @@ Explain when games occur that cannot be handled this way.
 
     By definition:
 
-    $$UD_1=\{s\in\{r_1,r_2,r_3\}\;|\;\text{$s$ is not strictly dominated}\}$$
+    $$UD_1=\\{s\in\{r_1,r_2,r_3\}\\;|\;\text{$s$ is not strictly dominated}\}$$
 
     Thus $UD_1=\{r_1, r_2, r_3\}$
 
