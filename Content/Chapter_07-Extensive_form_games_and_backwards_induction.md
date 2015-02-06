@@ -66,7 +66,7 @@ We can represent this.
 
 ![The seller buyer game.\label{L07-img08}]({{site.baseurl}}/Content/images/L07-img08.png)
 
-How we can we analyse normal form games?
+How we can we analyse extensive form games?
 
 ## Backwards induction
 

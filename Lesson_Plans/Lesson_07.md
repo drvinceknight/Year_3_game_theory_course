@@ -17,34 +17,36 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
+- Give definition of an extensive form game, use following as an example:
 
-    - VK: Recap
-    - Students: Listen
+- Root: Jason
+    - Red -> Vince:
+        - Green (4,4)
+        - Orange (2,3)
+    - Blue -> Vince
+        - Green (3,2)
+        - Orange (1,1)
 
-- 5:20 mins
+- Go through notes.
 
-    - VK: Lecture on extensive form games
-    - Students: Listen
+- Do effort of teacher/student extensive form game:
 
-- 20:25 mins
+    - Difficulty of exam: K
+    - Effort of teacher: e_t
+    - Effort of students: e_s
 
-    - VK: Discussion about solving these games.
-    - Students: Listen
+    Mark is then: m = e_s+e_t-K
 
-- 25:40 mins
+    Utilities are: (me_t+e_s^2, me_s-e_t^2)
 
-    - VK: Lecture on backward induction
-    - Students: Listen
+    ... (a lot of work)
 
-- 40:45 mins
+    If student picks effort first the equilibria is (1,1/2).
+    If teacher picks effort first, the equilibria is (1, (1-K)/2)).
+    This implies that teacher might as well make the exam difficulty: K=0.
 
-    - VK: Solving some examples
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
+    Change utility to (me_t-e_s^2, me_s-e_t^2).
+    Get equilibria: (0,0) (same by symmetry if swap).
 
 #### After the lecture
 

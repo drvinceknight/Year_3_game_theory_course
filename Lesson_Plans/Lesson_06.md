@@ -10,6 +10,22 @@ At the end of this lecture students will be to:
 
 ### Timeline
 
+- Play a R,P,S,L,S round robin (need 16 volunteers)
+
+- Recall results from play against random strategies
+
+- Calculate NE using best responses for
+
+
+    [[2, -2], [-2, 2]]
+    [[-1, 1], [1, -1]]
+
+- Theorem for NE
+
+- Calculate same example using theorem
+
+- Nash's theorem
+
 #### Before the lecture
 
 - Invite students to watch [this video](http://youtu.be/poYucyX7-gE).
@@ -17,38 +33,10 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
-
-    - VK: Recap
-    - Students: Listen
-
-- 5:10 mins
-
-    - VK: Recap of expected utility calculation
-    - Students: Listen
-
-- 10:20 mins
-
-    - VK: Recap results from online game and discussion with students about indifference
-    - Students: Listen
-
-- 20:30 mins
-
-    - VK: Obtaining NE using best responses.
-    - Students: Listen
-
-- 30:45 mins
-
-    - VK: Proof of equality of utilities theorem
-    - Students: listen.
-
-- 45:50 mins
-
-    - VK: Conclusions
 
 #### After the lecture
 
-Students will be given reading and some practice exercises as well as a document about connection between linear programming and zero sum games (possibly create video?).
+Students will be given reading and some practice exercises.
 
 ### Assessment
 
