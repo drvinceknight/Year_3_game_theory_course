@@ -2,7 +2,7 @@
 
 1. Represent the following game in normal form:
 
-    > Alice, Bob and Celine are childhood friends that would like to communicate online. Alive likes facebook, Bob likes twitter and Celine like G+.
+    > Alice, Bob and Celine are childhood friends that would like to communicate online.
 
     Clearly state the players, strategy sets and interpretations of the utilities.
 
