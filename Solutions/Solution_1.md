@@ -266,7 +266,7 @@ Explain when games occur that cannot be handled this way.
 
     $$UD_1=\\{r_1\\}\text{ and }UD_1=\\{r_1,r_2\\}$$
 
-    - If $UD_1=\\{r_1\\}$ $\Rightarrow$ $a_{1j}> a_{2j}$ for $j\in\{1,2\}$. This gives:
+    - If $UD_1=\\{r_1\\}$ $\Rightarrow$ $a_{1j}> a_{2j}$ for $j\in\\{1,2\\}$. This gives:
 
         $$u_1(r_1,\sigma_2)=a_{11}x+a_{12}(1-x)> a_{12}x+a_{22}(1-x)=u_1(r_2,\sigma_2)$$
 
