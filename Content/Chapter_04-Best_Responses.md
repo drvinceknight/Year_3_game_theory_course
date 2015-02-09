@@ -154,7 +154,7 @@ We will now attempt to identify \\(B_1\\) for the above game. Let us assume that
 $$u_1(r_1,\sigma_2)=xu_1(r_1,s_1)+yu_1(r_1,s_2)+(1-x-y)u_1(r_1,s_3)=3x+7y+5-5y-5x$$
 $$u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_1(r_2,s_2)+(1-x-y)u_1(r_2,s_3)=5x+6y+7-7y-7x$$
 
-$$u_1(r_1,\sigma_2)-u_2(r_2,\sigma_2)=3y - 2$$
+$$u_1(r_1,\sigma_2)-u_1(r_2,\sigma_2)=3y - 2$$
 
 If we can find values of \\(y\\) that give valid \\(\sigma_2=(x,y,1-x-y)\\) and that make the above difference both positive and negative then:
 
