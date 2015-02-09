@@ -264,15 +264,15 @@ Explain when games occur that cannot be handled this way.
 
     We prove the result for $i=1$ without loss of generality. Let us consider the two following cases:
 
-    $$UD_1=\{r_1\}\text{ and }UD_1=\{r_1,r_2\}$$
+    $$UD_1=\\{r_1\\}\text{ and }UD_1=\\{r_1,r_2\\}$$
 
-    - If $UD_1=\{r_1\}$ $\Rightarrow$ $a_{1j}> a_{2j}$ for $j\in\{1,2\}$. This gives:
+    - If $UD_1=\\{r_1\\}$ $\Rightarrow$ $a_{1j}> a_{2j}$ for $j\in\{1,2\}$. This gives:
 
         $$u_1(r_1,\sigma_2)=a_{11}x+a_{12}(1-x)> a_{12}x+a_{22}(1-x)=u_1(r_2,\sigma_2)$$
 
-        So $r_2$ is never a best response giving $B_1=\{r_1\}$ as required.
+        So $r_2$ is never a best response giving $B_1=\\{r_1\\}$ as required.
 
-    - If $UD_1=\{r_1, r_2\}$ this implies that one of the following must hold:
+    - If $UD_1=\\{r_1, r_2\\}$ this implies that one of the following must hold:
 
         $$
         a_{11} > a_{21} \text{ and } a_{12}\leq a_{22}\text{ (1)}
@@ -296,6 +296,6 @@ Explain when games occur that cannot be handled this way.
 
     $$\frac{a_{22}-a_{12}}{a_{11}-a_{12}+a_{22}-a_{21}}$$
 
-    Assuming that equality in (1) does not hold then this point is strictly between 0 and 1 thus a value of $0<x<1$ can be found for which either $r_1$ or $r_2$ is a best response. This gives: $$B_1=\{r_1,r_2\}$$
+    Assuming that equality in (1) does not hold then this point is strictly between 0 and 1 thus a value of $0<x<1$ can be found for which either $r_1$ or $r_2$ is a best response. This gives: $$B_1=\\{r_1,r_2\\}$$
 
     If equality holds in (1) then both strategies are best responses giving the same conclusion.
