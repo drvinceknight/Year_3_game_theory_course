@@ -1,4 +1,4 @@
-# OR 3: Lesson Plan Lecture 7
+# OR 3: Lesson Plan Lecture 6
 ## Mixed strategy Nash Equilibria
 
 ### Aims of lecture
