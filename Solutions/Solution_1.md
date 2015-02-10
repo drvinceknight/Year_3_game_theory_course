@@ -2,7 +2,7 @@
 
 1. Represent the following game in normal form:
 
-    > Alice, Bob and Celine are childhood friends that would like to communicate online.
+    > Alice, Bob and Celine are childhood friends that would like to communicate online. They have a choice between 4 social networks: facebook, twitter and G+.
 
     Clearly state the players, strategy sets and interpretations of the utilities.
 
