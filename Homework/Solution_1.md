@@ -270,7 +270,7 @@ slug       : representationsandpurestrategies
 
     We prove the result for \\(i=1\\) without loss of generality. Let us consider the two following cases:
 
-    $$UD_1=\{r_1\}\text{ and }UD_1=\{r_1,r_2\}$$
+    $$UD_1=\\{r_1\\}\text{ and }UD_1=\\{r_1,r_2\\}$$
 
     - If \\(UD_1=\{r_1\}\\) \\(\Rightarrow\\) \\(a\_{1j}> a\_{2j}\\) for \\(j\in\{1,2\}\\). This gives:
 
