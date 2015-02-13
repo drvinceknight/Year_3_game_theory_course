@@ -32,31 +32,31 @@ We will now consider the properties that define an extensive form game game tree
 
 1. Every node is a successor of the (unique) initial node.
 
-![A tree with two initial nodes.\label{L07-img01}]({{site.baseurl}}/Content/images/L07-img01.png)
+    ![A tree with two initial nodes.\label{L07-img01}]({{site.baseurl}}/Content/images/L07-img01.png)
 
 2. Every node apart from the initial node has exactly one predecessor. The initial node has no predecessor.
 
-![A tree with node c having multiple predecessors. \label{L07-img02}]({{site.baseurl}}/Content/images/L07-img02.png)
+    ![A tree with node c having multiple predecessors. \label{L07-img02}]({{site.baseurl}}/Content/images/L07-img02.png)
 
 3. All edges extending from the same node have different action labels.
 
-![Nodes with same action labels.\label{L07-img03}]({{site.baseurl}}/Content/images/L07-img03.png)
+    ![Nodes with same action labels.\label{L07-img03}]({{site.baseurl}}/Content/images/L07-img03.png)
 
 4. Each information set contains decision nodes for one player.
 
-![Information sets with different action labels.\label{L07-img04}]({{site.baseurl}}/Content/images/L07-img04.png)
+    ![Information sets with different action labels.\label{L07-img04}]({{site.baseurl}}/Content/images/L07-img04.png)
 
 5. All nodes in a given information set must have the same number of successors (with the same action labels on the corresponding edges).
 
-![Information set with different number of action edges. \label{L07-img05}]({{site.baseurl}}/Content/images/L07-img05.png)
+    ![Information set with different number of action edges. \label{L07-img05}]({{site.baseurl}}/Content/images/L07-img05.png)
 
 6. We will only consider games with "perfect recall", ie we assume that players remember their own past actions as well as other past events.
 
-![A game without perfect recall.\label{L07-img06}]({{site.baseurl}}/Content/images/L07-img06.png)
+    ![A game without perfect recall.\label{L07-img06}]({{site.baseurl}}/Content/images/L07-img06.png)
 
 7. If a player's action is not a discrete set we can represent this as shown.
 
-![A game tree with continuous strategy set.\label{L07-img07}]({{site.baseurl}}/Content/images/L07-img07.png)
+    ![A game tree with continuous strategy set.\label{L07-img07}]({{site.baseurl}}/Content/images/L07-img07.png)
 
 As an example consider the following game (sometimes referred to as "ultimatum bargaining"):
 
