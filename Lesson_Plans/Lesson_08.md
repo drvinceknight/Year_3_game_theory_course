@@ -17,29 +17,43 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
+Invite two students to play 4 level centipede game:
 
-    - VK: Recap
-    - Students: Listen
+- Player 1 can take or pass (if take: (2,0))
+    - Player 2 can take or pass (if take: (1,3))
+        - Player 1 can take or pass (if take: (4,2))
+            - Player 2 can take or pass (if take (3,5))
+                - Leaf: (4,4)
 
-- 5:20 mins
+Give out chocolates based on what happened.
 
-    - VK: Lecture on connection between normal form games and extensive form games.
-    - Students: Listen
+Now discuss notes:
 
-- 20:35 mins
+- Connection
+- Definitions of subgame stuff.
 
-    - VK: Lecture on subgames
-    - Students: Listen
+Two same players must now play but write down a recipe for what they would do in each case.
 
-- 35:45 mins
+Play again: give out chocolates.
 
-    - VK: Obtaining subgame perfect equilibria
-    - Students: Listen
+Write down Normal Form Game for whole thing.
 
-- 45:50 mins
+S1 = {PP, PT, TP, TT}
+S2 = {PP, PT, TP, TT}
 
-    - VK: Conclusions
+Game is:
+
+[4,4],[3,5],[1,3],[1,3]
+[4,2],[4,2],[1,3],[1,3]
+[2,0],[2,0],[2,0],[2,0]
+[2,0],[2,0],[2,0],[2,0]
+
+Have bottom right quadrant as NE (pairs of best responses).
+
+First subgame (start at P2): all still NE
+Second subgame (start at P1): only (TT,TT) is NE
+
+Thus, only (TT,TT) is subgame perfect.
 
 #### After the lecture
 
