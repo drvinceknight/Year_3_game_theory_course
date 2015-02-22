@@ -16,34 +16,31 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
+- Discuss definition of repeated games
+- Define strategies (in that they can depend on history)
+- Theorem about repetition of stage NE being subgame perfect equilibrium
+- Show that other subgame perfect NE exist. Use following game as an example:
 
-    - VK: Recap
-    - Students: Listen
+[0,0],[3,3],[1,1]
+[1,1],[7,0],[5,1]
 
-- 20:30 mins
+Two stage Nash:
 
-    - VK: Lecture on Repeated games
-    - Students: Listen
+(r2,s1) and (r2,s3)
 
-- 30:35 mins
+P1 wants to end in (r2,s3), P2 can offer (r1, s2) in first round.
 
-    - VK: Discussion about types of tournaments and Axelrod's tournament
-    - Students: Listen
+NE:
 
-- 35:40 mins
+'Play (r1,s2) in first round and (r1,s3) in second round unless P2 does not cooperate in which case play (r2, s1)'
 
-    - VK: Lectures showing examples of finitely repeated games
-    - Students: Listen
+Outcome: (8,4).
 
-- 40:45 mins
+Deviate:
+    P1: If deviate in 1st round get (8,0): no reason to deviate.
+    P2: No incentive to move in first round.
 
-    - VK: Discuss effect of infinite repetition
-    - Students: Participate
-
-- 45:50 mins
-
-    - VK: Conclusions
+NE for whole game and first real subgame: also NE as end in stage Nash.
 
 #### After the lecture
 
