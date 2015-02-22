@@ -50,8 +50,9 @@ Game is:
 
 Have bottom right quadrant as NE (pairs of best responses).
 
-First subgame (start at P2): all still NE
-Second subgame (start at P1): only (TT,TT) is NE
+First subgame (start at P2): only two are still NE
+Second subgame (start at P1): same two still NE
+Final sublime: only (TT, TT) is NE.
 
 Thus, only (TT,TT) is subgame perfect.
 
