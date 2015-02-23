@@ -68,10 +68,10 @@ slug       : normalformgamesnashequilibria
     If we allow their positions to be represented by a points \\(x_1, x_2\\) on the \\([0,1]_{\mathbb{R}}\\) line segment then we have:
 
     $$u_1(x_1,x_2)=\begin{cases}x_1+(x_2-x_1)/2,&\text{if }x_1\leq x_2\\
-    1-x_1+(x_2-x_1)/2,&\text{otherwise}
+    1-x_1+(x_1-x_2)/2,&\text{otherwise}
     \end{cases}$$
     and
-    $$u_2(x_1,x_2)=\begin{cases}x_2+(x_2-x_1)/2,&\text{if }x_2\leq x_1\\
+    $$u_2(x_1,x_2)=\begin{cases}x_2+(x_1-x_2)/2,&\text{if }x_2\leq x_1\\
     1-x_2+(x_2-x_1)/2,&\text{otherwise}
     \end{cases}$$
 
@@ -80,7 +80,9 @@ slug       : normalformgamesnashequilibria
     **Solution**
 
     Without loss of generality, consider player 1's best response.
-    Consider \\(x_j<1/2\\), if \\(x_1=x_2\\) then \\(u_1(x_1,x_2)=1/2\\). However \\(u_1(x_2+\epsilon,x_2)=1-x_2-\epsilon/2>1/2-\epsilon/2\\) for some (arbitrarily) small \\(\epsilon>0\\) . Thus for arbitrarily small \\(\epsilon\\), \\(x\_1^*=x\_2+\epsilon\\).
+    Consider \\(x_2<1/2\\), if \\(x_1=x_2\\) then \\(u_1(x_1,x_2)=1/2\\).
+    However \\(u_1(x_2+\epsilon,x_2)=1-x_2-\epsilon/2=1/2+1/2-x_2-\epsilon/2>1/2\\) for some (arbitrarily) small \\(\epsilon>0\\) .
+    Thus for arbitrarily small \\(\epsilon\\), \\( x\_1^\*=x\_2+\\epsilon \\).
     If \\(x_2>1/2\\) a similar argument gives \\(x\_1^*=x\_2-\epsilon\\).
     If \\(x_2=1/2\\), considering \\(x_1=x_1\\) we see that neither player has an incentive to move.
 
