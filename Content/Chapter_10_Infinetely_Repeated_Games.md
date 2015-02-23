@@ -67,7 +67,7 @@ Let us consider the "Grimm trigger" strategy (which we denote \\(s_G\\)):
 
 If both players play \\(s_G\\) we have \\(s_G=s_C\\):
 
-$$U_1(s_{G},s_{G})=U_1(s_{G},s_{G})=2/(1-\delta)$$
+$$U_1(s_{G},s_{G})=U_2(s_{G},s_{G})=2/(1-\delta)$$
 
 If we assume that \\(S_1=S_2=\{s_C,s_D,s_G\}\\) and player 2 deviates from \\(S_G\\) at the first stage to \\(s_D\\) we get:
 
