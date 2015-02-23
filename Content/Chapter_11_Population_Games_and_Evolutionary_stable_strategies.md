@@ -39,7 +39,7 @@ It is important to note that \\(\chi\\) does not necessarily correspond to any s
 
 ### Example
 
-Consider a population with \\(S=\{s_1,s_2\}\\). If we assume that every individual plays \\(\sigma=(.25,.75)\\) then \\(\chi=\sigma\\). However if we assume that .25 of the population play \\(\sigma_1=(1,0)\\) and .75 play \\(\sigma_2=(0,1)\\) then \\(\chi=\sigma\\).
+Consider a population with \\(S=\\{s_1,s_2\\}\\). If we assume that every individual plays \\(\sigma=(.25,.75)\\) then \\(\chi=\sigma\\). However if we assume that .25 of the population play \\(\sigma_1=(1,0)\\) and .75 play \\(\sigma_2=(0,1)\\) then \\(\chi=\sigma\\).
 
 In evolutionary game theory we must consider the _utility_ of a particular strategy when played in a particular population profile denoted by \\(u(s,\chi)\\) for \\(s\in S\\).
 
