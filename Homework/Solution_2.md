@@ -79,9 +79,10 @@ slug       : normalformgamesnashequilibria
 
     **Solution**
 
-    Consider \\(x_j<1/2\\), if \\(x_i=x_j\\) then \\(u_i(x_i,x_j)=1/2\\). However \\(u_i(x_j+\epsilon,x_j)=1-x_2-\epsilon/2>1/2-\epsilon/2\\) for some (arbitrarily) small \\(\epsilon>0\\) . Thus for arbitrarily small \\(\epsilon\\), \\(x_i^*=x_j+\epsilon\\).
-    If \\(x_j>1/2\\) a similar argument gives \\(x_i^*=x_j-\epsilon\\).
-    If \\(x_j=1/2\\), considering \\(x_i=x_j\\) we see that neither player has an incentive to move.
+    Without loss of generality, consider player 1's best response.
+    Consider \\(x_j<1/2\\), if \\(x_1=x_2\\) then \\(u_1(x_1,x_2)=1/2\\). However \\(u_1(x_2+\epsilon,x_2)=1-x_2-\epsilon/2>1/2-\epsilon/2\\) for some (arbitrarily) small \\(\epsilon>0\\) . Thus for arbitrarily small \\(\epsilon\\), \\(x\_1^*=x\_2+\epsilon\\).
+    If \\(x_2>1/2\\) a similar argument gives \\(x\_1^*=x\_2-\epsilon\\).
+    If \\(x_2=1/2\\), considering \\(x_1=x_1\\) we see that neither player has an incentive to move.
 
     Thus we conclude:
 
