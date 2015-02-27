@@ -18,34 +18,7 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
-
-    - VK: Recap
-    - Students: Listen
-
-- 5:10 mins
-
-    - VK: Discussion about effects of inifintely repeating games.
-    - Students: Participate.
-
-- 10:20 mins
-
-    - VK: Lecture on calculating payoffs in infinitely repeated games.
-    - Students: Listen
-
-- 20:30 mins
-
-    - VK: Lecture on equilibrium behaviour and subgame equilibrium in infinitely repeated games
-    - Students: Listen
-
-- 30:45 mins
-
-    - VK: Lecture on Folk theorem
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
+Go over lecture notes
 
 #### After the lecture
 
