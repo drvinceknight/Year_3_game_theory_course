@@ -37,11 +37,11 @@ Let us denote \\(s\_{C}\\) as the strategy "cooperate at every stage". Let us de
 
 If we assume that both players play \\(s_{C}\\) their utility would be:
 
-$$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=\sum_{i=1}^\infty2>\infty$$
+$$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=\sum_{t=1}^\infty2>\infty$$
 
 Similarly:
 
-$$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty1>\infty$$
+$$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{t=1}^\infty1>\infty$$
 
 It is impossible to compare these two strategies. To be able to carry out analysis of strategies in infinitely repeated games we make use of a **discounting factor** \\(0<\delta<1\\).
 
@@ -53,11 +53,11 @@ $$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i(r(t),s(t))$$
 
 Thus:
 
-$$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=2\sum_{i=1}^\infty\delta^{t-1}=2/(1-\delta)$$
+$$U_1(s_{C},s_{C})=U_2(s_{C},s_{C})=2\sum_{t=1}^\infty\delta^{t-1}=2/(1-\delta)$$
 
 and:
 
-$$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)$$
+$$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{t=1}^\infty\delta^{t-1}=1/(1-\delta)$$
 
 ## Conditions for cooperation in Prisoner's Dilemmas
 
@@ -89,7 +89,7 @@ $$0+\sum_{t=2}^{\infty}\delta^{t-1}=\delta/(1-\delta)$$
 
 2. If player 2 deviates from \\(s_G\\) and chooses to play \\(D\\) in every period of the subgame then player 2's utility will be:
 
-$$\sum_{t=1}^{\infty}\delta^{t-1}=(1-\delta)$$
+$$\sum_{t=1}^{\infty}\delta^{t-1}=1/(1-\delta)$$
 
 which is a rational deviation (as \\(0<\delta<1\\)).
 
@@ -132,7 +132,7 @@ As an example consider the plot corresponding to a repeated Prisoner's Dilemma.
 
 ![Convex hull of payoffs to a prisoners dilemma.\label{L10-img01}]({{site.baseurl}}/Content/images/L10-img01.png)
 
-The feasible average payoffs correspond to the feasible payoffs in the stage game. The individually rational payoffs show the payoffs that are **better for both players** than the stag Nash equilibrium.
+The feasible average payoffs correspond to the feasible payoffs in the stage game. The individually rational payoffs show the payoffs that are **better for both players** than the stage Nash equilibrium.
 
 The following theorem states that we can choose a particular discount rate that for which there exists a subgame perfect Nash equilibrium that would give any individually rational payoff pair!
 
