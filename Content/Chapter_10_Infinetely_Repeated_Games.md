@@ -49,7 +49,7 @@ The interpretation of \\(\delta\\) is that there is less importance given to fut
 
 In this case we write the utility in an infinitely repeated game as:
 
-$$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i{r(t),s(t)}$$
+$$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i(r(t),s(t))$$
 
 Thus:
 
