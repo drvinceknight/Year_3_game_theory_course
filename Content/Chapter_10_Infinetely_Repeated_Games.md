@@ -71,7 +71,7 @@ $$U_1(s_{G},s_{G})=U_2(s_{G},s_{G})=2/(1-\delta)$$
 
 If we assume that \\(S_1=S_2=\\{s_C,s_D,s_G\\}\\) and player 2 deviates from \\(S_G\\) at the first stage to \\(s_D\\) we get:
 
-$$U_2(s_{C},s_{G})=3+\sum_{t=2}^{\infty}\delta^{t-1}=3+\delta/(1-\delta)$$
+$$U_2(s_{G},s_{D})=3+\sum_{t=2}^{\infty}\delta^{t-1}=3+\delta/(1-\delta)$$
 
 Deviation from \\(s_G\\) to \\(s_D\\) is rational if and only if:
 
