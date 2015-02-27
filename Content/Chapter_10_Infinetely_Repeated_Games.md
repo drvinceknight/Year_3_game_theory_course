@@ -61,7 +61,7 @@ $$U_1(s_{D},s_{D})=U_2(s_{D},s_{D})=\sum_{i=1}^\infty\delta^{t-1}=1/(1-\delta)$$
 
 ## Conditions for cooperation in Prisoner's Dilemmas
 
-Let us consider the "Grimm trigger" strategy (which we denote \\(s_G\\)):
+Let us consider the "Grudger" strategy (which we denote \\(s_G\\)):
 
 > "Start by cooperating until your opponent defects at which point defect in all future stages."
 
