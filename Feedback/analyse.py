@@ -18,7 +18,7 @@ def plot(dictionary, title):
 
     ax.axis([0, max(dictionary.values()), -3, 3 * len(dictionary)])
     pylab.yticks(range(0, 3*len(dictionary), 3), comments)
-    pylab.xticks(range(max(dictionary.values()) + 1))
+    pylab.xticks(range(0, max(dictionary.values()) + 1, 5))
     ax.set_title(title[:-4])
     plt.grid()
     plt.xlabel('Frequency')
