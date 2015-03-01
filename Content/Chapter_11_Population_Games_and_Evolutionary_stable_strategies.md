@@ -57,7 +57,7 @@ $$u(s_1,\chi)=3\text{ and }u(s_2,\chi)=7$$
 
 In the next generation we will have \\(3N/2\\) individuals using \\(s_1\\) and \\(7N/2\\) using \\(s_2\\) so that the strategy profile of the next generation will be \\((.3,.7)\\).
 
-We are going to work towards understanding the evolutionary dynamics of given populations. If we consider \\(\chi^\*\\) to be the startegy profile where all members of the population play \\(\sigma^\*\\) then a population will be evolutionary stable only if:
+We are going to work towards understanding the evolutionary dynamics of given populations. If we consider \\(\chi\\) to be the startegy profile where all members of the population play \\(\sigma^\*\\) then a population will be evolutionary stable only if:
 
 $$\sigma^*\in\text{argmax}_{\sigma\in\Delta S}u(\sigma,\chi)$$
 
