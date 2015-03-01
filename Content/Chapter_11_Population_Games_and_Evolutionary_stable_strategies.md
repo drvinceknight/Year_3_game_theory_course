@@ -118,7 +118,7 @@ Consider a population where all individuals initially play \\(\sigma^*\\). If we
 
 ### Example
 
-Consider a population with \\(S=\{s_1,s_2\}\\) and initial population profile \\(\chi=(1/2,1/2)\\). If we assume that \\(\sigma=(1/3,2/3)\\) is introduced in to the population then:
+Consider a population with \\(S=\\{s_1,s_2\\}\\) and initial population profile \\(\chi=(1/2,1/2)\\). If we assume that \\(\sigma=(1/3,2/3)\\) is introduced in to the population then:
 
 $$
 \begin{aligned}
