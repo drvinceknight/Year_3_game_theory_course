@@ -156,7 +156,7 @@ $$x_i=0$$
 
 ---
 
-For \\(G(N,v)\\) a payoff vector possesses the **symmetry property** if \\(v(C\cup i)=v(C\cup j)\\) for all \\(C\in 2^{\Omega}\setminus\{i,j\}\\) then:
+For \\(G(N,v)\\) a payoff vector possesses the **symmetry property** if \\(v(C\cup i)=v(C\cup j)\\) for all \\(C\in 2^{\Omega}\setminus\\{i,j\\}\\) then:
 
 $$x_i=x_j$$
 
