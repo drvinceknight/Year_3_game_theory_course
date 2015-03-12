@@ -40,7 +40,7 @@ A stochastic game is defined by:
 
 We will make some simplifying assumptions in this course:
 
-1. The length of the game is not known (infinite horizon);
+1. The length of the game is not known (infinite horizon) - so we use discounting;
 2. The rewards and transition probabilities are not dependent;
 3. We will only consider strategies called **Markov strategies**.
 
