@@ -54,10 +54,10 @@ A strategy is call a **Markov strategy** if the behaviour dictated is not time d
 
 ### Example
 
-Consider the following game with \\(X=\{x,y\}\\):
+Consider the following game with \\(X=\\{x,y\\}\\):
 
-- \\(S_1(x)=\{a,b\}\\) and \\(S_2(x)=\{c,d\}\\);
-- \\(S_1(y)=\{e\}\\) and \\(S_2(x)=\{f\}\\);
+- \\(S_1(x)=\\{a,b\\}\\) and \\(S_2(x)=\\{c,d\\}\\);
+- \\(S_1(y)=\\{e\\}\\) and \\(S_2(x)=\\{f\\}\\);
 
 We have the stage game corresponding to state \\(x\\):
 
@@ -89,7 +89,7 @@ The transition probabilities corresponding to state \\(y\\):
 
 $$
 \begin{pmatrix}
-(0,0)\\
+(0,1)\\
 \end{pmatrix}
 $$
 
@@ -97,7 +97,7 @@ A concise way of representing all this is shown.
 
 ![A simple stochastic game.\label{L14-img01}]({{site.baseurl}}/Content/images/L14-img01.png)
 
-We see that the Nash equilibrium for the stage game corresponding to \\(x\\) is \\((a,c)\\) however as soon as the players play that strategy profile they will go to state \\(y\\) which is an absorbing state at which players gain no further utility.
+We see that the Nash equilibrium for the stage game corresponding to \\(x\\) is \\((a, c)\\) however as soon as the players play that strategy profile they will potentially go to state \\(y\\) which is an absorbing state at which players gain no further utility.
 
 To calculate utilities for players in infinite horizon stochastic games we use a discount rate. Thus without loss of generality if the game is in state \\(x\\) and we assume that both players are playing \\(\sigma^*_i\\) then player 1 would be attempting to maximise future payoffs:
 
@@ -107,9 +107,9 @@ where \\(U_1^*\\) denotes the expected utility to player 1 when both players are
 
 Thus a Nash equilibrium satisfies:
 
-$$U_1^*(x)=\max_{r\in S_1(x)}(u_i(x,r,s^* )+\delta\sum_{x'\in X}\pi(x'|x,r,s^*)U_1^*(x')$$
+$$U_1^*(x)=\max_{r\in S_1(x)}(u_i(x,r,s^* )+\delta\sum_{x'\in X}\pi(x'|x,r,s^*)U_1^*(x'))$$
 
-$$U_2^*(x)=\max_{s\in S_2(x)}(u_i(x,r^*,s)+\delta\sum_{x'\in X}\pi(x'|x,r^*,s)U_1^*(x')$$
+$$U_2^*(x)=\max_{s\in S_2(x)}(u_i(x,r^*,s)+\delta\sum_{x'\in X}\pi(x'|x,r^*,s)U_2^*(x'))$$
 
 Solving these equations is not straightforward. We will take a look at one approach by solving the example we have above.
 
