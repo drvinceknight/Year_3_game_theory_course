@@ -16,34 +16,73 @@ At the end of this lecture students will be able to:
 
 #### During the lecture
 
-- 0:5 mins
+Describe stochastic games briefly.
 
-    - VK: Introduction
-    - Students: Listen
+Describe Prisoner's Dilemma stochastic game (but with maximising):
 
-- 5:15 mins
+Game x:
 
-    - VK: Lecture on Stochastic games.
-    - Students: Listen
+[2,2],[0,3]
+[3,0],[1,1]
 
-- 15:20 mins
+Game y:
 
-    - VK: Discussion about solution of stochastic game.
-    - Students: Listen
+[0,0]
 
-- 25:35 mins
+Transitions of game x:
 
-    - VK: Lecture on solution of stochastic game.
-    - Students: Listen
+[.75,.25],[0,1]
+[0,1],[.5,.5]
 
-- 35:45 mins
+Transitions of game y:
 
-    - VK: Lecture on finding equilibria in stochastic games
-    - Students: Listen
+[0,1]
 
-- 45:50 mins
+Play round robin with delta = 1/2 (so game ends in two ways: transition to y and also delta condition).
+(Same teams as before)
 
-    - VK: Conclusions
+Now obtain equilibrium behaviour:
+
+Let u be future games to P1 in x
+Let v be future games to P2 in x
+
+Thus game becomes:
+
+[2+3*delta*u/4,2+3delta*v/4],[0,3]
+[3,0],[1+delta * u/2, 1+delta * u/2]
+
+with delta=1/2 this gives:
+
+[2+3*u/8,2+3v/8],[0,3]
+[3,0],[1+u/4, 1+u/4]
+
+4 potential NE:
+
+- (r1,c1):
+
+    2 + 3u/8 >= 3 => 2 >= 8/3 approx 2.6
+
+    If equal then:
+
+        2 + 3u/8 = u => u 16/5 approx 3.2 [This is possible]
+
+        Same for v.
+
+- (r1,c2):
+
+    2 + 3u/8 <= 3 => 2 <= 8/3 approx 2.6
+
+    but in this case: v = 3 so not possible.
+
+    [Similarly for (r2, c1)]
+
+- (r2,c2):
+
+    1 + u/4 >= 0 => u >= -4
+
+    If equal then:
+
+        u + 1 + u/4 => u = 4/3
 
 #### After the lecture
 

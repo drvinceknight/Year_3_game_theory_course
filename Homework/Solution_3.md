@@ -169,7 +169,7 @@ slug       : backwardsinductionsubgameperfection
 
     ![]({{site.baseurl}}/Homework/plots/HW3-P02.png)
 
-    "Play \\((r_3,s_1)\\) in first round and \\((r_2,s_1)\\) in second round unless P1 deviates in which case play \\((r_2,s_2)\\)."
+    "Play \\((r_3,s_1)\\) in first round and \\((r_1,s_1)\\) in second round unless P1 deviates in which case play \\((r_2,s_2)\\)."
 
     Outcome: \\((8,10)\\).
 
