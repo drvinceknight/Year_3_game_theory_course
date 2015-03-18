@@ -10,6 +10,8 @@ You can see all the content at this [website](http://drvinceknight.github.io/Yea
 
 # License Information
 
+[![Join the chat at https://gitter.im/drvinceknight/Year_3_game_theory_course](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/drvinceknight/Year_3_game_theory_course?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/) license.  You are free to:
 
 * Share: copy, distribute, and transmit the work,
