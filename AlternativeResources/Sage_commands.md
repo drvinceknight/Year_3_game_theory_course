@@ -105,3 +105,47 @@ You might need to minimize the following function \\(c:\alpha, \beta\to \alpha ^
     sage: a
 
 For more details on minimization take a look at [this page](http://www.sagemath.org/doc/reference/numerical/sage/numerical/optimize.html).
+
+### Finding Nash equilibria of Normal Form Games
+
+You can easily obtain the Nash Equilibria for a generic Normal Form game:
+
+    sage: A = matrix([[1, 5],[2, 3]])
+    sage: B = matrix([[3, 5],[4, 1]])
+    sage: g = NormalFormGame([A, B])
+    sage: g.obtain_nash()
+
+You can also just pass a single matrix for a zero sum game:
+
+    sage: C = matrix([[0, -1, 1],[1, 0, -1], [-1, 1, 0]])
+    sage: g = NormalFormGame([C])
+    sage: g.obtain_nash()
+
+[Read the documentation for a good overview of the capabilities as well as a good set of examples](http://www.sagemath.org/doc/reference/game_theory/sage/game_theory/normal_form_game.html).
+
+### Calculate the shapley value
+
+You can easily obtain the stable matching for a game:
+
+    sage: cf = {():0, (1): 3, (2): 4, (3): 2, (1, 2): 3, (1, 3): 5, (2, 3): 10, (1, 2, 3): 12}
+    sage: g = CooperativeGame(cf)
+    sage: g.shapley_value()
+
+[More info available here](http://www.sagemath.org/doc/reference/game_theory/sage/game_theory/cooperative_game.html).
+
+### Obtain a stable matching
+
+You can quickly obtain a stable matching
+
+      sage: suitr_pref = {'J': ('A', 'D', 'C', 'B'),
+      ....:               'K': ('A', 'B', 'C', 'D'),
+      ....:               'L': ('B', 'D', 'C', 'A'),
+      ....:               'M': ('C', 'A', 'B', 'D')}
+      sage: reviewr_pref = {'A': ('L', 'J', 'K', 'M'),
+      ....:                 'B': ('J', 'M', 'L', 'K'),
+      ....:                 'C': ('K', 'M', 'L', 'J'),
+      ....:                 'D': ('M', 'K', 'J', 'L')}
+      sage: m = MatchingGame([suitr_pref, reviewr_pref])
+      sage: m.solve()
+
+[More info available here](http://www.sagemath.org/doc/reference/game_theory/sage/game_theory/matching_game.html).
