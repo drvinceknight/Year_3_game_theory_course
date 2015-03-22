@@ -15,29 +15,7 @@ NA
 
 #### During the lecture
 
-- 0:5 mins
-
-    - VK: Recap
-    - Students: Listen
-
-- 5:25 mins
-
-    - VK: Lecture on Potential function
-    - Students: Listen
-
-- 25:30 mins
-
-    - VK: Discussion about equivalence and what does it mean?
-    - Students: Participate
-
-- 30:40 mins
-
-    - VK: Lectures on marginal costs.
-    - Students: Listen
-
-- 40:50 mins
-
-    - VK: Conclusions
+Go through theorems and apply.
 
 #### After the lecture
 

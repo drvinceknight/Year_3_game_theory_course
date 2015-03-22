@@ -18,34 +18,11 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
+Look at Pigou's example
 
-    - VK: Recap
-    - Students: Listen
+Ask class to put hand up and choose which way they are going.
 
-- 5:20 mins
-
-    - VK: Lecture on routing game defining them.
-    - Students: Listen
-
-- 20:25 mins
-
-    - VK: Discuss results from online game
-    - Students: Participate
-
-- 25:40 mins
-
-    - VK: Lecture defining Optimal flow and Nash flow
-    - Students: Listen
-
-- 40:45 mins
-
-    - VK: revisit online game: what is optimal flow?
-    - Students: participate
-
-- 45:50 mins
-
-    - VK: Conclusions
+Go through more complex example (write this up here).
 
 #### After the lecture
 
