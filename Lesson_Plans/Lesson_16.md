@@ -16,29 +16,28 @@ At the end of this lecture students will be to:
 
 #### During the lecture
 
-- 0:5 mins
+Bring 3 toys to class:
 
-    - VK: Recap
-    - Students: Listen
+- Donatello
+- Remote controlled helicopter? [If it charges?]
+- Football
 
-- 5:20 mins
+Find 3 students and ask them to write down their preferences 'who would you like to have with you for the 2 hours?'.
 
-    - VK: Choose volunteers for matching game (red and blue shirts)
-    - Students: Participate
+Say that the toys have preferences: come up with them.
+Ask class how we should match things?
 
-- 20:35 mins
+Proceed to show stability problems of suggested matchings.
+Let students go back and have toys.
 
-    - VK: Lecture on Gale Shapley algorithm
-    - Students: Listen
+Discuss how this changes etc...
 
-- 35:45 mins
+Proceed to theory:
+    - Definitions
+    - Discuss the algorithm
+    - Discuss theorems and proofs
 
-    - VK: Lecture proving some results about Gale Shapley algorithm
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
+Show how to do this in Sage.
 
 #### After the lecture
 
