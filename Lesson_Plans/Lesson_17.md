@@ -16,29 +16,23 @@ At the end of this lecture students will be able to:
 
 #### During the lecture
 
-- 0:5 mins
+Ask for 3 volunteers (possibly two with me joining in).
+Explain that team will need to work together to shoot baskets.
+Class will need to evaluate how well everyone does.
 
-    - VK: Recap
-    - Students: Listen
+1 minute timer: get 3 to shoot hoops!
 
-- 5:20 mins
+Discuss with class to come up with characteristic function game.
 
-    - VK: Lecture on Cooperative games
-    - Students: Listen
+Now: how should we share out chocolates?
 
-- 20:25 mins
+Show Gale Shapley valu:
 
-    - VK: Discussion about shapley value (fair way of sharing stuff)
-    - Students: Listen
+- For each permutation write down the predecessors;
+- Write down the corresponding marginal contributions (get the table)
+- Calculate the G-S value
 
-- 25:40 mins
-
-    - VK: Lecture on Shapley value
-    - Students: Listen
-
-- 40:50 mins
-
-    - VK: Conclusions
+Show how to do this in Sage.
 
 #### After the lecture
 
