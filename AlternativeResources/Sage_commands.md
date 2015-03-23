@@ -7,7 +7,8 @@ slug       : sagecommandsforgametheory
 ---
 
 This sheet includes a list of Sage commands that could be of use to you during this course.
-You can find a worksheet containing all of these commands [here](https://cloud.sagemath.com/projects/9d1b4517-a8e4-4d63-b083-71ea3b945737/files/Game Theory: Sage Help Sheet.sagews).
+
+**You can find a worksheet containing all of these commands [here](https://cloud.sagemath.com/projects/9d1b4517-a8e4-4d63-b083-71ea3b945737/files/Game Theory: Sage Help Sheet.sagews).**
 Just copy that in to your own project and you can go ahead and use it or just use the embedded cells here (although you will not be able to save any output).
 
 The School of Mathematics has started teaching programming to all first year students and has also introduced the open source mathematics software [Sage](http://sagemath.org/).
