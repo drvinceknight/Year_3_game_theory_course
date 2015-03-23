@@ -7,6 +7,8 @@ slug       : sagecommandsforgametheory
 ---
 
 This sheet includes a list of Sage commands that could be of use to you during this course.
+You can find a worksheet containing all of these commands [here](https://cloud.sagemath.com/projects/9d1b4517-a8e4-4d63-b083-71ea3b945737/files/Game Theory: Sage Help Sheet.sagews).
+Just copy that in to your own project and you can go ahead and use it or just use the embedded cells here (although you will not be able to save any output).
 
 The School of Mathematics has started teaching programming to all first year students and has also introduced the open source mathematics software [Sage](http://sagemath.org/).
 
@@ -17,7 +19,7 @@ From time to time I will be demonstrating things using Sage, if you would like t
 You can always type `help(function)` to get help for any Sage `function`. There is a lot of help online and the official website is a good place to start: [sagemath.org/](http://sagemath.org/)
 
 
-## Rearranging equations
+## Rearranging expressions
 
 You will often have simple expressions like \\(7x-18(1-x)\\) that need simplifying (sometimes they will be more complex than that obviously).
 These commands show you how to carry this out:
@@ -108,7 +110,7 @@ sum(x ^ i, i, 0, oo)
 
 ### Permutations
 
-To quickly obtain all permutations of a set of the set \{1,2,3\}:
+To quickly obtain all permutations of a set of the set \\(\{1,2,3\}\\):
 
     sage: p = Permutations([1,2,3])
     sage: list(p)
