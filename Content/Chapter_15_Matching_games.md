@@ -57,7 +57,7 @@ $$M(s)=r$$
 
 ---
 
-A pair \\((s,r)\\) is said to **block** a matching \\(M\\) if \\(M(s)\ne r\\) but \\(s\\) prefers \\(r\\) to \\(M(r)\\) and \\(r\\) prefers \\(s\\) to \\(M^{-1}(r)\\).
+A pair \\((s,r)\\) is said to **block** a matching \\(M\\) if \\(M(s)\ne r\\) but \\(s\\) prefers \\(r\\) to \\(M(s)\\) and \\(r\\) prefers \\(s\\) to \\(M^{-1}(r)\\).
 
 ---
 
