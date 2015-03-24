@@ -31,7 +31,7 @@ If we consider the following example with suitors: \\(S=\\{a,b,c\\}\\) and revie
 
 ![A matching game.\label{L15-img01}]({{site.baseurl}}/Content/images/L15-img01.png)
 
-So that \\(c\\) would prefer to be matched with \\(b\\), then \\(c\\) and lastly \\(c\\). One possible matching would be is shown.
+So that \\(A\\) would prefer to be matched with \\(b\\), then \\(c\\) and lastly \\(c\\). One possible matching would be is shown.
 
 ![A simple matching.\label{L15-img02}]({{site.baseurl}}/Content/images/L15-img02.png)
 
