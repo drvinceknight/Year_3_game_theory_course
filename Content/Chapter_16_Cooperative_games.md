@@ -254,7 +254,7 @@ For \\(\pi=(3,2,1)\\):
 
 $$\begin{aligned}
 \Delta_{\pi}^G(1)&=0\\
-\Delta_{\pi}^G(2)&=12\\
+\Delta_{\pi}^G(2)&=0\\
 \Delta_{\pi}^G(3)&=42\\
 \end{aligned}$$
 
