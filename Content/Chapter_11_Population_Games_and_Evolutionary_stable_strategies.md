@@ -173,6 +173,7 @@ $$u(\sigma,\chi)=K^2\left(\omega\frac{(1-\alpha)}{\alpha}+(1-\omega)\right)$$
 
 Note that we can assume that \\(K=1\\) for the rest of this exercise as we will
 ultimately be comparing different values of the utility.
+
 Let us try and find an ESS for this game:
 
 1. If \\(\alpha\ne 1/2\\) then \\(u(M,\chi)\ne u(F,\chi)\\) so that any mixed strategy \\(\sigma\\) with support \\(\{M,F\}\\) would not give a stable population.
