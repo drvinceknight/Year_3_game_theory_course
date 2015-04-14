@@ -149,7 +149,7 @@ from the theorem we have that \\(u_1(\sigma_1,\sigma_2)=u_1(r_1,\sigma_2)=u_1(r_
 
 $$
 \begin{aligned}
-u_1(r_1,\sigma_2)&=u_2(r_2,\sigma_2)\\
+u_1(r_1,\sigma_2)&=u_1(r_2,\sigma_2)\\
 y-(1-y)&=-y+(1-y)\\
 y&=1/2
 \end{aligned}
