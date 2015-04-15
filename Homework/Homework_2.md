@@ -42,7 +42,7 @@ slug       : normalformgamesnashequilibria-hw
     1-x_1+(x_2-x_1)/2,&\text{otherwise}
     \end{cases}$$
     and
-    $$u_1(x_1,x_2)=\begin{cases}x_2+(x_2-x_1)/2,&\text{if }x_2\leq x_1\\
+    $$u_2(x_1,x_2)=\begin{cases}x_2+(x_2-x_1)/2,&\text{if }x_2\leq x_1\\
     1-x_2+(x_2-x_1)/2,&\text{otherwise}
     \end{cases}$$
 
