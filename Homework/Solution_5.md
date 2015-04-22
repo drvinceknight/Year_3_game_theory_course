@@ -11,49 +11,49 @@ slug       : incompleteinfomatchinggamesroutinggamescoop
 
     - Game 1:
 
-        ![Matching game 1 \label{E05-img01}]({{site.baseurl}}/Homework/images/E05-img01.png)\
+        ![Matching game 1 \label{E05-img01}]({{site.baseurl}}/Homework/images/E05-img01.png)
 
         **Solution**
 
         Following the algorithm:
 
-        Suitor optimal: \\(\{a: C, b: A, c: B\}\\)
-        Reviewer optimal: \\(\{'A': 'b', 'B': 'c', 'C': 'a'\}\\)
+        Suitor optimal: \\(\\{a: C, b: A, c: B\\}\\)
+        Reviewer optimal: \\(\\{'A': 'b', 'B': 'c', 'C': 'a'\\}\\)
 
 
 
     - Game 2:
 
-        ![Matching game 2 \label{E05-img02}]({{site.baseurl}}/Homework/images/E05-img02.png)\
+        ![Matching game 2 \label{E05-img02}]({{site.baseurl}}/Homework/images/E05-img02.png)
 
         **Solution**
 
         Following the algorithm:
 
-        Suitor optimal: \\(\{a: C, b: B, c: A\}\\)
-        Reviewer optimal: \\(\{A: c, B: b, C: a\}\\)
+        Suitor optimal: \\(\\{a: C, b: B, c: A\\}\\)
+        Reviewer optimal: \\(\\{A: c, B: b, C: a\\}\\)
 
     - Game 3:
 
-        ![Matching game 3 \label{E05-img03}]({{site.baseurl}}/Homework/images/E05-img03.png)\
+        ![Matching game 3 \label{E05-img03}]({{site.baseurl}}/Homework/images/E05-img03.png)
 
         **Solution**
 
         Following the algorithm:
 
-        Suitor optimal: \\(\{a: D, b: A, c: C, d: B\}\\)
-        Reviewer optimal: \\(\{A: b, B: d, C: c, D: a\}\\)
+        Suitor optimal: \\(\\{a: D, b: A, c: C, d: B\\}\\)
+        Reviewer optimal: \\(\\{A: b, B: d, C: c, D: a\\}\\)
 
     - Game 4:
 
-        ![Matching game 4 \label{E05-img04}]({{site.baseurl}}/Homework/images/E05-img04.png)\
+        ![Matching game 4 \label{E05-img04}]({{site.baseurl}}/Homework/images/E05-img04.png)
 
         **Solution**
 
         Following the algorithm:
 
-        Suitor optimal: \\(\{a: D, b: A, c: C, d: B\}\\)
-        Reviewer optimal: \\(\{A: c, B: d, C: b, D: a\}\\)
+        Suitor optimal: \\(\\{a: D, b: A, c: C, d: B\\}\\)
+        Reviewer optimal: \\(\\{A: c, B: d, C: b, D: a\\}\\)
 
 
 2. Consider a matching game where all reviewers have the same preference list. Prove that there is a single stable matching.
@@ -194,7 +194,8 @@ slug       : incompleteinfomatchinggamesroutinggamescoop
 
             Since \\(C\subseteq N\\) and \\(i,j\notin C\\) we have by symmetry \\(v(C\cup\{i\})=v(C\cup\{j\})\\) and therefore \\(\Delta\_{\pi}^{G}(i)=\Delta\_{\pi'}^{G}(j)\\).
 
-        We have that \\(\Delta_{\pi}^{G}(i)=\Delta_{\pi'}^{G}(j)\\) for all \\(\pi\in\Pi_N\\), there is an abvious bijection between all \\(\pi\\) and corresponding \\(\pi'\\) thus:
+        We have that \\(\Delta\_{\pi}^{G}(i)=\Delta_{\pi'}^{G}(j)\\) for all
+        \\(\pi\in\Pi_N\\), there is an obvious bijection between all \\(\pi\\) and corresponding \\(\pi'\\) thus:
 
         $$\phi_i(G)=1/n!\sum_{\pi\in\Pi_N}\Delta_{\pi}^{G}(i)=\sum_{\pi\in\Pi_N}\Delta_{\pi'}^{G}(j)=\phi_j(G)$$
 
