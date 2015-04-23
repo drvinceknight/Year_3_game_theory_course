@@ -171,6 +171,10 @@ In a suitor-optimal stable matching each reviewer has the worst possible matchin
 
 ---
 
-Assume that the result is not true. Let \\(M_0\\) be a suitor-optimal matching and assume that there is a stable matching \\(M'\\) such that \\(\exists\\) \\(r\\) such that \\(r\\) prefers \\(s=M_0^{-1}(r)\\) to \\(s'=M'^{-1}(r)\\). This implies that \\((r,s)\\) blocks \\(M'\\) unless \\(s\\) prefers \\(M'(s)\\) to \\(s\\) which contradicts the fact the \\(s\\) has no stable match that he prefers in \\(M_0\\).
+Assume that the result is not true. Let \\(M_0\\) be a suitor-optimal matching
+and assume that there is a stable matching \\(M'\\) such that \\(\exists\\)
+\\(r\\) such that \\(r\\) prefers \\(s=M_0^{-1}(r)\\) to \\(s'=M'^{-1}(r)\\).
+This implies that \\((r,s)\\) blocks \\(M'\\) unless \\(s\\) prefers \\(M'(s)\\)
+to \\(M(s)\\) which contradicts the fact the \\(s\\) has no stable match that he prefers in \\(M_0\\).
 
 ---
