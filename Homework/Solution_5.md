@@ -197,7 +197,7 @@ slug       : incompleteinfomatchinggamesroutinggamescoop
         We have that \\(\Delta\_{\pi}^{G}(i)=\Delta_{\pi'}^{G}(j)\\) for all
         \\(\pi\in\Pi_N\\), there is an obvious bijection between all \\(\pi\\) and corresponding \\(\pi'\\) thus:
 
-        $$\phi_i(G)=1/n!\sum_{\pi\in\Pi_N}\Delta_{\pi}^{G}(i)=\sum_{\pi\in\Pi_N}\Delta_{\pi'}^{G}(j)=\phi_j(G)$$
+        $$\phi_i(G)=1/N!\sum_{\pi\in\Pi_N}\Delta_{\pi}^{G}(i)=1/N!\sum_{\pi\in\Pi_N}\Delta_{\pi'}^{G}(j)=\phi_j(G)$$
 
         as required.
 
