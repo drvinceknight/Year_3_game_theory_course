@@ -117,7 +117,7 @@ Solving these equations is not straightforward. We will take a look at one appro
 
 Let us find a Nash equilibrium for the game considered above with \\(\delta=2/3\\).
 
-State \\(y\\) gives no value to either player so we only need to consider state \\(x\\). Let the future gains to player 1 in state \\(x\\) be \\(u\\), and the future gains to player 2 in state \\(x\\) be \\(v\\). Thus the players are facing the following game:
+State \\(y\\) gives no value to either player so we only need to consider state \\(x\\). Let the future gains to player 1 in state \\(x\\) be \\(v\\), and the future gains to player 2 in state \\(x\\) be \\(u\\). Thus the players are facing the following game:
 
 $$\begin{pmatrix}
 (8+\frac{1}{3}v,4+\frac{1}{3}u)&(5+\frac{2}{3}v,3+\frac{2}{3}u)\\
