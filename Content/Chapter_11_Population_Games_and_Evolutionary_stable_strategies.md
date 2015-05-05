@@ -183,7 +183,7 @@ We consider some mutation \\(\sigma=(p,1-p)\\):
 
 $$\chi_{\epsilon}=(1-\epsilon)\sigma^*+\epsilon\sigma$$
 
-which implies that the proportion of population playing \\(F\\) in \\(\chi_{\epsilon}\\) is given by:
+which implies that the proportion of population playing \\(M\\) in \\(\chi_{\epsilon}\\) is given by:
 
 $$\alpha_{\epsilon}=(1-\epsilon)1/2+p\epsilon=1/2+\epsilon(p-1/2)$$
 
