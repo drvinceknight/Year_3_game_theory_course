@@ -67,11 +67,13 @@ slug       : normalformgamesnashequilibria
 
     If we allow their positions to be represented by a points \\(x_1, x_2\\) on the \\([0,1]_{\mathbb{R}}\\) line segment then we have:
 
-    $$u_1(x_1,x_2)=\begin{cases}x_1+(x_2-x_1)/2,&\text{if }x_1\leq x_2\\
+    $$u_1(x_1,x_2)=\begin{cases}1/2,&\text{if }x_1=x_2\\
+    x_1+(x_2-x_1)/2,&\text{if }x_1< x_2\\
     1-x_1+(x_1-x_2)/2,&\text{otherwise}
     \end{cases}$$
     and
-    $$u_2(x_1,x_2)=\begin{cases}x_2+(x_1-x_2)/2,&\text{if }x_2\leq x_1\\
+    $$u_2(x_1,x_2)=\begin{cases}1/2,&\text{if }x_1=x_2\\
+    x_2+(x_1-x_2)/2,&\text{if }x_2< x_1\\
     1-x_2+(x_2-x_1)/2,&\text{otherwise}
     \end{cases}$$
 
