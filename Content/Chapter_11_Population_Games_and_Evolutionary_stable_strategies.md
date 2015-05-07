@@ -158,7 +158,7 @@ Let us consider the Male to Female ratio in a population, and make the following
 
 We assume that \\(S=\\{M,F\\}\\) so that females can either only produce Males or only produce Females. Thus, a general mixed strategy \\(\sigma=(\omega,1-\omega)\\) produces a population with a proportion of  \\(\omega\\) males. Furthermore we can write \\(\chi=(\alpha,1-\alpha)\\).
 
-The females are the decision makers so that we consider them as the individuals in our population. The immediate offspring of the females \\(n\\) is constant and so cannot be used as a utility. We use the second generation offspring:
+The females are the decision makers so that we consider them as the individuals in our population. The immediate offspring of the females \\(K\\) is constant and so cannot be used as a utility. We use the second generation offspring:
 
 $$
 \begin{aligned}
