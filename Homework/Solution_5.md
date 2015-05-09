@@ -320,6 +320,6 @@ slug       : incompleteinfomatchinggamesroutinggamescoop
 
    Thus:
 
-   $$\text{PoA}=\frac{(\alpha+1)^{1/\alpha+1}}{\alpha+2}$$
+   $$\text{PoA}=\frac{1}{\left(\frac{1}{\alpha+1}\right)^{1+1/\alpha}+1-\left(\frac{1}{\alpha+1}\right)^{1/\alpha}}$$
 
    It can be shown that the above is a decreasing function in \\(\alpha\\), this implies that as the 'shortcut' gets 'better' (recall that \\(x\leq 1\\)) the negative effect of selfish behaviour increases.
