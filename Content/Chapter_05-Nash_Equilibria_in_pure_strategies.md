@@ -28,7 +28,7 @@ So far we have been using various tools to loosely discuss 'predicting rational 
 
 ---
 
-In an \\(N\\) player normal form game. A Nash equilibrium is a strategy profile \\(\tau = (\tilde s_1,\tilde s_2,\dots,\tilde s_N)\\) such that:
+In an \\(N\\) player normal form game. A Nash equilibrium is a strategy profile \\(\tilde s = (\tilde s_1,\tilde s_2,\dots,\tilde s_N)\\) such that:
 
 $$u_i(\tilde s)\geq u_i(\bar s_i,\tilde s_{-i})\text{ for all }i$$
 
