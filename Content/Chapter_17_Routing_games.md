@@ -129,7 +129,7 @@ C(f)&=\alpha^2\times\alpha+3/2\beta\times\beta+(1-\alpha-\beta)\times(1-\alpha-\
 
 For a routing game \\((G,r,c)\\) we define the optimal flow \\(f^*\\) as the solution to the following optimisation problem:
 
-Minimise \\(\sum_{e\in E}c_e(f_e)\\):
+Minimise \\(\sum_{e\in E}c_e(f_e)f_e\\):
 
 Subject to:
 
