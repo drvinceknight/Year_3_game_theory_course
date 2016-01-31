@@ -64,7 +64,7 @@ $$
 \end{pmatrix}
 $$
 
-We see that we have 2 equilibria in pure strategies: \\((r_1,s_3)\\) and \\((r_4,s_1)\\)
+We see that we have 2 equilibria in pure strategies: \\((r_1,c_3)\\) and \\((r_4,c_1)\\)
 
 ## Duopoly game
 
