@@ -53,20 +53,20 @@ $$\begin{pmatrix}
 (5,10)&(-1,34)
 \end{pmatrix}$$
 
-If we let \\(S_1=\{r_1, r_2\}\\) and \\(S_2=\{s_1, s_2\}\\) we see that:
+If we let \\(S_1=\{r_1, r_2\}\\) and \\(S_2=\{c_1, c_2\}\\) we see that:
 
-$$u_2(s_2,r_1)>u_2(s_1,r_1)$$
+$$u_2(c_2,r_1)>u_2(c_1,r_1)$$
 and
-$$u_2(s_2,r_2)>u_2(s_1,r_2)$$
+$$u_2(c_2,r_2)>u_2(c_1,r_2)$$
 
-so \\(s_1\\) is a strictly dominated strategy for player 2. As such we can elimante it from the game when attempting to predict rational behaviour.  This gives the following game:
+so \\(c_1\\) is a strictly dominated strategy for player 2. As such we can eliminate it from the game when attempting to predict rational behaviour.  This gives the following game:
 
 $$\begin{pmatrix}
 (3,5)\\
 (-1,34)
 \end{pmatrix}$$
 
-At this point it is straightforward to see that \\(r_2\\) is a strictly dominated strategy for player 1 giving the following predicted strategy profile: \\(s=(r_1,s_2)\\).
+At this point it is straightforward to see that \\(r_2\\) is a strictly dominated strategy for player 1 giving the following predicted strategy profile: \\(s=(r_1,c_2)\\).
 
 ### Definition of a weakly dominated strategy
 
@@ -85,7 +85,7 @@ $$\begin{pmatrix}
 (2,1)&(2,1)
 \end{pmatrix}$$
 
-Using the same convention as before for player 2, \\(s_1\\) weakly dominates \\(s_2\\) and for player 1, \\(r_1\\) weakly dominates \\(r_2\\) giving the following predicted strategy profile \\((r_1,s_1)\\).
+Using the same convention as before for player 2, \\(c_1\\) weakly dominates \\(c_2\\) and for player 1, \\(r_1\\) weakly dominates \\(r_2\\) giving the following predicted strategy profile \\((r_1,c_1)\\).
 
 ## Common knowledge of rationality
 
@@ -107,7 +107,10 @@ $$\begin{pmatrix}
 (0,3)&(0,1)&(2,0)
 \end{pmatrix}$$
 
-**Initially** player 1 has no dominated strategies. For player 2, \\(s_3\\) is dominated by \\(s_2\\). Now \\(r_2\\) is dominated by \\(r_1\\) for player 1. Finally, \\(s_1\\) is dominated by \\(s_2\\). Thus \\((r_1,s_2)\\) is a predicted rational outcome.
+**Initially** player 1 has no dominated strategies. For player 2, \\(c_3\\) is
+dominated by \\(c_2\\). Now \\(r_2\\) is dominated by \\(r_1\\) for player 1.
+Finally, \\(c_1\\) is dominated by \\(c_2\\). Thus \\((r_1,c_2)\\) is a
+predicted rational outcome.
 
 ### Example
 
@@ -119,10 +122,10 @@ $$\begin{pmatrix}
 \end{pmatrix}$$
 
 - \\(r_1\\) weakly dominated by \\(r_2\\)
-- \\(s_1\\) strictly dominated by \\(s_3\\)
-- \\(s_2\\) strictly dominated by \\(s_1\\)
+- \\(c_1\\) strictly dominated by \\(c_3\\)
+- \\(c_2\\) strictly dominated by \\(c_1\\)
 
-Thus \\((r_2,s_3)\\) is a predicted rational outcome.
+Thus \\((r_2,c_3)\\) is a predicted rational outcome.
 
 
 ## Not all games can be solved using dominance
