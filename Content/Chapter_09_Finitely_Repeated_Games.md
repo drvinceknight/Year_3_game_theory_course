@@ -110,15 +110,15 @@ The plot shows the various possible outcomes of the repeated game for \\(T=2\\).
 
 ![All possible outcomes of the repeated \\(3\times2\\) game.\label{L09-plot02}]({{site.baseurl}}/Content/plots/L09-plot02.png)
 
-If we consider the two pure equilibria \\((r_1,s_3)\\) and \\((r_2,s_2)\\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
+If we consider the two pure equilibria \\((r_1,c_3)\\) and \\((r_2,c_2)\\), we have 4 possible outcomes that correspond to the outcome of a subgame perfect Nash equilibria:
 
-$$(r_1r_1,s_3s_3)\text{ giving utility vector: }(2,8)$$
+$$(r_1r_1,c_3c_3)\text{ giving utility vector: }(2,8)$$
 
-$$(r_1r_2,s_3s_2)\text{ giving utility vector: }(2,6)$$
+$$(r_1r_2,c_3c_2)\text{ giving utility vector: }(2,6)$$
 
-$$(r_2r_1,s_2s_3)\text{ giving utility vector: }(2,6)$$
+$$(r_2r_1,c_2c_3)\text{ giving utility vector: }(2,6)$$
 
-$$(r_2r_2,s_2s_2)\text{ giving utility vector: }(2,4)$$
+$$(r_2r_2,c_2c_2)\text{ giving utility vector: }(2,4)$$
 
 Importantly, not all subgame Nash equilibria outcomes are of the above form.
 
@@ -128,7 +128,7 @@ By definition all subgame Nash equilibria **must** play a stage Nash profile in 
 
 Considering the above game, let us look at this strategy:
 
-> "Play \\((r_1,s_1)\\) in the first period and then, as long as P2 cooperates play \\((r_1,s_3)\\) in the second period. If P2 deviates from \\(s_1\\) in the first period then play \\((r_2,s_2)\\) in the second period."
+> "Play \\((r_1,c_1)\\) in the first period and then, as long as P2 cooperates play \\((r_1,c_3)\\) in the second period. If P2 deviates from \\(c_1\\) in the first period then play \\((r_2,c_2)\\) in the second period."
 
 Firstly this strategy gives the utility vector: \\((3,7)\\).
 
