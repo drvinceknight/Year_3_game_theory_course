@@ -49,7 +49,7 @@ $$\begin{pmatrix}
 \end{pmatrix}
 $$
 
-We see that \\((r_3,s_3)\\) represented a pair of best responses. What can we say about the long term behaviour of this game?
+We see that \\((r_3,c_3)\\) represented a pair of best responses. What can we say about the long term behaviour of this game?
 
 ## Best responses against mixed strategies
 
@@ -121,7 +121,7 @@ $$\begin{pmatrix}
 We have:
 
 $$UD_1=\{r_1,r_2\}$$
-$$UD_2=\{s_1,s_2\}$$
+$$UD_2=\{c_1,c_2\}$$
 
 ### Definition of the best responses strategy set
 
@@ -137,22 +137,22 @@ In other words \\(B_i\\) is the set of functions that are best responses to some
 
 Let us try to identify \\(B_2\\) for the above game. Let us assume that player 1 plays \\(\sigma_1=(x,1-x)\\). This gives:
 
-$$u_2(\sigma_1,s_1)=1+2x$$
-$$u_2(\sigma_1,s_2)=3-x$$
-$$u_2(\sigma_1,s_3)=2x-1$$
+$$u_2(\sigma_1,c_1)=1+2x$$
+$$u_2(\sigma_1,c_2)=3-x$$
+$$u_2(\sigma_1,c_3)=2x-1$$
 
 Plotted:
 
 ![Utilities of player 2 in our example. \label{L04-plot03}]({{site.baseurl}}/Content/plots/L04-plot03.png)
 
-We see that \\(s_3\\) is never a best response for player 2:
+We see that \\(c_3\\) is never a best response for player 2:
 
-$$B_2=\{s_1,s_2\}$$
+$$B_2=\{c_1,c_2\}$$
 
 We will now attempt to identify \\(B_1\\) for the above game. Let us assume that player two plays \\(\sigma_2=(x,y,1-x-y)\\). This gives:
 
-$$u_1(r_1,\sigma_2)=xu_1(r_1,s_1)+yu_1(r_1,s_2)+(1-x-y)u_1(r_1,s_3)=3x+7y+5-5y-5x$$
-$$u_1(r_2,\sigma_2)=xu_1(r_2,s_1)+yu_1(r_2,s_2)+(1-x-y)u_1(r_2,s_3)=5x+6y+7-7y-7x$$
+$$u_1(r_1,\sigma_2)=xu_1(r_1,c_1)+yu_1(r_1,c_2)+(1-x-y)u_1(r_1,c_3)=3x+7y+5-5y-5x$$
+$$u_1(r_2,\sigma_2)=xu_1(r_2,c_1)+yu_1(r_2,c_2)+(1-x-y)u_1(r_2,c_3)=5x+6y+7-7y-7x$$
 
 $$u_1(r_1,\sigma_2)-u_1(r_2,\sigma_2)=3y - 2$$
 
