@@ -38,7 +38,7 @@ Recalling [Chapter 2](Chapter_02-Normal_Form_Games.md) a strategy profile of \\(
 
 We can extend the utility function which maps from the set of pure strategies to \\(\mathbb{R}\\) using _expected payoffs_. For a two player game we have:
 
-$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,s)$$
+$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,c)$$
 
 ## Obtaining equilibria
 
@@ -61,9 +61,9 @@ shown:
 
 If we assume that player 1 plays a mixed strategy \\(\sigma_1=(x,1-x)\\) we have:
 
-$$u_2(\sigma_1,s_1)=1-2x$$
+$$u_2(\sigma_1,c_1)=1-2x$$
 and
-$$u_2(\sigma_1,s_2)=2x-1$$
+$$u_2(\sigma_1,c_2)=2x-1$$
 
 shown:
 
@@ -71,8 +71,8 @@ shown:
 
 Thus we have:
 
-1. If \\(x<1/2\\) then \\(s_1\\) is a best response for player 2.
-2. If \\(x>1/2\\) then \\(s_2\\) is a best response for player 2.
+1. If \\(x<1/2\\) then \\(c_1\\) is a best response for player 2.
+2. If \\(x>1/2\\) then \\(c_2\\) is a best response for player 2.
 3. If \\(x=1/2\\) then player 2 is indifferent.
 
 Let us draw both best responses on a single diagram, indicating the best responses in each quadrant. The arrows show the deviation indicated by the best responses.
@@ -159,7 +159,7 @@ Thus we have found player 2's Nash equilibrium strategy by finding the strategy 
 
 $$
 \begin{aligned}
-u_2(\sigma_1,s_1)&=u_2(\sigma_1,s_2)\\
+u_2(\sigma_1,c_1)&=u_2(\sigma_1,c_2)\\
 -x+(1-x)&=x-(1-x)\\
 x&=1/2
 \end{aligned}
