@@ -44,7 +44,10 @@ A \\(N\\) player **normal form game** consists of:
 
 The convention used in this course (unless otherwise stated) is that all players aim to choose from their strategies in such a way as to maximise their utilities.
 
-A natural way of representing a two player normal form game is using a **bi-matrix**. If we assume that \\(N=2\\) and \\(S_1=\\{r_i\;\|\;1\leq i\leq m \\}\\) and \\(S_2=\\{s_j\;\|\;1\leq j\leq n \\}\\) then a **bi-matrix** representation of the game considered is shown.
+A natural way of representing a two player normal form game is using a
+**bi-matrix**. If we assume that \\(N=2\\) and \\(S_1=\\{r_i\;\|\;1\leq i\leq m
+\\}\\) and \\(S_2=\\{c_j\;\|\;1\leq j\leq n \\}\\) then a **bi-matrix**
+representation of the game considered is shown.
 
 ![A bi matrix for \\(N=2\\). \label{L02-img01}]({{site.baseurl}}/Content/images/L02-img01.png)
 
@@ -126,7 +129,7 @@ For example in the matching pennies game discussed previously. A strategy profil
 
 We can extend the utility function which maps from the set of pure strategies to \\(\mathbb{R}\\) using _expected payoffs_. For a two player game we have:
 
-$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,s)$$
+$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(c)u_{i}(r,c)$$
 
 (where we relax our notation to allow \\(\sigma_i:S_i\to[0,1]_{\mathbb{R}}\\) so that \\(\sigma_i(s_i)\\) denotes the probability of playing \\(s_i\in S_i\\).)
 
@@ -134,8 +137,8 @@ $$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r
 
 In the previously discussed strategy profile of \\(\sigma_1=(.2,.8)\\) and \\(\sigma_2=(.6,.4)\\) the expected utilities can be calculated as follows:
 
-$$u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)=.2\times.6\times 1+.2\times.4\times (-1)+.8\times .6\times (-1) + .8\times .4\times 1=-.12$$
-$$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=.2\times.6\times (-1)+.2\times.4\times 1+.8\times .6\times 1 + .8\times .4\times (-1)=.12$$
+$$u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,c)=.2\times.6\times 1+.2\times.4\times (-1)+.8\times .6\times (-1) + .8\times .4\times 1=-.12$$
+$$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,c)=.2\times.6\times (-1)+.2\times.4\times 1+.8\times .6\times 1 + .8\times .4\times (-1)=.12$$
 
 ### Example
 
@@ -145,11 +148,11 @@ If we assume that player 2 always plays tails, what is the expected utility to p
 
 Let \\(\sigma_1=(x,1-x)\\) and we have \\(\sigma_2=(0,1)\\) which gives:
 
-$$u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{1}(r,s)=-x+(1-x)=1-2x$$
+$$u_{1}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(c)u_{1}(r,c)=-x+(1-x)=1-2x$$
 
 Similarly if player 1 always plays tails the expected utility to player 2 is:
 
-$$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,s\in S_2}\sigma_1(r)\sigma_2(s)u_{2}(r,s)=x+(x-1)=2x-1$$
+$$u_{2}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(c)u_{2}(r,c)=x+(x-1)=2x-1$$
 
 A plot of this is shown.
 
