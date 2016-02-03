@@ -95,16 +95,16 @@ slug       : representationsandpurestrategies
         (2,1)&(1,1)\\
         \end{pmatrix}$$
 
-        Thus a predicted strategy profile is \\((r_1,s_1)\\).
+        Thus a predicted strategy profile is \\((r_1,c_1)\\).
 
-        Importantly, we see however that \\(s_2\\) weakly dominates \\(s_1\\) which would give:
+        Importantly, we see however that \\(c_2\\) weakly dominates \\(c_1\\) which would give:
 
         $$\begin{pmatrix}
         (1,1)\\
         (1,3)\\
         \end{pmatrix}$$
 
-        Thus another predicted strategy profile is \\((r_2, s_2)\\).
+        Thus another predicted strategy profile is \\((r_2, c_2)\\).
 
 
     - $$\begin{pmatrix}
@@ -115,7 +115,7 @@ slug       : representationsandpurestrategies
 
         **Solution**
 
-        We see that \\(s_2\\) is weakly dominated by \\(s_3\\) so we have:
+        We see that \\(c_2\\) is weakly dominated by \\(c_3\\) so we have:
 
         $$\begin{pmatrix}
         (2,11)&(3,10)&(17,22)\\
@@ -130,14 +130,14 @@ slug       : representationsandpurestrategies
         (4,2)&(7,12)&(18,0)\\
         \end{pmatrix}$$
 
-        Now \\(s_3\\) stricly dominates \\(s_1\\) and \\(s_4\\) so we have:
+        Now \\(c_3\\) stricly dominates \\(c_1\\) and \\(c_4\\) so we have:
 
         $$\begin{pmatrix}
         (1,1)\\
         (7,12)\\
         \end{pmatrix}$$
 
-        Thus the predicted rational behaviour is \\((r_3, s_3)\\).
+        Thus the predicted rational behaviour is \\((r_3, c_3)\\).
 
     - $$\begin{pmatrix}
     (3,2)&(3,1)&(2,3)\\
@@ -168,7 +168,7 @@ slug       : representationsandpurestrategies
     (1,1)&(\underline{1},\underline{3})\\
     \end{pmatrix}$$
 
-        We have 3 pairs of best responses: \\((r_1,s_1),(r_1,s_2),(r_2,s_2)\\).
+        We have 3 pairs of best responses: \\((r_1,c_1),(r_1,c_2),(r_2,c_2)\\).
 
     - $$\begin{pmatrix}
     (2,11)&(1,9)&(3,10)&(17,\underline{22})\\
@@ -176,7 +176,7 @@ slug       : representationsandpurestrategies
     (4,2)&(\underline{6},10)&(\underline{7},\underline{12})&(\underline{18},0)\\
     \end{pmatrix}$$
 
-        We have a single pair of best responses: \\((r_3,s_3)\\).
+        We have a single pair of best responses: \\((r_3,c_3)\\).
 
     - $$\begin{pmatrix}
     (\underline{3},2)&(\underline{3},1)&(2,\underline{3})\\
@@ -214,9 +214,9 @@ slug       : representationsandpurestrategies
 
     Similarly:
 
-    $$UD_2=\{s\in\{s_1,s_2\}\;|\;s\text{ is not strictly dominated}\}$$
+    $$UD_2=\{s\in\{c_1,c_2\}\;|\;s\text{ is not strictly dominated}\}$$
 
-    Thus \\(UD_2=\{s_1, s_2\}\\)
+    Thus \\(UD_2=\{c_1, c_2\}\\)
 
     By definition
 
@@ -236,14 +236,14 @@ slug       : representationsandpurestrategies
 
     By definition
 
-    $$B_2=\{s\in\{s_1,s_2\}|\;\exists \sigma\in\Delta S_{1} \text{such that }s \text{ is a best response to } \sigma\}$$
+    $$B_2=\{c\in\{c_1,c_2\}|\;\exists \sigma\in\Delta c_{1} \text{such that }c \text{ is a best response to } \sigma\}$$
 
     Let us assume that player 1 plays \\(\sigma_1=(x,y,1-x-y)\\). This gives:
 
-    $$u_2(\sigma_1, s_1)=3x+y$$
-    $$u_2(\sigma_1, s_2)=2x+y+2-2x-2y=2-y$$
+    $$u_2(\sigma_1, c_1)=3x+y$$
+    $$u_2(\sigma_1, c_2)=2x+y+2-2x-2y=2-y$$
 
-    We see that \\(u_2(\sigma_1, s_1)>u_2(\sigma_1, s_2)\\) \\(\Rightarrow\\) \\(3x+y>2-y\\) \\(\Rightarrow\\) \\(x>\frac{2-2y}{3}\\). Thus (finding an obvious example) \\(\sigma_1=(2/3,0,1/3)\in\Delta S_1\\) has \\(s_1\\) as a best response and similarly \\(\sigma_1=(1/3,0,2/3)\in\Delta S_2\\) has \\(s_2\\) as a best response. This gives \\(B_2=\{s_1, s_2\}\\).
+    We see that \\(u_2(\sigma_1, c_1)>u_2(\sigma_1, c_2)\\) \\(\Rightarrow\\) \\(3x+y>2-y\\) \\(\Rightarrow\\) \\(x>\frac{2-2y}{3}\\). Thus (finding an obvious example) \\(\sigma_1=(2/3,0,1/3)\in\Delta c_1\\) has \\(c_1\\) as a best response and similarly \\(\sigma_1=(1/3,0,2/3)\in\Delta c_2\\) has \\(c_2\\) as a best response. This gives \\(B_2=\{c_1, c_2\}\\).
 
     To illustrate this further here is a contour plot of \\(u_2(\sigma_1,s_1)-u_2(\sigma_1,s_2)\\):
 
