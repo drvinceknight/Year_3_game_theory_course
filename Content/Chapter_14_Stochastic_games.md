@@ -101,15 +101,15 @@ We see that the Nash equilibrium for the stage game corresponding to \\(x\\) is 
 
 To calculate utilities for players in infinite horizon stochastic games we use a discount rate. Thus without loss of generality if the game is in state \\(x\\) and we assume that both players are playing \\(\sigma^*_i\\) then player 1 would be attempting to maximise future payoffs:
 
-$$U_1(r,s)=\left(u_1(x,r,s)+\delta\sum_{x'\in X}\pi(x'|x,r,s)U_1^*(x')\right)$$
+$$U_1(r,c)=\left(u_1(x,r,c)+\delta\sum_{x'\in X}\pi(x'|x,r,c)U_1^*(x')\right)$$
 
 where \\(U_1^*\\) denotes the expected utility to player 1 when both players are playing the Nash strategy profile.
 
 Thus a Nash equilibrium satisfies:
 
-$$U_1^*(x)=\max_{r\in S_1(x)}(u_i(x,r,s^* )+\delta\sum_{x'\in X}\pi(x'|x,r,s^*)U_1^*(x'))$$
+$$U_1^*(x)=\max_{r\in S_1(x)}(u_i(x,r,c^* )+\delta\sum_{x'\in X}\pi(x'|x,r,c^*)U_1^*(x'))$$
 
-$$U_2^*(x)=\max_{s\in S_2(x)}(u_i(x,r^*,s)+\delta\sum_{x'\in X}\pi(x'|x,r^*,s)U_2^*(x'))$$
+$$U_2^*(x)=\max_{c\in S_2(x)}(u_i(x,r^*,c)+\delta\sum_{x'\in X}\pi(x'|x,r^*,c)U_2^*(x'))$$
 
 Solving these equations is not straightforward. We will take a look at one approach by solving the example we have above.
 
