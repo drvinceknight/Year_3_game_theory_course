@@ -12,4 +12,4 @@ blogurl          : "http://drvinceknight.github.io/unpeudemath/"
 # Build settings
 markdown    : kramdown
 permalink   : pretty
-highlighter : pygments
+highlighter : rouge

@@ -211,16 +211,19 @@ g.shapley_value()
 
 You can quickly obtain a stable matching
 
-      sage: suitr_pref = {'J': ('A', 'D', 'C', 'B'),
-      ....:               'K': ('A', 'B', 'C', 'D'),
-      ....:               'L': ('B', 'D', 'C', 'A'),
-      ....:               'M': ('C', 'A', 'B', 'D')}
-      sage: reviewr_pref = {'A': ('L', 'J', 'K', 'M'),
-      ....:                 'B': ('J', 'M', 'L', 'K'),
-      ....:                 'C': ('K', 'M', 'L', 'J'),
-      ....:                 'D': ('M', 'K', 'J', 'L')}
-      sage: m = MatchingGame([suitr_pref, reviewr_pref])
-      sage: m.solve()
+```python
+
+sage: suitr_pref = {'J': ('A', 'D', 'C', 'B'),
+....:               'K': ('A', 'B', 'C', 'D'),
+....:               'L': ('B', 'D', 'C', 'A'),
+....:               'M': ('C', 'A', 'B', 'D')}
+sage: reviewr_pref = {'A': ('L', 'J', 'K', 'M'),
+....:                 'B': ('J', 'M', 'L', 'K'),
+....:                 'C': ('K', 'M', 'L', 'J'),
+....:                 'D': ('M', 'K', 'J', 'L')}
+sage: m = MatchingGame([suitr_pref, reviewr_pref])
+sage: m.solve()
+```
 
 <div class="compute"><script type="text/x-sage">
 suitr_pref = {'J': ('A', 'D', 'C', 'B'),
