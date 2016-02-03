@@ -37,29 +37,29 @@ slug       : normalformgamesnashequilibria
 
     **Solution**
 
-    - \\((r_1,s_1)\\) is a pure strategy Nash equilibrium if:
+    - \\((r_1,c_1)\\) is a pure strategy Nash equilibrium if:
 
         \\(3\geq 4\alpha\\) and \\(5\geq\alpha\\)
 
-        Thus \\((r_1,s_1)\\) is a Nash equilibrium iff \\(\alpha\leq3/4\\).
+        Thus \\((r_1,c_1)\\) is a Nash equilibrium iff \\(\alpha\leq3/4\\).
 
-    - \\((r_1,s_2)\\) is a pure strategy Nash equilibrium if:
+    - \\((r_1,c_2)\\) is a pure strategy Nash equilibrium if:
 
         \\(2-\alpha \geq \alpha\\) and \\(\alpha\geq 5\\)
 
         This is not possible.
 
-    - \\((r_2,s_1)\\) is a pure strategy Nash equilibrium if:
+    - \\((r_2,c_1)\\) is a pure strategy Nash equilibrium if:
 
         \\(4\alpha \geq 3\\) and \\(6\geq \alpha^2\\)
 
-        Thus \\((r_2,s_1)\\) is a Nash equilibrium iff \\(3/4\leq \alpha \leq \sqrt{6}\\)
+        Thus \\((r_2,c_1)\\) is a Nash equilibrium iff \\(3/4\leq \alpha \leq \sqrt{6}\\)
 
-    - \\((r_2,s_2)\\) is a pure strategy Nash equilibrium if:
+    - \\((r_2,c_2)\\) is a pure strategy Nash equilibrium if:
 
         \\(\alpha\geq 2-\alpha\\) and \\(6\leq \alpha^2\\)
 
-        Thus \\((r_2,s_2)\\) is a Nash equilibrium iff \\(\alpha\geq\sqrt{6}\\)
+        Thus \\((r_2,c_2)\\) is a Nash equilibrium iff \\(\alpha\geq\sqrt{6}\\)
 
 3. Consider the following game:
 
@@ -128,7 +128,7 @@ slug       : normalformgamesnashequilibria
 
     ![]({{site.baseurl}}/Homework/plots/HW2-P02.png)
 
-    As \\(r_2\\) is dominated, we see from the plot that the Nash equilibrium is \\((r_1, s_2)\\).
+    As \\(r_2\\) is dominated, we see from the plot that the Nash equilibrium is \\((r_1, c_2)\\).
 
 5. Assume a soccer player (player 1) is taking a penalty kick and has the option of shooting left or right: \\(S_1=\\{\text{SL},\text{SR}\\}\\). A goalie (player 2) can either dive left or right: \\(S_2=\\{\text{DL}, \text{DR}\\}\\). The chances of a goal being scored are given below:
 
