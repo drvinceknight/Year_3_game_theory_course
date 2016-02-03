@@ -49,7 +49,7 @@ The interpretation of \\(\delta\\) is that there is less importance given to fut
 
 In this case we write the utility in an infinitely repeated game as:
 
-$$U_i(r,s)=\sum_{t=1}^\infty\delta^{t-1}u_i(r(t),s(t))$$
+$$U_i(r,c)=\sum_{t=1}^\infty\delta^{t-1}u_i(r(t),c(t))$$
 
 Thus:
 
@@ -112,7 +112,7 @@ $$\bar T=\frac{1}{1-\delta}$$
 
 We can use this to define the **average payoffs** per stage:
 
-$$\frac{1}{\bar T}U_i(r,s)=(1-\delta)U_i(r,s)$$
+$$\frac{1}{\bar T}U_i(r,c)=(1-\delta)U_i(r,c)$$
 
 ---
 
