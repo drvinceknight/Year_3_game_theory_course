@@ -38,7 +38,7 @@ Recalling [Chapter 2](Chapter_02-Normal_Form_Games.md) a strategy profile of \\(
 
 We can extend the utility function which maps from the set of pure strategies to \\(\mathbb{R}\\) using _expected payoffs_. For a two player game we have:
 
-$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(s)u_{i}(r,c)$$
+$$u_{i}(\sigma_1,\sigma_2)=\sum_{r\in S_1,c\in S_2}\sigma_1(r)\sigma_2(c)u_{i}(r,c)$$
 
 ## Obtaining equilibria
 
