@@ -85,11 +85,11 @@ Importantly \\((s_G,s_G)\\) is not a subgame perfect Nash equilibrium. Consider 
 
 1. If player 2 also plays \\(s_G\\) then the first stage of the subgame will be \\((r_2,c_1)\\) (player 1 punishes while player 2 sticks with \\(c_1\\) as player 1 played \\(r_1\\) in previous stage). All subsequent plays will be \\((r_2,c_2)\\) so player 2's utility will be:
 
-$$0+\sum_{t=2}^{\infty}\delta^{t-1}=\delta/(1-\delta)$$
+    $$0+\sum_{t=2}^{\infty}\delta^{t-1}=\delta/(1-\delta)$$
 
 2. If player 2 deviates from \\(s_G\\) and chooses to play \\(D\\) in every period of the subgame then player 2's utility will be:
 
-$$\sum_{t=1}^{\infty}\delta^{t-1}=1/(1-\delta)$$
+    $$\sum_{t=1}^{\infty}\delta^{t-1}=1/(1-\delta)$$
 
 which is a rational deviation (as \\(0<\delta<1\\)).
 
