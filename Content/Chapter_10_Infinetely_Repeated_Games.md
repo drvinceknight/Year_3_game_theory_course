@@ -81,9 +81,9 @@ $$\delta< 1/2$$
 
 thus if \\(\delta\\) is large enough \\((s_G,s_G)\\) is a Nash equilibrium.
 
-Importantly \\((s_G,s_G)\\) is not a subgame perfect Nash equilibrium. Consider the subgame following \\((r_1,s_2)\\) having been played in the first stage of the game. Assume that player 1 adhers to \\(s_G\\):
+Importantly \\((s_G,s_G)\\) is not a subgame perfect Nash equilibrium. Consider the subgame following \\((r_1,c_2)\\) having been played in the first stage of the game. Assume that player 1 adhers to \\(s_G\\):
 
-1. If player 2 also plays \\(s_G\\) then the first stage of the subgame will be \\((r_2,s_1)\\) (player 1 punishes while player 2 sticks with \\(s_1\\) as player 1 played \\(r_1\\) in previous stage). All subsequent plays will be \\((r_2,s_2)\\) so player 2's utility will be:
+1. If player 2 also plays \\(s_G\\) then the first stage of the subgame will be \\((r_2,c_1)\\) (player 1 punishes while player 2 sticks with \\(c_1\\) as player 1 played \\(r_1\\) in previous stage). All subsequent plays will be \\((r_2,c_2)\\) so player 2's utility will be:
 
 $$0+\sum_{t=2}^{\infty}\delta^{t-1}=\delta/(1-\delta)$$
 
