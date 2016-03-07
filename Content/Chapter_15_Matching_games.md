@@ -145,7 +145,7 @@ All possible executions of the Gale-Shapley algorithm yield the same stable matc
 
 ---
 
-###Proof
+### Proof
 
 ---
 
