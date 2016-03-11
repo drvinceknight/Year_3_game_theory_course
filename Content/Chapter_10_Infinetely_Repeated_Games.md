@@ -179,6 +179,6 @@ as \\(u_1(\sigma_1',\bar \sigma_2)>v_1>u_1^\*\\), taking \\(\bar\delta=\frac{u_1
 By construction this strategy is also a subgame perfect Nash equilibrium. Given any history **both** players will act in the same way and no player will have an incentive to deviate:
 
 - If we consider a subgame just after any player has deviated from \\(\bar\sigma_i\\) then both players use \\(\sigma_i^*\\).
-- If we consider a subgame just after no player has deviated from \\(\sigma_i\\) then both players continue to use \\(\bar\sigma_i\\).
+- If we consider a subgame just after no player has deviated from \\(\bar\sigma_i\\) then both players continue to use \\(\bar\sigma_i\\).
 
 ---
