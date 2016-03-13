@@ -205,5 +205,5 @@ u(\sigma^*,\chi_{\epsilon})-u(\sigma,\chi_{\epsilon})&=p-1/2+(1/2-p)\frac{1-\alp
 $$
 
 We note that if \\(p<1/2\\) then \\(\alpha\_{\epsilon}<1/2\\) which implies that \\(u(\sigma^\*,\chi\_{\epsilon})-u(\sigma,\chi\_{\epsilon})>0\\).
-Similarly if \\(p>1/2\\) then \\(\alpha\_{\epsilon}<1/2\\) which implies that \\(u(\sigma^\*,\chi\_{\epsilon})-u(\sigma,\chi\_{\epsilon})>0\\).
+Similarly if \\(p>1/2\\) then \\(\alpha\_{\epsilon}>1/2\\) which implies that \\(u(\sigma^\*,\chi\_{\epsilon})-u(\sigma,\chi\_{\epsilon})>0\\).
 Thus \\(\sigma^\*=(1/2,1/2)\\) is a ESS.
