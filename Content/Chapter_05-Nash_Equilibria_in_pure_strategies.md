@@ -109,7 +109,7 @@ Recalling the definition of a Nash equilibria we are attempting to find \\((\til
 $$
 \begin{cases}
 \tilde q_1=q_1^*(\tilde q_2)\\
-\tilde q_2=q_1^*(\tilde q_1)
+\tilde q_2=q_2^*(\tilde q_1)
 \end{cases}
 $$
 
