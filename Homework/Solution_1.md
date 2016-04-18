@@ -95,16 +95,16 @@ slug       : representationsandpurestrategies
         (2,1)&(1,1)\\
         \end{pmatrix}$$
 
-        Thus a predicted strategy profile is \\((r_1,c_1)\\).
+        There are no further strategies that can be eliminated.
 
-        Importantly, we see however that \\(c_2\\) weakly dominates \\(c_1\\) which would give:
+        We see however that \\(c_2\\) weakly dominates \\(c_1\\) which would give:
 
         $$\begin{pmatrix}
         (1,1)\\
         (1,3)\\
         \end{pmatrix}$$
 
-        Thus another predicted strategy profile is \\((r_2, c_2)\\).
+        Again, there are no further strategies that can be eliminated.
 
 
     - $$\begin{pmatrix}
