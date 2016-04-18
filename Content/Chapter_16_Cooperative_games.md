@@ -46,7 +46,10 @@ This is illustrated.
 
 ![A taxi journey. \label{L16-img01}]({{site.baseurl}}/Content/images/L16-img01.png)
 
-To construct the characteristic function we first obtain the power set (ie all possible coalitions) \\(2^{\{1,2,3\}}=\{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\Omega\}\\) where \\(\Omega\\) denotes the set of all players (\\(\{1,2,3\}\\)).
+To construct the characteristic function we first obtain the power set (ie all
+possible coalitions)
+\\(2^{\{1,2,3\}}=\\{\emptyset,\\{1\\},\\{2\\},\\{3\\},\\{1,2\\},\\{1,3\\},\\{2,3\\},\Omega\\}\\)
+where \\(\Omega\\) denotes the set of all players (\\(\\{1,2,3\\}\\)).
 
 The characteristic function is given below:
 
@@ -184,7 +187,7 @@ $$S_\pi(i)=\{j\in[N]\;|\;\pi(j)<\pi(i)\}$$
 
 ---
 
-For example for \\(\pi=(1,3,4,2)\\) we have \\(S_\pi(4)=\{1,3\}\\).
+For example for \\(\pi=(1,3,4,2)\\) we have \\(S_\pi(4)=\\{1,3\\}\\).
 
 ### Definition of marginal contribution
 
