@@ -88,7 +88,7 @@
             \item Prove that a pure Nash equilibrium exists for all values of
                 \(\alpha \in \mathbb{R}\).
 
-                If \(\alpha\leq 0\) then the best responses are given by:
+                If \(\alpha< 0\) then the best responses are given by:
 
                     \[\begin{pmatrix}
                         (\underline{1},\alpha) & (\underline{0},\underline{2})\\
@@ -97,9 +97,18 @@
 
                 So \((r_1, c_2)\) is a pure Nash equilibrium.
 
+                If \(\alpha=0\) then the best responses are given by:
+
+                    \[\begin{pmatrix}
+                        (\underline{1},\alpha) & (\underline{0},\underline{2})\\
+                            (0,0) & (\underline{\alpha},\underline{1})\\
+                    \end{pmatrix}\]
+
+                    So \((r_1, c_2), (r_2, c_2)\) are pure Nash equilibria.
+
             ~\hfill{[2]}
 
-                If \(2\geq\alpha\geq 0\) then the best responses are given by:
+            If \(2>\alpha> 0\) then the best responses are given by:
 
                     \[\begin{pmatrix}
                         (\underline{1},\alpha) & (0,\underline{2})\\
@@ -110,7 +119,17 @@
 
             ~\hfill{[2]}
 
-                If \(2\leq\alpha\) then the best responses are given by:
+                If \(2=\alpha\) then the best responses are given by:
+
+                    \[\begin{pmatrix}
+                            (\underline{1},\underline{\alpha}) &
+                            (0,\underline{2})\\
+                        (0,0) & (\underline{\alpha},\underline{1})\\
+                    \end{pmatrix}\]
+
+                So \((r_1, c_1)\) and \((r_2, c_2)\) are pure Nash equilibrium.
+
+                If \(\alpha>2\) then the best responses are given by:
 
                     \[\begin{pmatrix}
                         (\underline{1},\underline{\alpha}) & (0,2)\\
