@@ -13,7 +13,7 @@ slug       : notationconvention
 - \\(S_i\\): set of strategies available to player \\(i\\).
 - \\(u_i:S_i\to \mathbb{R}\\): utility function for player \\(i\\).
 - \\(m,n\\): used to denote number of strategies.
-- \\(r_i,s_i\\): used to denote elements of \\(S_1\\) and \\(S_2\\) in normal form games with \\(N=2\\).
+- \\(r_i,c_i\\): used to denote elements of \\(S_1\\) and \\(S_2\\) in normal form games with \\(N=2\\).
 - \\(\Delta S_i\\): the set of mixed strategies of player \\(i\\).
 - \\(\sigma_i\\): used to denote an element of \\(\Delta S_i\\).
 - \\(x,y\\): used to denote an unkown in a mixed strategy or states in a stochastic game.
