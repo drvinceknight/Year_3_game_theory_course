@@ -138,7 +138,9 @@ In other words \\(B_i\\) is the set of functions that are best responses to some
 Let us try to identify \\(B_2\\) for the above game. Let us assume that player 1 plays \\(\sigma_1=(x,1-x)\\). This gives:
 
 $$u_2(\sigma_1,c_1)=1+2x$$
+
 $$u_2(\sigma_1,c_2)=3-x$$
+
 $$u_2(\sigma_1,c_3)=2x-1$$
 
 Plotted:
