@@ -79,7 +79,7 @@ slug       : repeatedgamesandevolutionarygames
     2. \\(\sigma_W\\): everyone uses \\(W\\), thus \\(\mu=0\\) (we have \\(u(L,\chi)<u(W,\chi)\\).
     3. \\(\sigma_m\\): some use \\(L\\) and some use \\(W\\), by the theorem we have \\(u(L,\chi)=u(W,\chi)\\) which implies \\(\alpha+2\mu=1+2(1-\mu)\\) giving \\(\mu=\frac{3-\alpha}{4}\\).
 
-    Now we consider the post entry population \\(\chi\_\epsilon=(1-\epsilon)\sigma^\*+\epsilon\sigma\\) (where \\(\sigma^*\\) is the base strategy and \\(\sigma\\) is the entry population). We denote \\(\sigma=(\mu,1-\mu)\\) and \\(\sigma^\*=(\mu^*,1-\mu^*)\\) and \\(\delta = u(\sigma^\*,\chi\_\epsilon)-u(\sigma,\chi\_\epsilon)\\). We have:
+    Now we consider the post entry population \\(\chi\_\epsilon=(1-\epsilon)\sigma^\*+\epsilon\sigma\\) (where \\(\sigma^\*\\) is the base strategy and \\(\sigma\\) is the entry population). We denote \\(\sigma=(\mu,1-\mu)\\) and \\(\sigma^\*=(\mu^\*,1-\mu^*)\\) and \\(\delta = u(\sigma^\*,\chi\_\epsilon)-u(\sigma,\chi\_\epsilon)\\). We have:
 
     $$
     \delta = \mu^*u(L,\chi_\epsilon)+(1-\mu^*)u(W,\chi_\epsilon))-\mu u(L,\chi_\epsilon)+(1-\mu)u(W,\chi_\epsilon))=(\mu^*-\mu)(u(L,\chi_\epsilon)-u(W,\chi_\epsilon))
