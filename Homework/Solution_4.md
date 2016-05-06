@@ -140,11 +140,11 @@ slug       : repeatedgamesandevolutionarygames
 
     thus:
 
-    $$\beta=(1/p)^(1/\alpha)$$
+    $$\beta=(1/p)^{(1/\alpha)}$$
 
     The utilities are then:
 
-    Employer: $$p(K-1-(1/p)^(1/\alpha))+(1-p)(\kappa-1)$$
+    Employer: $$p(K-1-(1/p)^{(1/\alpha)})+(1-p)(\kappa-1)$$
     Employee: $$1$$
 
     ii. Obtain a condition for which the employer should offer a bonus.
