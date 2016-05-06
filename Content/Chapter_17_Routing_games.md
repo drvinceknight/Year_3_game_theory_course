@@ -50,7 +50,7 @@ $$\begin{aligned}
 c_{s_1a}&=0\\
 c_{s_2a}&=0\\
 c_{s_1t}&=x^2\\
-c_{s_2t}&=\frac{x}{2}x\\
+c_{s_2t}&=\frac{3x}{2}\\
 c_{at}&=x\\
 \end{aligned}$$
 
