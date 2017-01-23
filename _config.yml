@@ -3,7 +3,7 @@ title            : Vincent Knight
 email            : vincent.knight@gmail.com
 description      : "Class website for my third year Game Theory course. All source files can be found at <a href='https://github.com/drvinceknight/Year_3_game_theory_course'>this github repository</a>."
 baseurl          : "/Year_3_game_theory_course"
-url              : "http://drvinceknight.github.io"
+url              : "http://vknight.org"
 github_username  : "drvinceknight"
 twitter_username : "@drvinceknight"
 plus_username    : "+VincentKnight"

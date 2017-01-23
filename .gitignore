@@ -12,3 +12,4 @@ _site
 CurrentExam/
 CurrentExamSolution/
 *.ipynb_checkpoints*
+Gemfile.lock
