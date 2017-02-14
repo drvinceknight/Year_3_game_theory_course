@@ -119,7 +119,7 @@ So far we have only considered so called **pure strategies**. We will now allow 
 
 In an \\(N\\) player normal form game a **mixed strategy** for player \\(i\\) denoted by \\(\sigma_i\in[0,1]^{\|S_i\|}_{\mathbb{R}}\\) is a probability distribution over the pure strategies of player \\(i\\). So:
 
-$$\sum_{i=1}^{|S_i|}\sigma_i=1$$
+$$\sum_{j=1}^{|S_j|}(\sigma_i)_j=1$$
 
 For a given player \\(i\\) we denote the set of mixed strategies as \\(\Delta S_i\\).
 
