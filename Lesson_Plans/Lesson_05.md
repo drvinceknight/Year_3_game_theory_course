@@ -32,14 +32,18 @@ At the end of this lecture students will be to:
 
 - Give example corresponding two students working on a group project:
 
+    ```
     S1 = {x in R| 0 \leq x \leq 1}
     S2 = {y in R| 0 \leq y \leq 1}
+    ```
 
     Their strategies represents their efforts on a group project.
     Their utility is a combination of their mark and effort:
 
+    ```
     u1 = (x+y)y-1/2x^2
     u2 = (x+y)x-1/2y^2
+    ```
 
     ... Equilibria is to have same effort.
 
