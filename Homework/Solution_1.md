@@ -146,7 +146,14 @@ slug       : representationsandpurestrategies
 
         **Solution**
 
-        There are no dominated strategies in this game.
+        \\(c_1\\) is weakly dominated by \\(c_3\\):
+
+        $$\begin{pmatrix}
+        (3,1)&(2,3)\\
+        (1,3)&(3,2)\\
+        \end{pmatrix}$$
+
+        There are no further dominated strategies.
 
     - $$\begin{pmatrix}
     (3,-3)&(-1,1)\\
