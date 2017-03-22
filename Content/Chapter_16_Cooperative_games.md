@@ -96,7 +96,7 @@ is not.
 
 ---
 
-A characteristic function game \\(G=(N,v)\\) is called **superadditive** if it satisfies \\(v(C_1\cup C_2)\geq v(C_1)+v(C_2).\\)
+A characteristic function game \\(G=(N,v)\\) is called **superadditive** if it satisfies \\(v(C_1\cup C_2)\geq v(C_1)+v(C_2).\\) for all \\(C_1\cap C_2=\emptyset\\).
 
 ---
 
