@@ -93,7 +93,7 @@ $$\bar s=\text{argmax}_{s\in\mathcal{S}(\sigma^*)}u(s,\chi)$$
 Thus we have:
 
 $$\begin{aligned}
-u_{i}(\sigma^*,\chi)&=\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s)u(s,\chi)\\
+u(\sigma^*,\chi)&=\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s)u(s,\chi)\\
 &\leq\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s)u(\bar s,\chi) \\
 &\leq u(\bar s,\chi)\sum_{s\in\mathcal{S}(\sigma^*)}\sigma^*(s) \\
 &\leq u(\bar s,\chi)
