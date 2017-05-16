@@ -113,7 +113,7 @@ slug       : normalformgamesnashequilibria
     We have:
 
     $$u_1(r_1,(y,1-y))=3y+6-6y=6-3y$$
-    $$u_2(r_2,(y,1-y))=y+2-2y=2-y$$
+    $$u_1(r_2,(y,1-y))=y+2-2y=2-y$$
 
     Here is a plot of this:
 
@@ -121,7 +121,7 @@ slug       : normalformgamesnashequilibria
 
     We see that \\(r_2\\) is dominated by \\(r_1\\). For player 2, we have:
 
-    $$u_1((x,1-x),s_1)=2x+4-4x=4-2x$$
+    $$u_2((x,1-x),s_1)=2x+4-4x=4-2x$$
     $$u_2((x,1-x),s_2)=5x+3-3x=3+2x$$
 
     Here is a plot of this:
