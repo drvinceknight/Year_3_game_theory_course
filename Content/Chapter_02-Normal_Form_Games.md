@@ -17,8 +17,8 @@ slug       : normalformgames
 In the [previous chapter]({{site.baseurl}}/Content/Chapter_01-Introduction/) we discussed:
 
 - Interactive decision making;
-- Normal form games;
-- Normal form games and representing information sets.
+- Extensive form games;
+- Extensive form games and representing information sets.
 
 We did this looking at a game called "the battle of the sexes":
 
