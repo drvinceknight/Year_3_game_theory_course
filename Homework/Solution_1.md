@@ -281,7 +281,7 @@ slug       : representationsandpurestrategies
 
     - If \\(UD_1=\{r_1\}\\) \\(\Rightarrow\\) \\(a\_{1j}> a\_{2j}\\) for \\(j\in\{1,2\}\\). This gives:
 
-        $$u_1(r_1,\sigma_2)=a_{11}x+a_{12}(1-x)> a_{12}x+a_{22}(1-x)=u_1(r_2,\sigma_2)$$
+        $$u_1(r_1,\sigma_2)=a_{11}x+a_{12}(1-x)> a_{21}x+a_{22}(1-x)=u_1(r_2,\sigma_2)$$
 
         So \\(r_2\\) is never a best response giving \\(B_1=\{r_1\}\\) as required.
 
