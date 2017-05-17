@@ -76,7 +76,7 @@ $$\mathcal{P}_2=\{s_2at,s_2t\}$$
 
 We denote the set of all possible paths by \\(\mathcal{P}=\bigcup_{i}\mathcal{P}_i\\).
 
-### Definition of a feasible path
+### Definition of a feasible flow
 
 ---
 
