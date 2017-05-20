@@ -105,7 +105,7 @@ Consider the routing game shown.
 
 ![A simple routing game.\ref{L18-img02}]({{site.baseurl}}/Content/images/L18-img02.png)
 
-If we write down the potential function \\(\Phi(\alpha)=\alpha^2/2+(1-\alpha)^2/2+(1-\alpha)+\alpha=\alpha^2 -\alpha + 1/2\\). The flow \\(\tilde f=1/2\\) minimises the potential function and so is a Nash flow. In fact for this example we have \\(\tilde f=f^\*\\) and \\(C(\tilde f)=C(f^\*)=3/2\\).
+If we write down the potential function \\(\Phi(\alpha)=\alpha^2/2+(1-\alpha)^2/2+(1-\alpha)+\alpha=\alpha^2 -\alpha + 3/2\\). The flow \\(\tilde f=1/2\\) minimises the potential function and so is a Nash flow. In fact for this example we have \\(\tilde f=f^\*\\) and \\(C(\tilde f)=C(f^\*)=3/2\\).
 
 If we modify the network by adding capacity to our network with another edge of zero cost.
 
