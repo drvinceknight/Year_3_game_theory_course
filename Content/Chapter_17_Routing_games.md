@@ -189,9 +189,9 @@ To verify that this is an optimal flow we need to verify that it is less than al
 We now check that there are no local optima on the boundary:
 
 1. Consider \\(C(\alpha,0)=\alpha^3+\alpha^2-2\alpha+1\\) equating the derivative to 0 gives: \\(3\alpha^2+2\alpha-2=0\\) which has solution \\(\alpha=\frac{-1\pm\sqrt{7}}{3}\\). We have \\(C(\frac{-1+\sqrt{7}}{3},0)\approx.3689\\).
-2. Consider \\(C(\alpha,1/2)=\alpha^3+\alpha^2-\alpha+5/8\\) equating the derivative to 0 gives: \\(3\alpha^2+2\alpha-a+5/8=0\\) which has solution \\(\alpha=1/3\\) and \\(\alpha=1\\). We have \\(C(1/3,1/2)\approx.4398\\)
+2. Consider \\(C(\alpha,1/2)=\alpha^3+\alpha^2-\alpha+5/8\\) equating the derivative to 0 gives: \\(3\alpha^2+2\alpha-1=0\\) which has solution \\(\alpha=1/3\\) and \\(\alpha=1\\). We have \\(C(1/3,1/2)\approx.4398\\)
 3. When considering \\(C(0,\beta)\\) we know that the local optima is at \\(\beta=\frac{2}{5}\\). We have \\(C(0,2/5)=.6\\).
-4. Similarly when considering \\(C(1/2,\beta)\\) we know that the local optima is at \\(\beta=\frac{2-1/2}{5}\\). We have \\(C(1/2,3/10)=.3\\).
+4. Similarly when considering \\(C(1/2,\beta)\\) we know that the local optima is at \\(\beta=\frac{2(1-1/2)}{5}\\). We have \\(C(1/2,1/5)=.275\\).
 
 Thus \\(f^*\approx(.4633,0.2147)\\).
 
