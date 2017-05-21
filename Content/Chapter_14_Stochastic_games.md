@@ -129,7 +129,7 @@ We consider each strategy pair and state the condition for Nash equilibrium:
 1. \\((a,c)\\): \\(v\leq 21\\) and \\(u\leq 3\\).
 2. \\((a,d)\\): \\(u\geq3\\).
 3. \\((b,c)\\): \\(v\geq 21\\) and \\(5\geq 6\\).
-4. \\((b,d)\\): \\(5\geq2\\).
+4. \\((b,d)\\): \\(5\leq2\\).
 
 Now consider the implications of each of those profiles being an equilibrium:
 
